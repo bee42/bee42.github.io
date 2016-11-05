@@ -13,10 +13,11 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-
-$('#bee_hero').bpHS({activate:1, autoPlay: true, duration:8000, showButtons:false});
-
 });
+
+$(function(){
+    $('#bee_hero').bpHS({activate:1, autoPlay: true, duration:5000, showButtons:false});
+})
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
