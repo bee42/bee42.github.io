@@ -16,7 +16,7 @@ $(function() {
 });
 
 $(function(){
-    $('#bee_hero').bpHS({activate:1, autoPlay: true, duration:5000, showButtons:false});
+    $('#bee_hero').bpHS({activate:0, autoPlay: true, duration:5000, showButtons:false});
 })
 
 // Highlight the top nav as scrolling occurs
