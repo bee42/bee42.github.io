@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto Slab"  , "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .text-muted {
@@ -201,6 +201,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
+
     background-color: #fff;
 }
 
@@ -214,13 +215,13 @@ fieldset[disabled] .btn-xl.active {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+     color: #222;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #222;
+    color: #f6bf01;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -301,14 +302,15 @@ header .intro-text {
 }
 
 header .intro-text .intro-lead-in {
+   color: #222;
     margin-bottom: 25px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 22px;
-    font-style: italic;
     line-height: 22px;
 }
 
 header .intro-text .intro-heading {
+       color: #222;
     margin-bottom: 25px;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -326,7 +328,6 @@ header .intro-text .intro-heading {
         margin-bottom: 25px;
         font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 40px;
-        font-style: italic;
         line-height: 40px;
     }
     header .intro-text .intro-heading {
@@ -1003,4 +1004,131 @@ body {
 .honeycomb {
     margin: 0 auto;
     text-align: center;
+}
+
+.hexagon-purpose-color{
+ background-color: #fed136;
+}
+
+.hexagon-technology-color{
+ background-color: #fec503
+}
+
+.hexagon-organisation-color{
+ background-color: #f9b000;
+}
+
+.hexagon-architecture-color{
+ background-color: #f29400;
+}
+
+.ribbon-holder {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  height: 10em;
+}
+
+.right.ribbon-holder {
+  right: 0;
+}
+
+.left.ribbon-holder {
+  left: 0;
+}
+
+.ribbon,
+.ribbon:hover {
+  text-decoration: none;
+}
+
+.ribbon {
+  font-family: Collegiate, sans-serif;
+  letter-spacing: -.1px;
+  opacity: 0.95;
+
+  padding: 0.25em 0;
+  position: relative;
+  top: 2.5em;
+
+  /* Defaults friendly for white pages. */
+  -moz-box-shadow: 0 0 13px #888;
+  -webkit-box-shadow: 0 0 13px #888;
+  color: #FFF;
+  display: block;
+  line-height: 1.35em;
+}
+
+.ribbon .text {
+  padding: 0.1em 3em;
+}
+
+.right .ribbon {
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  right: -2.6em;
+}
+
+.left .ribbon {
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  left: -2.6em;
+}
+
+.white.ribbon {
+  color: #111;
+  background-color: #F5F5F5;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), to(#fff));
+  -moz-box-shadow: 0 0 13px #999;
+  -webkit-box-shadow: 0 0 13px #999;
+  text-shadow: 0 0 .05em;
+}
+
+.white.ribbon .text {
+  border: 1px solid #cecece;
+}
+
+.red.ribbon {
+  background-color: #9a0000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a0000), to(#a90000));
+}
+
+.red.ribbon .text {
+  border: 1px solid #bf6060;
+}
+
+.green.ribbon {
+  background-color: #006e00;
+  background: -webkit-gradient(linear, left bottom, left top, from(#006e00), to(#007200));
+}
+
+.green.ribbon .text {
+  border: 1px solid #6bac6b;
+}
+
+.darkblue.ribbon {
+  background-color: #121621;
+  color: #ecedee;
+}
+
+.darkblue.ribbon .text {
+  border: 1px solid #53565e;
+}
+
+.orange.ribbon {
+  background-color: #E57504;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dc7202), to(#ee7906));
+}
+
+.orange.ribbon .text {
+  border: 1px solid #ebaa65;
+}
+
+.gray.ribbon {
+  background-color: #6d6d6d;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6a6a6a) to(#6d6d6d));
+}
+
+.gray.ribbon .text {
+  border: 1px solid #a4a4a4;
 }
