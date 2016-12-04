@@ -2,96 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bee42 solutions gmbh</title>
-    <link>https://bee42.github.io/index.xml</link>
+    <link>http://dev.agentur-aufgeweckt.de/bee42/index.xml</link>
     <description>Recent content on bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Nov 2016 19:31:57 +0100</lastBuildDate>
-    <atom:link href="https://bee42.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Impressum</title>
-      <link>https://bee42.github.io/impressum/</link>
-      <pubDate>Sat, 05 Nov 2016 19:31:57 +0100</pubDate>
-      
-      <guid>https://bee42.github.io/impressum/</guid>
-      <description>
-
-&lt;h3 id=&#34;legal-information-that-is-necessary-for-a-german-site&#34;&gt;Legal information that is necessary for a german site&lt;/h3&gt;
-
-&lt;p&gt;Information required under § 5 Para. 1 of the German Telemedia Act:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;bee42 solutions gmbh&lt;/strong&gt;
-Peter Rossbach (Geschäftsführer)
-Am Josephsschacht 72
-D-44879 Bochum
-Deutschland
-E-Mail: &lt;a href=&#34;info-2015@bee42.com&#34;&gt;info-2015(AT)bee42.com&lt;/a&gt;
-Telefon +49(0)157-72 54 92 63&lt;/p&gt;
-
-&lt;p&gt;Responsible for the content according to § 55 Abs. 2 RStV:&lt;/p&gt;
-
-&lt;p&gt;Peter Rossbach (Geschäftsführer)
-Am Josephsschacht 72
-D-44879 Bochum
-Deutschland&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Jobs</title>
-      <link>https://bee42.github.io/jobs/</link>
-      <pubDate>Sat, 05 Nov 2016 19:31:57 +0100</pubDate>
-      
-      <guid>https://bee42.github.io/jobs/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;https://bee42.github.io/img/bee42-search.png&#34; alt=&#34;Bee42 Search&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;devops&#34;&gt;DevOps&lt;/h2&gt;
-
-&lt;h3 id=&#34;deine-aufgaben&#34;&gt;Deine Aufgaben&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Administration und Setup von Docker Infrastruktur (Linux, Docker, CoreOS)&lt;/li&gt;
-&lt;li&gt;Administration von neuen Technologien wie ELK-Stack, Grafana, Consul, ETCD, Redis, Cassandra, InfluxDB, MongoDB, NGINX und node.js&lt;/li&gt;
-&lt;li&gt;Wartung und Weiterentwicklung unserer Development- und Deployment-Infrastruktur&lt;/li&gt;
-&lt;li&gt;Automatisierung von Deployment- und Releaseprozessen&lt;/li&gt;
-&lt;li&gt;Automatisierung von Aufgaben innerhalb des Entwicklungsteams&lt;/li&gt;
-&lt;li&gt;Bereitstellung von Installationen auf der Basis von Docker, VirtualBox, Vagrant, Saltstack, Ansible, Chef oder Puppet&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;das-kannst-du-schon&#34;&gt;Das kannst Du schon&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Sehr gute Kenntnisse in Linux&lt;/li&gt;
-&lt;li&gt;Gute Kenntnisse der Tools: Git, Docker, Virtualisierung, Nagios, Logstash&lt;/li&gt;
-&lt;li&gt;Sicherer Umgang mit Build und Release Management mit Maven, Grunt und Jenkins&lt;/li&gt;
-&lt;li&gt;Interesse an OpenSource-Projekten selbstständig mitzuwirken&lt;/li&gt;
-&lt;li&gt;Kenntnisse von Java virtuellen Maschinen und dem Webcontainer Apache Tomcat&lt;/li&gt;
-&lt;li&gt;Flexibilität und die Bereitschaft, sich ständig weiterzubilden&lt;/li&gt;
-&lt;li&gt;Erfahrungen im Bereich DevOps&lt;/li&gt;
-&lt;li&gt;Interesse am Handwerk eines Administrators&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;unser-angebot&#34;&gt;Unser Angebot&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ein produktives Arbeitsklima in einem motivierten und erfahrenen Team&lt;/li&gt;
-&lt;li&gt;Abwechslungsreiche Aufgaben mit Verantwortung und eigenem Gestaltungsspielraum&lt;/li&gt;
-&lt;li&gt;Arbeiten mit der aktuellsten Hard- und Software&lt;/li&gt;
-&lt;li&gt;Flache Hierarchien und offene Unternehmenskultur&lt;/li&gt;
-&lt;li&gt;Langfristige Perspektiven oder Teilzeit sind möglich&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Wir freuen uns auf Deine Bewerbung sende sie an Peter Rossbach:
- - jobs-2015@bee42.com
- - bee42 solutions gmbh, am josephsschacht 72, 44879 bochum, t +49 (0) 157 72 54 92 63&lt;/p&gt;
-
-&lt;p&gt;Die Ausschreibung passt nicht auf dein Profil?
-Überzeuge uns, das Du bei uns richtig bist&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="http://dev.agentur-aufgeweckt.de/bee42/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
