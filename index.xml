@@ -22,24 +22,125 @@
 &lt;p&gt;Legal information that is necessary for a german site &lt;br/&gt;
 Information required under § 5 Para. 1 of the German Telemedia Act:&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;bee42 solutions gmbh&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Peter Rossbach (Geschäftsführer)&lt;/li&gt;
-&lt;li&gt;Am Josephsschacht 72&lt;/li&gt;
-&lt;li&gt;D-44879 Bochum&lt;/li&gt;
-&lt;li&gt;Germany&lt;/li&gt;
-&lt;li&gt;Email: &lt;a href=&#34;info-2015@bee42.com&#34;&gt;info-2015(AT)bee42.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Phone +49(0)157-72 54 92 63&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;bee42 solutions gmbh&lt;/strong&gt; &lt;br&gt;
+Peter Rossbach (Geschäftsführer)&lt;br&gt;
+Am Josephsschacht 72&lt;br&gt;
+D-44879 Bochum&lt;br&gt;
+Germany&lt;br&gt;
+Email: &lt;a href=&#34;info-2015@bee42.com&#34;&gt;info-2015(AT)bee42.com&lt;/a&gt;&lt;br&gt;
+Phone +49(0)157-72 54 92 63&lt;/p&gt;
 
 &lt;p&gt;Responsible for the content according to § 55 Abs. 2 RStV:&lt;/p&gt;
 
+&lt;p&gt;Peter Rossbach (Geschäftsführer)&lt;br&gt;
+Am Josephsschacht 72&lt;br&gt;
+D-44879 Bochum&lt;br&gt;
+Germany&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker Camp - Bee 42</title>
+      <link>https://bee42.github.io/docker-camp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.github.io/docker-camp/</guid>
+      <description>
+
+&lt;h2 id=&#34;three-days-training-br-dates-every-month-in-essen-germany&#34;&gt;Three days training &lt;br&gt; Dates every month in Essen, Germany.&lt;/h2&gt;
+
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Camp we want to pursue this promise.&lt;/p&gt;
+
+&lt;p&gt;We start with an overview and introduce the first steps with the use of Docker. You will get to know the most important commands, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, install with Docker, and integrate with other services in an environment. We also discuss the current Docker ecosystem and clarify opportunities and risks.&lt;/p&gt;
+
+&lt;p&gt;This camp provides you with the Docker basics in comprehensible steps and puts you in the position subsequently to decide whether and how Docker is useful in your business and IT context.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page&#34;&gt;Book now&lt;/a&gt;
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;day-one-br-docker-basics&#34;&gt;Day one: &lt;br&gt;Docker basics&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
 &lt;ul&gt;
-&lt;li&gt;Peter Rossbach (Geschäftsführer)&lt;/li&gt;
-&lt;li&gt;Am Josephsschacht 72&lt;/li&gt;
-&lt;li&gt;D-44879 Bochum&lt;/li&gt;
-&lt;li&gt;Germany&lt;/li&gt;
+&lt;li&gt;Docker Basics and Installation&lt;/li&gt;
+&lt;li&gt;Container Technology Basics&lt;/li&gt;
+&lt;li&gt;Kernel- vs Classical- Virtualization&lt;/li&gt;
+&lt;li&gt;Architecture of Docker&lt;/li&gt;
+&lt;li&gt;Use Cases and more&lt;/li&gt;
+&lt;li&gt;Setup your docker environment&lt;/li&gt;
+&lt;li&gt;Images, Container and Registry&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&#34;simple-usage&#34;&gt;Simple Usage&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Let&amp;rsquo;s container run, stop, maintain&lt;/li&gt;
+&lt;li&gt;Docker CLI command overview&lt;/li&gt;
+&lt;li&gt;Build your own Images with Dockerfiles&lt;/li&gt;
+&lt;li&gt;Build, ship and run Cycle&lt;/li&gt;
+&lt;li&gt;Docker Tooling&lt;/li&gt;
+&lt;li&gt;Volume Management&lt;/li&gt;
+&lt;li&gt;Network Management&lt;/li&gt;
+&lt;li&gt;Logging and Metrics&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;li&gt;Container Types&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-two-br-create-microservices-with-docker&#34;&gt;Day two: &lt;br&gt; Create microservices with Docker&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Think infrastructure first&lt;/li&gt;
+&lt;li&gt;Create a simple Spring Boot App&lt;/li&gt;
+&lt;li&gt;Build your Toolchain: Java and Maven&lt;/li&gt;
+&lt;li&gt;Docker for Java Developers&lt;/li&gt;
+&lt;li&gt;Create Database Container&lt;/li&gt;
+&lt;li&gt;Empower your Development&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;infrastructure&#34;&gt;Infrastructure&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Build your own Microservice infrastructure&lt;/li&gt;
+&lt;li&gt;Create a simple build pipeline&lt;/li&gt;
+&lt;li&gt;Use Service Discovery&lt;/li&gt;
+&lt;li&gt;Create Multi Host Networks&lt;/li&gt;
+&lt;li&gt;Learn more Docker Tricks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-three-br-scale-your-service-with-docker-swarming&#34;&gt;Day three: &lt;br&gt; Scale your service with Docker Swarming&lt;/h2&gt;
+
+&lt;h3 id=&#34;swarming&#34;&gt;Swarming&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Scale your services with docker swarming mode&lt;/li&gt;
+&lt;li&gt;Update, Failure detection and redeployment&lt;/li&gt;
+&lt;li&gt;Mesh Network and Service Discovery&lt;/li&gt;
+&lt;li&gt;Setup a ingress loadbalancer (traefik, haproxy, nginx)&lt;/li&gt;
+&lt;li&gt;Setup logging and monitoring systems
+
+&lt;ul&gt;
+&lt;li&gt;ELK-Stack&lt;/li&gt;
+&lt;li&gt;Prometheus and Grafana&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Debug your Container&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;go-to-production&#34;&gt;Go to production&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker for production&lt;/li&gt;
+&lt;li&gt;Build high quality images&lt;/li&gt;
+&lt;li&gt;Docker Security Basics&lt;/li&gt;
+&lt;li&gt;Plugins&lt;/li&gt;
+&lt;li&gt;Usage tricks&lt;/li&gt;
+&lt;li&gt;Review Best Practices&lt;/li&gt;
+&lt;li&gt;Docker on ARM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
