@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bee42 solutions gmbh</title>
-    <link>http://dev.agentur-aufgeweckt.de/bee42/index.xml</link>
+    <link>https://bee42.github.io/index.xml</link>
     <description>Recent content on bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Dec 2016 19:26:55 +0100</lastBuildDate>
-    <atom:link href="http://dev.agentur-aufgeweckt.de/bee42/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bee42.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Imprint</title>
-      <link>http://dev.agentur-aufgeweckt.de/bee42/Imprint/</link>
+      <link>https://bee42.github.io/Imprint/</link>
       <pubDate>Sun, 04 Dec 2016 19:26:55 +0100</pubDate>
       
-      <guid>http://dev.agentur-aufgeweckt.de/bee42/Imprint/</guid>
+      <guid>https://bee42.github.io/Imprint/</guid>
       <description>
 
 &lt;h2 id=&#34;legal-informations&#34;&gt;Legal informations&lt;/h2&gt;
