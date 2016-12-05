@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bee42 solutions gmbh</title>
-    <link>https://bee42.github.io/index.xml</link>
+    <link>http://dev.agentur-aufgeweckt.de/bee42/index.xml</link>
     <description>Recent content on bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Dec 2016 19:26:55 +0100</lastBuildDate>
-    <atom:link href="https://bee42.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://dev.agentur-aufgeweckt.de/bee42/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Imprint</title>
-      <link>https://bee42.github.io/Imprint/</link>
+      <link>http://dev.agentur-aufgeweckt.de/bee42/Imprint/</link>
       <pubDate>Sun, 04 Dec 2016 19:26:55 +0100</pubDate>
       
-      <guid>https://bee42.github.io/Imprint/</guid>
+      <guid>http://dev.agentur-aufgeweckt.de/bee42/Imprint/</guid>
       <description>
 
 &lt;h2 id=&#34;legal-informations&#34;&gt;Legal informations&lt;/h2&gt;
@@ -40,11 +40,27 @@ Germany&lt;/p&gt;
     </item>
     
     <item>
-      <title>Docker Camp - Bee 42</title>
-      <link>https://bee42.github.io/docker-camp/</link>
+      <title>42... and the meaning of life - bee42</title>
+      <link>http://dev.agentur-aufgeweckt.de/bee42/42/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/docker-camp/</guid>
+      <guid>http://dev.agentur-aufgeweckt.de/bee42/42/</guid>
+      <description>
+
+&lt;h2 id=&#34;42-and-the-meaning-of-life&#34;&gt;42 … and the meaning of life&lt;/h2&gt;
+
+&lt;p&gt;42 is the answer given to the question posed by Douglas Adams in the novel &amp;ldquo;A Hitchhiker&amp;rsquo;s Guide to the Galaxy&amp;rdquo; about life, the universe and all the rest. According to this question of humanity, the answer was calculated from the largest existing computer at this time and is accurate with absolute certainty. But nothing is to be done because nobody knows what the question is. According to the protagonist Prak, the knowledge of question and answer is mutually exclusive. It is impossible to ever know both of them in the same universe - and if it does happen, questions and answers will be mutually canceled and the universe will be taken, which will then be replaced by something even more bizarre and incomprehensible. Some believe this has already happened&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;42 is thus the meaning of life, and the answer to everything. This can then be interpreted differently: everything is the meaning of life, or that life makes no sense. However, each one has to answer for himself.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker Camp - Bee 42</title>
+      <link>http://dev.agentur-aufgeweckt.de/bee42/docker-camp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://dev.agentur-aufgeweckt.de/bee42/docker-camp/</guid>
       <description>
 
 &lt;h2 id=&#34;three-days-training-br-dates-every-month-in-essen-germany&#34;&gt;Three days training &lt;br&gt; Dates every month in Essen, Germany.&lt;/h2&gt;

@@ -2,17 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://bee42.github.io/</loc>
+    <loc>http://dev.agentur-aufgeweckt.de/bee42/</loc>
     <lastmod>2016-12-04T19:26:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bee42.github.io/Imprint/</loc>
+    <loc>http://dev.agentur-aufgeweckt.de/bee42/Imprint/</loc>
     <lastmod>2016-12-04T19:26:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bee42.github.io/docker-camp/</loc>
+    <loc>http://dev.agentur-aufgeweckt.de/bee42/42/</loc>
+  </url>
+  
+  <url>
+    <loc>http://dev.agentur-aufgeweckt.de/bee42/docker-camp/</loc>
   </url>
   
 </urlset>
