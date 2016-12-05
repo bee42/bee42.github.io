@@ -5,7 +5,7 @@ $(document).ready(function(){
 // cover navigation on scroll with bg color
 $(window).scroll(function() {
 	var scroll = $(this).scrollTop();
-	if(scroll > $('header').outerHeight() - 200) {
+	if(scroll > 50) {
 		$('.navigation').addClass('covered');
 		}	
 		else {
