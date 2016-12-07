@@ -174,7 +174,7 @@ Germany&lt;/p&gt;
 
 &lt;p&gt;We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to delivery your images to your systems. We discuss how your can trigger your builds, create good docker images and ship the images to your docker registry.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page&#34;&gt;Book now&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;
 &lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;day-one-br-gitlab-ci-basics&#34;&gt;Day one: &lt;br&gt;GitLab/CI basics&lt;/h2&gt;
@@ -228,7 +228,7 @@ Germany&lt;/p&gt;
 &lt;li&gt;Scaling your CI/CD Pipeline&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
