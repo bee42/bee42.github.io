@@ -20,6 +20,39 @@ $('.accordion .acc-title').click(function(){
 });
 
 
+// open form
+$('.open-form').each(function(){
+	var getForm = $(this).data('form');
+ 	
+ 	$(this).click(function(){
+ 		$('.form-container').fadeIn();
+ 		$('.overlay').fadeIn();
+ 		return false;	
+ 	});
+	console.log(getForm);
+});
+
+// Close form
+$('.close').click(function(){
+	$(this).parent().parent().fadeOut();
+	$('.overlay').fadeOut();
+	$('body').css({'overflow': 'scroll'});
+      $('.form-container').animate({
+       	scrollTop : 0
+       });
+});
+
+// form validation
+$(function(){
+	$('form').validate({
+	});
+
+	$.extend($.validator.messages, {
+		required: "This filed is required"
+	});
+}); 
+
+
 // Scroll To (anchor)
 $('a').click(function(){
 	$('html, body').animate({
@@ -27,7 +60,6 @@ $('a').click(function(){
 	}, 1000);
 	return false;
 });	
-
 
 
 // foundation inits

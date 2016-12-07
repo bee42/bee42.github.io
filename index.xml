@@ -71,7 +71,7 @@ Germany&lt;/p&gt;
 
 &lt;p&gt;This camp provides you with the Docker basics in comprehensible steps and puts you in the position subsequently to decide whether and how Docker is useful in your business and IT context.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page&#34;&gt;Book now&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;
 &lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;day-one-br-docker-basics&#34;&gt;Day one: &lt;br&gt;Docker basics&lt;/h2&gt;
@@ -156,7 +156,7 @@ Germany&lt;/p&gt;
 &lt;li&gt;Docker on ARM&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -229,6 +229,42 @@ Germany&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms of conditions</title>
+      <link>https://bee42.github.io/terms-and-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.github.io/terms-and-conditions/</guid>
+      <description>
+
+&lt;h2 id=&#34;terms-of-conditions&#34;&gt;Terms of conditions&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae minus possimus pariatur ab officiis quibusdam in eveniet porro. Delectus voluptas vero, minus autem. Delectus eaque quisquam itaque libero, culpa tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius harum quo fuga veritatis eum neque enim, sit nesciunt ratione velit, eveniet quae sapiente quas qui sunt autem repudiandae sequi quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae minus possimus pariatur ab officiis quibusdam in eveniet porro. Delectus voluptas vero, minus autem. Delectus eaque quisquam itaque libero, culpa tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius harum quo fuga veritatis eum neque enim, sit nesciunt ratione velit, eveniet quae sapiente quas qui sunt autem repudiandae sequi quaerat.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae minus possimus pariatur ab officiis quibusdam in eveniet porro. Delectus voluptas vero, minus autem. Delectus eaque quisquam itaque libero, culpa tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius harum quo fuga veritatis eum neque enim, sit nesciunt ratione velit, eveniet quae sapiente quas qui sunt autem repudiandae sequi quaerat.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae minus possimus pariatur ab officiis quibusdam in eveniet porro. Delectus voluptas vero, minus autem. Delectus eaque quisquam itaque libero, culpa tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius harum quo fuga veritatis eum neque enim, sit nesciunt ratione velit, eveniet quae sapiente quas qui sunt autem repudiandae sequi quaerat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae minus possimus pariatur ab officiis quibusdam in eveniet porro. Delectus voluptas vero, minus autem. Delectus eaque quisquam itaque libero, culpa tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius harum quo fuga veritatis eum neque enim, sit nesciunt ratione velit, eveniet quae sapiente quas qui sunt autem repudiandae sequi quaerat.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thank you for your booking - bee42</title>
+      <link>https://bee42.github.io/thanks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.github.io/thanks/</guid>
+      <description>
+
+&lt;h2 id=&#34;thanks-for-your-reservation&#34;&gt;Thanks for your  reservation.&lt;/h2&gt;
+
+&lt;h3 id=&#34;we-ll-inform-you-immediately&#34;&gt;We&amp;rsquo;ll inform you immediately.&lt;/h3&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum sit molestias debitis? Nostrum a quas aspernatur laudantium libero et perspiciatis perferendis illum recusandae aut, ipsa commodi repellendus earum iure? Est?&lt;/p&gt;
+
+&lt;p&gt;&lt;a  class=&#34;more page&#34; href=&#34;https://bee42.github.io/index.html&#34;&gt;back to hompage&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

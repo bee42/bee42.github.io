@@ -12,7 +12,7 @@
 	<link rel="apple-touch-icon" sizes="64x64" href="images/apple-touch-icon.png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://bee42.github.io/css/main-815f8e44.css" />
+	<link rel="stylesheet" href="https://bee42.github.io/css/main-b51757b2.css" />
 </head>
 
 <body>
@@ -78,9 +78,75 @@ Phone +49(0)157-72 54 92 63</p>
 <p>Peter Rossbach (Geschäftsführer)<br>
 Am Josephsschacht 72<br>
 D-44879 Bochum<br>
-Germany
+Germany    
       </section> 
 </section>
+
+ <section class="form-container">
+	
+
+<form method="POST" action="https://formspree.io/froemmgen@agentur-aufgeweckt.de">
+	<input type="hidden" name="_next" value="/thanks/" />
+	<input type="hidden" name="_subject" value="Reservation" />
+	<button class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+	<div class="small-12 medium-12 large-12 columns">
+		<h2>Training Title</h2>
+		<p class="price">Price 1.200€ <span>plus VAT</span></p>
+	</div>
+	<div class="small-12 medium-12 large-12 columns"><label>Company:</label><input type="text" placeholder="Company *" name="Company" required /></div>
+	
+	<div class="small-12 medium-4 large-4 columns"><label>Title</label>
+		<select name="Title" size="1">
+			<option>Title</option>
+			<option>Mr.</option>
+			<option>Mrs.</option>
+		</select>
+	</div>	
+
+	<div class="small-12 medium-4 large-4 columns"><label>Name:</label><input type="text"  placeholder="Name *" name="Name" required></div>
+	<div class="small-12 medium-4 large-4 columns"><label>Lastnane:</label><input type="text" placeholder="Lastnane *" name="Lastname" required></div>
+	<div class="small-12 medium-4 large-4 columns"><label>Street:</label><input type="text" placeholder="Street *" name="Street" required="" /></div>
+	<div class="small-12 medium-4 large-4 columns"><label>Zip:</label><input type="text" placeholder="Zip '" name="Zip" size="5" maxlength="5" required></div>
+	<div class="small-12 medium-4 large-4 columns"><label>City:</label><input type="text" placeholder="City *" name="City" required></div>
+	<div class="small-12 medium-12 large-6 columns"><label>Email:</label><input type="email" placeholder="Email *" name="Email" required></div>
+	<div class="small-12 medium-12 large-6 columns"><label>Phone:</label><input type="text" placeholder="Phone *" name="Phone" required></div>
+	
+	<div class="small-12 medium-4 large-4 columns">
+		<select  name="Date" size="1" required>
+			<option value="Event">Select an event</option>
+			
+				<option value="DevOps Docker Camp - Every month"> DevOps Docker Camp - Every month</option>
+			
+				<option value="GitLab/CI for Docker Image Creators - Every quartal"> GitLab/CI for Docker Image Creators - Every quartal</option>
+			
+				<option value="Invite DevOps - 2017/03/24-25"> Invite DevOps - 2017/03/24-25</option>
+			
+				<option value="Docker Microservice monitoring with Prometheus und Grafana - Every quartal"> Docker Microservice monitoring with Prometheus und Grafana - Every quartal</option>
+			
+		</select>
+	</div>
+
+
+
+
+	<div class="small-12 medium-4 large-4 columns"><label>Discount Code:</label><input type="text" name="Discount" placeholder="Discount Code"></div>
+	<div class="small-12 medium-4 large-4 columns"><label>Participants:</label><input type="number" placeholder="Participants *" name="Participants" min="1" max="10" required></div>
+
+	<div class="small-12 medium-6 large-6 columns push">
+		<input class="agb" type="checkbox" name="terms-of-conditions" id="agb" value="yes" required />
+		<label class="show" for="agb">I accept the terms in the <a href="/terms-and-conditions/">License Agreement.</a></label>
+	</div>	
+
+	<div class="small-12 medium-6 large-6 columns">
+		<input type="text" name="_gotcha" style="display:none" />
+		<input type="submit" value="Send" />
+	</div>
+
+</form>
+   
+</section>   
+
+<div class="overlay"></div>
 
 					<footer>
 						<section class="content-box">
@@ -99,6 +165,7 @@ Germany
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/edd03c05ea.js"></script>
 	<script src="https://bee42.github.io/js/foundation.min.js"></script>
+	<script src="https://bee42.github.io/js/jquery.validate.min.js"></script>
 	<script src="https://bee42.github.io/js/main.js"></script>
 
 	</body>
