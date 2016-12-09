@@ -3,7 +3,7 @@
 <html lang="en-us">
 
 <head>
-	<title>Docker Camp - Bee 42</title>
+	<title>Docker Microservices Monitoring  - Bee 42</title>
 	<meta charset="UTF-8">
 	
 	<meta name="description" content="">
@@ -60,100 +60,87 @@
 		<main>
  <section class="page-content">
        <section class="content-box">
-              <h2 id="three-days-training-br-dates-every-month-in-essen-germany">Three days training <br> Dates every month in Essen, Germany.</h2>
+              <h2 id="two-days-training-br-dates-every-quartal-in-essen-germany">Two days training <br> Dates every quartal in Essen, Germany.</h2>
 
-<p>Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Camp we want to pursue this promise.</p>
+<p>Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. We developer love Docker and deploy the microservices on it.</p>
 
-<p>We start with an overview and introduce the first steps with the use of Docker. You will get to know the most important commands, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, install with Docker, and integrate with other services in an environment. We also discuss the current Docker ecosystem and clarify opportunities and risks.</p>
+<p>Nice, but developer and operator must be control the real usage of the system. This is a complex, but useful task at your daily work. At this training you learn to setup Prometheus to grab your metrics from system and services. Prometheus uses a time series database featuring a powerful query language with integrated complex mathematical functions. With Grafana your can create your own dashboards to visualize your metrics. Alerts can be sent both via traditional channels such as email, or integrated with chat systems such as Slack.</p>
 
-<p>This camp provides you with the Docker basics in comprehensible steps and puts you in the position subsequently to decide whether and how Docker is useful in your business and IT context.</p>
+<p>Prometheus was originally developed by SoundCloud and is now under the umbrella of the Cloud Native Computing Foundation, which is a sub-project of the Linux Foundation.</p>
 
-<p><a href="#" class="more page open-form" data-form="docker-camp">Book now</a>
+<p>In this training, participants will learn the basic concepts of Prometheus and Grafana, it’s architecture, how it can be deployed with docker. Participants will also learn how to build dashboards and set up alerts.</p>
+
+<p><a href="#" class="more page open-form">Book now</a>
 <div class="clearfix"></div></p>
 
-<h2 id="day-one-br-docker-basics">Day one: <br>Docker basics</h2>
+<h2 id="day-one-br-docker-service-monitoring-basics">Day one: <br>Docker Service Monitoring basics</h2>
 
 <h3 id="installation">Installation</h3>
 
 <ul>
-<li>Docker Basics and Installation</li>
-<li>Container Technology Basics</li>
-<li>Kernel- vs Classical- Virtualization</li>
-<li>Architecture of Docker</li>
-<li>Use Cases and more</li>
-<li>Setup your docker environment</li>
-<li>Images, Container and Registry</li>
+<li>Create a simple java based microservice</li>
+<li>Overview of prometheus and grafana</li>
+<li>Monitor your docker based microservice</li>
 </ul>
 
-<h3 id="simple-usage">Simple Usage</h3>
+<h3 id="details-prometheus">Details Prometheus</h3>
 
 <ul>
-<li>Let&rsquo;s container run, stop, maintain</li>
-<li>Docker CLI command overview</li>
-<li>Build your own Images with Dockerfiles</li>
-<li>Build, ship and run Cycle</li>
-<li>Docker Tooling</li>
-<li>Volume Management</li>
-<li>Network Management</li>
-<li>Logging and Metrics</li>
-<li>Backup/Restore</li>
-<li>Container Types</li>
+<li>How it works</li>
+<li>Configuration</li>
+<li>Types of sensors</li>
+<li>Add sensors to your code</li>
+<li>Create metrics endpoints</li>
+<li>Work with PromQL</li>
+<li>Label your metrics right</li>
 </ul>
 
-<h2 id="day-two-br-create-microservices-with-docker">Day two: <br> Create microservices with Docker</h2>
+<h3 id="details-grafana">Details Grafana</h3>
+
+<ul>
+<li>How it works</li>
+<li>Configuration</li>
+<li>Setup Dashboards</li>
+<li>Work with Prometheus and Grafana</li>
+</ul>
+
+<h2 id="day-two-br-application-and-node-monitoring">Day two: <br> Application and Node Monitoring</h2>
 
 <h3 id="microservices">Microservices</h3>
 
 <ul>
-<li>Think infrastructure first</li>
-<li>Create a simple Spring Boot App</li>
-<li>Build your Toolchain: Java and Maven</li>
-<li>Docker for Java Developers</li>
-<li>Create Database Container</li>
-<li>Empower your Development</li>
-</ul>
-
-<h3 id="infrastructure">Infrastructure</h3>
+<li>Setup a small Docker cluster</li>
+<li>Monitor your microservices</li>
+<li>Use different exporters
 
 <ul>
-<li>Build your own Microservice infrastructure</li>
-<li>Create a simple build pipeline</li>
-<li>Use Service Discovery</li>
-<li>Create Multi Host Networks</li>
-<li>Learn more Docker Tricks</li>
-</ul>
-
-<h2 id="day-three-br-scale-your-service-with-docker-swarming">Day three: <br> Scale your service with Docker Swarming</h2>
-
-<h3 id="swarming">Swarming</h3>
-
-<ul>
-<li>Scale your services with docker swarming mode</li>
-<li>Update, Failure detection and redeployment</li>
-<li>Mesh Network and Service Discovery</li>
-<li>Setup a ingress loadbalancer (traefik, haproxy, nginx)</li>
-<li>Setup logging and monitoring systems
-
-<ul>
-<li>ELK-Stack</li>
-<li>Prometheus and Grafana</li>
+<li>Machines</li>
+<li>Containers</li>
+<li>Services</li>
 </ul></li>
-<li>Debug your Container</li>
+<li>Use multiple scrapers</li>
+<li>Learn use the right metrics</li>
 </ul>
 
-<h3 id="go-to-production">Go to production</h3>
+<h3 id="setup-more-complex-examples">Setup more complex examples</h3>
 
 <ul>
-<li>Docker for production</li>
-<li>Build high quality images</li>
-<li>Docker Security Basics</li>
-<li>Plugins</li>
-<li>Usage tricks</li>
-<li>Review Best Practices</li>
-<li>Docker on ARM</li>
+<li>Setup complex dashboards with Grafana</li>
+<li>Use Prometheus for monitoring batch jobs</li>
+<li>Use the Prometheus Alertmanager</li>
+<li>Look into more advanced examples</li>
 </ul>
 
-<p><a href="#" class="more page open-form" data-form="docker-camp">Book now</a>    
+<h3 id="tipps-and-tricks">Tipps and Tricks</h3>
+
+<ul>
+<li>Go to productions</li>
+<li>Federate your Prometheus services</li>
+<li>Upgrade your monitoring systems</li>
+<li>Backup/Restore</li>
+</ul>
+
+<p><a href="#" class="more page open-form">Book now</a>    
       </section> 
 </section>
 
