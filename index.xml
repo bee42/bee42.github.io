@@ -56,6 +56,147 @@ Germany&lt;/p&gt;
     </item>
     
     <item>
+      <title>DevOps for Friends - Docker Birthday</title>
+      <link>https://bee42.github.io/devops4friends-docker_birthday_cfp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.github.io/devops4friends-docker_birthday_cfp/</guid>
+      <description>
+
+&lt;h2 id=&#34;fourth-docker-birthday-talks-at-bochum&#34;&gt;Fourth Docker Birthday Talks at Bochum&lt;/h2&gt;
+
+&lt;p&gt;Dear Friends and Speakers of Docker!&lt;/p&gt;
+
+&lt;p&gt;Inspire the people: though the first edition of DevOps4Friends Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March.&lt;/p&gt;
+
+&lt;p&gt;Those, who have celebrate a docker birthday are very welcome, who hasn&amp;rsquo;t heard of this, please come and lets dance. The DevOps4Friends Conference format give you the chance to stay in touch with other people that like cooperation and infrastructure technology. Technical topics have a home as well topics on innovative company culture.&lt;/p&gt;
+
+&lt;p&gt;In any case, we are looking forward to proposals with practical relevance – ideally based on project experiences or real technical inspiration.&lt;/p&gt;
+
+&lt;p&gt;As usual, we would like to invite you to submit your proposals for sessions and workshops for the March conference considering the following tracks:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker Orchestration&lt;/li&gt;
+&lt;li&gt;Docker Security&lt;/li&gt;
+&lt;li&gt;Docker Networking&lt;/li&gt;
+&lt;li&gt;Docker for Microservices&lt;/li&gt;
+&lt;li&gt;Docker at Windows or ARM&lt;/li&gt;
+&lt;li&gt;Docker for Java or Go Developer&lt;/li&gt;
+&lt;li&gt;Stateful Container&lt;/li&gt;
+&lt;li&gt;Provisioning&lt;/li&gt;
+&lt;li&gt;Continuous Integration and Delivery&lt;/li&gt;
+&lt;li&gt;Cloud&lt;/li&gt;
+&lt;li&gt;Logging &amp;amp; Monitoring&lt;/li&gt;
+&lt;li&gt;Container Technologies&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Date: 24 – 25 March, 2017&lt;/p&gt;
+
+&lt;p&gt;Location: GData Campus Bochum&lt;/p&gt;
+
+&lt;p&gt;Deadline for submissions: January 23, 2017&lt;/p&gt;
+
+&lt;p&gt;You can offer us  45 minutes talks or 10 minutes lightning stories or tech speeches.&lt;/p&gt;
+
+&lt;p&gt;At 25.3 we plan a Docker Expert OpenSpace and you can discuss the hottest docker container or ecosystem topics.&lt;/p&gt;
+
+&lt;p&gt;Submit your papers here: callforpapers.bee42.com&lt;/p&gt;
+
+&lt;p&gt;We are looking forward to your comprehensive feedback as well as your questions, suggestions and discussions.&lt;/p&gt;
+
+&lt;p&gt;We wish you a peaceful docker winter!
+We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;The bee42 Conference Crew&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DevOps for Friends - Docker Labs</title>
+      <link>https://bee42.github.io/devops4friends-docker_labs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.github.io/devops4friends-docker_labs/</guid>
+      <description>
+
+&lt;h2 id=&#34;docker-labs-at-bochum&#34;&gt;Docker Labs at Bochum&lt;/h2&gt;
+
+&lt;p&gt;Dear Friends of Docker!&lt;/p&gt;
+
+&lt;p&gt;Inspire the people: though the first edition of DevOps4Friends Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March. But we can offer you today some interesting 23.3.2017 half day labs. Prepare you self with useful information and tips from the docker experts&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker on ARM
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Dieter Reuter &amp;amp;&amp;amp; Niclas Mietz&lt;/li&gt;
+&lt;li&gt;Overview of Docker on ARM&lt;/li&gt;
+&lt;li&gt;Check your docker tools for ARM&lt;/li&gt;
+&lt;li&gt;Build Docker Images on ARM&lt;/li&gt;
+&lt;li&gt;Setup an IoT Project on ARM - Blink!&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Docker for Windows
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Dieter Reuter &amp;amp;&amp;amp; Stefan Scherer&lt;/li&gt;
+&lt;li&gt;Setup Windows Docker Container&lt;/li&gt;
+&lt;li&gt;Size your images&lt;/li&gt;
+&lt;li&gt;Package windows service into a container&lt;/li&gt;
+&lt;li&gt;Hack Around with windows container&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Docker Container at the EC2 Cloud
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;_: Sascha Möllering&lt;/li&gt;
+&lt;li&gt;Overview of ECS&lt;/li&gt;
+&lt;li&gt;Deploy your container to ECS&lt;/li&gt;
+&lt;li&gt;Use the AWS Autoloadbalancer&lt;/li&gt;
+&lt;li&gt;Setup and prepare Network&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Docker Orchestration with swarming mode
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;_: Peter Rossbach&lt;/li&gt;
+&lt;li&gt;Learn Swarming Mode Basics&lt;/li&gt;
+&lt;li&gt;Setup a Swarm Cluster&lt;/li&gt;
+&lt;li&gt;Prepare your Images&lt;/li&gt;
+&lt;li&gt;Rolling your services forward&lt;/li&gt;
+&lt;li&gt;Network, Port Publishing and Loadbalancing&lt;/li&gt;
+&lt;li&gt;Service Discovery&lt;/li&gt;
+&lt;li&gt;Orchestration&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Docker for Java Developers
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;_: Peter Rossbach &amp;amp;&amp;amp; Roland Huss&lt;/li&gt;
+&lt;li&gt;Create your java images with Maven&lt;/li&gt;
+&lt;li&gt;Use an IDE with docker&lt;/li&gt;
+&lt;li&gt;Setup integration test&lt;/li&gt;
+&lt;li&gt;Optimize your java base images&lt;/li&gt;
+&lt;li&gt;How you can run your container with resource constraints?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Prepare your docker images with Gitlab/CI
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;_: Niclas Mietz&lt;/li&gt;
+&lt;li&gt;Setup your own GITLab/CI for your team&lt;/li&gt;
+&lt;li&gt;Create your own docker images producing pipeline&lt;/li&gt;
+&lt;li&gt;Test and validate your containers&lt;/li&gt;
+&lt;li&gt;Create and use runners&lt;/li&gt;
+&lt;li&gt;Build good docker images&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;: Order formular&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;We wish you a peaceful docker winter!
+We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;The bee42 Conference Crew&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Docker Camp - Bee 42</title>
       <link>https://bee42.github.io/docker-camp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -321,57 +462,6 @@ Germany&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Invite DevOps - Docker Birthday</title>
-      <link>https://bee42.github.io/invite_devops-docker-birthday/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bee42.github.io/invite_devops-docker-birthday/</guid>
-      <description>
-
-&lt;h2 id=&#34;fourth-docker-birthday-talks-at-bochum&#34;&gt;Fourth Docker Birthday Talks at Bochum&lt;/h2&gt;
-
-&lt;p&gt;Dear Friends and Speakers of Docker!&lt;/p&gt;
-
-&lt;p&gt;Inspire the people: though the first edition of Invite DevOps Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March.&lt;/p&gt;
-
-&lt;p&gt;Those, who have celebrate a docker birthday are very welcome, who hasn&amp;rsquo;t heard of this, please come and lets dance. The Invite DevOps Conference format give you the chance to stay in touch with other people that like cooperation and infrastructure technology. Technical topics have a home as well topics on innovative company culture.&lt;/p&gt;
-
-&lt;p&gt;In any case, we are looking forward to proposals with practical relevance – ideally based on project experiences or real technical inspiration.&lt;/p&gt;
-
-&lt;p&gt;As usual, we would like to invite you to submit your proposals for sessions and workshops for the March conference considering the following tracks:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Docker Orchestration&lt;/li&gt;
-&lt;li&gt;Docker Security&lt;/li&gt;
-&lt;li&gt;Docker Networking&lt;/li&gt;
-&lt;li&gt;Docker for Microservices&lt;/li&gt;
-&lt;li&gt;Docker at Windows or ARM&lt;/li&gt;
-&lt;li&gt;Docker for Java or Go Developer&lt;/li&gt;
-&lt;li&gt;Stateful Container&lt;/li&gt;
-&lt;li&gt;Provisioning&lt;/li&gt;
-&lt;li&gt;Continuous Integration and Delivery&lt;/li&gt;
-&lt;li&gt;Cloud&lt;/li&gt;
-&lt;li&gt;Logging &amp;amp; Monitoring&lt;/li&gt;
-&lt;li&gt;Container Technologies&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Date: 24 – 25 March, 2017&lt;/p&gt;
-
-&lt;p&gt;Location: GData Campus Bochum&lt;/p&gt;
-
-&lt;p&gt;Deadline for submissions: January 23, 2017&lt;/p&gt;
-
-&lt;p&gt;Submit your papers here: callforpapers.bee42.com&lt;/p&gt;
-
-&lt;p&gt;We are looking forward to your comprehensive feedback as well as your questions, suggestions and discussions.&lt;/p&gt;
-
-&lt;p&gt;We wish you a peaceful winter!&lt;/p&gt;
-
-&lt;p&gt;The bee42 Conference Crew&lt;/p&gt;
 </description>
     </item>
     

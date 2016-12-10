@@ -16,6 +16,14 @@
   </url>
   
   <url>
+    <loc>https://bee42.github.io/devops4friends-docker_birthday_cfp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bee42.github.io/devops4friends-docker_labs/</loc>
+  </url>
+  
+  <url>
     <loc>https://bee42.github.io/docker-camp/</loc>
   </url>
   
@@ -25,10 +33,6 @@
   
   <url>
     <loc>https://bee42.github.io/gitlab-ci4docker/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bee42.github.io/invite_devops-docker-birthday/</loc>
   </url>
   
   <url>
