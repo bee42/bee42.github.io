@@ -403,62 +403,72 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 
 &lt;h2 id=&#34;two-days-training-br-dates-every-quartal-in-essen-germany&#34;&gt;Two days training &lt;br&gt; Dates every quartal in Essen, Germany.&lt;/h2&gt;
 
-&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but developer and operator must be setup there automation to build, test and deliver docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for docker images.&lt;/p&gt;
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for docker images.&lt;/p&gt;
 
-&lt;p&gt;We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to delivery your images to your systems. We discuss how your can trigger your builds, create good docker images and ship the images to your docker registry.&lt;/p&gt;
+&lt;p&gt;We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to deliver your image to your environment. Also we want to discuss how your can trigger your builds, make good docker images and ship images to your docker registry.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;
 &lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;day-one-br-gitlab-ci-basics&#34;&gt;Day one: &lt;br&gt;GitLab/CI basics&lt;/h2&gt;
 
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;GitLab/CI Basics and Installation&lt;/li&gt;
-&lt;li&gt;Setup the different GitLab components&lt;/li&gt;
+&lt;li&gt;What is GitLab and what isn&amp;rsquo;t it ?&lt;/li&gt;
+&lt;li&gt;Installation of GitLab Instance&lt;/li&gt;
+&lt;li&gt;Overview of the GitLab Architecture&lt;/li&gt;
+&lt;li&gt;Detailed overview about the GitLab components&lt;/li&gt;
+&lt;li&gt;Setup the various GitLab components&lt;/li&gt;
 &lt;li&gt;GitLab UI overview&lt;/li&gt;
 &lt;li&gt;Checkin a simple project&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;simple-usage&#34;&gt;Simple Usage&lt;/h3&gt;
+&lt;h3 id=&#34;workflow-with-your-images-from-gitlab&#34;&gt;Workflow with your Images from GitLab&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Let&amp;rsquo;s images build, test and push to registry&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s build and test docker images&lt;/li&gt;
+&lt;li&gt;Push your successfully builded images to registry&lt;/li&gt;
 &lt;li&gt;Build your own Images with Dockerfiles&lt;/li&gt;
-&lt;li&gt;Build, ship and run cycle&lt;/li&gt;
-&lt;li&gt;Create your own runners
+&lt;li&gt;Create your own GitLab Runners of different types
 
 &lt;ul&gt;
-&lt;li&gt;Docker in Docker&lt;/li&gt;
+&lt;li&gt;Shell&lt;/li&gt;
+&lt;li&gt;Docker&lt;/li&gt;
 &lt;li&gt;Docker machine&lt;/li&gt;
-&lt;li&gt;KVM&lt;/li&gt;
 &lt;li&gt;SSH&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Logging and Metrics&lt;/li&gt;
-&lt;li&gt;Backup/Restore&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;day-two-br-test-and-ship-a-microservices-with-docker-and-gitlab-ci&#34;&gt;Day two: &lt;br&gt; Test and Ship a microservices with Docker and GitLab/CI&lt;/h2&gt;
+&lt;h3 id=&#34;listen-to-your-gitlab-infratstructure&#34;&gt;Listen to your GitLab Infratstructure&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Logging and Monitoring for your GitLab Infrastructure&lt;/li&gt;
+&lt;li&gt;Backup and Restore your Images from GitLab&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-two-br-ship-a-tested-microservice-with-docker-and-gitlab&#34;&gt;Day two: &lt;br&gt; Ship a tested microservice with Docker and GitLab&lt;/h2&gt;
 
 &lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Create a simple Spring Boot App&lt;/li&gt;
-&lt;li&gt;Build your Toolchain: Java and Maven&lt;/li&gt;
-&lt;li&gt;Docker for Java Developers&lt;/li&gt;
-&lt;li&gt;Setup Runners&lt;/li&gt;
-&lt;li&gt;Empower your Development&lt;/li&gt;
-&lt;li&gt;Build good Docker Images&lt;/li&gt;
+&lt;li&gt;Create a simple Spring Boot Application&lt;/li&gt;
+&lt;li&gt;Build your Toolchain for Application Development (Java and Maven)&lt;/li&gt;
+&lt;li&gt;Empower your Application Development with Docker&lt;/li&gt;
+&lt;li&gt;Distribute your Microservice in a &lt;strong&gt;neat Dockerfile&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Ship your Microservice to a production like System with Delivery Concept&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;gitlab-ci-tipps-and-tricks&#34;&gt;GitLab/CI Tipps and Tricks&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Go to productions&lt;/li&gt;
-&lt;li&gt;Update your Installation&lt;/li&gt;
-&lt;li&gt;Backup/Restore&lt;/li&gt;
-&lt;li&gt;Scaling your CI/CD Pipeline&lt;/li&gt;
+&lt;li&gt;Maintain your GitLab with a few steps for
+
+&lt;ul&gt;
+&lt;li&gt;Updating your Installation&lt;/li&gt;
+&lt;li&gt;Backup and Restore your Installation&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Scale your CI CD Pipeline with different concepts&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
