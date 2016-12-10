@@ -56,20 +56,20 @@ Germany&lt;/p&gt;
     </item>
     
     <item>
-      <title>DevOps for Friends - Docker Birthday</title>
-      <link>https://bee42.github.io/devops4friends-docker_birthday_cfp/</link>
+      <title>DevOps Gathering - Docker Birthday</title>
+      <link>https://bee42.github.io/devops_gathering-docker_birthday-cfp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/devops4friends-docker_birthday_cfp/</guid>
+      <guid>https://bee42.github.io/devops_gathering-docker_birthday-cfp/</guid>
       <description>
 
 &lt;h2 id=&#34;fourth-docker-birthday-talks-at-bochum&#34;&gt;Fourth Docker Birthday Talks at Bochum&lt;/h2&gt;
 
 &lt;p&gt;Dear Friends and Speakers of Docker!&lt;/p&gt;
 
-&lt;p&gt;Inspire the people: though the first edition of DevOps4Friends Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March.&lt;/p&gt;
+&lt;p&gt;Inspire the people: though the first edition of DevOps Gathering Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March.&lt;/p&gt;
 
-&lt;p&gt;Those, who have celebrate a docker birthday are very welcome, who hasn&amp;rsquo;t heard of this, please come and lets dance. The DevOps4Friends Conference format give you the chance to stay in touch with other people that like cooperation and infrastructure technology. Technical topics have a home as well topics on innovative company culture.&lt;/p&gt;
+&lt;p&gt;Those, who have celebrate a docker birthday are very welcome, who hasn&amp;rsquo;t heard of this, please come and lets dance. The DevOps Gathering Conference format give you the chance to stay in touch with other people that like cooperation and infrastructure technology. Technical topics have a home as well topics on innovative company culture.&lt;/p&gt;
 
 &lt;p&gt;In any case, we are looking forward to proposals with practical relevance – ideally based on project experiences or real technical inspiration.&lt;/p&gt;
 
@@ -112,18 +112,18 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
     </item>
     
     <item>
-      <title>DevOps for Friends - Docker Labs</title>
-      <link>https://bee42.github.io/devops4friends-docker_labs/</link>
+      <title>DevOps Gathering - Docker Labs</title>
+      <link>https://bee42.github.io/devops_gathering-docker_labs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/devops4friends-docker_labs/</guid>
+      <guid>https://bee42.github.io/devops_gathering-docker_labs/</guid>
       <description>
 
 &lt;h2 id=&#34;docker-labs-at-bochum&#34;&gt;Docker Labs at Bochum&lt;/h2&gt;
 
 &lt;p&gt;Dear Friends of Docker!&lt;/p&gt;
 
-&lt;p&gt;Inspire the people: though the first edition of DevOps4Friends Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March. But we can offer you today some interesting 23.3.2017 half day labs. Prepare you self with useful information and tips from the docker experts&lt;/p&gt;
+&lt;p&gt;Inspire the people: though the first edition of DevOps Gathering Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March. But we can offer you today some interesting 23.3.2017 half day labs. Prepare you self with useful information and tips from the docker experts&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Docker on ARM
@@ -139,15 +139,16 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Dieter Reuter &amp;amp;&amp;amp; Stefan Scherer&lt;/li&gt;
-&lt;li&gt;Setup Windows Docker Container&lt;/li&gt;
+&lt;li&gt;Setup Windows Docker Container at Windows Server 2016&lt;/li&gt;
 &lt;li&gt;Size your images&lt;/li&gt;
 &lt;li&gt;Package windows service into a container&lt;/li&gt;
 &lt;li&gt;Hack Around with windows container&lt;/li&gt;
+&lt;li&gt;Review at a real example&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Docker Container at the EC2 Cloud
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;_: Sascha Möllering&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Sascha Möllering&lt;/li&gt;
 &lt;li&gt;Overview of ECS&lt;/li&gt;
 &lt;li&gt;Deploy your container to ECS&lt;/li&gt;
 &lt;li&gt;Use the AWS Autoloadbalancer&lt;/li&gt;
@@ -156,7 +157,7 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;li&gt;Docker Orchestration with swarming mode
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;_: Peter Rossbach&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Peter Rossbach&lt;/li&gt;
 &lt;li&gt;Learn Swarming Mode Basics&lt;/li&gt;
 &lt;li&gt;Setup a Swarm Cluster&lt;/li&gt;
 &lt;li&gt;Prepare your Images&lt;/li&gt;
@@ -168,7 +169,7 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;li&gt;Docker for Java Developers
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;_: Peter Rossbach &amp;amp;&amp;amp; Roland Huss&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Roland Huss&lt;/li&gt;
 &lt;li&gt;Create your java images with Maven&lt;/li&gt;
 &lt;li&gt;Use an IDE with docker&lt;/li&gt;
 &lt;li&gt;Setup integration test&lt;/li&gt;
@@ -178,7 +179,7 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;li&gt;Prepare your docker images with Gitlab/CI
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;_: Niclas Mietz&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Niclas Mietz&lt;/li&gt;
 &lt;li&gt;Setup your own GITLab/CI for your team&lt;/li&gt;
 &lt;li&gt;Create your own docker images producing pipeline&lt;/li&gt;
 &lt;li&gt;Test and validate your containers&lt;/li&gt;
@@ -187,10 +188,12 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;: Order formular&amp;hellip;&lt;/p&gt;
-
 &lt;p&gt;We wish you a peaceful docker winter!
 We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-labs&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;The bee42 Conference Crew&lt;/p&gt;
 </description>
