@@ -45,8 +45,59 @@ $(document).ready(function(){
 			scrollTop: $( $(this).attr('href') ).offset().top - $('nav.navigation').outerHeight()
 		}, 1000);
 		return false;
-	});		
-});
+	});
+
+	// init slick slider for tranings and conferences teaser
+	$('.slick-trainings').slick({
+		dots: true,
+		infinite: true,
+		autoplay: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false,
+
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
+	// init slick slider for tranings and conferences teaser
+	$('.slick-conferences').slick({
+		dots: true,
+		infinite: true,
+		autoplay: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false,
+
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});	
+
+});  // End of document.ready
 
 // cover navigation on scroll with bg color
 $(window).scroll(function() {
@@ -61,5 +112,4 @@ $(window).scroll(function() {
 
 // foundation inits
 $(document).foundation();
-
 	new Foundation.OffCanvas($('#offCanvasRight')); 
