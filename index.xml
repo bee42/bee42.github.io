@@ -17,7 +17,7 @@
       <guid>https://www.bee42.com/Imprint/</guid>
       <description>
 
-&lt;h2 id=&#34;legal-informations&#34;&gt;Legal informations&lt;/h2&gt;
+&lt;h2 id=&#34;legal-information&#34;&gt;Legal information&lt;/h2&gt;
 
 &lt;p&gt;Legal information that is necessary for a German site &lt;br/&gt;
 Information required under § 5 Para. 1 of the German Telemedia Act:&lt;/p&gt;
@@ -49,9 +49,9 @@ Germany&lt;/p&gt;
 
 &lt;h2 id=&#34;42-and-the-meaning-of-life&#34;&gt;42 … and the meaning of life&lt;/h2&gt;
 
-&lt;p&gt;42 is the answer given to the question posed by Douglas Adams in the novel &amp;ldquo;A Hitchhiker&amp;rsquo;s Guide to the Galaxy&amp;rdquo; about life, the universe and all the rest. According to this question of humanity, the answer was calculated from the largest existing computer at this time and is accurate with absolute certainty. But nothing is to be done because nobody knows what the question is. According to the protagonist Prak, the knowledge of question and answer is mutually exclusive. It is impossible to ever know both of them in the same universe - and if it does happen, questions and answers will be mutually canceled and the universe will be taken, which will then be replaced by something even more bizarre and incomprehensible. Some believe this has already happened&amp;hellip;&lt;/p&gt;
+&lt;p&gt;42 is the answer given to the question posed by Douglas Adams in the novel &amp;ldquo;A Hitchhiker&amp;rsquo;s Guide to the Galaxy&amp;rdquo; about life, the universe and everything. According to this question of humanity, the answer was calculated from the largest existing computer at the time and is accurate with absolute certainty. But nothing is to be done because nobody knows what the question is. According to the protagonist Prak, the knowledge of question and answer is mutually exclusive. It is impossible to ever know both of them in the same universe - and if it does happen, questions and answers will be mutually canceled and the universe will be taken, which will then be replaced by something even more bizarre and incomprehensible. Some believe this has already happened&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;42 is thus the meaning of life, and the answer to everything. This can then be interpreted differently: everything is the meaning of life, or that life makes no sense. However, each one has to answer for himself.&lt;/p&gt;
+&lt;p&gt;42 is thus the meaning of life, and the answer to everything. This can then be interpreted differently: everything is the meaning of life, or that life makes no sense. However, everyone has to find an answer for himself.&lt;/p&gt;
 </description>
     </item>
     
@@ -224,7 +224,7 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
 
 &lt;p&gt;Inspire the people: though the first edition of DevOps Gathering Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March.&lt;/p&gt;
 
-&lt;p&gt;Those, who have celebrate a docker birthday are very welcome, who hasn&amp;rsquo;t heard of this, please come and lets dance. The DevOps Gathering Conference format give you the chance to stay in touch with other people that like cooperation and infrastructure technology. Technical topics have a home as well topics on innovative company culture.&lt;/p&gt;
+&lt;p&gt;Those, who already have celebrated a Docker birthday, are very welcome. The others, who haven&amp;rsquo;t heard of this, please come and lets dance. The DevOps Gathering Conference format gives you the chance to stay in touch with other people that like cooperation and infrastructure technology. Technical topics have a home as well topics on innovative company culture.&lt;/p&gt;
 
 &lt;p&gt;In any case, we are looking forward to proposals with practical relevance – ideally based on project experiences or real technical inspiration.&lt;/p&gt;
 
@@ -253,13 +253,13 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
 
 &lt;p&gt;You can offer us  45 minutes talks or 10 minutes lightning stories or tech speeches.&lt;/p&gt;
 
-&lt;p&gt;At 25.3 we plan a Docker Expert OpenSpace and you can discuss the hottest docker container or ecosystem topics.&lt;/p&gt;
+&lt;p&gt;At 25.3 we plan a Docker Expert OpenSpace and you can discuss the hottest Docker container or ecosystem topics.&lt;/p&gt;
 
 &lt;p&gt;Submit your papers here: call4papers@bee42.com&lt;/p&gt;
 
 &lt;p&gt;We are looking forward to your comprehensive feedback as well as your questions, suggestions and discussions.&lt;/p&gt;
 
-&lt;p&gt;We wish you a peaceful docker winter!
+&lt;p&gt;We wish you a peaceful Docker winter!
 We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;The bee42 Conference Crew&lt;/p&gt;
@@ -278,7 +278,7 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;Dear Friends of Docker!&lt;/p&gt;
 
-&lt;p&gt;Inspire the people: though the first edition of DevOps Gathering Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March. But we can offer you today some interesting 23.3.2017 half day labs. Prepare you self with useful information and tips from the docker experts.&lt;/p&gt;
+&lt;p&gt;Inspire the people: though the first edition of DevOps Gathering Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March. But we can offer you today some interesting 23.3.2017 half-day labs. Prepare yourself with useful information and tips from the Docker experts.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Docker on ARM
@@ -343,7 +343,7 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;We wish you a peaceful docker winter!
+&lt;p&gt;We wish you a peaceful Docker winter!
 We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-labs&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
@@ -447,7 +447,7 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Docker for production&lt;/li&gt;
-&lt;li&gt;Build high quality images&lt;/li&gt;
+&lt;li&gt;Build high-quality images&lt;/li&gt;
 &lt;li&gt;Docker Security Basics&lt;/li&gt;
 &lt;li&gt;Plugins&lt;/li&gt;
 &lt;li&gt;Usage tricks&lt;/li&gt;
@@ -469,9 +469,9 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 
 &lt;h2 id=&#34;two-days-training-br-dates-every-quartal-in-essen-germany&#34;&gt;Two days training &lt;br&gt; Dates every quartal in Essen, Germany.&lt;/h2&gt;
 
-&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for docker images.&lt;/p&gt;
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver Docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for Docker images.&lt;/p&gt;
 
-&lt;p&gt;We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to deliver your image to your environment. Also we want to discuss how your can trigger your builds, make good docker images and ship images to your docker registry.&lt;/p&gt;
+&lt;p&gt;We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to deliver your image to your environment. Also we want to discuss how you can trigger your builds, make good Docker images and ship images to your Docker registry.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;
 &lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
@@ -481,21 +481,21 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;What is GitLab and what isn&amp;rsquo;t it ?&lt;/li&gt;
+&lt;li&gt;What is GitLab and what it is not ?&lt;/li&gt;
 &lt;li&gt;Installation of GitLab Instance&lt;/li&gt;
 &lt;li&gt;Overview of the GitLab Architecture&lt;/li&gt;
 &lt;li&gt;Detailed overview about the GitLab components&lt;/li&gt;
 &lt;li&gt;Setup the various GitLab components&lt;/li&gt;
 &lt;li&gt;GitLab UI overview&lt;/li&gt;
-&lt;li&gt;Checkin a simple project&lt;/li&gt;
+&lt;li&gt;Check in a simple project&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;workflow-with-your-images-from-gitlab&#34;&gt;Workflow with your Images from GitLab&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Let&amp;rsquo;s build and test docker images&lt;/li&gt;
-&lt;li&gt;Push your successfully builded images to registry&lt;/li&gt;
-&lt;li&gt;Build your own Images with Dockerfiles&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s build and test Docker images&lt;/li&gt;
+&lt;li&gt;Push your successfully built images to registry&lt;/li&gt;
+&lt;li&gt;Build your own images with Dockerfiles&lt;/li&gt;
 &lt;li&gt;Create your own GitLab Runners of different types
 
 &lt;ul&gt;
@@ -506,7 +506,7 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;listen-to-your-gitlab-infratstructure&#34;&gt;Listen to your GitLab Infratstructure&lt;/h3&gt;
+&lt;h3 id=&#34;listen-to-your-gitlab-infrastructure&#34;&gt;Listen to your GitLab Infrastructure&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Logging and Monitoring for your GitLab Infrastructure&lt;/li&gt;
@@ -551,13 +551,13 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 
 &lt;h2 id=&#34;two-days-training-br-dates-every-quartal-in-essen-germany&#34;&gt;Two days training &lt;br&gt; Dates every quartal in Essen, Germany.&lt;/h2&gt;
 
-&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. We developer love Docker and deploy the microservices on it.&lt;/p&gt;
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. We developers love Docker and deploy the microservices on it.&lt;/p&gt;
 
-&lt;p&gt;Nice, but developer and operator must be control the real usage of the system. This is a complex, but useful task at your daily work. At this training you learn to setup Prometheus to grab your metrics from system and services. Prometheus uses a time series database featuring a powerful query language with integrated complex mathematical functions. With Grafana your can create your own dashboards to visualize your metrics. Alerts can be sent both via traditional channels such as email, or integrated with chat systems such as Slack.&lt;/p&gt;
+&lt;p&gt;Nice, but developer and operator must be control the real usage of the system. This is a complex, but useful task at your daily work. At this training you learn to set up Prometheus to grab your metrics from system and services. Prometheus uses a time series database featuring a powerful query language with integrated complex mathematical functions. With Grafana your can create your own dashboards to visualize your metrics. Alerts can be sent both via traditional channels such as email, or integrated with chat systems such as Slack.&lt;/p&gt;
 
 &lt;p&gt;Prometheus was originally developed by SoundCloud and is now under the umbrella of the Cloud Native Computing Foundation, which is a sub-project of the Linux Foundation.&lt;/p&gt;
 
-&lt;p&gt;In this training, participants will learn the basic concepts of Prometheus and Grafana, it’s architecture, how it can be deployed with docker. Participants will also learn how to build dashboards and set up alerts.&lt;/p&gt;
+&lt;p&gt;In this training, participants will learn the basic concepts of Prometheus and Grafana, its architecture, how it can be deployed with Docker. Participants will also learn how to build dashboards and set up alerts.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;
 &lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
@@ -567,9 +567,9 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Create a simple java based microservice&lt;/li&gt;
-&lt;li&gt;Overview of prometheus and grafana&lt;/li&gt;
-&lt;li&gt;Monitor your docker based microservice&lt;/li&gt;
+&lt;li&gt;Create a simple Java-based microservice&lt;/li&gt;
+&lt;li&gt;Overview of Prometheus and Grafana&lt;/li&gt;
+&lt;li&gt;Monitor your Docker-based microservice&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;details-prometheus&#34;&gt;Details Prometheus&lt;/h3&gt;
@@ -589,7 +589,7 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;How it works&lt;/li&gt;
 &lt;li&gt;Configuration&lt;/li&gt;
-&lt;li&gt;Setup Dashboards&lt;/li&gt;
+&lt;li&gt;Set up Dashboards&lt;/li&gt;
 &lt;li&gt;Work with Prometheus and Grafana&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -608,7 +608,7 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;li&gt;Services&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Use multiple scrapers&lt;/li&gt;
-&lt;li&gt;Learn use the right metrics&lt;/li&gt;
+&lt;li&gt;Learn to use the right metrics&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;setup-more-complex-examples&#34;&gt;Setup more complex examples&lt;/h3&gt;
@@ -620,7 +620,7 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;li&gt;Look into more advanced examples&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;tipps-and-tricks&#34;&gt;Tipps and Tricks&lt;/h3&gt;
+&lt;h3 id=&#34;tips-and-tricks&#34;&gt;Tips and Tricks&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Go to productions&lt;/li&gt;
