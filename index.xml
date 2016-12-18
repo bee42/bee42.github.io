@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bee42 solutions gmbh</title>
-    <link>https://bee42.github.io/index.xml</link>
+    <link>https://www.bee42.com/index.xml</link>
     <description>Recent content on bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Dec 2016 19:26:55 +0100</lastBuildDate>
-    <atom:link href="https://bee42.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.bee42.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Imprint</title>
-      <link>https://bee42.github.io/Imprint/</link>
+      <link>https://www.bee42.com/Imprint/</link>
       <pubDate>Sun, 04 Dec 2016 19:26:55 +0100</pubDate>
       
-      <guid>https://bee42.github.io/Imprint/</guid>
+      <guid>https://www.bee42.com/Imprint/</guid>
       <description>
 
 &lt;h2 id=&#34;legal-informations&#34;&gt;Legal informations&lt;/h2&gt;
@@ -41,10 +41,10 @@ Germany&lt;/p&gt;
     
     <item>
       <title>42... and the meaning of life - bee42</title>
-      <link>https://bee42.github.io/42/</link>
+      <link>https://www.bee42.com/42/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/42/</guid>
+      <guid>https://www.bee42.com/42/</guid>
       <description>
 
 &lt;h2 id=&#34;42-and-the-meaning-of-life&#34;&gt;42 … and the meaning of life&lt;/h2&gt;
@@ -57,10 +57,10 @@ Germany&lt;/p&gt;
     
     <item>
       <title>Allgemeine Geschaeftsbedingungen</title>
-      <link>https://bee42.github.io/agb/</link>
+      <link>https://www.bee42.com/agb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/agb/</guid>
+      <guid>https://www.bee42.com/agb/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;Please find the english Terms and Conditions &lt;a href=&#34;#english-version&#34;&gt;below&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -212,10 +212,10 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
     
     <item>
       <title>DevOps Gathering - Docker Birthday</title>
-      <link>https://bee42.github.io/devops_gathering-docker_birthday-cfp/</link>
+      <link>https://www.bee42.com/devops_gathering-docker_birthday-cfp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/devops_gathering-docker_birthday-cfp/</guid>
+      <guid>https://www.bee42.com/devops_gathering-docker_birthday-cfp/</guid>
       <description>
 
 &lt;h2 id=&#34;fourth-docker-birthday-talks-at-bochum&#34;&gt;Fourth Docker Birthday Talks at Bochum&lt;/h2&gt;
@@ -268,10 +268,10 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
     
     <item>
       <title>DevOps Gathering - Docker Labs</title>
-      <link>https://bee42.github.io/devops_gathering-docker_labs/</link>
+      <link>https://www.bee42.com/devops_gathering-docker_labs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/devops_gathering-docker_labs/</guid>
+      <guid>https://www.bee42.com/devops_gathering-docker_labs/</guid>
       <description>
 
 &lt;h2 id=&#34;docker-labs-at-bochum&#34;&gt;Docker Labs at Bochum&lt;/h2&gt;
@@ -356,10 +356,10 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
     
     <item>
       <title>Docker Camp - Bee 42</title>
-      <link>https://bee42.github.io/docker-camp/</link>
+      <link>https://www.bee42.com/docker-camp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/docker-camp/</guid>
+      <guid>https://www.bee42.com/docker-camp/</guid>
       <description>
 
 &lt;h2 id=&#34;three-days-training-br-dates-every-month-in-essen-germany&#34;&gt;Three days training &lt;br&gt; Dates every month in Essen, Germany.&lt;/h2&gt;
@@ -461,10 +461,10 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
     
     <item>
       <title>Docker Image building with GitLab/CI  - Bee 42</title>
-      <link>https://bee42.github.io/docker_image_building_with-gitlabci/</link>
+      <link>https://www.bee42.com/docker_image_building_with-gitlabci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/docker_image_building_with-gitlabci/</guid>
+      <guid>https://www.bee42.com/docker_image_building_with-gitlabci/</guid>
       <description>
 
 &lt;h2 id=&#34;two-days-training-br-dates-every-quartal-in-essen-germany&#34;&gt;Two days training &lt;br&gt; Dates every quartal in Essen, Germany.&lt;/h2&gt;
@@ -543,10 +543,10 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
     
     <item>
       <title>Docker Microservices Monitoring  - Bee 42</title>
-      <link>https://bee42.github.io/docker-monitoring-prometheus-grafana/</link>
+      <link>https://www.bee42.com/docker-monitoring-prometheus-grafana/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/docker-monitoring-prometheus-grafana/</guid>
+      <guid>https://www.bee42.com/docker-monitoring-prometheus-grafana/</guid>
       <description>
 
 &lt;h2 id=&#34;two-days-training-br-dates-every-quartal-in-essen-germany&#34;&gt;Two days training &lt;br&gt; Dates every quartal in Essen, Germany.&lt;/h2&gt;
@@ -635,10 +635,10 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
     
     <item>
       <title>Terms of conditions</title>
-      <link>https://bee42.github.io/terms-and-conditions/</link>
+      <link>https://www.bee42.com/terms-and-conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/terms-and-conditions/</guid>
+      <guid>https://www.bee42.com/terms-and-conditions/</guid>
       <description>
 
 &lt;h2 id=&#34;terms-of-conditions&#34;&gt;Terms of conditions&lt;/h2&gt;
@@ -775,10 +775,10 @@ That is why we do not pass on data to uninvolved third parties.&lt;/p&gt;
     
     <item>
       <title>Thank you for your booking - bee42</title>
-      <link>https://bee42.github.io/thanks/</link>
+      <link>https://www.bee42.com/thanks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.github.io/thanks/</guid>
+      <guid>https://www.bee42.com/thanks/</guid>
       <description>
 
 &lt;h2 id=&#34;thanks-for-your-reservation&#34;&gt;Thanks for your  reservation.&lt;/h2&gt;
@@ -787,7 +787,7 @@ That is why we do not pass on data to uninvolved third parties.&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum sit molestias debitis? Nostrum a quas aspernatur laudantium libero et perspiciatis perferendis illum recusandae aut, ipsa commodi repellendus earum iure? Est?&lt;/p&gt;
 
-&lt;p&gt;&lt;a  class=&#34;more page&#34; href=&#34;https://bee42.github.io/index.html&#34;&gt;back to hompage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a  class=&#34;more page&#34; href=&#34;https://www.bee42.com/index.html&#34;&gt;back to hompage&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
