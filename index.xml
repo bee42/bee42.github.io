@@ -206,7 +206,7 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
     </item>
     
     <item>
-      <title>DevOps Gathering - Docker Birthday</title>
+      <title>DevOps Gathering - Docker Birthday #4</title>
       <link>https://www.bee42.com/devops_gathering-docker_birthday-cfp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -294,15 +294,6 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;li&gt;Package windows service into a container&lt;/li&gt;
 &lt;li&gt;Hack Around with windows container&lt;/li&gt;
 &lt;li&gt;Review at a real example&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Docker Container at the EC2 Cloud
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Sascha Möllering&lt;/li&gt;
-&lt;li&gt;Overview of ECS&lt;/li&gt;
-&lt;li&gt;Deploy your container to ECS&lt;/li&gt;
-&lt;li&gt;Use the AWS Autoloadbalancer&lt;/li&gt;
-&lt;li&gt;Setup and prepare Network&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Docker Orchestration with swarming mode
 
