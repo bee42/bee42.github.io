@@ -279,12 +279,13 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
 
 &lt;h3 id=&#34;speaker-kevin-wittek&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Kevin Wittek&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;* Run Spring-Boot Apps inside a Docker container
-* Build your Spring-Boot Docker image using Gradle
-* Make Spring-Boot Apps configurable with Environment-Variables
-* Unit- and Integration-Test your Spring-Boot App with Spock and Docker
-* Deploy and configure Spring-Boot microservices using docker-compose
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Run Spring-Boot Apps inside a Docker container&lt;/li&gt;
+&lt;li&gt;Build your Spring-Boot Docker image using Gradle&lt;/li&gt;
+&lt;li&gt;Make Spring-Boot Apps configurable with Environment-Variables&lt;/li&gt;
+&lt;li&gt;Unit- and Integration-Test your Spring-Boot App with Spock and Docker&lt;/li&gt;
+&lt;li&gt;Deploy and configure Spring-Boot microservices using docker-compose&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;*Docker Captain&lt;/p&gt;
 
