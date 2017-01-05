@@ -36,6 +36,9 @@ Phone +49(0)157-72 54 92 63&lt;/p&gt;
 Am Josephsschacht 72&lt;br&gt;
 D-44879 Bochum&lt;br&gt;
 Germany&lt;/p&gt;
+
+&lt;p&gt;VAT-ID according to §27 a Umsatzsteuergesetz: DE284932374&lt;br&gt;
+Number in the commercial register HR B 14047&lt;/p&gt;
 </description>
     </item>
     
@@ -206,99 +209,27 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
     </item>
     
     <item>
-      <title>DevOps Gathering - Docker Birthday #4</title>
-      <link>https://www.bee42.com/devops_gathering-docker_birthday-cfp/</link>
+      <title>DevOps Gathering - Container Workshops</title>
+      <link>https://www.bee42.com/devops_gathering-container_workshops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bee42.com/devops_gathering-docker_birthday-cfp/</guid>
+      <guid>https://www.bee42.com/devops_gathering-container_workshops/</guid>
       <description>
 
-&lt;h2 id=&#34;fourth-docker-birthday-talks-at-bochum&#34;&gt;Fourth Docker Birthday Talks at Bochum&lt;/h2&gt;
+&lt;h2 id=&#34;docker-workshops-in-bochum-2017-3-23&#34;&gt;Docker Workshops in Bochum - 2017/3/23&lt;/h2&gt;
 
-&lt;p&gt;Dear Friends and Speakers of Docker!&lt;/p&gt;
+&lt;p&gt;Dear DevOps Friends!&lt;/p&gt;
 
-&lt;p&gt;Inspire the people: though the first edition of DevOps Gathering Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March.&lt;/p&gt;
+&lt;p&gt;One week after the Docker Birthday Week, we invite you to continue the celebrations with us. Within our DevOps Gathering Conference 2017, we bring together Container experts, beginners and interesting individuals. During interesting half-day workshops you will have the chance to practice DevOps tools to improve your knowledge and become an expert.&lt;/p&gt;
 
-&lt;p&gt;Those, who already have celebrated a Docker birthday, are very welcome. The others, who haven&amp;rsquo;t heard of this, please come and lets dance. The DevOps Gathering Conference format gives you the chance to stay in touch with other people that like cooperation and infrastructure technology. Technical topics have a home as well topics on innovative company culture.&lt;/p&gt;
+&lt;h2 id=&#34;docker-on-arm-orchestration&#34;&gt;Docker on ARM &amp;amp; Orchestration&lt;/h2&gt;
 
-&lt;p&gt;In any case, we are looking forward to proposals with practical relevance – ideally based on project experiences or real technical inspiration.&lt;/p&gt;
-
-&lt;p&gt;As usual, we would like to invite you to submit your proposals for sessions and workshops for the March conference considering the following tracks:&lt;/p&gt;
+&lt;h3 id=&#34;speaker-dieter-reuter-and-peter-rossbach&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Dieter Reuter* and Peter Rossbach&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Docker Orchestration&lt;/li&gt;
-&lt;li&gt;Docker Security&lt;/li&gt;
-&lt;li&gt;Docker Networking&lt;/li&gt;
-&lt;li&gt;Docker for Microservices&lt;/li&gt;
-&lt;li&gt;Docker at Windows or ARM&lt;/li&gt;
-&lt;li&gt;Docker for Java or Go Developer&lt;/li&gt;
-&lt;li&gt;Stateful Container&lt;/li&gt;
-&lt;li&gt;Provisioning&lt;/li&gt;
-&lt;li&gt;Continuous Integration and Delivery&lt;/li&gt;
-&lt;li&gt;Cloud&lt;/li&gt;
-&lt;li&gt;Logging &amp;amp; Monitoring&lt;/li&gt;
-&lt;li&gt;Container Technologies&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Date: 24 – 25 March, 2017&lt;/p&gt;
-
-&lt;p&gt;Location: GData Campus Bochum&lt;/p&gt;
-
-&lt;p&gt;Deadline for submissions: January 23, 2017&lt;/p&gt;
-
-&lt;p&gt;You can offer us  45 minutes talks or 10 minutes lightning stories or tech speeches.&lt;/p&gt;
-
-&lt;p&gt;At 25.3 we plan a Docker Expert OpenSpace and you can discuss the hottest Docker container or ecosystem topics.&lt;/p&gt;
-
-&lt;p&gt;Submit your papers here: call4papers@bee42.com&lt;/p&gt;
-
-&lt;p&gt;We are looking forward to your comprehensive feedback as well as your questions, suggestions and discussions.&lt;/p&gt;
-
-&lt;p&gt;We wish you a peaceful Docker winter!
-We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;The bee42 Conference Crew&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>DevOps Gathering - Docker Labs</title>
-      <link>https://www.bee42.com/devops_gathering-docker_labs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.bee42.com/devops_gathering-docker_labs/</guid>
-      <description>
-
-&lt;h2 id=&#34;docker-labs-at-bochum&#34;&gt;Docker Labs at Bochum&lt;/h2&gt;
-
-&lt;p&gt;Dear Friends of Docker!&lt;/p&gt;
-
-&lt;p&gt;Inspire the people: though the first edition of DevOps Gathering Conference hasn’t even started yet, we are preparing the first round – Docker Birthday Talks in Bochum in March. But we can offer you today some interesting 23.3.2017 half-day labs. Prepare yourself with useful information and tips from the Docker experts.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Docker on ARM
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Dieter Reuter &amp;amp;&amp;amp; Niclas Mietz&lt;/li&gt;
-&lt;li&gt;Overview of Docker on ARM&lt;/li&gt;
 &lt;li&gt;Check your docker tools for ARM&lt;/li&gt;
 &lt;li&gt;Build Docker Images on ARM&lt;/li&gt;
-&lt;li&gt;Setup an IoT Project on ARM - Blink!&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Docker for Windows
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Dieter Reuter &amp;amp;&amp;amp; Stefan Scherer&lt;/li&gt;
-&lt;li&gt;Setup Windows Docker Container at Windows Server 2016&lt;/li&gt;
-&lt;li&gt;Size your images&lt;/li&gt;
-&lt;li&gt;Package windows service into a container&lt;/li&gt;
-&lt;li&gt;Hack Around with windows container&lt;/li&gt;
-&lt;li&gt;Review at a real example&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Docker Orchestration with swarming mode
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Peter Rossbach&lt;/li&gt;
+&lt;li&gt;Setup an IoT Project on ARM&lt;/li&gt;
 &lt;li&gt;Learn Swarming Mode Basics&lt;/li&gt;
 &lt;li&gt;Setup a Swarm Cluster&lt;/li&gt;
 &lt;li&gt;Prepare your Images&lt;/li&gt;
@@ -306,35 +237,115 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
 &lt;li&gt;Network, Port Publishing and Loadbalancing&lt;/li&gt;
 &lt;li&gt;Service Discovery&lt;/li&gt;
 &lt;li&gt;Orchestration&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Docker for Java Developers
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;docker-for-windows&#34;&gt;Docker for Windows&lt;/h2&gt;
+
+&lt;h3 id=&#34;speaker-dieter-reuter-and-stefan-scherer&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Dieter Reuter* and Stefan Scherer&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Roland Huss&lt;/li&gt;
+&lt;li&gt;Setup Windows Docker Container at Windows Server 2016&lt;/li&gt;
+&lt;li&gt;Size your images&lt;/li&gt;
+&lt;li&gt;Package windows service into a container&lt;/li&gt;
+&lt;li&gt;Hack Around with windows container&lt;/li&gt;
+&lt;li&gt;Review at a real example&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;docker-for-java-developers&#34;&gt;Docker for Java Developers&lt;/h2&gt;
+
+&lt;h3 id=&#34;speaker-roland-huss&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Roland Huss&lt;/h3&gt;
+
+&lt;ul&gt;
 &lt;li&gt;Create your java images with Maven&lt;/li&gt;
 &lt;li&gt;Use an IDE with docker&lt;/li&gt;
 &lt;li&gt;Setup integration test&lt;/li&gt;
 &lt;li&gt;Optimize your java base images&lt;/li&gt;
 &lt;li&gt;How you can run your container with resource constraints?&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Prepare your docker images with Gitlab/CI
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;prepare-your-docker-images-with-gitlab-ci&#34;&gt;Prepare your docker images with Gitlab/CI&lt;/h2&gt;
+
+&lt;h3 id=&#34;speaker-niclas-mietz&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Niclas Mietz&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Niclas Mietz&lt;/li&gt;
 &lt;li&gt;Setup your own GitLab/CI for your team&lt;/li&gt;
 &lt;li&gt;Create your own docker images producing pipeline&lt;/li&gt;
 &lt;li&gt;Test and validate your containers&lt;/li&gt;
 &lt;li&gt;Create and use runners&lt;/li&gt;
 &lt;li&gt;Build good docker images&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;We wish you a peaceful Docker winter!
-We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;bootiful-containers-with-spring-boot-and-docker&#34;&gt;&amp;ldquo;Bootiful&amp;rdquo; Containers with Spring-Boot and Docker&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-labs&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;speaker-kevin-wittek&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Kevin Wittek&lt;/h3&gt;
 
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;* Run Spring-Boot Apps inside a Docker container
+* Build your Spring-Boot Docker image using Gradle
+* Make Spring-Boot Apps configurable with Environment-Variables
+* Unit- and Integration-Test your Spring-Boot App with Spock and Docker
+* Deploy and configure Spring-Boot microservices using docker-compose
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;*Docker Captain&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Register and get one of our limited tickets, now!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-labs&#34;&gt;Get your Ticket&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DevOps Gathering 2017</title>
+      <link>https://www.bee42.com/devops_gathering_2017/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bee42.com/devops_gathering_2017/</guid>
+      <description>
+
+&lt;h2 id=&#34;call-for-papers&#34;&gt;Call for Papers&lt;/h2&gt;
+
+&lt;p&gt;Dear DevOps Friends and Speakers!&lt;/p&gt;
+
+&lt;p&gt;We are in the preparation of the first edition of DevOps Gathering Conference in March 2017. One week after the Docker Birthday, we invite you to continue the celebrations with us.&lt;/p&gt;
+
+&lt;p&gt;Everyone is invited to join discuss the hottest topics of the DevOps development with its impact on the digital transformation.  Join our journey and cooperate on  infrastructure technology and innovative solutions to revolutionize the software industry.&lt;/p&gt;
+
+&lt;p&gt;We are looking forward to proposals with practical relevance – ideally based on project experiences or real technical inspiration.&lt;/p&gt;
+
+&lt;p&gt;As usual, we would like to invite you to submit your proposals for sessions in March. We will focus on the following topics, but are always open for surprises with new inspiring talks:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker Orchestration&lt;/li&gt;
+&lt;li&gt;Docker Security&lt;/li&gt;
+&lt;li&gt;Docker Networking&lt;/li&gt;
+&lt;li&gt;Docker for Microservices&lt;/li&gt;
+&lt;li&gt;Docker on Windows&lt;/li&gt;
+&lt;li&gt;Docker on ARM&lt;/li&gt;
+&lt;li&gt;Docker for Java or Go Developer&lt;/li&gt;
+&lt;li&gt;Stateful Container&lt;/li&gt;
+&lt;li&gt;Provisioning&lt;/li&gt;
+&lt;li&gt;Continuous Integration and Delivery&lt;/li&gt;
+&lt;li&gt;Cloud&lt;/li&gt;
+&lt;li&gt;Logging &amp;amp; Monitoring&lt;/li&gt;
+&lt;li&gt;Container Technologies&lt;/li&gt;
+&lt;li&gt;Microservice based Front-End Development&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Date: 24 – 25 March, 2017&lt;/p&gt;
+
+&lt;p&gt;Location: G Data Campus Bochum&lt;/p&gt;
+
+&lt;p&gt;Deadline for submissions: January 23, 2017&lt;/p&gt;
+
+&lt;p&gt;You can offer us  30 minutes talks or 10 minutes lightning stories or tech speeches.&lt;/p&gt;
+
+&lt;p&gt;At 25.3 we plan a Docker expert OpenSpace and you can discuss the hottest Docker container or ecosystem topics.&lt;/p&gt;
+
+&lt;p&gt;Submit your papers here: call4papers@bee42.com&lt;/p&gt;
+
+&lt;p&gt;We are looking forward to your comprehensive feedback as well as your questions, suggestions and discussions.&lt;/p&gt;
+
+&lt;p&gt;We wish you a peaceful winter!&lt;/p&gt;
 
 &lt;p&gt;The bee42 Conference Crew&lt;/p&gt;
 </description>
@@ -348,16 +359,19 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
       <guid>https://www.bee42.com/docker-camp/</guid>
       <description>
 
-&lt;h2 id=&#34;three-days-training-br-dates-every-month-in-essen-germany&#34;&gt;Three days training &lt;br&gt; Dates every month in Essen, Germany.&lt;/h2&gt;
+&lt;h2 id=&#34;next-three-days-trainings-in-essen-germany-br-br-31-jan-2-feb-2017&#34;&gt;Next three days trainings in Essen, Germany &lt;br&gt; &lt;br&gt; 31. Jan. - 2. Feb. 2017&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;br-1-3-mar-2017-br&#34;&gt;&lt;br&gt;  1. - 3. Mar. 2017 &lt;br&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt; &lt;br&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Camp we want to pursue this promise.&lt;/p&gt;
 
 &lt;p&gt;We start with an overview and introduce the first steps with the use of Docker. You will get to know the most important commands, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, install with Docker, and integrate with other services in an environment. We also discuss the current Docker ecosystem and clarify opportunities and risks.&lt;/p&gt;
 
 &lt;p&gt;This camp provides you with the Docker basics in comprehensible steps and puts you in the position subsequently to decide whether and how Docker is useful in your business and IT context.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;
-&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;day-one-br-docker-basics&#34;&gt;Day one: &lt;br&gt;Docker basics&lt;/h2&gt;
 
@@ -453,7 +467,9 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
       <guid>https://www.bee42.com/docker_image_building_with-gitlabci/</guid>
       <description>
 
-&lt;h2 id=&#34;two-days-training-br-dates-every-quartal-in-essen-germany&#34;&gt;Two days training &lt;br&gt; Dates every quartal in Essen, Germany.&lt;/h2&gt;
+&lt;h2 id=&#34;next-two-days-trainings-in-essen-germany-br-br-9-10-feb-2017&#34;&gt;Next two days trainings in Essen, Germany &lt;br&gt; &lt;br&gt; 9./10. Feb. 2017&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver Docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for Docker images.&lt;/p&gt;
 
@@ -535,7 +551,9 @@ We hope you are be(e) prepared for spring birthday party &amp;hellip;&lt;/p&gt;
       <guid>https://www.bee42.com/docker-monitoring-prometheus-grafana/</guid>
       <description>
 
-&lt;h2 id=&#34;two-days-training-br-dates-every-quartal-in-essen-germany&#34;&gt;Two days training &lt;br&gt; Dates every quartal in Essen, Germany.&lt;/h2&gt;
+&lt;h2 id=&#34;next-two-days-trainings-in-essen-germany-br-br-7-8-feb-2017&#34;&gt;Next two days trainings in Essen, Germany &lt;br&gt; &lt;br&gt; 7./8. Feb. 2017&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. We developers love Docker and deploy the microservices on it.&lt;/p&gt;
 
