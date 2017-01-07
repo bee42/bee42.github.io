@@ -27,7 +27,7 @@ Peter Rossbach (Geschäftsführer)&lt;br&gt;
 Am Josephsschacht 72&lt;br&gt;
 D-44879 Bochum&lt;br&gt;
 Germany&lt;br&gt;
-Email: &lt;a href=&#34;info-2015@bee42.com&#34;&gt;info-2015(AT)bee42.com&lt;/a&gt;&lt;br&gt;
+Email: &lt;a href=&#34;info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;&lt;br&gt;
 Phone +49(0)157-72 54 92 63&lt;/p&gt;
 
 &lt;p&gt;Responsible for the content according to § 55 Abs. 2 RStV:&lt;/p&gt;
@@ -353,11 +353,11 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
     </item>
     
     <item>
-      <title>Docker DevOps Camp - Bee 42</title>
-      <link>https://www.bee42.com/docker-camp/</link>
+      <title>Docker DevOps Camp</title>
+      <link>https://www.bee42.com/docker-devops-camp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bee42.com/docker-camp/</guid>
+      <guid>https://www.bee42.com/docker-devops-camp/</guid>
       <description>
 
 &lt;h2 id=&#34;next-three-days-trainings-in-essen-germany-br-br-31-jan-2-feb-2017&#34;&gt;Next three days trainings in Essen, Germany &lt;br&gt; &lt;br&gt; 31. Jan. - 2. Feb. 2017&lt;/h2&gt;
@@ -455,27 +455,194 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
 &lt;li&gt;Review Best Practices&lt;/li&gt;
 &lt;li&gt;Docker on ARM&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h1 id=&#34;head&#34;&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD&lt;/h1&gt;
+
+&lt;h2 id=&#34;requirements-and-services&#34;&gt;Requirements and Services&lt;/h2&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps developer&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software and system architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Java&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training materials&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
+&lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; Add Requirements&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Docker Image building with GitLab/CI  - Bee 42</title>
-      <link>https://www.bee42.com/docker_image_building_with-gitlabci/</link>
+      <title>Docker DevOps Camp</title>
+      <link>https://www.bee42.com/docker-devops-camp_DE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bee42.com/docker_image_building_with-gitlabci/</guid>
+      <guid>https://www.bee42.com/docker-devops-camp_DE/</guid>
       <description>
 
-&lt;h2 id=&#34;next-two-days-trainings-in-essen-germany-br-br-9-10-feb-2017&#34;&gt;Next two days trainings in Essen, Germany &lt;br&gt; &lt;br&gt; 9./10. Feb. 2017&lt;/h2&gt;
+&lt;h2 id=&#34;drei-tage-training-in-essen-br-br-31-jan-2-feb-2017&#34;&gt;Drei Tage Training in Essen &lt;br&gt; &lt;br&gt; 31. Jan. - 2. Feb. 2017&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;br-1-3-mar-2017-br&#34;&gt;&lt;br&gt;  1. - 3. Mar. 2017 &lt;br&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt; &lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Docker DevOps Camp wollen wir diesem Versprechen praktisch nachgehen.&lt;/p&gt;
+
+&lt;p&gt;Wir starten mit einem Überblick und stellen die ersten Schritte beim Einsatz von Docker vor. Du lernst die wichtigsten Befehle, Anweisungen und Konzepte praktisch kennen. Anhand eines ausführlichen Beispiels lernst Du, wie ein Microservice implementiert, mit Docker installiert und in einer Umgebung mit anderen Services integriert wird. Außerdem diskutieren wir das aktuelle Docker-Ökosystem und klären über Chancen und Risiken auf.&lt;/p&gt;
+
+&lt;p&gt;Dieses Camp vermittelt Dir die Docker-Grundlagen in nachvollziehbaren Schritten und versetzt Dich in die Lage anschließend selbst zu entscheiden, ob und wie Docker in Deinem Unternehmens- und IT-Kontext sinnvoll einsetzt.&lt;/p&gt;
+
+&lt;h2 id=&#34;tag-eins-br-docker-grundlagen&#34;&gt;Tag Eins: &lt;br&gt;Docker Grundlagen&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker Grundlagen und Installation&lt;/li&gt;
+&lt;li&gt;Container Technologie Grundlagen&lt;/li&gt;
+&lt;li&gt;Kernel- vs Classical- Virtualisierung&lt;/li&gt;
+&lt;li&gt;Docker Architektur&lt;/li&gt;
+&lt;li&gt;Einsatzgebiete und mehr&lt;/li&gt;
+&lt;li&gt;Starten der Docker-Umgebung&lt;/li&gt;
+&lt;li&gt;Images, Container und Registry&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;einfache-nutzung&#34;&gt;Einfache Nutzung&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Let’s run, stop and maintain containers&lt;/li&gt;
+&lt;li&gt;Docker CLI command übersicht&lt;/li&gt;
+&lt;li&gt;Baue Deine Images auf der Basis eines Dockerfiles&lt;/li&gt;
+&lt;li&gt;“Build, Ship and Run”-Zyklus&lt;/li&gt;
+&lt;li&gt;Docker Tooling&lt;/li&gt;
+&lt;li&gt;Volume Management&lt;/li&gt;
+&lt;li&gt;Network Management&lt;/li&gt;
+&lt;li&gt;Logging und Metriken&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;li&gt;Container Typen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tag-zwei-br-microservices-mit-docker&#34;&gt;Tag Zwei: &lt;br&gt; Microservices mit Docker&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Think infrastructure first&lt;/li&gt;
+&lt;li&gt;Erstellen einer einfachen Spring Boot App&lt;/li&gt;
+&lt;li&gt;Bau einer Toolchain mittels Java and Maven&lt;/li&gt;
+&lt;li&gt;Docker für Java-Entwickler&lt;/li&gt;
+&lt;li&gt;Erstellung Database Container&lt;/li&gt;
+&lt;li&gt;Empower your Development&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;infrastruktur&#34;&gt;Infrastruktur&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Aufbau der Microservice Infrastruktur&lt;/li&gt;
+&lt;li&gt;Erzeuge eine einfache Build Pipeline&lt;/li&gt;
+&lt;li&gt;Nutzen von Service Discovery&lt;/li&gt;
+&lt;li&gt;Erzeuge Multi Host Networks&lt;/li&gt;
+&lt;li&gt;Docker Tipps &amp;amp; Tricks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tag-drei-br-skalierung-des-service-mit-docker-swarm&#34;&gt;Tag Drei: &lt;br&gt; Skalierung des Service mit Docker Swarm&lt;/h2&gt;
+
+&lt;h3 id=&#34;swarming&#34;&gt;Swarming&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Skalieren Sie Ihren Services mit Docker Swarming&lt;/li&gt;
+&lt;li&gt;Update, Fehlererkennung und Redeployment von Services&lt;/li&gt;
+&lt;li&gt;Mesh Network und Service Discovery&lt;/li&gt;
+&lt;li&gt;Einrichten eines Ingress Loadbalancer (traefik, haproxy od. nginx)&lt;/li&gt;
+&lt;li&gt;Setup Logging und Monitoring Systeme
+
+&lt;ul&gt;
+&lt;li&gt;ELK-Stack&lt;/li&gt;
+&lt;li&gt;Prometheus und Grafana&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Debuging Deines Containers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;go-to-production&#34;&gt;Go to production&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker für die Produktion&lt;/li&gt;
+&lt;li&gt;Erzeuge High-Quality Images&lt;/li&gt;
+&lt;li&gt;Docker Security Grundlagen&lt;/li&gt;
+&lt;li&gt;Plugins&lt;/li&gt;
+&lt;li&gt;Tipps und Tricks&lt;/li&gt;
+&lt;li&gt;Review Best Practices&lt;/li&gt;
+&lt;li&gt;Docker on ARM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
+
+&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps Entwickler&lt;/li&gt;
+&lt;li&gt;Administratoren&lt;/li&gt;
+&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Build- und Package-Systeme&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
+&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
+&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker GitLab/CI Lab</title>
+      <link>https://www.bee42.com/docker-gitlab_ci-lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bee42.com/docker-gitlab_ci-lab/</guid>
+      <description>
+
+&lt;h2 id=&#34;next-two-days-trainings-in-essen-germany-br-br-9-10-mar-2017&#34;&gt;Next two days trainings in Essen, Germany &lt;br&gt; &lt;br&gt; 9./10. Mar. 2017&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver Docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for Docker images.&lt;/p&gt;
 
 &lt;p&gt;We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to deliver your image to your environment. Also we want to discuss how you can trigger your builds, make good Docker images and ship images to your Docker registry.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;
-&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;day-one-br-gitlab-ci-basics&#34;&gt;Day one: &lt;br&gt;GitLab/CI basics&lt;/h2&gt;
 
@@ -538,19 +705,156 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
 &lt;li&gt;Scale your CI CD Pipeline with different concepts&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps developer&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software and system architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Java, Maven and SpringBoot&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training materials&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
+&lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Docker Microservices Monitoring  - Bee 42</title>
-      <link>https://www.bee42.com/docker-monitoring-prometheus-grafana/</link>
+      <title>Docker Gitlab/CI Lab</title>
+      <link>https://www.bee42.com/docker-gilab_ci-lab_DE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bee42.com/docker-monitoring-prometheus-grafana/</guid>
+      <guid>https://www.bee42.com/docker-gilab_ci-lab_DE/</guid>
       <description>
 
-&lt;h2 id=&#34;next-two-days-trainings-in-essen-germany-br-br-7-8-feb-2017&#34;&gt;Next two days trainings in Essen, Germany &lt;br&gt; &lt;br&gt; 7./8. Feb. 2017&lt;/h2&gt;
+&lt;h2 id=&#34;zwei-tage-training-in-essen-br-br-9-10-märz-2017&#34;&gt;Zwei Tage Training in Essen &lt;br&gt; &lt;br&gt; 9./10. März 2017&lt;/h2&gt;
+
+&lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Docker Lab wollen wir praktisch den Bau von Docker Images mit GITLAB/CI erleichtern und lernen gute Images zu fertigen.&lt;/p&gt;
+
+&lt;p&gt;Schön und gut, aber ein Entwickler oder Operator muss seine Automatisierung erst einmal bauen, einrichten und testen, damit Docker Images erstellt werden können. Bei dieser Schulung lernst Du, GitLab / CI einzurichten, um Deine Projekte zu pflegen und die Pipeline für Continuous Integration und Delivery für Docker-Images zu automatisieren.&lt;/p&gt;
+
+&lt;p&gt;Wir beginnen mit einem Überblick von vorhandenen Techniken. In einer folgenden Einführung werden erste Schritte für den Einsatz von GitLab / CI erprobt. Du lernst dabei die wichtigsten Komponenten, Anleitungen und Konzepte kennen. Mit einem detaillierten Beispiel lernst Du, wie Du einen Microservice implementierst, den Build mit verschiedenen Gitlab Runner automatisierst, mit Docker installierst und diesen mit anderen Diensten in einer Umgebung testen und integrieren kannst. Wir zeigen Dir dein Image in deiner Umgebung einzusetzen. Darüber hinaus stellen wir vor, wie Du Builds auslösen kannst, gute Docker-Images erstellen und Images an Deine Docker-Registry versenden kannst.&lt;/p&gt;
+
+&lt;h2 id=&#34;tag-eins-br-gitlab-ci-grundlagen&#34;&gt;Tag Eins: &lt;br&gt; GITLAB / CI GRUNDLAGEN&lt;/h2&gt;
+
+&lt;h3 id=&#34;einführung&#34;&gt;Einführung&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Was ist GitLab und was es nicht ist?&lt;/li&gt;
+&lt;li&gt;Installation der GitLab Instance&lt;/li&gt;
+&lt;li&gt;Überblick über die GitLab Architektur&lt;/li&gt;
+&lt;li&gt;Detaillierte Übersicht über die GitLab Komponenten&lt;/li&gt;
+&lt;li&gt;Richte verschiedene GitLab-Komponenten ein&lt;/li&gt;
+&lt;li&gt;GitLab UI-Übersicht&lt;/li&gt;
+&lt;li&gt;Check-in von einem einfachen Projekt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;workflow-mit-ihren-images-von-gitlab&#34;&gt;WORKFLOW MIT IHREN IMAGES VON GITLAB&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Wir bauen und testen Docker-Images&lt;/li&gt;
+&lt;li&gt;Schiebe erfolgreich gebaute Images in die Registry&lt;/li&gt;
+&lt;li&gt;Erstelle eigene Images auf der Basis eines Dockerfiles&lt;/li&gt;
+&lt;li&gt;Erstelle eigene GitLab Runner mit verschiedenen Typen
+
+&lt;ul&gt;
+&lt;li&gt;Shell&lt;/li&gt;
+&lt;li&gt;Docker&lt;/li&gt;
+&lt;li&gt;Docker in Docker&lt;/li&gt;
+&lt;li&gt;Docker machine&lt;/li&gt;
+&lt;li&gt;SSH&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;achte-auf-deine-gitlab-infrastruktur&#34;&gt;ACHTE AUF DEINE GITLAB-INFRASTRUKTUR&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Protokollierung und Überwachung der GitLab Infrastruktur&lt;/li&gt;
+&lt;li&gt;Sichern und Wiederherstellen von Images aus GitLab&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tag-2-br-erstellen-eines-geprüftes-microservice-mit-docker-und-gitlab&#34;&gt;Tag 2: &lt;br&gt; ERSTELLEN EINES GEPRÜFTES MICROSERVICE MIT DOCKER UND GITLAB&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Erstelle eine einfache Spring-Boot Application&lt;/li&gt;
+&lt;li&gt;Erstelle eine Toolchain für Anwendungsentwicklung (Java und Maven)&lt;/li&gt;
+&lt;li&gt;Anwendungsentwicklung mit Docker&lt;/li&gt;
+&lt;li&gt;Aufteilen von Microservices&lt;/li&gt;
+&lt;li&gt;Microservice in einem Produktivsystem mit einem Delivery Concept einbinden&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;gitlab-ci-tipps-und-tricks&#34;&gt;GITLAB / CI TIPPS UND TRICKS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pflege GitLab mit wenigen Schritten&lt;/li&gt;
+&lt;li&gt;Aktualisieren der Installation&lt;/li&gt;
+&lt;li&gt;Sichern und Wiederherstellen der Installation&lt;/li&gt;
+&lt;li&gt;Skaliere Deine CI-CD-Pipeline mit verschiedenen Konzepten&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
+
+&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps Entwickler&lt;/li&gt;
+&lt;li&gt;Administratoren&lt;/li&gt;
+&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Grundkenntnisse Docker&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Java, Maven und SpringBoot&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
+&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
+&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker Monitoring Lab</title>
+      <link>https://www.bee42.com/docker-monitoring-lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bee42.com/docker-monitoring-lab/</guid>
+      <description>
+
+&lt;h2 id=&#34;next-two-days-trainings-in-essen-germany-br-br-4-5-apr-2017&#34;&gt;Next two days trainings in Essen, Germany &lt;br&gt; &lt;br&gt; 4./5. Apr. 2017&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 
@@ -561,9 +865,6 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
 &lt;p&gt;Prometheus was originally developed by SoundCloud and is now under the umbrella of the Cloud Native Computing Foundation, which is a sub-project of the Linux Foundation.&lt;/p&gt;
 
 &lt;p&gt;In this training, participants will learn the basic concepts of Prometheus and Grafana, its architecture, how it can be deployed with Docker. Participants will also learn how to build dashboards and set up alerts.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;
-&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;day-one-br-docker-service-monitoring-basics&#34;&gt;Day one: &lt;br&gt;Docker Service Monitoring basics&lt;/h2&gt;
 
@@ -632,7 +933,154 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
 &lt;li&gt;Backup/Restore&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps developer&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software and system architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Java&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training materials&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
+&lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker Monitoring Lab</title>
+      <link>https://www.bee42.com/docker-monitoring-lab_DE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bee42.com/docker-monitoring-lab_DE/</guid>
+      <description>
+
+&lt;h2 id=&#34;zwei-tage-training-in-essen-br-br-4-5-april-2017&#34;&gt;Zwei Tage Training in Essen &lt;br&gt; &lt;br&gt; 4./5. April 2017&lt;/h2&gt;
+
+&lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. Wir Entwickler lieben Docker, deployen dort leichtgewichtige Microservices und erstellen System aus vorgefertigten Komponenten des Ökosystems.&lt;/p&gt;
+
+&lt;p&gt;Schön und gut, aber Entwickler und Administratoren müssen die reale Nutzung des Systems kontrollieren. Dies ist eine komplexe Aufgabe die unsere ganze Aufmerksamkeit fordert. In diesem Lab lernst Du, Prometheus einzurichten, um Deine Metriken aus verschiedenen Systeme und Services zu holen. Prometheus verwendet eine Time Series Database (TSDB) mit einer leistungsstarken Abfragesprache mit integrierten komplexen mathematischen Funktionen. Mit Grafana kannst Du eigene Dashboards erstellen, um Deine Metriken zu visualisieren. Alerts können sowohl über herkömmliche Kanäle wie E-Mails oder mit Chat-Systemen, wie Slack integriert werden.&lt;/p&gt;
+
+&lt;p&gt;Prometheus wurde ursprünglich innerhalb von SoundCloud in Berlin entwickelt und wird nun unter dem Dach der Cloud Native Computing Foundation, einer Unterprojekt der Linux Foundation, weiterentwickelt.&lt;/p&gt;
+
+&lt;p&gt;In diesem Lab lernen die Teilnehmer die Grundkonzepte von Prometheus und Grafana, ihrer Architektur, und wie sie mit Docker betrieben werden. Die Teilnehmer lernen auch, wie man Dashboards baut und Alerts einrichtet.&lt;/p&gt;
+
+&lt;h2 id=&#34;tag-eins-br-docker-monitoring-grundlagen&#34;&gt;Tag Eins: &lt;br&gt;Docker Monitoring Grundlagen&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Erstelle einen einfachen Java-basierten Microservice&lt;/li&gt;
+&lt;li&gt;Überblick über Prometheus und Grafana&lt;/li&gt;
+&lt;li&gt;Überwache Deine Docker-basierten Microservice&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;details-prometheus&#34;&gt;DETAILS PROMETHEUS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Prometheus im Detail&lt;/li&gt;
+&lt;li&gt;Konfiguration&lt;/li&gt;
+&lt;li&gt;Arten von Sensoren&lt;/li&gt;
+&lt;li&gt;Hinzufügen von Sensoren zu Deinem Code&lt;/li&gt;
+&lt;li&gt;Erstelle Deine Metrik-Endpunkte&lt;/li&gt;
+&lt;li&gt;Arbeite mit PromQL&lt;/li&gt;
+&lt;li&gt;Kennzeichne Deine Metriken richtig&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;details-grafana&#34;&gt;DETAILS GRAFANA&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Grafana im Detail&lt;/li&gt;
+&lt;li&gt;Konfiguration&lt;/li&gt;
+&lt;li&gt;Dashboards einrichten&lt;/li&gt;
+&lt;li&gt;Arbeit mit Prometheus und Grafana&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tag-zwei-br-anwendungs-und-node-monitoring&#34;&gt;Tag Zwei: &lt;br&gt; ANWENDUNGS- UND NODE-MONITORING&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Einrichten eines kleinen Docker-Clusters&lt;/li&gt;
+&lt;li&gt;Überwache Deine Microservices&lt;/li&gt;
+&lt;li&gt;Verwende verschiedene Exporteure
+
+&lt;ul&gt;
+&lt;li&gt;Maschinen&lt;/li&gt;
+&lt;li&gt;Container&lt;/li&gt;
+&lt;li&gt;Services&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Verwende mehrere Scraper&lt;/li&gt;
+&lt;li&gt;Lerne die richtigen Metriken anzuwenden&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;einrichten-komplexerer-beispiele&#34;&gt;EINRICHTEN KOMPLEXERER BEISPIELE&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Erstelle komplexe Dashboards mit Grafana&lt;/li&gt;
+&lt;li&gt;Verwende Prometheus zur Überwachung von Batch-Jobs&lt;/li&gt;
+&lt;li&gt;Verwende den Prometheus Alert Manager&lt;/li&gt;
+&lt;li&gt;Schaue in fortgeschrittenere Beispiele&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;tipps-und-tricks&#34;&gt;TIPPS UND TRICKS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In die Produktion mit Prometheus und Grafana&lt;/li&gt;
+&lt;li&gt;Vernetze Deine Prometheus-Dienste&lt;/li&gt;
+&lt;li&gt;Aktualisiere Deine Monitoring-Systeme&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
+
+&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps Entwickler&lt;/li&gt;
+&lt;li&gt;Administratoren&lt;/li&gt;
+&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Grundkenntnisse Docker&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Java&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
+&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
+&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

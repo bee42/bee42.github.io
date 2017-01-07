@@ -28,15 +28,27 @@
   </url>
   
   <url>
-    <loc>https://www.bee42.com/docker-camp/</loc>
+    <loc>https://www.bee42.com/docker-devops-camp/</loc>
   </url>
   
   <url>
-    <loc>https://www.bee42.com/docker_image_building_with-gitlabci/</loc>
+    <loc>https://www.bee42.com/docker-devops-camp_DE/</loc>
   </url>
   
   <url>
-    <loc>https://www.bee42.com/docker-monitoring-prometheus-grafana/</loc>
+    <loc>https://www.bee42.com/docker-gitlab_ci-lab/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.bee42.com/docker-gilab_ci-lab_DE/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.bee42.com/docker-monitoring-lab/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.bee42.com/docker-monitoring-lab_DE/</loc>
   </url>
   
   <url>

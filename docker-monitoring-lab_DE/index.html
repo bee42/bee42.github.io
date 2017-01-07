@@ -3,7 +3,7 @@
 <html lang="en-us">
 
 <head>
-	<title>DevOps Gathering - Container Workshops</title>
+	<title>Docker Monitoring Lab</title>
 	<meta charset="UTF-8">
 	
 	<meta name="description" content="">
@@ -60,83 +60,114 @@
 		<main>
  <section class="page-content">
        <section class="content-box">
-               <h1>DevOps Gathering - Container Workshops</h1>
-              <h2 id="docker-workshops-in-bochum-2017-3-23">Docker Workshops in Bochum - 2017/3/23</h2>
+               <h1>Docker Monitoring Lab</h1>
+              <h2 id="zwei-tage-training-in-essen-br-br-4-5-april-2017">Zwei Tage Training in Essen <br> <br> 4./5. April 2017</h2>
 
-<p>Dear DevOps Friends!</p>
+<p>Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. Wir Entwickler lieben Docker, deployen dort leichtgewichtige Microservices und erstellen System aus vorgefertigten Komponenten des Ökosystems.</p>
 
-<p>One week after the Docker Birthday Week, we invite you to continue the celebrations with us. Within our DevOps Gathering Conference 2017, we bring together Container experts, beginners and interesting individuals. During interesting half-day workshops you will have the chance to practice DevOps tools to improve your knowledge and become an expert.</p>
+<p>Schön und gut, aber Entwickler und Administratoren müssen die reale Nutzung des Systems kontrollieren. Dies ist eine komplexe Aufgabe die unsere ganze Aufmerksamkeit fordert. In diesem Lab lernst Du, Prometheus einzurichten, um Deine Metriken aus verschiedenen Systeme und Services zu holen. Prometheus verwendet eine Time Series Database (TSDB) mit einer leistungsstarken Abfragesprache mit integrierten komplexen mathematischen Funktionen. Mit Grafana kannst Du eigene Dashboards erstellen, um Deine Metriken zu visualisieren. Alerts können sowohl über herkömmliche Kanäle wie E-Mails oder mit Chat-Systemen, wie Slack integriert werden.</p>
 
-<h2 id="docker-on-arm-orchestration">Docker on ARM &amp; Orchestration</h2>
+<p>Prometheus wurde ursprünglich innerhalb von SoundCloud in Berlin entwickelt und wird nun unter dem Dach der Cloud Native Computing Foundation, einer Unterprojekt der Linux Foundation, weiterentwickelt.</p>
 
-<h3 id="speaker-dieter-reuter-and-peter-rossbach"><strong>Speaker</strong>: Dieter Reuter* and Peter Rossbach</h3>
+<p>In diesem Lab lernen die Teilnehmer die Grundkonzepte von Prometheus und Grafana, ihrer Architektur, und wie sie mit Docker betrieben werden. Die Teilnehmer lernen auch, wie man Dashboards baut und Alerts einrichtet.</p>
 
-<ul>
-<li>Check your docker tools for ARM</li>
-<li>Build Docker Images on ARM</li>
-<li>Setup an IoT Project on ARM</li>
-<li>Learn Swarming Mode Basics</li>
-<li>Setup a Swarm Cluster</li>
-<li>Prepare your Images</li>
-<li>Rolling your services forward</li>
-<li>Network, Port Publishing and Loadbalancing</li>
-<li>Service Discovery</li>
-<li>Orchestration</li>
-</ul>
+<h2 id="tag-eins-br-docker-monitoring-grundlagen">Tag Eins: <br>Docker Monitoring Grundlagen</h2>
 
-<h2 id="docker-for-windows">Docker for Windows</h2>
-
-<h3 id="speaker-dieter-reuter-and-stefan-scherer"><strong>Speaker</strong>: Dieter Reuter* and Stefan Scherer*</h3>
+<h3 id="installation">Installation</h3>
 
 <ul>
-<li>Setup Windows Docker Container at Windows Server 2016</li>
-<li>Size your images</li>
-<li>Package windows service into a container</li>
-<li>Hack Around with windows container</li>
-<li>Review at a real example</li>
+<li>Erstelle einen einfachen Java-basierten Microservice</li>
+<li>Überblick über Prometheus und Grafana</li>
+<li>Überwache Deine Docker-basierten Microservice</li>
 </ul>
 
-<h2 id="docker-for-java-developers">Docker for Java Developers</h2>
-
-<h3 id="speaker-roland-huss"><strong>Speaker</strong>: Roland Huss</h3>
+<h3 id="details-prometheus">DETAILS PROMETHEUS</h3>
 
 <ul>
-<li>Create your java images with Maven</li>
-<li>Use an IDE with docker</li>
-<li>Setup integration test</li>
-<li>Optimize your java base images</li>
-<li>How you can run your container with resource constraints?</li>
+<li>Prometheus im Detail</li>
+<li>Konfiguration</li>
+<li>Arten von Sensoren</li>
+<li>Hinzufügen von Sensoren zu Deinem Code</li>
+<li>Erstelle Deine Metrik-Endpunkte</li>
+<li>Arbeite mit PromQL</li>
+<li>Kennzeichne Deine Metriken richtig</li>
 </ul>
 
-<h2 id="prepare-your-docker-images-with-gitlab-ci">Prepare your docker images with Gitlab/CI</h2>
-
-<h3 id="speaker-niclas-mietz"><strong>Speaker</strong>: Niclas Mietz</h3>
+<h3 id="details-grafana">DETAILS GRAFANA</h3>
 
 <ul>
-<li>Setup your own GitLab/CI for your team</li>
-<li>Create your own docker images producing pipeline</li>
-<li>Test and validate your containers</li>
-<li>Create and use runners</li>
-<li>Build good docker images</li>
+<li>Grafana im Detail</li>
+<li>Konfiguration</li>
+<li>Dashboards einrichten</li>
+<li>Arbeit mit Prometheus und Grafana</li>
 </ul>
 
-<h2 id="bootiful-containers-with-spring-boot-and-docker">&ldquo;Bootiful&rdquo; Containers with Spring-Boot and Docker</h2>
+<h2 id="tag-zwei-br-anwendungs-und-node-monitoring">Tag Zwei: <br> ANWENDUNGS- UND NODE-MONITORING</h2>
 
-<h3 id="speaker-kevin-wittek"><strong>Speaker</strong>: Kevin Wittek</h3>
+<h3 id="microservices">Microservices</h3>
 
 <ul>
-<li>Run Spring-Boot Apps inside a Docker container</li>
-<li>Build your Spring-Boot Docker image using Gradle</li>
-<li>Make Spring-Boot Apps configurable with Environment-Variables</li>
-<li>Unit- and Integration-Test your Spring-Boot App with Spock and Docker</li>
-<li>Deploy and configure Spring-Boot microservices using docker-compose</li>
+<li>Einrichten eines kleinen Docker-Clusters</li>
+<li>Überwache Deine Microservices</li>
+<li>Verwende verschiedene Exporteure
+
+<ul>
+<li>Maschinen</li>
+<li>Container</li>
+<li>Services</li>
+</ul></li>
+<li>Verwende mehrere Scraper</li>
+<li>Lerne die richtigen Metriken anzuwenden</li>
 </ul>
 
-<p>*Docker Captain</p>
+<h3 id="einrichten-komplexerer-beispiele">EINRICHTEN KOMPLEXERER BEISPIELE</h3>
 
-<p><strong>Register and get one of our limited tickets, now!</strong></p>
+<ul>
+<li>Erstelle komplexe Dashboards mit Grafana</li>
+<li>Verwende Prometheus zur Überwachung von Batch-Jobs</li>
+<li>Verwende den Prometheus Alert Manager</li>
+<li>Schaue in fortgeschrittenere Beispiele</li>
+</ul>
 
-<p><a href="#" class="more page open-form" data-form="docker-labs">Get your Ticket</a>    
+<h3 id="tipps-und-tricks">TIPPS UND TRICKS</h3>
+
+<ul>
+<li>In die Produktion mit Prometheus und Grafana</li>
+<li>Vernetze Deine Prometheus-Dienste</li>
+<li>Aktualisiere Deine Monitoring-Systeme</li>
+<li>Backup/Restore</li>
+</ul>
+
+<h2 id="voraussetzungen-und-leistungen">Voraussetzungen und Leistungen</h2>
+
+<h3 id="zielgruppe-wer-sollte-teilnehmen">Zielgruppe/ Wer sollte teilnehmen?</h3>
+
+<ul>
+<li>DevOps Entwickler</li>
+<li>Administratoren</li>
+<li>Software- und Systemarchitekten</li>
+</ul>
+
+<h3 id="voraussetzungen-an-die-teilnehmer">Voraussetzungen an die Teilnehmer</h3>
+
+<ul>
+<li>Grundkenntnisse Docker</li>
+<li>Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)</li>
+<li>Grundkenntnisse Java</li>
+<li>Grundkenntnisse Microservices</li>
+</ul>
+
+<h3 id="leistungen">Leistungen</h3>
+
+<ul>
+<li>Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)</li>
+<li>Schulungsmaterialien</li>
+<li>Internet</li>
+<li>Nicht enthalten: Hotel Übernachtungen, Anreise</li>
+<li>Rechner werden nicht gestellt</li>
+</ul>
+
+<p><a href="#" class="more page open-form" data-form="docker-camp">Book now</a>    
       </section> 
 </section>
 

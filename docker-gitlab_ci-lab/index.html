@@ -3,7 +3,7 @@
 <html lang="en-us">
 
 <head>
-	<title>DevOps Gathering - Container Workshops</title>
+	<title>Docker GitLab/CI Lab</title>
 	<meta charset="UTF-8">
 	
 	<meta name="description" content="">
@@ -60,83 +60,106 @@
 		<main>
  <section class="page-content">
        <section class="content-box">
-               <h1>DevOps Gathering - Container Workshops</h1>
-              <h2 id="docker-workshops-in-bochum-2017-3-23">Docker Workshops in Bochum - 2017/3/23</h2>
+               <h1>Docker GitLab/CI Lab</h1>
+              <h2 id="next-two-days-trainings-in-essen-germany-br-br-9-10-mar-2017">Next two days trainings in Essen, Germany <br> <br> 9./10. Mar. 2017</h2>
 
-<p>Dear DevOps Friends!</p>
+<p><a href="#" class="more page open-form" data-form="docker-camp">Book now</a><br><br></p>
 
-<p>One week after the Docker Birthday Week, we invite you to continue the celebrations with us. Within our DevOps Gathering Conference 2017, we bring together Container experts, beginners and interesting individuals. During interesting half-day workshops you will have the chance to practice DevOps tools to improve your knowledge and become an expert.</p>
+<p>Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver Docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for Docker images.</p>
 
-<h2 id="docker-on-arm-orchestration">Docker on ARM &amp; Orchestration</h2>
+<p>We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to deliver your image to your environment. Also we want to discuss how you can trigger your builds, make good Docker images and ship images to your Docker registry.</p>
 
-<h3 id="speaker-dieter-reuter-and-peter-rossbach"><strong>Speaker</strong>: Dieter Reuter* and Peter Rossbach</h3>
+<h2 id="day-one-br-gitlab-ci-basics">Day one: <br>GitLab/CI basics</h2>
 
-<ul>
-<li>Check your docker tools for ARM</li>
-<li>Build Docker Images on ARM</li>
-<li>Setup an IoT Project on ARM</li>
-<li>Learn Swarming Mode Basics</li>
-<li>Setup a Swarm Cluster</li>
-<li>Prepare your Images</li>
-<li>Rolling your services forward</li>
-<li>Network, Port Publishing and Loadbalancing</li>
-<li>Service Discovery</li>
-<li>Orchestration</li>
-</ul>
-
-<h2 id="docker-for-windows">Docker for Windows</h2>
-
-<h3 id="speaker-dieter-reuter-and-stefan-scherer"><strong>Speaker</strong>: Dieter Reuter* and Stefan Scherer*</h3>
+<h3 id="introduction">Introduction</h3>
 
 <ul>
-<li>Setup Windows Docker Container at Windows Server 2016</li>
-<li>Size your images</li>
-<li>Package windows service into a container</li>
-<li>Hack Around with windows container</li>
-<li>Review at a real example</li>
+<li>What is GitLab and what it is not ?</li>
+<li>Installation of GitLab Instance</li>
+<li>Overview of the GitLab Architecture</li>
+<li>Detailed overview about the GitLab components</li>
+<li>Setup the various GitLab components</li>
+<li>GitLab UI overview</li>
+<li>Check in a simple project</li>
 </ul>
 
-<h2 id="docker-for-java-developers">Docker for Java Developers</h2>
-
-<h3 id="speaker-roland-huss"><strong>Speaker</strong>: Roland Huss</h3>
+<h3 id="workflow-with-your-images-from-gitlab">Workflow with your Images from GitLab</h3>
 
 <ul>
-<li>Create your java images with Maven</li>
-<li>Use an IDE with docker</li>
-<li>Setup integration test</li>
-<li>Optimize your java base images</li>
-<li>How you can run your container with resource constraints?</li>
-</ul>
-
-<h2 id="prepare-your-docker-images-with-gitlab-ci">Prepare your docker images with Gitlab/CI</h2>
-
-<h3 id="speaker-niclas-mietz"><strong>Speaker</strong>: Niclas Mietz</h3>
+<li>Let&rsquo;s build and test Docker images</li>
+<li>Push your successfully built images to registry</li>
+<li>Build your own images with Dockerfiles</li>
+<li>Create your own GitLab Runners of different types
 
 <ul>
-<li>Setup your own GitLab/CI for your team</li>
-<li>Create your own docker images producing pipeline</li>
-<li>Test and validate your containers</li>
-<li>Create and use runners</li>
-<li>Build good docker images</li>
+<li>Shell</li>
+<li>Docker</li>
+<li>Docker machine</li>
+<li>SSH</li>
+</ul></li>
 </ul>
 
-<h2 id="bootiful-containers-with-spring-boot-and-docker">&ldquo;Bootiful&rdquo; Containers with Spring-Boot and Docker</h2>
-
-<h3 id="speaker-kevin-wittek"><strong>Speaker</strong>: Kevin Wittek</h3>
+<h3 id="listen-to-your-gitlab-infrastructure">Listen to your GitLab Infrastructure</h3>
 
 <ul>
-<li>Run Spring-Boot Apps inside a Docker container</li>
-<li>Build your Spring-Boot Docker image using Gradle</li>
-<li>Make Spring-Boot Apps configurable with Environment-Variables</li>
-<li>Unit- and Integration-Test your Spring-Boot App with Spock and Docker</li>
-<li>Deploy and configure Spring-Boot microservices using docker-compose</li>
+<li>Logging and Monitoring for your GitLab Infrastructure</li>
+<li>Backup and Restore your Images from GitLab</li>
 </ul>
 
-<p>*Docker Captain</p>
+<h2 id="day-two-br-ship-a-tested-microservice-with-docker-and-gitlab">Day two: <br> Ship a tested microservice with Docker and GitLab</h2>
 
-<p><strong>Register and get one of our limited tickets, now!</strong></p>
+<h3 id="microservices">Microservices</h3>
 
-<p><a href="#" class="more page open-form" data-form="docker-labs">Get your Ticket</a>    
+<ul>
+<li>Create a simple Spring Boot Application</li>
+<li>Build your Toolchain for Application Development (Java and Maven)</li>
+<li>Empower your Application Development with Docker</li>
+<li>Distribute your Microservice in a <strong>neat Dockerfile</strong></li>
+<li>Ship your Microservice to a production like System with Delivery Concept</li>
+</ul>
+
+<h3 id="gitlab-ci-tipps-and-tricks">GitLab/CI Tipps and Tricks</h3>
+
+<ul>
+<li>Maintain your GitLab with a few steps for
+
+<ul>
+<li>Updating your Installation</li>
+<li>Backup and Restore your Installation</li>
+</ul></li>
+<li>Scale your CI CD Pipeline with different concepts</li>
+</ul>
+
+<h2 id="prerequisites-and-services">Prerequisites and Services</h2>
+
+<h3 id="who-should-participate">Who should participate</h3>
+
+<ul>
+<li>DevOps developer</li>
+<li>Administrators</li>
+<li>Software and system architects</li>
+</ul>
+
+<h3 id="required-knowledge">Required knowledge</h3>
+
+<ul>
+<li>Basic knowledge Docker</li>
+<li>Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)</li>
+<li>Basic knowledge of Java, Maven and SpringBoot</li>
+<li>Basic knowledge Microservices</li>
+</ul>
+
+<h3 id="services">services</h3>
+
+<ul>
+<li>Catering: breakfast, lunch and drinks (non-alcoholic)</li>
+<li>Training materials</li>
+<li>Internet</li>
+<li>Not included: hotel accommodation, travel expenses</li>
+<li>Computers are not provided</li>
+</ul>
+
+<p><a href="#" class="more page open-form">Book now</a>    
       </section> 
 </section>
 
