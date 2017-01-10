@@ -3,7 +3,32 @@
   
   <url>
     <loc>https://www.bee42.com/</loc>
-    <lastmod>2016-12-04T19:26:55+01:00</lastmod>
+    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bee42.com/trainings/docker-monitoring-lab/</loc>
+    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bee42.com/trainings/docker-for-java-lab-de/</loc>
+    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bee42.com/trainings/docker-for-java-lab/</loc>
+    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bee42.com/trainings/docker-gitlab-ci-lab/</loc>
+    <lastmod>2017-01-10T22:16:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bee42.com/trainings/docker-devops-camp/</loc>
+    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
   </url>
   
   <url>
@@ -20,35 +45,23 @@
   </url>
   
   <url>
-    <loc>https://www.bee42.com/devops_gathering-container_workshops/</loc>
+    <loc>https://www.bee42.com/conferences/devops_gathering-container_workshops/</loc>
   </url>
   
   <url>
-    <loc>https://www.bee42.com/devops_gathering_2017/</loc>
+    <loc>https://www.bee42.com/conferences/devops_gathering_2017/</loc>
   </url>
   
   <url>
-    <loc>https://www.bee42.com/docker-devops-camp/</loc>
+    <loc>https://www.bee42.com/trainings/docker-devops-camp-de/</loc>
   </url>
   
   <url>
-    <loc>https://www.bee42.com/docker-devops-camp_DE/</loc>
+    <loc>https://www.bee42.com/trainings/docker-gilab_ci-lab-de/</loc>
   </url>
   
   <url>
-    <loc>https://www.bee42.com/docker-gitlab_ci-lab/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.bee42.com/docker-gilab_ci-lab_DE/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.bee42.com/docker-monitoring-lab/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.bee42.com/docker-monitoring-lab_DE/</loc>
+    <loc>https://www.bee42.com/trainings/docker-monitoring-lab-de/</loc>
   </url>
   
   <url>
