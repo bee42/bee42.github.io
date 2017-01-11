@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conferences-rsses on bee42 solutions gmbh</title>
-    <link>https://www.bee42.com/conferences/index.xml</link>
+    <link>https://bee42.com/conferences/index.xml</link>
     <description>Recent content in Conferences-rsses on bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://www.bee42.com/conferences/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bee42.com/conferences/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>DevOps Gathering - Container Workshops</title>
-      <link>https://www.bee42.com/conferences/devops_gathering-container_workshops/</link>
+      <link>https://bee42.com/conferences/devops_gathering-container_workshops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bee42.com/conferences/devops_gathering-container_workshops/</guid>
+      <guid>https://bee42.com/conferences/devops_gathering-container_workshops/</guid>
       <description>
 
 &lt;h2 id=&#34;docker-workshops-in-bochum-2017-3-23&#34;&gt;Docker Workshops in Bochum - 2017/3/23&lt;/h2&gt;
@@ -97,10 +97,10 @@
     
     <item>
       <title>DevOps Gathering 2017</title>
-      <link>https://www.bee42.com/conferences/devops_gathering_2017/</link>
+      <link>https://bee42.com/conferences/devops_gathering_2017/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bee42.com/conferences/devops_gathering_2017/</guid>
+      <guid>https://bee42.com/conferences/devops_gathering_2017/</guid>
       <description>
 
 &lt;h2 id=&#34;call-for-papers&#34;&gt;Call for Papers&lt;/h2&gt;

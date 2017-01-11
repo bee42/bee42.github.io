@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trainings-rsses on bee42 solutions gmbh</title>
-    <link>https://www.bee42.com/trainings/index.xml</link>
+    <link>https://bee42.com/trainings/index.xml</link>
     <description>Recent content in Trainings-rsses on bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Jan 2017 22:27:32 +0100</lastBuildDate>
-    <atom:link href="https://www.bee42.com/trainings/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bee42.com/trainings/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Docker Monitoring Lab</title>
-      <link>https://www.bee42.com/trainings/docker-monitoring-lab/</link>
+      <link>https://bee42.com/trainings/docker-monitoring-lab/</link>
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
       
-      <guid>https://www.bee42.com/trainings/docker-monitoring-lab/</guid>
+      <guid>https://bee42.com/trainings/docker-monitoring-lab/</guid>
       <description>
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. We developers love Docker and deploy the microservices on it.&lt;/p&gt;
@@ -125,10 +125,10 @@
     
     <item>
       <title>docker for java lab</title>
-      <link>https://www.bee42.com/trainings/docker-for-java-lab-de/</link>
+      <link>https://bee42.com/trainings/docker-for-java-lab-de/</link>
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
       
-      <guid>https://www.bee42.com/trainings/docker-for-java-lab-de/</guid>
+      <guid>https://bee42.com/trainings/docker-for-java-lab-de/</guid>
       <description>
 
 &lt;p&gt;Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.&lt;/p&gt;
@@ -178,10 +178,10 @@
     
     <item>
       <title>docker for java lab</title>
-      <link>https://www.bee42.com/trainings/docker-for-java-lab/</link>
+      <link>https://bee42.com/trainings/docker-for-java-lab/</link>
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
       
-      <guid>https://www.bee42.com/trainings/docker-for-java-lab/</guid>
+      <guid>https://bee42.com/trainings/docker-for-java-lab/</guid>
       <description>
 
 &lt;p&gt;Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.&lt;/p&gt;
@@ -231,10 +231,10 @@
     
     <item>
       <title>Docker GitLab/CI Lab</title>
-      <link>https://www.bee42.com/trainings/docker-gitlab-ci-lab/</link>
+      <link>https://bee42.com/trainings/docker-gitlab-ci-lab/</link>
       <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
       
-      <guid>https://www.bee42.com/trainings/docker-gitlab-ci-lab/</guid>
+      <guid>https://bee42.com/trainings/docker-gitlab-ci-lab/</guid>
       <description>
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver Docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for Docker images.&lt;/p&gt;
@@ -335,10 +335,10 @@
     
     <item>
       <title>Docker DevOps Camp</title>
-      <link>https://www.bee42.com/trainings/docker-devops-camp/</link>
+      <link>https://bee42.com/trainings/docker-devops-camp/</link>
       <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
       
-      <guid>https://www.bee42.com/trainings/docker-devops-camp/</guid>
+      <guid>https://bee42.com/trainings/docker-devops-camp/</guid>
       <description>
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Camp we want to pursue this promise.&lt;/p&gt;
@@ -462,10 +462,10 @@
     
     <item>
       <title>Docker DevOps Camp</title>
-      <link>https://www.bee42.com/trainings/docker-devops-camp-de/</link>
+      <link>https://bee42.com/trainings/docker-devops-camp-de/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bee42.com/trainings/docker-devops-camp-de/</guid>
+      <guid>https://bee42.com/trainings/docker-devops-camp-de/</guid>
       <description>
 
 &lt;h2 id=&#34;drei-tage-training-in-essen-br-br-31-jan-2-feb-2017&#34;&gt;Drei Tage Training in Essen &lt;br&gt; &lt;br&gt; 31. Jan. - 2. Feb. 2017&lt;/h2&gt;
@@ -598,10 +598,10 @@
     
     <item>
       <title>Docker Gitlab/CI Lab</title>
-      <link>https://www.bee42.com/trainings/docker-gilab_ci-lab-de/</link>
+      <link>https://bee42.com/trainings/docker-gilab_ci-lab-de/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bee42.com/trainings/docker-gilab_ci-lab-de/</guid>
+      <guid>https://bee42.com/trainings/docker-gilab_ci-lab-de/</guid>
       <description>
 
 &lt;h2 id=&#34;zwei-tage-training-in-essen-br-br-9-10-märz-2017&#34;&gt;Zwei Tage Training in Essen &lt;br&gt; &lt;br&gt; 9./10. März 2017&lt;/h2&gt;
@@ -706,10 +706,10 @@
     
     <item>
       <title>Docker Monitoring Lab</title>
-      <link>https://www.bee42.com/trainings/docker-monitoring-lab-de/</link>
+      <link>https://bee42.com/trainings/docker-monitoring-lab-de/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bee42.com/trainings/docker-monitoring-lab-de/</guid>
+      <guid>https://bee42.com/trainings/docker-monitoring-lab-de/</guid>
       <description>
 
 &lt;h2 id=&#34;zwei-tage-training-in-essen-br-br-4-5-april-2017&#34;&gt;Zwei Tage Training in Essen &lt;br&gt; &lt;br&gt; 4./5. April 2017&lt;/h2&gt;
