@@ -10,122 +10,6 @@
     <atom:link href="https://bee42.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Docker Monitoring Lab</title>
-      <link>https://bee42.com/trainings/docker-monitoring-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
-      
-      <guid>https://bee42.com/trainings/docker-monitoring-lab/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-monitoring-lab&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. We developers love Docker and deploy the microservices on it.&lt;/p&gt;
-
-&lt;p&gt;Nice, but developer and operator must be control the real usage of the system. This is a complex, but useful task at your daily work. At this training you learn to set up Prometheus to grab your metrics from system and services. Prometheus uses a time series database featuring a powerful query language with integrated complex mathematical functions. With Grafana your can create your own dashboards to visualize your metrics. Alerts can be sent both via traditional channels such as email, or integrated with chat systems such as Slack.&lt;/p&gt;
-
-&lt;p&gt;Prometheus was originally developed by SoundCloud and is now under the umbrella of the Cloud Native Computing Foundation, which is a sub-project of the Linux Foundation.&lt;/p&gt;
-
-&lt;p&gt;In this training, participants will learn the basic concepts of Prometheus and Grafana, its architecture, how it can be deployed with Docker. Participants will also learn how to build dashboards and set up alerts.&lt;/p&gt;
-
-&lt;h2 id=&#34;day-one-br-docker-service-monitoring-basics&#34;&gt;Day one: &lt;br&gt;Docker Service Monitoring basics&lt;/h2&gt;
-
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Create a simple Java-based microservice&lt;/li&gt;
-&lt;li&gt;Overview of Prometheus and Grafana&lt;/li&gt;
-&lt;li&gt;Monitor your Docker-based microservice&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;details-prometheus&#34;&gt;Details Prometheus&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;How it works&lt;/li&gt;
-&lt;li&gt;Configuration&lt;/li&gt;
-&lt;li&gt;Types of sensors&lt;/li&gt;
-&lt;li&gt;Add sensors to your code&lt;/li&gt;
-&lt;li&gt;Create metrics endpoints&lt;/li&gt;
-&lt;li&gt;Work with PromQL&lt;/li&gt;
-&lt;li&gt;Label your metrics right&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;details-grafana&#34;&gt;Details Grafana&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;How it works&lt;/li&gt;
-&lt;li&gt;Configuration&lt;/li&gt;
-&lt;li&gt;Set up Dashboards&lt;/li&gt;
-&lt;li&gt;Work with Prometheus and Grafana&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-two-br-application-and-node-monitoring&#34;&gt;Day two: &lt;br&gt; Application and Node Monitoring&lt;/h2&gt;
-
-&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Setup a small Docker cluster&lt;/li&gt;
-&lt;li&gt;Monitor your microservices&lt;/li&gt;
-&lt;li&gt;Use different exporters
-
-&lt;ul&gt;
-&lt;li&gt;Machines&lt;/li&gt;
-&lt;li&gt;Containers&lt;/li&gt;
-&lt;li&gt;Services&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Use multiple scrapers&lt;/li&gt;
-&lt;li&gt;Learn to use the right metrics&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;setup-more-complex-examples&#34;&gt;Setup more complex examples&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Setup complex dashboards with Grafana&lt;/li&gt;
-&lt;li&gt;Use Prometheus for monitoring batch jobs&lt;/li&gt;
-&lt;li&gt;Use the Prometheus Alertmanager&lt;/li&gt;
-&lt;li&gt;Look into more advanced examples&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;tips-and-tricks&#34;&gt;Tips and Tricks&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Go to productions&lt;/li&gt;
-&lt;li&gt;Federate your Prometheus services&lt;/li&gt;
-&lt;li&gt;Upgrade your monitoring systems&lt;/li&gt;
-&lt;li&gt;Backup/Restore&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
-
-&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DevOps developer&lt;/li&gt;
-&lt;li&gt;Administrators&lt;/li&gt;
-&lt;li&gt;Software and system architects&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
-&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
-&lt;li&gt;Basic knowledge of Java&lt;/li&gt;
-&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
-&lt;li&gt;Training materials&lt;/li&gt;
-&lt;li&gt;Internet&lt;/li&gt;
-&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
-&lt;li&gt;Computers are not provided&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>docker for java lab</title>
       <link>https://bee42.com/trainings/docker-for-java-lab-de/</link>
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
@@ -176,296 +60,6 @@
 &lt;li&gt;Scale your Java Microservices&lt;/li&gt;
 &lt;li&gt;Running Java Micorservices in production&lt;/li&gt;
 &lt;li&gt;Add metrics and logging&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>docker for java lab</title>
-      <link>https://bee42.com/trainings/docker-for-java-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
-      
-      <guid>https://bee42.com/trainings/docker-for-java-lab/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-for-java-lab-de&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Participants&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Java Developer&lt;/li&gt;
-&lt;li&gt;System Architects&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Pre-Knowledge&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Good Java, Maven and Spring Boot knowledge&lt;/li&gt;
-&lt;li&gt;Docker basics&lt;/li&gt;
-&lt;li&gt;Linux basics&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-one-br-build-your-java-microservice-with-docker&#34;&gt;Day One: &lt;br&gt;Build your Java Microservice with Docker&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Docker Introduction&lt;/li&gt;
-&lt;li&gt;Empower your Development&lt;/li&gt;
-&lt;li&gt;Build a Spring Boot Microservices with Maven&lt;/li&gt;
-&lt;li&gt;Bundle your application with Docker&lt;/li&gt;
-&lt;li&gt;Create Database Container&lt;/li&gt;
-&lt;li&gt;TDD with Docker&lt;/li&gt;
-&lt;li&gt;Build your own Java Images&lt;/li&gt;
-&lt;li&gt;Debugging your Java at container&lt;/li&gt;
-&lt;li&gt;Docker IDE Support&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-two-br-running-java-in-production&#34;&gt;Day Two: &lt;br&gt;Running Java in production&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Think infrastructure first&lt;/li&gt;
-&lt;li&gt;Automatic Image Build with a Cloud/CI&lt;/li&gt;
-&lt;li&gt;Build your Toolchain: Java, Maven, Tomcat, &amp;hellip;&lt;/li&gt;
-&lt;li&gt;Create optimal Java tooling with Docker&lt;/li&gt;
-&lt;li&gt;Scale your Java Microservices&lt;/li&gt;
-&lt;li&gt;Running Java Micorservices in production&lt;/li&gt;
-&lt;li&gt;Add metrics and logging&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Docker GitLab/CI Lab</title>
-      <link>https://bee42.com/trainings/docker-gitlab-ci-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
-      
-      <guid>https://bee42.com/trainings/docker-gitlab-ci-lab/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-gilab-ci-lab-de&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver Docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for Docker images.&lt;/p&gt;
-
-&lt;p&gt;We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to deliver your image to your environment. Also we want to discuss how you can trigger your builds, make good Docker images and ship images to your Docker registry.&lt;/p&gt;
-
-&lt;h2 id=&#34;day-one-br-gitlab-ci-basics&#34;&gt;Day one: &lt;br&gt;GitLab/CI basics&lt;/h2&gt;
-
-&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What is GitLab and what it is not ?&lt;/li&gt;
-&lt;li&gt;Installation of GitLab Instance&lt;/li&gt;
-&lt;li&gt;Overview of the GitLab Architecture&lt;/li&gt;
-&lt;li&gt;Detailed overview about the GitLab components&lt;/li&gt;
-&lt;li&gt;Setup the various GitLab components&lt;/li&gt;
-&lt;li&gt;GitLab UI overview&lt;/li&gt;
-&lt;li&gt;Check in a simple project&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;workflow-with-your-images-from-gitlab&#34;&gt;Workflow with your Images from GitLab&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Let&amp;rsquo;s build and test Docker images&lt;/li&gt;
-&lt;li&gt;Push your successfully built images to registry&lt;/li&gt;
-&lt;li&gt;Build your own images with Dockerfiles&lt;/li&gt;
-&lt;li&gt;Create your own GitLab Runners of different types
-
-&lt;ul&gt;
-&lt;li&gt;Shell&lt;/li&gt;
-&lt;li&gt;Docker&lt;/li&gt;
-&lt;li&gt;Docker machine&lt;/li&gt;
-&lt;li&gt;SSH&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;listen-to-your-gitlab-infrastructure&#34;&gt;Listen to your GitLab Infrastructure&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Logging and Monitoring for your GitLab Infrastructure&lt;/li&gt;
-&lt;li&gt;Backup and Restore your Images from GitLab&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-two-br-ship-a-tested-microservice-with-docker-and-gitlab&#34;&gt;Day two: &lt;br&gt; Ship a tested microservice with Docker and GitLab&lt;/h2&gt;
-
-&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Create a simple Spring Boot Application&lt;/li&gt;
-&lt;li&gt;Build your Toolchain for Application Development (Java and Maven)&lt;/li&gt;
-&lt;li&gt;Empower your Application Development with Docker&lt;/li&gt;
-&lt;li&gt;Distribute your Microservice in a &lt;strong&gt;neat Dockerfile&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Ship your Microservice to a production like System with Delivery Concept&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;gitlab-ci-tipps-and-tricks&#34;&gt;GitLab/CI Tipps and Tricks&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Maintain your GitLab with a few steps for
-
-&lt;ul&gt;
-&lt;li&gt;Updating your Installation&lt;/li&gt;
-&lt;li&gt;Backup and Restore your Installation&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Scale your CI CD Pipeline with different concepts&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
-
-&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DevOps developer&lt;/li&gt;
-&lt;li&gt;Administrators&lt;/li&gt;
-&lt;li&gt;Software and system architects&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
-&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
-&lt;li&gt;Basic knowledge of Java, Maven and SpringBoot&lt;/li&gt;
-&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
-&lt;li&gt;Training materials&lt;/li&gt;
-&lt;li&gt;Internet&lt;/li&gt;
-&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
-&lt;li&gt;Computers are not provided&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Docker DevOps Camp</title>
-      <link>https://bee42.com/trainings/docker-devops-camp/</link>
-      <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
-      
-      <guid>https://bee42.com/trainings/docker-devops-camp/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-devops-camp-de&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Camp we want to pursue this promise.&lt;/p&gt;
-
-&lt;p&gt;We start with an overview and introduce the first steps with the use of Docker. You will get to know the most important commands, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, install with Docker, and integrate with other services in an environment. We also discuss the current Docker ecosystem and clarify opportunities and risks.&lt;/p&gt;
-
-&lt;p&gt;This camp provides you with the Docker basics in comprehensible steps and puts you in the position subsequently to decide whether and how Docker is useful in your business and IT context.&lt;/p&gt;
-
-&lt;h2 id=&#34;day-one-br-docker-basics&#34;&gt;Day one: &lt;br&gt;Docker basics&lt;/h2&gt;
-
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Docker Basics and Installation&lt;/li&gt;
-&lt;li&gt;Container Technology Basics&lt;/li&gt;
-&lt;li&gt;Kernel- vs Classical- Virtualization&lt;/li&gt;
-&lt;li&gt;Architecture of Docker&lt;/li&gt;
-&lt;li&gt;Use Cases and more&lt;/li&gt;
-&lt;li&gt;Setup your docker environment&lt;/li&gt;
-&lt;li&gt;Images, Container and Registry&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;simple-usage&#34;&gt;Simple Usage&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Let&amp;rsquo;s container run, stop, maintain&lt;/li&gt;
-&lt;li&gt;Docker CLI command overview&lt;/li&gt;
-&lt;li&gt;Build your own Images with Dockerfiles&lt;/li&gt;
-&lt;li&gt;Build, ship and run Cycle&lt;/li&gt;
-&lt;li&gt;Docker Tooling&lt;/li&gt;
-&lt;li&gt;Volume Management&lt;/li&gt;
-&lt;li&gt;Network Management&lt;/li&gt;
-&lt;li&gt;Logging and Metrics&lt;/li&gt;
-&lt;li&gt;Backup/Restore&lt;/li&gt;
-&lt;li&gt;Container Types&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-two-br-create-microservices-with-docker&#34;&gt;Day two: &lt;br&gt; Create microservices with Docker&lt;/h2&gt;
-
-&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Think infrastructure first&lt;/li&gt;
-&lt;li&gt;Create a simple Spring Boot App&lt;/li&gt;
-&lt;li&gt;Build your Toolchain: Java and Maven&lt;/li&gt;
-&lt;li&gt;Docker for Java Developers&lt;/li&gt;
-&lt;li&gt;Create Database Container&lt;/li&gt;
-&lt;li&gt;Empower your Development&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;infrastructure&#34;&gt;Infrastructure&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Build your own Microservice infrastructure&lt;/li&gt;
-&lt;li&gt;Create a simple build pipeline&lt;/li&gt;
-&lt;li&gt;Use Service Discovery&lt;/li&gt;
-&lt;li&gt;Create Multi Host Networks&lt;/li&gt;
-&lt;li&gt;Learn more Docker Tricks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-three-br-scale-your-service-with-docker-swarming&#34;&gt;Day three: &lt;br&gt; Scale your service with Docker Swarming&lt;/h2&gt;
-
-&lt;h3 id=&#34;swarming&#34;&gt;Swarming&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Scale your services with docker swarming mode&lt;/li&gt;
-&lt;li&gt;Update, Failure detection and redeployment&lt;/li&gt;
-&lt;li&gt;Mesh Network and Service Discovery&lt;/li&gt;
-&lt;li&gt;Setup a ingress loadbalancer (traefik, haproxy, nginx)&lt;/li&gt;
-&lt;li&gt;Setup logging and monitoring systems
-
-&lt;ul&gt;
-&lt;li&gt;ELK-Stack&lt;/li&gt;
-&lt;li&gt;Prometheus and Grafana&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Debug your Container&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;go-to-production&#34;&gt;Go to production&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Docker for production&lt;/li&gt;
-&lt;li&gt;Build high-quality images&lt;/li&gt;
-&lt;li&gt;Docker Security Basics&lt;/li&gt;
-&lt;li&gt;Plugins&lt;/li&gt;
-&lt;li&gt;Usage tricks&lt;/li&gt;
-&lt;li&gt;Review Best Practices&lt;/li&gt;
-&lt;li&gt;Docker on ARM&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;requirements-and-services&#34;&gt;Requirements and Services&lt;/h2&gt;
-
-&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DevOps developer&lt;/li&gt;
-&lt;li&gt;Administrators&lt;/li&gt;
-&lt;li&gt;Software and system architects&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
-&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
-&lt;li&gt;Basic knowledge of Java&lt;/li&gt;
-&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
-&lt;li&gt;Training materials&lt;/li&gt;
-&lt;li&gt;Internet&lt;/li&gt;
-&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
-&lt;li&gt;Computers are not provided&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1050,16 +644,14 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
     </item>
     
     <item>
-      <title>Docker Monitoring Lab</title>
-      <link>https://bee42.com/trainings/docker-monitoring-lab-de/</link>
+      <title>Docker Prometheus Lab</title>
+      <link>https://bee42.com/trainings/docker-prometheus-lab-de/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.com/trainings/docker-monitoring-lab-de/</guid>
+      <guid>https://bee42.com/trainings/docker-prometheus-lab-de/</guid>
       <description>
 
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-monitoring-lab&#34;&gt;english version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;zwei-tage-training-in-essen-br-br-4-5-april-2017&#34;&gt;Zwei Tage Training in Essen &lt;br&gt; &lt;br&gt; 4./5. April 2017&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-prometheus-lab&#34;&gt;english version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. Wir Entwickler lieben Docker, deployen dort leichtgewichtige Microservices und erstellen System aus vorgefertigten Komponenten des Ökosystems.&lt;/p&gt;
 
@@ -1322,6 +914,412 @@ That is why we do not pass on data to uninvolved third parties.&lt;/p&gt;
 &lt;h3 id=&#34;we-ll-inform-you-immediately&#34;&gt;We&amp;rsquo;ll inform you immediately.&lt;/h3&gt;
 
 &lt;p&gt;&lt;a  class=&#34;more page&#34; href=&#34;https://bee42.com/index.html&#34;&gt;back to home&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker DevOps Camp</title>
+      <link>https://bee42.com/trainings/docker-devops-camp/</link>
+      <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
+      
+      <guid>https://bee42.com/trainings/docker-devops-camp/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-devops-camp-de&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Camp we want to pursue this promise.&lt;/p&gt;
+
+&lt;p&gt;We start with an overview and introduce the first steps with the use of Docker. You will get to know the most important commands, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, install with Docker, and integrate with other services in an environment. We also discuss the current Docker ecosystem and clarify opportunities and risks.&lt;/p&gt;
+
+&lt;p&gt;This camp provides you with the Docker basics in comprehensible steps and puts you in the position subsequently to decide whether and how Docker is useful in your business and IT context.&lt;/p&gt;
+
+&lt;h2 id=&#34;day-one-br-docker-basics&#34;&gt;Day one: &lt;br&gt;Docker basics&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker Basics and Installation&lt;/li&gt;
+&lt;li&gt;Container Technology Basics&lt;/li&gt;
+&lt;li&gt;Kernel- vs Classical- Virtualization&lt;/li&gt;
+&lt;li&gt;Architecture of Docker&lt;/li&gt;
+&lt;li&gt;Use Cases and more&lt;/li&gt;
+&lt;li&gt;Setup your docker environment&lt;/li&gt;
+&lt;li&gt;Images, Container and Registry&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;simple-usage&#34;&gt;Simple Usage&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Let&amp;rsquo;s container run, stop, maintain&lt;/li&gt;
+&lt;li&gt;Docker CLI command overview&lt;/li&gt;
+&lt;li&gt;Build your own Images with Dockerfiles&lt;/li&gt;
+&lt;li&gt;Build, ship and run Cycle&lt;/li&gt;
+&lt;li&gt;Docker Tooling&lt;/li&gt;
+&lt;li&gt;Volume Management&lt;/li&gt;
+&lt;li&gt;Network Management&lt;/li&gt;
+&lt;li&gt;Logging and Metrics&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;li&gt;Container Types&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-two-br-create-microservices-with-docker&#34;&gt;Day two: &lt;br&gt; Create microservices with Docker&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Think infrastructure first&lt;/li&gt;
+&lt;li&gt;Create a simple Spring Boot App&lt;/li&gt;
+&lt;li&gt;Build your Toolchain: Java and Maven&lt;/li&gt;
+&lt;li&gt;Docker for Java Developers&lt;/li&gt;
+&lt;li&gt;Create Database Container&lt;/li&gt;
+&lt;li&gt;Empower your Development&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;infrastructure&#34;&gt;Infrastructure&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Build your own Microservice infrastructure&lt;/li&gt;
+&lt;li&gt;Create a simple build pipeline&lt;/li&gt;
+&lt;li&gt;Use Service Discovery&lt;/li&gt;
+&lt;li&gt;Create Multi Host Networks&lt;/li&gt;
+&lt;li&gt;Learn more Docker Tricks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-three-br-scale-your-service-with-docker-swarming&#34;&gt;Day three: &lt;br&gt; Scale your service with Docker Swarming&lt;/h2&gt;
+
+&lt;h3 id=&#34;swarming&#34;&gt;Swarming&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Scale your services with docker swarming mode&lt;/li&gt;
+&lt;li&gt;Update, Failure detection and redeployment&lt;/li&gt;
+&lt;li&gt;Mesh Network and Service Discovery&lt;/li&gt;
+&lt;li&gt;Setup a ingress loadbalancer (traefik, haproxy, nginx)&lt;/li&gt;
+&lt;li&gt;Setup logging and monitoring systems
+
+&lt;ul&gt;
+&lt;li&gt;ELK-Stack&lt;/li&gt;
+&lt;li&gt;Prometheus and Grafana&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Debug your Container&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;go-to-production&#34;&gt;Go to production&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker for production&lt;/li&gt;
+&lt;li&gt;Build high-quality images&lt;/li&gt;
+&lt;li&gt;Docker Security Basics&lt;/li&gt;
+&lt;li&gt;Plugins&lt;/li&gt;
+&lt;li&gt;Usage tricks&lt;/li&gt;
+&lt;li&gt;Review Best Practices&lt;/li&gt;
+&lt;li&gt;Docker on ARM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;requirements-and-services&#34;&gt;Requirements and Services&lt;/h2&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps developer&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software and system architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Java&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training materials&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
+&lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>docker for java lab</title>
+      <link>https://bee42.com/trainings/docker-for-java-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
+      
+      <guid>https://bee42.com/trainings/docker-for-java-lab/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-for-java-lab-de&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Participants&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java Developer&lt;/li&gt;
+&lt;li&gt;System Architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Pre-Knowledge&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Good Java, Maven and Spring Boot knowledge&lt;/li&gt;
+&lt;li&gt;Docker basics&lt;/li&gt;
+&lt;li&gt;Linux basics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-one-br-build-your-java-microservice-with-docker&#34;&gt;Day One: &lt;br&gt;Build your Java Microservice with Docker&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker Introduction&lt;/li&gt;
+&lt;li&gt;Empower your Development&lt;/li&gt;
+&lt;li&gt;Build a Spring Boot Microservices with Maven&lt;/li&gt;
+&lt;li&gt;Bundle your application with Docker&lt;/li&gt;
+&lt;li&gt;Create Database Container&lt;/li&gt;
+&lt;li&gt;TDD with Docker&lt;/li&gt;
+&lt;li&gt;Build your own Java Images&lt;/li&gt;
+&lt;li&gt;Debugging your Java at container&lt;/li&gt;
+&lt;li&gt;Docker IDE Support&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-two-br-running-java-in-production&#34;&gt;Day Two: &lt;br&gt;Running Java in production&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Think infrastructure first&lt;/li&gt;
+&lt;li&gt;Automatic Image Build with a Cloud/CI&lt;/li&gt;
+&lt;li&gt;Build your Toolchain: Java, Maven, Tomcat, &amp;hellip;&lt;/li&gt;
+&lt;li&gt;Create optimal Java tooling with Docker&lt;/li&gt;
+&lt;li&gt;Scale your Java Microservices&lt;/li&gt;
+&lt;li&gt;Running Java Micorservices in production&lt;/li&gt;
+&lt;li&gt;Add metrics and logging&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker GitLab/CI Lab</title>
+      <link>https://bee42.com/trainings/docker-gitlab-ci-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
+      
+      <guid>https://bee42.com/trainings/docker-gitlab-ci-lab/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-gilab-ci-lab-de&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver Docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for Docker images.&lt;/p&gt;
+
+&lt;p&gt;We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to deliver your image to your environment. Also we want to discuss how you can trigger your builds, make good Docker images and ship images to your Docker registry.&lt;/p&gt;
+
+&lt;h2 id=&#34;day-one-br-gitlab-ci-basics&#34;&gt;Day one: &lt;br&gt;GitLab/CI basics&lt;/h2&gt;
+
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is GitLab and what it is not ?&lt;/li&gt;
+&lt;li&gt;Installation of GitLab Instance&lt;/li&gt;
+&lt;li&gt;Overview of the GitLab Architecture&lt;/li&gt;
+&lt;li&gt;Detailed overview about the GitLab components&lt;/li&gt;
+&lt;li&gt;Setup the various GitLab components&lt;/li&gt;
+&lt;li&gt;GitLab UI overview&lt;/li&gt;
+&lt;li&gt;Check in a simple project&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;workflow-with-your-images-from-gitlab&#34;&gt;Workflow with your Images from GitLab&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Let&amp;rsquo;s build and test Docker images&lt;/li&gt;
+&lt;li&gt;Push your successfully built images to registry&lt;/li&gt;
+&lt;li&gt;Build your own images with Dockerfiles&lt;/li&gt;
+&lt;li&gt;Create your own GitLab Runners of different types
+
+&lt;ul&gt;
+&lt;li&gt;Shell&lt;/li&gt;
+&lt;li&gt;Docker&lt;/li&gt;
+&lt;li&gt;Docker machine&lt;/li&gt;
+&lt;li&gt;SSH&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;listen-to-your-gitlab-infrastructure&#34;&gt;Listen to your GitLab Infrastructure&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Logging and Monitoring for your GitLab Infrastructure&lt;/li&gt;
+&lt;li&gt;Backup and Restore your Images from GitLab&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-two-br-ship-a-tested-microservice-with-docker-and-gitlab&#34;&gt;Day two: &lt;br&gt; Ship a tested microservice with Docker and GitLab&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a simple Spring Boot Application&lt;/li&gt;
+&lt;li&gt;Build your Toolchain for Application Development (Java and Maven)&lt;/li&gt;
+&lt;li&gt;Empower your Application Development with Docker&lt;/li&gt;
+&lt;li&gt;Distribute your Microservice in a &lt;strong&gt;neat Dockerfile&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Ship your Microservice to a production like System with Delivery Concept&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;gitlab-ci-tipps-and-tricks&#34;&gt;GitLab/CI Tipps and Tricks&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Maintain your GitLab with a few steps for
+
+&lt;ul&gt;
+&lt;li&gt;Updating your Installation&lt;/li&gt;
+&lt;li&gt;Backup and Restore your Installation&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Scale your CI CD Pipeline with different concepts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps developer&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software and system architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Java, Maven and SpringBoot&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training materials&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
+&lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker Prometheus Lab</title>
+      <link>https://bee42.com/trainings/docker-prometheus-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
+      
+      <guid>https://bee42.com/trainings/docker-prometheus-lab/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-prometheus-lab-de&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. We developers love Docker and deploy the microservices on it.&lt;/p&gt;
+
+&lt;p&gt;Nice, but developer and operator must be control the real usage of the system. This is a complex, but useful task at your daily work. At this training you learn to set up Prometheus to grab your metrics from system and services. Prometheus uses a time series database featuring a powerful query language with integrated complex mathematical functions. With Grafana your can create your own dashboards to visualize your metrics. Alerts can be sent both via traditional channels such as email, or integrated with chat systems such as Slack.&lt;/p&gt;
+
+&lt;p&gt;Prometheus was originally developed by SoundCloud and is now under the umbrella of the Cloud Native Computing Foundation, which is a sub-project of the Linux Foundation.&lt;/p&gt;
+
+&lt;p&gt;In this training, participants will learn the basic concepts of Prometheus and Grafana, its architecture, how it can be deployed with Docker. Participants will also learn how to build dashboards and set up alerts.&lt;/p&gt;
+
+&lt;h2 id=&#34;day-one-br-docker-service-monitoring-basics&#34;&gt;Day one: &lt;br&gt;Docker Service Monitoring basics&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a simple Java-based microservice&lt;/li&gt;
+&lt;li&gt;Overview of Prometheus and Grafana&lt;/li&gt;
+&lt;li&gt;Monitor your Docker-based microservice&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;details-prometheus&#34;&gt;Details Prometheus&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How it works&lt;/li&gt;
+&lt;li&gt;Configuration&lt;/li&gt;
+&lt;li&gt;Types of sensors&lt;/li&gt;
+&lt;li&gt;Add sensors to your code&lt;/li&gt;
+&lt;li&gt;Create metrics endpoints&lt;/li&gt;
+&lt;li&gt;Work with PromQL&lt;/li&gt;
+&lt;li&gt;Label your metrics right&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;details-grafana&#34;&gt;Details Grafana&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How it works&lt;/li&gt;
+&lt;li&gt;Configuration&lt;/li&gt;
+&lt;li&gt;Set up Dashboards&lt;/li&gt;
+&lt;li&gt;Work with Prometheus and Grafana&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-two-br-application-and-node-monitoring&#34;&gt;Day two: &lt;br&gt; Application and Node Monitoring&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Setup a small Docker cluster&lt;/li&gt;
+&lt;li&gt;Monitor your microservices&lt;/li&gt;
+&lt;li&gt;Use different exporters
+
+&lt;ul&gt;
+&lt;li&gt;Machines&lt;/li&gt;
+&lt;li&gt;Containers&lt;/li&gt;
+&lt;li&gt;Services&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Use multiple scrapers&lt;/li&gt;
+&lt;li&gt;Learn to use the right metrics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;setup-more-complex-examples&#34;&gt;Setup more complex examples&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Setup complex dashboards with Grafana&lt;/li&gt;
+&lt;li&gt;Use Prometheus for monitoring batch jobs&lt;/li&gt;
+&lt;li&gt;Use the Prometheus Alertmanager&lt;/li&gt;
+&lt;li&gt;Look into more advanced examples&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;tips-and-tricks&#34;&gt;Tips and Tricks&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go to productions&lt;/li&gt;
+&lt;li&gt;Federate your Prometheus services&lt;/li&gt;
+&lt;li&gt;Upgrade your monitoring systems&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps developer&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software and system architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Java&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training materials&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
+&lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
