@@ -51,8 +51,9 @@ $(document).ready(function(){
 	$('.slick-trainings').slick({
 		dots: true,
 		infinite: true,
-		autoplay: false,
-		slidesToShow: 3,
+		autoplay: true,
+		autoplaySpeed: 2500,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		arrows: false,
 
@@ -60,6 +61,7 @@ $(document).ready(function(){
 			{
 				breakpoint: 1024,
 				settings: {
+					infinite: false,
 					slidesToShow: 2
 				}
 			},
