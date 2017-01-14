@@ -19,47 +19,61 @@
 
 &lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-for-java-lab&#34;&gt;english version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.&lt;/p&gt;
+&lt;p&gt;Docker und das spannende Ökosystem ist sehr hilfreich für jeden Java-Entwickler. Diese Lab gibt einen Überblick über die besten Praktiken für die Entwicklung von Java-Anwendungen mit Docker. Das Docker-Ökosystem bietet Dir vielversprechende Tools zum Paketieren Deiner Software, Wiederverwendung vorhandener Services, Datenbanken oder Tools. Docker hilft, Deine Continuous Integration Pipeline voranzutreiben. Aber, ein gutes Java-Image aufzubauen und Deine Container direkt in der Produktion zu verwenden, ist eine Herausforderung. Bündeln Deine Java-Software, teste Deine Dienste mit Docker und befähige Deine Entwicklung zu mehr Qualiät. Dieses Labor gibt Dir einige nützliche Hinweise und diskutieren Tricks, um Docker nahtlos mit Java zu verwenden.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Participants&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tag-eins-br-bauen-deinen-java-microservice-mit-docker&#34;&gt;Tag Eins: &lt;br&gt;Bauen Deinen Java Microservice mit Docker&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Java Developer&lt;/li&gt;
-&lt;li&gt;System Architects&lt;/li&gt;
+&lt;li&gt;Docker Basics&lt;/li&gt;
+&lt;li&gt;Empower Deine Entwicklung mit Docker&lt;/li&gt;
+&lt;li&gt;Aufbauen einer Spring Boot Microservices mit Maven&lt;/li&gt;
+&lt;li&gt;Verpacken der Java Anwendung mit Docker&lt;/li&gt;
+&lt;li&gt;Erzeugen eines Databank Container&lt;/li&gt;
+&lt;li&gt;TDD mit Docker&lt;/li&gt;
+&lt;li&gt;Bauen eines eigenen Java Base Images&lt;/li&gt;
+&lt;li&gt;Debugging mit Java im Container&lt;/li&gt;
+&lt;li&gt;Docker IDE Unterstützung&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Pre-Knowledge&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tag-zwei-br-java-für-die-produktion&#34;&gt;Tag Zwei: &lt;br&gt;Java für die Produktion&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Good Java, Maven and Spring Boot knowledge&lt;/li&gt;
-&lt;li&gt;Docker basics&lt;/li&gt;
-&lt;li&gt;Linux basics&lt;/li&gt;
+&lt;li&gt;Denke Deine Infrastruktur zuerst&lt;/li&gt;
+&lt;li&gt;Automatische Erzeugung Deiner Image Build mit einer CI-Pipeline&lt;/li&gt;
+&lt;li&gt;Baue Deine eigene  Werkzeugkette: Java, Maven, Tomcat, &amp;hellip;&lt;/li&gt;
+&lt;li&gt;Erzeugen eines optimale Java Werkzeugkastens mit Docker&lt;/li&gt;
+&lt;li&gt;Beachte die &lt;strong&gt;12 Factor&lt;/strong&gt; Regeln&lt;/li&gt;
+&lt;li&gt;Skalliere Deine Java Microservices&lt;/li&gt;
+&lt;li&gt;Java Micorservices in der Produktion&lt;/li&gt;
+&lt;li&gt;Integiere Metriken und Logging&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;day-one-br-build-your-java-microservice-with-docker&#34;&gt;Day One: &lt;br&gt;Build your Java Microservice with Docker&lt;/h2&gt;
+&lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
+
+&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Docker Introduction&lt;/li&gt;
-&lt;li&gt;Empower your Development&lt;/li&gt;
-&lt;li&gt;Build a Spring Boot Microservices with Maven&lt;/li&gt;
-&lt;li&gt;Bundle your application with Docker&lt;/li&gt;
-&lt;li&gt;Create Database Container&lt;/li&gt;
-&lt;li&gt;TDD with Docker&lt;/li&gt;
-&lt;li&gt;Build your own Java Images&lt;/li&gt;
-&lt;li&gt;Debugging your Java at container&lt;/li&gt;
-&lt;li&gt;Docker IDE Support&lt;/li&gt;
+&lt;li&gt;Java Entwickler&lt;/li&gt;
+&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;day-two-br-running-java-in-production&#34;&gt;Day Two: &lt;br&gt;Running Java in production&lt;/h2&gt;
+&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Think infrastructure first&lt;/li&gt;
-&lt;li&gt;Automatic Image Build with a Cloud/CI&lt;/li&gt;
-&lt;li&gt;Build your Toolchain: Java, Maven, Tomcat, &amp;hellip;&lt;/li&gt;
-&lt;li&gt;Create optimal Java tooling with Docker&lt;/li&gt;
-&lt;li&gt;Scale your Java Microservices&lt;/li&gt;
-&lt;li&gt;Running Java Micorservices in production&lt;/li&gt;
-&lt;li&gt;Add metrics and logging&lt;/li&gt;
+&lt;li&gt;Gute Kenntnisse Java, Maven, Spring boot&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Docker&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, packages)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
+&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
+&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -557,7 +571,7 @@
 
 &lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-for-java-lab-de&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.&lt;/p&gt;
+&lt;p&gt;Docker and the exciting ecosystem is very helpful for any Java developer. This lab gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Participants&lt;/strong&gt;&lt;/p&gt;
 
@@ -595,6 +609,7 @@
 &lt;li&gt;Automatic Image Build with a Cloud/CI&lt;/li&gt;
 &lt;li&gt;Build your Toolchain: Java, Maven, Tomcat, &amp;hellip;&lt;/li&gt;
 &lt;li&gt;Create optimal Java tooling with Docker&lt;/li&gt;
+&lt;li&gt;12 Factor Rules&lt;/li&gt;
 &lt;li&gt;Scale your Java Microservices&lt;/li&gt;
 &lt;li&gt;Running Java Micorservices in production&lt;/li&gt;
 &lt;li&gt;Add metrics and logging&lt;/li&gt;

@@ -5,11 +5,11 @@
 <head>
 	<title>docker for java lab</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.">
+	<meta name="description" content="Docker ist sehr hilfreich für jeden Java-Entwickler. Das vorhandene Ökosystem bietet Dir vielversprechende Werkzeuge für die Paketierung Deiner Java Anwendungen im Container. Dieses Lab gibt Dir einige nützliche Hinweise und diskutiert Tricks, um Docker nahtlos mit Java zu verwenden.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 <meta property="og:title" content="docker for java lab" />
-<meta property="og:description" content="Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java." />
+<meta property="og:description" content="Docker ist sehr hilfreich für jeden Java-Entwickler. Das vorhandene Ökosystem bietet Dir vielversprechende Werkzeuge für die Paketierung Deiner Java Anwendungen im Container. Dieses Lab gibt Dir einige nützliche Hinweise und diskutiert Tricks, um Docker nahtlos mit Java zu verwenden." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://bee42.com/trainings/docker-for-java-lab-de/" />
 
@@ -40,7 +40,7 @@
 
 
 <meta itemprop="name" content="docker for java lab">
-<meta itemprop="description" content="Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.">
+<meta itemprop="description" content="Docker ist sehr hilfreich für jeden Java-Entwickler. Das vorhandene Ökosystem bietet Dir vielversprechende Werkzeuge für die Paketierung Deiner Java Anwendungen im Container. Dieses Lab gibt Dir einige nützliche Hinweise und diskutiert Tricks, um Docker nahtlos mit Java zu verwenden.">
 
 
 
@@ -49,7 +49,7 @@
 <meta itemprop="keywords" content="" />
 
 
-<meta itemprop="wordCount" content="209">
+<meta itemprop="wordCount" content="259">
 
 
 	<meta name="twitter:card" content="summary"/>
@@ -57,7 +57,7 @@
 
 
 <meta name="twitter:title" content="docker for java lab"/>
-<meta name="twitter:description" content="Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java."/>
+<meta name="twitter:description" content="Docker ist sehr hilfreich für jeden Java-Entwickler. Das vorhandene Ökosystem bietet Dir vielversprechende Werkzeuge für die Paketierung Deiner Java Anwendungen im Container. Dieses Lab gibt Dir einige nützliche Hinweise und diskutiert Tricks, um Docker nahtlos mit Java zu verwenden."/>
 
 
 
@@ -136,47 +136,61 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                <p><strong>Please click here for an <a href="/trainings/docker-for-java-lab">english version</a></strong></p>
 
-<p>Docker and the exciting ecosystem is very helpful for any Java developer. This presentation gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.</p>
+<p>Docker und das spannende Ökosystem ist sehr hilfreich für jeden Java-Entwickler. Diese Lab gibt einen Überblick über die besten Praktiken für die Entwicklung von Java-Anwendungen mit Docker. Das Docker-Ökosystem bietet Dir vielversprechende Tools zum Paketieren Deiner Software, Wiederverwendung vorhandener Services, Datenbanken oder Tools. Docker hilft, Deine Continuous Integration Pipeline voranzutreiben. Aber, ein gutes Java-Image aufzubauen und Deine Container direkt in der Produktion zu verwenden, ist eine Herausforderung. Bündeln Deine Java-Software, teste Deine Dienste mit Docker und befähige Deine Entwicklung zu mehr Qualiät. Dieses Labor gibt Dir einige nützliche Hinweise und diskutieren Tricks, um Docker nahtlos mit Java zu verwenden.</p>
 
-<p><strong>Participants</strong></p>
+<h2 id="tag-eins-br-bauen-deinen-java-microservice-mit-docker">Tag Eins: <br>Bauen Deinen Java Microservice mit Docker</h2>
 
 <ul>
-<li>Java Developer</li>
-<li>System Architects</li>
+<li>Docker Basics</li>
+<li>Empower Deine Entwicklung mit Docker</li>
+<li>Aufbauen einer Spring Boot Microservices mit Maven</li>
+<li>Verpacken der Java Anwendung mit Docker</li>
+<li>Erzeugen eines Databank Container</li>
+<li>TDD mit Docker</li>
+<li>Bauen eines eigenen Java Base Images</li>
+<li>Debugging mit Java im Container</li>
+<li>Docker IDE Unterstützung</li>
 </ul>
 
-<p><strong>Pre-Knowledge</strong></p>
+<h2 id="tag-zwei-br-java-für-die-produktion">Tag Zwei: <br>Java für die Produktion</h2>
 
 <ul>
-<li>Good Java, Maven and Spring Boot knowledge</li>
-<li>Docker basics</li>
-<li>Linux basics</li>
+<li>Denke Deine Infrastruktur zuerst</li>
+<li>Automatische Erzeugung Deiner Image Build mit einer CI-Pipeline</li>
+<li>Baue Deine eigene  Werkzeugkette: Java, Maven, Tomcat, &hellip;</li>
+<li>Erzeugen eines optimale Java Werkzeugkastens mit Docker</li>
+<li>Beachte die <strong>12 Factor</strong> Regeln</li>
+<li>Skalliere Deine Java Microservices</li>
+<li>Java Micorservices in der Produktion</li>
+<li>Integiere Metriken und Logging</li>
 </ul>
 
-<h2 id="day-one-br-build-your-java-microservice-with-docker">Day One: <br>Build your Java Microservice with Docker</h2>
+<h2 id="voraussetzungen-und-leistungen">Voraussetzungen und Leistungen</h2>
+
+<h3 id="zielgruppe-wer-sollte-teilnehmen">Zielgruppe/ Wer sollte teilnehmen?</h3>
 
 <ul>
-<li>Docker Introduction</li>
-<li>Empower your Development</li>
-<li>Build a Spring Boot Microservices with Maven</li>
-<li>Bundle your application with Docker</li>
-<li>Create Database Container</li>
-<li>TDD with Docker</li>
-<li>Build your own Java Images</li>
-<li>Debugging your Java at container</li>
-<li>Docker IDE Support</li>
+<li>Java Entwickler</li>
+<li>Software- und Systemarchitekten</li>
 </ul>
 
-<h2 id="day-two-br-running-java-in-production">Day Two: <br>Running Java in production</h2>
+<h3 id="voraussetzungen-an-die-teilnehmer">Voraussetzungen an die Teilnehmer</h3>
 
 <ul>
-<li>Think infrastructure first</li>
-<li>Automatic Image Build with a Cloud/CI</li>
-<li>Build your Toolchain: Java, Maven, Tomcat, &hellip;</li>
-<li>Create optimal Java tooling with Docker</li>
-<li>Scale your Java Microservices</li>
-<li>Running Java Micorservices in production</li>
-<li>Add metrics and logging</li>
+<li>Gute Kenntnisse Java, Maven, Spring boot&hellip;</li>
+<li>Grundkenntnisse Microservices</li>
+<li>Grundkenntnisse Docker</li>
+<li>Grundkenntnisse Linux (Debian, bash, vim, curl, network, packages)</li>
+</ul>
+
+<h3 id="leistungen">Leistungen</h3>
+
+<ul>
+<li>Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)</li>
+<li>Schulungsmaterialien</li>
+<li>Internet</li>
+<li>Nicht enthalten: Hotel Übernachtungen, Anreise</li>
+<li>Rechner werden nicht gestellt</li>
 </ul>
 </p>
                 
