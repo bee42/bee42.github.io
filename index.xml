@@ -21,7 +21,7 @@
 
 &lt;p&gt;Docker und das spannende Ökosystem ist sehr hilfreich für jeden Java-Entwickler. Diese Lab gibt einen Überblick über die besten Praktiken für die Entwicklung von Java-Anwendungen mit Docker. Das Docker-Ökosystem bietet Dir vielversprechende Tools zum Paketieren Deiner Software, Wiederverwendung vorhandener Services, Datenbanken oder Tools. Docker hilft, Deine Continuous Integration Pipeline voranzutreiben. Aber, ein gutes Java-Image aufzubauen und Deine Container direkt in der Produktion zu verwenden, ist eine Herausforderung. Bündeln Deine Java-Software, teste Deine Dienste mit Docker und befähige Deine Entwicklung zu mehr Qualiät. Dieses Labor gibt Dir einige nützliche Hinweise und diskutieren Tricks, um Docker nahtlos mit Java zu verwenden.&lt;/p&gt;
 
-&lt;h2 id=&#34;tag-eins-br-bauen-deinen-java-microservice-mit-docker&#34;&gt;Tag Eins: &lt;br&gt;Bauen Deinen Java Microservice mit Docker&lt;/h2&gt;
+&lt;h2 id=&#34;tag-eins-br-baue-deine-java-microservices-mit-docker&#34;&gt;Tag Eins: &lt;br&gt;Baue Deine Java Microservices mit Docker&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Docker Basics&lt;/li&gt;
@@ -30,7 +30,7 @@
 &lt;li&gt;Verpacken der Java Anwendung mit Docker&lt;/li&gt;
 &lt;li&gt;Erzeugen eines Databank Container&lt;/li&gt;
 &lt;li&gt;TDD mit Docker&lt;/li&gt;
-&lt;li&gt;Bauen eines eigenen Java Base Images&lt;/li&gt;
+&lt;li&gt;Baue ein eigenes Java Base Images&lt;/li&gt;
 &lt;li&gt;Debugging mit Java im Container&lt;/li&gt;
 &lt;li&gt;Docker IDE Unterstützung&lt;/li&gt;
 &lt;/ul&gt;
@@ -42,7 +42,7 @@
 &lt;li&gt;Automatische Erzeugung Deiner Image Build mit einer CI-Pipeline&lt;/li&gt;
 &lt;li&gt;Baue Deine eigene  Werkzeugkette: Java, Maven, Tomcat, &amp;hellip;&lt;/li&gt;
 &lt;li&gt;Erzeugen eines optimale Java Werkzeugkastens mit Docker&lt;/li&gt;
-&lt;li&gt;Beachte die &lt;strong&gt;12 Factor&lt;/strong&gt; Regeln&lt;/li&gt;
+&lt;li&gt;Beachte die &lt;strong&gt;12 Factor Rules&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Skalliere Deine Java Microservices&lt;/li&gt;
 &lt;li&gt;Java Micorservices in der Produktion&lt;/li&gt;
 &lt;li&gt;Integiere Metriken und Logging&lt;/li&gt;
@@ -73,7 +73,7 @@
 &lt;li&gt;Schulungsmaterialien&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
-&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;li&gt;Rechner werden nicht gestellt, das eigene Notebook muss mitgebracht werden.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
