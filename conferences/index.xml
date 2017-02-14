@@ -9,93 +9,6 @@
     <atom:link href="https://bee42.com/conferences/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>DevOps Gathering - Container Workshops</title>
-      <link>https://bee42.com/conferences/devops_gathering-container_workshops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bee42.com/conferences/devops_gathering-container_workshops/</guid>
-      <description>
-
-&lt;h2 id=&#34;docker-workshops-in-bochum-2017-3-23&#34;&gt;Docker Workshops in Bochum - 2017/3/23&lt;/h2&gt;
-
-&lt;p&gt;Dear DevOps Friends!&lt;/p&gt;
-
-&lt;p&gt;One week after the Docker Birthday Week, we invite you to continue the celebrations with us. Within our DevOps Gathering Conference 2017, we bring together Container experts, beginners and interesting individuals. During interesting half-day workshops you will have the chance to practice DevOps tools to improve your knowledge and become an expert.&lt;/p&gt;
-
-&lt;h2 id=&#34;docker-on-arm-orchestration&#34;&gt;Docker on ARM &amp;amp; Orchestration&lt;/h2&gt;
-
-&lt;h3 id=&#34;speaker-dieter-reuter-and-peter-rossbach&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Dieter Reuter* and Peter Rossbach&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Check your docker tools for ARM&lt;/li&gt;
-&lt;li&gt;Build Docker Images on ARM&lt;/li&gt;
-&lt;li&gt;Setup an IoT Project on ARM&lt;/li&gt;
-&lt;li&gt;Learn Swarming Mode Basics&lt;/li&gt;
-&lt;li&gt;Setup a Swarm Cluster&lt;/li&gt;
-&lt;li&gt;Prepare your Images&lt;/li&gt;
-&lt;li&gt;Rolling your services forward&lt;/li&gt;
-&lt;li&gt;Network, Port Publishing and Loadbalancing&lt;/li&gt;
-&lt;li&gt;Service Discovery&lt;/li&gt;
-&lt;li&gt;Orchestration&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;docker-for-windows&#34;&gt;Docker for Windows&lt;/h2&gt;
-
-&lt;h3 id=&#34;speaker-dieter-reuter-and-stefan-scherer&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Dieter Reuter* and Stefan Scherer*&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Setup Windows Docker Container at Windows Server 2016&lt;/li&gt;
-&lt;li&gt;Size your images&lt;/li&gt;
-&lt;li&gt;Package windows service into a container&lt;/li&gt;
-&lt;li&gt;Hack Around with windows container&lt;/li&gt;
-&lt;li&gt;Review at a real example&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;docker-for-java-developers&#34;&gt;Docker for Java Developers&lt;/h2&gt;
-
-&lt;h3 id=&#34;speaker-roland-huss&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Roland Huss&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Create your java images with Maven&lt;/li&gt;
-&lt;li&gt;Use an IDE with docker&lt;/li&gt;
-&lt;li&gt;Setup integration test&lt;/li&gt;
-&lt;li&gt;Optimize your java base images&lt;/li&gt;
-&lt;li&gt;How you can run your container with resource constraints?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;prepare-your-docker-images-with-gitlab-ci&#34;&gt;Prepare your docker images with Gitlab/CI&lt;/h2&gt;
-
-&lt;h3 id=&#34;speaker-niclas-mietz&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Niclas Mietz&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Setup your own GitLab/CI for your team&lt;/li&gt;
-&lt;li&gt;Create your own docker images producing pipeline&lt;/li&gt;
-&lt;li&gt;Test and validate your containers&lt;/li&gt;
-&lt;li&gt;Create and use runners&lt;/li&gt;
-&lt;li&gt;Build good docker images&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;bootiful-containers-with-spring-boot-and-docker&#34;&gt;&amp;ldquo;Bootiful&amp;rdquo; Containers with Spring-Boot and Docker&lt;/h2&gt;
-
-&lt;h3 id=&#34;speaker-kevin-wittek&#34;&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: Kevin Wittek&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Run Spring-Boot Apps inside a Docker container&lt;/li&gt;
-&lt;li&gt;Build your Spring-Boot Docker image using Gradle&lt;/li&gt;
-&lt;li&gt;Make Spring-Boot Apps configurable with Environment-Variables&lt;/li&gt;
-&lt;li&gt;Unit- and Integration-Test your Spring-Boot App with Spock and Docker&lt;/li&gt;
-&lt;li&gt;Deploy and configure Spring-Boot microservices using docker-compose&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;*Docker Captain&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Register and get one of our limited tickets, now!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-labs&#34;&gt;Get your Ticket&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>DevOps Gathering 2017</title>
       <link>https://bee42.com/conferences/devops_gathering_2017/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -103,52 +16,53 @@
       <guid>https://bee42.com/conferences/devops_gathering_2017/</guid>
       <description>
 
-&lt;h2 id=&#34;call-for-papers&#34;&gt;Call for Papers&lt;/h2&gt;
+&lt;p&gt;The DevOps Gathering is an international conference located in Bochum - surrounded by the metropolitan area of the Ruhr Valley. This melting pot of past times industrial revolutions is nowadays a hot spot for Germany’s IT industry - a perfect place to discuss the next big revolution of our industry, the DevOps revolution. Let’s discuss the hot topics inside the DevOps community and start talking about
+Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&lt;/p&gt;
 
-&lt;p&gt;Dear DevOps Friends and Speakers!&lt;/p&gt;
+&lt;p&gt;The bee42 solutions gmbh are hosting a non-profit conference striving for high-quality content and providing a platform for experienced international speakers at the G DATA Campus in the heart of Bochum.&lt;/p&gt;
 
-&lt;p&gt;We are in the preparation of the first edition of DevOps Gathering Conference in March 2017. One week after the Docker Birthday, we invite you to continue the celebrations with us.&lt;/p&gt;
+&lt;h2 id=&#34;pre-conference-workshops-march-23-2017&#34;&gt;Pre-Conference-Workshops - March 23, 2017&lt;/h2&gt;
 
-&lt;p&gt;Everyone is invited to join discuss the hottest topics of the DevOps development with its impact on the digital transformation.  Join our journey and cooperate on  infrastructure technology and innovative solutions to revolutionize the software industry.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Venue:&lt;/strong&gt; Veranstaltungszentrum RUB, Universitätsstraße 150, 44801 Bochum&lt;/p&gt;
 
-&lt;p&gt;We are looking forward to proposals with practical relevance – ideally based on project experiences or real technical inspiration.&lt;/p&gt;
-
-&lt;p&gt;As usual, we would like to invite you to submit your proposals for sessions in March. We will focus on the following topics, but are always open for surprises with new inspiring talks:&lt;/p&gt;
+&lt;p&gt;This Docker Workshops are an perfect fit for DevOps Engineers. Attendees have the chance to learn from some exciting Docker Captains and Experts. The concept of the workshop is to leave room for experiments.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Docker Orchestration&lt;/li&gt;
-&lt;li&gt;Docker Security&lt;/li&gt;
-&lt;li&gt;Docker Networking&lt;/li&gt;
-&lt;li&gt;Docker for Microservices&lt;/li&gt;
-&lt;li&gt;Docker on Windows&lt;/li&gt;
-&lt;li&gt;Docker on ARM&lt;/li&gt;
-&lt;li&gt;Docker for Java or Go Developer&lt;/li&gt;
-&lt;li&gt;Stateful Container&lt;/li&gt;
-&lt;li&gt;Provisioning&lt;/li&gt;
-&lt;li&gt;Continuous Integration and Delivery&lt;/li&gt;
-&lt;li&gt;Cloud&lt;/li&gt;
-&lt;li&gt;Logging &amp;amp; Monitoring&lt;/li&gt;
-&lt;li&gt;Container Technologies&lt;/li&gt;
-&lt;li&gt;Microservice based Front-End Development&lt;/li&gt;
+&lt;li&gt;Learning Docker on a Raspberry Pi ARM-Cluster (Dieter Reuter and Peter Rossbach)&lt;/li&gt;
+&lt;li&gt;Automated container building with GitLab/CI (Niclas Mietz)&lt;/li&gt;
+&lt;li&gt;Docker and Kubernetes for Java Developers (Roland Huss)&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Bootiful&amp;rdquo; Containers with Spring-Boot and Docker (Kevin Wittek and Matthias Rottländer)&lt;/li&gt;
+&lt;li&gt;Getting started with Docker on Windows Server 2016 (Stefan Scherer and Dieter Reuter)&lt;/li&gt;
+&lt;li&gt;Running Docker Containers on AWS (Philipp Garbe)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Date: 24 – 25 March, 2017&lt;/p&gt;
+&lt;h2 id=&#34;conference-talks-march-24-2017&#34;&gt;Conference Talks - March 24, 2017&lt;/h2&gt;
 
-&lt;p&gt;Location: G Data Campus Bochum&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Venue:&lt;/strong&gt; G Data Campus, Königsallee 178b, 44799 Bochum&lt;/p&gt;
 
-&lt;p&gt;Deadline for submissions: January 23, 2017&lt;/p&gt;
+&lt;p&gt;Attendees obtain interesseting stories from Experts with different knowledge areas.&lt;/p&gt;
 
-&lt;p&gt;You can offer us  30 minutes talks or 10 minutes lightning stories or tech speeches.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How we run Kubernetes in Kubernetes, aka Kubeception (Timo Derstappen)&lt;/li&gt;
+&lt;li&gt;Docker Container Loading (Roland Huss)&lt;/li&gt;
+&lt;li&gt;Getting the most out of your containerized database (Claus Matzinger)&lt;/li&gt;
+&lt;li&gt;One year monitoring a small startup with Prometheus: lessons learned (Maykel Moya)&lt;/li&gt;
+&lt;li&gt;Build and deploy multiarch Linux and Windows Container images (Stefan Scherer)&lt;/li&gt;
+&lt;li&gt;Intel and ARM, let Kubernetes rule them all! (Lucas Käldström)&lt;/li&gt;
+&lt;li&gt;Make load-balancing great again with Træfik! (Emile Vauge and Manuel Laufenberg)&lt;/li&gt;
+&lt;li&gt;Docker Orchestration and Swarming (Peter Rossbach)&lt;/li&gt;
+&lt;li&gt;Keynote: DevOps is not enough - towards a DevOps ecosystem (Uwe Friedrichsen)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;At 25.3 we plan a Docker expert OpenSpace and you can discuss the hottest Docker container or ecosystem topics.&lt;/p&gt;
+&lt;h2 id=&#34;container-open-space-march-25-2017&#34;&gt;Container Open Space - March 25, 2017&lt;/h2&gt;
 
-&lt;p&gt;Submit your papers here: call4papers@bee42.com&lt;/p&gt;
+&lt;p&gt;The Open Space format perfectly fits to the fast moving development of the Container ecosystem. It offers participants and experts the opportunity to launch discussions, address questions and challenges regarding Docker, Kubernetes and Cloud technologies.&lt;/p&gt;
 
-&lt;p&gt;We are looking forward to your comprehensive feedback as well as your questions, suggestions and discussions.&lt;/p&gt;
+&lt;p&gt;An Open Space is a simple and productive way for hosting conferences. Participants and experts will create and manage together their own agenda of parallel working sessions. The goal of this Open Space is to allow attendees to interact with one another and learn from each other – all under the guidance of an experienced moderator.&lt;/p&gt;
 
-&lt;p&gt;We wish you a peaceful winter!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Register and get one of our limited tickets, now!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;The bee42 Conference Crew&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://devops-gathering.io&#34;&gt;Get your Ticket&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
