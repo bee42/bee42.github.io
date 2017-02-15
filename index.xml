@@ -278,6 +278,27 @@ Die ganz oder teilweise unwirksame Regelung soll durch eine Regelung ersetzt wer
     </item>
     
     <item>
+      <title>DevOps Engineer</title>
+      <link>https://bee42.com/jobs/devopsengineer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/jobs/devopsengineer/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Design services with clever API’s&lt;/li&gt;
+&lt;li&gt;Ability to use a wide variety of open source technologies and tools&lt;/li&gt;
+&lt;li&gt;Experience with systems and IT operations&lt;/li&gt;
+&lt;li&gt;Familiarity with frequent incremental code testing and deployment&lt;/li&gt;
+&lt;li&gt;Build applications that living at the clouds&lt;/li&gt;
+&lt;li&gt;Strong grasp of automation tools&lt;/li&gt;
+&lt;li&gt;Data management skills&lt;/li&gt;
+&lt;li&gt;You like Container Technologies&lt;/li&gt;
+&lt;li&gt;Enable people to use modern technologies&lt;/li&gt;
+&lt;li&gt;Think infrastructure first&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>DevOps Gathering 2017</title>
       <link>https://bee42.com/conferences/devops_gathering_2017/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -690,6 +711,33 @@ Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&
     </item>
     
     <item>
+      <title>Frontend Engineer</title>
+      <link>https://bee42.com/jobs/frontendengineer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/jobs/frontendengineer/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Create beautiful human responsive applications&lt;/li&gt;
+&lt;li&gt;Experience with frontend application architectures&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Good understanding of cross-device (responsive, mobile-first) development and processes&lt;/li&gt;
+&lt;li&gt;Experience with LESS / SCSS, prototyping, JavaScript MVCs, React JS, Node.js, or, e.g. also AngularJS&lt;/li&gt;
+&lt;li&gt;Independent work with high quality awareness&lt;/li&gt;
+&lt;li&gt;High dedication, enthusiasm and passion for new technologies&lt;/li&gt;
+&lt;li&gt;Experience with DevOps and the agile philosophy&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jobs at bee42</title>
+      <link>https://bee42.com/jobs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/jobs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Terms of conditions</title>
       <link>https://bee42.com/terms-and-conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -984,80 +1032,6 @@ We love to build infrastructure, implement software, measure systems and are alw
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
 &lt;li&gt;Computers are not provided&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Technology</title>
-      <link>https://bee42.com/services/technology/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bee42.com/services/technology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Technology</title>
-      <link>https://bee42.com/statements/technology/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bee42.com/statements/technology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker for java lab</title>
-      <link>https://bee42.com/trainings/docker-for-java-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
-      
-      <guid>https://bee42.com/trainings/docker-for-java-lab/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-for-java-lab-de&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Docker and the exciting ecosystem is very helpful for any Java developer. This lab gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools. Docker helps to drive your Continuous Integration Pipeline forward. But, build a good Java Image and setup your container right in production is a challenge. Bundle your Java software and testing your services with Docker can be empower your development. This lab give you some useful hints and discuss tricks to use Docker seamless with Java.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Participants&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Java Developer&lt;/li&gt;
-&lt;li&gt;System Architects&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Pre-Knowledge&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Good Java, Maven and Spring Boot knowledge&lt;/li&gt;
-&lt;li&gt;Docker basics&lt;/li&gt;
-&lt;li&gt;Linux basics&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-one-br-build-your-java-microservice-with-docker&#34;&gt;Day One: &lt;br&gt;Build your Java Microservice with Docker&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Docker Introduction&lt;/li&gt;
-&lt;li&gt;Empower your Development&lt;/li&gt;
-&lt;li&gt;Build a Spring Boot Microservices with Maven&lt;/li&gt;
-&lt;li&gt;Bundle your application with Docker&lt;/li&gt;
-&lt;li&gt;Create Database Container&lt;/li&gt;
-&lt;li&gt;TDD with Docker&lt;/li&gt;
-&lt;li&gt;Build your own Java Images&lt;/li&gt;
-&lt;li&gt;Debugging your Java at container&lt;/li&gt;
-&lt;li&gt;Docker IDE Support&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-two-br-running-java-in-production&#34;&gt;Day Two: &lt;br&gt;Running Java in production&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Think infrastructure first&lt;/li&gt;
-&lt;li&gt;Automatic Image Build with a Cloud/CI&lt;/li&gt;
-&lt;li&gt;Build your Toolchain: Java, Maven, Tomcat, &amp;hellip;&lt;/li&gt;
-&lt;li&gt;Create optimal Java tooling with Docker&lt;/li&gt;
-&lt;li&gt;12 Factor Rules&lt;/li&gt;
-&lt;li&gt;Scale your Java Microservices&lt;/li&gt;
-&lt;li&gt;Running Java Micorservices in production&lt;/li&gt;
-&lt;li&gt;Add metrics and logging&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

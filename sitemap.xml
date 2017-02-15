@@ -25,6 +25,10 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/jobs/devopsengineer/</loc>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/conferences/devops_gathering_2017/</loc>
   </url>
   
@@ -38,6 +42,14 @@
   
   <url>
     <loc>https://bee42.com/trainings/docker-prometheus-lab-de/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/jobs/frontendengineer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/jobs/</loc>
   </url>
   
   <url>
@@ -58,6 +70,10 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/crew/peter/</loc>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/services/technology/</loc>
   </url>
   
@@ -68,6 +84,10 @@
   <url>
     <loc>https://bee42.com/trainings/docker-for-java-lab/</loc>
     <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/crew/georg/</loc>
   </url>
   
   <url>
@@ -84,6 +104,10 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/crew/niclas/</loc>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/statements/purpose/</loc>
   </url>
   
@@ -94,6 +118,10 @@
   <url>
     <loc>https://bee42.com/trainings/docker-prometheus-lab/</loc>
     <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/crew/elena/</loc>
   </url>
   
 </urlset>

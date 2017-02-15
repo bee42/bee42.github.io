@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jobs-rsses on bee42 solutions gmbh</title>
+    <link>https://bee42.com/jobs/index.xml</link>
+    <description>Recent content in Jobs-rsses on bee42 solutions gmbh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://bee42.com/jobs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DevOps Engineer</title>
+      <link>https://bee42.com/jobs/devopsengineer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/jobs/devopsengineer/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Design services with clever API’s&lt;/li&gt;
+&lt;li&gt;Ability to use a wide variety of open source technologies and tools&lt;/li&gt;
+&lt;li&gt;Experience with systems and IT operations&lt;/li&gt;
+&lt;li&gt;Familiarity with frequent incremental code testing and deployment&lt;/li&gt;
+&lt;li&gt;Build applications that living at the clouds&lt;/li&gt;
+&lt;li&gt;Strong grasp of automation tools&lt;/li&gt;
+&lt;li&gt;Data management skills&lt;/li&gt;
+&lt;li&gt;You like Container Technologies&lt;/li&gt;
+&lt;li&gt;Enable people to use modern technologies&lt;/li&gt;
+&lt;li&gt;Think infrastructure first&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Frontend Engineer</title>
+      <link>https://bee42.com/jobs/frontendengineer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/jobs/frontendengineer/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Create beautiful human responsive applications&lt;/li&gt;
+&lt;li&gt;Experience with frontend application architectures&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Good understanding of cross-device (responsive, mobile-first) development and processes&lt;/li&gt;
+&lt;li&gt;Experience with LESS / SCSS, prototyping, JavaScript MVCs, React JS, Node.js, or, e.g. also AngularJS&lt;/li&gt;
+&lt;li&gt;Independent work with high quality awareness&lt;/li&gt;
+&lt;li&gt;High dedication, enthusiasm and passion for new technologies&lt;/li&gt;
+&lt;li&gt;Experience with DevOps and the agile philosophy&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
