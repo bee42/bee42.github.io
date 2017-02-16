@@ -17,9 +17,13 @@
       <guid>https://bee42.com/trainings/docker-for-java-lab-de/</guid>
       <description>
 
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-for-java-lab&#34;&gt;english version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Docker und das spannende Ökosystem ist sehr hilfreich für jeden Java-Entwickler. Diese Lab gibt einen Überblick über die besten Praktiken für die Entwicklung von Java-Anwendungen mit Docker.&lt;/p&gt;
 
-&lt;p&gt;Docker und das spannende Ökosystem ist sehr hilfreich für jeden Java-Entwickler. Diese Lab gibt einen Überblick über die besten Praktiken für die Entwicklung von Java-Anwendungen mit Docker. Das Docker-Ökosystem bietet Dir vielversprechende Tools zum Paketieren Deiner Software, Wiederverwendung vorhandener Services, Datenbanken oder Tools. Docker hilft, Deine Continuous Integration Pipeline voranzutreiben. Aber, ein gutes Java-Image aufzubauen und Deine Container direkt in der Produktion zu verwenden, ist eine Herausforderung. Bündeln Deine Java-Software, teste Deine Dienste mit Docker und befähige Deine Entwicklung zu mehr Qualiät. Dieses Labor gibt Dir einige nützliche Hinweise und diskutieren Tricks, um Docker nahtlos mit Java zu verwenden.&lt;/p&gt;
+&lt;p&gt;Das Docker-Ökosystem bietet Dir vielversprechende Tools zum Paketieren Deiner Software, Wiederverwendung vorhandener Services, Datenbanken oder Tools. Docker hilft, Deine Continuous Integration Pipeline voranzutreiben.&lt;/p&gt;
+
+&lt;p&gt;Aber, ein gutes Java-Image aufzubauen und Deine Container direkt in der Produktion zu verwenden, ist eine Herausforderung. Bündeln Deine Java-Software, teste Deine Dienste mit Docker und befähige Deine Entwicklung zu mehr Qualiät.&lt;/p&gt;
+
+&lt;p&gt;Dieses Labor gibt Dir einige nützliche Hinweise und diskutieren Tricks, um Docker nahtlos mit Java zu verwenden.&lt;/p&gt;
 
 &lt;h2 id=&#34;tag-eins-br-baue-deine-java-microservices-mit-docker&#34;&gt;Tag Eins: &lt;br&gt;Baue Deine Java Microservices mit Docker&lt;/h2&gt;
 
@@ -364,8 +368,6 @@ Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&
       <guid>https://bee42.com/trainings/docker-devops-camp-de/</guid>
       <description>
 
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-devops-camp&#34;&gt;english version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Docker DevOps Camp wollen wir diesem Versprechen praktisch nachgehen.&lt;/p&gt;
 
 &lt;p&gt;Wir starten mit einem Überblick und stellen die ersten Schritte beim Einsatz von Docker vor. Du lernst die wichtigsten Befehle, Anweisungen und Konzepte praktisch kennen. Anhand eines ausführlichen Beispiels lernst Du, wie ein Microservice implementiert, mit Docker installiert und in einer Umgebung mit anderen Services integriert wird. Außerdem diskutieren wir das aktuelle Docker-Ökosystem und klären über Chancen und Risiken auf.&lt;/p&gt;
@@ -486,13 +488,11 @@ Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&
     
     <item>
       <title>Docker Gitlab/CI Lab</title>
-      <link>https://bee42.com/trainings/docker-gilab-ci-lab-de/</link>
+      <link>https://bee42.com/trainings/docker-gitlab-ci-lab-de/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bee42.com/trainings/docker-gilab-ci-lab-de/</guid>
+      <guid>https://bee42.com/trainings/docker-gitlab-ci-lab-de/</guid>
       <description>
-
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-gitlab-ci-lab&#34;&gt;english version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Docker Lab wollen wir praktisch den Bau von Docker Images mit GITLAB/CI erleichtern und lernen gute Images zu fertigen.&lt;/p&gt;
 
@@ -587,8 +587,6 @@ Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&
 &lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
 &lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -599,8 +597,6 @@ Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&
       
       <guid>https://bee42.com/trainings/docker-prometheus-lab-de/</guid>
       <description>
-
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-prometheus-lab&#34;&gt;english version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. Wir Entwickler lieben Docker, deployen dort leichtgewichtige Microservices und erstellen System aus vorgefertigten Komponenten des Ökosystems.&lt;/p&gt;
 
@@ -914,8 +910,6 @@ We love to build infrastructure, implement software, measure systems and are alw
       
       <guid>https://bee42.com/trainings/docker-devops-camp/</guid>
       <description>
-
-&lt;p&gt;&lt;strong&gt;Please click here for an &lt;a href=&#34;https://bee42.com/trainings/docker-devops-camp-de&#34;&gt;german version&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Camp we want to pursue this promise.&lt;/p&gt;
 
