@@ -569,21 +569,6 @@
 
 &lt;p&gt;This lab give you some useful hints and discuss tricks to use Docker seamless with Java.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Participants&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Java Developer&lt;/li&gt;
-&lt;li&gt;System Architects&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Pre-Knowledge&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Good Java, Maven and Spring Boot knowledge&lt;/li&gt;
-&lt;li&gt;Docker basics&lt;/li&gt;
-&lt;li&gt;Linux basics&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h2 id=&#34;day-one-br-build-your-java-microservice-with-docker&#34;&gt;Day One: &lt;br&gt;Build your Java Microservice with Docker&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -609,6 +594,31 @@
 &lt;li&gt;Scale your Java Microservices&lt;/li&gt;
 &lt;li&gt;Running Java Micorservices in production&lt;/li&gt;
 &lt;li&gt;Add metrics and logging&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Participants&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java Developer&lt;/li&gt;
+&lt;li&gt;System Architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Pre-Knowledge&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Good Java, Maven and Spring Boot knowledge&lt;/li&gt;
+&lt;li&gt;Docker basics&lt;/li&gt;
+&lt;li&gt;Linux basics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Services&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: Breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training materials&lt;/li&gt;
+&lt;li&gt;Internet connection&lt;/li&gt;
+&lt;li&gt;Not included: hotel accommodation, arrival&lt;/li&gt;
+&lt;li&gt;Notebook won&amp;rsquo;t be provided, the own notebook must be brought along.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
