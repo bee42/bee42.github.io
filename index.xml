@@ -77,7 +77,15 @@
 &lt;li&gt;Schulungsmaterialien&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
-&lt;li&gt;Rechner werden nicht gestellt, das eigene Notebook muss mitgebracht werden.&lt;/li&gt;
+&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;li&gt;Bringe Dein eigenes Notebook mit
+
+&lt;ul&gt;
+&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
+&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
+&lt;li&gt;SSL oder Putty installiert&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -482,6 +490,14 @@ Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
 &lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;li&gt;Bringe Deinen eigenes Notebook mit
+
+&lt;ul&gt;
+&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
+&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
+&lt;li&gt;SSL oder Putty installiert&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -586,6 +602,14 @@ Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
 &lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;li&gt;Bringe Dein eigenes Notebook mit
+
+&lt;ul&gt;
+&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
+&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
+&lt;li&gt;SSL oder Putty installiert&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -700,9 +724,15 @@ Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
 &lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;Bringe Dein eigenes Notebook mit
 
-&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;more page open-form&#34; data-form=&#34;docker-camp&#34;&gt;Book now&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
+&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
+&lt;li&gt;SSL oder Putty installiert&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -1026,6 +1056,14 @@ We love to build infrastructure, implement software, measure systems and are alw
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
 &lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;li&gt;Bring your own notebook
+
+&lt;ul&gt;
+&lt;li&gt;Administrators rights needed&lt;/li&gt;
+&lt;li&gt;Free access to the complete network (No enterprise proxy or vpn)&lt;/li&gt;
+&lt;li&gt;SSL or Putty installed&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
