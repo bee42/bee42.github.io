@@ -459,6 +459,129 @@
     </item>
     
     <item>
+      <title>Docker Prometheus Lab</title>
+      <link>https://bee42.com/trainings/docker-prometheus-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
+      
+      <guid>https://bee42.com/trainings/docker-prometheus-lab/</guid>
+      <description>
+
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. We developers love Docker and deploy the microservices on it.&lt;/p&gt;
+
+&lt;p&gt;Nice, but developer and operator must be control the real usage of the system. This is a complex, but useful task at your daily work. At this training you learn to set up Prometheus to grab your metrics from system and services. Prometheus uses a time series database featuring a powerful query language with integrated complex mathematical functions. With Grafana your can create your own dashboards to visualize your metrics. Alerts can be sent both via traditional channels such as email, or integrated with chat systems such as Slack.&lt;/p&gt;
+
+&lt;p&gt;Prometheus was originally developed by SoundCloud and is now under the umbrella of the Cloud Native Computing Foundation, which is a sub-project of the Linux Foundation.&lt;/p&gt;
+
+&lt;p&gt;In this training, participants will learn the basic concepts of Prometheus and Grafana, its architecture, how it can be deployed with Docker. Participants will also learn how to build dashboards and set up alerts.&lt;/p&gt;
+
+&lt;h2 id=&#34;day-one-br-docker-service-monitoring-basics&#34;&gt;Day one: &lt;br&gt;Docker Service Monitoring basics&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a simple Java-based microservice&lt;/li&gt;
+&lt;li&gt;Overview of Prometheus and Grafana&lt;/li&gt;
+&lt;li&gt;Monitor your Docker-based microservice&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;details-prometheus&#34;&gt;Details Prometheus&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How it works&lt;/li&gt;
+&lt;li&gt;Configuration&lt;/li&gt;
+&lt;li&gt;Types of sensors&lt;/li&gt;
+&lt;li&gt;Add sensors to your code&lt;/li&gt;
+&lt;li&gt;Create metrics endpoints&lt;/li&gt;
+&lt;li&gt;Work with PromQL&lt;/li&gt;
+&lt;li&gt;Label your metrics right&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;details-grafana&#34;&gt;Details Grafana&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How it works&lt;/li&gt;
+&lt;li&gt;Configuration&lt;/li&gt;
+&lt;li&gt;Set up Dashboards&lt;/li&gt;
+&lt;li&gt;Work with Prometheus and Grafana&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-two-br-application-and-node-monitoring&#34;&gt;Day two: &lt;br&gt; Application and Node Monitoring&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Setup a small Docker cluster&lt;/li&gt;
+&lt;li&gt;Monitor your microservices&lt;/li&gt;
+&lt;li&gt;Use different exporters
+
+&lt;ul&gt;
+&lt;li&gt;Machines&lt;/li&gt;
+&lt;li&gt;Containers&lt;/li&gt;
+&lt;li&gt;Services&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Use multiple scrapers&lt;/li&gt;
+&lt;li&gt;Learn to use the right metrics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;setup-more-complex-examples&#34;&gt;Setup more complex examples&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Setup complex dashboards with Grafana&lt;/li&gt;
+&lt;li&gt;Use Prometheus for monitoring batch jobs&lt;/li&gt;
+&lt;li&gt;Use the Prometheus Alertmanager&lt;/li&gt;
+&lt;li&gt;Look into more advanced examples&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;tips-and-tricks&#34;&gt;Tips and Tricks&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go to productions&lt;/li&gt;
+&lt;li&gt;Federate your Prometheus services&lt;/li&gt;
+&lt;li&gt;Upgrade your monitoring systems&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps developer&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software and system architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Java&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training materials&lt;/li&gt;
+&lt;li&gt;Internet (Wifi)&lt;/li&gt;
+&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
+&lt;li&gt;We setup docker cloud machines&lt;/li&gt;
+&lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;li&gt;Bring your own notebook
+
+&lt;ul&gt;
+&lt;li&gt;Administrators rights needed&lt;/li&gt;
+&lt;li&gt;Free access to the complete network (No enterprise proxy or vpn)&lt;/li&gt;
+&lt;li&gt;SSL or Putty installed&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Docker DevOps Camp</title>
       <link>https://bee42.com/trainings/docker-devops-camp/</link>
       <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
@@ -768,129 +891,6 @@
 &lt;li&gt;Training materials&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
-&lt;li&gt;Computers are not provided&lt;/li&gt;
-&lt;li&gt;Bring your own notebook
-
-&lt;ul&gt;
-&lt;li&gt;Administrators rights needed&lt;/li&gt;
-&lt;li&gt;Free access to the complete network (No enterprise proxy or vpn)&lt;/li&gt;
-&lt;li&gt;SSL or Putty installed&lt;/li&gt;
-&lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Docker Prometheus Lab</title>
-      <link>https://bee42.com/trainings/docker-prometheus-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
-      
-      <guid>https://bee42.com/trainings/docker-prometheus-lab/</guid>
-      <description>
-
-&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. We developers love Docker and deploy the microservices on it.&lt;/p&gt;
-
-&lt;p&gt;Nice, but developer and operator must be control the real usage of the system. This is a complex, but useful task at your daily work. At this training you learn to set up Prometheus to grab your metrics from system and services. Prometheus uses a time series database featuring a powerful query language with integrated complex mathematical functions. With Grafana your can create your own dashboards to visualize your metrics. Alerts can be sent both via traditional channels such as email, or integrated with chat systems such as Slack.&lt;/p&gt;
-
-&lt;p&gt;Prometheus was originally developed by SoundCloud and is now under the umbrella of the Cloud Native Computing Foundation, which is a sub-project of the Linux Foundation.&lt;/p&gt;
-
-&lt;p&gt;In this training, participants will learn the basic concepts of Prometheus and Grafana, its architecture, how it can be deployed with Docker. Participants will also learn how to build dashboards and set up alerts.&lt;/p&gt;
-
-&lt;h2 id=&#34;day-one-br-docker-service-monitoring-basics&#34;&gt;Day one: &lt;br&gt;Docker Service Monitoring basics&lt;/h2&gt;
-
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Create a simple Java-based microservice&lt;/li&gt;
-&lt;li&gt;Overview of Prometheus and Grafana&lt;/li&gt;
-&lt;li&gt;Monitor your Docker-based microservice&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;details-prometheus&#34;&gt;Details Prometheus&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;How it works&lt;/li&gt;
-&lt;li&gt;Configuration&lt;/li&gt;
-&lt;li&gt;Types of sensors&lt;/li&gt;
-&lt;li&gt;Add sensors to your code&lt;/li&gt;
-&lt;li&gt;Create metrics endpoints&lt;/li&gt;
-&lt;li&gt;Work with PromQL&lt;/li&gt;
-&lt;li&gt;Label your metrics right&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;details-grafana&#34;&gt;Details Grafana&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;How it works&lt;/li&gt;
-&lt;li&gt;Configuration&lt;/li&gt;
-&lt;li&gt;Set up Dashboards&lt;/li&gt;
-&lt;li&gt;Work with Prometheus and Grafana&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-two-br-application-and-node-monitoring&#34;&gt;Day two: &lt;br&gt; Application and Node Monitoring&lt;/h2&gt;
-
-&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Setup a small Docker cluster&lt;/li&gt;
-&lt;li&gt;Monitor your microservices&lt;/li&gt;
-&lt;li&gt;Use different exporters
-
-&lt;ul&gt;
-&lt;li&gt;Machines&lt;/li&gt;
-&lt;li&gt;Containers&lt;/li&gt;
-&lt;li&gt;Services&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Use multiple scrapers&lt;/li&gt;
-&lt;li&gt;Learn to use the right metrics&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;setup-more-complex-examples&#34;&gt;Setup more complex examples&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Setup complex dashboards with Grafana&lt;/li&gt;
-&lt;li&gt;Use Prometheus for monitoring batch jobs&lt;/li&gt;
-&lt;li&gt;Use the Prometheus Alertmanager&lt;/li&gt;
-&lt;li&gt;Look into more advanced examples&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;tips-and-tricks&#34;&gt;Tips and Tricks&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Go to productions&lt;/li&gt;
-&lt;li&gt;Federate your Prometheus services&lt;/li&gt;
-&lt;li&gt;Upgrade your monitoring systems&lt;/li&gt;
-&lt;li&gt;Backup/Restore&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
-
-&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DevOps developer&lt;/li&gt;
-&lt;li&gt;Administrators&lt;/li&gt;
-&lt;li&gt;Software and system architects&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
-&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
-&lt;li&gt;Basic knowledge of Java&lt;/li&gt;
-&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
-&lt;li&gt;Training materials&lt;/li&gt;
-&lt;li&gt;Internet (Wifi)&lt;/li&gt;
-&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
-&lt;li&gt;We setup docker cloud machines&lt;/li&gt;
 &lt;li&gt;Computers are not provided&lt;/li&gt;
 &lt;li&gt;Bring your own notebook
 
