@@ -582,141 +582,6 @@
     </item>
     
     <item>
-      <title>Docker DevOps Camp</title>
-      <link>https://bee42.com/trainings/docker-devops-camp/</link>
-      <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
-      
-      <guid>https://bee42.com/trainings/docker-devops-camp/</guid>
-      <description>
-
-&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Camp we want to pursue this promise.&lt;/p&gt;
-
-&lt;p&gt;We start with an overview and introduce the first steps with the use of Docker. You will get to know the most important commands, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, install with Docker, and integrate with other services in an environment. We also discuss the current Docker ecosystem and clarify opportunities and risks.&lt;/p&gt;
-
-&lt;p&gt;This camp provides you with the Docker basics in comprehensible steps and puts you in the position subsequently to decide whether and how Docker is useful in your business and IT context.&lt;/p&gt;
-
-&lt;h2 id=&#34;day-one-br-docker-basics&#34;&gt;Day one: &lt;br&gt;Docker basics&lt;/h2&gt;
-
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Docker Basics and Installation&lt;/li&gt;
-&lt;li&gt;Container Technology Basics&lt;/li&gt;
-&lt;li&gt;Kernel- vs Classical- Virtualization&lt;/li&gt;
-&lt;li&gt;Architecture of Docker&lt;/li&gt;
-&lt;li&gt;Use Cases and more&lt;/li&gt;
-&lt;li&gt;Setup your docker environment&lt;/li&gt;
-&lt;li&gt;Images, Container and Registry&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;simple-usage&#34;&gt;Simple Usage&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Let&amp;rsquo;s container run, stop, maintain&lt;/li&gt;
-&lt;li&gt;Docker CLI command overview&lt;/li&gt;
-&lt;li&gt;Build your own Images with Dockerfiles&lt;/li&gt;
-&lt;li&gt;Build, ship and run Cycle&lt;/li&gt;
-&lt;li&gt;Docker Tooling&lt;/li&gt;
-&lt;li&gt;Volume Management&lt;/li&gt;
-&lt;li&gt;Network Management&lt;/li&gt;
-&lt;li&gt;Logging and Metrics&lt;/li&gt;
-&lt;li&gt;Backup/Restore&lt;/li&gt;
-&lt;li&gt;Container Types&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-two-br-create-microservices-with-docker&#34;&gt;Day two: &lt;br&gt; Create microservices with Docker&lt;/h2&gt;
-
-&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Think infrastructure first&lt;/li&gt;
-&lt;li&gt;Create a simple Spring Boot App&lt;/li&gt;
-&lt;li&gt;Build your Toolchain: Java and Maven&lt;/li&gt;
-&lt;li&gt;Docker for Java Developers&lt;/li&gt;
-&lt;li&gt;Create Database Container&lt;/li&gt;
-&lt;li&gt;Empower your Development&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;infrastructure&#34;&gt;Infrastructure&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Build your own Microservice infrastructure&lt;/li&gt;
-&lt;li&gt;Create a simple build pipeline&lt;/li&gt;
-&lt;li&gt;Use Service Discovery&lt;/li&gt;
-&lt;li&gt;Create Multi Host Networks&lt;/li&gt;
-&lt;li&gt;Learn more Docker Tricks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-three-br-scale-your-service-with-docker-swarming&#34;&gt;Day three: &lt;br&gt; Scale your service with Docker Swarming&lt;/h2&gt;
-
-&lt;h3 id=&#34;swarming&#34;&gt;Swarming&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Scale your services with docker swarming mode&lt;/li&gt;
-&lt;li&gt;Update, Failure detection and redeployment&lt;/li&gt;
-&lt;li&gt;Mesh Network and Service Discovery&lt;/li&gt;
-&lt;li&gt;Setup a ingress loadbalancer (traefik, haproxy, nginx)&lt;/li&gt;
-&lt;li&gt;Setup logging and monitoring systems
-
-&lt;ul&gt;
-&lt;li&gt;ELK-Stack&lt;/li&gt;
-&lt;li&gt;Prometheus and Grafana&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Debug your Container&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;go-to-production&#34;&gt;Go to production&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Docker for production&lt;/li&gt;
-&lt;li&gt;Build high-quality images&lt;/li&gt;
-&lt;li&gt;Docker Security Basics&lt;/li&gt;
-&lt;li&gt;Plugins&lt;/li&gt;
-&lt;li&gt;Usage tricks&lt;/li&gt;
-&lt;li&gt;Review Best Practices&lt;/li&gt;
-&lt;li&gt;Docker on ARM&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;requirements-and-services&#34;&gt;Requirements and Services&lt;/h2&gt;
-
-&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DevOps developer&lt;/li&gt;
-&lt;li&gt;Administrators&lt;/li&gt;
-&lt;li&gt;Software and system architects&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
-&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
-&lt;li&gt;Basic knowledge of Java&lt;/li&gt;
-&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
-&lt;li&gt;Training materials&lt;/li&gt;
-&lt;li&gt;Internet&lt;/li&gt;
-&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
-&lt;li&gt;Computers are not provided&lt;/li&gt;
-&lt;li&gt;Bring your own notebook
-
-&lt;ul&gt;
-&lt;li&gt;Administrators rights needed&lt;/li&gt;
-&lt;li&gt;Free access to the complete network (No enterprise proxy or vpn)&lt;/li&gt;
-&lt;li&gt;SSL or Putty installed&lt;/li&gt;
-&lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>docker for java lab</title>
       <link>https://bee42.com/trainings/docker-for-java-lab/</link>
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
@@ -881,6 +746,141 @@
 &lt;li&gt;Basic knowledge Docker&lt;/li&gt;
 &lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
 &lt;li&gt;Basic knowledge of Java, Maven and SpringBoot&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training materials&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
+&lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;li&gt;Bring your own notebook
+
+&lt;ul&gt;
+&lt;li&gt;Administrators rights needed&lt;/li&gt;
+&lt;li&gt;Free access to the complete network (No enterprise proxy or vpn)&lt;/li&gt;
+&lt;li&gt;SSL or Putty installed&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker DevOps Camp</title>
+      <link>https://bee42.com/trainings/docker-devops-camp/</link>
+      <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
+      
+      <guid>https://bee42.com/trainings/docker-devops-camp/</guid>
+      <description>
+
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Camp we want to pursue this promise.&lt;/p&gt;
+
+&lt;p&gt;We start with an overview and introduce the first steps with the use of Docker. You will get to know the most important commands, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, install with Docker, and integrate with other services in an environment. We also discuss the current Docker ecosystem and clarify opportunities and risks.&lt;/p&gt;
+
+&lt;p&gt;This camp provides you with the Docker basics in comprehensible steps and puts you in the position subsequently to decide whether and how Docker is useful in your business and IT context.&lt;/p&gt;
+
+&lt;h2 id=&#34;day-one-br-docker-basics&#34;&gt;Day one: &lt;br&gt;Docker basics&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker Basics and Installation&lt;/li&gt;
+&lt;li&gt;Container Technology Basics&lt;/li&gt;
+&lt;li&gt;Kernel- vs Classical- Virtualization&lt;/li&gt;
+&lt;li&gt;Architecture of Docker&lt;/li&gt;
+&lt;li&gt;Use Cases and more&lt;/li&gt;
+&lt;li&gt;Setup your docker environment&lt;/li&gt;
+&lt;li&gt;Images, Container and Registry&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;simple-usage&#34;&gt;Simple Usage&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Let&amp;rsquo;s container run, stop, maintain&lt;/li&gt;
+&lt;li&gt;Docker CLI command overview&lt;/li&gt;
+&lt;li&gt;Build your own Images with Dockerfiles&lt;/li&gt;
+&lt;li&gt;Build, ship and run Cycle&lt;/li&gt;
+&lt;li&gt;Docker Tooling&lt;/li&gt;
+&lt;li&gt;Volume Management&lt;/li&gt;
+&lt;li&gt;Network Management&lt;/li&gt;
+&lt;li&gt;Logging and Metrics&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;li&gt;Container Types&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-two-br-create-microservices-with-docker&#34;&gt;Day two: &lt;br&gt; Create microservices with Docker&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Think infrastructure first&lt;/li&gt;
+&lt;li&gt;Create a simple Spring Boot App&lt;/li&gt;
+&lt;li&gt;Build your Toolchain: Java and Maven&lt;/li&gt;
+&lt;li&gt;Docker for Java Developers&lt;/li&gt;
+&lt;li&gt;Create Database Container&lt;/li&gt;
+&lt;li&gt;Empower your Development&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;infrastructure&#34;&gt;Infrastructure&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Build your own Microservice infrastructure&lt;/li&gt;
+&lt;li&gt;Create a simple build pipeline&lt;/li&gt;
+&lt;li&gt;Use Service Discovery&lt;/li&gt;
+&lt;li&gt;Create Multi Host Networks&lt;/li&gt;
+&lt;li&gt;Learn more Docker Tricks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-three-br-scale-your-service-with-docker-swarming&#34;&gt;Day three: &lt;br&gt; Scale your service with Docker Swarming&lt;/h2&gt;
+
+&lt;h3 id=&#34;swarming&#34;&gt;Swarming&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Scale your services with docker swarming mode&lt;/li&gt;
+&lt;li&gt;Update, Failure detection and redeployment&lt;/li&gt;
+&lt;li&gt;Mesh Network and Service Discovery&lt;/li&gt;
+&lt;li&gt;Setup a ingress loadbalancer (traefik, haproxy, nginx)&lt;/li&gt;
+&lt;li&gt;Setup logging and monitoring systems
+
+&lt;ul&gt;
+&lt;li&gt;ELK-Stack&lt;/li&gt;
+&lt;li&gt;Prometheus and Grafana&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Debug your Container&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;go-to-production&#34;&gt;Go to production&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker for production&lt;/li&gt;
+&lt;li&gt;Build high-quality images&lt;/li&gt;
+&lt;li&gt;Docker Security Basics&lt;/li&gt;
+&lt;li&gt;Plugins&lt;/li&gt;
+&lt;li&gt;Usage tricks&lt;/li&gt;
+&lt;li&gt;Review Best Practices&lt;/li&gt;
+&lt;li&gt;Docker on ARM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;requirements-and-services&#34;&gt;Requirements and Services&lt;/h2&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps developer&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software and system architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Java&lt;/li&gt;
 &lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
 &lt;/ul&gt;
 
