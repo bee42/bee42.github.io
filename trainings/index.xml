@@ -650,7 +650,7 @@
 &lt;ul&gt;
 &lt;li&gt;Administrators rights needed&lt;/li&gt;
 &lt;li&gt;Free access to the complete network (No enterprise proxy or vpn)&lt;/li&gt;
-&lt;li&gt;SSL or Putty installed&lt;/li&gt;
+&lt;li&gt;SSH or Putty installed&lt;/li&gt;
 &lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
