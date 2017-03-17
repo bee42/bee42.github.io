@@ -83,7 +83,7 @@
 &lt;ul&gt;
 &lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
 &lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
-&lt;li&gt;SSL oder Putty installiert&lt;/li&gt;
+&lt;li&gt;SSH oder Putty installiert&lt;/li&gt;
 &lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
