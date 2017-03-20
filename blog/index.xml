@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog-rsses on bee42 solutions gmbh</title>
+    <link>https://bee42.com/blog/index.xml</link>
+    <description>Recent content in Blog-rsses on bee42 solutions gmbh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bee42.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>4th Docker Birthday Party in the Ruhr Area</title>
+      <link>https://bee42.com/blog/4th-Docker-Birthday/</link>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/blog/4th-Docker-Birthday/</guid>
+      <description>&lt;p&gt;We love to use docker in our daily business, so there is no execuse not celebrate the &lt;a href=&#34;https://blog.docker.com/2017/02/announcing-docker-birthday-4-spreading-docker-love/&#34;&gt;4th Docker Birthday&lt;/a&gt;! After some ideas about how we can make this event real, we asked our friends from Zalando and GData to do this with us. :-)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/birthday_wal_bee42.png&#34; alt=&#34;Docker Birthday Whale bee42&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our Docker Birthday #4 was celebrated at Zalando on the 16th March 2017. We brought both Community Groups from &lt;a href=&#34;https://www.meetup.com/de-DE/Docker-Bochum/&#34;&gt;Bochum&lt;/a&gt; and
+&lt;a href=&#34;https://www.meetup.com/de-DE/Docker-Dortmund/&#34;&gt;Dortmund&lt;/a&gt; together to celebrate this event. To celebrate together we warmly welcomed newcomers and the already known docker friends! We provided Docker labs and courses to learn about Docker in a fun and inviting way.&lt;/p&gt;
+
+&lt;p&gt;We had hands-on with self-paced tutorials for every experience level from absolute beginners to professionals (with focus on beginners to intermediate).&lt;/p&gt;
+
+&lt;p&gt;The agenda for the Docker Birthday Party was as the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;18:00 - 18:30: Come together for dinner (Pizza &amp;amp; Drinks)&lt;/li&gt;
+&lt;li&gt;18:30 - 18:45: Salutation and introductory words&lt;/li&gt;
+&lt;li&gt;18:45 - 20:45: Mentoring sessions&lt;/li&gt;
+&lt;li&gt;20:45 - 22:00: Celebration with drinks and a very special cake&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We had a little schedule to finish all things we want to do. Our Meetup started with Pizza and Drink to get strong enough for all problems that we wanted to solve. After this &lt;a href=&#34;https://twitter.com/PRossbach&#34;&gt;Peter Roßssbach&lt;/a&gt;, our Docker expert, held an short introduction about Docker and the Docker Birthday courses.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/Introduction_DockerBirthday_Peter_Roßbach.JPG&#34; alt=&#34;Docker Birthday Introduction by Peter Rossbach&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With ending of the introduction all participants built small groups to handled the courses in a timeframe of 2 Hours. In some groups there were dedicated Mentors for the courses, because Mentors likes as well to learn new stuff and take challenges :) . And the other groups could get help from Mentors  On-Demand or Mentors ask them if they can help on the problems.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/DockerBirthday_Working_in_Groups.jpg&#34; alt=&#34;Docker Birthday Labs and courses&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After our timeframe ended, we missed some important step: The Docker Birthday Cake - The most important part of the evening!&lt;/p&gt;
+
+&lt;p&gt;It looked so small but trust us - the cake was 20 centimeters high, 20 kg heavy and it was filled with raspberry (pi, hihi) creme and and chocolate!!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/Docker_Birthday_Cake_Container.JPG&#34; alt=&#34;Docker Birthday Cake&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After our stomach hurted from the delicious cake and the little sugar overdose, we took our chance make a selfie with some people:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/Selfie_DockerBirthday_Party.png&#34; alt=&#34;Docker Birthday Selfie&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Next year we want to repeat this nice event. We hope that you can join us as well to celebrate this day! :-)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/DockerBirthday_Webcam_Video.jpg&#34; alt=&#34;Docker Birthday Celebration&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/docker-birthday-cake-full.jpg&#34; alt=&#34;Docker Birthday Moby Dock&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/docker-birthday-celebration-sitting-labs-fun.jpg&#34; alt=&#34;Docker Birthday Docker Labs&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/docker_birthday_party_meetup.jpg&#34; alt=&#34;Docker Birthday MeetUp&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/docker-birthday-cake-details-gopher.jpg&#34; alt=&#34;Docker Birthday Gopher Cake&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/DockerBirthday_fun.JPG&#34; alt=&#34;Docker Birthday Fun&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/Docker_Whale_Lego_DockerBirthday.JPG&#34; alt=&#34;Docker Birthday Moby Dock&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/docker-birthday-cake-details-mini-cake.jpg&#34; alt=&#34;Docker Birthday Gopher Cake&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/docker-birthday-celebration-fun.jpg&#34; alt=&#34;Docker Birthday Party MeetUp&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/docker-birthday-container-cake-details.jpg&#34; alt=&#34;Docker Birthday Cake Details&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/Docker-Birthday-Discussion.jpg&#34; alt=&#34;Docker Birthday Group Discussion&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/docker-birthday-labs-groups.jpg&#34; alt=&#34;Docker Birthday Group MeetUp&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/docker-birthday-party-cake.jpg&#34; alt=&#34;Docker Birthday Cake the day after&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
