@@ -15,9 +15,51 @@
       <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bee42.com/blog/4th-Docker-Birthday/</guid>
-      <description>&lt;p&gt;We love to use Docker in our daily business, so there is no execuse not to celebrate the &lt;a href=&#34;https://blog.docker.com/2017/02/announcing-docker-birthday-4-spreading-docker-love/&#34;&gt;4th Docker Birthday&lt;/a&gt;! After some ideas about how we can make this event real, we asked our friends from Zalando and GData to do this with us. :-)&lt;/p&gt;
+      <description>&lt;p&gt;We love to use Docker in our daily business, that&amp;rsquo;s also why we organize a week after the Docker Birthday the &lt;a href=&#34;https://devops-gathering.io&#34;&gt;DevOps Gathering&lt;/a&gt; (Maarch 23 - 25, 2017) in Bochum, a conference for docker container, kubernetes, devops and more!&lt;/p&gt;
+
+&lt;p&gt;But that was NO excuse not to celebrate the &lt;a href=&#34;https://blog.docker.com/2017/02/announcing-docker-birthday-4-spreading-docker-love/&#34;&gt;4th Docker Birthday&lt;/a&gt;!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/birthday_wal_bee42.png&#34; alt=&#34;Docker Birthday Whale bee42&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;First of all..a BIG THANK YOU to&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;hellip;&lt;strong&gt;Karen Bajza&lt;/strong&gt; for spreading the Docker love and the &lt;a href=&#34;https://blog.docker.com/2017/02/announcing-docker-birthday-4-spreading-docker-love/&#34;&gt;4th birthday vibes&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;a href=&#34;https://tech.zalando.com/?gh_src=4n3gxh1&#34;&gt;&lt;strong&gt;Zalando&lt;/strong&gt;&lt;/a&gt; for sponsoring this Docker Birthday Party in Dortmund and making this event possible!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;a href=&#34;http://www.setlog.com/de/&#34;&gt;&lt;strong&gt;Setlog&lt;/strong&gt;&lt;/a&gt; also for sponsoring this  birthday meetup!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;a href=&#34;http://bee42.com&#34;&gt;&lt;strong&gt;bee42&lt;/strong&gt;&lt;/a&gt; for sponsoring the awesome, big (!!!) and delicious Docker Container Cake! (you can have a look below, there are a lot of pictures)&lt;/li&gt;
+&lt;li&gt;&amp;hellip;our gorgeous baker of the &lt;a href=&#34;http://www.baeckerei-mohr.de/&#34;&gt;&lt;strong&gt;bakery Mohr&lt;/strong&gt;&lt;/a&gt; in Dortmund - thank you for the great cake and the details!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;our mentors &lt;a href=&#34;https://twitter.com/PRossbach&#34;&gt;&lt;strong&gt;Peter&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/jans0510&#34;&gt;&lt;strong&gt;Jan&lt;/strong&gt;&lt;/a&gt;, &lt;strong&gt;Albert &amp;amp; Dima&lt;/strong&gt;, &lt;a href=&#34;https://twitter.com/dimi8795&#34;&gt;&lt;strong&gt;Dimitry&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/Kiview&#34;&gt;&lt;strong&gt;Kevin&lt;/strong&gt;&lt;/a&gt;  - thank you for your support and expertise!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;Docker Captains &lt;a href=&#34;https://twitter.com/marcosnils&#34;&gt;&lt;strong&gt;Marcos Lilljedahl&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/xetorthio&#34;&gt;&lt;strong&gt;Jonathan Leibiusky&lt;/strong&gt;&lt;/a&gt; for creating play-with-docker, a fun and easy way to work through these labs and courses!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;KEY FACTS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we tell and report you about OUR 4th Docker Birthday celebration, we like to give you some key fact:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;hellip;Docker in 80+ countries!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;over 154 Docker Birthday #4 celebrations were announced for this year!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;over 650 tweets about this year Docker Birthday celebration!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;6000+ RSVPs worldwide!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;700+ docker mentors worldwide!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;TAKE AWAYS of the Docker Birthday last week:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;hellip;slides of this Docker Birthday MeetUp: &lt;a href=&#34;https://speakerdeck.com/rossbachp/docker-birthday-introduction-meetup-bochum-dortmund&#34;&gt;https://speakerdeck.com/rossbachp/docker-birthday-introduction-meetup-bochum-dortmund&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;dicsount code for the &lt;a href=&#34;https://devops-gathering.io&#34;&gt;DevOps Gathering&lt;/a&gt; in Bochum, Germany (30% off with the code: &lt;strong&gt;docker30&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;dicount code for the &lt;a href=&#34;http://2017.dockercon.com/&#34;&gt;DockerCon&lt;/a&gt; in Austin, America (30% off with the code: &lt;strong&gt;BDAY4&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Kevin &amp;amp; Ali from &lt;a href=&#34;https://twitter.com/adessoAG&#34;&gt;adesso&lt;/a&gt; won tickets (2-Day-Passes) for the DevOps Gathering!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;OUR DOCKER BIRTHDAY PARTY&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Our Docker Birthday #4 was celebrated at Zalando on the 16th March 2017. We brought both Community Groups from &lt;a href=&#34;https://www.meetup.com/de-DE/Docker-Bochum/&#34;&gt;Bochum&lt;/a&gt; and
 &lt;a href=&#34;https://www.meetup.com/de-DE/Docker-Dortmund/&#34;&gt;Dortmund&lt;/a&gt; together to celebrate this event. To celebrate together we warmly welcomed newcomers and the already known Docker friends! We provided free Docker labs and courses to learn about Docker in a fun and inviting way.&lt;/p&gt;
