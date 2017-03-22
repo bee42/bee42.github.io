@@ -17,7 +17,7 @@
       <guid>https://bee42.com/blog/4th-Docker-Birthday/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/all_cakes_docker.jpg&#34; alt=&#34;Docker Birthday Cakes Worldwide&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;We love to use Docker in our daily business, that&amp;rsquo;s also why we organize a week after the Docker Birthday the &lt;a href=&#34;https://devops-gathering.io&#34;&gt;DevOps Gathering&lt;/a&gt; (Maarch 23 - 25, 2017) in Bochum, a conference for docker container, kubernetes, devops and more!&lt;/p&gt;
+&lt;p&gt;We love to use Docker in our daily business, that&amp;rsquo;s also why we organize a week after the Docker Birthday the &lt;a href=&#34;https://devops-gathering.io&#34;&gt;DevOps Gathering&lt;/a&gt; (March 23 - 25, 2017) in Bochum, a conference for Docker container, Kubernetes, DevOps and more!&lt;/p&gt;
 
 &lt;p&gt;But that was NO excuse not to celebrate the &lt;a href=&#34;https://blog.docker.com/2017/02/announcing-docker-birthday-4-spreading-docker-love/&#34;&gt;4th Docker Birthday&lt;/a&gt;!&lt;/p&gt;
 
@@ -25,7 +25,7 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;First of all..a BIG THANK YOU to&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;First of all&amp;hellip;a BIG THANK YOU to&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&amp;hellip;&lt;strong&gt;Karen Bajza&lt;/strong&gt; for spreading the Docker love and the &lt;a href=&#34;https://blog.docker.com/2017/02/announcing-docker-birthday-4-spreading-docker-love/&#34;&gt;4th birthday vibes&lt;/a&gt;!&lt;/li&gt;
@@ -33,29 +33,29 @@
 &lt;li&gt;&amp;hellip;&lt;a href=&#34;http://www.setlog.com/de/&#34;&gt;&lt;strong&gt;Setlog&lt;/strong&gt;&lt;/a&gt; also for sponsoring this  birthday meetup!&lt;/li&gt;
 &lt;li&gt;&amp;hellip;&lt;a href=&#34;http://bee42.com&#34;&gt;&lt;strong&gt;bee42&lt;/strong&gt;&lt;/a&gt; for sponsoring the awesome, big (!!!) and delicious Docker Container Cake! (you can have a look below, there are a lot of pictures)&lt;/li&gt;
 &lt;li&gt;&amp;hellip;our gorgeous baker of the &lt;a href=&#34;http://www.baeckerei-mohr.de/&#34;&gt;&lt;strong&gt;bakery Mohr&lt;/strong&gt;&lt;/a&gt; in Dortmund - thank you for the great cake and the details!&lt;/li&gt;
-&lt;li&gt;&amp;hellip;our mentors &lt;a href=&#34;https://twitter.com/PRossbach&#34;&gt;&lt;strong&gt;Peter&lt;/strong&gt;&lt;/a&gt;,&lt;a href=&#34;https://twitter.com/solidnerd&#34;&gt;&lt;strong&gt;Niclas&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/jans0510&#34;&gt;&lt;strong&gt;Jan&lt;/strong&gt;&lt;/a&gt;, &lt;strong&gt;Albert &amp;amp; Dima&lt;/strong&gt;, &lt;a href=&#34;https://twitter.com/dimi8795&#34;&gt;&lt;strong&gt;Dimitry&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/Kiview&#34;&gt;&lt;strong&gt;Kevin&lt;/strong&gt;&lt;/a&gt;  - thank you for your support and expertise!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;our mentors &lt;a href=&#34;https://twitter.com/PRossbach&#34;&gt;&lt;strong&gt;Peter&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/solidnerd&#34;&gt;&lt;strong&gt;Niclas&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/jans0510&#34;&gt;&lt;strong&gt;Jan&lt;/strong&gt;&lt;/a&gt;, &lt;strong&gt;Albert &amp;amp; Dima&lt;/strong&gt;, &lt;a href=&#34;https://twitter.com/dimi8795&#34;&gt;&lt;strong&gt;Dimitry&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/Kiview&#34;&gt;&lt;strong&gt;Kevin&lt;/strong&gt;&lt;/a&gt;  - thank you for your support and expertise!&lt;/li&gt;
 &lt;li&gt;&amp;hellip;Docker Captains &lt;a href=&#34;https://twitter.com/marcosnils&#34;&gt;&lt;strong&gt;Marcos Lilljedahl&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/xetorthio&#34;&gt;&lt;strong&gt;Jonathan Leibiusky&lt;/strong&gt;&lt;/a&gt; for creating play-with-docker, a fun and easy way to work through these labs and courses!&lt;/li&gt;
 &lt;li&gt;&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;KEY FACTS&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Before we tell and report you about OUR 4th Docker Birthday celebration, we like to give you some key fact:&lt;/p&gt;
+&lt;p&gt;Before we tell and report you about OUR 4th Docker Birthday celebration, we&amp;rsquo;d like to give you some key facts:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&amp;hellip;Docker in 80+ countries!&lt;/li&gt;
 &lt;li&gt;&amp;hellip;over 154 Docker Birthday #4 celebrations were announced for this year!&lt;/li&gt;
 &lt;li&gt;&amp;hellip;over 650 tweets about this year Docker Birthday celebration!&lt;/li&gt;
 &lt;li&gt;&amp;hellip;6000+ RSVPs worldwide!&lt;/li&gt;
-&lt;li&gt;&amp;hellip;700+ docker mentors worldwide!&lt;/li&gt;
+&lt;li&gt;&amp;hellip;700+ Docker mentors worldwide!&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;TAKE AWAYS of the Docker Birthday last week:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TAKE AWAYS of the Docker Birthday celebration last week:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&amp;hellip;slides of this Docker Birthday MeetUp: &lt;a href=&#34;https://speakerdeck.com/rossbachp/docker-birthday-introduction-meetup-bochum-dortmund&#34;&gt;https://speakerdeck.com/rossbachp/docker-birthday-introduction-meetup-bochum-dortmund&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;dicsount code for the &lt;a href=&#34;https://devops-gathering.io&#34;&gt;DevOps Gathering&lt;/a&gt; in Bochum, Germany (30% off with the code: &lt;strong&gt;docker30&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;dicount code for the &lt;a href=&#34;http://2017.dockercon.com/&#34;&gt;DockerCon&lt;/a&gt; in Austin, America (30% off with the code: &lt;strong&gt;BDAY4&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;discount code for the &lt;a href=&#34;https://devops-gathering.io&#34;&gt;DevOps Gathering&lt;/a&gt; in Bochum, Germany (30% off with the code: &lt;strong&gt;docker30&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;discount code for the &lt;a href=&#34;http://2017.dockercon.com/&#34;&gt;DockerCon&lt;/a&gt; in Austin,TX USA (30% off with the code: &lt;strong&gt;BDAY4&lt;/strong&gt;)&lt;/li&gt;
 &lt;li&gt;Kevin &amp;amp; Ali from &lt;a href=&#34;https://twitter.com/adessoAG&#34;&gt;adesso&lt;/a&gt; won tickets (2-Day-Passes) for the DevOps Gathering!&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -77,17 +77,17 @@
 &lt;li&gt;20:45 - 22:00: Celebration with drinks and a very special cake&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;We had a little schedule to finish all things we want to do. Our Meetup started with Pizza and Drinks to get strong enough for all problems that we wanted to solve. After this &lt;a href=&#34;https://twitter.com/PRossbach&#34;&gt;Peter Rossbach&lt;/a&gt;, our Docker expert, held an short introduction about Docker and the Docker Birthday courses.&lt;/p&gt;
+&lt;p&gt;We had a little schedule to finish all things we want to do. Our Meetup started with Pizza and Drinks to get strong enough for all problems that we wanted to resolve. After this &lt;a href=&#34;https://twitter.com/PRossbach&#34;&gt;Peter Rossbach&lt;/a&gt;, our Docker expert, held an short introduction about Docker and the Docker Birthday courses.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/Introduction_DockerBirthday_Peter_Rossbach.jpg&#34; alt=&#34;Docker Birthday Introduction by Peter Rossbach&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;With ending of the introduction all participants built small groups to handle the courses in a timeframe of two hours. In some groups there were dedicated Mentors for the courses, because Mentors likes as well to learn new stuff and take challenges :) . And the other groups could get help from Mentors  On-Demand or Mentors ask them if they can help on the problems.&lt;/p&gt;
+&lt;p&gt;With ending of the introduction all participants built small groups to handle the courses in a timeframe of two hours. In some groups there were dedicated Mentors for the courses, because Mentors likes as well to learn new stuff and take challenges :) . And the other groups could get help from Mentors on-demand or Mentors ask them if they can help on the problems.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/DockerBirthday_Working_in_Groups.jpg&#34; alt=&#34;Docker Birthday Labs and courses&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After our timeframe ended, we missed some important step: The Docker Birthday Cake - The most important part of the evening!&lt;/p&gt;
 
-&lt;p&gt;It looked so small but trust us - the cake was 20 centimeters high, 20 kg heavy and it was filled with raspberry (pi, hihi) creme and and chocolate!!&lt;/p&gt;
+&lt;p&gt;It looked so small but trust us - the cake was 20 centimeters high, 20 kg heavy and it was filled with raspberry (pi, hihi) creme and chocolate!!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/Docker_Birthday_Cake_Container.JPG&#34; alt=&#34;Docker Birthday Cake&#34; /&gt;&lt;/p&gt;
 
@@ -95,7 +95,7 @@
 
 &lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/Selfie_DockerBirthday_Party.png&#34; alt=&#34;Docker Birthday Selfie&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Next year we want to repeat this nice event. We hope that you can join us as well to celebrate this day! :-)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Next year we want to repeat this great event. We hope that you can join us as well to celebrate this day! :-)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dockerbirthday/DockerBirthday_Webcam_Video.jpg&#34; alt=&#34;Docker Birthday Celebration&#34; /&gt;&lt;/p&gt;
 
