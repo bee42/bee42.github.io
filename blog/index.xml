@@ -38,7 +38,7 @@ Successfully taking an application based upon microservices and dockerize it int
 
 &lt;p&gt;&lt;strong&gt;Kevin Wittek and Matthias Rottländer, both from styracosoft&lt;/strong&gt;, took the attendees through the complete development lifecycle of a simple microservice, using familiar tools such as Spring-Boot and Gradle. Based on practical examples the workshop started with running Spring-Boot Apps inside a Docker container and building Spring-Boot Docker images using Gradle. Using containers for unit and integration tests in Spring-Boot Apps with Spock and Docker and deploying and configuring Spring-Boot microservices using docker-compose, gave an insight to new possibilities of up to date development and testing environments&lt;/p&gt;
 
-&lt;p&gt;You can find the full schedule and agenda, all workshops and talks of the DevoOps Gathering 2017 on our website &lt;a href=&#34;https://devops-gathering.io/&#34;&gt;devops-gatehring.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find the full schedule and agenda, all workshops and talks of the DevOps Gathering 2017 on our website &lt;a href=&#34;https://devops-gathering.io/&#34;&gt;devops-gathering.io&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Thank you once again to all our Speakers, Docker Daptains, Experts and of course the Attendees! We are looking forward to the next DevOps Gathering and Workshops!&lt;/p&gt;
 
