@@ -6,8 +6,122 @@
     <description>Recent content in Blog-rsses on bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Mar 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bee42.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DevOps Gathering 2017 - Conference Day on March 24</title>
+      <link>https://bee42.com/blog/DevOps-Gathering-Conference-Day/</link>
+      <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/blog/DevOps-Gathering-Conference-Day/</guid>
+      <description>
+
+&lt;p&gt;We had a long journey and put a lot of effort and time into the project DevOps Gathering - And on the 24th March 2017, when the Conference Days finally started, everything payed off!&lt;/p&gt;
+
+&lt;p&gt;As you may read in the &lt;a href=&#34;https://bee42.com/blog/devops-gathering-workshops/&#34;&gt;previous blogpost&lt;/a&gt;, we had some pre-conference workshops to the &lt;a href=&#34;https://devops-gathering.io&#34;&gt;DevOps Gathering&lt;/a&gt; on Thursday the 23rd March. They took place in the the campus of the Ruhr University in Bochum (RUB).&lt;/p&gt;
+
+&lt;h2 id=&#34;sponsors&#34;&gt;SPONSORS&lt;/h2&gt;
+
+&lt;p&gt;For the main conference day on Friday and Saturday we organized a special location in the ruhr area: The G Data Campus, a location with a over a 100 years of history (If you like to read the full history about this location - you can find it &lt;a href=&#34;https://www.gdata.de/news/g-data-grundstein-fuer-expansion-in-bochum-gelegt&#34;&gt;here&lt;/a&gt;, unfortunately only in German) . &lt;a href=&#34;https://www.gdata.de/&#34;&gt;G Data Software company&lt;/a&gt;, a german IT security pioneer, was our this year location and conference party sponsor. At this point - once again a BIG THANK YOU to G Data for being our supportive sponsor!&lt;/p&gt;
+
+&lt;p&gt;And of course - We don’t want to miss all the other sponsors of the DevOps Gathering 2017:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;as already mentioned - &lt;a href=&#34;https://devops-gathering.io/sponsors/#gdata&#34;&gt;G DATA&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;we, the &lt;a href=&#34;https://bee42.com&#34;&gt;bee42&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devops-gathering.io/sponsors/#setlog&#34;&gt;Setlog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#34;https://devops-gathering.io/sponsors/#wifo&#34;&gt;Bochum Wirtschaftsentwicklung&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#34;https://devops-gathering.io/sponsors/#openknowledge&#34;&gt;open knowledge&lt;/a&gt; as a t-shirt sponsor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devops-gathering.io/sponsors/#host1plus&#34;&gt;Host1Plus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devops-gathering.io/sponsors/#codecentric&#34;&gt;codecentric&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devops-gathering.io/sponsors/#9elements&#34;&gt;9elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devops-gathering.io/sponsors/#aufgeweckt&#34;&gt;agentur aufgeweckt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devops-gathering.io/sponsors/#dpunkt&#34;&gt;dpunkt verlag&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devops-gathering.io/sponsors/#styracosoft&#34;&gt;styracosoft&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can find all information about our sponsors on out conference website: &lt;a href=&#34;https://devops-gathering.io/sponsors/&#34;&gt;https://devops-gathering.io/sponsors/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-program-talks-and-speakers&#34;&gt;THE PROGRAM, TALKS AND SPEAKERS&lt;/h2&gt;
+
+&lt;p&gt;One evening before the conference days, on Thursday after the workshops day, we prepared the location at the G Data Campus and organized the last stuff and prepared everything, what we had to do: The Check-In Desk, the Sponsors Area, the Conference Room and so on. We were so excited about the first official conference day! :-)&lt;/p&gt;
+
+&lt;p&gt;In the morning of the first main conference day the organizer &lt;a href=&#34;https://twitter.com/PRossbach&#34;&gt;Peter Roßbach&lt;/a&gt; warmly welcomed all attendees, sponsors and speakers with some key facts about the Conference and of course with information about the upcoming IT Revolution, about Docker, about organisation transformation and technology shift, and all the other topics that we entered in our program and talks.&lt;/p&gt;
+
+&lt;p&gt;We assembled such a great &lt;a href=&#34;https://devops-gathering.io/#speakers&#34;&gt;speaker line up&lt;/a&gt; and welcomed so many Docker Captains (three), international and national experts on the first day of the DevOps Gathering - As you can see in our following &lt;a href=&#34;https://devops-gathering.io/#talks&#34;&gt;schedule (March 24th)&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;“How we run Kubernetes in Kubernetes, aka Kubeception” &lt;strong&gt;by Timo Derstappen (Giant Swarm)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;“Docker Container Loading” &lt;strong&gt;by Roland Huss (RedHat)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;“Docker Orchestration and Swarming” &lt;strong&gt;by Peter Roßbach (bee42 solutions)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;“One year monitoring a small startup with Prometheus: lessons learned” &lt;strong&gt;by Maykel Moya (ShuttleCloud)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;“Build and deploy multiarch Linux and Windows Container images” &lt;strong&gt;by Docker Captain Stefan Scherer (SEAL Systems)&lt;/strong&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;“Intel and ARM, let Kubernetes rule them all!” &lt;strong&gt;by the talented Lucas Käldström&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;“Make load-balancing great again with Træfik!” &lt;strong&gt;by Emile Vauge and Manuel Laufenberg (both working for traefik.io)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;“Getting the most out of your containerized database” &lt;strong&gt;by Claus Matzinger (crate.io)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Keynote: “DevOps is not enough – towards a DevOps ecosystem” &lt;strong&gt;by Uwe Friedrichsen (codecentric)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can find the full schedule including the abstracts, more pictures and the slides of the talks on our website: &lt;a href=&#34;https://devops-gathering.io/#talks&#34;&gt;https://devops-gathering.io/#talks&lt;/a&gt;. Just click on the talk you like to see and you will find all further information on the subsite.&lt;/p&gt;
+
+&lt;h2 id=&#34;we-recorded-all-sessions-for-you&#34;&gt;We recorded ALL sessions for you&lt;/h2&gt;
+
+&lt;p&gt;For those who think slides are not enough or for those who hadn’t the chance and time to participate in this special community conference, we have some good news for you: All talks of the conference day were recorded! We&amp;rsquo;ll upload all conference talks including the slides within the next weeks via our &lt;a href=&#34;https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw&#34;&gt;DevOps Gathering Youtube Channel&lt;/a&gt;! Besides that we&amp;rsquo;ll put them of course directly on our website &lt;a href=&#34;https://devops-gathering.io&#34;&gt;devops-gathering.io&lt;/a&gt;. You want to be the first to know about the uploaded talks? Then…&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;subscribe our youtube channel to see them directly when they’re online: &lt;a href=&#34;https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw&#34;&gt;https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;just subscribe for our bee42 newsletter here: &lt;a href=&#34;https://goo.gl/ghGIxV&#34;&gt;https://goo.gl/ghGIxV&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;and follow us on twitter via DevOps Gathering and bee42 solutions for the hot news: &lt;a href=&#34;https://twitter.com/DevOpsGathering&#34;&gt;https://twitter.com/DevOpsGathering&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/bee42solutions&#34;&gt;https://twitter.com/bee42solutions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you&amp;rsquo;d like to read and know what happened at the Open Space on the last day of the Conference DevOps Gathering, then read the next blogpost.&lt;/p&gt;
+
+&lt;h2 id=&#34;impressions-of-the-devops-gathering-conference-day&#34;&gt;Impressions of the DevOps Gathering Conference Day&lt;/h2&gt;
+
+&lt;p&gt;(Picture Gallery)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog//dogr_conference/DevOps-Gathering-2017-Conference.jpg&#34; alt=&#34;DevOps Gathering Conference&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/DevOps-Gathering-2017.jpg&#34; alt=&#34;DevOps Gathering Conference Attendees&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/claus-matzinger-devops-gathering.jpg&#34; alt=&#34;DevOps Gathering Conference Claus Matzinger&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/DevOps-Gathering-Peter-Rossbach.jpg&#34; alt=&#34;DevOps Gathering Conference Peter Roßbach&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/DevOps-Gathering-Introduction.jpg&#34; alt=&#34;DevOps Gathering Conference Introduction&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/dieter-reuter-lucas-kaeldtroem-devops-gathering.jpg&#34; alt=&#34;DevOps Gathering Conference Docker Captain and Lucas Käldström&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/Docker-Captain-at-DevOps-Gathering.jpg&#34; alt=&#34;DevOps Gathering Conference Docker Captain&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/Docker-Captain-and-Lucas-Kaeldstroem-DevOps-Gathering.jpg&#34; alt=&#34;DevOps Gathering Conference Introduction&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/docker-captain-stefan-scherer-devops-gathering.jpg&#34; alt=&#34;DevOps Gathering Conference Stefan Scherer&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/teilnehmer-devops-gathering.jpg&#34; alt=&#34;DevOps Gathering Conference attendees&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/lucas-kaeldstroem-devops-gathering-talk.jpg&#34; alt=&#34;DevOps Gathering Conference Stage&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/peter-rossbach-roland-huss-devops-gathering-stage.jpg&#34; alt=&#34;DevOps Gathering Conference&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/teilnehmer-frage-devops-gathering.jpg&#34; alt=&#34;DevOps Gathering Conference participants&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/peter-rossbach-roland-huss-maven-birthday.jpg&#34; alt=&#34;DevOps Gathering Conference Docker Maven PlugIn&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/teilnehmer-frage-runde-devops-gathering.jpg&#34; alt=&#34;DevOps Gathering Conference Teilnehmer&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/timo-derstappen-lachen-on-stage.jpg&#34; alt=&#34;DevOps Gathering Conference Fun&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/teilnehmer-fragerunde-devops-gathering.jpg&#34; alt=&#34;DevOps Gathering Conference questions&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/traefik-at-DevOps-Gathering-2017.jpg&#34; alt=&#34;DevOps Gathering Conference traefik&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/traefik-at-devops-gathering.jpg&#34; alt=&#34;DevOps Gathering Conference traefik&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/blog/dogr_conference/Uwe-Friedrichsen-codecentric-DevOps-Gathering.jpg&#34; alt=&#34;DevOps Gathering Conference &#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>DevOps Gathering Workshops</title>
