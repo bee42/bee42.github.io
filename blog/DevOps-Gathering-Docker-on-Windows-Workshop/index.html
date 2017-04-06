@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<title>DevOps Gathering 2017 - Docker on Windows Workshop</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="In this blogpost you’ll get to know all about the Workshop Getting started with Docker on Windows by the Docker Captains Stefan Scherer and Dieter Reuter.
+">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<meta property="article:tag" content="devops gathering">
+<meta property="article:tag" content="devops gathering workshop">
+<meta property="article:tag" content="docker workshop">
+<meta property="article:tag" content="DevOps Gathering Germany">
+<meta property="article:tag" content="DevOps Gathering Conference">
+<meta property="article:tag" content="bee42 conference">
+<meta property="article:tag" content="Docker Captains">
+<meta property="article:tag" content="Docker">
+<meta property="article:tag" content="Docker Captains workshop">
+<meta property="article:tag" content="Docker for Windows">
+<meta property="article:tag" content="Docker on Windows">
+<meta property="article:tag" content="Docker on Windows Server">
+<meta property="article:tag" content="DevOps Gathering Windows">
+<meta property="article:tag" content="DevOps Gathering Windows Workshop">
+<meta property="article:tag" content="bee42 solutions">
+
+
+
+<meta property="og:title" content="DevOps Gathering 2017 - Docker on Windows Workshop" />
+<meta property="og:description"content="In this blogpost you’ll get to know all about the Workshop Getting started with Docker on Windows by the Docker Captains Stefan Scherer and Dieter Reuter.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bee42.com/blog/DevOps-Gathering-Docker-on-Windows-Workshop/" />
+
+
+	<meta property="og:image" content="https://bee42.com/images/blog/dogr-docker-windows-workshop/dogr-docker-windows-graphic.png" />
+ 
+
+
+
+<meta property="og:updated_time" content="2017-03-30 00:00:00 &#43;0000 UTC"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta property="article:publisher" content="https://www.facebook.com/" />
+
+<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+
+<meta property="article:modified_time" content="2017-03-30 00:00:00 &#43;0000 UTC" />
+<meta property="article:section" content="blog" />
+
+
+
+
+
+
+<meta itemprop="name" content="DevOps Gathering 2017 - Docker on Windows Workshop">
+<meta itemprop="description" content="In this blogpost you’ll get to know all about the Workshop Getting started with Docker on Windows by the Docker Captains Stefan Scherer and Dieter Reuter.
+">
+
+
+
+	<meta itemprop="image" content="https://bee42.com/images/blog/dogr-docker-windows-workshop/dogr-docker-windows-graphic.png">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta itemprop="wordCount" content="311">
+
+
+
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image:src" content="https://bee42.com/images/blog/dogr-docker-windows-workshop/dogr-docker-windows-graphic.png"/>
+
+
+
+<meta name="twitter:title" content="DevOps Gathering 2017 - Docker on Windows Workshop"/>
+<meta name="twitter:description" content="In this blogpost you’ll get to know all about the Workshop Getting started with Docker on Windows by the Docker Captains Stefan Scherer and Dieter Reuter.
+"/>
+
+
+<meta name="twitter:creator" content="@bee42solutions"/>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8QDFPL');</script>
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="64x64" href="images/apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://bee42.com/css/main-164322e2.css" />
+</head>
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8QDFPL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navigation">
+	<div class="inner-content">
+		<a class="branding" href="https://bee42.com/"><img src="https://bee42.com/images/logo.svg" alt=""></a>
+   		 <ul>
+	<li><a href="https://bee42.com/#scroll-top-mission">Mission</a></li>
+	<li><a href="https://bee42.com/#scroll-top-services">Services</a></li>
+	<li><a href="https://bee42.com/#scroll-top-trainings">Trainings</a></li>
+	<li><a href="https://bee42.com/#scroll-top-whatwedo">What we do</a></li>
+	<li><a href="https://bee42.com/#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="https://bee42.com//blog">Blog</a></li>
+	<li><a href="https://bee42.com/#scroll-top-jobs">Jobs</a></li>
+</ul>
+
+		<button class="burger" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	</div>
+</nav>
+
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+ 		<ul>
+	<li><a href="https://bee42.com/#scroll-top-mission">Mission</a></li>
+	<li><a href="https://bee42.com/#scroll-top-services">Services</a></li>
+	<li><a href="https://bee42.com/#scroll-top-trainings">Trainings</a></li>
+	<li><a href="https://bee42.com/#scroll-top-whatwedo">What we do</a></li>
+	<li><a href="https://bee42.com/#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="https://bee42.com//blog">Blog</a></li>
+	<li><a href="https://bee42.com/#scroll-top-jobs">Jobs</a></li>
+</ul>
+
+	</div>
+	<div class="off-canvas-content" data-off-canvas-content>
+	
+		<header> 
+			<div class="inner-content">
+				<h1>
+					Rethink IT 
+					<span>The system is the asset</span>
+				</h1>
+			</div>
+		</header>
+
+		<main>
+ <section class="page-content">
+       <section class="content-box">
+               <h1>DevOps Gathering 2017 - Docker on Windows Workshop</h1>
+              <h2 id="getting-started-with-docker-on-windows-server-2016">&ldquo;Getting started with Docker on Windows Server 2016&rdquo;</h2>
+
+<h3 id="by-a-href-https-twitter-com-stefscherer-stefan-scherer-a-and-a-href-https-twitter-com-quintus23m-dieter-reuter-a-both-docker-captains">by <a href="https://twitter.com/stefscherer">Stefan Scherer</a> and <a href="https://twitter.com/Quintus23M">Dieter Reuter</a> (both Docker Captains)</h3>
+
+<p>For the <a href="https://devops-gathering.io/">DevOps Gathering</a> - a conference about DevOps, Docker, Kubernetes, Microservices and so on - I prepared a <a href="https://devops-gathering.io/workshops/Getting-started-with-Docker-on-Windows-Server-2016/">workshop</a> to get started with Docker on Windows Server 2016. More and more people are attracted by the new way to deploy and run services with Docker and native Windows containers.</p>
+
+<p>In this three hour hands-on workshop the attendees had the chance to get a deep understanding what containers are, how to build an Docker images, where to find images on the Docker Hub, how to write good Dockerfiles for Windows and how to persist data using volumes.</p>
+
+<p>It was my first workshop of this kind and so I hoped that WiFi works well for the workshop. I provided plenty Windows Server 2016 machines in Microsoft Azure Cloud and the attendees used RDP to connect to these machines. With this setup nobody had to setup local VM&rsquo;s and it was easy to run the workshop. Even working from a tablet worked quite well.</p>
+
+<p><img src="/images/blog/dogr-docker-windows-workshop/docker-on-windows-workshop-stefan-scherer-dieter-reuter.jpg" alt="DevOps Gathering Docker Captains Stefan Scherer and Dieter Reuter" /></p>
+
+<p>Even Docker experts on Linux learned some small tricks that apply for both the Linux and Windows platform. They also were astonished how good the Docker support on Windows has evolved. Most of the features that you will use in a Dockerfile or a docker-compose.yml are also implemented on Windows. So deploying and running containers look pretty much the same.</p>
+
+<p><img src="/images/blog/dogr-docker-windows-workshop/docker-on-windows-workshop-teilnehmer.jpg" alt="DevOps Gathering attendees at the docker on windows workshop" /></p>
+
+<p>Thanks to all the attendees for the feedback and that you liked the workshop. Some of you even have ideas for some next projects with Docker on Windows. The the most wanted features are running Docker in Docker to setup Windows CI servers and having full overlay network support in Docker Swarm mode. Let&rsquo;s see what Microsoft and Docker come up with in the next few months&hellip;</p>
+
+<p>&ndash;
+<a href="https://twitter.com/stefscherer">Stefan Scherer</a>, Docker Captain</p>
+
+<p><img src="/images/blog/dogr-docker-windows-workshop/happy-teilnehmer-docker-on-windows-devops-gathering.jpg" alt="DevOps Gathering attendees happy at the docker on windows workshop" /></p>
+
+<p><img src="/images/blog/dogr-docker-windows-workshop/docker-on-windows-slides-dieter-reuter-stefan-scherer-docker-captains.jpg" alt="DevOps Gathering Docker Captains Dieter Reuter and Stefan Scherer Docker on Windows Workshop" />    
+      </section> 
+</section>
+
+<div class="overlay"></div>
+					<footer>
+						<section class="content-box">
+							<a class="branding" href="index.html"><img src="https://bee42.com/images/logo.svg" alt=""> </a> 
+							<p>&copy;2017</p>
+							<a class="imprint" href="https://bee42.com/Imprint/">Imprint</a>
+						</section>
+					</footer>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/edd03c05ea.js"></script>
+	<script src="https://bee42.com/js/foundation.min.js"></script>
+	<script src="https://bee42.com/js/jquery.validate.min.js"></script>
+	<script src="https://bee42.com/js/slick.js"></script>
+	<script src="https://bee42.com/js/main.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58949839-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+	</body>
+<html>

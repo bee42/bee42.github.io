@@ -168,6 +168,41 @@ At every event a lot of attendees have idea for some other talks or topics they 
     </item>
     
     <item>
+      <title>DevOps Gathering 2017 - Docker on Windows Workshop</title>
+      <link>https://bee42.com/blog/DevOps-Gathering-Docker-on-Windows-Workshop/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/blog/DevOps-Gathering-Docker-on-Windows-Workshop/</guid>
+      <description>
+
+&lt;h2 id=&#34;getting-started-with-docker-on-windows-server-2016&#34;&gt;&amp;ldquo;Getting started with Docker on Windows Server 2016&amp;rdquo;&lt;/h2&gt;
+
+&lt;h3 id=&#34;by-a-href-https-twitter-com-stefscherer-stefan-scherer-a-and-a-href-https-twitter-com-quintus23m-dieter-reuter-a-both-docker-captains&#34;&gt;by &lt;a href=&#34;https://twitter.com/stefscherer&#34;&gt;Stefan Scherer&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/Quintus23M&#34;&gt;Dieter Reuter&lt;/a&gt; (both Docker Captains)&lt;/h3&gt;
+
+&lt;p&gt;For the &lt;a href=&#34;https://devops-gathering.io/&#34;&gt;DevOps Gathering&lt;/a&gt; - a conference about DevOps, Docker, Kubernetes, Microservices and so on - I prepared a &lt;a href=&#34;https://devops-gathering.io/workshops/Getting-started-with-Docker-on-Windows-Server-2016/&#34;&gt;workshop&lt;/a&gt; to get started with Docker on Windows Server 2016. More and more people are attracted by the new way to deploy and run services with Docker and native Windows containers.&lt;/p&gt;
+
+&lt;p&gt;In this three hour hands-on workshop the attendees had the chance to get a deep understanding what containers are, how to build an Docker images, where to find images on the Docker Hub, how to write good Dockerfiles for Windows and how to persist data using volumes.&lt;/p&gt;
+
+&lt;p&gt;It was my first workshop of this kind and so I hoped that WiFi works well for the workshop. I provided plenty Windows Server 2016 machines in Microsoft Azure Cloud and the attendees used RDP to connect to these machines. With this setup nobody had to setup local VM&amp;rsquo;s and it was easy to run the workshop. Even working from a tablet worked quite well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dogr-docker-windows-workshop/docker-on-windows-workshop-stefan-scherer-dieter-reuter.jpg&#34; alt=&#34;DevOps Gathering Docker Captains Stefan Scherer and Dieter Reuter&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Even Docker experts on Linux learned some small tricks that apply for both the Linux and Windows platform. They also were astonished how good the Docker support on Windows has evolved. Most of the features that you will use in a Dockerfile or a docker-compose.yml are also implemented on Windows. So deploying and running containers look pretty much the same.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dogr-docker-windows-workshop/docker-on-windows-workshop-teilnehmer.jpg&#34; alt=&#34;DevOps Gathering attendees at the docker on windows workshop&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks to all the attendees for the feedback and that you liked the workshop. Some of you even have ideas for some next projects with Docker on Windows. The the most wanted features are running Docker in Docker to setup Windows CI servers and having full overlay network support in Docker Swarm mode. Let&amp;rsquo;s see what Microsoft and Docker come up with in the next few months&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash;
+&lt;a href=&#34;https://twitter.com/stefscherer&#34;&gt;Stefan Scherer&lt;/a&gt;, Docker Captain&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dogr-docker-windows-workshop/happy-teilnehmer-docker-on-windows-devops-gathering.jpg&#34; alt=&#34;DevOps Gathering attendees happy at the docker on windows workshop&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/dogr-docker-windows-workshop/docker-on-windows-slides-dieter-reuter-stefan-scherer-docker-captains.jpg&#34; alt=&#34;DevOps Gathering Docker Captains Dieter Reuter and Stefan Scherer Docker on Windows Workshop&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>DevOps Gathering 2017 - Conference Day on March 24</title>
       <link>https://bee42.com/blog/DevOps-Gathering-Conference-Day/</link>
       <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
