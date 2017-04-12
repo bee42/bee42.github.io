@@ -23,6 +23,8 @@
 
 &lt;p&gt;&lt;a href=&#34;http://containerd.io&#34;&gt;containerd&lt;/a&gt; is basically the heart of the Docker project and therefor the main runtime to execute Docker containers on a broad range of operating systems from different Linux distros and it even works Windows. This is really a great step into a fully open containerized future where the container runtime itself is now under the control of the CNCF and not only developed by a single company. BTW, at the same time the alternative container engine &lt;a href=&#34;https://github.com/rkt/rkt&#34;&gt;rkt&lt;/a&gt; from CoreOS has been also contributed to and is accepted by the CNCF - so, the users do have a real choice between two different container runtimes directly supported and maintained by the CNCF.&lt;/p&gt;
 
+&lt;p&gt;Another highlight of the KubeCon Europe 2017 was the talk by 17 year-old Lucas Käldström who is the youngest Kubernetes maintainer. He did a similar talk two weeks before at the &lt;a href=&#34;https://devops-gathering.io&#34;&gt;DevOps Gathering 2017&lt;/a&gt; conference in Bochum, here you&amp;rsquo;ll find the recorded talk &lt;a href=&#34;https://www.youtube.com/watch?v=MxeVwAbRbDM&amp;amp;index=4&amp;amp;list=PLfE26KO4gJKAkrcxjCxoapWmljYKF9qTr&#34;&gt;&amp;ldquo;Intel and ARM, let Kubernetes rule them all!&amp;rdquo;, by Lucas Käldström&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;Below you&amp;rsquo;ll find some impressions taken at the cool venue of the Berlin Conference Center &lt;a href=&#34;http://www.bcc-berlin.de/en&#34;&gt;bcc&lt;/a&gt; in the middle of Berlin, Germany.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubecon-europe-2017-berlin/kubecon-cncf.jpg&#34; alt=&#34;KubeCon&#34; /&gt;&lt;/p&gt;
