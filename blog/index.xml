@@ -6,8 +6,42 @@
     <description>Recent content in Blog-rsses on bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Apr 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bee42.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Impressions from CloudNativeCon and KubeCon Europe 2017, Berlin</title>
+      <link>https://bee42.com/blog/kubecon-europe-2017-berlin/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/blog/kubecon-europe-2017-berlin/</guid>
+      <description>&lt;p&gt;We visited the &lt;a href=&#34;http://events.linuxfoundation.org/events/cloudnativecon-and-kubecon-europe&#34;&gt;CloudNativeCon and KubeCon Europe 2017&lt;/a&gt; in Berlin at the end of March. This two-day conference was equipped with highly-skilled speakers which gave the audience a great insight in todays and future container technologies from Docker and Kubernetes, and other a lot of other firms in the Cloud Native ecosystem as well.&lt;/p&gt;
+
+&lt;p&gt;The announcement which impressed us most was, that Docker Inc. did contributed their Open Source industry-standard container runtime &amp;ldquo;containerd&amp;rdquo; project into the hands of the &lt;a href=&#34;https://www.cncf.io&#34;&gt;Cloud Native Computing Foundation CNCF&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubecon-europe-2017-berlin/kubecon-containerd.jpg&#34; alt=&#34;KubeCon&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://containerd.io&#34;&gt;containerd&lt;/a&gt; is basically the heart of the Docker project and therefor the main runtime to execute Docker containers on a broad range of operating systems from different Linux distros and it even works Windows. This is really a great step into a fully open containerized future where the container runtime itself is now under the control of the CNCF and not only developed by a single company. BTW, at the same time the alternative container engine &lt;a href=&#34;https://github.com/rkt/rkt&#34;&gt;rkt&lt;/a&gt; from CoreOS has been also contributed to and is accepted by the CNCF - so, the users do have a real choice between two different container runtimes directly supported and maintained by the CNCF.&lt;/p&gt;
+
+&lt;p&gt;Below you&amp;rsquo;ll find some impressions taken at the cool venue of the Berlin Conference Center &lt;a href=&#34;http://www.bcc-berlin.de/en&#34;&gt;bcc&lt;/a&gt; in the middle of Berlin, Germany.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubecon-europe-2017-berlin/kubecon-cncf.jpg&#34; alt=&#34;KubeCon&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubecon-europe-2017-berlin/kubecon-aparna-sinha.jpg&#34; alt=&#34;KubeCon&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubecon-europe-2017-berlin/kubecon-alexis-richardson.jpg&#34; alt=&#34;KubeCon&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubecon-europe-2017-berlin/kubecon-chen-goldberg.jpg&#34; alt=&#34;KubeCon&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubecon-europe-2017-berlin/kubecon-joe-beda.jpg&#34; alt=&#34;KubeCon&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubecon-europe-2017-berlin/kubecon-kelsey-hightower.jpg&#34; alt=&#34;KubeCon&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+
+&lt;p&gt;The bee42 Crew&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>DevOps Gathering 2017 - Container Open Space</title>
