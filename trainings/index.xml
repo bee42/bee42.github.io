@@ -17,6 +17,14 @@
       <guid>https://bee42.com/trainings/docker-for-java-lab-de/</guid>
       <description>
 
+&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
 &lt;p&gt;Docker und das spannende Ökosystem ist sehr hilfreich für jeden Java-Entwickler. Diese Lab gibt einen Überblick über die besten Praktiken für die Entwicklung von Java-Anwendungen mit Docker.&lt;/p&gt;
 
 &lt;p&gt;Das Docker-Ökosystem bietet Dir vielversprechende Tools zum Paketieren Deiner Software, Wiederverwendung vorhandener Services, Datenbanken oder Tools. Docker hilft, Deine Continuous Integration Pipeline voranzutreiben.&lt;/p&gt;
@@ -52,7 +60,7 @@
 &lt;li&gt;Integiere Metriken und Logging&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
+&lt;p&gt;+++&lt;/p&gt;
 
 &lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
 
@@ -87,6 +95,14 @@
 &lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -97,6 +113,18 @@
       
       <guid>https://bee42.com/trainings/docker-devops-camp-de/</guid>
       <description>
+
+&lt;h3 id=&#34;location-für-den-27-29-juni-2017-münchen&#34;&gt;Location für den 27. - 29. Juni 2017, München&lt;/h3&gt;
+
+&lt;p&gt;Prinz Ludwig Palais in München (Türkenstra0e 7, 80333 München)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Docker DevOps Camp wollen wir diesem Versprechen praktisch nachgehen.&lt;/p&gt;
 
@@ -186,6 +214,8 @@
 &lt;li&gt;Docker on ARM&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;+++&lt;/p&gt;
+
 &lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
 
 &lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
@@ -221,6 +251,14 @@
 &lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -232,107 +270,112 @@
       <guid>https://bee42.com/trainings/docker-gitlab-ci-lab-de/</guid>
       <description>
 
-&lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Docker Lab wollen wir praktisch den Bau von Docker Images mit GITLAB/CI erleichtern und lernen gute Images zu fertigen.&lt;/p&gt;
+&lt;h3 id=&#34;location-für-den-termin-7-8-juni-2017&#34;&gt;Location* für den Termin 7. - 8. Juni 2017&lt;/h3&gt;
 
-&lt;p&gt;Schön und gut, aber ein Entwickler oder Operator muss seine Automatisierung erst einmal bauen, einrichten und testen, damit Docker Images erstellt werden können. Bei dieser Schulung lernst Du, GitLab / CI einzurichten, um Deine Projekte zu pflegen und die Pipeline für Continuous Integration und Delivery für Docker-Images zu automatisieren.&lt;/p&gt;
+&lt;p&gt;Prinz Ludwig Palais in München (Türkenstraße 7, 80333 München)&lt;/p&gt;
 
-&lt;p&gt;Wir beginnen mit einem Überblick von vorhandenen Techniken. In einer folgenden Einführung werden erste Schritte für den Einsatz von GitLab / CI erprobt. Du lernst dabei die wichtigsten Komponenten, Anleitungen und Konzepte kennen. Mit einem detaillierten Beispiel lernst Du, wie Du einen Microservice implementierst, den Build mit verschiedenen Gitlab Runner automatisierst, mit Docker installierst und diesen mit anderen Diensten in einer Umgebung testen und integrieren kannst. Wir zeigen Dir dein Image in deiner Umgebung einzusetzen. Darüber hinaus stellen wir vor, wie Du Builds auslösen kannst, gute Docker-Images erstellen und Images an Deine Docker-Registry versenden kannst.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;tag-eins-br-gitlab-ci-grundlagen&#34;&gt;Tag Eins: &lt;br&gt; GITLAB / CI GRUNDLAGEN&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h3 id=&#34;einführung&#34;&gt;Einführung&lt;/h3&gt;
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Docker Lab wollen wir praktisch den Bau von Docker Images mit GITLAB/CI erleichtern und lernen gute Images zu fertigen.
 
-&lt;ul&gt;
-&lt;li&gt;Was ist GitLab und was es nicht ist?&lt;/li&gt;
-&lt;li&gt;Installation der GitLab Instance&lt;/li&gt;
-&lt;li&gt;Überblick über die GitLab Architektur&lt;/li&gt;
-&lt;li&gt;Detaillierte Übersicht über die GitLab Komponenten&lt;/li&gt;
-&lt;li&gt;Richte verschiedene GitLab-Komponenten ein&lt;/li&gt;
-&lt;li&gt;GitLab UI-Übersicht&lt;/li&gt;
-&lt;li&gt;Check-in von einem einfachen Projekt&lt;/li&gt;
-&lt;/ul&gt;
+Schön und gut, aber ein Entwickler oder Operator muss seine Automatisierung erst einmal bauen, einrichten und testen, damit Docker Images erstellt werden können. Bei dieser Schulung lernst Du, GitLab / CI einzurichten, um Deine Projekte zu pflegen und die Pipeline für Continuous Integration und Delivery für Docker-Images zu automatisieren.
 
-&lt;h3 id=&#34;workflow-mit-ihren-images-von-gitlab&#34;&gt;WORKFLOW MIT IHREN IMAGES VON GITLAB&lt;/h3&gt;
+Wir beginnen mit einem Überblick von vorhandenen Techniken. In einer folgenden Einführung werden erste Schritte für den Einsatz von GitLab / CI erprobt. Du lernst dabei die wichtigsten Komponenten, Anleitungen und Konzepte kennen. Mit einem detaillierten Beispiel lernst Du, wie Du einen Microservice implementierst, den Build mit verschiedenen Gitlab Runner automatisierst, mit Docker installierst und diesen mit anderen Diensten in einer Umgebung testen und integrieren kannst. Wir zeigen Dir dein Image in deiner Umgebung einzusetzen. Darüber hinaus stellen wir vor, wie Du Builds auslösen kannst, gute Docker-Images erstellen und Images an Deine Docker-Registry versenden kannst.
 
-&lt;ul&gt;
-&lt;li&gt;Wir bauen und testen Docker-Images&lt;/li&gt;
-&lt;li&gt;Schiebe erfolgreich gebaute Images in die Registry&lt;/li&gt;
-&lt;li&gt;Erstelle eigene Images auf der Basis eines Dockerfiles&lt;/li&gt;
-&lt;li&gt;Erstelle eigene GitLab Runner mit verschiedenen Typen
 
-&lt;ul&gt;
-&lt;li&gt;Shell&lt;/li&gt;
-&lt;li&gt;Docker&lt;/li&gt;
-&lt;li&gt;Docker in Docker&lt;/li&gt;
-&lt;li&gt;Docker machine&lt;/li&gt;
-&lt;li&gt;SSH&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
+## Tag Eins: &lt;br&gt; GITLAB / CI GRUNDLAGEN
 
-&lt;h3 id=&#34;achte-auf-deine-gitlab-infrastruktur&#34;&gt;ACHTE AUF DEINE GITLAB-INFRASTRUKTUR&lt;/h3&gt;
+### Einführung
 
-&lt;ul&gt;
-&lt;li&gt;Protokollierung und Überwachung der GitLab Infrastruktur&lt;/li&gt;
-&lt;li&gt;Sichern und Wiederherstellen von Images aus GitLab&lt;/li&gt;
-&lt;/ul&gt;
+* Was ist GitLab und was es nicht ist?
+* Installation der GitLab Instance
+* Überblick über die GitLab Architektur
+* Detaillierte Übersicht über die GitLab Komponenten
+* Richte verschiedene GitLab-Komponenten ein
+* GitLab UI-Übersicht
+* Check-in von einem einfachen Projekt
 
-&lt;h2 id=&#34;tag-2-br-erstellen-eines-geprüftes-microservice-mit-docker-und-gitlab&#34;&gt;Tag 2: &lt;br&gt; ERSTELLEN EINES GEPRÜFTES MICROSERVICE MIT DOCKER UND GITLAB&lt;/h2&gt;
 
-&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+### WORKFLOW MIT IHREN IMAGES VON GITLAB
 
-&lt;ul&gt;
-&lt;li&gt;Erstelle eine einfache Spring-Boot Application&lt;/li&gt;
-&lt;li&gt;Erstelle eine Toolchain für Anwendungsentwicklung (Java und Maven)&lt;/li&gt;
-&lt;li&gt;Anwendungsentwicklung mit Docker&lt;/li&gt;
-&lt;li&gt;Aufteilen von Microservices&lt;/li&gt;
-&lt;li&gt;Microservice in einem Produktivsystem mit einem Delivery Concept einbinden&lt;/li&gt;
-&lt;/ul&gt;
+* Wir bauen und testen Docker-Images
+* Schiebe erfolgreich gebaute Images in die Registry
+* Erstelle eigene Images auf der Basis eines Dockerfiles
+* Erstelle eigene GitLab Runner mit verschiedenen Typen
+  * Shell
+  * Docker
+  * Docker in Docker
+  * Docker machine
+  * SSH
 
-&lt;h3 id=&#34;gitlab-ci-tipps-und-tricks&#34;&gt;GITLAB / CI TIPPS UND TRICKS&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Pflege GitLab mit wenigen Schritten&lt;/li&gt;
-&lt;li&gt;Aktualisieren der Installation&lt;/li&gt;
-&lt;li&gt;Sichern und Wiederherstellen der Installation&lt;/li&gt;
-&lt;li&gt;Skaliere Deine CI-CD-Pipeline mit verschiedenen Konzepten&lt;/li&gt;
-&lt;/ul&gt;
+### ACHTE AUF DEINE GITLAB-INFRASTRUKTUR
 
-&lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
+* Protokollierung und Überwachung der GitLab Infrastruktur
+* Sichern und Wiederherstellen von Images aus GitLab
 
-&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;DevOps Entwickler&lt;/li&gt;
-&lt;li&gt;Administratoren&lt;/li&gt;
-&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
-&lt;/ul&gt;
+## Tag 2: &lt;br&gt; ERSTELLEN EINES GEPRÜFTES MICROSERVICE MIT DOCKER UND GITLAB
 
-&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
+### Microservices
 
-&lt;ul&gt;
-&lt;li&gt;Grundkenntnisse Docker&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Java, Maven und SpringBoot&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
-&lt;/ul&gt;
+* Erstelle eine einfache Spring-Boot Application
+* Erstelle eine Toolchain für Anwendungsentwicklung (Java und Maven)
+* Anwendungsentwicklung mit Docker
+* Aufteilen von Microservices
+* Microservice in einem Produktivsystem mit einem Delivery Concept einbinden
 
-&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
-&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
-&lt;li&gt;Internet&lt;/li&gt;
-&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
-&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
-&lt;li&gt;Bringe Dein eigenes Notebook mit
 
-&lt;ul&gt;
-&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
-&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
-&lt;li&gt;SSH oder Putty installiert&lt;/li&gt;
-&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
+### GITLAB / CI TIPPS UND TRICKS
+
+* Pflege GitLab mit wenigen Schritten
+* Aktualisieren der Installation
+* Sichern und Wiederherstellen der Installation
+* Skaliere Deine CI-CD-Pipeline mit verschiedenen Konzepten
+
++++
+
+## Voraussetzungen und Leistungen
+
+### Zielgruppe/ Wer sollte teilnehmen?
+
+* DevOps Entwickler
+* Administratoren
+* Software- und Systemarchitekten
+
+
+### Voraussetzungen an die Teilnehmer
+
+* Grundkenntnisse Docker
+* Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)
+* Grundkenntnisse Java, Maven und SpringBoot
+* Grundkenntnisse Microservices
+
+
+### Leistungen
+
+* Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)
+* Schulungsmaterialien
+* Internet
+* Nicht enthalten: Hotel Übernachtungen, Anreise
+* Rechner werden nicht gestellt
+* Bringe Dein eigenes Notebook mit
+  * Administrator Rechte erforderlich
+  * Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)
+  * SSH oder Putty installiert
+  * Google Chrome, Java IDE und git installiert
+
+  **Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!**
+
+  &gt; &lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;
+
+  &lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 </description>
     </item>
     
@@ -343,6 +386,14 @@
       
       <guid>https://bee42.com/trainings/docker-prometheus-lab-de/</guid>
       <description>
+
+&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. Wir Entwickler lieben Docker, deployen dort leichtgewichtige Microservices und erstellen System aus vorgefertigten Komponenten des Ökosystems.&lt;/p&gt;
 
@@ -419,6 +470,8 @@
 &lt;li&gt;Backup/Restore&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;+++&lt;/p&gt;
+
 &lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
 
 &lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
@@ -455,6 +508,14 @@
 &lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -465,6 +526,14 @@
       
       <guid>https://bee42.com/trainings/docker-prometheus-lab/</guid>
       <description>
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. We developers love Docker and deploy the microservices on it.&lt;/p&gt;
 
@@ -541,6 +610,8 @@
 &lt;li&gt;Backup/Restore&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;+++&lt;/p&gt;
+
 &lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
 
 &lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
@@ -578,6 +649,14 @@
 &lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -588,6 +667,14 @@
       
       <guid>https://bee42.com/trainings/docker-for-java-lab/</guid>
       <description>
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Docker and the exciting ecosystem is very helpful for any Java developer. This lab gives an overview of the best practices to develop Java application with Docker. The Docker ecosystem offers you promising tools for package your software, reuse existing services, database or tools.Docker helps to drive your Continuous Integration Pipeline forward.&lt;/p&gt;
 
@@ -622,14 +709,16 @@
 &lt;li&gt;Add metrics and logging&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Participants&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h3 id=&#34;participants&#34;&gt;Participants&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Java Developer&lt;/li&gt;
 &lt;li&gt;System Architects&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Pre-Knowledge&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;pre-knowledge&#34;&gt;Pre-Knowledge&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Good Java, Maven and Spring Boot knowledge&lt;/li&gt;
@@ -637,7 +726,7 @@
 &lt;li&gt;Linux basics&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Services&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;services&#34;&gt;Services&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Catering: Breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
@@ -654,6 +743,14 @@
 &lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -664,6 +761,18 @@
       
       <guid>https://bee42.com/trainings/docker-gitlab-ci-lab/</guid>
       <description>
+
+&lt;h3 id=&#34;venue-for-the-7th-8th-june-2017&#34;&gt;Venue for the 7th/8th June 2017&lt;/h3&gt;
+
+&lt;p&gt;Prinz Ludwig Palais in Munich (Türkenstraße 7, 80333 Munich)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver Docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for Docker images.&lt;/p&gt;
 
@@ -730,6 +839,8 @@
 &lt;li&gt;Scale your CI CD Pipeline with different concepts&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;+++&lt;/p&gt;
+
 &lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
 
 &lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
@@ -766,6 +877,14 @@
 &lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -776,6 +895,18 @@
       
       <guid>https://bee42.com/trainings/docker-devops-camp/</guid>
       <description>
+
+&lt;h3 id=&#34;venue-for-the-27th-29th-june-2017&#34;&gt;Venue for the 27th -29th June 2017&lt;/h3&gt;
+
+&lt;p&gt;Prinz Ludwig Palais in Munich (Türkenstraße 7, 80333 Munich)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Camp we want to pursue this promise.&lt;/p&gt;
 
@@ -865,7 +996,9 @@
 &lt;li&gt;Docker on ARM&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;requirements-and-services&#34;&gt;Requirements and Services&lt;/h2&gt;
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h1 id=&#34;requirements-and-services&#34;&gt;Requirements and Services&lt;/h1&gt;
 
 &lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
 
@@ -901,6 +1034,14 @@
 &lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
