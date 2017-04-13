@@ -270,9 +270,21 @@
       <guid>https://bee42.com/trainings/docker-gitlab-ci-lab-de/</guid>
       <description>
 
-&lt;h3 id=&#34;location-für-den-termin-7-8-juni-2017&#34;&gt;Location* für den Termin 7. - 8. Juni 2017&lt;/h3&gt;
+&lt;h3 id=&#34;26-27-april-2017-essen&#34;&gt;26. - 27. April 2017, Essen&lt;/h3&gt;
 
-&lt;p&gt;Prinz Ludwig Palais in München (Türkenstraße 7, 80333 München)&lt;/p&gt;
+&lt;p&gt;Unperfekthaus in Essen &lt;br&gt;(Friedrich-Ebert-Straße 18 - 26, 45127 Essen)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab-ci-training-essen.eventbrite.de&#34; class=&#34;Jetzt zum Training in Essen anmelden!&#34;&gt;Jetzt anmelden!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;7-8-juni-2017-münchen&#34;&gt;7. - 8. Juni 2017, München&lt;/h3&gt;
+
+&lt;p&gt;Prinz Ludwig Palais in München &lt;br&gt;(Türkenstraße 7, 80333 München)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://docker-gitlab-ci-training.eventbrite.de&#34; class=&#34;Jetzt zum Training in Essen anmelden!&#34;&gt;Jetzt anmelden &amp;amp; sparen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
 
@@ -281,101 +293,136 @@
 &lt;/blockquote&gt;
 
 &lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
-Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Docker Lab wollen wir praktisch den Bau von Docker Images mit GITLAB/CI erleichtern und lernen gute Images zu fertigen.
 
-Schön und gut, aber ein Entwickler oder Operator muss seine Automatisierung erst einmal bauen, einrichten und testen, damit Docker Images erstellt werden können. Bei dieser Schulung lernst Du, GitLab / CI einzurichten, um Deine Projekte zu pflegen und die Pipeline für Continuous Integration und Delivery für Docker-Images zu automatisieren.
+&lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Docker. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Docker Lab wollen wir praktisch den Bau von Docker Images mit GITLAB/CI erleichtern und lernen gute Images zu fertigen.&lt;/p&gt;
 
-Wir beginnen mit einem Überblick von vorhandenen Techniken. In einer folgenden Einführung werden erste Schritte für den Einsatz von GitLab / CI erprobt. Du lernst dabei die wichtigsten Komponenten, Anleitungen und Konzepte kennen. Mit einem detaillierten Beispiel lernst Du, wie Du einen Microservice implementierst, den Build mit verschiedenen Gitlab Runner automatisierst, mit Docker installierst und diesen mit anderen Diensten in einer Umgebung testen und integrieren kannst. Wir zeigen Dir dein Image in deiner Umgebung einzusetzen. Darüber hinaus stellen wir vor, wie Du Builds auslösen kannst, gute Docker-Images erstellen und Images an Deine Docker-Registry versenden kannst.
+&lt;p&gt;Schön und gut, aber ein Entwickler oder Operator muss seine Automatisierung erst einmal bauen, einrichten und testen, damit Docker Images erstellt werden können. Bei dieser Schulung lernst Du, GitLab / CI einzurichten, um Deine Projekte zu pflegen und die Pipeline für Continuous Integration und Delivery für Docker-Images zu automatisieren.&lt;/p&gt;
 
+&lt;p&gt;Wir beginnen mit einem Überblick von vorhandenen Techniken. In einer folgenden Einführung werden erste Schritte für den Einsatz von GitLab / CI erprobt. Du lernst dabei die wichtigsten Komponenten, Anleitungen und Konzepte kennen. Mit einem detaillierten Beispiel lernst Du, wie Du einen Microservice implementierst, den Build mit verschiedenen Gitlab Runner automatisierst, mit Docker installierst und diesen mit anderen Diensten in einer Umgebung testen und integrieren kannst. Wir zeigen Dir dein Image in deiner Umgebung einzusetzen. Darüber hinaus stellen wir vor, wie Du Builds auslösen kannst, gute Docker-Images erstellen und Images an Deine Docker-Registry versenden kannst.&lt;/p&gt;
 
-## Tag Eins: &lt;br&gt; GITLAB / CI GRUNDLAGEN
+&lt;h2 id=&#34;tag-eins-gitlab-ci-grundlagen&#34;&gt;Tag Eins: GITLAB / CI GRUNDLAGEN&lt;/h2&gt;
 
-### Einführung
+&lt;h3 id=&#34;einführung&#34;&gt;Einführung&lt;/h3&gt;
 
-* Was ist GitLab und was es nicht ist?
-* Installation der GitLab Instance
-* Überblick über die GitLab Architektur
-* Detaillierte Übersicht über die GitLab Komponenten
-* Richte verschiedene GitLab-Komponenten ein
-* GitLab UI-Übersicht
-* Check-in von einem einfachen Projekt
+&lt;ul&gt;
+&lt;li&gt;Was ist GitLab und was es nicht ist?&lt;/li&gt;
+&lt;li&gt;Installation der GitLab Instance&lt;/li&gt;
+&lt;li&gt;Überblick über die GitLab Architektur&lt;/li&gt;
+&lt;li&gt;Detaillierte Übersicht über die GitLab Komponenten&lt;/li&gt;
+&lt;li&gt;Richte verschiedene GitLab-Komponenten ein&lt;/li&gt;
+&lt;li&gt;GitLab UI-Übersicht&lt;/li&gt;
+&lt;li&gt;Check-in von einem einfachen Projekt&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;h3 id=&#34;workflow-mit-ihren-images-von-gitlab&#34;&gt;WORKFLOW MIT IHREN IMAGES VON GITLAB&lt;/h3&gt;
 
-### WORKFLOW MIT IHREN IMAGES VON GITLAB
+&lt;ul&gt;
+&lt;li&gt;Wir bauen und testen Docker-Images&lt;/li&gt;
+&lt;li&gt;Schiebe erfolgreich gebaute Images in die Registry&lt;/li&gt;
+&lt;li&gt;Erstelle eigene Images auf der Basis eines Dockerfiles&lt;/li&gt;
+&lt;li&gt;Erstelle eigene GitLab Runner mit verschiedenen Typen
 
-* Wir bauen und testen Docker-Images
-* Schiebe erfolgreich gebaute Images in die Registry
-* Erstelle eigene Images auf der Basis eines Dockerfiles
-* Erstelle eigene GitLab Runner mit verschiedenen Typen
-  * Shell
-  * Docker
-  * Docker in Docker
-  * Docker machine
-  * SSH
+&lt;ul&gt;
+&lt;li&gt;Shell&lt;/li&gt;
+&lt;li&gt;Docker&lt;/li&gt;
+&lt;li&gt;Docker in Docker&lt;/li&gt;
+&lt;li&gt;Docker machine&lt;/li&gt;
+&lt;li&gt;SSH&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;h3 id=&#34;achte-auf-deine-gitlab-infrastruktur&#34;&gt;ACHTE AUF DEINE GITLAB-INFRASTRUKTUR&lt;/h3&gt;
 
-### ACHTE AUF DEINE GITLAB-INFRASTRUKTUR
+&lt;ul&gt;
+&lt;li&gt;Protokollierung und Überwachung der GitLab Infrastruktur&lt;/li&gt;
+&lt;li&gt;Sichern und Wiederherstellen von Images aus GitLab&lt;/li&gt;
+&lt;/ul&gt;
 
-* Protokollierung und Überwachung der GitLab Infrastruktur
-* Sichern und Wiederherstellen von Images aus GitLab
+&lt;h2 id=&#34;tag-2-erstellen-eines-geprüftes-microservice-mit-docker-und-gitlab&#34;&gt;Tag 2: ERSTELLEN EINES GEPRÜFTES MICROSERVICE MIT DOCKER UND GITLAB&lt;/h2&gt;
 
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
 
-## Tag 2: &lt;br&gt; ERSTELLEN EINES GEPRÜFTES MICROSERVICE MIT DOCKER UND GITLAB
+&lt;ul&gt;
+&lt;li&gt;Erstelle eine einfache Spring-Boot Application&lt;/li&gt;
+&lt;li&gt;Erstelle eine Toolchain für Anwendungsentwicklung (Java und Maven)&lt;/li&gt;
+&lt;li&gt;Anwendungsentwicklung mit Docker&lt;/li&gt;
+&lt;li&gt;Aufteilen von Microservices&lt;/li&gt;
+&lt;li&gt;Microservice in einem Produktivsystem mit einem Delivery Concept einbinden&lt;/li&gt;
+&lt;/ul&gt;
 
-### Microservices
+&lt;h3 id=&#34;gitlab-ci-tipps-und-tricks&#34;&gt;GITLAB / CI TIPPS UND TRICKS&lt;/h3&gt;
 
-* Erstelle eine einfache Spring-Boot Application
-* Erstelle eine Toolchain für Anwendungsentwicklung (Java und Maven)
-* Anwendungsentwicklung mit Docker
-* Aufteilen von Microservices
-* Microservice in einem Produktivsystem mit einem Delivery Concept einbinden
+&lt;ul&gt;
+&lt;li&gt;Pflege GitLab mit wenigen Schritten&lt;/li&gt;
+&lt;li&gt;Aktualisieren der Installation&lt;/li&gt;
+&lt;li&gt;Sichern und Wiederherstellen der Installation&lt;/li&gt;
+&lt;li&gt;Skaliere Deine CI-CD-Pipeline mit verschiedenen Konzepten&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;p&gt;+++&lt;/p&gt;
 
+&lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
 
-### GITLAB / CI TIPPS UND TRICKS
+&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
 
-* Pflege GitLab mit wenigen Schritten
-* Aktualisieren der Installation
-* Sichern und Wiederherstellen der Installation
-* Skaliere Deine CI-CD-Pipeline mit verschiedenen Konzepten
+&lt;ul&gt;
+&lt;li&gt;DevOps Entwickler&lt;/li&gt;
+&lt;li&gt;Administratoren&lt;/li&gt;
+&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
+&lt;/ul&gt;
 
-+++
+&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
 
-## Voraussetzungen und Leistungen
+&lt;ul&gt;
+&lt;li&gt;Grundkenntnisse Docker&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Java, Maven und SpringBoot&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
+&lt;/ul&gt;
 
-### Zielgruppe/ Wer sollte teilnehmen?
+&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
 
-* DevOps Entwickler
-* Administratoren
-* Software- und Systemarchitekten
+&lt;ul&gt;
+&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
+&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
+&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;li&gt;Bringe Dein eigenes Notebook mit
 
+&lt;ul&gt;
+&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
+&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
+&lt;li&gt;SSH oder Putty installiert&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-### Voraussetzungen an die Teilnehmer
+&lt;p&gt;+++&lt;/p&gt;
 
-* Grundkenntnisse Docker
-* Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)
-* Grundkenntnisse Java, Maven und SpringBoot
-* Grundkenntnisse Microservices
+&lt;h3 id=&#34;26-27-april-2017-essen-1&#34;&gt;26. - 27. April 2017, Essen&lt;/h3&gt;
 
+&lt;p&gt;Unperfekthaus in Essen &lt;br&gt;(Friedrich-Ebert-Straße 18 - 26, 45127 Essen)&lt;/p&gt;
 
-### Leistungen
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab-ci-training-essen.eventbrite.de&#34; class=&#34;Jetzt zum Training in Essen anmelden!&#34;&gt;Jetzt anmelden!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-* Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)
-* Schulungsmaterialien
-* Internet
-* Nicht enthalten: Hotel Übernachtungen, Anreise
-* Rechner werden nicht gestellt
-* Bringe Dein eigenes Notebook mit
-  * Administrator Rechte erforderlich
-  * Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)
-  * SSH oder Putty installiert
-  * Google Chrome, Java IDE und git installiert
+&lt;h3 id=&#34;7-8-juni-2017-münchen-1&#34;&gt;7. - 8. Juni 2017, München&lt;/h3&gt;
 
-  **Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!**
+&lt;p&gt;Prinz Ludwig Palais in München &lt;br&gt;(Türkenstraße 7, 80333 München)&lt;/p&gt;
 
-  &gt; &lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://docker-gitlab-ci-training.eventbrite.de&#34; class=&#34;Jetzt zum Training in Essen anmelden!&#34;&gt;Jetzt anmelden &amp;amp; sparen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-  &lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 </description>
     </item>
     
@@ -762,9 +809,23 @@ Wir beginnen mit einem Überblick von vorhandenen Techniken. In einer folgenden 
       <guid>https://bee42.com/trainings/docker-gitlab-ci-lab/</guid>
       <description>
 
-&lt;h3 id=&#34;venue-for-the-7th-8th-june-2017&#34;&gt;Venue for the 7th/8th June 2017&lt;/h3&gt;
+&lt;h3 id=&#34;26th-27th-april-2017-in-essen&#34;&gt;26th/27th April 2017 in Essen&lt;/h3&gt;
 
-&lt;p&gt;Prinz Ludwig Palais in Munich (Türkenstraße 7, 80333 Munich)&lt;/p&gt;
+&lt;p&gt;Unperfekthaus in Essen &lt;br&gt;(Friedrich-Ebert-Straße 18 - 26, 45127 Essen)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab-ci-training-essen.eventbrite.de&#34; class=&#34;Get now your ticket for the training in Essen!&#34;&gt;Book now!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;7th-8th-june-2017-in-munich&#34;&gt;7th/8th June 2017 in Munich&lt;/h3&gt;
+
+&lt;p&gt;Prinz Ludwig Palais in Munich &lt;br&gt;(Türkenstraße 7, 80333 Munich)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://docker-gitlab-ci-training.eventbrite.de&#34; class=&#34;Get now your ticket for the training in Munich!&#34;&gt;Book now!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
 
@@ -878,13 +939,33 @@ Wir beginnen mit einem Überblick von vorhandenen Techniken. In einer folgenden 
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h3 id=&#34;26th-27th-april-2017-in-essen-1&#34;&gt;26th/27th April 2017 in Essen&lt;/h3&gt;
+
+&lt;p&gt;Unperfekthaus in Essen &lt;br&gt;(Friedrich-Ebert-Straße 18 - 26, 45127 Essen)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab-ci-training-essen.eventbrite.de&#34; class=&#34;Get now your ticket for the training in Essen!&#34;&gt;Book now!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;7th-8th-june-2017-in-munich-1&#34;&gt;7th/8th June 2017 in Munich&lt;/h3&gt;
+
+&lt;p&gt;Prinz Ludwig Palais in Munich &lt;br&gt;(Türkenstraße 7, 80333 Munich)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://docker-gitlab-ci-training.eventbrite.de&#34; class=&#34;Get now your ticket for the training in Munich!&#34;&gt;Book now!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
 &lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 </description>
     </item>
     
