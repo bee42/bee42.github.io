@@ -407,6 +407,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Grundkenntnisse Docker&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Git&lt;/li&gt;
 &lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)&lt;/li&gt;
 &lt;li&gt;Grundkenntnisse Java, Maven und SpringBoot&lt;/li&gt;
 &lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
@@ -713,6 +714,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Git&lt;/li&gt;
 &lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
 &lt;li&gt;Basic knowledge of Java, Maven and SpringBoot&lt;/li&gt;
 &lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
