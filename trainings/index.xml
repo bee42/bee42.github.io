@@ -958,6 +958,147 @@
     </item>
     
     <item>
+      <title>Kubernetes DevOps Lab</title>
+      <link>https://bee42.com/trainings/kubernetes-devops-lab/</link>
+      <pubDate>Fri, 21 Apr 2017 20:28:31 +0100</pubDate>
+      
+      <guid>https://bee42.com/trainings/kubernetes-devops-lab/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Whether small startups or large companies - many companies rely on the OpenSource Kubernetes and Container technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? With Docker containers you can create reproducible software images easily and accelerate your development.&lt;/p&gt;
+
+&lt;p&gt;Kubernetes promises also a quick start and a flexible configuration, but it&amp;rsquo;s designed to scale in the large. You can operate in the cloud and on premises for production. In this Kubernetes lab we want to pursue this promise.&lt;/p&gt;
+
+&lt;p&gt;We start with an overview and introduce the first steps with the basic use of Kubernetes. You will get to know the most important commands, instructions and concepts to run pods and services. With using some concrete examples, you will learn quickly how to implement a microservice application, deploy it with Kubernetes, and integrate it with other services in different environments; from development to staging and production. We also discuss the current Kubernetes ecosystem and clarify opportunities and risks.&lt;/p&gt;
+
+&lt;p&gt;This lab provides you with the Kubernetes basics in comprehensible steps and puts you in the position to decide subsequently whether and how Kubernetes is useful in your business and IT context.&lt;/p&gt;
+
+&lt;h2 id=&#34;day-one-br-kubernetes-basics&#34;&gt;Day One: &lt;br&gt; Kubernetes Basics&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Kubernetes Installation&lt;/li&gt;
+&lt;li&gt;Kubernetes Basics&lt;/li&gt;
+&lt;li&gt;Container Technology Basics&lt;/li&gt;
+&lt;li&gt;Kernel vs. Classical Virtualization&lt;/li&gt;
+&lt;li&gt;Architecture of Kubernetes&lt;/li&gt;
+&lt;li&gt;Kubernetes Control Plane&lt;/li&gt;
+&lt;li&gt;Add first Use Cases to your Kubernetes cluster&lt;/li&gt;
+&lt;li&gt;Setup your Kubernetes cluster environment with kubeadm&lt;/li&gt;
+&lt;li&gt;Images, Pods, Services and more&lt;/li&gt;
+&lt;li&gt;Basic CLI Handling and UI&amp;rsquo;s&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;simple-usage&#34;&gt;Simple Usage&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Let&amp;rsquo;s play Pods and Services: run, stop, update, maintain&lt;/li&gt;
+&lt;li&gt;kubectl and kubeadm CLI commands overview&lt;/li&gt;
+&lt;li&gt;Build your own Images with Dockerfiles&lt;/li&gt;
+&lt;li&gt;Build, Ship and Run Cycle&lt;/li&gt;
+&lt;li&gt;Docker Tooling&lt;/li&gt;
+&lt;li&gt;Service Discovery&lt;/li&gt;
+&lt;li&gt;Scheduling (node, resources, label and constraints)&lt;/li&gt;
+&lt;li&gt;Deployment&lt;/li&gt;
+&lt;li&gt;Failure Detection&lt;/li&gt;
+&lt;li&gt;Volume Management (Pet sets)&lt;/li&gt;
+&lt;li&gt;Network Management&lt;/li&gt;
+&lt;li&gt;Jobs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-two-br-create-microservices-with-docker&#34;&gt;Day Two: &lt;br&gt; Create Microservices with Docker&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Think Infrastructure first&lt;/li&gt;
+&lt;li&gt;Create a simple Spring Boot App&lt;/li&gt;
+&lt;li&gt;Build your Toolchain: Java and Maven&lt;/li&gt;
+&lt;li&gt;Kubernetes for Java Developers&lt;/li&gt;
+&lt;li&gt;Create Database Containers&lt;/li&gt;
+&lt;li&gt;Empower your Development&lt;/li&gt;
+&lt;li&gt;Ingress Loadbalancer&lt;/li&gt;
+&lt;li&gt;Deploy Stacks with Helm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;go-to-production&#34;&gt;Go to Production&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Prepare Kubernetes for Production&lt;/li&gt;
+&lt;li&gt;Setup a Cloud Cluster&lt;/li&gt;
+&lt;li&gt;Update, Failure Detection and Redeployment&lt;/li&gt;
+&lt;li&gt;Logging and Metrics&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;li&gt;Build your own Microservice Infrastructure&lt;/li&gt;
+&lt;li&gt;Build high-quality Images&lt;/li&gt;
+&lt;li&gt;Create a simple Build Pipeline&lt;/li&gt;
+&lt;li&gt;Use Service Discovery for your Secrets&lt;/li&gt;
+&lt;li&gt;Create Namespaces&lt;/li&gt;
+&lt;li&gt;Networking mit flannel und etcd,&lt;/li&gt;
+&lt;li&gt;Security and Access Control (RBAC)&lt;/li&gt;
+&lt;li&gt;Debug your Pods&lt;/li&gt;
+&lt;li&gt;Learn even more Kubernetes Tricks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;requirements-and-services&#34;&gt;Requirements and Services&lt;/h1&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps developers&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software and System Architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
+&lt;li&gt;Basic knowledge Git&lt;/li&gt;
+&lt;li&gt;Basic knowledge Java&lt;/li&gt;
+&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Networks&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;Services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: Breakfast, Lunch and Drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training Materials&lt;/li&gt;
+&lt;li&gt;Internet Access&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Not included&lt;/strong&gt;: hotel accommodation, travel expenses&lt;/li&gt;
+&lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;li&gt;Bring your own Notebook
+
+&lt;ul&gt;
+&lt;li&gt;Administrator privileges needed&lt;/li&gt;
+&lt;li&gt;Free access to the complete network (no enterprise proxy or vpn)&lt;/li&gt;
+&lt;li&gt;SSH or Putty installed&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE and Git installed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>docker for java lab</title>
       <link>https://bee42.com/trainings/docker-for-java-lab/</link>
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
