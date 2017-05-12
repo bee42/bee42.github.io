@@ -6,8 +6,70 @@
     <description>Recent content in Blog-rsses on bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 May 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bee42.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Docker Basic Workshop at the UnternehmerTUM in Munich &amp; DevOps Munich MeetUp</title>
+      <link>https://bee42.com/blog/cooperation-workshop-meetUp-unternehmertum-Muenchen/</link>
+      <pubDate>Thu, 11 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/blog/cooperation-workshop-meetUp-unternehmertum-Muenchen/</guid>
+      <description>
+
+&lt;p&gt;We happily announce that the bee42 crew members and experts &lt;a href=&#34;https://twitter.com/PRossbach&#34;&gt;Peter Roßbach&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/solidnerd&#34;&gt;Niclas Mietz&lt;/a&gt; will travel next week from May 16th to 17th to Munich for some very special events!&lt;/p&gt;
+
+&lt;h2 id=&#34;docker-basic-workshop-at-the-unternehmertum-https-www-unternehmertum-de-index-html-lang-de&#34;&gt;Docker Basic Workshop at the &lt;a href=&#34;https://www.unternehmertum.de/index.html?lang=de&#34;&gt;UnternehmerTUM&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;We are proud to announce that we cooperate and work together with the UnternehmerTUM. Next week will be the first step in our coorporation: We present the 2 Day Docker Basic Workshop on May 16th -17th, 2017.&lt;/p&gt;
+
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. In this Docker Basic Workshop we want to pursue this promise.&lt;/p&gt;
+
+&lt;p&gt;The attendees of the UnternehmerTUM will learn a lot in these two days: We start with an overview and introduce the first steps with the use of Docker. They will get to know the most important commands, instructions and concepts. Using a detailed example, they will also learn how to implement a microservice, install with Docker, and integrate with other services in an environment. We also discuss the current Docker ecosystem and clarify opportunities and risks.&lt;/p&gt;
+
+&lt;p&gt;This Docker Basic Workshop will an introduction of the Docker basics in comprehensible steps and put the attendees in the position subsequently to decide whether and how Docker is useful in their own business and IT context.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Want to learn the Docker Basics too? Need some Docker Introduction? Then check out our Docker DevOps Camp (next dates: 29 - 31 May 2017 in Berlin &amp;amp; 27 - 29 June 2017 in Munich):
+&lt;a href=&#34;https://bee42.com/trainings/docker-devops-camp-de/&#34;&gt;https://bee42.com/trainings/docker-devops-camp-de/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;devops-meetup-on-may-16th-2017-04-https-www-meetup-com-de-de-devopsmunich-events-239567791&#34;&gt;&lt;a href=&#34;https://www.meetup.com/de-DE/DevOpsMunich/events/239567791/&#34;&gt;DevOps MeetUp on May 16th, 2017-04&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;As we are in Munich next week, we took also the opportunity to support the DevOps MeetUp in Munich. Together we organize the next MeetUp on May 16! And once again UnternehmerTUM is the Location Sponsor for that date - Thank you!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When? on Tuesday (May 16, 2017)&lt;/li&gt;
+&lt;li&gt;Time? start at 18:30&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the following you can find the current talks for that date:&lt;/p&gt;
+
+&lt;h4 id=&#34;speed-up-your-shipments-of-docker-containers-with-gitlab-ci-by-niclas-mietz&#34;&gt;Speed up your shipments of Docker Containers with GitLab/CI (by Niclas Mietz)&lt;/h4&gt;
+
+&lt;p&gt;Build, Ship and Run your Docker container from source to production with your own build pipelines. In the era of clouds and dynamic infrastructures our integration and deployment pipelines for containers needs to be build-up fast and easy as well at your on premise setup.
+This talk will present you concepts for integration and deployment of containers with the GitLab/CI tool. Create your own GitLab runners for the different uses cases to create software and learn some best practices to build good Docker images. Discuss a simple setup of your own CI/CD infrastructure in less than 10 minutes and getting started with your container pipelines.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;About Niclas Mietz (bee42)&lt;/strong&gt;
+Niclas is DevOps Engineer at the bee42 solutions and studies computer science at FH Dortmund. Next to his job he likes to work with Open-Source projects with container touch and new technologies in the container ecosystem. Besides supporting and visiting local meetups he is organizing the Docker Bochum MeetUp.&lt;/p&gt;
+
+&lt;h4 id=&#34;package-configuration-management-have-failed-by-franz-pletz&#34;&gt;Package &amp;amp; Configuration Management have failed (by Franz Pletz)&lt;/h4&gt;
+
+&lt;p&gt;(Details will follow)&lt;/p&gt;
+
+&lt;h4 id=&#34;lightning-talk-borg-backup-by-christian-neukirchen-and-tristan-helmich&#34;&gt;Lightning Talk:Borg Backup (by Christian Neukirchen and Tristan Helmich)&lt;/h4&gt;
+
+&lt;p&gt;(Details will follow)&lt;/p&gt;
+
+&lt;p&gt;And for all those who couldn&amp;rsquo;t attend the next DevOps MeetUp in Munich or just want to see the talks: &lt;strong&gt;The MeetUp will be livestreamed!&lt;/strong&gt; Thanks once again to UnternehmerTUM for this cooperation and support!&lt;/p&gt;
+
+&lt;h4 id=&#34;so-don-t-miss-the-devops-meetup-and-talks-next-week-the-detailed-link-for-the-live-streaming-will-be-added-in-this-blogpost-soon&#34;&gt;So don&amp;rsquo;t miss the DevOps MeetUp and talks next week! The detailed link for the Live Streaming will be added in this blogpost soon!&lt;/h4&gt;
+
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+
+&lt;p&gt;The bee42 Crew&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Impressions from CloudNativeCon and KubeCon Europe 2017, Berlin</title>
