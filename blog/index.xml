@@ -6,8 +6,80 @@
     <description>Recent content in Blog-rsses on bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 May 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bee42.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>bee42 on tour: UnternehmerTUM &amp; DevOps MeetUp, München</title>
+      <link>https://bee42.com/blog/DevOps_MeetUp_Muenchen_Nachberichterstattung/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/blog/DevOps_MeetUp_Muenchen_Nachberichterstattung/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/DigitalProductSchool_und_MeetUp/partner-digital-product-school-bee42.jpg&#34; alt=&#34;Digital Product School München&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;bee42-ist-nun-offizieller-partner-der-digital-product-school-unternehmertum&#34;&gt;bee42 ist nun offizieller Partner der Digital Product School (UnternehmerTUM)&lt;/h3&gt;
+
+&lt;p&gt;Wie bereits im letzten Blogpost verkündet, waren unsere Kollegen Docker Captain &lt;a href=&#34;https://twitter.com/Quintus23M&#34;&gt;Dieter Reuter&lt;/a&gt; und &lt;a href=&#34;https://twitter.com/solidnerd&#34;&gt;Niclas Mietz&lt;/a&gt; diese Woche für mehrere Termine und Projekte in München.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/DigitalProductSchool_und_MeetUp/ausblick-muenchen-bee42-unternehmertum_v2.jpg&#34; alt=&#34;Ausblick IBM Tower UnternehmerTUM München&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Im Rahmen unserer neusten Kooperation und Partnerschaft mit der &lt;a href=&#34;http://digitalproductschool.io/&#34;&gt;Digital Product School&lt;/a&gt; (ein Programm der &lt;a href=&#34;https://www.unternehmertum.de/digital-product-school.html?lang=de&#34;&gt;UnternehmerTUM&lt;/a&gt;) unterstützen wir diese mit unseren Experten (&lt;a href=&#34;https://twitter.com/PRossbach&#34;&gt;Peter Roßbach&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/Quintus23M&#34;&gt;Dieter Reuter&lt;/a&gt; und &lt;a href=&#34;https://twitter.com/solidnerd&#34;&gt;Niclas Mietz&lt;/a&gt;) sowie unserem umfangreichen Wissen und Expertise im Bereich der Container Technologie Docker.&lt;/p&gt;
+
+&lt;p&gt;Diese Woche veranstalteten wir gemeinsam ein 2-Tages Docker Training exklusiv für die Mitglieder der Digital Product School.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/DigitalProductSchool_und_MeetUp/Workshop-UnternehmerTUM_DigitalProductSchool_bee42.png&#34; alt=&#34;Digital Product School München&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;über-die-digital-product-school&#34;&gt;Über die Digital Product School&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/DigitalProductSchool_und_MeetUp/digital-product-school.jpg&#34; alt=&#34;Digital Product School München&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Die Digital Product School bietet die einzigartige Möglichkeit innerhalb von drei Monaten modernste digitale Produkte in interdisziplinären Teams zu entwickeln. Die Teilnehmer reichen von Mitarbeitern der Kooperationspartner wie BMW, Daimler und Audi bis hin zu hochmotivierten und qualifizierten Studierenden und Absolventen. Gemeinsam entwickeln diese intelligente digitale Produkte für echte Kundenprobleme.&lt;/p&gt;
+
+&lt;p&gt;Um erfolgreich Lösungen zu entwickeln, unterstützen Coaches und externe Experten aus den Bereichen Produktmanagement, Interaktionsdesign, Softwareentwicklung und künstlicher Intelligenz diese Projekte mit modernsten Methoden aus der Anwendungspraxis.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Website: &lt;a href=&#34;http://digitalproductschool.io/&#34;&gt;http://digitalproductschool.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Twitter: &lt;a href=&#34;https://twitter.com/dpschool_io&#34;&gt;https://twitter.com/dpschool_io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Facebook: &lt;a href=&#34;https://www.facebook.com/digitalproductschool/&#34;&gt;https://www.facebook.com/digitalproductschool/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;devops-meetup-am-16-mai-2017-in-münchen&#34;&gt;DevOps MeetUp am 16. Mai 2017 in München&lt;/h1&gt;
+
+&lt;p&gt;Das letzte &lt;a href=&#34;https://www.meetup.com/de-DE/DevOpsMunich/events/239567791/&#34;&gt;DevOps MeetUp München&lt;/a&gt; fand diese Woche ebenfalls in den Räumlichkeiten der Digital Product School in den IBM Watson IOT Towers statt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/DigitalProductSchool_und_MeetUp/meetup-devops-muenchen-bee42.png&#34; alt=&#34;DevOps MeetUp München&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Im Folgenden findet ihr alle Informationen, Abstracts und Slides der verschiedenen Talks:&lt;/p&gt;
+
+&lt;h4 id=&#34;1-speed-up-your-shipments-of-docker-containers-with-gitlab-ci-niclas-mietz-https-twitter-com-solidnerd&#34;&gt;1) Speed up your shipments of Docker Containers with GitLab/CI (&lt;a href=&#34;https://twitter.com/solidnerd&#34;&gt;Niclas Mietz&lt;/a&gt;)&lt;/h4&gt;
+
+&lt;p&gt;Build, Ship and Run your Docker container from source to production with your own build pipelines. In the era of clouds and dynamic infrastructures our integration and deployment pipelines for containers needs to be build-up fast and easy as well at your on premise setup.
+This talk will present you concepts for integration and deployment of containers with the GitLab/CI tool. Create your own GitLab runners for the different uses cases to create software and learn some best practices to build good Docker images. Discuss a simple setup of your own CI/CD infrastructure in less than 10 minutes and getting started with your container pipelines.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.facebook.com/pg/digitalproductschool/videos/&#34;&gt;https://www.facebook.com/pg/digitalproductschool/videos/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Slides: (Link folgt)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;2-package-configuration-management-have-failed-franz-pletz&#34;&gt;2) Package &amp;amp; Configuration Management have failed (Franz Pletz)&lt;/h4&gt;
+
+&lt;p&gt;The reason why Docker exists and gained tremendous popularity in the last few years is due to the fact that both configuration and package management have failed. The common techniques to deploy software are overly complex and not interoperable even between derived distributions. Docker is just one solution but there are other innovative ideas that are slowly gaining traction and deserve to be mentioned.&lt;/p&gt;
+
+&lt;p&gt;In his opinionated talk Franz outlines what went wrong in the last 10 years in the world of configuration and package management, why Docker can be awesome, how most people are failing to use Docker correctly and his view on the next few years of software deployment automation. Discussion is not only welcome but necessary!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Slides: &lt;a href=&#34;http://slides.com/fpletz/pkgcfgmgmtfail#/&#34;&gt;http://slides.com/fpletz/pkgcfgmgmtfail#/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;3-lightning-talk-borg-backup-christian-neukirchen-tristan-helmich&#34;&gt;3) Lightning Talk: Borg Backup (Christian Neukirchen / Tristan Helmich)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Slides: &lt;a href=&#34;http://chneukirchen.org/talks/borg-2017/neukirchenhelmich2017borg.pdf&#34;&gt;http://chneukirchen.org/talks/borg-2017/neukirchenhelmich2017borg.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Docker Basic Workshop at the UnternehmerTUM in Munich &amp; DevOps Munich MeetUp</title>
