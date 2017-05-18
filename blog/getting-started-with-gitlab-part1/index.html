@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<title>Getting Started with GitLab CI and Docker (Part 1)</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Use GitLab CI for your own delivery pipeline">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="docker machine">
+<meta property="article:tag" content="docker compose">
+<meta property="article:tag" content="gitlab">
+<meta property="article:tag" content="gitlab ci">
+<meta property="article:tag" content="virtualbox">
+<meta property="article:tag" content="GitLab Tutorial">
+<meta property="article:tag" content="GitLab Workshop">
+<meta property="article:tag" content="GitLab CI">
+<meta property="article:tag" content="GitLab how to">
+<meta property="article:tag" content="GitLab do it youself">
+<meta property="article:tag" content="Getting started with GitLab">
+<meta property="article:tag" content="GitLab bee42">
+<meta property="article:tag" content="bee42 solutions">
+<meta property="article:tag" content="bee42">
+<meta property="article:tag" content="GitLab learn">
+<meta property="article:tag" content="GitLab first steps">
+<meta property="article:tag" content="GitLab CI CD">
+<meta property="article:tag" content="Continuous Integration with GitLab">
+<meta property="article:tag" content="Continuous Deployment with Gitlab">
+<meta property="article:tag" content="Continuous Integration mit Gitlab">
+<meta property="article:tag" content="Continuous Deployment mit GitLab">
+<meta property="article:tag" content="GitLab Pipeline">
+<meta property="article:tag" content="GitLab Automatisierung">
+<meta property="article:tag" content="GitLab Automation">
+<meta property="article:tag" content="how to install GitLab">
+<meta property="article:tag" content="how to run Gitlab">
+<meta property="article:tag" content="Docker GitLab">
+<meta property="article:tag" content="Container Gitlab">
+
+
+
+<meta property="og:title" content="Getting Started with GitLab CI and Docker (Part 1)" />
+<meta property="og:description"content="Use GitLab CI for your own delivery pipeline" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bee42.com/blog/getting-started-with-gitlab-part1/" />
+
+
+	<meta property="og:image" content="https://bee42.com/images/blog/getting-started-with-gitlab/getting_started_with_gitlab_bee42.jpg" />
+ 
+
+
+
+<meta property="og:updated_time" content="2017-05-18 00:00:00 &#43;0000 UTC"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta property="article:publisher" content="https://www.facebook.com/" />
+
+<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+
+<meta property="article:modified_time" content="2017-05-18 00:00:00 &#43;0000 UTC" />
+<meta property="article:section" content="blog" />
+
+
+
+
+
+
+<meta itemprop="name" content="Getting Started with GitLab CI and Docker (Part 1)">
+<meta itemprop="description" content="Use GitLab CI for your own delivery pipeline">
+
+
+
+	<meta itemprop="image" content="https://bee42.com/images/blog/getting-started-with-gitlab/getting_started_with_gitlab_bee42.jpg">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta itemprop="wordCount" content="1905">
+
+
+
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image:src" content="https://bee42.com/images/blog/getting-started-with-gitlab/getting_started_with_gitlab_bee42.jpg"/>
+
+
+
+<meta name="twitter:title" content="Getting Started with GitLab CI and Docker (Part 1)"/>
+<meta name="twitter:description" content="Use GitLab CI for your own delivery pipeline"/>
+
+
+<meta name="twitter:creator" content="@bee42solutions"/>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8QDFPL');</script>
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="64x64" href="images/apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://bee42.com/css/main-c370db17.css" />
+</head>
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8QDFPL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navigation">
+	<div class="inner-content">
+		<a class="branding" href="https://bee42.com/"><img src="https://bee42.com/images/logo.svg" alt=""></a>
+   		 <ul>
+	<li><a href="https://bee42.com/#scroll-top-mission">Mission</a></li>
+	<li><a href="https://bee42.com/#scroll-top-services">Services</a></li>
+	<li><a href="https://bee42.com/#scroll-top-trainings">Trainings</a></li>
+	<li><a href="https://bee42.com/#scroll-top-whatwedo">What we do</a></li>
+	<li><a href="https://bee42.com/#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="https://bee42.com//blog">Blog</a></li>
+	<li><a href="https://bee42.com/#scroll-top-jobs">Jobs</a></li>
+</ul>
+
+		<button class="burger" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	</div>
+</nav>
+
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+ 		<ul>
+	<li><a href="https://bee42.com/#scroll-top-mission">Mission</a></li>
+	<li><a href="https://bee42.com/#scroll-top-services">Services</a></li>
+	<li><a href="https://bee42.com/#scroll-top-trainings">Trainings</a></li>
+	<li><a href="https://bee42.com/#scroll-top-whatwedo">What we do</a></li>
+	<li><a href="https://bee42.com/#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="https://bee42.com//blog">Blog</a></li>
+	<li><a href="https://bee42.com/#scroll-top-jobs">Jobs</a></li>
+</ul>
+
+	</div>
+	<div class="off-canvas-content" data-off-canvas-content>
+	
+		<header> 
+			<div class="inner-content">
+				<h1>
+					Rethink IT 
+					<span>The system is the asset</span>
+				</h1>
+			</div>
+		</header>
+
+		<main>
+ <section class="page-content blog">
+       <section class="content-box">
+               <h1>Getting Started with GitLab CI and Docker (Part 1)</h1>
+              We&rsquo;re loving <a href="https://about.gitlab.com">GitLab CI</a> because it&rsquo;s so easy to get your work done with perfectly configured CI and CD pipelines while staying focused on the software product development itself. For an efficient development and deployment workflow it is mandatory to have automated build and test pipelines in place which helps you to automate and secure all the boring stuff and this speeds up your dev and test cycles tremendously. This being said, in this post we&rsquo;re going to describe a complete guide <strong>how to install and run a GitLab CI infrastructure the Docker way</strong>.</p>
+
+<p>For this two part tutorial we&rsquo;re going to install a complete GitLab CI server as a VM (virtual machine) using <a href="https://www.virtualbox.org">Oracle VirtualBox</a> on macOS. <strong>Part 1 covers the basic installation of GitLab CI and part 2 will go deeper into the configuration and usage of GitLab</strong>.</p>
+
+<h2 id="prerequisites-for-gitlab-ci">Prerequisites for GitLab CI</h2>
+
+<p>These are the typical technical requirements we need to run a GitLab CI server on a Linux machine for a small workgroup. As you can see, you can even grow your team up to 100 users while still using the same system setup.</p>
+
+<ul>
+<li>Linux host running the Docker Engine</li>
+<li>Docker Machine tool</li>
+
+<li><p>Docker Compose tool</p></li>
+
+<li><p><strong>Hardware specs</strong> (for the GitLab CI server)</p>
+
+<ul>
+<li>2x vCPU&rsquo;s (up to 500 users)</li>
+<li>4x GByte memory (up to 100 users)</li>
+</ul></li>
+
+<li><p><strong>Linux OS</strong></p>
+
+<ul>
+<li>Ubuntu, Debian, CentOS, RHEL, SLES, Oracle Linux</li>
+</ul></li>
+
+<li><p><strong>Software packages</strong></p>
+
+<ul>
+<li>PostgreSQL, Redis, Sidekiq</li>
+</ul></li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="prerequisites-on-macos">Prerequisites on macOS</h3>
+
+<h4 id="install-virtualbox">Install VirtualBox</h4>
+
+<p>Just grab the .dmg installer directly from <a href="https://www.virtualbox.org">https://www.virtualbox.org</a> and follow the instructions to install VirtualBox v5.1.22 on your Mac.</p>
+
+<pre><code class="language-bash">🐳 vbox-img --version
+5.1.22r115126
+</code></pre>
+
+<h4 id="install-docker-machine">Install Docker Machine</h4>
+
+<p>You can follow the official instructions from Docker for installing Docker Machine from <a href="https://docs.docker.com/machine/install-machine/">https://docs.docker.com/machine/install-machine/</a> or you can just use <a href="https://brew.sh">Homebrew</a> to install and update it even easier on macOS.</p>
+
+<pre><code class="language-bash">🐳 brew install docker-machine
+</code></pre>
+
+<pre><code class="language-bash">🐳 docker-machine --version
+docker-machine version 0.11.0, build 5b27455
+</code></pre>
+
+<p>With the latest versions of VirtualBox and Docker Machine installed on your Mac you&rsquo;re already prepared to go ahead and deploy a complete Docker host running in a local VM with a single command only.</p>
+
+<h3 id="setting-up-the-docker-host">Setting up the Docker Host</h3>
+
+<p>First, we&rsquo;ll create a VirtualBox VM with the help of Docker Machine. Once the <code>docker-machine</code> tool is installed on your Mac, you can easily create a new VM with a running Docker Engine with a single command only.</p>
+
+<p>Because <code>docker-machine</code> defaults to a machine driver for VirtualBox, we can omit the <code>-d virtualbox</code> or <code>--driver virtualbox</code> option. As we&rsquo;d like to define 2x CPU&rsquo;s and 4 GByte of memory for our VirtualBox VM, we have to use the appropriate options <code>--virtualbox-cpu-count 2</code> and <code>--virtualbox-memory 4096</code>. With the last parameter we can define the name <code>gitlab</code> for our Docker Machine, so it&rsquo;s easier for us to use it later on.</p>
+
+<pre><code class="language-bash">🐳 docker-machine create --virtualbox-cpu-count 2 --virtualbox-memory 4096 gitlab
+
+Running pre-create checks...
+(gitlab) No default Boot2Docker ISO found locally, downloading the latest release...
+(gitlab) Latest release for github.com/boot2docker/boot2docker is v17.05.0-ce
+(gitlab) Downloading /Users/dieter/.docker/machine/cache/boot2docker.iso from https://github.com/boot2docker/boot2docker/releases/download/v17.05.0-ce/boot2docker.iso...
+(gitlab) 0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Creating machine...
+(gitlab) Copying /Users/dieter/.docker/machine/cache/boot2docker.iso to /Users/dieter/.docker/machine/machines/gitlab/boot2docker.iso...
+(gitlab) Creating VirtualBox VM...
+(gitlab) Creating SSH key...
+(gitlab) Starting the VM...
+(gitlab) Check network to re-create if needed...
+(gitlab) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env gitlab
+</code></pre>
+
+<p>Within only a few minutes, we should have a new Linux VM running, which is already equipped with the latest Docker Engine. So let&rsquo;s check this out in more details.</p>
+
+<pre><code class="language-bash">🐳 docker-machine ls
+NAME           ACTIVE   DRIVER         STATE     URL                         SWARM   DOCKER        ERRORS
+gitlab         -        virtualbox     Running   tcp://192.168.99.100:2376           v17.05.0-ce
+</code></pre>
+
+<p>We can also login into this VM and check the Linux system locally if it fits our needs.</p>
+
+<pre><code class="language-bash">🐳 docker-machine ssh gitlab
+                        ##         .
+                  ## ## ##        ==
+               ## ## ## ## ##    ===
+           /&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;\___/ ===
+      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+           \______ o           __/
+             \    \         __/
+              \____\_______/
+ _                 _   ____     _            _
+| |__   ___   ___ | |_|___ \ __| | ___   ___| | _____ _ __
+| '_ \ / _ \ / _ \| __| __) / _` |/ _ \ / __| |/ / _ \ '__|
+| |_) | (_) | (_) | |_ / __/ (_| | (_) | (__|   &lt;  __/ |
+|_.__/ \___/ \___/ \__|_____\__,_|\___/ \___|_|\_\___|_|
+Boot2Docker version 17.05.0-ce, build HEAD : 5ed2840 - Fri May  5 21:04:09 UTC 2017
+Docker version 17.05.0-ce, build 89658be
+docker@gitlab:~$
+</code></pre>
+
+<p>The VM has about 4x GByte of memory&hellip;</p>
+
+<pre><code class="language-bash">docker@gitlab:~$ cat /proc/meminfo | head -1
+MemTotal:        4045440 kB
+</code></pre>
+
+<p>&hellip;and 2x CPUs as we had requested.</p>
+
+<pre><code class="language-bash">docker@gitlab:~$ cat /proc/cpuinfo | grep processor
+processor : 0
+processor : 1
+exit
+</code></pre>
+
+<p>Now, we&rsquo;re able to use the Docker Engine directly from our Mac&rsquo;s terminal app. With the command <code>docker-machine env &lt;machine-name&gt;</code> we&rsquo;ll get all the necessary parameters to connect our Docker Client to the Docker Engine in the VM.</p>
+
+<pre><code class="language-bash">🐳 docker-machine env gitlab
+export DOCKER_TLS_VERIFY=&quot;1&quot;
+export DOCKER_HOST=&quot;tcp://192.168.99.100:2376&quot;
+export DOCKER_CERT_PATH=&quot;/Users/dieter/.docker/machine/machines/gitlab&quot;
+export DOCKER_MACHINE_NAME=&quot;gitlab&quot;
+# Run this command to configure your shell:
+# eval $(docker-machine env gitlab)
+</code></pre>
+
+<p>Connecting the Docker Client to our Docker host with the following command to set the environment variables. This points the Docker Client directly to our Docker Engine running in the VirtualBox VM. As you can see, it&rsquo;s really easy to remote control a Docker Engine which is running in a VM or even in a cloud server far away from us.</p>
+
+<pre><code class="language-bash">🐳 eval $(docker-machine env gitlab)
+</code></pre>
+
+<p>Checking the version of the Docker Engine.</p>
+
+<pre><code class="language-bash">🐳 docker version
+Client:
+ Version:      17.05.0-ce
+ API version:  1.29
+ Go version:   go1.7.5
+ Git commit:   89658be
+ Built:        Thu May  4 21:43:09 2017
+ OS/Arch:      darwin/amd64
+
+Server:
+ Version:      17.05.0-ce
+ API version:  1.29 (minimum version 1.12)
+ Go version:   go1.7.5
+ Git commit:   89658be
+ Built:        Thu May  4 21:43:09 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+</code></pre>
+
+<p>With this little preparation we do now have a complete Linux Docker host running within a VirtualBox VM on our Mac. The Docker host is based upon <a href="https://github.com/boot2docker">Boot2Docker</a> 17.05.0-ce, with a recent LTS Linux kernel 4.4.66 and the very latest Docker Engine 17.05.0-ce. &ldquo;ce&rdquo; stands for &ldquo;Cummunity Edition&rdquo; which is the freely available Docker Engine.</p>
+
+<p>If you may like, you could also use a <a href="https://docs.docker.com/docker-for-mac/">Docker for Mac</a> (D4M) installation on macOS, which is currently based upon Docker Engine 17.03.1-ce (stable channel) and 17.05.0-ce (edge channel) as of time of writing this article.</p>
+
+<h3 id="create-gitlab-ci-configuration">Create GitLab CI configuration</h3>
+
+<p>As we&rsquo;re going to use Docker Compose to configure and deploy the GitLab CI server on our Docker host, we can describe the complete setup within a single configuration file in <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> format, the <code>docker-compose.yml</code> file.</p>
+
+<p>File <strong>docker-compose.yml:</strong></p>
+
+<pre><code class="language-yaml">version: '2'
+
+services:
+  redis:
+    restart: always
+    image: sameersbn/redis:latest
+    command:
+    - --loglevel warning
+    volumes:
+    - redis-data:/var/lib/redis
+
+  postgresql:
+    restart: always
+    image: sameersbn/postgresql:9.6-2
+    volumes:
+    - pg-data:/var/lib/postgresql
+    environment:
+    - DB_USER=gitlab
+    - DB_PASS=password
+    - DB_NAME=gitlabhq_production
+    - DB_EXTENSION=pg_trgm
+
+  gitlab:
+    restart: always
+    image: sameersbn/gitlab:9.1.2
+    depends_on:
+    - redis
+    - postgresql
+    ports:
+    - &quot;${GITLAB_HTTP_PORT}:80&quot;
+    - &quot;${GITLAB_SSH_PORT}:22&quot;
+    volumes:
+    - gitlab-data:/home/git/data
+    environment:
+    - DB_ADAPTER=postgresql
+    - DB_HOST=postgresql
+    - DB_PORT=5432
+    - DB_USER=gitlab
+    - DB_PASS=password
+    - DB_NAME=gitlabhq_production
+
+    - REDIS_HOST=redis
+    - REDIS_PORT=6379
+
+    - TZ=Europe/Berlin
+    - GITLAB_TIMEZONE=Berlin
+
+    - GITLAB_HTTPS=false
+    - SSL_SELF_SIGNED=false
+
+    - GITLAB_HOST=${GITLAB_IP_ADDRESS}
+    - GITLAB_PORT=${GITLAB_HTTP_PORT}
+    - GITLAB_SSH_PORT=${GITLAB_SSH_PORT}
+    - GITLAB_SECRETS_DB_KEY_BASE=long-and-random-alphanumeric-string
+    - GITLAB_SECRETS_SECRET_KEY_BASE=long-and-random-alphanumeric-string
+    - GITLAB_SECRETS_OTP_KEY_BASE=long-and-random-alphanumeric-string
+
+volumes:
+  gitlab-data:
+  redis-data:
+  pg-data:
+</code></pre>
+
+<p>We&rsquo;d like to have some of our local configuration options outside of the <code>docker-compose.yml</code> file and therefore creating a <code>.env</code> file with all the environment variables we need. Docker Compose reads the <code>.env</code> file automatically and uses the content to populate the variables in the <code>docker-compose.yml</code> file.</p>
+
+<p>File <strong>.env:</strong></p>
+
+<pre><code class="language-bash">GITLAB_HTTP_PORT=10080
+GITLAB_SSH_PORT=10022
+GITLAB_IP_ADDRESS=192.168.99.100
+</code></pre>
+
+<p>As you can see, we need to specify the correct IP address where we can connect to our Docker host. This IP address is easy to determine from Docker Machine with the following command:</p>
+
+<pre><code class="language-bash">🐳 docker-machine ip gitlab
+192.168.99.100
+</code></pre>
+
+<h3 id="check-gitlab-ci-configuration">Check GitLab CI configuration</h3>
+
+<p>Before we start the application stack, it&rsquo;s always a good idea to check the Docker Compose configuration file first with the command <code>docker-compose config</code>. If everything wents fine and we don&rsquo;t have any syntax errors in our YAML file, we&rsquo;ll get a clean output without any errors. All variables should be replaced and we could easily check this visually.</p>
+
+<pre><code class="language-bash">🐳 docker-compose config
+networks: {}
+services:
+  gitlab:
+    depends_on:
+    - postgresql
+    - redis
+    environment:
+      DB_ADAPTER: postgresql
+      DB_HOST: postgresql
+      DB_NAME: gitlabhq_production
+      DB_PASS: password
+      DB_PORT: '5432'
+      DB_USER: gitlab
+      GITLAB_HOST: 192.168.99.100
+      GITLAB_HTTPS: 'false'
+      GITLAB_PORT: '10080'
+      GITLAB_SECRETS_DB_KEY_BASE: long-and-random-alphanumeric-string
+      GITLAB_SECRETS_OTP_KEY_BASE: long-and-random-alphanumeric-string
+      GITLAB_SECRETS_SECRET_KEY_BASE: long-and-random-alphanumeric-string
+      GITLAB_SSH_PORT: '10022'
+      GITLAB_TIMEZONE: Berlin
+      REDIS_HOST: redis
+      REDIS_PORT: '6379'
+      SSL_SELF_SIGNED: 'false'
+      TZ: Europe/Berlin
+    image: sameersbn/gitlab:9.1.2
+    ports:
+    - 10080:80/tcp
+    - 10022:22/tcp
+    restart: always
+    volumes:
+    - gitlab-data:/home/git/data:rw
+  postgresql:
+    environment:
+      DB_EXTENSION: pg_trgm
+      DB_NAME: gitlabhq_production
+      DB_PASS: password
+      DB_USER: gitlab
+    image: sameersbn/postgresql:9.6-2
+    restart: always
+    volumes:
+    - pg-data:/var/lib/postgresql:rw
+  redis:
+    command:
+    - --loglevel warning
+    image: sameersbn/redis:latest
+    restart: always
+    volumes:
+    - redis-data:/var/lib/redis:rw
+version: '2.0'
+volumes:
+  gitlab-data: {}
+  pg-data: {}
+  redis-data: {}
+</code></pre>
+
+<h3 id="start-gitlab-ci-server">Start GitLab CI server</h3>
+
+<p>With all the checks passed successfully we can now start the complete GitLab CI application stack we&rsquo;ve previously defined within the Docker Compose YAML file. And this can be done with a single easy command, too. BTW, that&rsquo;s exactly the same with Docker Compose every time - no matter how simple or how complex your actual application stack looks like!</p>
+
+<pre><code class="language-bash">🐳 docker-compose up -d
+</code></pre>
+
+<p>After a few minutes all the referenced Docker images got pulled from the Docker Hub and all the services we&rsquo;ve defined in the <code>docker-compose.yml</code> file should be started. At the end the complete GitLab CI server should be up and running.</p>
+
+<p>But before we&rsquo;re going to login into the GitLab CI web interface the very first time, we should check the application stack with some simple Docker Compose commands. With <code>docker-compose ps</code> we can list all the running services, checking their states and see what network ports they are exposing.</p>
+
+<pre><code class="language-bash">🐳 docker-compose ps
+           Name                         Command               State                           Ports
+---------------------------------------------------------------------------------------------------------------------------
+gitlabexample_gitlab_1       /sbin/entrypoint.sh app:start    Up      0.0.0.0:10022-&gt;22/tcp, 443/tcp, 0.0.0.0:10080-&gt;80/tcp
+gitlabexample_postgresql_1   /sbin/entrypoint.sh              Up      5432/tcp
+gitlabexample_redis_1        /sbin/entrypoint.sh --logl ...   Up      6379/tcp
+</code></pre>
+
+<p>As you can clearly see from the above output, all the three services (gitlab, postgresql and redis) are up and running. We can also see, that the <code>gitlab</code> service exposes two public network ports - 10022/tcp for SSH access and 10080/tcp for the GitLab CI web interface.</p>
+
+<p>In case of trouble we could also check the log files which can be easily accessed with the command <code>docker-compose logs</code>.</p>
+
+<p>Now, we can open the web UI of the running GitLab CI server.</p>
+
+<pre><code>🐳 open http://192.168.99.100:10080
+</code></pre>
+
+<p></br></p>
+
+<p>In this first login screen you have to set the <code>root</code> password of the GitLab CI server.</p>
+
+<p><img src="/images/blog/getting-started-with-gitlab/gitlab-first-login-screen.png" alt="" /></p>
+
+<p>Now, you can login as user <code>root</code> with the correct password,</p>
+
+<p><img src="/images/blog/getting-started-with-gitlab/gitlab-normal-login-screen.png" alt="" /></p>
+
+<p>and get instant access to the GitLab CI server as a primary administrator.</p>
+
+<p><img src="/images/blog/getting-started-with-gitlab/gitlab-logged-in-as-root.png" alt="" /></p>
+
+<h3 id="recap-tl-dr">Recap TL;DR</h3>
+
+<p>In order to start a complete GitLab CI server, we just need a running Docker host, a <code>docker-compose.yml</code> file which defines all needed services and an additional <code>.env</code> file containing some environment variables. That&rsquo;s really basically all we need!</p>
+
+<p>With a single command <code>docker-compose up -d</code> we can start the complete GitLab CI server.</p>
+
+<h3 id="next-steps">Next Steps</h3>
+
+<p>With these first steps covered in part 1 of our GitLab CI tutorial, we do have now a fully working GitLab CI server up and running. The basic configuration and usage of GitLab CI we&rsquo;re going to describe in more details in part 2, which will be released in a few days&hellip;   
+
+								
+
+<section id="author" class="small-12 medium-12 large-12 columns">
+
+  
+  
+  <img src="/images/niclas.png" alt="">
+  
+
+  <h3>Niclas Mietz</h3>
+    
+    <p>DevOps Engineer with a lot of interessts in Automation</p>
+    
+
+    <ul>
+    
+      <li><a href="https://twitter.com/solidnerd"><i class="a fa fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/niclas-mietz-794053115"><i class="a fa fa-linkedin"></i></a></li>
+     <li><a href="https://www.xing.com/profile/Niclas_Mietz"><i class="a fa fa-xing"></i></a></li>
+     <li><a href="https://github.com/solidnerd"><i class="a fa fa-github"></i></a></li>
+    </ul>
+  </section>
+
+
+
+      </section> 
+</section>
+
+<div class="overlay"></div>
+					<footer>
+						<section class="content-box">
+							<a class="branding" href="index.html"><img src="https://bee42.com/images/logo.svg" alt=""> </a> 
+							<p>&copy;2017</p>
+							<a class="imprint" href="https://bee42.com/Imprint/">Imprint</a>
+						</section>
+					</footer>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/edd03c05ea.js"></script>
+	<script src="https://bee42.com/js/foundation.min.js"></script>
+	<script src="https://bee42.com/js/jquery.validate.min.js"></script>
+	<script src="https://bee42.com/js/slick.js"></script>
+	<script src="https://bee42.com/js/main.js"></script>
+	<script src="https://bee42.com/js/prism.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58949839-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+	</body>
+<html>
