@@ -10,7 +10,7 @@
     <atom:link href="https://bee42.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Getting Started with GitLab CI and Docker (Part 1)</title>
+      <title>Getting Started with GitLab CI with Containers (Part 1)</title>
       <link>https://bee42.com/blog/getting-started-with-gitlab-part1/</link>
       <pubDate>Thu, 18 May 2017 00:00:00 +0000</pubDate>
       
