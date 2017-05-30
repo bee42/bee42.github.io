@@ -1029,5 +1029,82 @@ Successfully taking an application based upon microservices and dockerize it int
 </description>
     </item>
     
+    <item>
+      <title>bee42 on board: sponsor of the Container Days 2017</title>
+      <link>https://bee42.com/blog/bee42-on-board-Container-Days-Hamburg/</link>
+      <pubDate>Tue, 30 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/blog/bee42-on-board-Container-Days-Hamburg/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/bee42-on-board-container-days-2017/Blogpost-ContainerDays-Header.jpg&#34; alt=&#34;bee42 on board Container Days&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Summer is coming and so are the &lt;strong&gt;Container Days&lt;/strong&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;..and we happily announce that we are now part of the this years Container Days in Hamburg, Germany!&lt;/p&gt;
+
+&lt;p&gt;On June 20-21, the European container community will gather in Hamburg for &lt;a href=&#34;https://containerdays.io/&#34;&gt;ContainerDays 2017&lt;/a&gt;. For two days, it’s going to be all about containerization, microservices, and the next generation of distributed applications.&lt;/p&gt;
+
+&lt;h3 id=&#34;we-are-a-sponsor&#34;&gt;We are a sponsor!&lt;/h3&gt;
+
+&lt;p&gt;As one of the this years &lt;a href=&#34;https://containerdays.io/partner.html&#34;&gt;sponsors of the conference&lt;/a&gt; we support not only the next revolution in IT but also the community and the chance of exchanging thoughts, ideas and knowledge.&lt;/p&gt;
+
+&lt;h3 id=&#34;we-are-experts&#34;&gt;We are experts!&lt;/h3&gt;
+
+&lt;p&gt;The talks and workshops of the Container Days are a great opportunity to get in touch and learn from experts and speaker. We are thrilled that our &lt;a href=&#34;https://containerdays.io/speakers.html&#34;&gt;experts of the bee42&lt;/a&gt; have the chance to give some &lt;a href=&#34;https://containerdays.io/program.html&#34;&gt;talks and one workshop&lt;/a&gt; at the conference. You can find the information and our talks below.&lt;/p&gt;
+
+&lt;h3 id=&#34;we-got-a-special-for-you&#34;&gt;We got a special for you!&lt;/h3&gt;
+
+&lt;p&gt;In addition to this we have even more good news for you: You can get &lt;strong&gt;20% off the ticket prices&lt;/strong&gt; by using our special discount code:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;thanks2bee42&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;via &lt;a href=&#34;https://containerdays.io/tickets.html&#34;&gt;https://containerdays.io/tickets.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://containerdays.io/tickets.html&#34;&gt;Sounds good? Jump aboard and get your ticket!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;getting-started-with-docker-on-windows-server-2016-by-dieter-reuter-docker-captain&#34;&gt;Getting started with Docker on Windows Server 2016 (by Dieter Reuter, Docker Captain)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/bee42-on-board-container-days-2017/Blogpost-ContainerDays-Dieter-Reuter.jpg&#34; alt=&#34;bee42 Workshop Dieter Reuter&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this hands-on workshop you’ll learn about the new features of Windows Server 2016: Docker and Windows Containers. We will start how to install the Docker Engine on Microsoft Azure and secure it for remote access with TLS certificates.&lt;/p&gt;
+
+&lt;p&gt;You will learn the basic Docker commands to create Docker images and push them to the Docker Hub. In order to run a Docker container you’ll pull a specific Docker image from the Docker Hub and run it on your Docker Engine. With this practice you’ll also learn how to configure TCP/IP ports and volumes to connect your running container to the outside world. We’ll dig deep into the art of crafting Dockerfiles for Windows with utilizing PowerShell commands. This way you’ll learn some best practices how to write almost perfect Dockerfiles for Windows.&lt;/p&gt;
+
+&lt;p&gt;Finally we will take a real world application based upon microservices and dockerize it into a set of Windows containers. You’ll learn how to use Docker Compose to start, orchestrate and scale the whole application.&lt;/p&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;build-your-immutable-infrastructure-with-the-linuxkit-by-peter-roßbach&#34;&gt;Build your Immutable Infrastructure with the LinuxKit (by Peter Roßbach)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/bee42-on-board-container-days-2017/Blogpost-ContainerDays-Peter-Rossbach.jpg&#34; alt=&#34;bee42 Talk Peter Roßbach&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;LinuxKit is a toolkit for building secure, lean and portable Linux subsystems and includes the tooling to allow building custom Linux subsystems that only include exactly the components the runtime platform requires. All services are containers that can be replaced, and everything that is not required can be removed. All components can be substituted with ones that match specific needs. This talk presents how easy you can build your software appliance fast and secure.&lt;/p&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;ship-your-containers-fast-with-gitlab-ci-by-niclas-mietz&#34;&gt;Ship your containers fast with GitLab/CI (by Niclas Mietz)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/bee42-on-board-container-days-2017/Blogpost-ContainerDays-Niclas-Mietz.jpg&#34; alt=&#34;bee42 Talk Niclas GitLab&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Build, Ship and Run your Docker container from source to production with your own pipeline. In the era of clouds and dynamic infrastructures our integration pipelines and deployment pipelines for containers needs to be build-up fast and easy as well. This talk will present you concepts for integration and deployment of containers with GitLab/CI. Create runners for the different uses cases of containers and learn a lot of best practices to build good images. Discuss a simple setup of your own CI/CD infrastructure in less than 10 minutes and getting started with your container pipelines.&lt;/p&gt;
+
+&lt;h4 id=&#34;here-you-can-find-the-full-programm-of-the-containerdays&#34;&gt;Here you can find the full programm of the ContainerDays:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://containerdays.io/program.html&#34;&gt;https://containerdays.io/program.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+
+&lt;p&gt;The bee42 crew&lt;/p&gt;
+
+&lt;p&gt;Email: &lt;a href=&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt; | Twitter: &lt;a href=&#34;https://twitter.com/bee42solutions&#34;&gt;@bee42solutions&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
