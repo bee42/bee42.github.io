@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<title>LinuxKit meets AWS, a technical POC</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="This blog post described how to utilize LinuxKit to create and run a highly customized AMI and run this instance on AWS">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<meta property="article:tag" content="linuxkit">
+<meta property="article:tag" content="moby">
+<meta property="article:tag" content="project moby">
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="aws">
+<meta property="article:tag" content="ami">
+<meta property="article:tag" content="ssh">
+<meta property="article:tag" content="bee42">
+<meta property="article:tag" content="bee42 solutions">
+
+
+
+<meta property="og:title" content="LinuxKit meets AWS, a technical POC" />
+<meta property="og:description"content="This blog post described how to utilize LinuxKit to create and run a highly customized AMI and run this instance on AWS" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bee42.com/blog/linuxkit-with-initial-aws-support/" />
+
+
+	<meta property="og:image" content="https://bee42.com/images/blog/linuxkit-with-initial-aws-support/linuxkit-blogpost.png" />
+ 
+
+
+
+<meta property="og:updated_time" content="2017-06-04 00:00:00 &#43;0000 UTC"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta property="article:publisher" content="https://www.facebook.com/" />
+
+<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+
+<meta property="article:modified_time" content="2017-06-04 00:00:00 &#43;0000 UTC" />
+<meta property="article:section" content="blog" />
+
+
+
+
+
+
+<meta itemprop="name" content="LinuxKit meets AWS, a technical POC">
+<meta itemprop="description" content="This blog post described how to utilize LinuxKit to create and run a highly customized AMI and run this instance on AWS">
+
+
+
+	<meta itemprop="image" content="https://bee42.com/images/blog/linuxkit-with-initial-aws-support/linuxkit-blogpost.png">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta itemprop="wordCount" content="3050">
+
+
+
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image:src" content="https://bee42.com/images/blog/linuxkit-with-initial-aws-support/linuxkit-blogpost.png"/>
+
+
+
+<meta name="twitter:title" content="LinuxKit meets AWS, a technical POC"/>
+<meta name="twitter:description" content="This blog post described how to utilize LinuxKit to create and run a highly customized AMI and run this instance on AWS"/>
+
+
+<meta name="twitter:creator" content="@bee42solutions"/>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8QDFPL');</script>
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="64x64" href="images/apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://bee42.com/css/main-5b54eca3.css" />
+</head>
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8QDFPL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navigation">
+	<div class="inner-content">
+		<a class="branding" href="https://bee42.com/"><img src="https://bee42.com/images/logo.svg" alt=""></a>
+   		 <ul>
+	<li><a href="https://bee42.com/#scroll-top-mission">Mission</a></li>
+	<li><a href="https://bee42.com/#scroll-top-services">Services</a></li>
+	<li><a href="https://bee42.com/#scroll-top-trainings">Trainings</a></li>
+	<li><a href="https://bee42.com/#scroll-top-whatwedo">What we do</a></li>
+	<li><a href="https://bee42.com/#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="https://bee42.com//blog">Blog</a></li>
+	<li><a href="https://bee42.com/#scroll-top-jobs">Jobs</a></li>
+</ul>
+
+		<button class="burger" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	</div>
+</nav>
+
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+ 		<ul>
+	<li><a href="https://bee42.com/#scroll-top-mission">Mission</a></li>
+	<li><a href="https://bee42.com/#scroll-top-services">Services</a></li>
+	<li><a href="https://bee42.com/#scroll-top-trainings">Trainings</a></li>
+	<li><a href="https://bee42.com/#scroll-top-whatwedo">What we do</a></li>
+	<li><a href="https://bee42.com/#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="https://bee42.com//blog">Blog</a></li>
+	<li><a href="https://bee42.com/#scroll-top-jobs">Jobs</a></li>
+</ul>
+
+	</div>
+	<div class="off-canvas-content" data-off-canvas-content>
+	
+		<header> 
+			<div class="inner-content">
+				<h1>
+					Rethink IT 
+					<span>The system is the asset</span>
+				</h1>
+			</div>
+		</header>
+
+		<main>
+ <section class="page-content blog">
+       <section class="content-box">
+               <h1>LinuxKit meets AWS, a technical POC</h1>
+              <a href="https://github.com/linuxkit/linuxkit">LinuxKit</a> was introduced at last DockerCon 2017 in Austin,TX and it&rsquo;s announced as &ldquo;a toolkit for building custom minimal, immutable Linux distributions&rdquo;.</p>
+
+<p>This basically means you can package and run your application within a minimal Linux-based OS where you are able to use only the parts you really need for your application to work. You can select the Linux kernel of your choice, some required system services and your application code to bake them all together in an executable machine image. With LinuxKit you can easily create your custom images for bare metal, different hypervisors or cloud providers.</p>
+
+<p>Through the help of Docker container technology you run everything inside containers: all onboot and system services, all additional application services are packaged individually as Docker Images and will be run in an isolated environment. This gives you the full control over all the ingredients and makes sure that all components are isolated against each other as well.</p>
+
+<p>Right now the LinuxKit development team is working on the integration to support building and running LinuxKit images on AWS EC2. The first steps are already done, so I was eager to take my hands on and was trying to build a first example application and run it directly on AWS as an EC2 instance.</p>
+
+<p>Today, this requires some manual steps and that&rsquo;s my I&rsquo;ve documented all the steps as a technical proof-of-concept so you can see what going on behind the scenes&hellip;</p>
+
+<h2 id="process">Process</h2>
+
+<ol>
+<li>Install LinuxKit on macOS</li>
+<li>Create a RAW image with LinuxKit</li>
+<li>Upload the LinuxKit image to a S3 bucket</li>
+<li>Import the LinuxKit image as an EC2 snapshot</li>
+<li>Convert the EC2 snapshot to a new AMI</li>
+<li>Run an EC2 instance from the LinuxKit AMI</li>
+<li>Testing the instance</li>
+</ol>
+
+<p><img src="/images/blog/linuxkit-with-initial-aws-support/linuxkit-aws-overview.png" alt="" /></p>
+
+<h2 id="step-1-install-linuxkit-on-macos">Step 1: Install LinuxKit on macOS</h2>
+
+<p>In order to create a RAW image with the help of LinuxKit, first we have to install LinuxKit. Here I&rsquo;m covering the install/build process on macOS.</p>
+
+<p>As a prerequisite we need some tools installed on macOS, like <code>git</code>, <code>make</code> and <a href="https://docs.docker.com/docker-for-mac/">Docker for Mac</a> .</p>
+
+<p>Let&rsquo;s clone the latest LinuxKit repo, so we can start using it. We&rsquo;re going to checkout the exact same version which we&rsquo;re used for this blog post, so you can replay all the steps by yourself.</p>
+
+<pre><code class="language-bash">$ mkdir -p ~/code/
+$ cd ~/code/
+$ git clone https://github.com/linuxkit/linuxkit
+$ cd ~/code/linuxkit
+$ git checkout 11b1eb75ad7cf64b6a58d5513431a4b941ff0ba8 # use same version!
+</code></pre>
+
+<p>Build and install LinuxKit with make.</p>
+
+<pre><code class="language-bash">$ make clean
+$ make
+$ make install
+</code></pre>
+
+<p>With the <code>make</code> command you build the latest CLI tools <code>linuxkit</code> and <code>moby</code> in the local <code>./bin/</code> folder.</p>
+
+<pre><code class="language-bash">$ ls -al ./bin/
+-rwxr-xr-x   1 dieter  staff  39684928 Jun  3 13:57 linuxkit
+-rwxr-xr-x   1 dieter  staff  12881312 Jun  3 13:56 moby
+</code></pre>
+
+<p>And finally with <code>make install</code> we&rsquo;re just copying them over to <code>/usr/local/bin</code>, so that they&rsquo;re installed on our system and we can use them easily. So let&rsquo;s check the versions of the tools we&rsquo;re going to use now.</p>
+
+<pre><code class="language-bash">$ linuxkit version
+linuxkit version 0.0
+commit: 11b1eb75ad7cf64b6a58d5513431a4b941ff0ba8
+
+$ moby version
+moby version 0.0
+commit: 11b1eb75ad7cf64b6a58d5513431a4b941ff0ba8
+</code></pre>
+
+<h2 id="step-2-create-a-raw-image-with-linuxkit">Step 2: Create a RAW image with LinuxKit</h2>
+
+<p>With the current version of LinuxKit we&rsquo;re not able to create a correct RAW image directly (but this feature will be added soon), so we&rsquo;re creating a <code>qcow2</code> image first and then convert this to a RAW image with the help of the tool <code>qemu-img</code>.</p>
+
+<pre><code class="language-bash">$ moby build -output qcow2 examples/aws.yml
+
+Pull kernel image: linuxkit/kernel:4.9.x
+Extract kernel image: linuxkit/kernel:4.9.x
+Pull image: linuxkit/kernel:4.9.x
+Add init containers:
+Process init image: linuxkit/init:1b8a7e394d2ec2f1fdb4d67645829d1b5bdca037
+Pull image: linuxkit/init:1b8a7e394d2ec2f1fdb4d67645829d1b5bdca037
+Process init image: linuxkit/runc:3a4e6cbf15470f62501b019b55e1caac5ee7689f
+Pull image: linuxkit/runc:3a4e6cbf15470f62501b019b55e1caac5ee7689f
+Process init image: linuxkit/containerd:deaf5bf838bf7f131c2287ecff3ed9835b0497e2
+Pull image: linuxkit/containerd:deaf5bf838bf7f131c2287ecff3ed9835b0497e2
+Process init image: linuxkit/ca-certificates:75cf419fb58770884c3464eb687ec8dfc704169d
+Pull image: linuxkit/ca-certificates:75cf419fb58770884c3464eb687ec8dfc704169d
+Add onboot containers:
+  Create OCI config for linuxkit/sysctl:3aa6bc663c2849ef239be7d941d3eaf3e6fcc018
+Pull image: linuxkit/sysctl:3aa6bc663c2849ef239be7d941d3eaf3e6fcc018
+  Create OCI config for linuxkit/dhcpcd:7d2b8aaaf20c24ad7d11a5ea2ea5b4a80dc966f1
+Pull image: linuxkit/dhcpcd:7d2b8aaaf20c24ad7d11a5ea2ea5b4a80dc966f1
+  Create OCI config for linuxkit/metadata:31a0b0f5557c6123beaa9c33e3400ae3c03447e0
+Pull image: linuxkit/metadata:31a0b0f5557c6123beaa9c33e3400ae3c03447e0
+Add service containers:
+  Create OCI config for linuxkit/rngd:1fa4de44c961bb5075647181891a3e7e7ba51c31
+Pull image: linuxkit/rngd:1fa4de44c961bb5075647181891a3e7e7ba51c31
+  Create OCI config for linuxkit/sshd:abc1f5e096982ebc3fb61c506aed3ac9c2ae4d55
+Pull image: linuxkit/sshd:abc1f5e096982ebc3fb61c506aed3ac9c2ae4d55
+  Create OCI config for nginx:alpine
+Pull image: nginx:alpine
+Create outputs:
+  aws.qcow2
+</code></pre>
+
+<p>Now we&rsquo;ve got a VM image build with LinuxKit in .qcow2 format.</p>
+
+<pre><code class="language-bash">$ ls -al aws.*
+-rw-r--r--  1 dieter  staff  51445760 Jun  3 14:15 aws.qcow2
+</code></pre>
+
+<p>The next step is to convert the .qcow2 image into a .raw image with the tool <code>qemu-img</code> from the QEMU project.
+As we don&rsquo;t have the tool <code>qemu-img</code> installed natively on macOS, and we&rsquo;d like to use Docker for this purpose, we&rsquo;re creating a small Docker Image with just this tool installed. So we don&rsquo;t have to install it on macOS.</p>
+
+<pre><code class="language-bash">$ mkdir -p ~/code/qemu-img
+$ cd ~/code/qemu-img
+$ cat &gt; Dockerfile &lt;&lt;FILE
+FROM alpine:3.6
+RUN apk add --no-cache qemu-img
+ENTRYPOINT [&quot;/usr/bin/qemu-img&quot;]
+FILE
+$ docker build -t qemu-img .
+$ alias qemu-img='docker run --rm -ti -v $(pwd):$(pwd) -w $(pwd) qemu-img'
+</code></pre>
+
+<p>Now we do have defined an alias <code>qemu-img</code> and can analyse our RAW image with. In the background there will just be a Docker container started for every invoke of this command.</p>
+
+<pre><code class="language-bash">$ cd ~/code/linuxkit
+$ qemu-img info aws.qcow2
+image: aws.qcow2
+file format: qcow2
+virtual size: 1.0G (1073741824 bytes)
+disk size: 49M
+cluster_size: 65536
+Format specific information:
+    compat: 1.1
+    lazy refcounts: false
+    refcount bits: 16
+    corrupt: false
+</code></pre>
+
+<p>We can easily convert the .qcow2 image now to our required RAW image.</p>
+
+<pre><code class="language-bash">$ qemu-img convert aws.qcow2 aws.raw
+</code></pre>
+
+<p>The RAW image is quite large is size, because it&rsquo;s unencrypted.</p>
+
+<pre><code class="language-bash">$ ls -al aws.*
+-rw-r--r--  1 dieter  staff    51445760 Jun  3 14:15 aws.qcow2
+-rw-r--r--  1 dieter  staff  1073741824 Jun  3 14:36 aws.raw
+</code></pre>
+
+<p>But before we upload this RAW image to S3 we should check the file type again.</p>
+
+<pre><code class="language-bash">$ qemu-img info aws.raw
+image: aws.raw
+file format: raw
+virtual size: 1.0G (1073741824 bytes)
+disk size: 1.0G
+</code></pre>
+
+<p>As you can see, we just used a few simple tools and commands to create a first LinuxKit image locally on macOS, converted the image into RAW image format which will we accepted by AWS. And with the help of the Docker Engine we were able to do this without installing any additional tools and software on our Mac!</p>
+
+<h2 id="step-3-upload-the-linuxkit-image-to-a-s3-bucket">Step 3: Upload the LinuxKit image to a S3 bucket</h2>
+
+<p>In order to use S3 and the AWS cli you should have the AWS tools installed and logged into your AWS account.</p>
+
+<p>For Installing the AWS tools you can use Homebrew.</p>
+
+<pre><code class="language-bash">$ brew install awscli
+</code></pre>
+
+<p>After the installation you can configure your aws cli with <code>aws configure</code>. I recommend to make a separate user in the IAM.
+Here I&rsquo;m using a S3 bucket with the name <code>dr-raw-images</code>. Uploading the RAW image will take some time, as it&rsquo;s about 1 GByte in size and the file transfer depends highly on your internet connection.</p>
+
+<pre><code class="language-bash">$ aws s3 cp aws.raw s3://dr-raw-images
+</code></pre>
+
+<p>Check, if the LinuxKit image is available on our S3 bucket.</p>
+
+<pre><code class="language-bash">$ aws s3 ls s3://dr-raw-images/aws.raw
+2017-06-03 13:09:49 1073741824 aws.raw
+</code></pre>
+
+<p>Now we do have our LinuxKit image successfully uploaded into a S3 bucket where we can pick it up by the next step and import this image as an EC2 snapshot.</p>
+
+<h2 id="step-4-import-the-linuxkit-image-as-an-ec2-snapshot">Step 4: Import the LinuxKit image as an EC2 snapshot</h2>
+
+<p>Creating an EC2 snapshot from a RAW image stored in a S3 bucket is quite easy, and we can follow the first two steps of the documented way from <a href="http://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-import-snapshot.html">Importing a Disk as a Snapshot Using VM Import/Export</a>.</p>
+
+<p>We have to define a disk container, so we can import the RAW image. Here we use our S3 bucket name and the file name of the RAW image, that&rsquo;s all.</p>
+
+<pre><code class="language-bash">$ mkdir -p ~/code/linuxkit-aws
+$ cd ~/code/linuxkit-aws
+$ cat  &gt; container.json &lt;&lt;FILE
+{
+    &quot;Description&quot;: &quot;LinuxKit AWS&quot;,
+    &quot;Format&quot;: &quot;raw&quot;,
+    &quot;UserBucket&quot;: {
+        &quot;S3Bucket&quot;: &quot;dr-raw-images&quot;,
+        &quot;S3Key&quot;: &quot;aws.raw&quot;
+    }
+}
+FILE
+</code></pre>
+
+<p>Now we can start the import process, which will take a few seconds or maybe minutes to complete.</p>
+
+<pre><code class="language-bash">$ aws ec2 import-snapshot --description &quot;LinuxKit AWS&quot; \
+    --disk-container file://container.json
+</code></pre>
+
+<p>If you get the following error:</p>
+
+<pre><code class="language-bash">An error occurred (InvalidParameter) when calling the ImportSnapshot operation: 
+The sevice role &lt;vmimport&gt; does not exist or does not have sufficient permissions for the service to continue
+</code></pre>
+
+<p>The next Steps are explained as well from the <a href="http://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html#vmimport-iam-permissions">Amazon Docs for Import IAM permissions</a>.</p>
+
+<p>Or the next steps below will do the same for you.</p>
+
+<pre><code class="language-bash">cat &gt; trust-policy.json &lt;&lt;FILE
+{
+   &quot;Version&quot;: &quot;2012-10-17&quot;,
+   &quot;Statement&quot;: [
+      {
+         &quot;Effect&quot;: &quot;Allow&quot;,
+         &quot;Principal&quot;: { &quot;Service&quot;: &quot;vmie.amazonaws.com&quot; },
+         &quot;Action&quot;: &quot;sts:AssumeRole&quot;,
+         &quot;Condition&quot;: {
+            &quot;StringEquals&quot;:{
+               &quot;sts:Externalid&quot;: &quot;vmimport&quot;
+            }
+         }
+      }
+   ]
+}
+FILE
+</code></pre>
+
+<p>After the policy is created you can run the import command.</p>
+
+<pre><code class="language-bash">aws iam create-role --role-name vmimport --assume-role-policy-document file://trust-policy.json
+</code></pre>
+
+<p>Now we need to define the role policy for our bucket. Replace <code>dr-raw-images</code> with your bucket name.</p>
+
+<pre><code class="language-bash">cat &gt; role-policy.json &lt;&lt;FILE
+{
+   &quot;Version&quot;: &quot;2012-10-17&quot;,
+   &quot;Statement&quot;: [
+      {
+         &quot;Effect&quot;: &quot;Allow&quot;,
+         &quot;Action&quot;: [
+            &quot;s3:ListBucket&quot;,
+            &quot;s3:GetBucketLocation&quot;
+         ],
+         &quot;Resource&quot;: [
+            &quot;arn:aws:s3:::dr-raw-images&quot;
+         ]
+      },
+      {
+         &quot;Effect&quot;: &quot;Allow&quot;,
+         &quot;Action&quot;: [
+            &quot;s3:GetObject&quot;
+         ],
+         &quot;Resource&quot;: [
+            &quot;arn:aws:s3:::dr-raw-images/*&quot;
+         ]
+      },
+      {
+         &quot;Effect&quot;: &quot;Allow&quot;,
+         &quot;Action&quot;:[
+            &quot;ec2:ModifySnapshotAttribute&quot;,
+            &quot;ec2:CopySnapshot&quot;,
+            &quot;ec2:RegisterImage&quot;,
+            &quot;ec2:Describe*&quot;
+         ],
+         &quot;Resource&quot;: &quot;*&quot;
+      }
+   ]
+}
+FILE
+</code></pre>
+
+<p>Again we need to apply the role.</p>
+
+<pre><code class="language-bash">aws iam put-role-policy --role-name vmimport --policy-name vmimport --policy-document file://role-policy.json
+</code></pre>
+
+<p>Now you can edit the command from above again and we&rsquo;ll get an instant API feedback.</p>
+
+<pre><code class="language-bash">$ aws ec2 import-snapshot --description &quot;LinuxKit AWS&quot; \
+    --disk-container file://container.json
+</code></pre>
+
+<p>With the instant API feedback in form of a JSON message where we get some important details we need for the following step.</p>
+
+<pre><code class="language-json">{
+    &quot;SnapshotTaskDetail&quot;: {
+        &quot;Status&quot;: &quot;active&quot;,
+        &quot;Description&quot;: &quot;LinuxKit AWS&quot;,
+        &quot;Format&quot;: &quot;RAW&quot;,
+        &quot;DiskImageSize&quot;: 0.0,
+        &quot;Progress&quot;: &quot;3&quot;,
+        &quot;UserBucket&quot;: {
+            &quot;S3Bucket&quot;: &quot;dr-raw-images&quot;,
+            &quot;S3Key&quot;: &quot;aws.raw&quot;
+        },
+        &quot;StatusMessage&quot;: &quot;pending&quot;
+    },
+    &quot;Description&quot;: &quot;LinuxKit AWS&quot;,
+    &quot;ImportTaskId&quot;: &quot;import-snap-fgg27tzh&quot;
+}
+</code></pre>
+
+<p>We just pick up the <code>ImportTaskId</code> and can check the progress of the import snapshot task.</p>
+
+<pre><code class="language-bash">$ aws ec2 describe-import-snapshot-tasks \
+    --import-task-ids import-snap-fgg27tzh
+</code></pre>
+
+<pre><code class="language-json">{
+    &quot;ImportSnapshotTasks&quot;: [
+        {
+            &quot;SnapshotTaskDetail&quot;: {
+                &quot;Status&quot;: &quot;active&quot;,
+                &quot;Description&quot;: &quot;LinuxKit AWS&quot;,
+                &quot;Format&quot;: &quot;RAW&quot;,
+                &quot;DiskImageSize&quot;: 1073741824.0,
+                &quot;Progress&quot;: &quot;35&quot;,
+                &quot;UserBucket&quot;: {
+                    &quot;S3Bucket&quot;: &quot;dr-raw-images&quot;,
+                    &quot;S3Key&quot;: &quot;aws.raw&quot;
+                },
+                &quot;StatusMessage&quot;: &quot;downloading/converting&quot;
+            },
+            &quot;Description&quot;: &quot;LinuxKit AWS&quot;,
+            &quot;ImportTaskId&quot;: &quot;import-snap-fgg27tzh&quot;
+        }
+    ]
+}
+</code></pre>
+
+<p>Here we see the import is still in progress <code>&quot;Progress&quot;: &quot;35&quot;</code> and we have to wait for completion. Once the import is complete we&rsquo;ll see the following API result.</p>
+
+<pre><code class="language-bash">$ aws ec2 describe-import-snapshot-tasks \
+    --import-task-ids import-snap-fgg27tzh
+</code></pre>
+
+<pre><code class="language-json">{
+    &quot;ImportSnapshotTasks&quot;: [
+        {
+            &quot;SnapshotTaskDetail&quot;: {
+                &quot;Status&quot;: &quot;completed&quot;,
+                &quot;Description&quot;: &quot;LinuxKit AWS&quot;,
+                &quot;Format&quot;: &quot;RAW&quot;,
+                &quot;DiskImageSize&quot;: 1073741824.0,
+                &quot;SnapshotId&quot;: &quot;snap-05b3f4866ae7de3e3&quot;,
+                &quot;UserBucket&quot;: {
+                    &quot;S3Bucket&quot;: &quot;dr-raw-images&quot;,
+                    &quot;S3Key&quot;: &quot;aws.raw&quot;
+                }
+            },
+            &quot;Description&quot;: &quot;LinuxKit AWS&quot;,
+            &quot;ImportTaskId&quot;: &quot;import-snap-fgg27tzh&quot;
+        }
+    ]
+}
+</code></pre>
+
+<p>Please pick up the <code>SnapshotId</code> which will be needed for our next step.</p>
+
+<h2 id="step-5-convert-the-ec2-snapshot-to-a-new-ami">Step 5: Convert the EC2 snapshot to a new AMI</h2>
+
+<p>Here is our most interesting step. We&rsquo;re creating the final LinuxKit AMI directly from the EC2 snapshot. If you want to learn more about this step, you can read the section &ldquo;Creating a Linux AMI from a Snapshot&rdquo; from the docs at <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html">Creating an Amazon EBS-Backed Linux AMI</a>.</p>
+
+<pre><code class="language-bash">$ aws ec2 register-image \
+    --name 'LinuxKit AWS AMI-1' \
+    --architecture x86_64 \
+    --virtualization-type hvm \
+    --root-device-name /dev/sda1 \
+    --block-device-mappings \
+    '[{&quot;DeviceName&quot;: &quot;/dev/sda1&quot;, &quot;Ebs&quot;: {&quot;SnapshotId&quot;: &quot;snap-05b3f4866ae7de3e3&quot;, &quot;VolumeType&quot;: &quot;gp2&quot;}}]'
+</code></pre>
+
+<pre><code class="language-json">{
+    &quot;ImageId&quot;: &quot;ami-5f25ff30&quot;
+}
+</code></pre>
+
+<p>At the end we did create a new AMI from our LinuxKit image and get back the AMI <code>ImageId</code> &ldquo;ami-5f25ff30&rdquo;.</p>
+
+<h2 id="step-6-run-an-ec2-instance-from-the-linuxkit-ami">Step 6: Run an EC2 instance from the LinuxKit AMI</h2>
+
+<p>By default no network access is granted to a new EC2 instance, so we have to create a new security group first and open some TCP network ports we&rsquo;d like to access from the outside.</p>
+
+<pre><code class="language-bash">$ aws ec2 create-security-group \
+    --group-name linuxkit-sg \
+    --description &quot;Security group for LinuxKit in EC2&quot;
+</code></pre>
+
+<pre><code class="language-json">{
+    &quot;GroupId&quot;: &quot;sg-f8dcbf93&quot;
+}
+</code></pre>
+
+<p>Take the security group <code>GroupId</code> from the API answer as we&rsquo;ll need it later when we start the EC2 instance.</p>
+
+<p>As our LinuxKit VM has a built-in SSHD and a Nginx webserver we&rsquo;re going to open the network ports 22/tcp and 80/tcp.</p>
+
+<pre><code class="language-bash">$ aws ec2 authorize-security-group-ingress \
+    --group-name linuxkit-sg \
+    --protocol tcp --port 22 --cidr 0.0.0.0/0
+
+$ aws ec2 authorize-security-group-ingress \
+    --group-name linuxkit-sg \
+    --protocol tcp --port 80 --cidr 0.0.0.0/0
+</code></pre>
+
+<p>To access the EC2 instance you have to create a personal SSH key/value pair (see AWS docs <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair">Creating a Key Pair Using Amazon EC2</a>) and save this locally, I&rsquo;m using the name <code>amazon-dr</code> and the file name <code>amazon-dr.pem</code> for mine. (<code>ssh-keygen -t rsa -b 8192 -f $HOME/.ssh/amazon-dr &amp;&amp; cat $HOME/.ssh/amazon-dr.pub | pbcopy</code>)</p>
+
+<p>Now we did setup all the basic things and we can start a new EC2 instance using the required parameters for AMI, security group and SSH key pair name.</p>
+
+<pre><code class="language-bash">$ aws ec2 run-instances \
+    --image-id ami-5f25ff30 \
+    --count 1 \
+    --instance-type t2.micro \
+    --security-group-ids sg-f8dcbf93 \
+    --key-name amazon-dr
+</code></pre>
+
+<pre><code class="language-json">{
+    &quot;OwnerId&quot;: &quot;164570622824&quot;,
+    &quot;ReservationId&quot;: &quot;r-03118588ae60d8ba0&quot;,
+    &quot;Groups&quot;: [],
+    &quot;Instances&quot;: [
+        {
+            &quot;Monitoring&quot;: {
+                &quot;State&quot;: &quot;disabled&quot;
+            },
+            &quot;PublicDnsName&quot;: &quot;&quot;,
+            &quot;RootDeviceType&quot;: &quot;ebs&quot;,
+            &quot;State&quot;: {
+                &quot;Code&quot;: 0,
+                &quot;Name&quot;: &quot;pending&quot;
+            },
+            &quot;EbsOptimized&quot;: false,
+            &quot;LaunchTime&quot;: &quot;2017-06-03T13:38:49.000Z&quot;,
+            &quot;PrivateIpAddress&quot;: &quot;172.31.20.215&quot;,
+            &quot;ProductCodes&quot;: [],
+            &quot;VpcId&quot;: &quot;vpc-6c482b04&quot;,
+            &quot;StateTransitionReason&quot;: &quot;&quot;,
+            &quot;InstanceId&quot;: &quot;i-0aca40cd80557de1a&quot;,
+            &quot;ImageId&quot;: &quot;ami-5f25ff30&quot;,
+            &quot;PrivateDnsName&quot;: &quot;ip-172-31-20-215.eu-central-1.compute.internal&quot;,
+            &quot;KeyName&quot;: &quot;amazon-dr&quot;,
+            &quot;SecurityGroups&quot;: [
+                {
+                    &quot;GroupName&quot;: &quot;linuxkit-sg&quot;,
+                    &quot;GroupId&quot;: &quot;sg-f8dcbf93&quot;
+                }
+            ],
+            &quot;ClientToken&quot;: &quot;&quot;,
+            &quot;SubnetId&quot;: &quot;subnet-608be11a&quot;,
+            &quot;InstanceType&quot;: &quot;t2.micro&quot;,
+            &quot;NetworkInterfaces&quot;: [
+                {
+                    &quot;Status&quot;: &quot;in-use&quot;,
+                    &quot;MacAddress&quot;: &quot;06:39:b9:fe:11:31&quot;,
+                    &quot;SourceDestCheck&quot;: true,
+                    &quot;VpcId&quot;: &quot;vpc-6c482b04&quot;,
+                    &quot;Description&quot;: &quot;&quot;,
+                    &quot;NetworkInterfaceId&quot;: &quot;eni-ce32e2bf&quot;,
+                    &quot;PrivateIpAddresses&quot;: [
+                        {
+                            &quot;PrivateDnsName&quot;: &quot;ip-172-31-20-215.eu-central-1.compute.internal&quot;,
+                            &quot;Primary&quot;: true,
+                            &quot;PrivateIpAddress&quot;: &quot;172.31.20.215&quot;
+                        }
+                    ],
+                    &quot;PrivateDnsName&quot;: &quot;ip-172-31-20-215.eu-central-1.compute.internal&quot;,
+                    &quot;Attachment&quot;: {
+                        &quot;Status&quot;: &quot;attaching&quot;,
+                        &quot;DeviceIndex&quot;: 0,
+                        &quot;DeleteOnTermination&quot;: true,
+                        &quot;AttachmentId&quot;: &quot;eni-attach-03765a63&quot;,
+                        &quot;AttachTime&quot;: &quot;2017-06-03T13:38:49.000Z&quot;
+                    },
+                    &quot;Groups&quot;: [
+                        {
+                            &quot;GroupName&quot;: &quot;linuxkit-sg&quot;,
+                            &quot;GroupId&quot;: &quot;sg-f8dcbf93&quot;
+                        }
+                    ],
+                    &quot;SubnetId&quot;: &quot;subnet-608be11a&quot;,
+                    &quot;OwnerId&quot;: &quot;164570622824&quot;,
+                    &quot;PrivateIpAddress&quot;: &quot;172.31.20.215&quot;
+                }
+            ],
+            &quot;SourceDestCheck&quot;: true,
+            &quot;Placement&quot;: {
+                &quot;Tenancy&quot;: &quot;default&quot;,
+                &quot;GroupName&quot;: &quot;&quot;,
+                &quot;AvailabilityZone&quot;: &quot;eu-central-1b&quot;
+            },
+            &quot;Hypervisor&quot;: &quot;xen&quot;,
+            &quot;BlockDeviceMappings&quot;: [],
+            &quot;Architecture&quot;: &quot;x86_64&quot;,
+            &quot;StateReason&quot;: {
+                &quot;Message&quot;: &quot;pending&quot;,
+                &quot;Code&quot;: &quot;pending&quot;
+            },
+            &quot;RootDeviceName&quot;: &quot;/dev/sda1&quot;,
+            &quot;VirtualizationType&quot;: &quot;hvm&quot;,
+            &quot;AmiLaunchIndex&quot;: 0
+        }
+    ]
+}
+</code></pre>
+
+<h2 id="step-7-testing-the-instance">Step 7: Testing the instance</h2>
+
+<p>After a few seconds or maybe a minute the EC2 instance should be up and running and we can get their public IP address from the EC2 web console.</p>
+
+<p><img src="/images/blog/linuxkit-with-initial-aws-support/linuxkit-aws-ec2-console1.png" alt="" /></p>
+
+<p>If you need help to connect to your instance via SSH, just hit the <code>Connect</code> button and you&rsquo;ll get the instructions.</p>
+
+<p><img src="/images/blog/linuxkit-with-initial-aws-support/linuxkit-aws-ec2-console2.png" alt="" /></p>
+
+<p>To prove that everything went well, we try to login via SSH.</p>
+
+<pre><code class="language-bash">🐳 ssh -i ~/.ssh/amazon-dr.pem root@54.93.173.60
+
+The authenticity of host '54.93.173.60 (54.93.173.60)' can't be established.
+ECDSA key fingerprint is SHA256:7KIfPSuli4OrmIsQhwoq/pfTs5M2ACJevOzlQ0waVxE.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '54.93.173.60' (ECDSA) to the list of known hosts.
+Welcome to LinuxKit
+
+ip-172-31-20-215:~# hostname
+ip-172-31-20-215.eu-central-1.compute.internal
+
+ip-172-31-20-215:~# uname -a
+Linux ip-172-31-20-215.eu-central-1.compute.internal 4.9.30-linuxkit #1 SMP Tue May 30 11:40:28 UTC 2017 x86_64 Linux
+
+ip-172-31-20-215:~# nsenter -t 1 -m -u -n -i ash
+ip-172-31-20-215:/# runc list
+ID          PID         STATUS      BUNDLE                        CREATED                          OWNER
+nginx       527         running     /run/containerd/linux/nginx   2017-06-03T13:39:12.598784632Z   root
+rngd        575         running     /run/containerd/linux/rngd    2017-06-03T13:39:12.645540905Z   root
+sshd        606         running     /run/containerd/linux/sshd    2017-06-03T13:39:12.681635105Z   root
+
+ip-172-31-20-215:/# exit
+ip-172-31-20-215:~# exit
+Connection to 54.93.173.60 closed.
+</code></pre>
+
+<p>Additionally we can access the built-in NGINX webserver via <code>curl</code>&hellip;</p>
+
+<pre><code class="language-bash">🐳 curl http://54.93.173.60
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Welcome to nginx!&lt;/title&gt;
+&lt;style&gt;
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Welcome to nginx!&lt;/h1&gt;
+&lt;p&gt;If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.&lt;/p&gt;
+
+&lt;p&gt;For online documentation and support please refer to
+&lt;a href=&quot;http://nginx.org/&quot;&gt;nginx.org&lt;/a&gt;.&lt;br/&gt;
+Commercial support is available at
+&lt;a href=&quot;http://nginx.com/&quot;&gt;nginx.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Thank you for using nginx.&lt;/em&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>&hellip;or we just open the default web browser.</p>
+
+<pre><code class="language-bash">🐳 open http://54.93.173.60
+</code></pre>
+
+<p><img src="/images/blog/linuxkit-with-initial-aws-support/linuxkit-aws-nginx-browser.png" alt="" /></p>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>This blog post showed the technical details about how to create a LinuxKit image and import it as a custom AMI to Amazon EC2. All these detailed manual steps can be used to understand the whole process a lot better and could be used as a basis to fully automate the creation of custom AMI&rsquo;s in general.</p>
+
+<p>In the meantime the LinuxKit development team is working hard to improve and automate this process and is going to implement the complete AWS support into the next version of LinuxKit. One of the next steps will be to <a href="https://github.com/linuxkit/linuxkit/pull/1959">update moby tool and qemu fixes</a>, so it is possible to create a RAW image directly with <code>moby build -output img -size 200M</code> and define the resulting disk image size. Another <a href="https://github.com/linuxkit/linuxkit/issues/1918#issuecomment-305918003">improvement is in development</a> now to include <code>linuxkit push</code> and <code>linuxkit run</code> commands with a direct AWS support using the AWS API internally.</p>
+
+<p>Then it will get extremely easy to use LinuxKit to create custom AMI&rsquo;s and run them in EC2. So it will be a trivial &ldquo;build, push, run&rdquo; cycle. The planned process looks like:</p>
+
+<pre><code class="language-bash"># create LinuxKit image (resulting file= aws.img)
+moby build -output img -size 200M examples/aws.yml
+
+# push image to AWS S3 bucket, import as snapshot, create a new AMI
+linuxkit push aws -bucket &lt;your-bucket-name&gt; aws.img
+
+# run LinuxKit AMI as an new EC2 instance
+linuxkit run aws -ami &lt;ami-id&gt; ...
+</code></pre>
+
+<p><img src="/images/blog/linuxkit-with-initial-aws-support/linuxkit-aws-overview.png" alt="" /></p>
+
+<p>The development will hopefully takes only a few days more and should be available next week or so. We&rsquo;re eagerly looking forward to see the complete AWS support in LinuxKit pretty soon.</p>
+
+<h2 id="open-questions">Open questions</h2>
+
+<p>While working on getting my first LinuxKit image running as an EC2 instance I was looking for some deeper technical informations, but wasn&rsquo;t able to find all answers by myself. Maybe someone out there could help and I&rsquo;d like to place my open questions here.</p>
+
+<ul>
+<li><p>How can I attach to the serial/UART console of the VM really early in the boot process?</p>
+
+<p>Currently I know you can get the boot logs later when the VM is successfully booted, but I&rsquo;m more interested in an early access from the first second on. Then it would be possible to see all problems and errors which occure even when the VM can&rsquo;t boot at all. An EC instance is running in a Xen hypervisor and therefore it should be possible to attach the serial tty console with all the kernel logs from the VM, but I can&rsquo;t find any API to do so.</p></li>
+
+<li><p>What is the exact boot process of an AMI in EC2?</p>
+
+<p>When I&rsquo;m starting a new EC2 instance based on a LinuxKit AMI it will take some seconds until the instance is booted and I can already access it via SSH. But at the AWS EC2 web console it takes a few minutes until the instance will be displayed as booted and operating normal.</p></li>
+
+<li><p>Are there exists any detailed informations and specs about creating and running custom AMI&rsquo;s?</p>
+
+<p>It seems there is something going on in the background with checks and additional attemps to provision the machine. I guess there is even more room for improvements as soon as we can understand all the details.</p></li>
+</ul>
+
+<p>So, if you could answer at least one of these questions or you could share some pointers I&rsquo;d really appreciate your feedback!</p>
+
+<h2 id="feedback-please">Feedback, please</h2>
+
+<p>As always we want you to give us your feedback and share it on Twitter.</p>
+
+<p>So, please send us your feedback or tweet your thoughts and ideas on this project at <a href="https://twitter.com/bee42solutions">@bee42solutions</a>.</p>
+
+<p>Dieter <a href="https://twitter.com/Quintus23M">@Quintus23M</a>, bee42 solutions   
+
+								
+
+<section id="author" class="small-12 medium-12 large-12 columns">
+
+  
+  
+
+  <h3> </h3>
+    
+    <p>Read <a href="https://bee42.com//blog">more blog posts</a> from  us.</p>
+    
+
+    <ul>
+    
+    
+    
+    
+    
+    </ul>
+  </section>
+
+
+
+      </section> 
+</section>
+
+<div class="overlay"></div>
+					<footer>
+						<section class="content-box">
+							<a class="branding" href="index.html"><img src="https://bee42.com/images/logo.svg" alt=""> </a> 
+							<p>&copy;2017</p>
+							<a class="imprint" href="https://bee42.com/Imprint/">Imprint</a>
+						</section>
+					</footer>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/edd03c05ea.js"></script>
+	<script src="https://bee42.com/js/foundation.min.js"></script>
+	<script src="https://bee42.com/js/jquery.validate.min.js"></script>
+	<script src="https://bee42.com/js/slick.js"></script>
+	<script src="https://bee42.com/js/main.js"></script>
+	<script src="https://bee42.com/js/prism.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58949839-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+	</body>
+<html>
