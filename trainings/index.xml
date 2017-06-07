@@ -286,12 +286,10 @@
       <guid>https://bee42.com/trainings/docker-gitlab-ci-lab-de/</guid>
       <description>
 
-&lt;h3 id=&#34;7-8-juni-2017-münchen&#34;&gt;7. - 8. Juni 2017, München&lt;/h3&gt;
-
-&lt;p&gt;Prinz Ludwig Palais in München &lt;br&gt;(Türkenstraße 7, 80333 München)&lt;/p&gt;
+&lt;h3 id=&#34;13-14-september-2017-hamburg&#34;&gt;13. - 14. September 2017, Hamburg&lt;/h3&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://container-gitlab-ci-training-muenchen.eventbrite.de&#34; class=&#34;Jetzt zum Training in München anmelden!&#34;&gt;Jetzt anmelden &amp;amp; einen Platz sichern!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://container-gitlab-ci-lab-hamburg.eventbrite.de&#34; class=&#34;Bis zum 17. August anmelden &amp; mit den Frühbucherpreisen sparen!&#34;&gt;Bis zum 17. August anmelden &amp;amp; mit den Frühbucherpreisen sparen!&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
@@ -409,12 +407,10 @@
 
 &lt;p&gt;+++&lt;/p&gt;
 
-&lt;h3 id=&#34;7-8-juni-2017-münchen-1&#34;&gt;7. - 8. Juni 2017, München&lt;/h3&gt;
-
-&lt;p&gt;Prinz Ludwig Palais in München &lt;br&gt;(Türkenstraße 7, 80333 München)&lt;/p&gt;
+&lt;h3 id=&#34;13-14-september-2017-hamburg-1&#34;&gt;13. - 14. September 2017, Hamburg&lt;/h3&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://container-gitlab-ci-training-muenchen.eventbrite.de&#34; class=&#34;Jetzt zum Training in München anmelden!&#34;&gt;Jetzt anmelden &amp;amp; einen Platz sichern!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://container-gitlab-ci-lab-hamburg.eventbrite.de&#34; class=&#34;Bis zum 17. August anmelden &amp; mit den Frühbucherpreisen sparen!&#34;&gt;Bis zum 17. August anmelden &amp;amp; mit den Frühbucherpreisen sparen!&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
@@ -717,159 +713,6 @@
     </item>
     
     <item>
-      <title>Docker GitLab/CI Lab</title>
-      <link>https://bee42.com/trainings/docker-gitlab-ci-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
-      
-      <guid>https://bee42.com/trainings/docker-gitlab-ci-lab/</guid>
-      <description>
-
-&lt;h3 id=&#34;7th-8th-june-2017-in-munich&#34;&gt;7th/8th June 2017 in Munich&lt;/h3&gt;
-
-&lt;p&gt;Prinz Ludwig Palais in Munich &lt;br&gt;(Türkenstraße 7, 80333 Munich)&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://container-gitlab-ci-training-muenchen.eventbrite.de&#34; class=&#34;Get now your ticket for the training in Munich!&#34;&gt;Book now your ticket!&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver Docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for Docker images.&lt;/p&gt;
-
-&lt;p&gt;We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to deliver your image to your environment. Also we want to discuss how you can trigger your builds, make good Docker images and ship images to your Docker registry.&lt;/p&gt;
-
-&lt;h2 id=&#34;day-one-br-gitlab-ci-basics&#34;&gt;Day one: &lt;br&gt;GitLab/CI basics&lt;/h2&gt;
-
-&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What is GitLab and what it is not ?&lt;/li&gt;
-&lt;li&gt;Installation of GitLab Instance&lt;/li&gt;
-&lt;li&gt;Overview of the GitLab Architecture&lt;/li&gt;
-&lt;li&gt;Detailed overview about the GitLab components&lt;/li&gt;
-&lt;li&gt;Setup the various GitLab components&lt;/li&gt;
-&lt;li&gt;GitLab UI overview&lt;/li&gt;
-&lt;li&gt;Check in a simple project&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;workflow-with-your-images-from-gitlab&#34;&gt;Workflow with your Images from GitLab&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Let&amp;rsquo;s build and test Docker images&lt;/li&gt;
-&lt;li&gt;Push your successfully built images to registry&lt;/li&gt;
-&lt;li&gt;Build your own images with Dockerfiles&lt;/li&gt;
-&lt;li&gt;Create your own GitLab Runners of different types
-
-&lt;ul&gt;
-&lt;li&gt;Shell&lt;/li&gt;
-&lt;li&gt;Docker&lt;/li&gt;
-&lt;li&gt;Docker machine&lt;/li&gt;
-&lt;li&gt;SSH&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;listen-to-your-gitlab-infrastructure&#34;&gt;Listen to your GitLab Infrastructure&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Logging and Monitoring for your GitLab Infrastructure&lt;/li&gt;
-&lt;li&gt;Backup and Restore your Images from GitLab&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-two-br-ship-a-tested-microservice-with-docker-and-gitlab&#34;&gt;Day two: &lt;br&gt; Ship a tested microservice with Docker and GitLab&lt;/h2&gt;
-
-&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Create a simple Spring Boot Application&lt;/li&gt;
-&lt;li&gt;Build your Toolchain for Application Development (Java and Maven)&lt;/li&gt;
-&lt;li&gt;Empower your Application Development with Docker&lt;/li&gt;
-&lt;li&gt;Distribute your Microservice in a &lt;strong&gt;neat Dockerfile&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Ship your Microservice to a production like System with Delivery Concept&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;gitlab-ci-tipps-and-tricks&#34;&gt;GitLab/CI Tipps and Tricks&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Maintain your GitLab with a few steps for
-
-&lt;ul&gt;
-&lt;li&gt;Updating your Installation&lt;/li&gt;
-&lt;li&gt;Backup and Restore your Installation&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Scale your CI CD Pipeline with different concepts&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;+++&lt;/p&gt;
-
-&lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
-
-&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DevOps developer&lt;/li&gt;
-&lt;li&gt;Administrators&lt;/li&gt;
-&lt;li&gt;Software and system architects&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
-&lt;li&gt;Basic knowledge Git&lt;/li&gt;
-&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
-&lt;li&gt;Basic knowledge of Java, Maven and SpringBoot&lt;/li&gt;
-&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
-&lt;li&gt;Training materials&lt;/li&gt;
-&lt;li&gt;Internet&lt;/li&gt;
-&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
-&lt;li&gt;Computers are not provided&lt;/li&gt;
-&lt;li&gt;Bring your own notebook
-
-&lt;ul&gt;
-&lt;li&gt;Administrators rights needed&lt;/li&gt;
-&lt;li&gt;Free access to the complete network (No enterprise proxy or vpn)&lt;/li&gt;
-&lt;li&gt;SSH or Putty installed&lt;/li&gt;
-&lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;+++&lt;/p&gt;
-
-&lt;h3 id=&#34;7th-8th-june-2017-in-munich-1&#34;&gt;7th/8th June 2017 in Munich&lt;/h3&gt;
-
-&lt;p&gt;Prinz Ludwig Palais in Munich &lt;br&gt;(Türkenstraße 7, 80333 Munich)&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://container-gitlab-ci-training-muenchen.eventbrite.de&#34; class=&#34;Get now your ticket for the training in Munich!&#34;&gt;Book now your ticket!&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Docker DevOps Camp</title>
       <link>https://bee42.com/trainings/docker-devops-camp/</link>
       <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
@@ -1031,6 +874,155 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://container-devops-camp-muenchen.eventbrite.de&#34; class=&#34;Get now your ticket for the Docker DevOps Camp in Munich!&#34;&gt;Early Bird Prices till 30th May - Book now!&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker GitLab/CI Lab</title>
+      <link>https://bee42.com/trainings/docker-gitlab-ci-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
+      
+      <guid>https://bee42.com/trainings/docker-gitlab-ci-lab/</guid>
+      <description>
+
+&lt;h3 id=&#34;13th-14th-september-2017-in-hamburg&#34;&gt;13th/14th September 2017 in Hamburg&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://container-gitlab-ci-lab-hamburg.eventbrite.de&#34; class=&#34;Early Bird Prices till August 17th!&#34;&gt;Early Bird Prices till August 17th!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send us now an inhouse request!&#34;&gt;Send us now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Whether small startups or large companies - many companies rely on the open-source Docker technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? Docker promises a quick start, flexible configuration and stable images for development and production. Nice, but a developer or operator must be setup there automation to build, test and deliver Docker images. At this training you learn to setup GitLab/CI to maintain your project sources and automate your Continuous Integration and Delivery pipeline for Docker images.&lt;/p&gt;
+
+&lt;p&gt;We start with an overview and introduce the first steps with the use of GitLab/CI. You will get to know the most important components, instructions and concepts. Using a detailed example, you will learn how to implement a microservice, automate the build with different gitlab runner, install with Docker, test and integrate with other services in an environment. We also discuss to deliver your image to your environment. Also we want to discuss how you can trigger your builds, make good Docker images and ship images to your Docker registry.&lt;/p&gt;
+
+&lt;h2 id=&#34;day-one-br-gitlab-ci-basics&#34;&gt;Day one: &lt;br&gt;GitLab/CI basics&lt;/h2&gt;
+
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is GitLab and what it is not ?&lt;/li&gt;
+&lt;li&gt;Installation of GitLab Instance&lt;/li&gt;
+&lt;li&gt;Overview of the GitLab Architecture&lt;/li&gt;
+&lt;li&gt;Detailed overview about the GitLab components&lt;/li&gt;
+&lt;li&gt;Setup the various GitLab components&lt;/li&gt;
+&lt;li&gt;GitLab UI overview&lt;/li&gt;
+&lt;li&gt;Check in a simple project&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;workflow-with-your-images-from-gitlab&#34;&gt;Workflow with your Images from GitLab&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Let&amp;rsquo;s build and test Docker images&lt;/li&gt;
+&lt;li&gt;Push your successfully built images to registry&lt;/li&gt;
+&lt;li&gt;Build your own images with Dockerfiles&lt;/li&gt;
+&lt;li&gt;Create your own GitLab Runners of different types
+
+&lt;ul&gt;
+&lt;li&gt;Shell&lt;/li&gt;
+&lt;li&gt;Docker&lt;/li&gt;
+&lt;li&gt;Docker machine&lt;/li&gt;
+&lt;li&gt;SSH&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;listen-to-your-gitlab-infrastructure&#34;&gt;Listen to your GitLab Infrastructure&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Logging and Monitoring for your GitLab Infrastructure&lt;/li&gt;
+&lt;li&gt;Backup and Restore your Images from GitLab&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;day-two-br-ship-a-tested-microservice-with-docker-and-gitlab&#34;&gt;Day two: &lt;br&gt; Ship a tested microservice with Docker and GitLab&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a simple Spring Boot Application&lt;/li&gt;
+&lt;li&gt;Build your Toolchain for Application Development (Java and Maven)&lt;/li&gt;
+&lt;li&gt;Empower your Application Development with Docker&lt;/li&gt;
+&lt;li&gt;Distribute your Microservice in a &lt;strong&gt;neat Dockerfile&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Ship your Microservice to a production like System with Delivery Concept&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;gitlab-ci-tipps-and-tricks&#34;&gt;GitLab/CI Tipps and Tricks&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Maintain your GitLab with a few steps for
+
+&lt;ul&gt;
+&lt;li&gt;Updating your Installation&lt;/li&gt;
+&lt;li&gt;Backup and Restore your Installation&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Scale your CI CD Pipeline with different concepts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h2 id=&#34;prerequisites-and-services&#34;&gt;Prerequisites and Services&lt;/h2&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps developer&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software and system architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Docker&lt;/li&gt;
+&lt;li&gt;Basic knowledge Git&lt;/li&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, virtualization)&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Java, Maven and SpringBoot&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catering: breakfast, lunch and drinks (non-alcoholic)&lt;/li&gt;
+&lt;li&gt;Training materials&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Not included: hotel accommodation, travel expenses&lt;/li&gt;
+&lt;li&gt;Computers are not provided&lt;/li&gt;
+&lt;li&gt;Bring your own notebook
+
+&lt;ul&gt;
+&lt;li&gt;Administrators rights needed&lt;/li&gt;
+&lt;li&gt;Free access to the complete network (No enterprise proxy or vpn)&lt;/li&gt;
+&lt;li&gt;SSH or Putty installed&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE and git installed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h3 id=&#34;13th-14th-september-2017-in-hamburg-1&#34;&gt;13th/14th September 2017 in Hamburg&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://container-gitlab-ci-lab-hamburg.eventbrite.de&#34; class=&#34;Early Bird Prices till August 17th!&#34;&gt;Early Bird Prices till August 17th!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;You can book this training also as an inhouse training. Just send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
 
