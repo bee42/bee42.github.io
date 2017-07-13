@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<title>Container Java lab</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Wir verbinden das Potential von Docker mit den Anforderungen von  Java-Entwicklern. Lerne **Java Microservices mit Docker** zu bauen, skalieren und deployen. Dieses Lab gibt praktische Hinweise und diskutiert Tricks, um Docker nahtlos mit Java zu verwenden.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<meta property="article:tag" content="docker for java lab">
+<meta property="article:tag" content="docker for java training event">
+<meta property="article:tag" content="docker for java course">
+<meta property="article:tag" content="docker for java seminar">
+<meta property="article:tag" content="docker for java workshop">
+<meta property="article:tag" content="docker for java event">
+<meta property="article:tag" content="docker for java">
+<meta property="article:tag" content="docker for java workshop">
+<meta property="article:tag" content="Docker for Java Training">
+
+
+
+<meta property="og:title" content="Container Java lab" />
+<meta property="og:description"content="Wir verbinden das Potential von Docker mit den Anforderungen von  Java-Entwicklern. Lerne **Java Microservices mit Docker** zu bauen, skalieren und deployen. Dieses Lab gibt praktische Hinweise und diskutiert Tricks, um Docker nahtlos mit Java zu verwenden." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bee42.com/de/trainings/container-java-lab-de/" />
+
+
+	<meta property="og:image" content="/images/containerjavalab.png" />
+ 
+
+
+
+<meta property="og:updated_time" content="2017-01-10 22:27:32 &#43;0100 &#43;0100"/>
+
+
+<meta property="og:site_name" content="Deutsch" />
+
+
+
+
+
+
+
+
+<meta property="article:publisher" content="https://www.facebook.com/" />
+
+<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+
+<meta property="article:modified_time" content="2017-01-10 22:27:32 &#43;0100 &#43;0100" />
+<meta property="article:section" content="trainings" />
+
+
+
+
+
+
+<meta itemprop="name" content="Container Java lab">
+<meta itemprop="description" content="Wir verbinden das Potential von Docker mit den Anforderungen von  Java-Entwicklern. Lerne **Java Microservices mit Docker** zu bauen, skalieren und deployen. Dieses Lab gibt praktische Hinweise und diskutiert Tricks, um Docker nahtlos mit Java zu verwenden.">
+
+
+
+	<meta itemprop="image" content="/images/containerjavalab.png">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta itemprop="wordCount" content="325">
+
+
+
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image:src" content="/images/containerjavalab.png"/>
+
+
+
+<meta name="twitter:title" content="Container Java lab"/>
+<meta name="twitter:description" content="Wir verbinden das Potential von Docker mit den Anforderungen von  Java-Entwicklern. Lerne **Java Microservices mit Docker** zu bauen, skalieren und deployen. Dieses Lab gibt praktische Hinweise und diskutiert Tricks, um Docker nahtlos mit Java zu verwenden."/>
+
+
+<meta name="twitter:creator" content="@bee42solutions"/>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8QDFPL');</script>
+
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="64x64" href="/images/apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/css/main-6506650b.css" />
+</head>
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8QDFPL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navigation">
+	<div class="inner-content">
+		<a class="branding" href="/"><img src="/images/logo.svg" alt=""></a>
+   		 <ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+		<button class="burger" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	</div>
+</nav>
+
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+ 		<ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+	</div>
+	<div class="off-canvas-content" data-off-canvas-content>
+
+		<header>
+			<div class="inner-content">
+				<h1>
+					Rethink IT
+					<span></span>
+				</h1>
+			</div>
+		</header>
+
+		<main>
+ <section class="page-content">
+       <section class="content-box trainings-single">
+         
+
+	<section class="small-12 medium-6 large-6 columns">
+               <img src="/images/containerjavalab.png"> 
+                	</section>
+              	<section class="small-12 medium-6 large-6 columns">
+               <p><strong>Speaker:</strong> Peter Rossbach</p>
+               <p></p>
+                
+
+                
+
+                
+                
+  	</section>
+               	<section class="small-12 medium-12 large-12 columns">
+               <p><strong>Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an <a href"mailto:info@bee42.com">info@bee42.com</a>!</strong></p>
+
+<blockquote>
+<p><a href="mailto:info@bee42.com" class="Jetzt als Inhouse-Training anfragen!">Jetzt Inhouse-Training anfragen!</a></p>
+</blockquote>
+
+<div class="clearfix"></div>
+
+<p>Docker Software und das spannende Container Ökosystem ist sehr hilfreich für jeden Java-Entwickler. Diese Lab gibt einen Überblick über die besten Praktiken für die Entwicklung von Java-Anwendungen mit Docker Software.</p>
+
+<p>Das Container-Ökosystem bietet Dir vielversprechende Tools zum Paketieren Deiner Software, Wiederverwendung vorhandener Services, Datenbanken oder Tools. Docker Software hilft, Deine Continuous Integration Pipeline voranzutreiben.</p>
+
+<p>Aber, ein gutes Java-Image aufzubauen und Deine Container direkt in der Produktion zu verwenden, ist eine Herausforderung. Bündeln Deine Java-Software, teste Deine Dienste mit Container und befähige Deine Entwicklung zu mehr Qualiät.</p>
+
+<p>Dieses Labor gibt Dir einige nützliche Hinweise und diskutieren Tricks, um Container nahtlos mit Java zu verwenden.</p>
+
+<h2 id="tag-1-baue-deine-java-microservices-mit-container">Tag 1: Baue Deine Java Microservices mit Container</h2>
+
+<ul>
+<li>Container Basics</li>
+<li>Empower Deine Entwicklung mit Docker CE Software</li>
+<li>Aufbauen einer Spring Boot Microservices mit Maven</li>
+<li>Verpacken der Java Anwendung mit Container</li>
+<li>Erzeugen eines Databank Container</li>
+<li>TDD mit Container</li>
+<li>Baue ein eigenes Java Base Images</li>
+<li>Debugging mit Java im Container</li>
+<li>Container IDE Unterstützung</li>
+</ul>
+
+<h2 id="tag-2-java-für-die-produktion">Tag 2: Java für die Produktion</h2>
+
+<ul>
+<li>Denke Deine Infrastruktur zuerst</li>
+<li>Automatische Erzeugung Deiner Image Build mit einer CI-Pipeline</li>
+<li>Baue Deine eigene Werkzeugkette: Java, Maven, Tomcat, &hellip;</li>
+<li>Erzeugen eines optimale Java Werkzeugkastens mit Container</li>
+<li>Beachte die <strong>12 Factor Rules</strong></li>
+<li>Skaliere Deine Java Microservices</li>
+<li>Java Micorservices in der Produktion</li>
+<li>Integiere Metriken und Logging</li>
+</ul>
+
+<p>+++</p>
+
+<h3 id="zielgruppe-wer-sollte-teilnehmen">Zielgruppe/ Wer sollte teilnehmen?</h3>
+
+<ul>
+<li>Java Entwickler</li>
+<li>Software- und Systemarchitekten</li>
+</ul>
+
+<h3 id="voraussetzungen-an-die-teilnehmer">Voraussetzungen an die Teilnehmer</h3>
+
+<ul>
+<li>Gute Kenntnisse Java, Maven, Spring boot&hellip;</li>
+<li>Grundkenntnisse Microservices</li>
+<li>Grundkenntnisse Docker</li>
+<li>Grundkenntnisse Linux (Debian, bash, vim, curl, network, packages)</li>
+</ul>
+
+<h3 id="leistungen">Leistungen</h3>
+
+<ul>
+<li>Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)</li>
+<li>Schulungsmaterialien</li>
+<li>Internet</li>
+<li>Nicht enthalten: Hotel Übernachtungen, Anreise</li>
+<li>Rechner werden nicht gestellt</li>
+<li>Bringe Dein eigenes Notebook mit
+
+<ul>
+<li>Administrator Rechte erforderlich</li>
+<li>Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)</li>
+<li>SSH oder Putty installiert</li>
+<li>Google Chrome, Java IDE und git installiert</li>
+</ul></li>
+</ul>
+
+<p><strong>Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an <a href"mailto:info@bee42.com">info@bee42.com</a>!</strong></p>
+
+<blockquote>
+<p><a href="mailto:info@bee42.com" class="Jetzt als Inhouse-Training anfragen!">Jetzt Inhouse-Training anfragen!</a></p>
+</blockquote>
+
+<p><div class="clearfix"></div></p>
+
+<p><div class="clearfix"></div></p>
+                
+               	</section>
+
+
+      </section>
+
+
+</section>
+
+
+
+<div class="overlay"></div>
+<footer>
+    <section class="content-box">
+        <a class="branding" href="/"><img src="/images/logo.svg" alt=""> </a>
+        <p>&copy;2017</p>
+        <a class="imprint" href="/de/allgemeine-geschaeftsbedingungen">AGB</a>
+        <a class="imprint" href="/de/datenschutz">Datenschutz</a>
+        <a class="imprint" href="/de/impressum">Impressum</a>
+    </section>
+</footer>
+
+			</main>
+
+		</div>
+	</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/edd03c05ea.js"></script>
+	<script src="/js/foundation.min.js"></script>
+	<script src="/js/jquery.validate.min.js"></script>
+	<script src="/js/slick.js"></script>
+	<script src="/js/main.js"></script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58949839-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+  
+
+
+
+<script type="text/javascript">
+  
+  var google_conversion_id = 863637645;
+  var google_conversion_label = "nWsCCI_3rG4QjaHomwM";
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+   
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/863637645/?value=1.00&amp;currency_code=EUR&amp;label=nWsCCI_3rG4QjaHomwM&amp;guid=ON&amp;script=0" />
+  </div>
+</noscript>
+
+
+	</body>
+<html>

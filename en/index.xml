@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>English</title>
+    <link>https://bee42.com/en/index.xml</link>
+    <description>Recent content on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://bee42.com/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DevOps Gathering 2017</title>
+      <link>https://bee42.com/en/conferences/devops_gathering_2017/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/en/conferences/devops_gathering_2017/</guid>
+      <description>
+
+&lt;p&gt;The DevOps Gathering is an international conference located in Bochum - surrounded by the metropolitan area of the Ruhr Valley. This melting pot of past times industrial revolutions is nowadays a hot spot for Germany’s IT industry - a perfect place to discuss the next big revolution of our industry, the DevOps revolution. Let’s discuss the hot topics inside the DevOps community and start talking about
+Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&lt;/p&gt;
+
+&lt;p&gt;The bee42 solutions gmbh are hosting a non-profit conference striving for high-quality content and providing a platform for experienced international speakers at the G DATA Campus in the heart of Bochum.&lt;/p&gt;
+
+&lt;h2 id=&#34;pre-conference-workshops-march-23-2017&#34;&gt;Pre-Conference-Workshops - March 23, 2017&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Venue:&lt;/strong&gt; Veranstaltungszentrum RUB, Universitätsstraße 150, 44801 Bochum&lt;/p&gt;
+
+&lt;p&gt;This Docker Workshops are an perfect fit for DevOps Engineers. Attendees have the chance to learn from some exciting Docker Captains and Experts. The concept of the workshop is to leave room for experiments.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Learning Docker on a Raspberry Pi ARM-Cluster (Dieter Reuter and Peter Rossbach)&lt;/li&gt;
+&lt;li&gt;Automated container building with GitLab/CI (Niclas Mietz)&lt;/li&gt;
+&lt;li&gt;Docker and Kubernetes for Java Developers (Roland Huss)&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Bootiful&amp;rdquo; Containers with Spring-Boot and Docker (Kevin Wittek and Matthias Rottländer)&lt;/li&gt;
+&lt;li&gt;Getting started with Docker on Windows Server 2016 (Stefan Scherer and Dieter Reuter)&lt;/li&gt;
+&lt;li&gt;Running Docker Containers on AWS (Philipp Garbe)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;conference-talks-march-24-2017&#34;&gt;Conference Talks - March 24, 2017&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Venue:&lt;/strong&gt; G Data Campus, Königsallee 178b, 44799 Bochum&lt;/p&gt;
+
+&lt;p&gt;Attendees obtain interesseting stories from Experts with different knowledge areas.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How we run Kubernetes in Kubernetes, aka Kubeception (Timo Derstappen)&lt;/li&gt;
+&lt;li&gt;Docker Container Loading (Roland Huss)&lt;/li&gt;
+&lt;li&gt;Getting the most out of your containerized database (Claus Matzinger)&lt;/li&gt;
+&lt;li&gt;One year monitoring a small startup with Prometheus: lessons learned (Maykel Moya)&lt;/li&gt;
+&lt;li&gt;Build and deploy multiarch Linux and Windows Container images (Stefan Scherer)&lt;/li&gt;
+&lt;li&gt;Intel and ARM, let Kubernetes rule them all! (Lucas Käldström)&lt;/li&gt;
+&lt;li&gt;Make load-balancing great again with Træfik! (Emile Vauge and Manuel Laufenberg)&lt;/li&gt;
+&lt;li&gt;Docker Orchestration and Swarming (Peter Rossbach)&lt;/li&gt;
+&lt;li&gt;Keynote: DevOps is not enough - towards a DevOps ecosystem (Uwe Friedrichsen)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;container-open-space-march-25-2017&#34;&gt;Container Open Space - March 25, 2017&lt;/h2&gt;
+
+&lt;p&gt;The Open Space format perfectly fits to the fast moving development of the Container ecosystem. It offers participants and experts the opportunity to launch discussions, address questions and challenges regarding Docker, Kubernetes and Cloud technologies.&lt;/p&gt;
+
+&lt;p&gt;An Open Space is a simple and productive way for hosting conferences. Participants and experts will create and manage together their own agenda of parallel working sessions. The goal of this Open Space is to allow attendees to interact with one another and learn from each other – all under the guidance of an experienced moderator.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Register and get one of our limited tickets, now!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;more page&#34; href=&#34;https://devops-gathering.io&#34;&gt;Get your Ticket&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker Birthday Party</title>
+      <link>https://bee42.com/en/conferences/docker-birthday-party/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/en/conferences/docker-birthday-party/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Join us in celebrating the Docker Project’s 4th birthday!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To celebrate together the Docker Birthday we warmly and invite you alle to our Docker MeetUp next week in Dortmund:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;When?&lt;/strong&gt; March 16, 2017&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Where?&lt;/strong&gt; Zalando SE, Hörder Hafenstraße 3, Dortmund&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/docker-birthdayparty.jpg&#34; alt=&#34;Docker Birthday Party&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We will provide Docker labs and courses to learn about Docker in a fun and inviting way.&lt;/p&gt;
+
+&lt;p&gt;The complete agenda will be published soon, but we plan to have a hands-on with self-paced tutorials for every experience level from absolute beginners to professionals - we highly recommend to bring along your own laptop.&lt;/p&gt;
+
+&lt;p&gt;Additionally we think about an open space/stage if you want to share your thoughts/projects or experiences with Docker.&lt;/p&gt;
+
+&lt;p&gt;We, the MeetUp Docker Bochum organize this birthday event together with our friends from the Docker Dortmund Meetup Group, so there will be mentors from both groups helping you mastering the tutorials.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;more page&#34; href=&#34;https://www.meetup.com/de-DE/Docker-Dortmund/events/237630582/&#34;&gt;Register here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thank you for your booking - bee42</title>
+      <link>https://bee42.com/en/thanks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/en/thanks/</guid>
+      <description>
+
+&lt;h2 id=&#34;thanks-for-your-reservation&#34;&gt;Thanks for your reservation.&lt;/h2&gt;
+
+&lt;h3 id=&#34;we-ll-inform-you-immediately&#34;&gt;We&amp;rsquo;ll inform you immediately.&lt;/h3&gt;
+
+&lt;p&gt;&lt;a  class=&#34;more page&#34; href=&#34;https://bee42.com/index.html&#34;&gt;back to home&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>https://bee42.com/en/services/technology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/en/services/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Organisation</title>
+      <link>https://bee42.com/en/services/organisation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/en/services/organisation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Purpose </title>
+      <link>https://bee42.com/en/services/purpose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/en/services/purpose/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

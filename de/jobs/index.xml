@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jobs-rsses on Deutsch</title>
+    <link>https://bee42.com/de/jobs/index.xml</link>
+    <description>Recent content in Jobs-rsses on Deutsch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://bee42.com/de/jobs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>&gt;&gt; DevOps Engineer &lt;&lt;</title>
+      <link>https://bee42.com/de/jobs/devopsengineer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/de/jobs/devopsengineer/</guid>
+      <description>
+
+&lt;h1 id=&#34;devops-engineer&#34;&gt;DEVOPS ENGINEER&lt;/h1&gt;
+
+&lt;p&gt;Wir sind ein DevOps-Unternehmen das Aufgaben aus verschiedenen Blickwinkeln betrachtet, sehr schnell lernt und Ergebnisse liefert. Basis unserer Trainings und Beratungen ist der Blueprint einer hochverfügbaren, skalierbaren und automatisierten Container Plattform. Zur Weiterentwicklung des Blueprints suchen wir für unser interdisziplinäres Team in Bochum einen DevOps Engineer. Als DevOps Engineer arbeitest Du bei uns mit OpenSource und DevOps Technologien wie Docker, Kubernetes, Traefik, Prometheus, GitLab/CI, Jenkins, CircleCI und vielen mehr. Wir probieren viel Neues aus, um unseren Kunden bei der Beschleunigung Ihrer IT Prozesse zu helfen. Auf Konferenzen, Meetups und in Blogs teilen wir unser Wissen - bilden uns dort aber auch ganz gezielt weiter.&lt;/p&gt;
+
+&lt;h2 id=&#34;was-wir-von-dir-erwarten&#34;&gt;Was wir von Dir erwarten?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Neugierde und einen Drang Dich mit uns zusammen weiterzuentwickeln&lt;/li&gt;
+&lt;li&gt;Du betrachtest Infrastruktur als Code und denkst in Systemen&lt;/li&gt;
+&lt;li&gt;Du kannst selbständig arbeiten und suchst die Zusammenarbeit mit unseren Kunden, um deren Auslieferungsprozesse durch Automatisierung und Containerisierung zu beschleunigen&lt;/li&gt;
+&lt;li&gt;Wir entwickeln uns mit dem Feedback unseres Kunden weiter und müssen uns daher kontinuierlich verbessern&lt;/li&gt;
+&lt;li&gt;Du kannst selbständig Container Infrastrukturen auf der Basis von Kubernetes oder Docker gestalten und betreuen&lt;/li&gt;
+&lt;li&gt;Du hast Erfahrungen mit verteilten Systemen, Microservices und Clouds&lt;/li&gt;
+&lt;li&gt;Du hast Erfahrungen mit Shell, Ruby, Java, Go, JavaScript oder Python und liebst es Infrastruktur zu programmieren&lt;/li&gt;
+&lt;li&gt;Du pflegst einen sicheren Umgang mit Linux und hast Kenntnisse in Ansible, Chef oder Puppet&lt;/li&gt;
+&lt;li&gt;Eine aktive Beteiligung an OpenSource Projekten ist gewünscht&lt;/li&gt;
+&lt;li&gt;Agile Softwareentwicklung, Software Craftmanship und DevOps sind Werte, die Du leben möchtest&lt;/li&gt;
+&lt;li&gt;Du teilst Dein Wissen auf Konferenzen, Meetups und in Blogs&lt;/li&gt;
+&lt;li&gt;Bringe Deine Erfahrung aktiv in das Team und bei unseren Kunden ein&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;worin-du-schon-erfahrung-haben-solltest&#34;&gt;Worin du schon Erfahrung haben solltest&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gute Kenntnisse der DevOps Tools wie Git, Docker, Kubernetes, Vagrant, Consul, Vault, Virtualisierung oder Cloud&lt;/li&gt;
+&lt;li&gt;Sicherer Umgang mit Build- und Release-Management (GitLab/CI, Jenkins, CircleCI, Maven, Grunt, &amp;hellip;)&lt;/li&gt;
+&lt;li&gt;Du versetzt Menschen in die Lage moderne Technologien zu nutzen&lt;/li&gt;
+&lt;li&gt;Du hast idealerweise schon Vorträge oder Trainings gehalten&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;was-du-noch-wissen-solltest&#34;&gt;Was du noch wissen solltest&lt;/h2&gt;
+
+&lt;p&gt;Nicht nur unser Ansatz IT-Systeme zu bauen unterscheidet sich von anderen, sondern auch die Art der Zusammenarbeit. Wir sind agil, lean und jeder trägt im interdisziplinären Team Verantwortung. Nur so können wir Großartiges leisten.
+Wir kommen alle aus unterschiedlichen Richtungen und wollen gemeinsam die Container Revolution für unsere Kunden mitgestalten.
+Wir erwarten nicht, dass jemand gleich schon alle unsere Erwartungen erfüllen kann, aber wir wollen uns alle gemeinsam weiterentwickeln und Lösungen für unsere Kunden umsetzen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wir freuen uns auf Deine Bewerbung - sende sie einfach an:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;mailto:jobs@bee42.com&#34;&gt;jobs@bee42.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bee42 solutions gmbh, Am Josephsschacht 72, D-44879 Bochum, Telefon: 0157 72549263&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

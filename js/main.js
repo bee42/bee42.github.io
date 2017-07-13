@@ -54,7 +54,7 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 2500,
 		slidesToShow: 4,
-		slidesToScroll: 1,
+		slidesToScroll: 2,
 		arrows: false,
 
 		responsive: [
@@ -79,10 +79,11 @@ $(document).ready(function(){
 		dots: true,
 		infinite: true,
 		autoplay: false,
-		slidesToShow: 3,
+	
 		slidesToScroll: 1,
 		arrows: false,
-
+		variablewidth: true,
+		width: 345,
 		responsive: [
 			{
 				breakpoint: 1024,
