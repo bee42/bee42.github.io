@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<title>Container GitLab/CI Lab</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Lernen Sie **Continuous Integration und Delivery** beim Einsatz von containerbasierter Software anzuwenden. Mit unserer **Gitlab/CI Pipeline** können Sie **Docker** Images automatiseirt bauen und **Integration Tests** mit unterschiedlichen Runnern durchführen.
+">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<meta property="article:tag" content="Docker GitLab/CI Lab">
+<meta property="article:tag" content="Docker Git Lab">
+<meta property="article:tag" content="Docker GitLab course">
+<meta property="article:tag" content="Docker GitLab Training">
+<meta property="article:tag" content="Docker GitLab Workshop">
+<meta property="article:tag" content="Docker GitLab Seminar">
+<meta property="article:tag" content="Docker GitLab Architecture">
+<meta property="article:tag" content="Docker GitLab Basics Training">
+<meta property="article:tag" content="Docker GitLab">
+<meta property="article:tag" content="GitLab training">
+<meta property="article:tag" content="Continuous Integration">
+<meta property="article:tag" content="Continuous Integration Training">
+<meta property="article:tag" content="Continuous Integration Workshop">
+<meta property="article:tag" content="Continuous Integration Camp">
+<meta property="article:tag" content="Continuous Integration Seminar">
+<meta property="article:tag" content="Docker Continuous Integration">
+<meta property="article:tag" content="GitLab Continuous Integration">
+<meta property="article:tag" content="Continuos Integration Schulung">
+
+
+
+<meta property="og:title" content="Container GitLab/CI Lab" />
+<meta property="og:description"content="Lernen Sie **Continuous Integration und Delivery** beim Einsatz von containerbasierter Software anzuwenden. Mit unserer **Gitlab/CI Pipeline** können Sie **Docker** Images automatiseirt bauen und **Integration Tests** mit unterschiedlichen Runnern durchführen.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bee42.com/de/trainings/container-gitlab-ci-lab-berlin/" />
+
+
+	<meta property="og:image" content="/images/1024x512/containergitlabcilab.png" />
+ 
+
+
+
+<meta property="og:updated_time" content="2017-01-10 22:16:30 &#43;0100 &#43;0100"/>
+
+
+<meta property="og:site_name" content="DevOps Trainings &amp; Consulting - bee42 solutions gmbh" />
+
+
+
+
+
+
+
+
+<meta property="article:publisher" content="https://www.facebook.com/" />
+
+<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+
+<meta property="article:modified_time" content="2017-01-10 22:16:30 &#43;0100 &#43;0100" />
+<meta property="article:section" content="trainings" />
+
+
+
+
+
+
+<meta itemprop="name" content="Container GitLab/CI Lab">
+<meta itemprop="description" content="Lernen Sie **Continuous Integration und Delivery** beim Einsatz von containerbasierter Software anzuwenden. Mit unserer **Gitlab/CI Pipeline** können Sie **Docker** Images automatiseirt bauen und **Integration Tests** mit unterschiedlichen Runnern durchführen.
+">
+
+
+
+	<meta itemprop="image" content="/images/1024x512/containergitlabcilab.png">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta itemprop="wordCount" content="537">
+
+
+
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image:src" content="/images/1024x512/containergitlabcilab.png"/>
+
+
+
+<meta name="twitter:title" content="Container GitLab/CI Lab"/>
+<meta name="twitter:description" content="Lernen Sie **Continuous Integration und Delivery** beim Einsatz von containerbasierter Software anzuwenden. Mit unserer **Gitlab/CI Pipeline** können Sie **Docker** Images automatiseirt bauen und **Integration Tests** mit unterschiedlichen Runnern durchführen.
+"/>
+
+
+<meta name="twitter:creator" content="@bee42solutions"/>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8QDFPL');</script>
+
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="64x64" href="/images/apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/css/main-6506650b.css" />
+</head>
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8QDFPL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navigation">
+	<div class="inner-content">
+		<a class="branding" href="/"><img src="/images/logo.svg" alt=""></a>
+   		 <ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+		<button class="burger" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	</div>
+</nav>
+
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+ 		<ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+	</div>
+	<div class="off-canvas-content" data-off-canvas-content>
+
+		<header>
+			<div class="inner-content">
+				<h1>
+					Rethink IT
+					<span></span>
+				</h1>
+			</div>
+		</header>
+
+		<main>
+ <section class="page-content">
+       <section class="content-box trainings-single">
+         
+
+	<section class="small-12 medium-6 large-6 columns">
+               <img src="/images/1024x512/containergitlabcilab.png"> 
+                	</section>
+              	<section class="small-12 medium-6 large-6 columns">
+               <p><strong>Speaker:</strong> Niclas Mietz</p>
+               <p>Das nächste zweitägige Training:</p>
+                
+                <p><strong>6. - 7. November 2017 in Berlin</strong></p>
+                
+
+                
+                <a href="" class="more page open-form" data-form="docker-camp">Jetzt anmelden & einen Platz sichern!</a>
+
+                
+
+                
+                
+  	</section>
+               	<section class="small-12 medium-12 large-12 columns">
+               <p><h3 id="location">Location</h3>
+
+<p>Courtyard by Marriott Berlin Mitte
+<br>Axel-Springer-Straße 55
+<br>10117</p>
+
+<p><a href="/locations/Berlin/">Weitere Informationen zur Location</a></p>
+
+<ul>
+<li>Bis zum <strong>12. Oktober</strong> anmelden und mit den Frühbucherpreisen sparen!</li>
+<li>Kollegenrabatt ab 3 Kollegen aus einem Unternehmen!</li>
+</ul>
+
+<div class="clearfix"></div>
+
+<p><strong>Dieses Training ist auch als Inhouse-Training buchbar. Sende uns hierfür einfach eine E-Mail an <a href"mailto:info@bee42.com">info@bee42.com</a>!</strong></p>
+
+<blockquote>
+<p><a href="mailto:info@bee42.com" class="Jetzt als Inhouse-Training anfragen!">Jetzt Inhouse-Training anfragen!</a></p>
+</blockquote>
+
+<div class="clearfix"></div>
+
+<p>Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf die Open-Source-Technologie Moby der Firma Docker Inc.. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Docker verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Container Lab wollen wir praktisch den Bau von Container Images mit GitLab/CI erleichtern und lernen gute Images zu fertigen.</p>
+
+<p>Schön und gut, aber ein Entwickler oder Operator muss seine Automatisierung erst einmal bauen, einrichten und testen, damit Container Images erstellt werden können. Bei diesem Training lernst Du, GitLab/CI einzurichten, um Deine Projekte zu pflegen und die Pipeline für Continuous Integration und Delivery für Container-Images zu automatisieren.</p>
+
+<p>Wir beginnen mit einem Überblick von vorhandenen Techniken. In einer folgenden Einführung werden erste Schritte für den Einsatz von GitLab/CI erprobt. Du lernst dabei die wichtigsten Komponenten, Anleitungen und Konzepte kennen. Mit einem detaillierten Beispiel lernst Du, wie Du einen Microservice implementierst, den Build mit verschiedenen Gitlab Runner automatisierst, mit Docker installierst und diesen mit anderen Diensten in einer Umgebung testen und integrieren kannst. Wir zeigen Dir dein Image in deiner Umgebung einzusetzen. Darüber hinaus stellen wir vor, wie Du Builds auslösen kannst, gute Container-Images erstellen und Images an Deine Container-Registry versenden kannst.</p>
+
+<h2 id="tag-1-gitlab-ci-grundlagen">Tag 1: GITLAB / CI GRUNDLAGEN</h2>
+
+<h3 id="einführung">Einführung</h3>
+
+<ul>
+<li>Was ist GitLab und was es nicht ist?</li>
+<li>Installation der GitLab Services</li>
+<li>Überblick über die GitLab Architektur</li>
+<li>Detaillierte Übersicht über die GitLab Komponenten</li>
+<li>Richte verschiedene GitLab-Komponenten ein</li>
+<li>GitLab UI-Übersicht</li>
+<li>Check-in von einem einfachen Projekt</li>
+</ul>
+
+<h3 id="workflow-mit-ihren-images-von-gitlab">WORKFLOW MIT IHREN IMAGES VON GITLAB</h3>
+
+<ul>
+<li>Wir bauen und testen Container-Images</li>
+<li>Schiebe erfolgreich gebaute Images in die Container-Registry</li>
+<li>Erstelle eigene Images auf der Basis eines Dockerfiles</li>
+<li>Erstelle eigene GitLab Runner mit verschiedenen Typen
+
+<ul>
+<li>Shell</li>
+<li>Docker</li>
+<li>Docker in Docker</li>
+<li>Docker Machine</li>
+<li>SSH</li>
+</ul></li>
+</ul>
+
+<h3 id="achte-auf-deine-gitlab-infrastruktur">ACHTE AUF DEINE GITLAB-INFRASTRUKTUR</h3>
+
+<ul>
+<li>Protokollierung und Überwachung der GitLab Infrastruktur</li>
+<li>Sichern und Wiederherstellen von Images aus GitLab</li>
+</ul>
+
+<h2 id="tag-2-erstellen-eines-geprüftes-microservice-mit-container-und-gitlab">Tag 2: ERSTELLEN EINES GEPRÜFTES MICROSERVICE MIT CONTAINER UND GITLAB</h2>
+
+<h3 id="microservices">Microservices</h3>
+
+<ul>
+<li>Erstelle eine einfache Spring-Boot Application</li>
+<li>Erstelle eine Toolchain für Anwendungsentwicklung (Java und Maven)</li>
+<li>Anwendungsentwicklung mit Container</li>
+<li>Aufteilen von Microservices</li>
+<li>Microservice in einem Produktivsystem mit einem Delivery Concept einbinden</li>
+</ul>
+
+<h3 id="gitlab-ci-tipps-und-tricks">GITLAB / CI TIPPS UND TRICKS</h3>
+
+<ul>
+<li>Pflege GitLab mit wenigen Schritten</li>
+<li>Aktualisieren der Installation</li>
+<li>Sichern und Wiederherstellen der Installation</li>
+<li>Skaliere Deine CI-CD-Pipeline mit verschiedenen Konzepten</li>
+</ul>
+
+<p>+++</p>
+
+<h2 id="voraussetzungen-und-leistungen">Voraussetzungen und Leistungen</h2>
+
+<h3 id="zielgruppe-wer-sollte-teilnehmen">Zielgruppe/ Wer sollte teilnehmen?</h3>
+
+<ul>
+<li>DevOps Entwickler</li>
+<li>Administratoren</li>
+<li>Software- und Systemarchitekten</li>
+</ul>
+
+<h3 id="voraussetzungen-an-die-teilnehmer">Voraussetzungen an die Teilnehmer</h3>
+
+<ul>
+<li>Grundkenntnisse Docker</li>
+<li>Grundkenntnisse Git</li>
+<li>Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)</li>
+<li>Grundkenntnisse Java, Maven und SpringBoot</li>
+<li>Grundkenntnisse Microservices</li>
+</ul>
+
+<h3 id="leistungen">Leistungen</h3>
+
+<ul>
+<li>Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)</li>
+<li>Schulungsmaterialien</li>
+<li>Internet</li>
+<li>Nicht enthalten: Hotel Übernachtungen, Anreise</li>
+<li>Rechner werden nicht gestellt</li>
+<li>Bringe Dein eigenes Notebook mit
+
+<ul>
+<li>Administrator Rechte erforderlich</li>
+<li>Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)</li>
+<li>SSH oder Putty installiert</li>
+<li>Google Chrome, Java IDE und git installiert</li>
+</ul></li>
+</ul>
+
+<p>+++</p>
+
+<h3 id="6-7-november-2017-in-berlin">6. - 7. November 2017 in Berlin</h3>
+
+<blockquote>
+<p><a href="https://container-gitlab-ci-lab-berlin.eventbrite.de" class="Jetzt zum Training in Berlin anmelden!">Jetzt anmelden &amp; Deinen Platz in Berlin sichern!</a></p>
+</blockquote>
+
+<p><strong>Dieses Training ist auch als Inhouse-Training buchbar. Sende uns hierfür einfach eine E-Mail an <a href"mailto:info@bee42.com">info@bee42.com</a>!</strong></p>
+
+<blockquote>
+<p><a href="mailto:info@bee42.com" class="Jetzt als Inhouse-Training anfragen!">Jetzt Inhouse-Training anfragen!</a></p>
+</blockquote>
+
+<div class="clearfix"></div>
+</p>
+                
+                  <div class="clearfix"></div>
+                  <a href="#" class="more page open-form" data-form="docker-camp">Jetzt anmelden & einen Platz sichern!</a>
+
+               
+               	</section>
+
+
+      </section>
+
+
+</section>
+
+
+
+<section class="form-container">
+<form >
+<button class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+	<div class="small-6 medium-6 large-6 columns">
+    <h2>Book your event</h2>
+		<p class="price">Prices <span>plus VAT</span></p>
+	</div>
+  <div class="small-6 medium-6 large-6 columns">
+   <img class="logo" src="/images/logo.svg" alt="">
+  </div>
+  <div class="small-12 medium-12 large-12 columns">
+    <h3>6. - 7. November 2017 in Berlin</h3>
+  </div>
+  <div class="small-12 medium-12 large-12 columns">
+    <div style="width:100%; text-align:left;"><iframe src="//eventbrite.de/tickets-external?eid=36682268653&ref=etckt" frameborder="0" height="425" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.de/">Von Eventbrite</a></div></div>
+  </div>
+</form>
+</section>
+
+<div class="overlay"></div>
+<footer>
+    <section class="content-box">
+        <a class="branding" href="/"><img src="/images/logo.svg" alt=""> </a>
+        <p>&copy;2017</p>
+        <a class="imprint" href="/de/allgemeine-geschaeftsbedingungen">AGB</a>
+        <a class="imprint" href="/de/datenschutz">Datenschutz</a>
+        <a class="imprint" href="/de/impressum">Impressum</a>
+    </section>
+</footer>
+
+			</main>
+
+		</div>
+	</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/edd03c05ea.js"></script>
+	<script src="/js/foundation.min.js"></script>
+	<script src="/js/jquery.validate.min.js"></script>
+	<script src="/js/slick.js"></script>
+	<script src="/js/main.js"></script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58949839-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+  
+
+
+
+<script type="text/javascript">
+  
+  var google_conversion_id = 863637645;
+  var google_conversion_label = "ndkbCLKoxm4QjaHomwM";
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+   
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/863637645/?value=1.00&amp;currency_code=EUR&amp;label=ndkbCLKoxm4QjaHomwM&amp;guid=ON&amp;script=0" />
+  </div>
+</noscript>
+
+
+	</body>
+<html>
