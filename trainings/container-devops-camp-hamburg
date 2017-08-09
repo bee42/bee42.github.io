@@ -1,0 +1,161 @@
++++
+weight=9
+date = "2017-01-10T20:28:31+01:00"
+title = "Container DevOps Camp"
+speaker = "Peter Rossbach"
+draft = false
+category = "Training"
+images = ["/images/1024x512/containerdevopscamp.png"]
+description = "Docker Grundlagen innerhalb von drei Tagen in nachvollziehbaren Schritten: Das Container DevOps Camp vermittelt die **Docker-Grundlagen** mit dem Fokus auf **Deployment, Orchestrierung und Infrastruktur**."
+keywords = ["docker devops camp", "docker training", "docker course", "docker seminar", "docker container course", "docker event", "docker basics", "docker workshop", "docker devops training", "docker kurs", "Container DevOps Camp", "Container Camp", "Container Camp Berlin", "Container Camp München", "Container Camp bee42", "Container Camp Deutschland", "Container DevOps Camp bee42", "Docker Grundlagen Workshop", "Docker Workshop", "Docker Kurs", "Docker Seminar", "Docker Veranstaltung", "Docker Basics Workshop"]
+training_next_description="Das nächste Drei-Tages-Training:"
+training_current_date=25. - 27. Oktober 2017 in Hamburg<br>"
+training_next_date=""
+eventbrite_current_training='<div style="width:100%; text-align:left;"><iframe src="//eventbrite.de/tickets-external?eid=36682210479&ref=etckt" frameborder="0" height="425" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.de/">Von Eventbrite</a></div></div>'
+displayed_on_front = true
+remarktetinglabel="t7ExCK-oxm4QjaHomwM"
+training_month="Oktober"
+training_days="25. - 27."
+training_duration="3-Tages-Training"
+venue="Hamburg"
++++
+
+
+### Location
+
+betahaus Hamburg
+<br>Eifflerstraße 43
+<br>22769 Hamburg
+
+<a href="/locations/Hamburg/">Weitere Informationen zur Location</a>
+
+* Bis zum **21. September** anmelden und mit den Frühbucherpreisen sparen!
+* Kollegenrabatt ab 3 Kollegen aus einem Unternehmen!
+
+**Dieses Training kannst Du auch als Inhouse-Training buchen. Sende uns hierfür einfach eine E-Mail an <a href"mailto:info@bee42.com">info@bee42.com</a>!**
+
+> <a href="mailto:info@bee42.com" class="Jetzt als Inhouse-Training anfragen!">Jetzt Inhouse-Training anfragen!</a>
+
+<div class="clearfix"></div>
+
++++
+
+Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf Container-Technologie. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Insbesonders die Docker Software verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Container DevOps Camp wollen wir diesem Versprechen praktisch nachgehen.
+
+Wir starten mit einem Überblick und stellen die ersten Schritte beim Einsatz von Docker CE Software vor. Du lernst die wichtigsten Befehle, Anweisungen und Konzepte praktisch kennen. Anhand eines ausführlichen Beispiels lernst Du, wie ein Microservice implementiert, mit Docker CE Software installiert und in einer Umgebung mit anderen Services integriert wird. Außerdem diskutieren wir das aktuelle Docker-Ökosystem und klären über Chancen und Risiken auf.
+
+Dieses Camp vermittelt Dir die Container-Grundlagen in nachvollziehbaren Schritten und versetzt Dich in die Lage anschließend selbst zu entscheiden, ob und wie Container in Deinem Unternehmens- und IT-Kontext sinnvoll einsetzt.
+
+## Tag 1: Container Grundlagen
+
+### Installation
+
+* Docker CE Software Grundlagen und Installation
+* Container Technologie Grundlagen
+* Kernel- vs Classical- Virtualisierung
+* Container Architektur am Beispoiel Docker CE
+* Einsatzgebiete und mehr
+* Starten der Container-Umgebung
+* Images, Container und Registry
+
+
+### Einfache Nutzung
+
+* Container starten, verwalten und inspizieren
+* Docker CLI Kommando-Übersicht
+* Baue Deine Images auf der Basis eines Dockerfiles
+* “Build, Ship and Run”-Zyklus
+* Docker CE Tooling
+* Volume Management
+* Network Management
+* Logging und Metriken
+* Backup/Restore
+* Container Typen
+
+## Tag 2: Microservices mit Container
+
+### Microservices
+
+
+* "Think infrastructure first"
+* Erstellen einer einfachen Spring Boot App
+* Bau einer Toolchain mittels Java and Maven
+* Container für Java-Entwickler
+* Erstellung Database Container
+* Empower your Development
+
+
+### Infrastruktur
+
+* Aufbau der Microservice Infrastruktur
+* Erzeuge eine einfache Build Pipeline
+* Nutzen von Service Discovery
+* Erzeuge Multi Host Networks
+* Container Tipps & Tricks
+
+
+## Tag 3: Skalierung des Service mit Docker Swarming
+
+### Container Orchsterierung
+
+* Skalieren Sie Ihren Services mit Docker CE Swarming
+* Update, Fehlererkennung und Redeployment von Services
+* Mesh Network und Service Discovery
+* Einrichten eines Ingress Loadbalancer (traefik, haproxy od. nginx)
+* Setup Logging und Monitoring Systeme
+  * ELK-Stack
+  * Prometheus und Grafana
+* Debuging Deines Containers
+
+### Go to production
+
+* Container für die Produktion
+* Erzeuge High-Quality Images
+* Container Security Grundlagen
+* Plugins
+* Tipps und Tricks
+* Review Best Practices
+* Docker CE auf ARM (Raspberry PI)
+
++++
+
+## Voraussetzungen und Leistungen
+
+### Zielgruppe/ Wer sollte teilnehmen?
+
+* DevOps Entwickler
+* Administratoren
+* Software- und Systemarchitekten
+
+
+### Voraussetzungen an die Teilnehmer
+
+* Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)
+* Grundkenntnisse Build- und Package-Systeme
+* Grundkenntnisse Microservices
+
+### Leistungen
+
+* Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)
+* Schulungsmaterialien
+* Internet
+* Nicht enthalten: Hotel Übernachtungen, Anreise
+* Rechner werden nicht gestellt
+* Bringe Deinen eigenes Notebook mit
+  * Administrator Rechte erforderlich
+  * Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)
+  * SSH oder Putty installiert
+  * Google Chrome, Java IDE und git installiert
+
+
++++
+
+### 25. - 27. Oktober 2017 in Hamburg
+
+> <a href="container-devops-camp-hamburg" class="Jetzt zum Training in Hamburg anmelden!">Bis zum 21. September anmelden & mit den Frühbucherpreisen sparen!</a>
+
+**Dieses Training kannst Du auch als Inhouse-Training buchen. Sende uns hierfür einfach eine E-Mail an <a href"mailto:info@bee42.com">info@bee42.com</a>!**
+
+> <a href="mailto:info@bee42.com" class="Jetzt als Inhouse-Training anfragen!">Jetzt Inhouse-Training anfragen!</a>
+
+<div class="clearfix"></div>
