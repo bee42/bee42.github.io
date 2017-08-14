@@ -130,11 +130,6 @@
   </url>
   
   <url>
-    <loc>https://bee42.com/de/trainings/container-gitlab-ci-lab-essen/</loc>
-    <lastmod>2017-01-10T22:16:30+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bee42.com/de/trainings/container-on-windows-lab/</loc>
     <lastmod>2017-01-10T22:27:32+01:00</lastmod>
   </url>
@@ -142,6 +137,11 @@
   <url>
     <loc>https://bee42.com/de/trainings/container-devops-camp-muenchen/</loc>
     <lastmod>2017-01-10T20:28:31+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/de/trainings/container-gitlab-ci-lab-essen/</loc>
+    <lastmod>2017-01-10T22:16:30+01:00</lastmod>
   </url>
   
   <url>
