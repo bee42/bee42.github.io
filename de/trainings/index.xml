@@ -357,7 +357,7 @@
 
 &lt;p&gt;Courtyard by Marriott Berlin Mitte
 &lt;br&gt;Axel-Springer-Straße 55
-&lt;br&gt;10117&lt;/p&gt;
+&lt;br&gt;10117 Berlin&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://bee42.com/de/locations/Berlin/&#34;&gt;Further information about the venue.&lt;/a&gt;&lt;/p&gt;
 
@@ -378,7 +378,7 @@ Kubernetes promises also a quick start and a flexible configuration, but it’s 
 
 &lt;h2 id=&#34;day-1-kubernetes-basics&#34;&gt;Day 1: Kubernetes Basics&lt;/h2&gt;
 
-&lt;p&gt;###INSTALLATION&lt;/p&gt;
+&lt;h3 id=&#34;installation&#34;&gt;INSTALLATION&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Kubernetes Installation&lt;/li&gt;
@@ -412,7 +412,7 @@ Kubernetes promises also a quick start and a flexible configuration, but it’s 
 
 &lt;h2 id=&#34;tag-2-create-microservices-with-kubernetes&#34;&gt;Tag 2: Create Microservices with Kubernetes&lt;/h2&gt;
 
-&lt;p&gt;###MICROSERVICES&lt;/p&gt;
+&lt;h3 id=&#34;microservices&#34;&gt;MICROSERVICES&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Think Infrastructure first&lt;/li&gt;
@@ -445,7 +445,9 @@ Kubernetes promises also a quick start and a flexible configuration, but it’s 
 &lt;li&gt;Learn even more Kubernetes Tricks&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h2 id=&#34;more-information&#34;&gt;MORE INFORMATION&lt;/h2&gt;
 
 &lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate?&lt;/h3&gt;
 
