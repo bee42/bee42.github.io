@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<title>Kubernetes DevOps Lab</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Dieses Lab vermittelt die **Grundlagen** für das betreiben von **Kubernetes**: Mit konkreten Beispielen lernen Sie schnell, wie eine Microservice-Anwendung bereitgestellt, mit Kubernetes gesteuert und mit anderen Diensten in verschiedenen Umgebungen integriert wird.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<meta property="article:tag" content="kubernetes devops lab">
+<meta property="article:tag" content="kubernetes training">
+<meta property="article:tag" content="kubernetes course">
+<meta property="article:tag" content="kubernetes seminar">
+<meta property="article:tag" content="kubernetes container course">
+<meta property="article:tag" content="kubernetes basics">
+<meta property="article:tag" content="docker event">
+<meta property="article:tag" content="docker basics">
+<meta property="article:tag" content="kubernetes workshop, kubernetes devops training">
+<meta property="article:tag" content="k8s">
+<meta property="article:tag" content="Kubernetes Grundlagen">
+<meta property="article:tag" content="Kubernetes Schulung">
+<meta property="article:tag" content="Kubernetes Weiterbildung">
+<meta property="article:tag" content="Kubernetes Kurs">
+<meta property="article:tag" content="Kubernetes lernen">
+<meta property="article:tag" content="Kubernetes">
+
+
+
+<meta property="og:title" content="Kubernetes DevOps Lab" />
+<meta property="og:description"content="Dieses Lab vermittelt die **Grundlagen** für das betreiben von **Kubernetes**: Mit konkreten Beispielen lernen Sie schnell, wie eine Microservice-Anwendung bereitgestellt, mit Kubernetes gesteuert und mit anderen Diensten in verschiedenen Umgebungen integriert wird." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bee42.com/de/trainings/kubernetes-devops-lab-en/" />
+
+
+	<meta property="og:image" content="/images/1024x512/kubernetesdevopslab.png" />
+ 
+
+
+
+<meta property="og:updated_time" content="0001-01-01 00:00:00 &#43;0000 UTC"/>
+
+
+<meta property="og:site_name" content="DevOps Trainings &amp; Consulting - bee42 solutions gmbh" />
+
+
+
+
+
+
+
+
+<meta property="article:publisher" content="https://www.facebook.com/" />
+
+<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+
+<meta property="article:modified_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+<meta property="article:section" content="trainings" />
+
+
+
+
+
+
+<meta itemprop="name" content="Kubernetes DevOps Lab">
+<meta itemprop="description" content="Dieses Lab vermittelt die **Grundlagen** für das betreiben von **Kubernetes**: Mit konkreten Beispielen lernen Sie schnell, wie eine Microservice-Anwendung bereitgestellt, mit Kubernetes gesteuert und mit anderen Diensten in verschiedenen Umgebungen integriert wird.">
+
+
+
+	<meta itemprop="image" content="/images/1024x512/kubernetesdevopslab.png">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta itemprop="wordCount" content="553">
+
+
+
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image:src" content="/images/1024x512/kubernetesdevopslab.png"/>
+
+
+
+<meta name="twitter:title" content="Kubernetes DevOps Lab"/>
+<meta name="twitter:description" content="Dieses Lab vermittelt die **Grundlagen** für das betreiben von **Kubernetes**: Mit konkreten Beispielen lernen Sie schnell, wie eine Microservice-Anwendung bereitgestellt, mit Kubernetes gesteuert und mit anderen Diensten in verschiedenen Umgebungen integriert wird."/>
+
+
+<meta name="twitter:creator" content="@bee42solutions"/>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8QDFPL');</script>
+
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="64x64" href="/images/apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/css/main-6506650b.css" />
+</head>
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8QDFPL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navigation">
+	<div class="inner-content">
+		<a class="branding" href="/"><img src="/images/logo.svg" alt=""></a>
+   		 <ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+		<button class="burger" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	</div>
+</nav>
+
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+ 		<ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+	</div>
+	<div class="off-canvas-content" data-off-canvas-content>
+
+		<header>
+			<div class="inner-content">
+				<h1>
+					Rethink IT
+					<span></span>
+				</h1>
+			</div>
+		</header>
+
+		<main>
+ <section class="page-content">
+       <section class="content-box trainings-single">
+         
+
+	<section class="small-12 medium-6 large-6 columns">
+               <img src="/images/1024x512/kubernetesdevopslab.png"> 
+                	</section>
+              	<section class="small-12 medium-6 large-6 columns">
+               <p><strong>Speaker:</strong> Peter Rossbach</p>
+               <p>Next training:</p>
+                
+                <p><strong>September 19 - 20, 2017 in Berlin</strong></p>
+                
+
+                
+                <a href="" class="more page open-form" data-form="docker-camp">Jetzt anmelden & einen Platz sichern!</a>
+
+                
+
+                
+                
+  	</section>
+               	<section class="small-12 medium-12 large-12 columns">
+               <p><h3 id="venue">Venue</h3>
+
+<p>Courtyard by Marriott Berlin Mitte
+<br>Axel-Springer-Straße 55
+<br>10117</p>
+
+<p><a href="/de/locations/Berlin/">Further information about the venue.</a></p>
+
+<p><strong>You can also book this training as an inhouse training. Please send us an e-mail to <a href"mailto:info@bee42.com">info@bee42.com</a>!</strong></p>
+
+<blockquote>
+<p><a href="mailto:info@bee42.com" class="Send now an inhouse request!">Send now an inhouse request!</a></p>
+</blockquote>
+
+<div class="clearfix"></div>
+
+<p>Whether small startups or large companies - many companies rely on the OpenSource Kubernetes and Container technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? With Docker containers you can create reproducible software images easily and accelerate your development.
+Kubernetes promises also a quick start and a flexible configuration, but it’s designed to scale in the large. You can operate in the cloud and on premises for production. In this Kubernetes lab we want to pursue this promise.</p>
+
+<p>We start with an overview and introduce the first steps with the basic use of Kubernetes. You will get to know the most important commands, instructions and concepts to run pods and services. With using some concrete examples, you will learn quickly how to implement a microservice application, deploy it with Kubernetes, and integrate it with other services in different environments; from development to staging and production. We also discuss the current Kubernetes ecosystem and clarify opportunities and risks.</p>
+
+<p>This lab provides you with the Kubernetes basics in comprehensible steps and puts you in the position to decide subsequently whether and how Kubernetes is useful in your business and IT context.</p>
+
+<h2 id="day-1-kubernetes-basics">Day 1: Kubernetes Basics</h2>
+
+<p>###INSTALLATION
+    •   Kubernetes Installation
+    •   Kubernetes Basics
+    •   Container Technology Basics
+    •   Kernel vs. Classical Virtualization
+    •   Architecture of Kubernetes
+    •   Kubernetes Control Plane
+    •   Add first Use Cases to your Kubernetes cluster
+    •   Setup your Kubernetes cluster environment with kubeadm
+    •   Images, Pods, Services and more
+    •   Basic CLI Handling and UI’s</p>
+
+<p>###SIMPLE USAGE
+    •   Let’s play Pods and Services: run, stop, update, maintain
+    •   kubectl and kubeadm CLI commands overview
+    •   Build your own Images with Dockerfiles
+    •   Build, Ship and Run Cycle
+    •   Docker Tooling
+    •   Service Discovery
+    •   Scheduling (node, resources, label and constraints)
+    •   Deployment
+    •   Failure Detection
+    •   Volume Management (Pet sets)
+    •   Network Management
+    •   Jobs</p>
+
+<h2 id="tag-2-create-microservices-with-kubernetes">Tag 2: Create Microservices with Kubernetes</h2>
+
+<p>###MICROSERVICES
+    •   Think Infrastructure first
+    •   Create a simple Spring Boot App
+    •   Build your Toolchain: Java and Maven
+    •   Kubernetes for Java Developers
+    •   Create Database Containers
+    •   Empower your Development
+    •   Ingress Loadbalancer
+    •   Deploy Stacks with Helm</p>
+
+<p>###GO TO PRODUCTION
+    •   Prepare Kubernetes for Production
+    •   Setup a Cloud Cluster
+    •   Update, Failure Detection and Redeployment
+    •   Logging and Metrics
+    •   Backup/Restore
+    •   Build your own Microservice Infrastructure
+    •   Build high-quality Images
+    •   Create a simple Build Pipeline
+    •   Use Service Discovery for your Secrets
+    •   Create Namespaces
+    •   Networking mit flannel und etcd,
+    •   Security and Access Control (RBAC)
+    •   Debug your Pods
+    •   Learn even more Kubernetes Tricks</p>
+
+<hr />
+
+<h3 id="who-should-participate">Who should participate?</h3>
+
+<ul>
+<li>DevOps Developer</li>
+<li>Administrators</li>
+<li>Software- and System Architects</li>
+</ul>
+
+<h3 id="required-knowledge">Required knowledge</h3>
+
+<ul>
+<li>Basic knowledge Docker CE Software oder Container Technologie</li>
+<li>Basic knowledge Linux (Debian, bash, vim, curl, network, Virtualisierung)</li>
+<li>Basic knowledge Java</li>
+<li>Basic knowledgeGit</li>
+<li>Basic knowledge Networks (SDN)</li>
+<li>Basic knowledge Microservices</li>
+</ul>
+
+<h3 id="19-20-september-2017-berlin">19. - 20. September 2017, Berlin</h3>
+
+<p>Courtyard by Marriott Berlin Mitte <br>(Axel-Springer-Straße 55, 10117 Berlin)</p>
+
+<p><strong>You can also book this training as an inhouse training. Please send us an e-mail to <a href"mailto:info@bee42.com">info@bee42.com</a>!</strong></p>
+
+<blockquote>
+<p><a href="mailto:info@bee42.com" class="Send now an inhouse request!">Send now an inhouse request!</a></p>
+</blockquote>
+
+<div class="clearfix"></div>
+</p>
+                
+                  <div class="clearfix"></div>
+                  <a href="#" class="more page open-form" data-form="docker-camp">Jetzt anmelden & einen Platz sichern!</a>
+
+               
+               	</section>
+
+
+      </section>
+
+
+</section>
+
+
+
+<section class="form-container">
+<form >
+<button class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+	<div class="small-6 medium-6 large-6 columns">
+    <h2>Book your event</h2>
+		<p class="price">Prices <span>plus VAT</span></p>
+	</div>
+  <div class="small-6 medium-6 large-6 columns">
+   <img class="logo" src="/images/logo.svg" alt="">
+  </div>
+  <div class="small-12 medium-12 large-12 columns">
+    <h3>September 19 - 20, 2017 in Berlin</h3>
+  </div>
+  <div class="small-12 medium-12 large-12 columns">
+    <div style="width:100%; text-align:left;"><iframe src="//eventbrite.de/tickets-external?eid=34743980180&ref=etckt" frameborder="0" height="425" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.de/">Von Eventbrite</a></div></div>
+  </div>
+</form>
+</section>
+
+<div class="overlay"></div>
+<footer>
+    <section class="content-box">
+        <a class="branding" href="/"><img src="/images/logo.svg" alt=""> </a>
+        <p>&copy;2017</p>
+        <a class="imprint" href="/de/allgemeine-geschaeftsbedingungen">AGB</a>
+        <a class="imprint" href="/de/datenschutz">Datenschutz</a>
+        <a class="imprint" href="/de/impressum">Impressum</a>
+    </section>
+</footer>
+
+			</main>
+
+		</div>
+	</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/edd03c05ea.js"></script>
+	<script src="/js/foundation.min.js"></script>
+	<script src="/js/jquery.validate.min.js"></script>
+	<script src="/js/slick.js"></script>
+	<script src="/js/main.js"></script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58949839-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+  
+
+
+
+<script type="text/javascript">
+  
+  var google_conversion_id = 863637645;
+  var google_conversion_label = "mqywCMmr83EQjaHomwM";
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+   
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/863637645/?value=1.00&amp;currency_code=EUR&amp;label=mqywCMmr83EQjaHomwM&amp;guid=ON&amp;script=0" />
+  </div>
+</noscript>
+
+
+	</body>
+<html>

@@ -346,6 +346,128 @@
     </item>
     
     <item>
+      <title>Kubernetes DevOps Lab</title>
+      <link>https://bee42.com/de/trainings/kubernetes-devops-lab-en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/de/trainings/kubernetes-devops-lab-en/</guid>
+      <description>
+
+&lt;h3 id=&#34;venue&#34;&gt;Venue&lt;/h3&gt;
+
+&lt;p&gt;Courtyard by Marriott Berlin Mitte
+&lt;br&gt;Axel-Springer-Straße 55
+&lt;br&gt;10117&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://bee42.com/de/locations/Berlin/&#34;&gt;Further information about the venue.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You can also book this training as an inhouse training. Please send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send now an inhouse request!&#34;&gt;Send now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Whether small startups or large companies - many companies rely on the OpenSource Kubernetes and Container technology. But what about the kind of containers that roll up the virtualization market and change the software development in the long term? With Docker containers you can create reproducible software images easily and accelerate your development.
+Kubernetes promises also a quick start and a flexible configuration, but it’s designed to scale in the large. You can operate in the cloud and on premises for production. In this Kubernetes lab we want to pursue this promise.&lt;/p&gt;
+
+&lt;p&gt;We start with an overview and introduce the first steps with the basic use of Kubernetes. You will get to know the most important commands, instructions and concepts to run pods and services. With using some concrete examples, you will learn quickly how to implement a microservice application, deploy it with Kubernetes, and integrate it with other services in different environments; from development to staging and production. We also discuss the current Kubernetes ecosystem and clarify opportunities and risks.&lt;/p&gt;
+
+&lt;p&gt;This lab provides you with the Kubernetes basics in comprehensible steps and puts you in the position to decide subsequently whether and how Kubernetes is useful in your business and IT context.&lt;/p&gt;
+
+&lt;h2 id=&#34;day-1-kubernetes-basics&#34;&gt;Day 1: Kubernetes Basics&lt;/h2&gt;
+
+&lt;p&gt;###INSTALLATION
+    •   Kubernetes Installation
+    •   Kubernetes Basics
+    •   Container Technology Basics
+    •   Kernel vs. Classical Virtualization
+    •   Architecture of Kubernetes
+    •   Kubernetes Control Plane
+    •   Add first Use Cases to your Kubernetes cluster
+    •   Setup your Kubernetes cluster environment with kubeadm
+    •   Images, Pods, Services and more
+    •   Basic CLI Handling and UI’s&lt;/p&gt;
+
+&lt;p&gt;###SIMPLE USAGE
+    •   Let’s play Pods and Services: run, stop, update, maintain
+    •   kubectl and kubeadm CLI commands overview
+    •   Build your own Images with Dockerfiles
+    •   Build, Ship and Run Cycle
+    •   Docker Tooling
+    •   Service Discovery
+    •   Scheduling (node, resources, label and constraints)
+    •   Deployment
+    •   Failure Detection
+    •   Volume Management (Pet sets)
+    •   Network Management
+    •   Jobs&lt;/p&gt;
+
+&lt;h2 id=&#34;tag-2-create-microservices-with-kubernetes&#34;&gt;Tag 2: Create Microservices with Kubernetes&lt;/h2&gt;
+
+&lt;p&gt;###MICROSERVICES
+    •   Think Infrastructure first
+    •   Create a simple Spring Boot App
+    •   Build your Toolchain: Java and Maven
+    •   Kubernetes for Java Developers
+    •   Create Database Containers
+    •   Empower your Development
+    •   Ingress Loadbalancer
+    •   Deploy Stacks with Helm&lt;/p&gt;
+
+&lt;p&gt;###GO TO PRODUCTION
+    •   Prepare Kubernetes for Production
+    •   Setup a Cloud Cluster
+    •   Update, Failure Detection and Redeployment
+    •   Logging and Metrics
+    •   Backup/Restore
+    •   Build your own Microservice Infrastructure
+    •   Build high-quality Images
+    •   Create a simple Build Pipeline
+    •   Use Service Discovery for your Secrets
+    •   Create Namespaces
+    •   Networking mit flannel und etcd,
+    •   Security and Access Control (RBAC)
+    •   Debug your Pods
+    •   Learn even more Kubernetes Tricks&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;who-should-participate&#34;&gt;Who should participate?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps Developer&lt;/li&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Software- and System Architects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;required-knowledge&#34;&gt;Required knowledge&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic knowledge Docker CE Software oder Container Technologie&lt;/li&gt;
+&lt;li&gt;Basic knowledge Linux (Debian, bash, vim, curl, network, Virtualisierung)&lt;/li&gt;
+&lt;li&gt;Basic knowledge Java&lt;/li&gt;
+&lt;li&gt;Basic knowledgeGit&lt;/li&gt;
+&lt;li&gt;Basic knowledge Networks (SDN)&lt;/li&gt;
+&lt;li&gt;Basic knowledge Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;19-20-september-2017-berlin&#34;&gt;19. - 20. September 2017, Berlin&lt;/h3&gt;
+
+&lt;p&gt;Courtyard by Marriott Berlin Mitte &lt;br&gt;(Axel-Springer-Straße 55, 10117 Berlin)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You can also book this training as an inhouse training. Please send us an e-mail to &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Send now an inhouse request!&#34;&gt;Send now an inhouse request!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Container GitLab/CI Lab</title>
       <link>https://bee42.com/de/trainings/container-gitlab-ci-lab-13-bis-14-September-2017-Hamburg/</link>
       <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
