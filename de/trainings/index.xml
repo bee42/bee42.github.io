@@ -378,59 +378,72 @@ Kubernetes promises also a quick start and a flexible configuration, but it’s 
 
 &lt;h2 id=&#34;day-1-kubernetes-basics&#34;&gt;Day 1: Kubernetes Basics&lt;/h2&gt;
 
-&lt;p&gt;###INSTALLATION
-    •   Kubernetes Installation
-    •   Kubernetes Basics
-    •   Container Technology Basics
-    •   Kernel vs. Classical Virtualization
-    •   Architecture of Kubernetes
-    •   Kubernetes Control Plane
-    •   Add first Use Cases to your Kubernetes cluster
-    •   Setup your Kubernetes cluster environment with kubeadm
-    •   Images, Pods, Services and more
-    •   Basic CLI Handling and UI’s&lt;/p&gt;
+&lt;p&gt;###INSTALLATION&lt;/p&gt;
 
-&lt;p&gt;###SIMPLE USAGE
-    •   Let’s play Pods and Services: run, stop, update, maintain
-    •   kubectl and kubeadm CLI commands overview
-    •   Build your own Images with Dockerfiles
-    •   Build, Ship and Run Cycle
-    •   Docker Tooling
-    •   Service Discovery
-    •   Scheduling (node, resources, label and constraints)
-    •   Deployment
-    •   Failure Detection
-    •   Volume Management (Pet sets)
-    •   Network Management
-    •   Jobs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kubernetes Installation&lt;/li&gt;
+&lt;li&gt;Kubernetes Basics&lt;/li&gt;
+&lt;li&gt;Container Technology Basics&lt;/li&gt;
+&lt;li&gt;Kernel vs. Classical Virtualization&lt;/li&gt;
+&lt;li&gt;Architecture of Kubernetes&lt;/li&gt;
+&lt;li&gt;Kubernetes Control Plane&lt;/li&gt;
+&lt;li&gt;Add first Use Cases to your Kubernetes cluster&lt;/li&gt;
+&lt;li&gt;Setup your Kubernetes cluster environment with kubeadm&lt;/li&gt;
+&lt;li&gt;Images, Pods, Services and more&lt;/li&gt;
+&lt;li&gt;Basic CLI Handling and UI’s&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;###SIMPLE USAGE&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Let’s play Pods and Services: run, stop, update, maintain&lt;/li&gt;
+&lt;li&gt;kubectl and kubeadm CLI commands overview&lt;/li&gt;
+&lt;li&gt;Build your own Images with Dockerfiles&lt;/li&gt;
+&lt;li&gt;Build, Ship and Run Cycle&lt;/li&gt;
+&lt;li&gt;Docker Tooling&lt;/li&gt;
+&lt;li&gt;Service Discovery&lt;/li&gt;
+&lt;li&gt;Scheduling (node, resources, label and constraints)&lt;/li&gt;
+&lt;li&gt;Deployment&lt;/li&gt;
+&lt;li&gt;Failure Detection&lt;/li&gt;
+&lt;li&gt;Volume Management (Pet sets)&lt;/li&gt;
+&lt;li&gt;Network Management&lt;/li&gt;
+&lt;li&gt;Jobs&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;tag-2-create-microservices-with-kubernetes&#34;&gt;Tag 2: Create Microservices with Kubernetes&lt;/h2&gt;
 
-&lt;p&gt;###MICROSERVICES
-    •   Think Infrastructure first
-    •   Create a simple Spring Boot App
-    •   Build your Toolchain: Java and Maven
-    •   Kubernetes for Java Developers
-    •   Create Database Containers
-    •   Empower your Development
-    •   Ingress Loadbalancer
-    •   Deploy Stacks with Helm&lt;/p&gt;
+&lt;p&gt;###MICROSERVICES&lt;/p&gt;
 
-&lt;p&gt;###GO TO PRODUCTION
-    •   Prepare Kubernetes for Production
-    •   Setup a Cloud Cluster
-    •   Update, Failure Detection and Redeployment
-    •   Logging and Metrics
-    •   Backup/Restore
-    •   Build your own Microservice Infrastructure
-    •   Build high-quality Images
-    •   Create a simple Build Pipeline
-    •   Use Service Discovery for your Secrets
-    •   Create Namespaces
-    •   Networking mit flannel und etcd,
-    •   Security and Access Control (RBAC)
-    •   Debug your Pods
-    •   Learn even more Kubernetes Tricks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Think Infrastructure first&lt;/li&gt;
+&lt;li&gt;Create a simple Spring Boot App&lt;/li&gt;
+&lt;li&gt;Build your Toolchain: Java and Maven&lt;/li&gt;
+&lt;li&gt;Kubernetes for Java Developers&lt;/li&gt;
+&lt;li&gt;Create Database Containers&lt;/li&gt;
+&lt;li&gt;Empower your Development&lt;/li&gt;
+&lt;li&gt;Ingress Loadbalancer&lt;/li&gt;
+&lt;li&gt;Deploy Stacks with Helm
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;###GO TO PRODUCTION&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Prepare Kubernetes for Production&lt;/li&gt;
+&lt;li&gt;Setup a Cloud Cluster&lt;/li&gt;
+&lt;li&gt;Update, Failure Detection and Redeployment&lt;/li&gt;
+&lt;li&gt;Logging and Metrics&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;li&gt;Build your own Microservice Infrastructure&lt;/li&gt;
+&lt;li&gt;Build high-quality Images&lt;/li&gt;
+&lt;li&gt;Create a simple Build Pipeline&lt;/li&gt;
+&lt;li&gt;Use Service Discovery for your Secrets&lt;/li&gt;
+&lt;li&gt;Create Namespaces&lt;/li&gt;
+&lt;li&gt;Networking mit flannel und etcd,&lt;/li&gt;
+&lt;li&gt;Security and Access Control (RBAC)&lt;/li&gt;
+&lt;li&gt;Debug your Pods&lt;/li&gt;
+&lt;li&gt;Learn even more Kubernetes Tricks&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
