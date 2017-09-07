@@ -2134,8 +2134,8 @@ Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google ü
 &lt;h4 id=&#34;do-it-youself&#34;&gt;Do it youself&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;How to: &lt;a href=&#34;https://www.xml-sitemaps.com&gt;&lt;a href=&#34;https://www.xml-sitemaps.com&#34;&gt;https://www.xml-sitemaps.com&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;How to: &lt;a href=&#34;https://wiki.selfhtml.org/wiki/Grundlagen/Robots.txt&#34;&gt;https://wiki.selfhtml.org/wiki/Grundlagen/Robots.txt&lt;/a&gt;
+&lt;li&gt;How to XML Sitemap : &lt;a href=&#34;https://www.xml-sitemaps.com&gt;&lt;a href=&#34;https://www.xml-sitemaps.com&#34;&gt;https://www.xml-sitemaps.com&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;How to robot.txt: &lt;a href=&#34;https://wiki.selfhtml.org/wiki/Grundlagen/Robots.txt&#34;&gt;https://wiki.selfhtml.org/wiki/Grundlagen/Robots.txt&lt;/a&gt;
 
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2165,6 +2165,28 @@ Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google ü
 &lt;ul&gt;
 &lt;li&gt;Eine nette Infografik von t3n: &lt;a href=&#34;http://t3n.de/news/seo-freundliche-urls-715620/seo-url-struktur_infografik/&#34;&gt;http://t3n.de/news/seo-freundliche-urls-715620/seo-url-struktur_infografik/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h1 id=&#34;bilder&#34;&gt;Bilder&lt;/h1&gt;
+
+&lt;p&gt;Kaum zu glauben, aber auch Bilder können SEO-technisch optmiert werden! Denn Google führt nicht nur ein Suchnetzwerk mit Suchergebnissen in Form von Websiten, sondern auch die Google Bildersuche. Selbsterklärend, dass SEO-oprimierte Bilder auch zum guten Ranking einer Website beitragen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Was gilt zu beachten?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bildgröße:&lt;/strong&gt; Die Dateien dürfen natürlich nicht all zu groß sein, da dies die Ladegeschwindigkeit der Website beeinträchtigt.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dateinnamen:&lt;/strong&gt; dieser wird zwar nirgends angezeigt (nur im Hintergrund). Doch auch hier ist es wichtig, dass die Datei einen kurzen, aber ausdrucksstarke Dateinamen hat.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Title Attribut:&lt;/strong&gt; Diesen Title liest Google aus und berücksichtigt ihn dann bezüglich der Keywordanalyse und für das anschließende Ranking&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alt-Attribute:&lt;/strong&gt; Der hier hinterlegte Text/beschreibung erscheint auf der Website, falls das Bild nicht geladen werden kann. Diesen sollte man somit mit Bedacht wählen, denn das ist dann das, was der Kunde anstelle des Bilder sehen wird.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BILD beispiel Vorlage
+BILD Beispiel ausgefüllt&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;websitenarchitektur-struktur&#34;&gt;Websitenarchitektur/ - struktur&lt;/h1&gt;
 
 &lt;p&gt;-&lt;/p&gt;
 
