@@ -2017,8 +2017,9 @@ in Rot: die Description&lt;/p&gt;
 
 &lt;p&gt;Fügt zusätzlich zu den Title-, Description-Tag und der URL noch ein Meta-Image für jede Subsite hinzu. Diese hinterlegten Bilder werden beispielsweise beim Posten in Social Media Netzwerken angezeigt (Vorschaubilder etc.).&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Nice to know&lt;/strong&gt;
-Früher gab es den Keyword-Tag, bei dem man alle Keywords hinterlegen konnte, auf die man die Website gerne optimieren möchte. Sie haben es Google auch einfacher gemacht die Website zuzuordnen. Mittlerweile ist dieser Meta-Tag inaktiv und spielt auch nicht mehr ins Ranking ein.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nice to know&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Früher gab es den Keyword-Tag, bei dem man alle Keywords hinterlegen konnte, auf die man die Website gerne optimieren möchte. Sie haben es Google auch einfacher gemacht die Website zuzuordnen. Mittlerweile ist dieser Meta-Tag inaktiv und spielt auch nicht mehr ins Ranking ein.&lt;/p&gt;
 
 &lt;h3 id=&#34;check-it-yourself&#34;&gt;Check it yourself&lt;/h3&gt;
 
@@ -2037,7 +2038,49 @@ Es zeigt euch zudem auch an, wenn diese zu lang sind.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://iframely.com/debug&#34; class=&#34;SEO Metadaten Check&#34;&gt;&lt;a href=&#34;http://iframely.com/debug&#34;&gt;http://iframely.com/debug&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;##schema.org&lt;/p&gt;
+&lt;h2 id=&#34;schema-org&#34;&gt;schema.org&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Was ist schema.org?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;schema.org ist ein Zusatz-MarkUp das zusätzlich zum normalen Snippet weitere Informationen aufnehmen kann. Diese werden dann neben den allgemeinen Metadaten (Title, Description, URL) dann auch im Suchergebnis/SERP angezeigt.
+Durch diese strukturierten Daten in schema.rorg können die Inhalte und Infos besser von Google indexiert werden. Das MarkUp dient somit lediglich den Google Bots und Crawlern und es findet keine Anzeige innerhalb des Layouts in und auf einer Website statt.&lt;/p&gt;
+
+&lt;h3 id=&#34;welche-zusätzlichen-inhalte-und-ergänzungen-lassen-sich-in-den-serps-damit-darstellen&#34;&gt;Welche zusätzlichen Inhalte und Ergänzungen lassen sich in den SERPs damit darstellen?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Personen/Autoren&lt;/li&gt;
+&lt;li&gt;Orte/Geschäfte/Restaurants&lt;/li&gt;
+&lt;li&gt;Events/veranstaltungen&lt;/li&gt;
+&lt;li&gt;Rezepte&lt;/li&gt;
+&lt;li&gt;Bewertungen&lt;/li&gt;
+&lt;li&gt;und und und&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BILDER Beispiel SERPs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;warum-sollte-man-schema-org-nutzen&#34;&gt;Warum sollte man schema.org nutzen?&lt;/h3&gt;
+
+&lt;p&gt;Wie ihr selbst seht erweitert sich das SERP innerhalb der Listung aller Suchergebnisse und DAS ist ein Wettbewerbsvorteil gegenüber den Anderen! &lt;strong&gt;Denn MEHR Informationen bieten MEHR Relevanz und sichern somit MEHR Aufmerksamkeit des potenziellen Kunden.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;schema.org bringt noch einen weiteren Vorteil mit sich: Dieses Mark-Up wurde in Zusammenarbeit durch Google, Bing, Yahoo und ab 2011 auch unter Mitwirken von Yanex entwickelt. Da sich hierbei all diese Suchmaschinen mit schema.org auf einen einheitlichen Standard geeinigt haben, kann man durch die Verwendung von schema.org gleich auf mehrere Suchmaschinen optimieren. Das spart nicht nur Zeit sondern auch Nerven!&lt;/p&gt;
+
+&lt;p&gt;schema.org ist somit ein Rankingfaktor von hoher Relevanz: Google und alle anderen Suchmaschinen lieben sauberen Quellcode. Die Auszeichnung der Daten nach schema helfen und geben den Suchmaschinen Hinlfestellung hinsichtlich der Strukturierung des Codes.&lt;/p&gt;
+
+&lt;h3 id=&#34;do-it-yourself&#34;&gt;Do it yourself:&lt;/h3&gt;
+
+&lt;p&gt;Hier findet ihr alle Informationen für die Einbindung der Daten innerhalb der Website sowie alle möglichen Properties:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://schema.org/&#34;&gt;https://schema.org/&lt;/a&gt;
+&lt;a href=&#34;https://schema.org/docs/gs.html&#34;&gt;https://schema.org/docs/gs.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;check-it-yourself-1&#34;&gt;Check it yourself:&lt;/h3&gt;
+
+&lt;p&gt;Und hier könnt ihr checken, ob die hinterlegten Daten auch für Google lesbar sind oder ob noch Fehler enthalten sind:
+&lt;a href=&#34;https://search.google.com/structured-data/testing-tool&#34;&gt;https://search.google.com/structured-data/testing-tool&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
