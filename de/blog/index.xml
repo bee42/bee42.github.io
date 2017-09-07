@@ -1967,7 +1967,7 @@ Ich persönlich finde diese Darstellung etwas missverständlich und irreführend
 &lt;li&gt;Seitenarchitektur/ -struktur&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;snippets-metadaten&#34;&gt;Snippets &amp;amp; Metadaten&lt;/h2&gt;
+&lt;h1 id=&#34;snippets-metadaten&#34;&gt;Snippets &amp;amp; Metadaten&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Was ist ein Snippet?&lt;/strong&gt;
 Ein Snippet ist ein von Google automatisch generierter Ausschnitt der Website und bezieht sich meist auf die hinterlegten Metadaten. Diese Snippets zeigen primär Title, Description und die URL, die für die Website hinterlegt wurde.
@@ -1993,7 +1993,7 @@ in Rot: die Description&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;checkliste-title-tag&#34;&gt;Checkliste Title-Tag&lt;/h3&gt;
+&lt;h4 id=&#34;checkliste-title-tag&#34;&gt;Checkliste Title-Tag&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;nicht mehr als 55 Zeichen (ohne Leerzeichen) inkl. wichtiger Keywords&lt;br /&gt;&lt;/li&gt;
@@ -2003,7 +2003,7 @@ in Rot: die Description&lt;/p&gt;
 &lt;li&gt;und für jede Seite individuell und einzigartig gewählt&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;checkliste-description-tag&#34;&gt;Checkliste Description-Tag&lt;/h3&gt;
+&lt;h4 id=&#34;checkliste-description-tag&#34;&gt;Checkliste Description-Tag&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ebenfalls für jede Seite individuell, nicht doppeln&lt;/li&gt;
@@ -2013,7 +2013,7 @@ in Rot: die Description&lt;/p&gt;
 &lt;li&gt;knapp 150 Zeichen&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;trick-17&#34;&gt;Trick 17&lt;/h3&gt;
+&lt;h4 id=&#34;trick-17&#34;&gt;Trick 17&lt;/h4&gt;
 
 &lt;p&gt;Fügt zusätzlich zu den Title-, Description-Tag und der URL noch ein Meta-Image für jede Subsite hinzu. Diese hinterlegten Bilder werden beispielsweise beim Posten in Social Media Netzwerken angezeigt (Vorschaubilder etc.).&lt;/p&gt;
 
@@ -2021,7 +2021,7 @@ in Rot: die Description&lt;/p&gt;
 
 &lt;p&gt;Früher gab es den Keyword-Tag, bei dem man alle Keywords hinterlegen konnte, auf die man die Website gerne optimieren möchte. Sie haben es Google auch einfacher gemacht die Website zuzuordnen. Mittlerweile ist dieser Meta-Tag inaktiv und spielt auch nicht mehr ins Ranking ein.&lt;/p&gt;
 
-&lt;h3 id=&#34;check-it-yourself&#34;&gt;Check it yourself&lt;/h3&gt;
+&lt;h4 id=&#34;check-it-yourself&#34;&gt;Check it yourself&lt;/h4&gt;
 
 &lt;p&gt;Ob ihr bereits solche Metadaten bei euch auf der Website hinterlegt habt oder wie diese aussehen, könnt ihr in diversen Tools überprüfen.&lt;/p&gt;
 
@@ -2038,14 +2038,14 @@ Es zeigt euch zudem auch an, wenn diese zu lang sind.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://iframely.com/debug&#34; class=&#34;SEO Metadaten Check&#34;&gt;&lt;a href=&#34;http://iframely.com/debug&#34;&gt;http://iframely.com/debug&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;schema-org&#34;&gt;schema.org&lt;/h2&gt;
+&lt;h1 id=&#34;schema-org&#34;&gt;schema.org&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Was ist schema.org?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;schema.org ist ein Zusatz-MarkUp das zusätzlich zum normalen Snippet weitere Informationen aufnehmen kann. Diese werden dann neben den allgemeinen Metadaten (Title, Description, URL) dann auch im Suchergebnis/SERP angezeigt.
 Durch diese strukturierten Daten in schema.rorg können die Inhalte und Infos besser von Google indexiert werden. Das MarkUp dient somit lediglich den Google Bots und Crawlern und es findet keine Anzeige innerhalb des Layouts in und auf einer Website statt.&lt;/p&gt;
 
-&lt;h3 id=&#34;welche-zusätzlichen-inhalte-und-ergänzungen-lassen-sich-in-den-serps-damit-darstellen&#34;&gt;Welche zusätzlichen Inhalte und Ergänzungen lassen sich in den SERPs damit darstellen?&lt;/h3&gt;
+&lt;h4 id=&#34;welche-zusätzlichen-inhalte-und-ergänzungen-lassen-sich-in-den-serps-damit-darstellen&#34;&gt;Welche zusätzlichen Inhalte und Ergänzungen lassen sich in den SERPs damit darstellen?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Personen/Autoren&lt;/li&gt;
@@ -2062,7 +2062,7 @@ Durch diese strukturierten Daten in schema.rorg können die Inhalte und Infos be
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;warum-sollte-man-schema-org-nutzen&#34;&gt;Warum sollte man schema.org nutzen?&lt;/h3&gt;
+&lt;h4 id=&#34;warum-sollte-man-schema-org-nutzen&#34;&gt;Warum sollte man schema.org nutzen?&lt;/h4&gt;
 
 &lt;p&gt;Wie ihr selbst seht erweitert sich das SERP innerhalb der Listung aller Suchergebnisse und DAS ist ein Wettbewerbsvorteil gegenüber den Anderen! &lt;strong&gt;Denn MEHR Informationen bieten MEHR Relevanz und sichern somit MEHR Aufmerksamkeit des potenziellen Kunden.&lt;/strong&gt;&lt;/p&gt;
 
@@ -2070,17 +2070,79 @@ Durch diese strukturierten Daten in schema.rorg können die Inhalte und Infos be
 
 &lt;p&gt;schema.org ist somit ein Rankingfaktor von hoher Relevanz: Google und alle anderen Suchmaschinen lieben sauberen Quellcode. Die Auszeichnung der Daten nach schema helfen und geben den Suchmaschinen Hinlfestellung hinsichtlich der Strukturierung des Codes.&lt;/p&gt;
 
-&lt;h3 id=&#34;do-it-yourself&#34;&gt;Do it yourself:&lt;/h3&gt;
+&lt;h4 id=&#34;do-it-yourself&#34;&gt;Do it yourself:&lt;/h4&gt;
 
 &lt;p&gt;Hier findet ihr alle Informationen für die Einbindung der Daten innerhalb der Website sowie alle möglichen Properties:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://schema.org/&#34;&gt;https://schema.org/&lt;/a&gt;
 &lt;a href=&#34;https://schema.org/docs/gs.html&#34;&gt;https://schema.org/docs/gs.html&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;check-it-yourself-1&#34;&gt;Check it yourself:&lt;/h3&gt;
+&lt;h4 id=&#34;check-it-yourself-1&#34;&gt;Check it yourself:&lt;/h4&gt;
 
 &lt;p&gt;Und hier könnt ihr checken, ob die hinterlegten Daten auch für Google lesbar sind oder ob noch Fehler enthalten sind:
 &lt;a href=&#34;https://search.google.com/structured-data/testing-tool&#34;&gt;https://search.google.com/structured-data/testing-tool&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;sitemaps&#34;&gt;Sitemaps&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Was sind Sitemaps?&lt;/strong&gt;
+Sitemaps sind Auflistungen und die Darstellung aller Seiten und Unterseiten in Form einer Datei. Für die Suchmaschinen und für das Ranking unabkömmlich!&lt;/p&gt;
+
+&lt;h4 id=&#34;welche-formen-von-sitemaps-gibt-es&#34;&gt;Welche Formen von Sitemaps gibt es?&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BILD Sitemaps&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;HTML Sitemap&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;die HTML Sitemap dient dem Nutzer zur Orientierung auf der Website.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;XML-Sitemap&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Uns interessiert für das technische SEO jedoch die zweite Sitemap: die XML Sitemap. Diese gilt und dient den Google Bots und Crawlern und wird nicht auf der Website dargestellt.
+Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google über das Verständnis zur Strukturierung der Website.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BILD Beispiel XMP Sitemap&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;robot.txt Datei&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Auch diese Art von Datei dient wieder Google selbst und dem sauberen Crawl- und Indexierungs-Management. Mit den Befehlen und Funktionen &amp;ldquo;follow&amp;rdquo; und &amp;ldquo;nofollow&amp;rdquo; kann eigenständig entschieden werden, welche Unterseitesn und Dateien von Google gescannt und indexiert werden dürfen und welche eben nicht.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Die Fragen die man sich hierbei stellen muss sind vorallem:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Brauche ich die jeweilige Seite für den User?&lt;/li&gt;
+&lt;li&gt;Muss die Seite in den Index?&lt;/li&gt;
+&lt;li&gt;Und muss diese Seite ranken?&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BILD robot-txt&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;do-it-youself&#34;&gt;Do it youself&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How to: &lt;a href=&#34;https://www.xml-sitemaps.com&gt;&lt;a href=&#34;https://www.xml-sitemaps.com&#34;&gt;https://www.xml-sitemaps.com&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;How to: &lt;a href=&#34;https://wiki.selfhtml.org/wiki/Grundlagen/Robots.txt&#34;&gt;https://wiki.selfhtml.org/wiki/Grundlagen/Robots.txt&lt;/a&gt;
+
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+
+&lt;p&gt;Elena Hüls&lt;/p&gt;
+
+&lt;p&gt;elena.huels@bee42.com&lt;/p&gt;
 </description>
     </item>
     
