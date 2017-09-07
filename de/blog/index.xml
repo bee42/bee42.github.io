@@ -1950,7 +1950,7 @@ Ich persönlich finde diese Darstellung etwas missverständlich und irreführend
       <guid>https://bee42.com/de/blog/Website-Suchmaschinenoptimierung-SEO-fuer-Google-Teil-2/</guid>
       <description>
 
-&lt;p&gt;Im &lt;a href=&#34;https://bee42.com/de/blog/Website-Suchmaschinenoptimierung-SEO-fuer-Google&#34; class=&#34;vorangegangenen Blogpost&#34;&gt;vorangegangenen Blogpost&lt;/a&gt; haben wir die Begrifflichkeiten und die großen Teilbereiche der Suchmaschinenoptimierung (SEO) kennengelernt. In diesem zweiten Teil der Serie zeige ich Euch, welche wichtigen Themen und Bereiche des technischen SEOs unbedingt umgesetzt werden müssen, um eine Basis für das gute Ranking innerhalb von Google zu bilden.&lt;/p&gt;
+&lt;p&gt;Im &lt;a href=&#34;https://bee42.com/de/blog/Website-Suchmaschinenoptimierung-SEO-fuer-Google&#34; class=&#34;vorangegangenen Blogpost&#34;&gt;vorangegangenen Blogpost&lt;/a&gt; haben wir die Begrifflichkeiten und die großen Teilbereiche der Suchmaschinenoptimierung (SEO) kennengelernt. In diesem zweiten Teil der Serie zeige ich Euch, welche wichtigen Themen und Bereiche des technischen SEO unbedingt umgesetzt werden müssen, um eine Basis für das gute Ranking innerhalb von Google zu bilden.&lt;/p&gt;
 
 &lt;h1 id=&#34;technisches-seo-und-kriterien&#34;&gt;Technisches SEO und Kriterien&lt;/h1&gt;
 
@@ -1969,15 +1969,18 @@ Ich persönlich finde diese Darstellung etwas missverständlich und irreführend
 
 &lt;h1 id=&#34;snippets-metadaten&#34;&gt;Snippets &amp;amp; Metadaten&lt;/h1&gt;
 
-&lt;p&gt;&lt;strong&gt;Was ist ein Snippet?&lt;/strong&gt;
-Ein Snippet ist ein von Google automatisch generierter Ausschnitt der Website und bezieht sich meist auf die hinterlegten Metadaten. Diese Snippets zeigen primär Title, Description und die URL, die für die Website hinterlegt wurde.
-Im Fachjargon werden diese meist auch SERPS (Search Engine Result Pages) genannt und es handelt sich hierbei lediglich um die bei Suchanfragen angezeigten Ergebnisse innerhalb von Google oder anderen Suchmaschinen. Kurz: Google zieht die Informationen, die dort als Suchergebniss angezeigt und gelistet werden einfach von der Website. D.h. für uns: Wir können selbst entscheiden welche Informationen bei Ausspielung eines Ergebnisses angezeigt werden sollen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Was ist ein Snippet?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ein Snippet ist ein von Google automatisch generierter Ausschnitt der Website und bezieht sich meist auf die hinterlegten Metadaten. Diese Snippets zeigen primär Title, Description und die URL, die für die Website hinterlegt wurden.
+Im Fachjargon werden diese meist auch SERPS (Search Engine Result Pages) genannt und es handelt sich hierbei lediglich um die bei Suchanfragen angezeigten Ergebnisse innerhalb von Google oder anderen Suchmaschinen. Kurz: Google zieht die Informationen, die dort als Suchergebniss angezeigt und gelistet werden einfach von der Website. D.h. für uns: Wir können selbst entscheiden, welche Informationen bei Ausspielung eines Ergebnisses angezeigt werden sollen.&lt;/p&gt;
 
 &lt;p&gt;Hier das SERP das erscheint, wenn man nach der bee42 sucht:&lt;/p&gt;
 
-&lt;p&gt;in Grün: der Title
-in Orange: die URL
-in Rot: die Description&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in Grün: der Title&lt;/li&gt;
+&lt;li&gt;in Orange: die URL&lt;/li&gt;
+&lt;li&gt;in Rot: die Description&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;blockquote&gt;
 &lt;blockquote&gt;
@@ -2009,7 +2012,7 @@ in Rot: die Description&lt;/p&gt;
 &lt;li&gt;ebenfalls für jede Seite individuell, nicht doppeln&lt;/li&gt;
 &lt;li&gt;Thema der Website prägnant zusammengefasst (oder die Message)&lt;/li&gt;
 &lt;li&gt;sollte das Keyword enthalten&lt;/li&gt;
-&lt;li&gt;Call to Action die den User animiert drauf zu klicken&lt;/li&gt;
+&lt;li&gt;Call to Action, die den User animiert drauf zu klicken&lt;/li&gt;
 &lt;li&gt;knapp 150 Zeichen&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2019,20 +2022,19 @@ in Rot: die Description&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Nice to know&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Früher gab es den Keyword-Tag, bei dem man alle Keywords hinterlegen konnte, auf die man die Website gerne optimieren möchte. Sie haben es Google auch einfacher gemacht die Website zuzuordnen. Mittlerweile ist dieser Meta-Tag inaktiv und spielt auch nicht mehr ins Ranking ein.&lt;/p&gt;
+&lt;p&gt;Früher gab es den Keyword-Tag, bei dem man alle Keywords hinterlegen konnte, auf die man die Website gerne optimieren möchte. Sie haben es Google auch einfacher gemacht die Website zuzuordnen. Mittlerweile ist dieser Meta-Tag inaktiv und für das Ranking irrelevant.&lt;/p&gt;
 
 &lt;h4 id=&#34;check-it-yourself&#34;&gt;Check it yourself&lt;/h4&gt;
 
 &lt;p&gt;Ob ihr bereits solche Metadaten bei euch auf der Website hinterlegt habt oder wie diese aussehen, könnt ihr in diversen Tools überprüfen.&lt;/p&gt;
 
-&lt;p&gt;Mit dem Sistrix SERP Generator könnt ihr direkt schauen, wir eure Wunschtitel und eure Wunschdescription als Suchergebnis aussehen würden.
-Es zeigt euch zudem auch an, wenn diese zu lang sind.&lt;/p&gt;
+&lt;p&gt;Mit dem Sistrix SERP Generator könnt ihr beispielsweise direkt schauen, wir eure Wunschtitel und eure Wunschdescription als Suchergebnis aussehen würden. Es zeigt euch zudem auch an, wenn diese zu lang sind.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.sistrix.de/serp-snippet-generator/&#34; class=&#34;https://www.sistrix.de/serp-snippet-generator/&#34;&gt;&lt;a href=&#34;https://www.sistrix.de/serp-snippet-generator/&#34;&gt;https://www.sistrix.de/serp-snippet-generator/&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Wenn ihr schon Daten hinterlegt habt, könnt ihr via iframely.com checken, wir diese ausgespielt werden&lt;/p&gt;
+&lt;p&gt;Wenn ihr schon Daten hinterlegt habt, könnt ihr via iframely.com checken, wir diese ausgespielt werden:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://iframely.com/debug&#34; class=&#34;SEO Metadaten Check&#34;&gt;&lt;a href=&#34;http://iframely.com/debug&#34;&gt;http://iframely.com/debug&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
@@ -2042,8 +2044,8 @@ Es zeigt euch zudem auch an, wenn diese zu lang sind.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Was ist schema.org?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;schema.org ist ein Zusatz-MarkUp das zusätzlich zum normalen Snippet weitere Informationen aufnehmen kann. Diese werden dann neben den allgemeinen Metadaten (Title, Description, URL) dann auch im Suchergebnis/SERP angezeigt.
-Durch diese strukturierten Daten in schema.rorg können die Inhalte und Infos besser von Google indexiert werden. Das MarkUp dient somit lediglich den Google Bots und Crawlern und es findet keine Anzeige innerhalb des Layouts in und auf einer Website statt.&lt;/p&gt;
+&lt;p&gt;schema.org ist ein Zusatz-MarkUp, das zusätzlich zum normalen Snippet weitere Informationen aufnehmen kann. Diese werden dann neben den allgemeinen Metadaten (Title, Description, URL) auch im Suchergebnis/SERP angezeigt.
+Durch diese strukturierten Daten in schema.org können die Inhalte und Informationen besser von Google indexiert werden. Das MarkUp dient somit lediglich den Google Bots und Crawlern und es findet keine Anzeige innerhalb des Layouts in und auf einer Website statt.&lt;/p&gt;
 
 &lt;h4 id=&#34;welche-zusätzlichen-inhalte-und-ergänzungen-lassen-sich-in-den-serps-damit-darstellen&#34;&gt;Welche zusätzlichen Inhalte und Ergänzungen lassen sich in den SERPs damit darstellen?&lt;/h4&gt;
 
@@ -2064,11 +2066,11 @@ Durch diese strukturierten Daten in schema.rorg können die Inhalte und Infos be
 
 &lt;h4 id=&#34;warum-sollte-man-schema-org-nutzen&#34;&gt;Warum sollte man schema.org nutzen?&lt;/h4&gt;
 
-&lt;p&gt;Wie ihr selbst seht erweitert sich das SERP innerhalb der Listung aller Suchergebnisse und DAS ist ein Wettbewerbsvorteil gegenüber den Anderen! &lt;strong&gt;Denn MEHR Informationen bieten MEHR Relevanz und sichern somit MEHR Aufmerksamkeit des potenziellen Kunden.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Wie ihr selbst seht, erweitert sich das SERP innerhalb der Listung aller Suchergebnisse und DAS ist ein Wettbewerbsvorteil gegenüber den Anderen! &lt;strong&gt;Denn MEHR Informationen bieten MEHR Relevanz und sichern somit MEHR Aufmerksamkeit des potenziellen Kunden.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;schema.org bringt noch einen weiteren Vorteil mit sich: Dieses Mark-Up wurde in Zusammenarbeit durch Google, Bing, Yahoo und ab 2011 auch unter Mitwirken von Yanex entwickelt. Da sich hierbei all diese Suchmaschinen mit schema.org auf einen einheitlichen Standard geeinigt haben, kann man durch die Verwendung von schema.org gleich auf mehrere Suchmaschinen optimieren. Das spart nicht nur Zeit sondern auch Nerven!&lt;/p&gt;
 
-&lt;p&gt;schema.org ist somit ein Rankingfaktor von hoher Relevanz: Google und alle anderen Suchmaschinen lieben sauberen Quellcode. Die Auszeichnung der Daten nach schema helfen und geben den Suchmaschinen Hinlfestellung hinsichtlich der Strukturierung des Codes.&lt;/p&gt;
+&lt;p&gt;schema.org ist somit ein Rankingfaktor von hoher Relevanz: Google und alle anderen Suchmaschinen lieben sauberen Quellcode. Die Auszeichnung der Daten nach schema helfen und geben den Suchmaschinen Hilfestellung hinsichtlich der Strukturierung des Codes.&lt;/p&gt;
 
 &lt;h4 id=&#34;do-it-yourself&#34;&gt;Do it yourself:&lt;/h4&gt;
 
@@ -2138,7 +2140,7 @@ Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google ü
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;p&gt;-&lt;/p&gt;
 
 &lt;p&gt;Elena Hüls&lt;/p&gt;
 
