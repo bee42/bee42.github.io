@@ -2094,11 +2094,7 @@ Sitemaps sind Auflistungen und die Darstellung aller Seiten und Unterseiten in F
 &lt;p&gt;Uns interessiert für das technische SEO jedoch die zweite Sitemap: die XML Sitemap. Diese gilt und dient den Google Bots und Crawlern und wird nicht auf der Website dargestellt.
 Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google über das Verständnis zur Strukturierung der Website.&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;BILD Beispiel XMP Sitemap&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google-Teil-2/xml-sitemap-bee42.png&#34; alt=&#34;Beispiel XML Sitemap bee42&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;robot.txt Datei&lt;/strong&gt;&lt;/p&gt;
 
@@ -2113,11 +2109,7 @@ Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google ü
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;BILD robot-txt&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google-Teil-2/robot-txt-datei-beispiel.png&#34; alt=&#34;How to robot.txt Datei&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;do-it-youself&#34;&gt;Do it youself&lt;/h4&gt;
 
@@ -2142,11 +2134,7 @@ Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google ü
 &lt;li&gt;je mehr Wörter eine URL hat, desto weniger Gewichtung hat jedes einzelne Wort/Keyword&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;BILD URL&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google-Teil-2/beispiel-url.png&#34; alt=&#34;Beispiel URL Gestaltung&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;do-it-yourself-1&#34;&gt;Do it yourself&lt;/h4&gt;
 
@@ -2167,12 +2155,8 @@ Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google ü
 &lt;li&gt;&lt;strong&gt;Alt-Attribute:&lt;/strong&gt; Der hier hinterlegte Text/beschreibung erscheint auf der Website, falls das Bild nicht geladen werden kann. Diesen sollte man somit mit Bedacht wählen, denn das ist dann das, was der Kunde anstelle des Bilder sehen wird.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;BILD beispiel Vorlage
-BILD Beispiel ausgefüllt&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google-Teil-2/beispiel-bild-metadaten-vorlage.png&#34; alt=&#34;Vorlage Metadaten für Bilder&#34; /&gt;
+&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google-Teil-2/beispiel-umsetzung-bilder-metadaten.png&#34; alt=&#34;Umsetzung Metadaten für Bilder&#34; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;websitenarchitektur-struktur&#34;&gt;Websitenarchitektur/ - struktur&lt;/h1&gt;
 
