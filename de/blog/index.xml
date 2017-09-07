@@ -1942,5 +1942,107 @@ Ich persönlich finde diese Darstellung etwas missverständlich und irreführend
 </description>
     </item>
     
+    <item>
+      <title>Wie mache ich meine Website in Suchmaschinen sichtbar? Teil 2</title>
+      <link>https://bee42.com/de/blog/Website-Suchmaschinenoptimierung-SEO-fuer-Google-Teil-2/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/de/blog/Website-Suchmaschinenoptimierung-SEO-fuer-Google-Teil-2/</guid>
+      <description>
+
+&lt;p&gt;Im vorangegangenem Blogpost haben wir die Begrifflichkeiten und die großen Teilbereiche der Suchmaschinenoptimierung (SEO) kennengelernt. In diesem zweiten Teil der Serie zeige ich Euch, welche wichtigen Themen und Bereiche des technischen SEOs unbedingt umgesetzt werden müssen, um eine Basis für das gute Ranking innerhalb von Google zu bilden.&lt;/p&gt;
+
+&lt;h2 id=&#34;technisches-seo&#34;&gt;Technisches SEO&lt;/h2&gt;
+
+&lt;p&gt;Der Begriff „Technisches SEO“ fasst alle Onpage-Optimierungen zusammen, die sich NICHT auf den Content beziehen. Das technisches SEO nach wie vor immer noch eines der wichtigsten Werkzeuge, damit Google die Websites unter anderem sauber crawlen und interpretieren kann. Somit bildet ein gutes technisches SetUp die Basis für eine gute Sichtbarkeit und ein gutes Ranking und sollte IMMER gepflegt werden.&lt;/p&gt;
+
+&lt;h2 id=&#34;technische-seo-kriterien&#34;&gt;Technische SEO-Kriterien&lt;/h2&gt;
+
+&lt;p&gt;Kriterien und Qualitätsmerkmale die das technische SetUp der Website betreffen:
+* Snippets und Metadaten
+* schema.org
+* Sitemaps
+* Urls
+* Bilder
+* Seitenarchitektur/ -struktur&lt;/p&gt;
+
+&lt;h3 id=&#34;snippets-metadaten&#34;&gt;Snippets &amp;amp; Metadaten&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Was ist ein Snippet?&lt;/strong&gt;
+Ein Snippet ist ein von Google automatisch generierter Ausschnitt der Website und bezieht sich meist auf die hinterlegten Metadaten. Diese Snippets zeigen primär Title, Description und die URL, die für die Website hinterlegt wurde.
+Im Fachjargon werden diese meist auch SERPS (Search Engine Result Pages) genannt und es handelt sich hierbei lediglich um die bei Suchanfragen angezeigten Ergebnisse innerhalb von Google oder anderen Suchmaschinen. Kurz: Google zieht die Informationen, die dort als Suchergebniss angezeigt und gelistet werden einfach von der Website. D.h. für uns: Wir können selbst entscheiden welche Informationen bei Ausspielung eines Ergebnisses angezeigt werden sollen.&lt;/p&gt;
+
+&lt;p&gt;Hier das SERP das erscheint, wenn man nach der bee42 sucht:&lt;/p&gt;
+
+&lt;p&gt;in Grün: der Title
+in Orange: die URL
+in Rot: die Description&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BILD VON Bee SERP&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Diese Informationen könnt ihr ganz einfach und für jede Website und Unterseiten individuell erstellen. Es ist somit ganz allein euch überlassen, wie euer SERP aussieht und was der Kunde zu sehen bekommt. Doch aufgepasst: Hinterlegt ihr diese Daten nicht in eurer Website, so zieht sich Google eigenständig Informationen raus (und das Ergebnis ist dann vielleicht nicht so erfreulich).&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BILD von Code Snippet&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;checkliste-title-tag&#34;&gt;Checkliste Title-Tag&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;nicht mehr als 55 Zeichen (ohne Leerzeichen) inkl. wichtiger Keywords&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;im besten Falle steht das Keyword direkt am Anfang (Title bei denen das Keyword am Ende steht, ranken schlechter)&lt;/li&gt;
+&lt;li&gt;prägnante Überschrift, nicht ausschweifend&lt;/li&gt;
+&lt;li&gt;informativ und hochwertig&lt;/li&gt;
+&lt;li&gt;und für jede Seite individuell und einzigartig gewählt&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;checkliste-description-tag&#34;&gt;Checkliste Description-Tag&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ebenfalls für jede Seite individuell, nicht doppeln&lt;/li&gt;
+&lt;li&gt;Thema der Website prägnant zusammengefasst (oder die Message)&lt;/li&gt;
+&lt;li&gt;sollte das Keyword enthalten&lt;/li&gt;
+&lt;li&gt;Call to Action die den User animiert drauf zu klicken&lt;/li&gt;
+&lt;li&gt;knapp 150 Zeichen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;trick-17&#34;&gt;Trick 17&lt;/h4&gt;
+
+&lt;p&gt;Fügt zusätzlich zu den Title-, Description-Tag und der URL noch ein Meta-Image für jede Subsite hinzu. Diese hinterlegten Bilder werden beispielsweise beim Posten in Social Media Netzwerken angezeigt (Vorschaubilder etc.).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nice to know&lt;/strong&gt;
+Früher gab es den Keyword-Tag, bei dem man alle Keywords hinterlegen konnte, auf die man die Website gerne optimieren möchte. Sie haben es Google auch einfacher gemacht die Website zuzuordnen. Mittlerweile ist dieser Meta-Tag inaktiv und spielt auch nicht mehr ins Ranking ein.&lt;/p&gt;
+
+&lt;h4 id=&#34;check-it-yourself&#34;&gt;Check it yourself&lt;/h4&gt;
+
+&lt;p&gt;Ob ihr bereits solche Metadaten bei euch auf der Website hinterlegt habt oder wie diese aussehen, könnt ihr in diversen Tools überprüfen.&lt;/p&gt;
+
+&lt;p&gt;Mit dem Sistrix SERP Generator könnt ihr direkt schauen, wir eure Wunschtitel und eure Wunschdescription als Suchergebnis aussehen würden.
+Es zeigt euch zudem auch an, wenn diese zu lang sind.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sistrix.de/serp-snippet-generator/&#34; class=&#34;https://www.sistrix.de/serp-snippet-generator/&#34;&gt;&lt;a href=&#34;https://www.sistrix.de/serp-snippet-generator/&#34;&gt;https://www.sistrix.de/serp-snippet-generator/&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Wenn ihr schon Daten hinterlegt habt, könnt ihr via iframely.com checken, wir diese ausgespielt werden&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://iframely.com/debug&#34; class=&#34;SEO Metadaten Check&#34;&gt;&lt;a href=&#34;http://iframely.com/debug&#34;&gt;http://iframely.com/debug&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+
+&lt;p&gt;Elena Hüls&lt;/p&gt;
+
+&lt;p&gt;elena.huels@bee42.com&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
