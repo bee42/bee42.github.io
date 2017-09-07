@@ -2092,9 +2092,8 @@ Sitemaps sind Auflistungen und die Darstellung aller Seiten und Unterseiten in F
 &lt;p&gt;&lt;strong&gt;XML-Sitemap&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Uns interessiert für das technische SEO jedoch die zweite Sitemap: die XML Sitemap. Diese gilt und dient den Google Bots und Crawlern und wird nicht auf der Website dargestellt.
-Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google über das Verständnis zur Strukturierung der Website.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google-Teil-2/xml-sitemap-bee42.png&#34; alt=&#34;Beispiel XML Sitemap bee42&#34; /&gt;&lt;/p&gt;
+Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google über das Verständnis zur Strukturierung der Website.
+&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google-Teil-2/xml-sitemap-bee42.png&#34; alt=&#34;Beispiel XML Sitemap bee42&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;robot.txt Datei&lt;/strong&gt;&lt;/p&gt;
 
@@ -2106,10 +2105,8 @@ Ebenso wie das schema.org dient die XML Sitemap als Hilfestellung für Google ü
 &lt;li&gt;Brauche ich die jeweilige Seite für den User?&lt;/li&gt;
 &lt;li&gt;Muss die Seite in den Index?&lt;/li&gt;
 &lt;li&gt;Und muss diese Seite ranken?&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google-Teil-2/robot-txt-datei-beispiel.png&#34; alt=&#34;How to robot.txt Datei&#34; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google-Teil-2/robot-txt-datei-beispiel.png&#34; alt=&#34;How to robot.txt Datei&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;do-it-youself&#34;&gt;Do it youself&lt;/h4&gt;
 
