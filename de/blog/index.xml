@@ -1950,23 +1950,24 @@ Ich persönlich finde diese Darstellung etwas missverständlich und irreführend
       <guid>https://bee42.com/de/blog/Website-Suchmaschinenoptimierung-SEO-fuer-Google-Teil-2/</guid>
       <description>
 
-&lt;p&gt;Im vorangegangenem Blogpost haben wir die Begrifflichkeiten und die großen Teilbereiche der Suchmaschinenoptimierung (SEO) kennengelernt. In diesem zweiten Teil der Serie zeige ich Euch, welche wichtigen Themen und Bereiche des technischen SEOs unbedingt umgesetzt werden müssen, um eine Basis für das gute Ranking innerhalb von Google zu bilden.&lt;/p&gt;
+&lt;p&gt;Im &lt;a href=&#34;https://bee42.com/de/blog/Website-Suchmaschinenoptimierung-SEO-fuer-Google&#34; class=&#34;vorangegangenen Blogpost&#34;&gt;vorangegangenen Blogpost&lt;/a&gt; haben wir die Begrifflichkeiten und die großen Teilbereiche der Suchmaschinenoptimierung (SEO) kennengelernt. In diesem zweiten Teil der Serie zeige ich Euch, welche wichtigen Themen und Bereiche des technischen SEOs unbedingt umgesetzt werden müssen, um eine Basis für das gute Ranking innerhalb von Google zu bilden.&lt;/p&gt;
 
-&lt;h2 id=&#34;technisches-seo&#34;&gt;Technisches SEO&lt;/h2&gt;
+&lt;h1 id=&#34;technisches-seo-und-kriterien&#34;&gt;Technisches SEO und Kriterien&lt;/h1&gt;
 
 &lt;p&gt;Der Begriff „Technisches SEO“ fasst alle Onpage-Optimierungen zusammen, die sich NICHT auf den Content beziehen. Das technisches SEO nach wie vor immer noch eines der wichtigsten Werkzeuge, damit Google die Websites unter anderem sauber crawlen und interpretieren kann. Somit bildet ein gutes technisches SetUp die Basis für eine gute Sichtbarkeit und ein gutes Ranking und sollte IMMER gepflegt werden.&lt;/p&gt;
 
-&lt;h2 id=&#34;technische-seo-kriterien&#34;&gt;Technische SEO-Kriterien&lt;/h2&gt;
+&lt;p&gt;Kriterien und Qualitätsmerkmale, die das technische SetUp der Website betreffen:&lt;/p&gt;
 
-&lt;p&gt;Kriterien und Qualitätsmerkmale die das technische SetUp der Website betreffen:
-* Snippets und Metadaten
-* schema.org
-* Sitemaps
-* Urls
-* Bilder
-* Seitenarchitektur/ -struktur&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Snippets und Metadaten&lt;/li&gt;
+&lt;li&gt;schema.org&lt;/li&gt;
+&lt;li&gt;Sitemaps&lt;/li&gt;
+&lt;li&gt;Urls&lt;/li&gt;
+&lt;li&gt;Bilder&lt;/li&gt;
+&lt;li&gt;Seitenarchitektur/ -struktur&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&#34;snippets-metadaten&#34;&gt;Snippets &amp;amp; Metadaten&lt;/h3&gt;
+&lt;h2 id=&#34;snippets-metadaten&#34;&gt;Snippets &amp;amp; Metadaten&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Was ist ein Snippet?&lt;/strong&gt;
 Ein Snippet ist ein von Google automatisch generierter Ausschnitt der Website und bezieht sich meist auf die hinterlegten Metadaten. Diese Snippets zeigen primär Title, Description und die URL, die für die Website hinterlegt wurde.
@@ -1992,7 +1993,7 @@ in Rot: die Description&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&#34;checkliste-title-tag&#34;&gt;Checkliste Title-Tag&lt;/h4&gt;
+&lt;h3 id=&#34;checkliste-title-tag&#34;&gt;Checkliste Title-Tag&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;nicht mehr als 55 Zeichen (ohne Leerzeichen) inkl. wichtiger Keywords&lt;br /&gt;&lt;/li&gt;
@@ -2002,7 +2003,7 @@ in Rot: die Description&lt;/p&gt;
 &lt;li&gt;und für jede Seite individuell und einzigartig gewählt&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;checkliste-description-tag&#34;&gt;Checkliste Description-Tag&lt;/h4&gt;
+&lt;h3 id=&#34;checkliste-description-tag&#34;&gt;Checkliste Description-Tag&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ebenfalls für jede Seite individuell, nicht doppeln&lt;/li&gt;
@@ -2012,14 +2013,14 @@ in Rot: die Description&lt;/p&gt;
 &lt;li&gt;knapp 150 Zeichen&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;trick-17&#34;&gt;Trick 17&lt;/h4&gt;
+&lt;h3 id=&#34;trick-17&#34;&gt;Trick 17&lt;/h3&gt;
 
 &lt;p&gt;Fügt zusätzlich zu den Title-, Description-Tag und der URL noch ein Meta-Image für jede Subsite hinzu. Diese hinterlegten Bilder werden beispielsweise beim Posten in Social Media Netzwerken angezeigt (Vorschaubilder etc.).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Nice to know&lt;/strong&gt;
 Früher gab es den Keyword-Tag, bei dem man alle Keywords hinterlegen konnte, auf die man die Website gerne optimieren möchte. Sie haben es Google auch einfacher gemacht die Website zuzuordnen. Mittlerweile ist dieser Meta-Tag inaktiv und spielt auch nicht mehr ins Ranking ein.&lt;/p&gt;
 
-&lt;h4 id=&#34;check-it-yourself&#34;&gt;Check it yourself&lt;/h4&gt;
+&lt;h3 id=&#34;check-it-yourself&#34;&gt;Check it yourself&lt;/h3&gt;
 
 &lt;p&gt;Ob ihr bereits solche Metadaten bei euch auf der Website hinterlegt habt oder wie diese aussehen, könnt ihr in diversen Tools überprüfen.&lt;/p&gt;
 
@@ -2036,11 +2037,7 @@ Es zeigt euch zudem auch an, wenn diese zu lang sind.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://iframely.com/debug&#34; class=&#34;SEO Metadaten Check&#34;&gt;&lt;a href=&#34;http://iframely.com/debug&#34;&gt;http://iframely.com/debug&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&amp;ndash;&lt;/p&gt;
-
-&lt;p&gt;Elena Hüls&lt;/p&gt;
-
-&lt;p&gt;elena.huels@bee42.com&lt;/p&gt;
+&lt;p&gt;##schema.org&lt;/p&gt;
 </description>
     </item>
     
