@@ -2188,6 +2188,48 @@ BILD Beispiel ausgefüllt&lt;/p&gt;
 
 &lt;h1 id=&#34;websitenarchitektur-struktur&#34;&gt;Websitenarchitektur/ - struktur&lt;/h1&gt;
 
+&lt;p&gt;Kommen wir nun zum letzten Punkt innerhalb des technischen SEO: die Websitenarchitektur und -struktur. Google sind zwei Themen in dem Bereich besonders wichtig: Die Struktur und nachvollziehbare Hierarchie der Website. Und hier gilt das Motto: Je einfacher desto besser!&lt;/p&gt;
+
+&lt;p&gt;Und das sind u.a die Kriterien die für das Google Ranking von Bedeutung sind:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ladegeschwindigkeit&lt;/li&gt;
+&lt;li&gt;Quelltext einer HTML Seite&lt;/li&gt;
+&lt;li&gt;Optimierung CSS&lt;/li&gt;
+&lt;li&gt;Optimierung von JS&lt;/li&gt;
+&lt;li&gt;Server/Hosting&lt;/li&gt;
+&lt;li&gt;Dateigrößen&lt;/li&gt;
+&lt;li&gt;Mobile friendly&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;ladegeschwindigkeit&#34;&gt;Ladegeschwindigkeit&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Short and simple:&lt;/strong&gt; Dauert das Laden der Website zu lange, so wird die Website von den Kunden in vielen Fällen einfach verlassen - Der User springt ab!&lt;/p&gt;
+
+&lt;h4 id=&#34;quelltext-einer-html-seite&#34;&gt;Quelltext einer HTML Seite&lt;/h4&gt;
+
+&lt;p&gt;Die Strukturierung der Inhalte u.a. nach H1 bis H6 Überschriften ist nicht nur für die Semantik wichtig, sondern auch fürs Ranking. Der H1 Überschrift spricht Google eine besondere Bedeutung zu. &lt;strong&gt;Diese sollte man auf jeder Seite nur einmal verwenden!&lt;/strong&gt; In der H1 sollten zudem auf jeden Fall wichtige Suchbegriffe und Keywords untergebracht werden. Alle anderen Überschriften H2 bis H6 dürfen nach Belieben auch mehrmals auf die Seite gesetzt werden.&lt;/p&gt;
+
+&lt;h4 id=&#34;server-hosting&#34;&gt;Server/Hosting&lt;/h4&gt;
+
+&lt;p&gt;Server/Hosting sind ein indirekter Rankingfaktor und beeinflussen die Ladegeschwindigkeit und Performance der Website, u.a. werden https-Verbindungen positiver gewertet und mittlerweile vorausgesetzt!&lt;/p&gt;
+
+&lt;h4 id=&#34;dateigrößen&#34;&gt;Dateigrößen&lt;/h4&gt;
+
+&lt;p&gt;Auch hier gilt wieder: Weniger ist mehr! Stellt sicher, dass alle Dateien entschlackt werden: Sind alle Bilder komprimiert? Wurden alle CSS und JavaScript Dateien minimiert?&lt;/p&gt;
+
+&lt;h4 id=&#34;mobile-friendly&#34;&gt;Mobile friendly&lt;/h4&gt;
+
+&lt;p&gt;Mobile hat über die letzten Jahre einen sehr großen Zuwachs erfahren, somit ist es mittlerweile Pflicht seine Website auch auf Mobile zu optimieren und responsive zu gestalten!
+D.h. Mobile first, denn bei sauberer Umsetzung vom responsive Webdesign bietet dieses Kriterium einen großen Wettbewerbsvorteil!&lt;/p&gt;
+
+&lt;h4 id=&#34;check-it-youself&#34;&gt;Check it youself&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/speed/pagespeed/insights/&#34;&gt;https://developers.google.com/speed/pagespeed/insights/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://testmysite.withgoogle.com/intl/de-de&#34;&gt;https://testmysite.withgoogle.com/intl/de-de&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;-&lt;/p&gt;
 
 &lt;p&gt;Elena Hüls&lt;/p&gt;
