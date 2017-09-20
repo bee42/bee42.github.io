@@ -3,6 +3,12 @@
   
   <url>
     <loc>https://bee42.com/de/</loc>
+    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/de/trainings/container-devops-camp-25-bis-27-September-2017-Wien/</loc>
+    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
   </url>
   
   <url>
@@ -50,10 +56,6 @@
   </url>
   
   <url>
-    <loc>https://bee42.com/de/trainings/kubernetes-devops-lab-de/</loc>
-  </url>
-  
-  <url>
     <loc>https://bee42.com/de/trainings/kubernetes-devops-lab-en/</loc>
   </url>
   
@@ -95,11 +97,21 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/trainings/container-devops-camp-essen/</loc>
+    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/crew/dieter/</loc>
   </url>
   
   <url>
     <loc>https://bee42.com/de/services/devops-consulting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/de/trainings/container-gitlab-ci-lab-berlin/</loc>
+    <lastmod>2017-01-10T22:16:30+01:00</lastmod>
   </url>
   
   <url>
@@ -115,17 +127,12 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/trainings/kubernetes-devops-lab-de/</loc>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/trainings/kubernetes-devops-lab-19-bis-20-September-2017-Berlin/</loc>
     <lastmod>2017-04-21T20:28:31+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bee42.com/de/crew/elena/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bee42.com/de/trainings/container-devops-camp-25-bis-27-September-2017-Wien/</loc>
-    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
   </url>
   
   <url>
@@ -134,13 +141,12 @@
   </url>
   
   <url>
-    <loc>https://bee42.com/de/trainings/container-windows-lab/</loc>
-    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+    <loc>https://bee42.com/de/crew/elena/</loc>
   </url>
   
   <url>
-    <loc>https://bee42.com/de/trainings/container-devops-camp-essen/</loc>
-    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
+    <loc>https://bee42.com/de/trainings/container-windows-lab/</loc>
+    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
   </url>
   
   <url>
@@ -191,11 +197,6 @@
   <url>
     <loc>https://bee42.com/de/blog/4th-Docker-Birthday/</loc>
     <lastmod>2017-03-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bee42.com/de/trainings/container-gitlab-ci-lab-berlin/</loc>
-    <lastmod>2017-01-10T22:16:30+01:00</lastmod>
   </url>
   
   <url>

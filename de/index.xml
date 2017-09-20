@@ -6,7 +6,183 @@
     <description>Recent content on DevOps Trainings &amp; Consulting - bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jan 2017 20:28:31 +0100</lastBuildDate>
     <atom:link href="https://bee42.com/de/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Container DevOps Camp</title>
+      <link>https://bee42.com/de/trainings/container-devops-camp-25-bis-27-September-2017-Wien/</link>
+      <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
+      
+      <guid>https://bee42.com/de/trainings/container-devops-camp-25-bis-27-September-2017-Wien/</guid>
+      <description>
+
+&lt;h3 id=&#34;location&#34;&gt;Location&lt;/h3&gt;
+
+&lt;p&gt;COCOQUADRAT Wien
+&lt;br&gt;Wiedner Hauptstraße 65
+&lt;br&gt;1040 Wien&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://bee42.com/de/locations/Wien/&#34;&gt;Weitere Informationen zur Location&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bis zum &lt;strong&gt;24. August&lt;/strong&gt; anmelden und mit den Frühbucherpreisen sparen!&lt;/li&gt;
+&lt;li&gt;Kollegenrabatt ab 3 Kollegen aus einem Unternehmen!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Dieses Training kannst Du auch als Inhouse-Training buchen. Sende uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf Container-Technologie. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Insbesonders die Docker Software verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Container DevOps Camp wollen wir diesem Versprechen praktisch nachgehen.&lt;/p&gt;
+
+&lt;p&gt;Wir starten mit einem Überblick und stellen die ersten Schritte beim Einsatz von Docker CE Software vor. Du lernst die wichtigsten Befehle, Anweisungen und Konzepte praktisch kennen. Anhand eines ausführlichen Beispiels lernst Du, wie ein Microservice implementiert, mit Docker CE Software installiert und in einer Umgebung mit anderen Services integriert wird. Außerdem diskutieren wir das aktuelle Docker-Ökosystem und klären über Chancen und Risiken auf.&lt;/p&gt;
+
+&lt;p&gt;Dieses Camp vermittelt Dir die Container-Grundlagen in nachvollziehbaren Schritten und versetzt Dich in die Lage anschließend selbst zu entscheiden, ob und wie Container in Deinem Unternehmens- und IT-Kontext sinnvoll einsetzt.&lt;/p&gt;
+
+&lt;h2 id=&#34;tag-1-container-grundlagen&#34;&gt;Tag 1: Container Grundlagen&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker CE Software Grundlagen und Installation&lt;/li&gt;
+&lt;li&gt;Container Technologie Grundlagen&lt;/li&gt;
+&lt;li&gt;Kernel- vs Classical- Virtualisierung&lt;/li&gt;
+&lt;li&gt;Container Architektur am Beispoiel Docker CE&lt;/li&gt;
+&lt;li&gt;Einsatzgebiete und mehr&lt;/li&gt;
+&lt;li&gt;Starten der Container-Umgebung&lt;/li&gt;
+&lt;li&gt;Images, Container und Registry&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;einfache-nutzung&#34;&gt;Einfache Nutzung&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Container starten, verwalten und inspizieren&lt;/li&gt;
+&lt;li&gt;Docker CLI Kommando-Übersicht&lt;/li&gt;
+&lt;li&gt;Baue Deine Images auf der Basis eines Dockerfiles&lt;/li&gt;
+&lt;li&gt;“Build, Ship and Run”-Zyklus&lt;/li&gt;
+&lt;li&gt;Docker CE Tooling&lt;/li&gt;
+&lt;li&gt;Volume Management&lt;/li&gt;
+&lt;li&gt;Network Management&lt;/li&gt;
+&lt;li&gt;Logging und Metriken&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;li&gt;Container Typen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tag-2-microservices-mit-container&#34;&gt;Tag 2: Microservices mit Container&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Think infrastructure first&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Erstellen einer einfachen Spring Boot App&lt;/li&gt;
+&lt;li&gt;Bau einer Toolchain mittels Java and Maven&lt;/li&gt;
+&lt;li&gt;Container für Java-Entwickler&lt;/li&gt;
+&lt;li&gt;Erstellung Database Container&lt;/li&gt;
+&lt;li&gt;Empower your Development&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;infrastruktur&#34;&gt;Infrastruktur&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Aufbau der Microservice Infrastruktur&lt;/li&gt;
+&lt;li&gt;Erzeuge eine einfache Build Pipeline&lt;/li&gt;
+&lt;li&gt;Nutzen von Service Discovery&lt;/li&gt;
+&lt;li&gt;Erzeuge Multi Host Networks&lt;/li&gt;
+&lt;li&gt;Container Tipps &amp;amp; Tricks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tag-3-skalierung-des-service-mit-docker-swarming&#34;&gt;Tag 3: Skalierung des Service mit Docker Swarming&lt;/h2&gt;
+
+&lt;h3 id=&#34;container-orchsterierung&#34;&gt;Container Orchsterierung&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Skalieren Sie Ihren Services mit Docker CE Swarming&lt;/li&gt;
+&lt;li&gt;Update, Fehlererkennung und Redeployment von Services&lt;/li&gt;
+&lt;li&gt;Mesh Network und Service Discovery&lt;/li&gt;
+&lt;li&gt;Einrichten eines Ingress Loadbalancer (traefik, haproxy od. nginx)&lt;/li&gt;
+&lt;li&gt;Setup Logging und Monitoring Systeme
+
+&lt;ul&gt;
+&lt;li&gt;ELK-Stack&lt;/li&gt;
+&lt;li&gt;Prometheus und Grafana&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Debuging Deines Containers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;go-to-production&#34;&gt;Go to production&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Container für die Produktion&lt;/li&gt;
+&lt;li&gt;Erzeuge High-Quality Images&lt;/li&gt;
+&lt;li&gt;Container Security Grundlagen&lt;/li&gt;
+&lt;li&gt;Plugins&lt;/li&gt;
+&lt;li&gt;Tipps und Tricks&lt;/li&gt;
+&lt;li&gt;Review Best Practices&lt;/li&gt;
+&lt;li&gt;Docker CE auf ARM (Raspberry PI)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
+
+&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps Entwickler&lt;/li&gt;
+&lt;li&gt;Administratoren&lt;/li&gt;
+&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Build- und Package-Systeme&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
+&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
+&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;li&gt;Bringe Deinen eigenes Notebook mit
+
+&lt;ul&gt;
+&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
+&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
+&lt;li&gt;SSH oder Putty installiert&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h3 id=&#34;25-27-september-2017-wien&#34;&gt;25. - 27. September 2017, Wien&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://container-devops-camp-wien.eventbrite.de&#34; class=&#34;Jetzt zum Training in Wien anmelden!&#34;&gt;Bis zum 24. August anmelden &amp;amp; mit den Frühbucherpreisen sparen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Dieses Training kannst Du auch als Inhouse-Training buchen. Sende uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>42... und die Bedeutung des Lebens</title>
@@ -684,168 +860,6 @@ D-44879 Bochum&lt;br&gt;&lt;/p&gt;
 &lt;li&gt;E-Mail: &lt;a href=&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Telefon: 0176 34402658&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Kubernetes DevOps Lab</title>
-      <link>https://bee42.com/de/trainings/kubernetes-devops-lab-de/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bee42.com/de/trainings/kubernetes-devops-lab-de/</guid>
-      <description>
-
-&lt;h3 id=&#34;location&#34;&gt;Location&lt;/h3&gt;
-
-&lt;p&gt;Courtyard by Marriott Berlin Mitte
-&lt;br&gt;Axel-Springer-Straße 55
-&lt;br&gt;10117&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://bee42.com/de/locations/Berlin/&#34;&gt;Weitere Informationen zur Location&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bis zum &lt;strong&gt;17. August&lt;/strong&gt; anmelden und mit den Frühbucherpreisen sparen!&lt;/li&gt;
-&lt;li&gt;Kollegenrabatt ab 3 Kollegen aus einem Unternehmen!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Ob kleine Startups oder grosse Konzerne - viele Unternehmen verlassen sich immer mehr auf Kubernetes und Container-Technologie. Aber was ist mit der Art von Containern, die den Virtualisierungsmarkt aufrollen und die Softwareentwicklung langfristig verändern? Mit Containern können Sie reproduzierbare Software-Images einfach erstellen und Ihre Entwicklung beschleunigen.&lt;/p&gt;
-
-&lt;p&gt;Kubernetes verspricht einen schnellen Start und eine flexible Konfiguration von hochdynamischen Systeme. Es ist entworfen, um große Systeme zu skalieren. Du kannst in der Cloud und OnPremise Deine Produktion betreiben. In diesem Kubernetes-Lab wollen wir dieses Versprechen einlösen.&lt;/p&gt;
-
-&lt;p&gt;Wir beginnen mit einer Übersicht und führen die ersten Schritte der Grundlagen von Kubernetes ein. Du erlernst die wichtigsten Befehle, Anweisungen und Konzepte, um Pods und Services auszuführen. Mit konkreten Beispielen lernst Du schnell, wie eine Microservice-Anwendung bereitgestellt, mit Kubernetes gesteuert und mit anderen Diensten in verschiedenen Umgebungen integriert wird. Der Übergang von der Entwicklung in die Produktion wird deutlich vereinfacht. Wir diskutieren das aktuelle Ökosystem von Kubernetes und klären über Chancen und Risiken auf.&lt;/p&gt;
-
-&lt;p&gt;Das Lab bietet Dir die Kubernetes-Grundlagen in verständlichen Schritten und bringt Dich in die Lage, später zu entscheiden, ob und wie Kubernetes in Deinem Geschäfts- und IT-Kontext nützlich ist.&lt;/p&gt;
-
-&lt;h2 id=&#34;tag-1-kubernetes-basics&#34;&gt;Tag 1: Kubernetes Basics&lt;/h2&gt;
-
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Kubernetes Installation&lt;/li&gt;
-&lt;li&gt;Kubernetes Grundlagen&lt;/li&gt;
-&lt;li&gt;Container Technology Basics&lt;/li&gt;
-&lt;li&gt;Kernel vs. Classical Virtualization&lt;/li&gt;
-&lt;li&gt;Architektur von Kubernetes&lt;/li&gt;
-&lt;li&gt;Kubernetes Control Plane&lt;/li&gt;
-&lt;li&gt;Erste Anwendungsfälle Deines Kubernetes Clusters&lt;/li&gt;
-&lt;li&gt;Setup Deines Kubernetes Cluster Umgebung mit kubeadm&lt;/li&gt;
-&lt;li&gt;Images, Pods, Services und mehr&lt;/li&gt;
-&lt;li&gt;Basic CLI Handling und UI&amp;rsquo;s&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;einfach-nutzung&#34;&gt;Einfach Nutzung&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Let&amp;rsquo;s play Pods and Services: run, stop, update, maintain&lt;/li&gt;
-&lt;li&gt;kubectl und kubeadm CLI Kommandos Übersicht&lt;/li&gt;
-&lt;li&gt;Baue deine eigenen Images mit Dockerfiles&lt;/li&gt;
-&lt;li&gt;Build, Ship and Run Zyklus&lt;/li&gt;
-&lt;li&gt;Docker CE Werkzeuge&lt;/li&gt;
-&lt;li&gt;Service Discovery&lt;/li&gt;
-&lt;li&gt;Scheduling (Node, Resources, Label und Constraints)&lt;/li&gt;
-&lt;li&gt;Deployment&lt;/li&gt;
-&lt;li&gt;Failure Detection&lt;/li&gt;
-&lt;li&gt;Volume Management (Pet sets)&lt;/li&gt;
-&lt;li&gt;Network Management&lt;/li&gt;
-&lt;li&gt;Jobs&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;tag-2-erzeuge-microservices-mit-kubernetes&#34;&gt;Tag 2: Erzeuge Microservices mit Kubernetes&lt;/h2&gt;
-
-&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Denke Dir Deine Infrastruktur zuerst&lt;/li&gt;
-&lt;li&gt;Erzeuge eine einfache Spring Boot App&lt;/li&gt;
-&lt;li&gt;Erzeuge Deine Toolchain: Java und Maven&lt;/li&gt;
-&lt;li&gt;Kubernetes für Java Entwickler&lt;/li&gt;
-&lt;li&gt;Erzeuge eine Database Containers&lt;/li&gt;
-&lt;li&gt;Vorteile für den Entwickler&lt;/li&gt;
-&lt;li&gt;Ingress Loadbalancer&lt;/li&gt;
-&lt;li&gt;Deploy Stacks mit dem Werkzeug Helm&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;der-weg-in-die-produktion&#34;&gt;Der Weg in die Produktion&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Vorbereitung der Produktion für Kubernetes&lt;/li&gt;
-&lt;li&gt;Setup eines Cloud Clusters&lt;/li&gt;
-&lt;li&gt;Update, Failure Detection und Redeployment&lt;/li&gt;
-&lt;li&gt;Logging und Metrics&lt;/li&gt;
-&lt;li&gt;Backup/Restore&lt;/li&gt;
-&lt;li&gt;Erzeuge Deine eigene Microservice Infrastruktur&lt;/li&gt;
-&lt;li&gt;Erzeuge besserere Container Images&lt;/li&gt;
-&lt;li&gt;Erzeuge eine einfache Build Pipeline&lt;/li&gt;
-&lt;li&gt;Nutze Deine Service Discovery für die Bereitstellung Deiner Geheimnisse&lt;/li&gt;
-&lt;li&gt;Erzeuge Namespaces&lt;/li&gt;
-&lt;li&gt;Networking mit flannel und etcd,&lt;/li&gt;
-&lt;li&gt;Security und Access Control (RBAC)&lt;/li&gt;
-&lt;li&gt;Debug Deine Services und Pods&lt;/li&gt;
-&lt;li&gt;Kubernetes Tipps &amp;amp; Tricks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
-
-&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DevOps Entwickler&lt;/li&gt;
-&lt;li&gt;Administratoren&lt;/li&gt;
-&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Grundkenntnisse Docker CE Software oder Container Technologie&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Java&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Git&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Networks (SDN)&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
-&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
-&lt;li&gt;Internet&lt;/li&gt;
-&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
-&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
-&lt;li&gt;Bringe Dein eigenes Notebook mit
-
-&lt;ul&gt;
-&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
-&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
-&lt;li&gt;SSH oder Putty installiert&lt;/li&gt;
-&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;### 19. - 20. September 2017, Berlin&lt;/p&gt;
-
-&lt;p&gt;Courtyard by Marriott Berlin Mitte &lt;br&gt;(Axel-Springer-Straße 55, 10117 Berlin)&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://kubernetes-devops-lab-september-in-berlin.eventbrite.de&#34; class=&#34;Bis zum 17. August anmelden &amp; mit den Frühbucherpreisen sparen!&#34;&gt;Bis zum 17. August anmelden &amp;amp; mit den Frühbucherpreisen sparen!&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 </description>
     </item>
     
