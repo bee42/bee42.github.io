@@ -1130,105 +1130,6 @@ Kubernetes promises also a quick start and a flexible configuration, but it’s 
     </item>
     
     <item>
-      <title>Container Java lab</title>
-      <link>https://bee42.com/de/trainings/container-java-lab-de/</link>
-      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
-      
-      <guid>https://bee42.com/de/trainings/container-java-lab-de/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Docker Software und das spannende Container Ökosystem ist sehr hilfreich für jeden Java-Entwickler. Diese Lab gibt einen Überblick über die besten Praktiken für die Entwicklung von Java-Anwendungen mit Docker Software.&lt;/p&gt;
-
-&lt;p&gt;Das Container-Ökosystem bietet Dir vielversprechende Tools zum Paketieren Deiner Software, Wiederverwendung vorhandener Services, Datenbanken oder Tools. Docker Software hilft, Deine Continuous Integration Pipeline voranzutreiben.&lt;/p&gt;
-
-&lt;p&gt;Aber, ein gutes Java-Image aufzubauen und Deine Container direkt in der Produktion zu verwenden, ist eine Herausforderung. Bündeln Deine Java-Software, teste Deine Dienste mit Container und befähige Deine Entwicklung zu mehr Qualiät.&lt;/p&gt;
-
-&lt;p&gt;Dieses Labor gibt Dir einige nützliche Hinweise und diskutieren Tricks, um Container nahtlos mit Java zu verwenden.&lt;/p&gt;
-
-&lt;h2 id=&#34;tag-1-baue-deine-java-microservices-mit-container&#34;&gt;Tag 1: Baue Deine Java Microservices mit Container&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Container Basics&lt;/li&gt;
-&lt;li&gt;Empower Deine Entwicklung mit Docker CE Software&lt;/li&gt;
-&lt;li&gt;Aufbauen einer Spring Boot Microservices mit Maven&lt;/li&gt;
-&lt;li&gt;Verpacken der Java Anwendung mit Container&lt;/li&gt;
-&lt;li&gt;Erzeugen eines Databank Container&lt;/li&gt;
-&lt;li&gt;TDD mit Container&lt;/li&gt;
-&lt;li&gt;Baue ein eigenes Java Base Images&lt;/li&gt;
-&lt;li&gt;Debugging mit Java im Container&lt;/li&gt;
-&lt;li&gt;Container IDE Unterstützung&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;tag-2-java-für-die-produktion&#34;&gt;Tag 2: Java für die Produktion&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Denke Deine Infrastruktur zuerst&lt;/li&gt;
-&lt;li&gt;Automatische Erzeugung Deiner Image Build mit einer CI-Pipeline&lt;/li&gt;
-&lt;li&gt;Baue Deine eigene Werkzeugkette: Java, Maven, Tomcat, &amp;hellip;&lt;/li&gt;
-&lt;li&gt;Erzeugen eines optimale Java Werkzeugkastens mit Container&lt;/li&gt;
-&lt;li&gt;Beachte die &lt;strong&gt;12 Factor Rules&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Skaliere Deine Java Microservices&lt;/li&gt;
-&lt;li&gt;Java Micorservices in der Produktion&lt;/li&gt;
-&lt;li&gt;Integiere Metriken und Logging&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;+++&lt;/p&gt;
-
-&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Java Entwickler&lt;/li&gt;
-&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Gute Kenntnisse Java, Maven, Spring boot&amp;hellip;&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Docker&lt;/li&gt;
-&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, packages)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
-&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
-&lt;li&gt;Internet&lt;/li&gt;
-&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
-&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
-&lt;li&gt;Bringe Dein eigenes Notebook mit
-
-&lt;ul&gt;
-&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
-&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
-&lt;li&gt;SSH oder Putty installiert&lt;/li&gt;
-&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Container DevOps Camp</title>
       <link>https://bee42.com/de/trainings/container-devops-camp-25-bis-27-September-2017-Wien/</link>
       <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
@@ -1400,6 +1301,105 @@ Kubernetes promises also a quick start and a flexible configuration, but it’s 
 &lt;/blockquote&gt;
 
 &lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Container Java lab</title>
+      <link>https://bee42.com/de/trainings/container-java-lab-de/</link>
+      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
+      
+      <guid>https://bee42.com/de/trainings/container-java-lab-de/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Docker Software und das spannende Container Ökosystem ist sehr hilfreich für jeden Java-Entwickler. Diese Lab gibt einen Überblick über die besten Praktiken für die Entwicklung von Java-Anwendungen mit Docker Software.&lt;/p&gt;
+
+&lt;p&gt;Das Container-Ökosystem bietet Dir vielversprechende Tools zum Paketieren Deiner Software, Wiederverwendung vorhandener Services, Datenbanken oder Tools. Docker Software hilft, Deine Continuous Integration Pipeline voranzutreiben.&lt;/p&gt;
+
+&lt;p&gt;Aber, ein gutes Java-Image aufzubauen und Deine Container direkt in der Produktion zu verwenden, ist eine Herausforderung. Bündeln Deine Java-Software, teste Deine Dienste mit Container und befähige Deine Entwicklung zu mehr Qualiät.&lt;/p&gt;
+
+&lt;p&gt;Dieses Labor gibt Dir einige nützliche Hinweise und diskutieren Tricks, um Container nahtlos mit Java zu verwenden.&lt;/p&gt;
+
+&lt;h2 id=&#34;tag-1-baue-deine-java-microservices-mit-container&#34;&gt;Tag 1: Baue Deine Java Microservices mit Container&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Container Basics&lt;/li&gt;
+&lt;li&gt;Empower Deine Entwicklung mit Docker CE Software&lt;/li&gt;
+&lt;li&gt;Aufbauen einer Spring Boot Microservices mit Maven&lt;/li&gt;
+&lt;li&gt;Verpacken der Java Anwendung mit Container&lt;/li&gt;
+&lt;li&gt;Erzeugen eines Databank Container&lt;/li&gt;
+&lt;li&gt;TDD mit Container&lt;/li&gt;
+&lt;li&gt;Baue ein eigenes Java Base Images&lt;/li&gt;
+&lt;li&gt;Debugging mit Java im Container&lt;/li&gt;
+&lt;li&gt;Container IDE Unterstützung&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tag-2-java-für-die-produktion&#34;&gt;Tag 2: Java für die Produktion&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Denke Deine Infrastruktur zuerst&lt;/li&gt;
+&lt;li&gt;Automatische Erzeugung Deiner Image Build mit einer CI-Pipeline&lt;/li&gt;
+&lt;li&gt;Baue Deine eigene Werkzeugkette: Java, Maven, Tomcat, &amp;hellip;&lt;/li&gt;
+&lt;li&gt;Erzeugen eines optimale Java Werkzeugkastens mit Container&lt;/li&gt;
+&lt;li&gt;Beachte die &lt;strong&gt;12 Factor Rules&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Skaliere Deine Java Microservices&lt;/li&gt;
+&lt;li&gt;Java Micorservices in der Produktion&lt;/li&gt;
+&lt;li&gt;Integiere Metriken und Logging&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java Entwickler&lt;/li&gt;
+&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gute Kenntnisse Java, Maven, Spring boot&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Docker&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, packages)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
+&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
+&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;li&gt;Bringe Dein eigenes Notebook mit
+
+&lt;ul&gt;
+&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
+&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
+&lt;li&gt;SSH oder Putty installiert&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Sie können dieses Training auch als Inhouse-Training buchen. Senden Sie uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
