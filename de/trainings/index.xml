@@ -863,7 +863,7 @@ Kubernetes promises also a quick start and a flexible configuration, but it’s 
 
 &lt;p&gt;Dieser Workshop bietet Dir die Kubernetes-Grundlagen in verständlichen Schritten und bringt Dich in die Lage, später zu entscheiden, ob und wie Kubernetes in Deinem Geschäfts- und IT-Kontext nützlich ist.&lt;/p&gt;
 
-&lt;h2 id=&#34;tag-1-kubernetes-basics&#34;&gt;Tag 1: Kubernetes Basics&lt;/h2&gt;
+&lt;h2 id=&#34;kubernetes-basics&#34;&gt;Kubernetes Basics&lt;/h2&gt;
 
 &lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
 
@@ -897,7 +897,7 @@ Kubernetes promises also a quick start and a flexible configuration, but it’s 
 &lt;li&gt;Jobs&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;tag-2-erzeuge-microservices-mit-kubernetes&#34;&gt;Tag 2: Erzeuge Microservices mit Kubernetes&lt;/h2&gt;
+&lt;h2 id=&#34;erzeuge-microservices-mit-kubernetes&#34;&gt;Erzeuge Microservices mit Kubernetes&lt;/h2&gt;
 
 &lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
 
