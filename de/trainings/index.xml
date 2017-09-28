@@ -973,7 +973,7 @@ Kubernetes promises also a quick start and a flexible configuration, but it’s 
 &lt;h3 id=&#34;27-29-november-2017-münchen&#34;&gt;27. - 29. November 2017, München&lt;/h3&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://container-devops-camp.eventbrite.de&#34; class=&#34;Jetzt zum Training in München anmelden!&#34;&gt;Bis zum 2. November anmelden &amp;amp; mit den Frühbucherpreisen sparen!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.eventbrite.de/e/kubernetes-devops-lab-27-29-november-2017-munchen-tickets-38222723194&#34; class=&#34;Jetzt zum Training in München anmelden!&#34;&gt;Bis zum 2. November anmelden &amp;amp; mit den Frühbucherpreisen sparen!&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;strong&gt;Dieses Training kannst Du auch als Inhouse-Training buchen. Sende uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
@@ -1082,6 +1082,181 @@ Kubernetes promises also a quick start and a flexible configuration, but it’s 
 &lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Container DevOps Camp</title>
+      <link>https://bee42.com/de/trainings/container-devops-camp/</link>
+      <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
+      
+      <guid>https://bee42.com/de/trainings/container-devops-camp/</guid>
+      <description>
+
+&lt;h3 id=&#34;location&#34;&gt;Location&lt;/h3&gt;
+
+&lt;p&gt;Prinz Ludwig Palais
+&lt;br&gt;Türkenstraße 7
+&lt;br&gt;80333 München&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://bee42.com/de/locations/München/&#34;&gt;Weitere Informationen zur Location&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bis zum &lt;strong&gt;2. November&lt;/strong&gt; anmelden und mit den Frühbucherpreisen sparen!&lt;/li&gt;
+&lt;li&gt;Kollegenrabatt ab 3 Kollegen aus einem Unternehmen!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Dieses Training kannst Du auch als Inhouse-Training buchen. Sende uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;p&gt;Ob kleine Startups oder große Firmen – schon aufregend viele Unternehmen setzen auf Container-Technologie. Die Container-Technologie rollt gerade den Virtualisierungsmarkt auf und verändert die Softwareentwicklung nachhaltig. Insbesonders die Docker Software verspricht einen schnellen Start, flexible Konfiguration und stabile Images für Entwicklung und Produktion. In diesem Container DevOps Camp wollen wir diesem Versprechen praktisch nachgehen.&lt;/p&gt;
+
+&lt;p&gt;Wir starten mit einem Überblick und stellen die ersten Schritte beim Einsatz von Docker CE Software vor. Du lernst die wichtigsten Befehle, Anweisungen und Konzepte praktisch kennen. Anhand eines ausführlichen Beispiels lernst Du, wie ein Microservice implementiert, mit Docker CE Software installiert und in einer Umgebung mit anderen Services integriert wird. Außerdem diskutieren wir das aktuelle Docker-Ökosystem und klären über Chancen und Risiken auf.&lt;/p&gt;
+
+&lt;p&gt;Dieses Camp vermittelt Dir die Container-Grundlagen in nachvollziehbaren Schritten und versetzt Dich in die Lage anschließend selbst zu entscheiden, ob und wie Container in Deinem Unternehmens- und IT-Kontext sinnvoll einsetzt.&lt;/p&gt;
+
+&lt;h2 id=&#34;tag-1-container-grundlagen&#34;&gt;Tag 1: Container Grundlagen&lt;/h2&gt;
+
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker CE Software Grundlagen und Installation&lt;/li&gt;
+&lt;li&gt;Container Technologie Grundlagen&lt;/li&gt;
+&lt;li&gt;Kernel- vs Classical- Virtualisierung&lt;/li&gt;
+&lt;li&gt;Container Architektur am Beispoiel Docker CE&lt;/li&gt;
+&lt;li&gt;Einsatzgebiete und mehr&lt;/li&gt;
+&lt;li&gt;Starten der Container-Umgebung&lt;/li&gt;
+&lt;li&gt;Images, Container und Registry&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;einfache-nutzung&#34;&gt;Einfache Nutzung&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Container starten, verwalten und inspizieren&lt;/li&gt;
+&lt;li&gt;Docker CLI Kommando-Übersicht&lt;/li&gt;
+&lt;li&gt;Baue Deine Images auf der Basis eines Dockerfiles&lt;/li&gt;
+&lt;li&gt;“Build, Ship and Run”-Zyklus&lt;/li&gt;
+&lt;li&gt;Docker CE Tooling&lt;/li&gt;
+&lt;li&gt;Volume Management&lt;/li&gt;
+&lt;li&gt;Network Management&lt;/li&gt;
+&lt;li&gt;Logging und Metriken&lt;/li&gt;
+&lt;li&gt;Backup/Restore&lt;/li&gt;
+&lt;li&gt;Container Typen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tag-2-microservices-mit-container&#34;&gt;Tag 2: Microservices mit Container&lt;/h2&gt;
+
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Think infrastructure first&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Erstellen einer einfachen Spring Boot App&lt;/li&gt;
+&lt;li&gt;Bau einer Toolchain mittels Java and Maven&lt;/li&gt;
+&lt;li&gt;Container für Java-Entwickler&lt;/li&gt;
+&lt;li&gt;Erstellung Database Container&lt;/li&gt;
+&lt;li&gt;Empower your Development&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;infrastruktur&#34;&gt;Infrastruktur&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Aufbau der Microservice Infrastruktur&lt;/li&gt;
+&lt;li&gt;Erzeuge eine einfache Build Pipeline&lt;/li&gt;
+&lt;li&gt;Nutzen von Service Discovery&lt;/li&gt;
+&lt;li&gt;Erzeuge Multi Host Networks&lt;/li&gt;
+&lt;li&gt;Container Tipps &amp;amp; Tricks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tag-3-skalierung-des-service-mit-docker-swarming&#34;&gt;Tag 3: Skalierung des Service mit Docker Swarming&lt;/h2&gt;
+
+&lt;h3 id=&#34;container-orchsterierung&#34;&gt;Container Orchsterierung&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Skalieren Sie Ihren Services mit Docker CE Swarming&lt;/li&gt;
+&lt;li&gt;Update, Fehlererkennung und Redeployment von Services&lt;/li&gt;
+&lt;li&gt;Mesh Network und Service Discovery&lt;/li&gt;
+&lt;li&gt;Einrichten eines Ingress Loadbalancer (traefik, haproxy od. nginx)&lt;/li&gt;
+&lt;li&gt;Setup Logging und Monitoring Systeme
+
+&lt;ul&gt;
+&lt;li&gt;ELK-Stack&lt;/li&gt;
+&lt;li&gt;Prometheus und Grafana&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Debuging Deines Containers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;go-to-production&#34;&gt;Go to production&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Container für die Produktion&lt;/li&gt;
+&lt;li&gt;Erzeuge High-Quality Images&lt;/li&gt;
+&lt;li&gt;Container Security Grundlagen&lt;/li&gt;
+&lt;li&gt;Plugins&lt;/li&gt;
+&lt;li&gt;Tipps und Tricks&lt;/li&gt;
+&lt;li&gt;Review Best Practices&lt;/li&gt;
+&lt;li&gt;Docker CE auf ARM (Raspberry PI)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h2 id=&#34;voraussetzungen-und-leistungen&#34;&gt;Voraussetzungen und Leistungen&lt;/h2&gt;
+
+&lt;h3 id=&#34;zielgruppe-wer-sollte-teilnehmen&#34;&gt;Zielgruppe/ Wer sollte teilnehmen?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DevOps Entwickler&lt;/li&gt;
+&lt;li&gt;Administratoren&lt;/li&gt;
+&lt;li&gt;Software- und Systemarchitekten&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;voraussetzungen-an-die-teilnehmer&#34;&gt;Voraussetzungen an die Teilnehmer&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Grundkenntnisse Linux (Debian, bash, vim, curl, network, Virtualisierung)&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Build- und Package-Systeme&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;leistungen&#34;&gt;Leistungen&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Verpflegung: Frühstück, Mittagessen und Getränke (nicht alkoholisch)&lt;/li&gt;
+&lt;li&gt;Schulungsmaterialien&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Nicht enthalten: Hotel Übernachtungen, Anreise&lt;/li&gt;
+&lt;li&gt;Rechner werden nicht gestellt&lt;/li&gt;
+&lt;li&gt;Bringe Deinen eigenes Notebook mit
+
+&lt;ul&gt;
+&lt;li&gt;Administrator Rechte erforderlich&lt;/li&gt;
+&lt;li&gt;Freier Zugang zum gesamten Netzwerk (Kein Unternehmes Proxy oder VPN)&lt;/li&gt;
+&lt;li&gt;SSH oder Putty installiert&lt;/li&gt;
+&lt;li&gt;Google Chrome, Java IDE und git installiert&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;h3 id=&#34;27-29-november-2017-münchen&#34;&gt;27. - 29. November 2017, München&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.eventbrite.de/e/container-devops-camp-27-29-november-2017-munchen-tickets-38273610399&#34; class=&#34;Jetzt zum Training in Wien anmelden!&#34;&gt;Bis zum 2. November anmelden &amp;amp; mit den Frühbucherpreisen sparen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Dieses Training kannst Du auch als Inhouse-Training buchen. Sende uns hierfür einfach eine E-Mail an &lt;a href&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:info@bee42.com&#34; class=&#34;Jetzt als Inhouse-Training anfragen!&#34;&gt;Jetzt Inhouse-Training anfragen!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;
 </description>
     </item>
     
