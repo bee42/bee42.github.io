@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<title>Container vs. Virtuelle Maschinen (VM&#39;s): Ein Blick auf die Sicherheit</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Was genau unterscheidet Container von Virtuellen Maschinen? In diesem Post gehen wir dieser Frage auf den Grund und zeigen die wichtigsten Unterschiede auf.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+<meta property="og:title" content="Container vs. Virtuelle Maschinen (VM&#39;s): Ein Blick auf die Sicherheit" />
+<meta property="og:description"content="Was genau unterscheidet Container von Virtuellen Maschinen? In diesem Post gehen wir dieser Frage auf den Grund und zeigen die wichtigsten Unterschiede auf." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bee42.com/de/blog/Container-vs-Virtuelle-Maschinen-Sicherheit/" />
+
+
+	<meta property="og:image" content="https://bee42.com/images/blog/Neuvector-Security-Container-vs-VM/Container_vs_Viruelle_Maschinen.jpg" />
+ 
+
+
+
+<meta property="og:updated_time" content="2017-10-04 00:00:00 &#43;0000 UTC"/>
+
+
+<meta property="og:site_name" content="DevOps Trainings &amp; Consulting - bee42 solutions gmbh" />
+
+
+
+
+
+
+
+
+<meta property="article:publisher" content="https://www.facebook.com/" />
+
+<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+
+<meta property="article:modified_time" content="2017-10-04 00:00:00 &#43;0000 UTC" />
+<meta property="article:section" content="blog" />
+
+
+
+
+
+
+<meta itemprop="name" content="Container vs. Virtuelle Maschinen (VM&#39;s): Ein Blick auf die Sicherheit">
+<meta itemprop="description" content="Was genau unterscheidet Container von Virtuellen Maschinen? In diesem Post gehen wir dieser Frage auf den Grund und zeigen die wichtigsten Unterschiede auf.">
+
+
+
+	<meta itemprop="image" content="https://bee42.com/images/blog/Neuvector-Security-Container-vs-VM/Container_vs_Viruelle_Maschinen.jpg">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta itemprop="wordCount" content="883">
+
+
+
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image:src" content="https://bee42.com/images/blog/Neuvector-Security-Container-vs-VM/Container_vs_Viruelle_Maschinen.jpg"/>
+
+
+
+<meta name="twitter:title" content="Container vs. Virtuelle Maschinen (VM&#39;s): Ein Blick auf die Sicherheit"/>
+<meta name="twitter:description" content="Was genau unterscheidet Container von Virtuellen Maschinen? In diesem Post gehen wir dieser Frage auf den Grund und zeigen die wichtigsten Unterschiede auf."/>
+
+
+<meta name="twitter:creator" content="@bee42solutions"/>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8QDFPL');</script>
+
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="64x64" href="images/apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/css/main-6506650b.css" />
+</head>
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8QDFPL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navigation">
+	<div class="inner-content">
+		<a class="branding" href="/"><img src="/images/logo.svg" alt=""></a>
+   		 <ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+		<button class="burger" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	</div>
+</nav>
+
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+ 		<ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+	</div>
+	<div class="off-canvas-content" data-off-canvas-content>
+	
+		<header> 
+			<div class="inner-content">
+				<h1>
+					Rethink IT 
+					<span></span>
+				</h1>
+			</div>
+		</header>
+
+		<main>
+ <section class="page-content blog">
+       <section class="content-box">
+               <h1>Container vs. Virtuelle Maschinen (VM&#39;s): Ein Blick auf die Sicherheit</h1>
+              Wir hören oft die Frage, wie sich Container von Virtuellen Maschinen (VM’s) unterscheiden. Daher greifen wir hier einen <a href="https://neuvector.com/blog/containers-vs-virtual-machines-vms/?utm_source=bee42-blog&utm_medium=website" class="https://neuvector.com/blog/containers-vs-virtual-machines-vms/?utm_source=bee42-blog&utm_medium=website">Blogpost</a> von unserem Partner NeuVector auf, um auf die Unterschiede mit Blick auf das Thema Sicherheit einzugehen.</p>
+
+<p>Was die meisten schon wissen ist, dass Virtuelle Maschinen eine sehr starke Isolation der Hosts bieten und keine Betriebssysteme teilen. Entwickler entscheiden sich heute für eine Microservice-Architektur, um ihre Anwendungen in kleinere funktionale Teile aufzubrechen. Damit erschaffen sie sich das Potential, flexibler und schneller auf Änderungen reagieren zu können. Die Services werden in Container gepackt und betrieben. Die Herausforderung ist das Management der Verteilung der Container und die Erstellung von stabilen API’s für die Services. Dieses Setup ist zwar hoch flexibel und skalierbar, bringt aber eine Vielzahl von Sicherheitsherausforderungen mit sich, auf die sorgfältig zu achten ist.</p>
+
+<p>Mike Coleman greift in seinem Blog-Artikel Containers Are Not VMs die Analogie zu einem Einfamilienhaus (VM) und einer Wohnung (Container Host) auf. In einem Einfamilienhaus (VM) ist jeder Bewohner für seinen Schutz gegen Einbrecher selbst verantwortlich. Wenn dem Bewohner des Einfamilienhauses die Sicherheit viel wert ist, aber der Nachbar etwas gutgläubiger ist, so betrifft das nicht direkt auch den Bewohner selbst. Außer wenn es mal zu einem Feuer kommt, aber das ist eher selten.</p>
+
+<p>Die Lage ändert sich, wenn man in einer Wohnung in einem Mehrfamilienhaus (Container Host) mit gemeinsamen Eingängen lebt. Wenn dann ein Nachbar regelmäßig die Eingangstür oder seine Balkontür offen lässt, sind die Schutzmaßnahmen stark von dem Verhalten der anderen Bewohner abhängig. Zum Glück gibt es ja noch die Wohnungstür, die man gut absichern kann. Leider ist es aber bei Docker standardmäßig so, dass eine offene “Eingangstüre” benötigt wird, damit befugte Besucher rein kommen können. Sollten nun also Diebe über den Nachbarn ins Mehrfamilienhaus kommen, sind sie ohne Hindernisse auch bei dir in der Wohnung.</p>
+
+<p>Bevor wir also zu den Sicherheitsproblemen mit Containern kommen, lasst mich darauf hinweisen, dass einige Leute glauben, dass Container von Natur aus sicherer als VM’s sind. Hier hört man oft das Argument, dass die Anwendungen in Microservices aufgeteilt werden und so mit gut definierten Schnittstellen und begrenzten verpackten Services die Angriffsfläche insgesamt reduziert wird. Fakt ist, dass ein gut implementiertes Container-Deployment, in dem die notwendigen Sicherheitsvorkehrungen getroffen worden sind, mindestens so sicher sein kann, wenn nicht sogar sicherer als die Installation vieler Services in einer VM.</p>
+
+<p>Lasst uns mal einige technische Aspekte des Container-Hosts genauer betrachten und schauen, wie er sich sicherheitstechnisch von einer VM unterscheidet. Container und Container-Deployments stehen vor einer Vielzahl unterschiedlicher Bedrohungen, Schwächen und Schwachstellen, die berücksichtigt werden müssen, bevor ein System abgesichert in Produktion gehen kann. Im Gegensatz zu VM’s können die grundsätzlichen Risiken des offenen Netzwerkverkehrs über Services und einen gemeinsam genutzten Linux-Kernel nicht ganz ignoriert werden.</p>
+
+<p>Es gibt für jede Container-Plattform und fast jedes Deployment entsprechend detaillierte Empfehlungen für Sicherheitsvorkehrungen. So gibt es systemübergreifend folgende Sicherheitsempfehlungen:</p>
+
+<ol>
+<li>Scannt eure Container vor und während der Laufzeit. So verringert ihr in der Anwendung und im Betriebssystem etc. alle Angriffsflächen auf ein Minimum.</li>
+<li>Verwendet eine Mikrosegmentierung des internen Netzwerkes, um Anwendungscluster auf der Grundlage von Vertrauen, Risiko und Exposition zu isolieren.</li>
+<li>Übernehmt und aktiviert alle sicherheitsrelevanten und unterstützenden Konfigurationsoptionen für die gesamte Plattform, wie Registry Scanning, Zugriffskontrollen und Container-Berechtigungen.</li>
+<li>Haltet die Host- und Container-Versionen immer auf dem neuesten Stand indem ihr die empfohlenen Sicherheitspatches regelmäßig einspielt.</li>
+<li>Lernt das Verhalten der Anwendungen im Detail kennen und wisst wie sie sich genau verhalten sollten. Schafft eine bessere Transparenz auf den Intra-Container- und Intra-Host-Netzwerkverkehr (Ost-West) sowie auf der normalen Nord-Süd-Überwachung.</li>
+<li>Kontinuierliche Prüfung und Überprüfung der oben genannten Sicherheitsempfehlungen in eurem CI/CD-Prozess.</li>
+<li>Protokolliert Bedrohungen und Schwachstellen von eurem Container-Host in eurem normalen SIEM-Tool wie Splunk, ELK-Stack, Prometheus oder Nagios.</li>
+<li>Implementiert eine Drittanbieter-Container-spezifische Sicherheitsplattform wie NeuVector. Denkt daran, traditionelle Firewalls können nicht mit dem rasanten Tempo und der Dynamik der Container-Bereitstellungen mithalten und der heutige Status quo ist keine Option.</li>
+</ol>
+
+<p>Heute ist die Sicherheit bei Software-Containern ein viel größeres Thema, als bei Virtuellen Maschinen. Bei 53% der Unternehmen, die Container im Einsatz haben oder deren Einsatz planen, ist die Sicherheit die größte Sorge (Forrester Research Studie).</p>
+
+<p>Dies könnte daran liegen, dass die VM’s im Betrieb und was die Sicherheits-Angriffsfläche betrifft, bereits ziemlich ausgereift sind. Container hingegen sind eher mit dem Wilden Westen vergleichbar, wo es große Chancen gibt, aber niemand genauer weiß, woher neue Angriffe kommen könnten.</p>
+
+<h3 id="was-ist-mit-vm-s-und-containern">Was ist mit “VM’s UND Containern”?</h3>
+
+<p>Viele Unternehmen mit bestehenden Anwendungen, die auf einer stabilen VM-Infrastruktur laufen, entscheiden sich für einen Schnupper-Ansatz. Durch den Einsatz von Containern auf einer VM, erhalten sie die Vorteile einer ausgereiften Überwachung und Isolation mit schnelleren DevOps-Prozessen. Im Vergleich zu Containern, die direkt auf der Hardware laufen, geben sie einige Leistung, Skalierbarkeit und Kostenvorteile auf. Aber es ist sicherlich eine solide Übergangslösung. Es ist verständlich, dass bei dieser neuen Microservices-Ära mit all den Vorteilen, der ein oder andere euphorisch wird! Doch mit allen neuen Technologien kommen auch neue Bedrohungen, die vor dem Produktionseinsatz berücksichtigt und verstanden werden müssen. Daher haben wir uns zu einer Partnerschaft mit NeuVector entschieden. Wir teilen die Auffassung, dass der beste Schutz für Container während der Laufzeit und so nah wie möglich am Container-Netzwerkverkehr stattfindet. Es ist die letzte Verteidigungslinie in einer neuen und oft wechselnden Container Umgebung.</p>
+
+<p>Analog - wenn es überhaupt praktisch und erschwinglich war, würde jedes Apartmentgebäude einen eigenen Türsteher haben und alle Besucher-ID überprüfen - richtig?   
+
+								
+
+<section id="author" class="small-12 medium-12 large-12 columns">
+
+  
+  
+
+  <h3> </h3>
+    
+    <p>Read <a href="/de/blog">more blog posts</a> from  us.</p>
+    
+
+    <ul>
+    
+    
+    
+    
+    
+    </ul>
+  </section>
+
+
+
+      </section> 
+</section>
+
+<div class="overlay"></div>
+<footer>
+    <section class="content-box">
+        <a class="branding" href="/"><img src="/images/logo.svg" alt=""> </a>
+        <p>&copy;2017</p>
+        <a class="imprint" href="/de/allgemeine-geschaeftsbedingungen">AGB</a>
+        <a class="imprint" href="/de/datenschutz">Datenschutz</a>
+        <a class="imprint" href="/de/impressum">Impressum</a>
+    </section>
+</footer>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/edd03c05ea.js"></script>
+	<script src="/js/foundation.min.js"></script>
+	<script src="/js/jquery.validate.min.js"></script>
+	<script src="/js/slick.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/js/prism.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58949839-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+	</body>
+<html>

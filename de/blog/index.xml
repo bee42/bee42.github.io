@@ -2211,5 +2211,50 @@ D.h. Mobile first, denn bei sauberer Umsetzung vom responsive Webdesign bietet d
 </description>
     </item>
     
+    <item>
+      <title>Container vs. Virtuelle Maschinen (VM&#39;s): Ein Blick auf die Sicherheit</title>
+      <link>https://bee42.com/de/blog/Container-vs-Virtuelle-Maschinen-Sicherheit/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/de/blog/Container-vs-Virtuelle-Maschinen-Sicherheit/</guid>
+      <description>
+
+&lt;p&gt;Wir hören oft die Frage, wie sich Container von Virtuellen Maschinen (VM’s) unterscheiden. Daher greifen wir hier einen &lt;a href=&#34;https://neuvector.com/blog/containers-vs-virtual-machines-vms/?utm_source=bee42-blog&amp;utm_medium=website&#34; class=&#34;https://neuvector.com/blog/containers-vs-virtual-machines-vms/?utm_source=bee42-blog&amp;utm_medium=website&#34;&gt;Blogpost&lt;/a&gt; von unserem Partner NeuVector auf, um auf die Unterschiede mit Blick auf das Thema Sicherheit einzugehen.&lt;/p&gt;
+
+&lt;p&gt;Was die meisten schon wissen ist, dass Virtuelle Maschinen eine sehr starke Isolation der Hosts bieten und keine Betriebssysteme teilen. Entwickler entscheiden sich heute für eine Microservice-Architektur, um ihre Anwendungen in kleinere funktionale Teile aufzubrechen. Damit erschaffen sie sich das Potential, flexibler und schneller auf Änderungen reagieren zu können. Die Services werden in Container gepackt und betrieben. Die Herausforderung ist das Management der Verteilung der Container und die Erstellung von stabilen API’s für die Services. Dieses Setup ist zwar hoch flexibel und skalierbar, bringt aber eine Vielzahl von Sicherheitsherausforderungen mit sich, auf die sorgfältig zu achten ist.&lt;/p&gt;
+
+&lt;p&gt;Mike Coleman greift in seinem Blog-Artikel Containers Are Not VMs die Analogie zu einem Einfamilienhaus (VM) und einer Wohnung (Container Host) auf. In einem Einfamilienhaus (VM) ist jeder Bewohner für seinen Schutz gegen Einbrecher selbst verantwortlich. Wenn dem Bewohner des Einfamilienhauses die Sicherheit viel wert ist, aber der Nachbar etwas gutgläubiger ist, so betrifft das nicht direkt auch den Bewohner selbst. Außer wenn es mal zu einem Feuer kommt, aber das ist eher selten.&lt;/p&gt;
+
+&lt;p&gt;Die Lage ändert sich, wenn man in einer Wohnung in einem Mehrfamilienhaus (Container Host) mit gemeinsamen Eingängen lebt. Wenn dann ein Nachbar regelmäßig die Eingangstür oder seine Balkontür offen lässt, sind die Schutzmaßnahmen stark von dem Verhalten der anderen Bewohner abhängig. Zum Glück gibt es ja noch die Wohnungstür, die man gut absichern kann. Leider ist es aber bei Docker standardmäßig so, dass eine offene “Eingangstüre” benötigt wird, damit befugte Besucher rein kommen können. Sollten nun also Diebe über den Nachbarn ins Mehrfamilienhaus kommen, sind sie ohne Hindernisse auch bei dir in der Wohnung.&lt;/p&gt;
+
+&lt;p&gt;Bevor wir also zu den Sicherheitsproblemen mit Containern kommen, lasst mich darauf hinweisen, dass einige Leute glauben, dass Container von Natur aus sicherer als VM’s sind. Hier hört man oft das Argument, dass die Anwendungen in Microservices aufgeteilt werden und so mit gut definierten Schnittstellen und begrenzten verpackten Services die Angriffsfläche insgesamt reduziert wird. Fakt ist, dass ein gut implementiertes Container-Deployment, in dem die notwendigen Sicherheitsvorkehrungen getroffen worden sind, mindestens so sicher sein kann, wenn nicht sogar sicherer als die Installation vieler Services in einer VM.&lt;/p&gt;
+
+&lt;p&gt;Lasst uns mal einige technische Aspekte des Container-Hosts genauer betrachten und schauen, wie er sich sicherheitstechnisch von einer VM unterscheidet. Container und Container-Deployments stehen vor einer Vielzahl unterschiedlicher Bedrohungen, Schwächen und Schwachstellen, die berücksichtigt werden müssen, bevor ein System abgesichert in Produktion gehen kann. Im Gegensatz zu VM’s können die grundsätzlichen Risiken des offenen Netzwerkverkehrs über Services und einen gemeinsam genutzten Linux-Kernel nicht ganz ignoriert werden.&lt;/p&gt;
+
+&lt;p&gt;Es gibt für jede Container-Plattform und fast jedes Deployment entsprechend detaillierte Empfehlungen für Sicherheitsvorkehrungen. So gibt es systemübergreifend folgende Sicherheitsempfehlungen:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Scannt eure Container vor und während der Laufzeit. So verringert ihr in der Anwendung und im Betriebssystem etc. alle Angriffsflächen auf ein Minimum.&lt;/li&gt;
+&lt;li&gt;Verwendet eine Mikrosegmentierung des internen Netzwerkes, um Anwendungscluster auf der Grundlage von Vertrauen, Risiko und Exposition zu isolieren.&lt;/li&gt;
+&lt;li&gt;Übernehmt und aktiviert alle sicherheitsrelevanten und unterstützenden Konfigurationsoptionen für die gesamte Plattform, wie Registry Scanning, Zugriffskontrollen und Container-Berechtigungen.&lt;/li&gt;
+&lt;li&gt;Haltet die Host- und Container-Versionen immer auf dem neuesten Stand indem ihr die empfohlenen Sicherheitspatches regelmäßig einspielt.&lt;/li&gt;
+&lt;li&gt;Lernt das Verhalten der Anwendungen im Detail kennen und wisst wie sie sich genau verhalten sollten. Schafft eine bessere Transparenz auf den Intra-Container- und Intra-Host-Netzwerkverkehr (Ost-West) sowie auf der normalen Nord-Süd-Überwachung.&lt;/li&gt;
+&lt;li&gt;Kontinuierliche Prüfung und Überprüfung der oben genannten Sicherheitsempfehlungen in eurem CI/CD-Prozess.&lt;/li&gt;
+&lt;li&gt;Protokolliert Bedrohungen und Schwachstellen von eurem Container-Host in eurem normalen SIEM-Tool wie Splunk, ELK-Stack, Prometheus oder Nagios.&lt;/li&gt;
+&lt;li&gt;Implementiert eine Drittanbieter-Container-spezifische Sicherheitsplattform wie NeuVector. Denkt daran, traditionelle Firewalls können nicht mit dem rasanten Tempo und der Dynamik der Container-Bereitstellungen mithalten und der heutige Status quo ist keine Option.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Heute ist die Sicherheit bei Software-Containern ein viel größeres Thema, als bei Virtuellen Maschinen. Bei 53% der Unternehmen, die Container im Einsatz haben oder deren Einsatz planen, ist die Sicherheit die größte Sorge (Forrester Research Studie).&lt;/p&gt;
+
+&lt;p&gt;Dies könnte daran liegen, dass die VM’s im Betrieb und was die Sicherheits-Angriffsfläche betrifft, bereits ziemlich ausgereift sind. Container hingegen sind eher mit dem Wilden Westen vergleichbar, wo es große Chancen gibt, aber niemand genauer weiß, woher neue Angriffe kommen könnten.&lt;/p&gt;
+
+&lt;h3 id=&#34;was-ist-mit-vm-s-und-containern&#34;&gt;Was ist mit “VM’s UND Containern”?&lt;/h3&gt;
+
+&lt;p&gt;Viele Unternehmen mit bestehenden Anwendungen, die auf einer stabilen VM-Infrastruktur laufen, entscheiden sich für einen Schnupper-Ansatz. Durch den Einsatz von Containern auf einer VM, erhalten sie die Vorteile einer ausgereiften Überwachung und Isolation mit schnelleren DevOps-Prozessen. Im Vergleich zu Containern, die direkt auf der Hardware laufen, geben sie einige Leistung, Skalierbarkeit und Kostenvorteile auf. Aber es ist sicherlich eine solide Übergangslösung. Es ist verständlich, dass bei dieser neuen Microservices-Ära mit all den Vorteilen, der ein oder andere euphorisch wird! Doch mit allen neuen Technologien kommen auch neue Bedrohungen, die vor dem Produktionseinsatz berücksichtigt und verstanden werden müssen. Daher haben wir uns zu einer Partnerschaft mit NeuVector entschieden. Wir teilen die Auffassung, dass der beste Schutz für Container während der Laufzeit und so nah wie möglich am Container-Netzwerkverkehr stattfindet. Es ist die letzte Verteidigungslinie in einer neuen und oft wechselnden Container Umgebung.&lt;/p&gt;
+
+&lt;p&gt;Analog - wenn es überhaupt praktisch und erschwinglich war, würde jedes Apartmentgebäude einen eigenen Türsteher haben und alle Besucher-ID überprüfen - richtig?&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
