@@ -1987,30 +1987,5 @@ Ich persönlich finde diese Darstellung etwas missverständlich und irreführend
 </description>
     </item>
     
-    <item>
-      <title>bee42 weekly #1: Interessante Blogpost, Artikel &amp; Co.!</title>
-      <link>https://bee42.com/de/blog/bee42-weekly-no1/</link>
-      <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://bee42.com/de/blog/bee42-weekly-no1/</guid>
-      <description>&lt;p&gt;In unserer neuen Blogpost-Serie &amp;ldquo;bee42 weekly&amp;rdquo; teilen wir mit Euch alles was uns bewegt und uns bei der täglichen Arbeit weiter bringt und inspiriert! Im Folgenden findet ihr lesenswerte Artikel, Blogposts, Slides, Videos und vieles mehr:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&#34;https://bee42.com/de/blog/Container-vs-Virtuelle-Maschinen-Sicherheit/&#34;&gt;Container vs. Virtuelle Maschinen (VMs): Ein Blick auf die Sicherheit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&#34;https://fsdev.io/how-to-install-secure-private-docker-registry-harbor-and-use-it/&#34;&gt;How to Install Secure Private Docker Registry - Harbor, and Use It&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&#34;https://stefanprodan.com/2016/a-monitoring-solution-for-docker-hosts-containers-and-containerized-services/&#34;&gt;A monitoring solution for Docker hosts, containers and containerized services&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&#34;https://containerjournal.com/2017/09/29/sap-commits-kubernetes-container-orchestrator/&#34;&gt;SAP Commits to Kubernetes Container Orchestrator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&#34;http://mspmentor.net/technologies/docker-vs-virtual-machines-understanding-performance-differences&#34;&gt;Docker vs. Virtual Machines: Understanding the Performance Differences&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&#34;https://developer.ibm.com/dwblog/2017/what-is-docker-swarm-cluster-engines/&#34;&gt;What is Docker Swarm? A discussion on container orchestration &amp;amp; potential solutions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&#34;https://neuvector.com/blog/docker-swarm-container-networking/&#34;&gt;How Docker Swarm Container Networking Works – Under the Hood&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&#34;https://medium.com/@lizrice/non-privileged-containers-based-on-the-scratch-image-a80105d6d341&#34;&gt;Non-privileged containers based on the scratch image&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&#34;https://boxboat.com/2017/08/03/deploy-web-app-docker-swarm-sticky-sessions/&#34;&gt;Deploy your Stateful Web Applications in Docker Swarm using Traefik Sticky Sessions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&#34;https://technologyconversations.com/2017/08/24/auto-scaling-docker-swarm-services-using-instrumented-metrics/&#34;&gt;Auto-Scaling Docker Swarm Services Using Instrumented Metrics&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Werde Teil der bee42 Community und erhalte regelmäßig Informationen zu Updates, Artikeln zu den Docker Technologien, Kooperationen, Terminen &amp;amp; Trainings, Specials und mehr: &lt;a href&#34;https://goo.gl/iT1nat&#34; class&#34;https://goo.gl/iT1nat&#34;&gt;&lt;a href=&#34;https://goo.gl/iT1nat&#34;&gt;https://goo.gl/iT1nat&lt;/a&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>
