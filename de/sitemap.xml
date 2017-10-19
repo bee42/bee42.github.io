@@ -127,6 +127,11 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/trainings/container-devops-camp/</loc>
+    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/crew/peter/</loc>
   </url>
   
@@ -144,11 +149,21 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/trainings/container-gitlab-ci-lab/</loc>
+    <lastmod>2017-01-10T22:16:30+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/crew/dieter/</loc>
   </url>
   
   <url>
     <loc>https://bee42.com/de/services/devops-consulting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/de/trainings/container-java-lab/</loc>
+    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
   </url>
   
   <url>
@@ -165,6 +180,11 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/trainings/container-windows-lab/</loc>
+    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/trainings/container-devops-camp-muenchen/</loc>
     <lastmod>2017-01-10T20:28:31+01:00</lastmod>
   </url>
@@ -174,11 +194,16 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/trainings/kubernetes-devops-lab/</loc>
+    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/crew/elena/</loc>
   </url>
   
   <url>
-    <loc>https://bee42.com/de/trainings/container-windows-lab/</loc>
+    <loc>https://bee42.com/de/trainings/container-windows-lab-de/</loc>
     <lastmod>2017-01-10T22:27:32+01:00</lastmod>
   </url>
   

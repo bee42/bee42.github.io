@@ -157,13 +157,47 @@ $(document).ready(function(){
     $(first_accordion_element).addClass("is-active");
     $($(first_accordion_element).find(".accordion-content")).show();
 
+    stripedTable();
+    scrollTableToggle();
+    tabsWidth();
 
-    //let all tabs have the same width
+});  // End of document.ready
+
+
+$(window).resize(function() {
+    scrollTableToggle();
+    tabsWidth();
+});
+
+
+/**
+ * add scroll class to training info table in mobile screen
+ */
+function scrollTableToggle(){
+    var pageWidth =$( window ).width();
+    if (pageWidth < 676){
+        $(".trainings-table-info").addClass("scroll");
+    }else{
+        $(".trainings-table-info").removeClass("scroll");
+    }
+}
+
+/**
+ * let all tabs have the same width
+ */
+function tabsWidth(){
+
     var tab_titles = $('.tabs-title ');
     var tabs_count = tab_titles.length;
     var tabs_container_width = $(".tabs").innerWidth();
-    var tab_width = tabs_container_width / tabs_count;
 
+    var pageWidth =$( window ).width();
+    if (pageWidth > 440){
+        var tab_width = tabs_container_width / tabs_count;
+        $(".tabs-title").width(tab_width);
+    }
+
+    var tab_width = tabs_container_width / tabs_count;
     $(".tabs-title").width(tab_width);
 
     //show the first tab content
@@ -174,10 +208,8 @@ $(document).ready(function(){
     $(first_tab_title).addClass("is-active");
     $(first_tab_name).show();
     $(first_tab_content).show();
+}
 
-    stripedTable();
-
-});  // End of document.ready
 
 /*
 * to display stripped trainings table with grouped name
@@ -293,18 +325,6 @@ function selectTab(hash){
     $(tabTitleParentLi).addClass("is-active");
     $(tabName).show();
 }
-
-//add scroll class to training info table in mobile screen
-$(window).resize(function() {
-
-    var pageWidth =$( window ).width();
-    if (pageWidth < 676){
-        $(".trainings-table-info").addClass("scroll");
-    }else{
-        $(".trainings-table-info").removeClass("scroll");
-    }
-});
-
 
 // cover navigation on scroll with bg color
 $(window).scroll(function() {
