@@ -73,10 +73,28 @@
     
     <item>
       <title></title>
+      <link>https://bee42.com/de/partners/berlin-valley/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/de/partners/berlin-valley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://bee42.com/de/partners/new-vector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bee42.com/de/partners/new-vector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://bee42.com/de/partners/venture-daily/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/de/partners/venture-daily/</guid>
       <description></description>
     </item>
     
@@ -123,80 +141,6 @@
       
       <guid>https://bee42.com/de/references/unternehmer-tum/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>42... und die Bedeutung des Lebens</title>
-      <link>https://bee42.com/de/42/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bee42.com/de/42/</guid>
-      <description>&lt;p&gt;42 ist die Antwort auf die Frage „nach dem Leben, dem Universum und dem ganzen Rest“, die Douglas Adams in seinem Roman &amp;ldquo;Per Anhalter durch die Galaxis&amp;rdquo; gestellt hat.&lt;/p&gt;
-
-&lt;p&gt;Diese von der Menschheit gestellte Frage wurde von einem riesigen zu der Zeit existierenden Computer &amp;ldquo;Deep Thought&amp;rdquo; beantwortet und passt vollends auf die heutige Zeit.&lt;/p&gt;
-
-&lt;p&gt;Aber es kann nichts gemacht und getan werden, weil niemand weiß, was die Frage ist. Nach dem Protagonisten Prak schließt sich das Wissen um Frage und Antwort gegenseitig aus. Es ist unmöglich sie beide im selben Universum zu kennen - Und wenn es doch dazu kommt, so werden Fragen und Antworten gegenseitig aufgehoben und das Universum genommen, das dann durch etwas noch etwas bizarreres und unverständlicheres ersetzt  wird. Manche glauben, das dies schon passiert ist&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;42 ist also der Sinn des Lebens und die Antwort auf alles. Das kann dann anders interpretiert werden: alles ist der Sinn des Lebens, oder das Leben macht keinen Sinn. Jedoch muss jeder eine Antwort für sich selbst finden.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>&gt;&gt; DevOps Engineer &lt;&lt;</title>
-      <link>https://bee42.com/de/jobs/devopsengineer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bee42.com/de/jobs/devopsengineer/</guid>
-      <description>
-
-&lt;h1 id=&#34;devops-engineer&#34;&gt;DEVOPS ENGINEER&lt;/h1&gt;
-
-&lt;p&gt;Als DevOps Engineer arbeitest Du bei uns direkt am Herzen des Container Infrastruktur Blueprints. Gemeinsam sammeln wir Erfahrungen in Transformationsprojekten und Trainings, um diese in den Blueprint einzubringen. Damit können wir als Team die IT-Umgebung bei unseren Kunden beschleunigen und ermöglichen damit Innovation und Fortschritt.&lt;/p&gt;
-
-&lt;h2 id=&#34;was-sind-deine-aufgaben-bei-uns&#34;&gt;Was sind Deine Aufgaben bei uns?&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Du entwickelst und automatisierst den Container Infrastruktur Blueprint mit Hilfe von Tools wie
-Terraform, Ansible, Docker, Kubernetes und GitLab/CI.&lt;/li&gt;
-&lt;li&gt;In unseren Projekten berätst du unsere Kunden,
-das eine sichere, stabile und skalierbare Infrastruktur entsteht.&lt;/li&gt;
-&lt;li&gt;Du entwirfst, baust und betreust den Infrastruktur Setup unserer Kunden. Dabei bist du ein wichtiger Baustein damit unsere Kunden ihre Ziele erreichen können.&lt;/li&gt;
-&lt;li&gt;Du bringst Dich mit neuen Ideen ein und
-hast den Drang nach kontinuierlicher Verbesserung.&lt;/li&gt;
-&lt;li&gt;Als Experte auf Deinem Gebiet teilst du dein Wissen auf Konferenzen, Meetups, Workshops und in Trainings.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;was-wir-von-dir-erwarten&#34;&gt;Was wir von Dir erwarten:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Eine Begeisterung für DevOps, OpenSource, Infrastruktur as Code und der Wille zur konsequenten Automatisierung.&lt;/li&gt;
-&lt;li&gt;Ein gesundes Selbstbewusstsein und Vertrauen in Deine Fähigkeiten.&lt;/li&gt;
-&lt;li&gt;Praktische Erfahrung mit Container Technologien und Orchestratoren wie Docker Swarm, Kubernetes oder Rancher.&lt;/li&gt;
-&lt;li&gt;Sicherer Umgang mit Konfigurationstools wie Ansible, Chef, Terraform, Packer oder Vagrant&lt;/li&gt;
-&lt;li&gt;Erster Umgang mit Cloud Plattformen wie AWS, GoogleCloud und Azure&lt;/li&gt;
-&lt;li&gt;Erste Erfahrungen mit Rest-, Microservices- oder Serverless-Architekturen&lt;/li&gt;
-&lt;li&gt;Mit SQL / NoSQL Datenbanken (MySQL, Postgres, Redis, MongoDB) und Protokollen (TCP/IP, DNS, HTTP, GRPC) kannst Du umgehen.&lt;/li&gt;
-&lt;li&gt;Programmieren solltest du natürlich auch können (Shell, Go, Java, Ruby, JavaScript oder Phyton)&lt;/li&gt;
-&lt;li&gt;Voraussetzung ist idealerweise abgeschlossenes Studium in Informatik oder ein abgeschlossene Ausbildung im Fachbereich Informatik mit zwei Jahren Berufserfahrung.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;was-erwartet-dich-bei-der-bee42&#34;&gt;Was erwartet Dich bei der bee42&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ein sehr dynamisches, offenes und lernwilliges Team mit unterschiedlichen Erfahrungen und Hintergründen.&lt;/li&gt;
-&lt;li&gt;Wir fordern und fördern uns gegenseitig, um uns gemeinsam weiter zu entwickeln.&lt;/li&gt;
-&lt;li&gt;Du bist am Puls der Zeit und lernst praxisnah wie Software in moderner IT-Infrastrukturen entwickelt, skaliert und betrieben wird.&lt;/li&gt;
-&lt;li&gt;Wir haben viele Ideen, ein gutes Netzwerk und wolle viel ausprobieren.&lt;/li&gt;
-&lt;li&gt;Wir stehen erst am Anfang der Container Revolution und wollen diese als Team aktiv mitgestalten.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Wir freuen uns auf Deine Bewerbung - sende sie einfach an:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;mailto:jobs@bee42.com&#34;&gt;jobs@bee42.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;bee42 solutions gmbh, Am Josephsschacht 72, D-44879 Bochum, Telefon: 0157 72549263&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
   </channel>
