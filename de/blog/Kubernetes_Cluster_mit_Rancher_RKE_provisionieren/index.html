@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="de-DE">
+
+<head>
+	<title>Kubernetes Cluster mit Rancher RKE provisionieren</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Kubernetes setzt sich als Container Orchestration-Werkzeug durch. Die regelmässigen Releases mit neuen Features, machen die Installation und Wartungen zu einer aufwendigen Prozedure. So existieren am Markt zahlreiche Cloud- und OnPremise-Lösungen zum Erzeugen eines Kubernetes Clusters. Im Oktober 2017 hatte Docker Inc. angekündigt nun auch Kubernetes in ihre Docker Desktop Edition und Docker EE aufzunehmen. Im September 2017 hat Rancher ihr neues Management-UI für Container-Orchestration im Release 2.0 komplett auf Kubernetes umgestellt.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<meta property="article:tag" content="kubernetes">
+<meta property="article:tag" content="rke">
+<meta property="article:tag" content="rancher">
+<meta property="article:tag" content="digitalocean">
+<meta property="article:tag" content="Kubernetes Lab">
+<meta property="article:tag" content="Kubernetes Setup">
+<meta property="article:tag" content="Kubernetes Tutorial">
+<meta property="article:tag" content="Kubernetes Workshop">
+<meta property="article:tag" content="Kubernetes how to">
+<meta property="article:tag" content="Kubernetes do it youself">
+<meta property="article:tag" content="Getting started with Rancher RKE">
+<meta property="article:tag" content="Kubernetes bee42">
+<meta property="article:tag" content="bee42 solutions">
+<meta property="article:tag" content="bee42">
+<meta property="article:tag" content="Kubernetes learn">
+<meta property="article:tag" content="Kubernetes first steps">
+<meta property="article:tag" content="terraform">
+<meta property="article:tag" content="Docker">
+<meta property="article:tag" content="terraform with digitalocean">
+
+
+
+<meta property="og:title" content="Kubernetes Cluster mit Rancher RKE provisionieren" />
+<meta property="og:description"content="Kubernetes setzt sich als Container Orchestration-Werkzeug durch. Die regelmässigen Releases mit neuen Features, machen die Installation und Wartungen zu einer aufwendigen Prozedure. So existieren am Markt zahlreiche Cloud- und OnPremise-Lösungen zum Erzeugen eines Kubernetes Clusters. Im Oktober 2017 hatte Docker Inc. angekündigt nun auch Kubernetes in ihre Docker Desktop Edition und Docker EE aufzunehmen. Im September 2017 hat Rancher ihr neues Management-UI für Container-Orchestration im Release 2.0 komplett auf Kubernetes umgestellt." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bee42.com/de/blog/Kubernetes_Cluster_mit_Rancher_RKE_provisionieren/" />
+
+
+	<meta property="og:image" content="https://bee42.com/images/blog/Kubernetes_Cluster_mit_Rancher_RKE_provisionieren/kubernetes-scenarios.png" />
+ 
+
+
+
+<meta property="og:updated_time" content="2018-01-11 00:00:00 &#43;0000 UTC"/>
+
+
+<meta property="og:site_name" content="DevOps Trainings &amp; Consulting - bee42 solutions gmbh" />
+
+
+
+
+
+
+
+
+<meta property="article:publisher" content="https://www.facebook.com/" />
+
+<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+
+<meta property="article:modified_time" content="2018-01-11 00:00:00 &#43;0000 UTC" />
+<meta property="article:section" content="blog" />
+
+
+
+
+
+
+<meta itemprop="name" content="Kubernetes Cluster mit Rancher RKE provisionieren">
+<meta itemprop="description" content="Kubernetes setzt sich als Container Orchestration-Werkzeug durch. Die regelmässigen Releases mit neuen Features, machen die Installation und Wartungen zu einer aufwendigen Prozedure. So existieren am Markt zahlreiche Cloud- und OnPremise-Lösungen zum Erzeugen eines Kubernetes Clusters. Im Oktober 2017 hatte Docker Inc. angekündigt nun auch Kubernetes in ihre Docker Desktop Edition und Docker EE aufzunehmen. Im September 2017 hat Rancher ihr neues Management-UI für Container-Orchestration im Release 2.0 komplett auf Kubernetes umgestellt.">
+
+
+
+	<meta itemprop="image" content="https://bee42.com/images/blog/Kubernetes_Cluster_mit_Rancher_RKE_provisionieren/kubernetes-scenarios.png">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta itemprop="wordCount" content="1123">
+
+
+
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image:src" content="https://bee42.com/images/blog/Kubernetes_Cluster_mit_Rancher_RKE_provisionieren/kubernetes-scenarios.png"/>
+
+
+
+<meta name="twitter:title" content="Kubernetes Cluster mit Rancher RKE provisionieren"/>
+<meta name="twitter:description" content="Kubernetes setzt sich als Container Orchestration-Werkzeug durch. Die regelmässigen Releases mit neuen Features, machen die Installation und Wartungen zu einer aufwendigen Prozedure. So existieren am Markt zahlreiche Cloud- und OnPremise-Lösungen zum Erzeugen eines Kubernetes Clusters. Im Oktober 2017 hatte Docker Inc. angekündigt nun auch Kubernetes in ihre Docker Desktop Edition und Docker EE aufzunehmen. Im September 2017 hat Rancher ihr neues Management-UI für Container-Orchestration im Release 2.0 komplett auf Kubernetes umgestellt."/>
+
+
+<meta name="twitter:creator" content="@bee42solutions"/>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8QDFPL');</script>
+
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="64x64" href="images/apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/css/main-fea0a0c5.css" />
+</head>
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8QDFPL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navigation">
+	<div class="inner-content">
+		<a class="branding" href="/"><img src="/images/logo.svg" alt=""></a>
+   		 <ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+		<button class="burger" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	</div>
+</nav>
+
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+ 		<ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+	</div>
+	<div class="off-canvas-content" data-off-canvas-content>
+	
+		<header> 
+			<div class="inner-content">
+				<h1>
+					Rethink IT 
+					<span></span>
+				</h1>
+			</div>
+		</header>
+
+		<main>
+ <section class="page-content blog">
+       <section class="content-box">
+               <h1>Kubernetes Cluster mit Rancher RKE provisionieren</h1>
+              <a href="https://kubernetes.io">Kubernetes</a> setzt sich als Container Orchestration-Werkzeug durch. Die regelmässigen Releases mit neuen Features, machen die Installation und Wartungen zu einer aufwendigen Prozedure. So existieren am Markt zahlreiche Cloud- und OnPremise-Lösungen zum Erzeugen eines Kubernetes Clusters. Im Oktober 2017 hatte Docker Inc. angekündigt nun auch Kubernetes in ihre Docker Desktop Edition und Docker EE aufzunehmen. Im September 2017 hat Rancher ihr neues Management-UI für Container-Orchestration im Release 2.0 komplett auf Kubernetes umgestellt. Seit November 2017 exitiert das Werkzeug <a href="https://github.com/rancher/rke"><strong>Rancher Kubernetes Engine</strong> (RKE)</a>, das die einfache Installation eines Kubernetes Clusters auf verschiedenen Plattformen unterstützt.</p>
+
+<p>Die Voraussetzungen für eine Kubernetes-Installation mit RKE sind, das auf den Systemen ein SSH-Zugang und eine Docker-CE (1.12-17.03) Installation existieren. Mithilfe des Werkzeugs <a href="https://www.terraform.io/">terraform</a> ist die Installation von Linux Systemen mit Docker CE schnell erledigt. In diesem Artikel wird die Terraform Installation eines DigitalOcean Clusters mit anschliessender Provisionierung des Kubernetes-Cluster mit RKE vorgestellt.</p>
+
+<h2 id="vorraussetzung-der-installation-eines-kubernetes-clusters">Vorraussetzung der Installation eines Kubernetes Clusters</h2>
+
+<p>Damit die Maschinen auf dem Cloud Provider-DigitalOcean erzeugt werden können, muss ein DigitalOcean-Konto vorhanden sein. Wenn noch kein Konto vorhanden ist, kann man mit diesem <a href="https://m.do.co/c/1b93d52f958f">DigitalOcean Verweis</a> ein Konto mit 10€ Guthaben erzeugen. In dem <a href="https://cloud.digitalocean.com/settings/api/tokens">Setting des Kontos</a> muss dann der Zugriffs-Token des DigitalOcean-API erzeugt werden.</p>
+
+<p>Nun müssen die entsprechend Werkzeuge <strong>terraform</strong>, <strong>kubectl</strong> und <strong>rke</strong> installiert werden. Auf einem MACOS ist dies Mithilfe des Packagemanager Homebrew elegant möglich. Das Projekt RKE wird gerade heftig entwickelt und unsere Artikel bezieht sich auf die Version <strong>0.0.9-dev</strong>.</p>
+
+<pre><code class="language-bash">🐳 brew install terraform
+🐳 brew install kubernetes-cli
+🐳 sudo curl -sL https://github.com/rancher/rke/releases/download/v0.0.9-dev/rke_darwin-amd64 &gt; /usr/local/bin/rke
+🐳 sudo chmod +x /usr/local/bin/rke
+</code></pre>
+
+<p>Die Konfiguration und entsprechenden Skripten stehen in unserem Projekt <a href="https://github.com/bee42/rancher-ondemand">rancher-ondemand</a> zur Verfügung.</p>
+
+<pre><code class="language-bash">🐳 git clone https://github.com/bee42/rancher-ondemand
+🐳 cd rancher-ondemand/rke-demo
+</code></pre>
+
+<h2 id="rke">RKE</h2>
+
+<p>Das Ziel der Rancher Kubernetes Engine ist es eine sichere, wiederholbare und homogenen Kubernetes Cluster Installation zu erzeugen. Auf dieser Basis lassen sich zuverlässig und schnell Test und Produktionssysteme erzeugen. Durch die häufigen Release-Wechsel lassen sich Neuerungen von Kubernetes vor dem Einsatz einfacher testen. Seit dem Release 1.8 wird an einem Update-Verfahren für bestehende Kubernetes gearbeitet, aber jedes Veränderungen sollte vor dem Einsatz durchgespielt werden. Einige Updates erzeugen noch heftige Probleme bei Installationen.
+Mit der RKE werden bestehende Maschinen mit dem erforderlichen Kubernetes Komponenten provisioniert. Die Maschinen können die Rollen <strong>ControlPlane</strong>, <strong>ETCD</strong> und <strong>Worker</strong> annehmen. Damit lassen sich sehr einfach verschiedene Setups von Kubernetes-Cluster erzeugen.</p>
+
+<p><img src="/images/blog/Kubernetes_Cluster_mit_Rancher_RKE_provisionieren/kubernetes-scenarios.png" alt="" /></p>
+
+<p>Für einen ersten Tests kann mit nur einer Maschine einen Kubernetes-Setup ausprobieren. Für ein grösseres Setup können die Rollen auf verschiedene Maschine installiert werden. Die Besonderheit von RKE ist das alle Komponenten in einer Konfigurationsdatei für die Installation eines Cluster zusammengefasst sind. Es werden <strong>flannel</strong>, <strong>canel</strong>, <strong>calcio</strong> und <strong>weave</strong> als Netzwerk-Plugins unterstützt. Der Kubernetes-Cluster wird mit TLS abgesichert und läuft mit RBAC als Zugriffsschutz.</p>
+
+<h3 id="installation-der-maschinen-auf-digitalocean">Installation der Maschinen auf DigitalOcean</h3>
+
+<p>Als Voraussetzung für die Erzeugung von DigitalOcean-Maschinen mit RKE braucht es den erwähnten DigitalOcean Access Key und einen SSH-Key. Der SSH-Key muss ohne Password-Validierung bereitgestellt werden und kann mit dem Werkzeug <strong>ssh-keygen</strong> erzeugt werden. Der öffentliche Teil des Schlüssel muss dann im eigenen Konto von DigitalOcean eingetragen werden.</p>
+
+<pre><code class="language-bash">$ ssh-keygen -t ed25519 -f $HOME/.ssh/digitalocean-key -q -N &quot;&quot; -C &quot;xxx@example.com&quot;
+$ cat $HOME/.ssh/digitalocean-key | pbcopy
+</code></pre>
+
+<p>Im nächsten Schritt werden die notwendigen Parameter für die Terraform Installation gesetzt.
+Zur Überprüfung des SSH-Keys muss noch der SSH-Fingerprint ermittelt werden.</p>
+
+<pre><code>$ export TF_VAR_do_token=REPLACE_ME_WITH_YOUR_DIGITALOCEAN_TOKEN
+$ export TF_VAR_pvt_key=$HOME/.ssh/digitalocean-key
+$ export TF_VAR_pub_key=${TF_VAR_pvt_key}.pub
+$ export TF_VAR_ssh_fingerprint=`ssh-keygen -E md5 -lf ${TF_VAR_pub_key} | awk '{print $2}' | sed 's/^MD5://g'`
+</code></pre>
+
+<p>Mit den Umgebungsvariablen mit dem Prefix <strong>TF_VAR</strong>_ existiert eine einfache
+Möglichkeit der Übertragung der spezifischen Parameter an das Werkzeug Terraform.
+In unserem Projekt befindet sich die Definition der Variablen in der Datei <strong>provider.tf</strong>.</p>
+
+<pre><code class="language-hcl">variable &quot;do_token&quot; {}
+variable &quot;pub_key&quot; {}
+variable &quot;pvt_key&quot; {}
+variable &quot;ssh_fingerprint&quot; {}
+
+provider &quot;digitalocean&quot; {
+  token = &quot;${var.do_token}&quot;
+}
+</code></pre>
+
+<p>In Terraform existiert direkt ein Ressource-Definition für DigitalOcean-Maschinen.
+Wir erzeugen in der Region Frankfurt entsprechend drei Ubuntu-Maschinen. Sobald die Maschinen
+verfügbar sind, wird die Provisionierung von Docker CE 17.03 vorgenommen. Rancher stellt hier netterweise
+ein Repository mit Installationsskripte für verschiedene Docker CE-Versionen bereit.</p>
+
+<pre><code class="language-hcl">resource &quot;digitalocean_droplet&quot; &quot;dockernodes&quot; {
+    count = 3
+    image = &quot;ubuntu-16-04-x64&quot;
+    name = &quot;dockernode-${count.index}&quot;
+    region = &quot;fra1&quot;
+    size = &quot;1Gb&quot;
+    private_networking = true
+    ssh_keys = [
+      &quot;${var.ssh_fingerprint}&quot;
+    ]
+
+  connection {
+      user = &quot;root&quot;
+      type = &quot;ssh&quot;
+      private_key = &quot;${file(var.pvt_key)}&quot;
+      timeout = &quot;2m&quot;
+  }
+
+  provisioner &quot;remote-exec&quot; {
+    inline = [
+      # install recommended docker version
+      &quot;curl https://releases.rancher.com/install-docker/17.03.sh | sh&quot;
+    ]
+  }
+
+}
+
+output &quot;public_ips&quot; {
+  value = [&quot;${digitalocean_droplet.dockernodes.*.ipv4_address}&quot;]
+}
+</code></pre>
+
+<p>Zuerst muss einmalig die entsprechend Terraform-Provider lokal installiert werden. Die Terraform Konfiguration wird validiert, ein Installationsplan erstellt und dieser Plan dann ausgeführt. Nach weniger als zwei Minuten stehen die drei Maschinen für die Installation von Kubernetes zur Verfügung.</p>
+
+<pre><code class="language-console">$ TF_PLAN=dockernodes.tfplan
+$ terraform init
+$ terraform validate
+$ terraform plan -out $TF_PLAN
+$ terraform apply $TF_PLAN
+</code></pre>
+
+<p>Nun müssen noch die konkreten IP-Adressen der Maschinen in die RKE-Konfiguration übertragen werden.
+In diesem Beispiel befindet sich das Template in der Datei <strong>cluster.template</strong> und mit Hilfe des Python Skripts <strong>create_config.py</strong> werden die IPs aus dem Terraform Plan extrahiert und ersetzt. Mit der RKE Version 0.0.9-dev hat nur die Kubernetes Rancher Installation 1.8.5 funktioniert. Ältere Versionen scheinen die neuen Installations-Checks noch nicht zu enthalten.</p>
+
+<p><strong>cluster.template</strong></p>
+
+<pre><code class="language-yaml">nodes:
+- address: $server0
+  internal_address: &quot;&quot;
+  role:
+  - controlplane
+  - etcd
+  hostname_override: &quot;&quot;
+  user: root
+  docker_socket: /var/run/docker.sock
+  ssh_key: &quot;&quot;
+  ssh_key_path: &quot;&quot;
+- address: $server1
+  internal_address: &quot;&quot;
+  role:
+  - worker 
+  hostname_override: &quot;&quot;
+  user: root
+  docker_socket: /var/run/docker.sock
+  ssh_key: &quot;&quot;
+  ssh_key_path: &quot;&quot;
+- address: $server2
+  internal_address: &quot;&quot;
+  role:
+  - worker
+  hostname_override: &quot;&quot;
+  user: root
+  docker_socket: /var/run/docker.sock
+  ssh_key: &quot;&quot;
+  ssh_key_path: &quot;&quot;
+services:
+  etcd:
+    image: quay.io/coreos/etcd:latest
+    extra_args: {}
+  kube-api:
+    image: rancher/k8s:v1.8.5-rancher3
+    extra_args: {}
+    service_cluster_ip_range: 10.233.0.0/18
+  kube-controller:
+    image: rancher/k8s:v1.8.5-rancher3
+    extra_args: {}
+    cluster_cidr: 10.233.64.0/18
+    service_cluster_ip_range: 10.233.0.0/18
+  scheduler:
+    image: rancher/k8s:v1.8.5-rancher3
+    extra_args: {}
+  kubelet:
+    image: rancher/k8s:v1.8.5-rancher3
+    extra_args: {}
+    cluster_domain: cluster.local
+    infra_container_image: gcr.io/google_containers/pause-amd64:3.0
+    cluster_dns_server: 10.233.0.3
+  kubeproxy:
+    image: rancher/k8s:v1.8.5-rancher3
+    extra_args: {}
+network:
+  plugin: flannel
+  options: {}
+auth:
+  strategy: x509
+  options: {}
+addons: &quot;&quot;
+system_images: {}
+ssh_key_path: $ssh_key_path
+</code></pre>
+
+<p>Die Provisionierung erfolgt nun mit dem Befehl <code>rke up</code>. Alle Kubernetes Komponenten werden gemäss der Rollen auf die entsprechenden Maschinen installiert und miteinander verbunden. Die Konfiguration des Kubernetes Cluster wird in der Datei <strong>.kube_config_cluster.yml</strong> gespeichert. Nun kann der Cluster mit dem gewohnten Kubernetes CLI Befehl <strong>kubectl</strong> genutzt werden.</p>
+
+<pre><code class="language-console">$ kubectl --kubeconfig .kube_config_cluster.yml get nodes
+</code></pre>
+
+<h3 id="zusammenfassung">Zusammenfassung</h3>
+
+<p>Der Artikel zeigt das Infrastruktur mit Hilfe von Terraform für einen Test sich schnell und mit übersichtlichen Mitteln erzeugen lässt. Die Provisionierung von Kubernetes ist mit RKE sehr flexible und verständlich möglich. Unser Dank gilt Claus Frein der die erste Version des Projekts bereitgestellt hat und mit uns zusammen an der nächsten Version arbeitet.</p>
+
+<p>Als nächsten Schritt für unser Projekt ist geplant die Werkzeug besser als eigene Container bereitzustellen und ein flexiblere Generierung verschiedener Kubernetes Cluster zu ermöglichen. Das Ziel wird es sein, ein echtes Werkzeug bereitzustellen. Dann können auch verschiedenen Typen und Grössen von Maschinen berücksichtigt werden. Die Bereistellung und Provisionierung eines Kubernetes Test-Cluster kann so hoffentlich noch mehr vereinfacht werden.   
+
+								
+
+<section id="author" class="small-12 medium-12 large-12 columns">
+
+  
+  
+
+  <h3> </h3>
+    
+    <p>Read <a href="/de/blog">more blog posts</a> from  us.</p>
+    
+
+    <ul>
+    
+    
+    
+    
+    
+    </ul>
+  </section>
+
+
+
+      </section> 
+</section>
+
+<div class="overlay"></div>
+<section class=" newsletter" id="newsletter">
+
+    <section class="content-box">
+        <h2>Newsletter</h2>
+<div id="mc_embed_signup">
+    <form action="https://bee42.us14.list-manage.com/subscribe/post?u=824895018aee17c0d9e3a50b7&amp;amp;id=773b3ea586" method="post" id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="mc_embed_signup_scroll">
+            <h3>Subscribe now to our mailing list and be the first who gets new updates on the program, speakers, price specials and more!
+</h3>
+            <div class="indicates-required">
+                <span class="asterisk">*</span> indicates required</div>
+
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Addresse
+                    <span class="asterisk">*</span>
+                </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+            </div>
+
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_824895018aee17c0d9e3a50b7_1f79b85105" tabindex="-1" value="">
+            </div>
+            
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            
+        </div>
+    </form>
+</div>
+    </section>
+    </section>
+
+<footer>
+    <section class="content-box">
+        <a class="branding" href="/"><img src="/images/logo.svg" alt=""> </a>
+        <p>&copy;2017</p>
+        <a class="imprint" href="/de/allgemeine-geschaeftsbedingungen">AGB</a>
+        <a class="imprint" href="/de/datenschutz">Datenschutz</a>
+        <a class="imprint" href="/de/impressum">Impressum</a>
+    </section>
+</footer>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/edd03c05ea.js"></script>
+	<script src="/js/foundation.min.js"></script>
+	<script src="/js/jquery.validate.min.js"></script>
+	<script src="/js/slick.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/js/prism.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58949839-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+	</body>
+<html>

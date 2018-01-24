@@ -235,6 +235,11 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/blog/Kubernetes_Cluster_mit_Rancher_RKE_provisionieren/</loc>
+    <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/blog/linuxkit-with-initial-aws-support/</loc>
     <lastmod>2017-06-04T00:00:00+00:00</lastmod>
   </url>
@@ -377,6 +382,11 @@
   <url>
     <loc>https://bee42.com/de/blog/bee42-weekly-no12/</loc>
     <lastmod>2018-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/de/blog/bee42-weekly-no13/</loc>
+    <lastmod>2018-01-19T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

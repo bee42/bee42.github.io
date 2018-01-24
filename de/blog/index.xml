@@ -6,8 +6,207 @@
     <description>Recent content in Blog-rsses on DevOps Trainings &amp; Consulting - bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
-    <lastBuildDate>Sun, 04 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jan 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bee42.com/de/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Kubernetes Cluster mit Rancher RKE provisionieren</title>
+      <link>https://bee42.com/de/blog/Kubernetes_Cluster_mit_Rancher_RKE_provisionieren/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/de/blog/Kubernetes_Cluster_mit_Rancher_RKE_provisionieren/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://kubernetes.io&#34;&gt;Kubernetes&lt;/a&gt; setzt sich als Container Orchestration-Werkzeug durch. Die regelmässigen Releases mit neuen Features, machen die Installation und Wartungen zu einer aufwendigen Prozedure. So existieren am Markt zahlreiche Cloud- und OnPremise-Lösungen zum Erzeugen eines Kubernetes Clusters. Im Oktober 2017 hatte Docker Inc. angekündigt nun auch Kubernetes in ihre Docker Desktop Edition und Docker EE aufzunehmen. Im September 2017 hat Rancher ihr neues Management-UI für Container-Orchestration im Release 2.0 komplett auf Kubernetes umgestellt. Seit November 2017 exitiert das Werkzeug &lt;a href=&#34;https://github.com/rancher/rke&#34;&gt;&lt;strong&gt;Rancher Kubernetes Engine&lt;/strong&gt; (RKE)&lt;/a&gt;, das die einfache Installation eines Kubernetes Clusters auf verschiedenen Plattformen unterstützt.&lt;/p&gt;
+
+&lt;p&gt;Die Voraussetzungen für eine Kubernetes-Installation mit RKE sind, das auf den Systemen ein SSH-Zugang und eine Docker-CE (1.12-17.03) Installation existieren. Mithilfe des Werkzeugs &lt;a href=&#34;https://www.terraform.io/&#34;&gt;terraform&lt;/a&gt; ist die Installation von Linux Systemen mit Docker CE schnell erledigt. In diesem Artikel wird die Terraform Installation eines DigitalOcean Clusters mit anschliessender Provisionierung des Kubernetes-Cluster mit RKE vorgestellt.&lt;/p&gt;
+
+&lt;h2 id=&#34;vorraussetzung-der-installation-eines-kubernetes-clusters&#34;&gt;Vorraussetzung der Installation eines Kubernetes Clusters&lt;/h2&gt;
+
+&lt;p&gt;Damit die Maschinen auf dem Cloud Provider-DigitalOcean erzeugt werden können, muss ein DigitalOcean-Konto vorhanden sein. Wenn noch kein Konto vorhanden ist, kann man mit diesem &lt;a href=&#34;https://m.do.co/c/1b93d52f958f&#34;&gt;DigitalOcean Verweis&lt;/a&gt; ein Konto mit 10€ Guthaben erzeugen. In dem &lt;a href=&#34;https://cloud.digitalocean.com/settings/api/tokens&#34;&gt;Setting des Kontos&lt;/a&gt; muss dann der Zugriffs-Token des DigitalOcean-API erzeugt werden.&lt;/p&gt;
+
+&lt;p&gt;Nun müssen die entsprechend Werkzeuge &lt;strong&gt;terraform&lt;/strong&gt;, &lt;strong&gt;kubectl&lt;/strong&gt; und &lt;strong&gt;rke&lt;/strong&gt; installiert werden. Auf einem MACOS ist dies Mithilfe des Packagemanager Homebrew elegant möglich. Das Projekt RKE wird gerade heftig entwickelt und unsere Artikel bezieht sich auf die Version &lt;strong&gt;0.0.9-dev&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;🐳 brew install terraform
+🐳 brew install kubernetes-cli
+🐳 sudo curl -sL https://github.com/rancher/rke/releases/download/v0.0.9-dev/rke_darwin-amd64 &amp;gt; /usr/local/bin/rke
+🐳 sudo chmod +x /usr/local/bin/rke
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Die Konfiguration und entsprechenden Skripten stehen in unserem Projekt &lt;a href=&#34;https://github.com/bee42/rancher-ondemand&#34;&gt;rancher-ondemand&lt;/a&gt; zur Verfügung.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;🐳 git clone https://github.com/bee42/rancher-ondemand
+🐳 cd rancher-ondemand/rke-demo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;rke&#34;&gt;RKE&lt;/h2&gt;
+
+&lt;p&gt;Das Ziel der Rancher Kubernetes Engine ist es eine sichere, wiederholbare und homogenen Kubernetes Cluster Installation zu erzeugen. Auf dieser Basis lassen sich zuverlässig und schnell Test und Produktionssysteme erzeugen. Durch die häufigen Release-Wechsel lassen sich Neuerungen von Kubernetes vor dem Einsatz einfacher testen. Seit dem Release 1.8 wird an einem Update-Verfahren für bestehende Kubernetes gearbeitet, aber jedes Veränderungen sollte vor dem Einsatz durchgespielt werden. Einige Updates erzeugen noch heftige Probleme bei Installationen.
+Mit der RKE werden bestehende Maschinen mit dem erforderlichen Kubernetes Komponenten provisioniert. Die Maschinen können die Rollen &lt;strong&gt;ControlPlane&lt;/strong&gt;, &lt;strong&gt;ETCD&lt;/strong&gt; und &lt;strong&gt;Worker&lt;/strong&gt; annehmen. Damit lassen sich sehr einfach verschiedene Setups von Kubernetes-Cluster erzeugen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Kubernetes_Cluster_mit_Rancher_RKE_provisionieren/kubernetes-scenarios.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Für einen ersten Tests kann mit nur einer Maschine einen Kubernetes-Setup ausprobieren. Für ein grösseres Setup können die Rollen auf verschiedene Maschine installiert werden. Die Besonderheit von RKE ist das alle Komponenten in einer Konfigurationsdatei für die Installation eines Cluster zusammengefasst sind. Es werden &lt;strong&gt;flannel&lt;/strong&gt;, &lt;strong&gt;canel&lt;/strong&gt;, &lt;strong&gt;calcio&lt;/strong&gt; und &lt;strong&gt;weave&lt;/strong&gt; als Netzwerk-Plugins unterstützt. Der Kubernetes-Cluster wird mit TLS abgesichert und läuft mit RBAC als Zugriffsschutz.&lt;/p&gt;
+
+&lt;h3 id=&#34;installation-der-maschinen-auf-digitalocean&#34;&gt;Installation der Maschinen auf DigitalOcean&lt;/h3&gt;
+
+&lt;p&gt;Als Voraussetzung für die Erzeugung von DigitalOcean-Maschinen mit RKE braucht es den erwähnten DigitalOcean Access Key und einen SSH-Key. Der SSH-Key muss ohne Password-Validierung bereitgestellt werden und kann mit dem Werkzeug &lt;strong&gt;ssh-keygen&lt;/strong&gt; erzeugt werden. Der öffentliche Teil des Schlüssel muss dann im eigenen Konto von DigitalOcean eingetragen werden.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ssh-keygen -t ed25519 -f $HOME/.ssh/digitalocean-key -q -N &amp;quot;&amp;quot; -C &amp;quot;xxx@example.com&amp;quot;
+$ cat $HOME/.ssh/digitalocean-key | pbcopy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Im nächsten Schritt werden die notwendigen Parameter für die Terraform Installation gesetzt.
+Zur Überprüfung des SSH-Keys muss noch der SSH-Fingerprint ermittelt werden.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ export TF_VAR_do_token=REPLACE_ME_WITH_YOUR_DIGITALOCEAN_TOKEN
+$ export TF_VAR_pvt_key=$HOME/.ssh/digitalocean-key
+$ export TF_VAR_pub_key=${TF_VAR_pvt_key}.pub
+$ export TF_VAR_ssh_fingerprint=`ssh-keygen -E md5 -lf ${TF_VAR_pub_key} | awk &#39;{print $2}&#39; | sed &#39;s/^MD5://g&#39;`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Mit den Umgebungsvariablen mit dem Prefix &lt;strong&gt;TF_VAR&lt;/strong&gt;_ existiert eine einfache
+Möglichkeit der Übertragung der spezifischen Parameter an das Werkzeug Terraform.
+In unserem Projekt befindet sich die Definition der Variablen in der Datei &lt;strong&gt;provider.tf&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-hcl&#34;&gt;variable &amp;quot;do_token&amp;quot; {}
+variable &amp;quot;pub_key&amp;quot; {}
+variable &amp;quot;pvt_key&amp;quot; {}
+variable &amp;quot;ssh_fingerprint&amp;quot; {}
+
+provider &amp;quot;digitalocean&amp;quot; {
+  token = &amp;quot;${var.do_token}&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In Terraform existiert direkt ein Ressource-Definition für DigitalOcean-Maschinen.
+Wir erzeugen in der Region Frankfurt entsprechend drei Ubuntu-Maschinen. Sobald die Maschinen
+verfügbar sind, wird die Provisionierung von Docker CE 17.03 vorgenommen. Rancher stellt hier netterweise
+ein Repository mit Installationsskripte für verschiedene Docker CE-Versionen bereit.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-hcl&#34;&gt;resource &amp;quot;digitalocean_droplet&amp;quot; &amp;quot;dockernodes&amp;quot; {
+    count = 3
+    image = &amp;quot;ubuntu-16-04-x64&amp;quot;
+    name = &amp;quot;dockernode-${count.index}&amp;quot;
+    region = &amp;quot;fra1&amp;quot;
+    size = &amp;quot;1Gb&amp;quot;
+    private_networking = true
+    ssh_keys = [
+      &amp;quot;${var.ssh_fingerprint}&amp;quot;
+    ]
+
+  connection {
+      user = &amp;quot;root&amp;quot;
+      type = &amp;quot;ssh&amp;quot;
+      private_key = &amp;quot;${file(var.pvt_key)}&amp;quot;
+      timeout = &amp;quot;2m&amp;quot;
+  }
+
+  provisioner &amp;quot;remote-exec&amp;quot; {
+    inline = [
+      # install recommended docker version
+      &amp;quot;curl https://releases.rancher.com/install-docker/17.03.sh | sh&amp;quot;
+    ]
+  }
+
+}
+
+output &amp;quot;public_ips&amp;quot; {
+  value = [&amp;quot;${digitalocean_droplet.dockernodes.*.ipv4_address}&amp;quot;]
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Zuerst muss einmalig die entsprechend Terraform-Provider lokal installiert werden. Die Terraform Konfiguration wird validiert, ein Installationsplan erstellt und dieser Plan dann ausgeführt. Nach weniger als zwei Minuten stehen die drei Maschinen für die Installation von Kubernetes zur Verfügung.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ TF_PLAN=dockernodes.tfplan
+$ terraform init
+$ terraform validate
+$ terraform plan -out $TF_PLAN
+$ terraform apply $TF_PLAN
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nun müssen noch die konkreten IP-Adressen der Maschinen in die RKE-Konfiguration übertragen werden.
+In diesem Beispiel befindet sich das Template in der Datei &lt;strong&gt;cluster.template&lt;/strong&gt; und mit Hilfe des Python Skripts &lt;strong&gt;create_config.py&lt;/strong&gt; werden die IPs aus dem Terraform Plan extrahiert und ersetzt. Mit der RKE Version 0.0.9-dev hat nur die Kubernetes Rancher Installation 1.8.5 funktioniert. Ältere Versionen scheinen die neuen Installations-Checks noch nicht zu enthalten.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;cluster.template&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;nodes:
+- address: $server0
+  internal_address: &amp;quot;&amp;quot;
+  role:
+  - controlplane
+  - etcd
+  hostname_override: &amp;quot;&amp;quot;
+  user: root
+  docker_socket: /var/run/docker.sock
+  ssh_key: &amp;quot;&amp;quot;
+  ssh_key_path: &amp;quot;&amp;quot;
+- address: $server1
+  internal_address: &amp;quot;&amp;quot;
+  role:
+  - worker 
+  hostname_override: &amp;quot;&amp;quot;
+  user: root
+  docker_socket: /var/run/docker.sock
+  ssh_key: &amp;quot;&amp;quot;
+  ssh_key_path: &amp;quot;&amp;quot;
+- address: $server2
+  internal_address: &amp;quot;&amp;quot;
+  role:
+  - worker
+  hostname_override: &amp;quot;&amp;quot;
+  user: root
+  docker_socket: /var/run/docker.sock
+  ssh_key: &amp;quot;&amp;quot;
+  ssh_key_path: &amp;quot;&amp;quot;
+services:
+  etcd:
+    image: quay.io/coreos/etcd:latest
+    extra_args: {}
+  kube-api:
+    image: rancher/k8s:v1.8.5-rancher3
+    extra_args: {}
+    service_cluster_ip_range: 10.233.0.0/18
+  kube-controller:
+    image: rancher/k8s:v1.8.5-rancher3
+    extra_args: {}
+    cluster_cidr: 10.233.64.0/18
+    service_cluster_ip_range: 10.233.0.0/18
+  scheduler:
+    image: rancher/k8s:v1.8.5-rancher3
+    extra_args: {}
+  kubelet:
+    image: rancher/k8s:v1.8.5-rancher3
+    extra_args: {}
+    cluster_domain: cluster.local
+    infra_container_image: gcr.io/google_containers/pause-amd64:3.0
+    cluster_dns_server: 10.233.0.3
+  kubeproxy:
+    image: rancher/k8s:v1.8.5-rancher3
+    extra_args: {}
+network:
+  plugin: flannel
+  options: {}
+auth:
+  strategy: x509
+  options: {}
+addons: &amp;quot;&amp;quot;
+system_images: {}
+ssh_key_path: $ssh_key_path
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Die Provisionierung erfolgt nun mit dem Befehl &lt;code&gt;rke up&lt;/code&gt;. Alle Kubernetes Komponenten werden gemäss der Rollen auf die entsprechenden Maschinen installiert und miteinander verbunden. Die Konfiguration des Kubernetes Cluster wird in der Datei &lt;strong&gt;.kube_config_cluster.yml&lt;/strong&gt; gespeichert. Nun kann der Cluster mit dem gewohnten Kubernetes CLI Befehl &lt;strong&gt;kubectl&lt;/strong&gt; genutzt werden.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl --kubeconfig .kube_config_cluster.yml get nodes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;zusammenfassung&#34;&gt;Zusammenfassung&lt;/h3&gt;
+
+&lt;p&gt;Der Artikel zeigt das Infrastruktur mit Hilfe von Terraform für einen Test sich schnell und mit übersichtlichen Mitteln erzeugen lässt. Die Provisionierung von Kubernetes ist mit RKE sehr flexible und verständlich möglich. Unser Dank gilt Claus Frein der die erste Version des Projekts bereitgestellt hat und mit uns zusammen an der nächsten Version arbeitet.&lt;/p&gt;
+
+&lt;p&gt;Als nächsten Schritt für unser Projekt ist geplant die Werkzeug besser als eigene Container bereitzustellen und ein flexiblere Generierung verschiedener Kubernetes Cluster zu ermöglichen. Das Ziel wird es sein, ein echtes Werkzeug bereitzustellen. Dann können auch verschiedenen Typen und Grössen von Maschinen berücksichtigt werden. Die Bereistellung und Provisionierung eines Kubernetes Test-Cluster kann so hoffentlich noch mehr vereinfacht werden.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>LinuxKit meets AWS, a technical POC</title>
@@ -1984,31 +2183,6 @@ Ich persönlich finde diese Darstellung etwas missverständlich und irreführend
 &lt;p&gt;Viele Unternehmen mit bestehenden Anwendungen, die auf einer stabilen VM-Infrastruktur laufen, entscheiden sich für einen Schnupper-Ansatz. Durch den Einsatz von Containern auf einer VM, erhalten sie die Vorteile einer ausgereiften Überwachung und Isolation mit schnelleren DevOps-Prozessen. Im Vergleich zu Containern, die direkt auf der Hardware laufen, geben sie einige Leistung, Skalierbarkeit und Kostenvorteile auf. Aber es ist sicherlich eine solide Übergangslösung. Es ist verständlich, dass bei dieser neuen Microservices-Ära mit all den Vorteilen, der ein oder andere euphorisch wird! Doch mit allen neuen Technologien kommen auch neue Bedrohungen, die vor dem Produktionseinsatz berücksichtigt und verstanden werden müssen. Daher haben wir uns zu einer Partnerschaft mit NeuVector entschieden. Wir teilen die Auffassung, dass der beste Schutz für Container während der Laufzeit und so nah wie möglich am Container-Netzwerkverkehr stattfindet. Es ist die letzte Verteidigungslinie in einer neuen und oft wechselnden Container Umgebung.&lt;/p&gt;
 
 &lt;p&gt;Analog - wenn es überhaupt praktisch und erschwinglich war, würde jedes Apartmentgebäude einen eigenen Türsteher haben und alle Besucher-ID überprüfen - richtig?&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>bee42 weekly #1: Interessante Blogpost, Artikel &amp; Co.!</title>
-      <link>https://bee42.com/de/blog/bee42-weekly-no1/</link>
-      <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://bee42.com/de/blog/bee42-weekly-no1/</guid>
-      <description>&lt;p&gt;In unserer neuen Blogpost-Serie &amp;ldquo;bee42 weekly&amp;rdquo; teilen wir mit Euch alles was uns bewegt und uns bei der täglichen Arbeit weiter bringt und inspiriert! Im Folgenden findet ihr lesenswerte Artikel, Blogposts, Slides, Videos und vieles mehr:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bee42.com/de/blog/Container-vs-Virtuelle-Maschinen-Sicherheit/&#34;&gt;Container vs. Virtuelle Maschinen (VMs): Ein Blick auf die Sicherheit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://fsdev.io/how-to-install-secure-private-docker-registry-harbor-and-use-it/&#34;&gt;How to Install Secure Private Docker Registry - Harbor, and Use It&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stefanprodan.com/2016/a-monitoring-solution-for-docker-hosts-containers-and-containerized-services/&#34;&gt;A monitoring solution for Docker hosts, containers and containerized services&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://containerjournal.com/2017/09/29/sap-commits-kubernetes-container-orchestrator/&#34;&gt;SAP Commits to Kubernetes Container Orchestrator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://mspmentor.net/technologies/docker-vs-virtual-machines-understanding-performance-differences&#34;&gt;Docker vs. Virtual Machines: Understanding the Performance Differences&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://developer.ibm.com/dwblog/2017/what-is-docker-swarm-cluster-engines/&#34;&gt;What is Docker Swarm? A discussion on container orchestration &amp;amp; potential solutions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://neuvector.com/blog/docker-swarm-container-networking/&#34;&gt;How Docker Swarm Container Networking Works – Under the Hood&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://medium.com/@lizrice/non-privileged-containers-based-on-the-scratch-image-a80105d6d341&#34;&gt;Non-privileged containers based on the scratch image&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://boxboat.com/2017/08/03/deploy-web-app-docker-swarm-sticky-sessions/&#34;&gt;Deploy your Stateful Web Applications in Docker Swarm using Traefik Sticky Sessions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://technologyconversations.com/2017/08/24/auto-scaling-docker-swarm-services-using-instrumented-metrics/&#34;&gt;Auto-Scaling Docker Swarm Services Using Instrumented Metrics&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Werde Teil der bee42 Community und erhalte regelmäßig Informationen zu Updates, Artikeln zu den Docker Technologien, Kooperationen, Terminen &amp;amp; Trainings, Specials und mehr: &lt;a href&#34;https://goo.gl/iT1nat&#34; class&#34;https://goo.gl/iT1nat&#34;&gt;&lt;a href=&#34;https://goo.gl/iT1nat&#34;&gt;https://goo.gl/iT1nat&lt;/a&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     
