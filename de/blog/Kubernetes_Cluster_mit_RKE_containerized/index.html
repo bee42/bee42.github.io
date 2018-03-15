@@ -86,7 +86,7 @@ In der ersten Version haben wir die benötigten Ressourcen per Terraform in der 
 <meta itemprop="keywords" content="" />
 
 
-<meta itemprop="wordCount" content="778">
+<meta itemprop="wordCount" content="776">
 
 
 
@@ -195,7 +195,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li>Erzeuge der Cluster-Konfiguration per Python-Script</li>
 </ul>
 
-<h2 id="der-neue-ansatz">Der Neue Ansatz</h2>
+<h2 id="der-neue-ansatz">Der neue Ansatz</h2>
 
 <p>Die verschiedenen Werkzeuge wollten wir lieber in Tool-Docker-Container bereitstellen. So bleibt das lokale System von einer umfangreichen Tool-Installation verschont, die zahlreichen anderen Vorteile von Container möchte ich diesmal nicht wieder aufzählen :)</p>
 
@@ -212,8 +212,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>Terraform kann ja ein <em>bisschen</em> mehr als nur ein paar Droplets erzeugen. Für uns sollte Terraform daher auch</p>
 
 <ul>
-<li>, den generierten SSH-Key für Digital Ocean bereitstellen</li>
-<li>, mit Hilfe von Templates direkt die fertige Konfigurationsdatei (<code>cluster.yml</code>) für RKE erstellen, denn dort müssen ja primär die IP-Adressen der Droplets sowie der Pfad zum SSH-Key eingetragen werden.</li>
+<li>den generierten SSH-Key für Digital Ocean bereitstellen</li>
+<li>mit Hilfe von Templates direkt die fertige Konfigurationsdatei (<code>cluster.yml</code>) für RKE erstellen, denn dort müssen ja primär die IP-Adressen der Droplets sowie der Pfad zum SSH-Key eingetragen werden.</li>
 </ul>
 
 <h2 id="die-umsetzung">Die Umsetzung</h2>
