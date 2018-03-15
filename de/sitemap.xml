@@ -269,6 +269,11 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/blog/Kubernetes_Cluster_mit_RKE_containerized/</loc>
+    <lastmod>2018-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/blog/Kubernetes_Cluster_mit_Rancher_RKE_provisionieren/</loc>
     <lastmod>2018-01-24T00:00:00+00:00</lastmod>
   </url>

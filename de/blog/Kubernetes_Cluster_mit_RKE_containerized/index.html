@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html lang="de-DE">
+
+<head>
+	<title>Kubernetes Cluster mit Rancher RKE - Containerized</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="In unserem ersten Blogpost zu dem Thema Rancher Kubernetes Engine hatten wir bereits - wie immer :) - zahlreiche Verbesserungsideen.
+Einige von diesen Ideen haben wir umgesetzt und wollen Euch hier zeigen, welche Ergebnisse wir erzielt haben.
+Die erste Version Zur Erinnerung: Es geht um die automatische Provisionierung eines Kubernetes-Clusters mit der Rancher Kubernetes Engine (RKE), Terraform und (natürlich!) Docker CE.
+In der ersten Version haben wir die benötigten Ressourcen per Terraform in der Digital Ocean Cloud angelegt, mit einem Script die Config-Datei für RKE erstellt, und danach die Installation von RKE gestartet.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<meta property="article:tag" content="kubernetes">
+<meta property="article:tag" content="rke">
+<meta property="article:tag" content="rancher">
+<meta property="article:tag" content="digitalocean">
+<meta property="article:tag" content="Kubernetes Lab">
+<meta property="article:tag" content="Kubernetes Setup">
+<meta property="article:tag" content="Kubernetes Tutorial">
+<meta property="article:tag" content="Kubernetes Workshop">
+<meta property="article:tag" content="Kubernetes how to">
+<meta property="article:tag" content="Kubernetes do it youself">
+<meta property="article:tag" content="Getting started with Rancher RKE">
+<meta property="article:tag" content="Kubernetes bee42">
+<meta property="article:tag" content="bee42 solutions">
+<meta property="article:tag" content="bee42">
+<meta property="article:tag" content="Kubernetes learn">
+<meta property="article:tag" content="Kubernetes first steps">
+<meta property="article:tag" content="terraform">
+<meta property="article:tag" content="Docker">
+<meta property="article:tag" content="terraform with digitalocean">
+
+
+
+<meta property="og:title" content="Kubernetes Cluster mit Rancher RKE - Containerized" />
+<meta property="og:description"content="In unserem ersten Blogpost zu dem Thema Rancher Kubernetes Engine hatten wir bereits - wie immer :) - zahlreiche Verbesserungsideen.
+Einige von diesen Ideen haben wir umgesetzt und wollen Euch hier zeigen, welche Ergebnisse wir erzielt haben.
+Die erste Version Zur Erinnerung: Es geht um die automatische Provisionierung eines Kubernetes-Clusters mit der Rancher Kubernetes Engine (RKE), Terraform und (natürlich!) Docker CE.
+In der ersten Version haben wir die benötigten Ressourcen per Terraform in der Digital Ocean Cloud angelegt, mit einem Script die Config-Datei für RKE erstellt, und danach die Installation von RKE gestartet." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bee42.com/de/blog/Kubernetes_Cluster_mit_RKE_containerized/" />
+
+
+	<meta property="og:image" content="https://bee42.com/images/blog/kubernetes-cluster.jpg" />
+ 
+
+
+
+<meta property="og:updated_time" content="2018-03-12 00:00:00 &#43;0000 UTC"/>
+
+
+<meta property="og:site_name" content="DevOps Trainings &amp; Consulting - bee42 solutions gmbh" />
+
+
+
+
+
+
+
+
+<meta property="article:publisher" content="https://www.facebook.com/" />
+
+<meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+
+<meta property="article:modified_time" content="2018-03-12 00:00:00 &#43;0000 UTC" />
+<meta property="article:section" content="blog" />
+
+
+
+
+
+
+<meta itemprop="name" content="Kubernetes Cluster mit Rancher RKE - Containerized">
+<meta itemprop="description" content="In unserem ersten Blogpost zu dem Thema Rancher Kubernetes Engine hatten wir bereits - wie immer :) - zahlreiche Verbesserungsideen.
+Einige von diesen Ideen haben wir umgesetzt und wollen Euch hier zeigen, welche Ergebnisse wir erzielt haben.
+Die erste Version Zur Erinnerung: Es geht um die automatische Provisionierung eines Kubernetes-Clusters mit der Rancher Kubernetes Engine (RKE), Terraform und (natürlich!) Docker CE.
+In der ersten Version haben wir die benötigten Ressourcen per Terraform in der Digital Ocean Cloud angelegt, mit einem Script die Config-Datei für RKE erstellt, und danach die Installation von RKE gestartet.">
+
+
+
+	<meta itemprop="image" content="https://bee42.com/images/blog/kubernetes-cluster.jpg">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta itemprop="wordCount" content="778">
+
+
+
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image:src" content="https://bee42.com/images/blog/kubernetes-cluster.jpg"/>
+
+
+
+<meta name="twitter:title" content="Kubernetes Cluster mit Rancher RKE - Containerized"/>
+<meta name="twitter:description" content="In unserem ersten Blogpost zu dem Thema Rancher Kubernetes Engine hatten wir bereits - wie immer :) - zahlreiche Verbesserungsideen.
+Einige von diesen Ideen haben wir umgesetzt und wollen Euch hier zeigen, welche Ergebnisse wir erzielt haben.
+Die erste Version Zur Erinnerung: Es geht um die automatische Provisionierung eines Kubernetes-Clusters mit der Rancher Kubernetes Engine (RKE), Terraform und (natürlich!) Docker CE.
+In der ersten Version haben wir die benötigten Ressourcen per Terraform in der Digital Ocean Cloud angelegt, mit einem Script die Config-Datei für RKE erstellt, und danach die Installation von RKE gestartet."/>
+
+
+<meta name="twitter:creator" content="@bee42solutions"/>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8QDFPL');</script>
+
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="64x64" href="images/apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/css/main-fea0a0c5.css" />
+</head>
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8QDFPL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navigation">
+	<div class="inner-content">
+		<a class="branding" href="/"><img src="/images/logo.svg" alt=""></a>
+   		 <ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+		<button class="burger" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	</div>
+</nav>
+
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+ 		<ul>
+	<li><a href="/de/index.html#scroll-top-trainings">Trainings</a></li>
+	<li><a href="/de/blog">Blog</a></li>
+	<li><a href="/de/index.html#scroll-top-services">Unser Angebot</a></li>
+	<li><a href="/de/index.html#scroll-top-mission">Mission</a></li>
+	<li><a href="/de/index.html#scroll-top-bee-crew">Bee<span>42</span> Crew</a></li>
+	<li><a href="/de/index.html#scroll-top-jobs">Jobs</a></li>
+	<li><a href="/de/kontakt">Kontakt</a></li>
+	<li><a href="https://twitter.com/bee42solutions" class="fa fa-twitter" aria-hidden="true"></a></li>
+</ul>
+
+	</div>
+	<div class="off-canvas-content" data-off-canvas-content>
+	
+		<header> 
+			<div class="inner-content">
+				<h1>
+					Rethink IT 
+					<span></span>
+				</h1>
+			</div>
+		</header>
+
+		<main>
+ <section class="page-content blog">
+       <section class="content-box">
+               <h1>Kubernetes Cluster mit Rancher RKE - Containerized</h1>
+              In unserem ersten Blogpost zu dem Thema Rancher Kubernetes Engine hatten wir bereits - wie immer :) - zahlreiche Verbesserungsideen.</p>
+
+<p>Einige von diesen Ideen haben wir umgesetzt und wollen Euch hier zeigen, welche Ergebnisse wir erzielt haben.</p>
+
+<h2 id="die-erste-version">Die erste Version</h2>
+
+<p>Zur Erinnerung: Es geht um die automatische Provisionierung eines Kubernetes-Clusters mit der <a href="https://github.com/rancher/rke">Rancher Kubernetes Engine (RKE)</a>,  <a href="https://www.terraform.io/">Terraform</a> und (natürlich!) <a href="https://www.docker.com/">Docker CE</a>.</p>
+
+<p>In der ersten Version haben wir die benötigten Ressourcen per Terraform in der Digital Ocean Cloud angelegt, mit einem Script die Config-Datei für RKE erstellt, und danach die Installation von RKE gestartet.</p>
+
+<p>Dazu waren aber immer noch einige Vorbereitungen oder Zwischenschritte nötig, die wir aber mit Tool-Container eleganter abbilden wollten. Z.B waren das</p>
+
+<ul>
+<li>Installation von Terraform auf dem lokalen Rechner</li>
+<li>Installation von RKE zum Erzeugen des Kubernetes-Clusters</li>
+<li>Installation von kubectl, um sich den entstandenen Kubernetes-Cluster anzuschauen</li>
+<li>Manuelles erstellen und übertragen des SSH-Keys zum Zugriff auf die Digital Ocean Droplets</li>
+<li>Erzeuge der Cluster-Konfiguration per Python-Script</li>
+</ul>
+
+<h2 id="der-neue-ansatz">Der Neue Ansatz</h2>
+
+<p>Die verschiedenen Werkzeuge wollten wir lieber in Tool-Docker-Container bereitstellen. So bleibt das lokale System von einer umfangreichen Tool-Installation verschont, die zahlreichen anderen Vorteile von Container möchte ich diesmal nicht wieder aufzählen :)</p>
+
+<p>Dazu brauchen wir einfach je Tool einen Container:</p>
+
+<ul>
+<li>Terraform</li>
+<li>RKE</li>
+<li>kubectl</li>
+</ul>
+
+<p>Die ersten beiden bauen wir selbst, für kubectl hatten wir der Einfachheit halber auf einen <a href="https://hub.docker.com/r/ceroic/kubectl/">fertigen Container</a> zurückgegriffen.</p>
+
+<p>Terraform kann ja ein <em>bisschen</em> mehr als nur ein paar Droplets erzeugen. Für uns sollte Terraform daher auch</p>
+
+<ul>
+<li>, den generierten SSH-Key für Digital Ocean bereitstellen</li>
+<li>, mit Hilfe von Templates direkt die fertige Konfigurationsdatei (<code>cluster.yml</code>) für RKE erstellen, denn dort müssen ja primär die IP-Adressen der Droplets sowie der Pfad zum SSH-Key eingetragen werden.</li>
+</ul>
+
+<h2 id="die-umsetzung">Die Umsetzung</h2>
+
+<p><img src="/images/blog/Kubernetes_Cluster_mit_RKE_containerized/bee42-rke-tools.png" alt="" /></p>
+
+<h3 id="container-bauen">Container bauen</h3>
+
+<p>Zur Vereinfachung haben wir ein Makefile hinterlegt, so dass die Images einfach gebaut werden können:</p>
+
+<p><code>make build</code> baut also das Terraform-Image aus dem zugehörigen Dockerfile, <code>make build-rke</code> macht das gleiche für RKE.</p>
+
+<p>Hier exemplarisch mal die Version für RKE:</p>
+
+<pre><code>FROM alpine:3.7
+# Maintainer
+LABEL maintainer=&quot;maintainers@bee42.com&quot;
+
+# Environment variables
+ARG RKE_VERSION=&quot;v0.1.2&quot;
+
+# RKE-Installation
+RUN apk --no-cache add wget ca-certificates  git bash openssh-client &amp;&amp; \
+    wget -O /usr/local/bin/rke https://github.com/rancher/rke/releases/download/${RKE_VERSION}/rke_linux-amd64 &amp;&amp; \
+    chmod +x /usr/local/bin/rke &amp;&amp; \
+    apk del --purge wget  &amp;&amp; \
+    rm -rf /var/cache/apk/*
+
+ENV RKE_USER=rke \
+    RKE_UID=1000 \
+    RKE_GID=1000 \
+    RKE_HOME=/rke
+
+RUN addgroup -S $RKE_USER -g ${RKE_GID} \
+    &amp;&amp; adduser -S  \
+    -g $RKE_USER \
+    -h $RKE_HOME \
+    -u ${RKE_UID} \
+    $RKE_USER
+
+USER $RKE_USER
+
+WORKDIR $RKE_HOME
+</code></pre>
+
+<p>Wir Ihr seht, braucht Ihr für eine andere RKE-Version nur die Versionsnummer anzupassen und neu zu bauen. Getestet haben wir das ganze mit der zur Zeit aktuellen Version <code>v0.1.2</code>.</p>
+
+<h2 id="das-allmächtige-terraform">Das <em>allmächtige</em> Terraform&hellip;</h2>
+
+<p>Was vielleicht nicht alle wissen: Terraform besitzt einen spannenden Templating-Provider. Mit dessen Hilfe gelingt auch die Erzeugung der cluster.yml-Datei.</p>
+
+<p>Als Besonderheit haben wir noch eingebaut, dass die Anzahl der ControlePlanes und Worker konfigurierbar ist.</p>
+
+<p><strong>variables.tf:</strong></p>
+
+<pre><code>variable &quot;worker_count&quot; {
+   description=&quot;Describes the amount of worker for the clusters&quot;
+   default=2
+}
+</code></pre>
+
+<p>Für die Worker gibt es zunächst ein eigenes Template, in das die IP-Adressen eingebaut werden</p>
+
+<p><strong>template/worker.tpl</strong></p>
+
+<pre><code>- address: ${worker_address}
+  internal_address: &quot;&quot;
+  role:
+  - worker 
+  hostname_override: &quot;&quot;
+  user: root
+  docker_socket: /var/run/docker.sock
+  ssh_key: &quot;&quot;
+  ssh_key_path: &quot;&quot;
+</code></pre>
+
+<p><br>
+So werden jetzt die IP-Adressen injiziert:</p>
+
+<p><strong>template.tf</strong></p>
+
+<pre><code>data &quot;template_file&quot; &quot;worker&quot; {
+ template = &quot;${file(&quot;${path.module}/template/worker.tpl&quot;)}&quot;
+ count= &quot;${var.worker_count}&quot;
+ vars {
+   worker_address = &quot;${element(digitalocean_droplet.worker.*.ipv4_address,count.index)}&quot;
+ }
+}
+</code></pre>
+
+<p>Damit ist der Teil für die Worker fertig, diesen könnte man jetzt einfach ausgeben. Oder - und das machen wir im Folgenden - als Eingabe für ein weiteres Template verwenden:</p>
+
+<p><strong>template/cluster.tpl</strong></p>
+
+<pre><code>nodes:
+${controlplane}
+${worker}
+services:
+  etcd:
+    image: quay.io/coreos/etcd:latest
+    extra_args: {}
+…
+</code></pre>
+
+<p><strong>template.tf</strong></p>
+
+<pre><code>data &quot;template_file&quot; &quot;cluster&quot; {
+ template = &quot;${file(&quot;${path.module}/template/cluster.tpl&quot;)}&quot;
+ vars {
+   controlplane = &quot;${join(&quot;\n&quot;,data.template_file.controlplane.*.rendered)}&quot;
+   worker = &quot;${join(&quot;\n&quot;,data.template_file.worker.*.rendered)}&quot;
+   ssh_key_path =&quot;${var.ssh_cluster_private_key}&quot;
+ }
+}
+</code></pre>
+
+<p>So kann also in einem Arbeitsgang nicht nur die eigentliche Infrastruktur durch Terraform erstellt werden, sondern auch gleich die fertige <code>cluster.yml</code> mit beliebig vielen ControlPlanes und Workern generiert werden!</p>
+
+<p>SSH-Key und die Datei <code>cluster.yml</code> werden danach extrahiert und dem RKE-Container übergeben.</p>
+
+<h2 id="das-ergebnis">Das Ergebnis</h2>
+
+<p>Mit wenigen Befehlen und viel Technologie lässt sich so ein Kubernetes-Cluster einfach provisionieren.</p>
+
+<p>Nachdem die Images gebaut sind, müssen sie nur noch gestartet werden, und schon ist der K8s-Cluster verfügbar.</p>
+
+<p>Hier unser kleines Script dazu, dass den Digital Ocean-Token als Parameter benötigt:</p>
+
+<p><strong>start.sh</strong></p>
+
+<pre><code class="language-bash">docker run -it --rm -v tf:/tf --env DO_TOKEN=$1 bee42/terraform apply
+docker run -it --rm -v tf:/tf --env DO_TOKEN=$1 bee42/terraform output cluster_template &gt; cluster.yml
+docker run -it --rm -v tf:/tf --env DO_TOKEN=$1 bee42/terraform output ssh_private_key &gt; private_key
+docker run -it --rm -v $(pwd):/rke -v $(pwd) /private_key:/tf/.ssh/cluster_ed25519 bee42/rke rke up --config cluster.yml
+docker run -v $(pwd)/.kube_config_cluster.yml:/root/.kube/config ceroic/kubectl kubectl get nodes
+</code></pre>
+
+<p><br></p>
+
+<h2 id="fazit">Fazit</h2>
+
+<p>Im Unterschied zur ersten Lösung haben wir jetzt wieder einige weitere Ziele erreicht: Die Containerisierung, das Entfallen einiger Zwischenschritte und nebenbei auch ein etwas tieferer Einstieg in die Terraform-Templating-Engine!</p>
+
+<p>Wenn Ihr Euch das genauer ansehen wollt: Auf <a href="https://github.com/bee42/rancher-ondemand/tree/master/rke-container-demo">Github</a> steht alles bereit!   
+
+								
+
+<section id="author" class="small-12 medium-12 large-12 columns">
+
+  
+  
+
+  <h3> </h3>
+    
+    <p>Read <a href="/de/blog">more blog posts</a> from  us.</p>
+    
+
+    <ul>
+    
+    
+    
+    
+    
+    </ul>
+  </section>
+
+
+
+      </section> 
+</section>
+
+<div class="overlay"></div>
+<section class=" newsletter" id="newsletter">
+
+    <section class="content-box">
+        <h2>Newsletter</h2>
+<div id="mc_embed_signup">
+    <form action="https://bee42.us14.list-manage.com/subscribe/post?u=824895018aee17c0d9e3a50b7&amp;amp;id=773b3ea586" method="post" id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="mc_embed_signup_scroll">
+            <h3>Bleibe auf dem Laufenden und erhalte regelmäßig Updates, Blogposts, Termine und viele weitere Highlights.
+</h3>
+            <div class="indicates-required">
+                <span class="asterisk">*</span> indicates required</div>
+
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">Email-Adresse eintragen
+                    <span class="asterisk">*</span>
+                </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+            </div>
+
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_824895018aee17c0d9e3a50b7_1f79b85105" tabindex="-1" value="">
+            </div>
+            
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            
+        </div>
+    </form>
+</div>
+    </section>
+    </section>
+
+<footer>
+    <section class="content-box">
+        <a class="branding" href="/"><img src="/images/logo.svg" alt=""> </a>
+        <p>&copy;2018</p>
+        <a class="imprint" href="/de/allgemeine-geschaeftsbedingungen">AGB</a>
+        <a class="imprint" href="/de/datenschutz">Datenschutz</a>
+        <a class="imprint" href="/de/impressum">Impressum</a>
+    </section>
+</footer>
+
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/edd03c05ea.js"></script>
+	<script src="/js/foundation.min.js"></script>
+	<script src="/js/jquery.validate.min.js"></script>
+	<script src="/js/slick.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/js/prism.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58949839-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+	</body>
+<html>
