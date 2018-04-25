@@ -19,15 +19,6 @@
     </item>
     
     <item>
-      <title>Container GitLab/CI Lab</title>
-      <link>https://bee42.com/de/trainings/container-gitlab-ci-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
-      
-      <guid>https://bee42.com/de/trainings/container-gitlab-ci-lab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Container DevOps Camp</title>
       <link>https://bee42.com/de/trainings/container-devops-camp/</link>
       <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
@@ -42,6 +33,15 @@
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
       
       <guid>https://bee42.com/de/trainings/container-java-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Container GitLab/CI Lab</title>
+      <link>https://bee42.com/de/trainings/container-gitlab-ci-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
+      
+      <guid>https://bee42.com/de/trainings/container-gitlab-ci-lab/</guid>
       <description></description>
     </item>
     
