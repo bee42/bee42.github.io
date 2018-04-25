@@ -142,11 +142,6 @@
   </url>
   
   <url>
-    <loc>https://bee42.com/de/kubernetes-day/</loc>
-    <lastmod>2017-11-15T20:28:31+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bee42.com/de/kubernetes-devops-lab/</loc>
     <lastmod>2017-11-15T20:28:31+01:00</lastmod>
   </url>
@@ -176,11 +171,6 @@
   
   <url>
     <loc>https://bee42.com/de/statements/technology/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bee42.com/de/trainings/kubernetes-day/</loc>
-    <lastmod>2017-04-25T20:28:31+01:00</lastmod>
   </url>
   
   <url>
@@ -235,6 +225,16 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/trainings/container-testing-lab/</loc>
+    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/de/trainings/software-quality-lab/</loc>
+    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/trainings/kubernetes-devops-lab-de/</loc>
     <lastmod>2017-01-10T20:28:31+01:00</lastmod>
   </url>
@@ -249,8 +249,8 @@
   </url>
   
   <url>
-    <loc>https://bee42.com/de/trainings/container-testing-lab/</loc>
-    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
+    <loc>https://bee42.com/de/trainings/container-rancher-lab/</loc>
+    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
   </url>
   
   <url>
@@ -259,17 +259,7 @@
   </url>
   
   <url>
-    <loc>https://bee42.com/de/trainings/container-rancher-lab/</loc>
-    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bee42.com/de/container-testing-lab/</loc>
-    <lastmod>2017-01-10T22:27:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bee42.com/de/trainings/software-quality-lab/</loc>
     <lastmod>2017-01-10T22:27:32+01:00</lastmod>
   </url>
   

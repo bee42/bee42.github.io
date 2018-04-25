@@ -19,15 +19,6 @@
     </item>
     
     <item>
-      <title>Kubernetes Day - Kubernetes kompakt</title>
-      <link>https://bee42.com/de/trainings/kubernetes-day/</link>
-      <pubDate>Tue, 25 Apr 2017 20:28:31 +0100</pubDate>
-      
-      <guid>https://bee42.com/de/trainings/kubernetes-day/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Container DevOps Camp</title>
       <link>https://bee42.com/de/trainings/container-devops-camp/</link>
       <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
@@ -64,20 +55,20 @@
     </item>
     
     <item>
-      <title>Container Rancher Lab</title>
-      <link>https://bee42.com/de/trainings/container-rancher-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
-      
-      <guid>https://bee42.com/de/trainings/container-rancher-lab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Software Quality Lab</title>
       <link>https://bee42.com/de/trainings/software-quality-lab/</link>
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
       
       <guid>https://bee42.com/de/trainings/software-quality-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Container Rancher Lab</title>
+      <link>https://bee42.com/de/trainings/container-rancher-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
+      
+      <guid>https://bee42.com/de/trainings/container-rancher-lab/</guid>
       <description></description>
     </item>
     
