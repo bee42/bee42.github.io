@@ -46,20 +46,20 @@
     </item>
     
     <item>
-      <title>Software Quality Lab</title>
-      <link>https://bee42.com/de/trainings/software-quality-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
-      
-      <guid>https://bee42.com/de/trainings/software-quality-lab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Container Testing Lab</title>
       <link>https://bee42.com/de/trainings/container-testing-lab/</link>
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
       
       <guid>https://bee42.com/de/trainings/container-testing-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Quality Lab</title>
+      <link>https://bee42.com/de/trainings/software-quality-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
+      
+      <guid>https://bee42.com/de/trainings/software-quality-lab/</guid>
       <description></description>
     </item>
     
