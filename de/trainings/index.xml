@@ -19,11 +19,11 @@
     </item>
     
     <item>
-      <title>Kubernetes Day - Kubernetes kompakt</title>
-      <link>https://bee42.com/de/trainings/kubernetes-day/</link>
-      <pubDate>Tue, 25 Apr 2017 20:28:31 +0100</pubDate>
+      <title>Container GitLab/CI Lab</title>
+      <link>https://bee42.com/de/trainings/container-gitlab-ci-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
       
-      <guid>https://bee42.com/de/trainings/kubernetes-day/</guid>
+      <guid>https://bee42.com/de/trainings/container-gitlab-ci-lab/</guid>
       <description></description>
     </item>
     
@@ -33,15 +33,6 @@
       <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
       
       <guid>https://bee42.com/de/trainings/container-devops-camp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Container GitLab/CI Lab</title>
-      <link>https://bee42.com/de/trainings/container-gitlab-ci-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
-      
-      <guid>https://bee42.com/de/trainings/container-gitlab-ci-lab/</guid>
       <description></description>
     </item>
     
@@ -64,20 +55,20 @@
     </item>
     
     <item>
-      <title>Container Rancher Lab</title>
-      <link>https://bee42.com/de/trainings/container-rancher-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
-      
-      <guid>https://bee42.com/de/trainings/container-rancher-lab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Software Quality Lab</title>
       <link>https://bee42.com/de/trainings/software-quality-lab/</link>
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
       
       <guid>https://bee42.com/de/trainings/software-quality-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Container Rancher Lab</title>
+      <link>https://bee42.com/de/trainings/container-rancher-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 20:28:31 +0100</pubDate>
+      
+      <guid>https://bee42.com/de/trainings/container-rancher-lab/</guid>
       <description></description>
     </item>
     
