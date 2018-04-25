@@ -28,15 +28,6 @@
     </item>
     
     <item>
-      <title>Container Java Lab</title>
-      <link>https://bee42.com/de/trainings/container-java-lab/</link>
-      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
-      
-      <guid>https://bee42.com/de/trainings/container-java-lab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Container GitLab/CI Lab</title>
       <link>https://bee42.com/de/trainings/container-gitlab-ci-lab/</link>
       <pubDate>Tue, 10 Jan 2017 22:16:30 +0100</pubDate>
@@ -46,11 +37,11 @@
     </item>
     
     <item>
-      <title>Container Testing Lab</title>
-      <link>https://bee42.com/de/trainings/container-testing-lab/</link>
+      <title>Container Java Lab</title>
+      <link>https://bee42.com/de/trainings/container-java-lab/</link>
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
       
-      <guid>https://bee42.com/de/trainings/container-testing-lab/</guid>
+      <guid>https://bee42.com/de/trainings/container-java-lab/</guid>
       <description></description>
     </item>
     
@@ -60,6 +51,15 @@
       <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
       
       <guid>https://bee42.com/de/trainings/software-quality-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Container Testing Lab</title>
+      <link>https://bee42.com/de/trainings/container-testing-lab/</link>
+      <pubDate>Tue, 10 Jan 2017 22:27:32 +0100</pubDate>
+      
+      <guid>https://bee42.com/de/trainings/container-testing-lab/</guid>
       <description></description>
     </item>
     
