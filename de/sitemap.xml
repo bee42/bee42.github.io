@@ -142,11 +142,6 @@
   </url>
   
   <url>
-    <loc>https://bee42.com/de/trainings/kubernetes-day-bochum/</loc>
-    <lastmod>2017-11-15T20:28:31+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bee42.com/de/kubernetes-devops-lab/</loc>
     <lastmod>2017-11-15T20:28:31+01:00</lastmod>
   </url>
@@ -210,6 +205,11 @@
   
   <url>
     <loc>https://bee42.com/de/services/devops-consulting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/de/trainings/kubernetes-day-bochum/</loc>
+    <lastmod>2017-11-15T20:28:31+01:00</lastmod>
   </url>
   
   <url>
