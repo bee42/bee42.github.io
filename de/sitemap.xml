@@ -289,6 +289,11 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/blog/Kubernetes_Cluster_Embedded/</loc>
+    <lastmod>2018-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/blog/Kubernetes_Cluster_mit_RKE_containerized/</loc>
     <lastmod>2018-03-12T00:00:00+00:00</lastmod>
   </url>

@@ -6,8 +6,216 @@
     <description>Recent content in Blog-rsses on DevOps Trainings &amp; Consulting - bee42 solutions gmbh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
-    <lastBuildDate>Mon, 12 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 May 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bee42.com/de/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Kubernetes Cluster on Embedded</title>
+      <link>https://bee42.com/de/blog/Kubernetes_Cluster_Embedded/</link>
+      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bee42.com/de/blog/Kubernetes_Cluster_Embedded/</guid>
+      <description>
+
+&lt;h2 id=&#34;kubernetes-in-aller-munde&#34;&gt;Kubernetes in aller Munde&lt;/h2&gt;
+
+&lt;p&gt;Viele Entwickler und Administatoren interssieren sich gerade für Kubernetes. In allen großen Clouds ist Kuberentes verfügbar. Allerdings ist die Cloud für kleine Geldbeutel auf die Dauer etwas teuer. Um einfach mal verschiedene Experimente mit Kubernetes zu wagen gibt es doch bestimmt günstigere Weg die Spaß machen.&lt;/p&gt;
+
+&lt;h2 id=&#34;die-idee&#34;&gt;Die Idee&lt;/h2&gt;
+
+&lt;p&gt;Wir bauen einen kompletten Kubernetes-Cluster auf Embedded-Hardware. Dazu benutzen wir einen EdgeRouterX, 2 WLAN-Router, 2 Switche, ein Intel UP-Board und für den eigentlichen K8S-Cluster Raspberry Pi&amp;rsquo;s.&lt;/p&gt;
+
+&lt;p&gt;Schematisch soll es so aussehen:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubernetes_cluster_embedded/layout.png&#34; alt=&#34;Layout&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ein WLAN-Router stellt die Verbindung zum Internet her, den könnnt Ihr natürlich auch durch ein Kabel zu Eurem vorhanden Router ersetzen. Der EdgeRouterX ist für DHCP und DNS zuständig, und über den WLAN-Accesspoint können sich mehrere Leute mit der Umgebung verbinden. Dieses Setup benutzen wir gerne in Trainings und Workshops. Die verbleibende zentrale Komponente ist die Registry bzw. der Registry-Mirror auf dem Up-Board. Dieses hat eine Atom-CPU und ist um einiges performanter als die RPi&amp;rsquo;s.&lt;/p&gt;
+
+&lt;h2 id=&#34;unsere-hardware&#34;&gt;Unsere Hardware&lt;/h2&gt;
+
+&lt;p&gt;Wir Ihr seht, ist also einiges an Hardware erforderlich. Die einzelnen Komponeten sind aber gar nicht sooo teuer :), bei vielen von Euch sind wahrscheinlich auch schon etliche Teile vorhanden.&lt;/p&gt;
+
+&lt;p&gt;Hier kurz die Liste der verwendeten Komponenten:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2 x WLAN-Router (&lt;a href=&#34;https://www.tp-link.com/us/products/details/cat-5506_TL-WR802N.html&#34;&gt;https://www.tp-link.com/us/products/details/cat-5506_TL-WR802N.html&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubernetes_cluster_embedded/TL-WR802N.jpg&#34; alt=&#34;wlan-router&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;EdgeRouterX (&lt;a href=&#34;https://www.ubnt.com/edgemax/edgerouter-x/&#34;&gt;https://www.ubnt.com/edgemax/edgerouter-x/&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubernetes_cluster_embedded/edgerouterx.jpeg&#34; alt=&#34;edge-router&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;UP-Board (&lt;a href=&#34;http://www.up-board.org/&#34;&gt;http://www.up-board.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubernetes_cluster_embedded/intel_up_board.png&#34; alt=&#34;up-board&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Und natürlich jede Menge Raspberry PI&amp;rsquo;s&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubernetes_cluster_embedded/RPI-Cluster.jpg&#34; alt=&#34;Layout&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Weitere Infos+Links für die verwendeten Bauteile findet Ihr in unserem &lt;a href=&#34;https://github.com/bee42/kubernetes-on-embedded&#34;&gt;Github-Repo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;der-ablauf&#34;&gt;Der Ablauf&lt;/h2&gt;
+
+&lt;p&gt;Der eigentliche Ablauf, um Kubernetes auf die RPIs zu bringen, besteht aus wenigen Schritten:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Flashen der SD-Cards mit einem passenden OS-Image mit Docker&lt;/li&gt;
+&lt;li&gt;Erstellen eines Verzeichnisses mit allen Rechnern, die in den Cluster sollen&lt;/li&gt;
+&lt;li&gt;Installation von Kubernetes. Dazu haben wir ein kleines Installationsscript geschrieben.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;die-verwendete-software&#34;&gt;Die verwendete Software&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hypriot/image-builder-rpi/&#34;&gt;Hypriot OS&lt;/a&gt; Die Hypriot-Piraten stellen regelmäßig aktualisierte Images bereit - Vielen Dank dafür!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.docker.com/community-edition&#34;&gt;Docker&lt;/a&gt; - ist bereits vorinstalliert auf dem Hypriot-Image&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kubernetes.io/&#34;&gt;Kubernetes&lt;/a&gt; - (kubeadm)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.docker.com/registry/recipes/mirror/&#34;&gt;Docker Registry-Mirror&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;www.ansible.com&#34;&gt;Ansible&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;vorbereitung-der-raspberry-pi-s&#34;&gt;Vorbereitung der Raspberry PI&amp;rsquo;s&lt;/h2&gt;
+
+&lt;p&gt;Wir benötigen für Kubernetes eine unterstützte Docker Version, in diesem Fall Docker CE 17.03. Das passende Image dazu hat die Versionsnummer v1.4.0. Wir haben natürlich auch andere Kombinationen ausprobiert, aber spätestens beim Installieren des Netzwerklayers kam es zu Inkompatibilitäten.&lt;/p&gt;
+
+&lt;h3 id=&#34;flashen-des-os-images&#34;&gt;Flashen des OS-Images&lt;/h3&gt;
+
+&lt;p&gt;Am einfachsten funktioniert das flashen mit dem &lt;a href=&#34;https://github.com/hypriot/flash&#34;&gt;Flash-Tool der Hyprioten&lt;/a&gt; (Die Installation des Flash-Programme haben wir auf &lt;a href=&#34;https://github.com/bee42/kubernetes-on-embedded&#34;&gt;Github&lt;/a&gt; näher beschrieben!)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ flash -n &amp;quot;MY_HOSTNAME&amp;quot; hypriotos-rpi-v${HOS_VERSION}.img
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;raspberry-pi-s-starten&#34;&gt;Raspberry-Pi&amp;rsquo;s starten&lt;/h3&gt;
+
+&lt;p&gt;Nach dem Einsetzen der Karten könnt Ihr die Raspberry-PI starten. Nun könnt Ihr Euch zum Test mit dem PI per SSH verbinden.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ssh pirate@&amp;lt;ip&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Das Passwort für den Nutzer &lt;strong&gt;pirate&lt;/strong&gt; lautet: &lt;strong&gt;hypriot&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Frage&lt;/strong&gt;: Wie bekommt man eigentlich heraus welche IP dem PI vom DHCP Server zugeordnet wurde?&lt;/p&gt;
+
+&lt;p&gt;Wenn Ihr es nicht auf Eurem Router/DHCP-Server nachschauen könnt, geht das am einfachsten mit einem Netzwerk-Scan:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# install nmap
+$ brew install nmap
+$ nmap -sn 192.168.1.0/24 # Durch Euer Netz ersetzen
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;kubernetes-cluster-installieren&#34;&gt;Kubernetes-Cluster installieren&lt;/h2&gt;
+
+&lt;h3 id=&#34;vorbereitung&#34;&gt;Vorbereitung&lt;/h3&gt;
+
+&lt;p&gt;Zur Ausführung unseres Installationsscripts auf den einzelen RPIs benutzen wir &lt;a href=&#34;https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html&#34;&gt;Ansible&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Wir brauchen zuerst ein Inhaltsverzeichnis, in dem die verwendeten IP-Adressen der zukünftigen Cluster-Nodes stehen. Wir haben mehrere Cluster, deshalb ist die Konfiguration etwas größer angelegt. Hier ein Auszug für Cluster-1:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;inventory.ini&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ini&#34;&gt;[cluster-1-master]
+192.168.1.11
+
+[cluster-1-nodes]
+192.168.1.12
+192.168.1.13
+
+[cluster-1:children]
+cluster-1-master
+cluster-1-nodes
+
+[cluster-1:vars]
+fqdn_master=&amp;quot;bee42-crew-01-001.bee42&amp;quot;
+network_address_master=&amp;quot;192.168.1.11&amp;quot;
+
+[master:children]
+cluster-1-master
+
+[nodes:children]
+cluster-1-nodes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;
+Ansible verbindet sich per SSH auf die zu verwaltenden Rechner, dort muss also Euer öffentlicher SSH-Key hinterlegt sein. Falls Ihr das noch nicht bereits erledigt habt, könnt Ihr das jetzt nachholen.&lt;/p&gt;
+
+&lt;p&gt;Hier ein kleines Beispiel:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# Schlüssel erzeugen
+$ ssh-keygen -t ed25519 -C &amp;quot;name@example.org&amp;quot;
+
+# Öffentlichen Schlüssel auf alle RPIs kopieren
+$ ssh-copy-id pirate@192.168.1.11
+$ ssh-copy-id pirate@192.168.1.12
+...
+
+# und testen:
+
+$ ansible -u pirate --key=PATH_TO_MY_PRIVATE_KEY -m ping all
+192.168.1.11 | success &amp;gt;&amp;gt; {
+    &amp;quot;changed&amp;quot;: false, 
+    &amp;quot;ping&amp;quot;: &amp;quot;pong&amp;quot;
+}
+
+192.168.1.12 | success &amp;gt;&amp;gt; {
+    &amp;quot;changed&amp;quot;: false, 
+    &amp;quot;ping&amp;quot;: &amp;quot;pong&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;cluster-erzeugen&#34;&gt;Cluster erzeugen&lt;/h3&gt;
+
+&lt;p&gt;So, wenn alle Vorbereitungen abgeschlossen sind, kann der Kubernetes-Cluster erzeugt werden. Ein Raspberry PI pro Cluster wird zum Master, die restlichen PIs werden die Nodes.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ansible-playbook -u pirate --key=PATH_TO_MY_PRIVATE_KEY -i cluster -l cluster-1 kubernetes.yml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Dadurch werden folgende Schritte ausgeführt:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Die benötigte Pakete werden heruntergeladen und installiert.&lt;/li&gt;
+&lt;li&gt;Auf dem Master-Rechner wird per &lt;code&gt;kubeadm init&lt;/code&gt; die Kubernetes-Installation gestartet&lt;/li&gt;
+&lt;li&gt;Der Weave-Netzwerk-Layer für Kubernetes wird installiert&lt;/li&gt;
+&lt;li&gt;Eine kleine Datei &lt;code&gt;kubeadm_join&lt;/code&gt; wird erzeugt und heruntergeladen. Darin steht das Kommando, um einen weiteren Node zu dem Cluster hinzuzufügen&lt;/li&gt;
+&lt;li&gt;Auf allen Nodes wird danach das entsprechende Join-Kommando ausgeführt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Noch ein wichtiger Hinweis:&lt;/strong&gt; In unserem Script wird die Verwendung eines lokalen Registry-Mirrors eingerichtet. Dadurch müssen die Container-Images nur einmal zentral heruntergeladen werden und nicht von jedem einzelnen RPi selbst. &lt;strong&gt;Das müsstet Ihr ggf. anpassen/auskommentieren.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Im Ordner &lt;code&gt;secrets&lt;/code&gt; findet Ihr danach die Config-Datei für Kubernetes, oder Ihr springt auf den Master-Rechner und könnt dort als Root (&lt;code&gt;sudo -i&lt;/code&gt;) dann Euren Cluster per &lt;code&gt;kubectl&lt;/code&gt; verwalten. Also z.B. alle Nodes anzeigen mit&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ kubectl get nodes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Und so sieht übrigens alles fertig aufgebaut aus:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubernetes_cluster_embedded/gesamtueberblick.jpg&#34; alt=&#34;Layout&#34; /&gt;
+&lt;br&gt;
+Wenn Ihr Euch das genauer ansehen wollt: Alle Dateien stehen auf &lt;a href=&#34;https://github.com/bee42/kubernetes-on-embedded&#34;&gt;Github&lt;/a&gt; bereit.&lt;/p&gt;
+
+&lt;p&gt;Viel Spaß mit dem Aufbau und besucht uns auf einem unser &lt;a href=&#34;https://bee42.com/de/trainings/kubernetes-devops-lab/&#34;&gt;Kubernetes Lab&lt;/a&gt; zum ausprobieren. Wir kommen auch gerne zu Euch mit einem InHouse-Training&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/kubernetes_cluster_embedded/raspberrypi-joins-kubernetes.png&#34; alt=&#34;KubernetesLoveRaspberryPI&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Die bee42 Crew&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Kubernetes Cluster mit Rancher RKE - Containerized</title>
@@ -2247,91 +2455,6 @@ Docker, Kubernetes, Microservices, Clouds and everything else regarding DevOps.&
 &lt;p&gt;The bee42 crew&lt;/p&gt;
 
 &lt;p&gt;Email: &lt;a href=&#34;mailto:info@bee42.com&#34;&gt;info@bee42.com&lt;/a&gt; | Twitter: &lt;a href=&#34;https://twitter.com/bee42solutions&#34;&gt;@bee42solutions&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Wie mache ich meine Website in Suchmaschinen sichtbar? Teil 1</title>
-      <link>https://bee42.com/de/blog/Website-Suchmaschinenoptimierung-SEO-fuer-Google/</link>
-      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://bee42.com/de/blog/Website-Suchmaschinenoptimierung-SEO-fuer-Google/</guid>
-      <description>
-
-&lt;p&gt;Jeder kennt es: Man hat sich beispielsweise mittels Wordpress, Drupal, Hugo und Co. eine Website gebaut und veröffentlicht. Doch damit ist es nicht getan. Die Website besteht zwar, doch wie erhalte ich nun Webseitenbesucher und wie macht ich meine Website im Internet sichtbar?
-SEO-Optimierung ist hier das Schlüsselwort. Viele wissen das gar nicht oder lassen diese Art der Optimierung für die Suchmaschinen einfach außer Acht. Mit einigen leichten und einfachen Faktoren und Ergänzungen kann sich die Sichtbarkeit Ihrer Webseite im Netz herstellen und vor allem im organischen Suchmaschinen-Ranking optimieren.
-Im Folgenden zeige ich Euch die ersten und wichtigsten Schritte der Suchmaschinenoptimierung einer Website auf und teile mit Euch mit die wichtigsten Rankingfaktoren für Google.&lt;/p&gt;
-
-&lt;h2 id=&#34;das-kleine-1-x-1-des-seos&#34;&gt;Das kleine 1 x 1 des SEOs&lt;/h2&gt;
-
-&lt;p&gt;Am Ende dieses Blogposts werdet ihr einen fundierten Überblick darüber haben, was bei der Suchmaschinenoptimierung und der Website selbst zu beachten ist.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google/seo-1.png&#34; alt=&#34;SEM SEO und SEA&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Beginnen wir erst einmal mit den grundlegenden Begrifflichkeiten: SEM, SEO und SEA. Das sind Begriffe, die die ein oder anderen schon mal gehört haben und mit denen die Marketing-Experten quasi um sich schmeißen. Doch wer von Euch weiß was diese bedeuten? SEM bildet den Oberbegriff für das Marketing innerhalb der Suchmaschinen und heißt im Englischen auch nichts anderes als Search Engine Marketing  = Suchmaschinenmarketing. Das SEM kann man hierbei in zwei große Teilbereiche abgrenzen - das SEO und das SEA. SEO wird im deutschen als Suchmaschinenoptimierung (Search Engine Marketing) und SEA ist das Gegenstück dazu: Suchmaschinenwerbung (Search Engine Advertisement).&lt;/p&gt;
-
-&lt;p&gt;Und wie sieht das nun innerhalb der Suchmaschine genau aus? Das seht ihr hier (unten): Google spielt bei tätigen einer Suchanfrage verschiedene SERPs (Search Enginge Result Pages), auch bekannt als Suchergebnisse, aus. Doch auch neben diesen organischen Suchergebnissen (in grün) werden auch noch andere Ergebnisse ausgespielt: Anzeigen, wie ihr oben in rot sehen könnt. Alles was rot markiert ist sind Google Adwords Anzeigen, die man entgeltlich schalten kann und bilden somit ein Bestandteil des SEA. Die grünen Ergebn sind organischen Suchergebnisse und dem Bereich der Suchmaschineniptimierung (SEO) zugehörig. SEO und SEA unterscheiden sich somit in einem Punkt:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;SEO = non paid results, nachhaltig und langfristig&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;SEA = paid results, kurzfristig&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google/google-suchanfragen.png&#34; alt=&#34;SEO Google Suchanfragen&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Die vielen bezahlten Anzeigen, die den organischen Ergebnissen vorgeschaltet werden, sind für das Ausspielen der organischen Suchergebnissen natürlich von Nachteil - Denn diese erscheinen dadurch weiter unten und sind nicht auf dem ersten Blick sichtbar.
-Umso wichtiger ist es mit der eignen Website ein gutes, wenn nicht sogar das beste Ranking zu erhalten, um von dem User und potentiellen Kunden überhaupt gesehen zu werden.&lt;/p&gt;
-
-&lt;p&gt;Wenn ihr eure Website auf ein Keyword optimiert, dass solche SERPs hervorruft, dann solltet Ihr euch neben dem SEO zusätzlich noch Gedanken um SEA machen, zu den Anzeigen via Google Adwords Wir bleiben bei diesem Blogpost jedoch ausschließlich bei der SEO.&lt;/p&gt;
-
-&lt;h2 id=&#34;alles-rund-um-die-suchmaschinen&#34;&gt;Alles rund um die Suchmaschinen&lt;/h2&gt;
-
-&lt;p&gt;Bevor wir nun weiter in die Suchergebnisse und Rankingfaktoren einsteigen, möchte ich Euch vorerst auf einige wichtige Fakten und Informationen rund um die Suchmaschinen geben.&lt;/p&gt;
-
-&lt;p&gt;Warum sind Suchmaschinen von so großer Bedeutung, warum sind Suchmaschinen so wichtig für uns, für Unternehmen, für Produkte, für Dienstleistungen und und und?
-Der potentielle Kunde und User hat ein Problem, eine Frage, ein Bedürfnis - Ja und wo sucht dieser danach? Natürlich nicht mehr in den gelben Seiten wie früher! Sondern innerhalb der gängigen Suchmaschinen!&lt;/p&gt;
-
-&lt;p&gt;Und so kommen wir auch auf Google: Google hat mittlerweile weltweit einen Marktanteil von über 90%, in Deutschland sogar von über 93%. Google ist damit national und auch international DER Marktführer. Bing und Yahoo folgen in Deutschland mit einem jeweiligen Marktanteil vonknapp 3%. Diese werden im weltweiten Ranking dann auch noch von Baidu und Yandex gefolgt.&lt;/p&gt;
-
-&lt;p&gt;Wir bleiben für diesen Blogpost jedoch bei Google, da es für unsere Zielregion Deutschland den größten Teil des Marktes abdeckt und es am sinnvollsten ist dahingehen zu optimieren. Wenn Du aber beispielsweise ein Produkt in Russland verkaufen und vermarkten möchtest, musst Du Dich natürich mit der dort gängigen Suchmaschine Yandex und den dazugehörigen Qualitätsmerkmalen und Rankingsfaktoren auseinandersetzen.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google/80Trillionen.png&#34; alt=&#34;SEO Google Websites und Dokumente&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Zurück zu Google: Via Google werden weltweit täglich über 3,5 Milliarden Suchanfragen getätigt, davon knapp 150 Millionen Suchanfragen aus und in Deutschland. Das sind 150 Millionen Chancen für uns als Ergebnis für eine dieser Suchanfragen gelistet zu werden. Der Google Index umfasst über 80 Trillionen Dokumente und Website und jede Minute kommen über 80 Millionen neue Website und Dokumente hinzu. Und genau hier wird es spannend: Wie kann ich MEINE Website zwischen all denn anderen Millionen von Websites sichtbar machen? Was muss ich tun, um im Vergleich mit anderen Websites besser abschneiden und es zu schaffen ein besseres Ranking zu erzielen? Woran entscheidet Google ob eine Seite gut oder schlecht ist?&lt;/p&gt;
-
-&lt;p&gt;Die Qualitätsmerkmale und Rankingfaktoren von Google sind die Lösung des Ganzen und bilden damit auch die Grundlage der Suchmaschinenoptimierung!&lt;/p&gt;
-
-&lt;p&gt;Das Spannende an der Suchmaschinenoptimierung ist, dass Google selbst nie gesagt hat, welche Rankingfaktoren eigentlich relevant sind und wie diese zusammenspielen. Seit Jahren ist die Rede von ungefähr 200 Rankingfaktoren (die auch von Google bestätigt worden sind), sowohl für die Website als auch für das Linknetzwerk.
-Vor einigen Jahren konnte man diese Rankingfaktoren stupide abarbeiten und schlichtweg davon ausgehen eine gute Platzierung innerhalb des Rankings zu erhalten. Doch Google hat seinen Algorithmus über all die Jahre immer weiter optimiert und Updates ergänzt: beispielsweise die Penguin und Panda Updates, die Spam bekämpfen und auch qualitativ minderwertige Website und Inhalte bekämpfen. Websites wurden im Zuge der Updates degradiert und abgestraft.&lt;/p&gt;
-
-&lt;p&gt;Die Idee der 200 Rankingfaktoren und der &amp;ldquo;Checkliste&amp;rdquo; sind schon längst überholt.&lt;/p&gt;
-
-&lt;h2 id=&#34;rankingfaktoren-heute&#34;&gt;Rankingfaktoren heute&lt;/h2&gt;
-
-&lt;p&gt;Die Google Suche ist mit ihren tausenden Algorithmen dermaßen komplex geworden, dass selbst die Google Ingenieure nicht mehr konkret nachvollziehen und beurteilen können, warum ein bestimmter Treffer ganz oben in der Google Suche positioniert wird oder warum nicht. Stand heute: Es gibt nicht mehr nur DIE EINE Rankingfaktoren Zusammenstellung, es ist vielmehr ein Zusammenspiel unzähliger Algorithmen und Rankingfaktoren.
-Die Gewichtung die einzelnen und verschiedenen Qualitätsmerkmale hat sich seither verschoben und ist je nach Branche, je nach Website und je nach Suchanfrage, die der Nutzer tätigt ANDERS.&lt;/p&gt;
-
-&lt;p&gt;Die ein oder anderen werden sich jetzt wahrscheinlich denken: Ja und nun?&lt;/p&gt;
-
-&lt;p&gt;Es ist ja nicht so, dass die jahrelang bekannten Rankingfaktoren einfach so aberkannt oder gar abgeschafft wurden. Einige Rankingfaktoren wurden abgeschafft, klar! Doch im großen und ganzen gab es bei allen anderen Faktoren eine Verschiebung der Bedeutung.&lt;/p&gt;
-
-&lt;p&gt;Ich werde euch in dieser SEO-Serie an Blogposts (Insgesamt 5 Teile) zeigen welchen Teilbereichen Google mittlerweile eine große, und auch die größte Bedeutung und Relevanz für das SEO zuspricht.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google/seo-teilbereiche-onsite-offsite-pyramide.png&#34; alt=&#34;SEO Teilbereiche&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So wie ihr es hier seht, werdet ihr es auch bei den meisten Marketingexperten sehen. Eine Pyramide, die nach Gewichtungen unterteilt ist und wo die Bereiche aufeinander aufbauen.
-Ich persönlich finde diese Darstellung etwas missverständlich und irreführend.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://bee42.com/images/blog/Statische-Websites-Suchmaschinenoptimierung-SEO-Google/seo-teilbereiche-onsite-offsite.png&#34; alt=&#34;SEO Teilbereiche&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Die Darstellung als Torte ist hierbei besser, DENN so wird deutlich, dass die Teilbereiche ein Zusammenspiel und eine Ergänzung füreinander sind und erst gemeinsam das große Ganze bilden. Alle Bereiche und Themen sind gleichermaßen wichtig und keines der vier Bereiche sollte vernachlässigt oder gar nicht beachtet werden.&lt;/p&gt;
-
-&lt;p&gt;In den nächsten Teilen dieser SEO-Serie werden wir die Bereiche Stück für Stück „abarbeiten“ und die dazugehörigen Qualitätsmerkmale und Rankingfaktoren von Google kennenlernen.&lt;/p&gt;
-
-&lt;p&gt;&amp;ndash;&lt;/p&gt;
-
-&lt;p&gt;Elena Hüls&lt;/p&gt;
-
-&lt;p&gt;elena.huels@bee42.com&lt;/p&gt;
 </description>
     </item>
     
