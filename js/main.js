@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    //Highlight Code
+    $('pre code').each(function (i, block) {
+        hljs.highlightBlock(block);
+    });
 	// open form
 	$('.open-form').each(function(){
 	 	$(this).click(function(){
