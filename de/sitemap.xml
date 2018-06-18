@@ -199,11 +199,6 @@
   </url>
   
   <url>
-    <loc>https://bee42.com/de/trainings/container-devops-camp-muenchen/</loc>
-    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bee42.com/de/kubernetes-devops-lab/</loc>
     <lastmod>2017-01-10T20:28:31+01:00</lastmod>
   </url>
@@ -224,6 +219,11 @@
   
   <url>
     <loc>https://bee42.com/de/trainings/container-devops-camp-berlin/</loc>
+    <lastmod>2017-01-10T20:28:31+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/de/trainings/container-devops-camp-muenchen/</loc>
     <lastmod>2017-01-10T20:28:31+01:00</lastmod>
   </url>
   
