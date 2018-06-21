@@ -20,41 +20,36 @@
 
 &lt;p&gt;Als DevOps Engineer arbeitest Du bei uns direkt am Herzen des Container Infrastruktur Blueprints. Gemeinsam sammeln wir Erfahrungen in Transformationsprojekten und Trainings, um diese in den Blueprint einzubringen. Damit können wir als Team die IT-Umgebung bei unseren Kunden beschleunigen und ermöglichen damit Innovation und Fortschritt.&lt;/p&gt;
 
-&lt;h2 id=&#34;was-sind-deine-aufgaben-bei-uns&#34;&gt;Was sind Deine Aufgaben bei uns?&lt;/h2&gt;
+&lt;h2 id=&#34;das-sind-deine-aufgaben&#34;&gt;Das sind Deine Aufgaben!&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Du entwickelst und automatisierst den Container Infrastruktur Blueprint mit Hilfe von Tools wie
-Terraform, Ansible, Docker, Kubernetes und GitLab/CI.&lt;/li&gt;
-&lt;li&gt;In unseren Projekten berätst du unsere Kunden,
-das eine sichere, stabile und skalierbare Infrastruktur entsteht.&lt;/li&gt;
-&lt;li&gt;Du entwirfst, baust und betreust den Infrastruktur Setup unserer Kunden. Dabei bist du ein wichtiger Baustein damit unsere Kunden ihre Ziele erreichen können.&lt;/li&gt;
-&lt;li&gt;Du bringst Dich mit neuen Ideen ein und
-hast den Drang nach kontinuierlicher Verbesserung.&lt;/li&gt;
-&lt;li&gt;Als Experte auf Deinem Gebiet teilst du dein Wissen auf Konferenzen, Meetups, Workshops und in Trainings.&lt;/li&gt;
+&lt;li&gt;Du entwickelst Infrastruktur für “Self-Healing-Container-Systems” in der Cloud.&lt;/li&gt;
+&lt;li&gt;Du hast Spaß an der Automatisierung von Infrastrukturen mit Hilfe von Tools, wie Docker, Kubernetes, Terraform und GitLab/CI.&lt;/li&gt;
+&lt;li&gt;Du entwirfst, baust und betreust den Infrastruktur-Setup unserer Kunden.&lt;/li&gt;
+&lt;li&gt;Du bringst Dich mit neuen Ideen ein und hast den Drang nach kontinuierlicher Verbesserung.&lt;/li&gt;
+&lt;li&gt;Als Experte auf Deinem Gebiet teilst Du Dein Wissen auf Konferenzen, Meetups, Workshops, Open Source Projekten und in unseren Trainings.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;was-wir-von-dir-erwarten&#34;&gt;Was wir von Dir erwarten:&lt;/h2&gt;
+&lt;h2 id=&#34;was-wir-von-dir-erwarten&#34;&gt;Was wir von Dir erwarten?&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Eine Begeisterung für DevOps, OpenSource, Infrastruktur as Code und der Wille zur konsequenten Automatisierung.&lt;/li&gt;
+&lt;li&gt;Du hast erste Erfahrungen im Container Ecosystem gesammelt und bist neugierig auf mehr.&lt;/li&gt;
+&lt;li&gt;Eine Begeisterung für Container-Ecosysteme, Cloud-Umgebungen, Cloud-Plattformen, Open -Source-Projekte, Open-Source und Infrastruktur as Code.&lt;/li&gt;
+&lt;li&gt;Du bringst den Willen zur konsequenten Automatisierung mit und möchtest mit Werkzeugen wie Docker, Kubernetes, Ansible, Terraform und Packer arbeiten.&lt;/li&gt;
+&lt;li&gt;Erster Umgang mit Cloud Plattformen wie AWS, Google Cloud, DigitalOcean und Azure wären von Vorteil.&lt;/li&gt;
+&lt;li&gt;Erste Erfahrungen mit Rest-, Microservices- oder Serverless-Architekturen.&lt;/li&gt;
+&lt;li&gt;Du solltest Erfahrung mit mindestens einer Programmiersprache (Go, Java, Python oder JavaScript) haben.&lt;/li&gt;
 &lt;li&gt;Ein gesundes Selbstbewusstsein und Vertrauen in Deine Fähigkeiten.&lt;/li&gt;
-&lt;li&gt;Praktische Erfahrung mit Container Technologien und Orchestratoren wie Docker Swarm, Kubernetes oder Rancher.&lt;/li&gt;
-&lt;li&gt;Sicherer Umgang mit Konfigurationstools wie Ansible, Chef, Terraform, Packer oder Vagrant&lt;/li&gt;
-&lt;li&gt;Erster Umgang mit Cloud Plattformen wie AWS, GoogleCloud und Azure&lt;/li&gt;
-&lt;li&gt;Erste Erfahrungen mit Rest-, Microservices- oder Serverless-Architekturen&lt;/li&gt;
-&lt;li&gt;Mit SQL / NoSQL Datenbanken (MySQL, Postgres, Redis, MongoDB) und Protokollen (TCP/IP, DNS, HTTP, GRPC) kannst Du umgehen.&lt;/li&gt;
-&lt;li&gt;Programmieren solltest du natürlich auch können (Shell, Go, Java, Ruby, JavaScript oder Phyton)&lt;/li&gt;
-&lt;li&gt;Voraussetzung ist idealerweise abgeschlossenes Studium in Informatik oder ein abgeschlossene Ausbildung im Fachbereich Informatik mit zwei Jahren Berufserfahrung.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;was-erwartet-dich-bei-der-bee42&#34;&gt;Was erwartet Dich bei der bee42&lt;/h2&gt;
+&lt;h2 id=&#34;was-du-noch-wissen-solltest&#34;&gt;Was Du noch wissen solltest!&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Ein sehr dynamisches, offenes und lernwilliges Team mit unterschiedlichen Erfahrungen und Hintergründen.&lt;/li&gt;
+&lt;li&gt;Wir sind ein dynamisches, offenes und lernwilliges Team mit unterschiedlichen Erfahrungen und Hintergründen. Wir arbeiten auf der Grundlage der Agilen Prinzipien und der DevOps Kultur.&lt;/li&gt;
+&lt;li&gt;Wir legen Wert auf Beratungskompetenz und Community-Arbeit wie Open-Source-Contributions, Meetups, Konferenzvorträge und das Schreiben von Blog-Artikeln.&lt;/li&gt;
 &lt;li&gt;Wir fordern und fördern uns gegenseitig, um uns gemeinsam weiter zu entwickeln.&lt;/li&gt;
-&lt;li&gt;Du bist am Puls der Zeit und lernst praxisnah wie Software in moderner IT-Infrastrukturen entwickelt, skaliert und betrieben wird.&lt;/li&gt;
-&lt;li&gt;Wir haben viele Ideen, ein gutes Netzwerk und wolle viel ausprobieren.&lt;/li&gt;
-&lt;li&gt;Wir stehen erst am Anfang der Container Revolution und wollen diese als Team aktiv mitgestalten.&lt;/li&gt;
+&lt;li&gt;Wir haben viele Ideen, ein gutes Netzwerk und wollen viel ausprobieren.&lt;/li&gt;
+&lt;li&gt;Wir stehen erst am Anfang der Cloud- und Container-Evolution und wollen diese als bee42 Team aktiv mitgestalten.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Wir freuen uns auf Deine Bewerbung - sende sie einfach an:&lt;/strong&gt;&lt;/p&gt;
