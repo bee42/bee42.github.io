@@ -3,9 +3,9 @@
 <html lang="de-DE">
 
 <head>
-    <title>Kubernetes DevOps Lab</title>
+    <title>Kubernetes Helm Day</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Dieses Lab vermittelt die **Grundlagen** für das betreiben von **Kubernetes**: Mit konkreten Beispielen lernen Sie schnell, wie eine Microservice-Anwendung bereitgestellt, mit Kubernetes gesteuert und mit anderen Diensten in verschiedenen Umgebungen integriert wird.">
+    <meta name="description" content="In diesem Kubernetes-Helm-Workshop werden wir uns mit den Grundlagen von Helm, dem Tiller-Service und den Helm-Charts, einer Sammlung von Kubernetes Ressourcen, beschäftigen. Neben den Basics zeigen wir eine Strategie auf, wie man ein komplettes Microservice-System vollständig mit Hilfe von Gitlab/CI automatisiert. Anschließend arbeiten wir an einigen grundlegenden Beispielen und Tricks für den erweiterten Umgang mit Helm und starten dann mit den fortgeschrittenen Tipps und Tricks.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 <meta property="article:tag" content="kubernetes devops lab">
@@ -27,13 +27,13 @@
 
 
 
-<meta property="og:title" content="Kubernetes DevOps Lab" />
-<meta property="og:description"content="Dieses Lab vermittelt die **Grundlagen** für das betreiben von **Kubernetes**: Mit konkreten Beispielen lernen Sie schnell, wie eine Microservice-Anwendung bereitgestellt, mit Kubernetes gesteuert und mit anderen Diensten in verschiedenen Umgebungen integriert wird." />
+<meta property="og:title" content="Kubernetes Helm Day" />
+<meta property="og:description"content="In diesem Kubernetes-Helm-Workshop werden wir uns mit den Grundlagen von Helm, dem Tiller-Service und den Helm-Charts, einer Sammlung von Kubernetes Ressourcen, beschäftigen. Neben den Basics zeigen wir eine Strategie auf, wie man ein komplettes Microservice-System vollständig mit Hilfe von Gitlab/CI automatisiert. Anschließend arbeiten wir an einigen grundlegenden Beispielen und Tricks für den erweiterten Umgang mit Helm und starten dann mit den fortgeschrittenen Tipps und Tricks." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://bee42.com/de/trainings/kubernetes-devops-lab-essen/" />
+<meta property="og:url" content="https://bee42.com/de/kubernetes-helm-day/" />
 
 
-	<meta property="og:image" content="/images/1024x512/kubernetesdevopslab.png" />
+	<meta property="og:image" content="/images/Kubernetes-Helm-Day.png" />
  
 
 
@@ -62,12 +62,12 @@
 
 
 
-<meta itemprop="name" content="Kubernetes DevOps Lab">
-<meta itemprop="description" content="Dieses Lab vermittelt die **Grundlagen** für das betreiben von **Kubernetes**: Mit konkreten Beispielen lernen Sie schnell, wie eine Microservice-Anwendung bereitgestellt, mit Kubernetes gesteuert und mit anderen Diensten in verschiedenen Umgebungen integriert wird.">
+<meta itemprop="name" content="Kubernetes Helm Day">
+<meta itemprop="description" content="In diesem Kubernetes-Helm-Workshop werden wir uns mit den Grundlagen von Helm, dem Tiller-Service und den Helm-Charts, einer Sammlung von Kubernetes Ressourcen, beschäftigen. Neben den Basics zeigen wir eine Strategie auf, wie man ein komplettes Microservice-System vollständig mit Hilfe von Gitlab/CI automatisiert. Anschließend arbeiten wir an einigen grundlegenden Beispielen und Tricks für den erweiterten Umgang mit Helm und starten dann mit den fortgeschrittenen Tipps und Tricks.">
 
 
 
-	<meta itemprop="image" content="/images/1024x512/kubernetesdevopslab.png">
+	<meta itemprop="image" content="/images/Kubernetes-Helm-Day.png">
 
 
 
@@ -79,12 +79,12 @@
 
 
 	<meta name="twitter:card" content="summary_large_image"/>
-	<meta name="twitter:image:src" content="/images/1024x512/kubernetesdevopslab.png"/>
+	<meta name="twitter:image:src" content="/images/Kubernetes-Helm-Day.png"/>
 
 
 
-<meta name="twitter:title" content="Kubernetes DevOps Lab"/>
-<meta name="twitter:description" content="Dieses Lab vermittelt die **Grundlagen** für das betreiben von **Kubernetes**: Mit konkreten Beispielen lernen Sie schnell, wie eine Microservice-Anwendung bereitgestellt, mit Kubernetes gesteuert und mit anderen Diensten in verschiedenen Umgebungen integriert wird."/>
+<meta name="twitter:title" content="Kubernetes Helm Day"/>
+<meta name="twitter:description" content="In diesem Kubernetes-Helm-Workshop werden wir uns mit den Grundlagen von Helm, dem Tiller-Service und den Helm-Charts, einer Sammlung von Kubernetes Ressourcen, beschäftigen. Neben den Basics zeigen wir eine Strategie auf, wie man ein komplettes Microservice-System vollständig mit Hilfe von Gitlab/CI automatisiert. Anschließend arbeiten wir an einigen grundlegenden Beispielen und Tricks für den erweiterten Umgang mit Helm und starten dann mit den fortgeschrittenen Tipps und Tricks."/>
 
 
 <meta name="twitter:creator" content="@bee42solutions"/>
@@ -105,7 +105,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/main-fea0a0c5.css" />
     
-        <link rel="canonical" href="https://bee42.com/de/trainings/kubernetes-devops-lab/" />
+        <link rel="canonical" href="https://bee42.com/de/trainings/kubernetes-helm-day/" />
     
 </head>
 
@@ -171,7 +171,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             
                             <section class="row">
                                 <section class="small-12 medium-12 large-12 columns">
-                                    <h3>Kubernetes DevOps Lab</h3>
+                                    <h3>Kubernetes Helm Day</h3>
                                     <div class="empty-space-title"></div>
                                 </section>
                             </section>
@@ -185,99 +185,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             
                                                 
                                                 
-                                                    <p style="font-size: 0.9rem;">Ob kleine Startups oder grosse Konzerne - viele Unternehmen verlassen sich immer mehr auf Kubernetes und Container-Technologie. Aber was ist mit der Art von Containern, die den Virtualisierungsmarkt aufrollen und die Softwareentwicklung langfristig verändern? Mit Containern können Sie reproduzierbare Software-Images einfach erstellen und Ihre Entwicklung beschleunigen.</p>
+                                                    <p style="font-size: 0.9rem;">Einfache Provisionierung von Container Systemen in Kubernetes</p>
                                                 
-                                                    <p style="font-size: 0.9rem;">Kubernetes verspricht einen schnellen Start und eine flexible Konfiguration von hochdynamischen Systeme. Es ist entworfen, um große Systeme zu skalieren. Du kannst in der Cloud und OnPremise Deine Produktion betreiben. In diesem Kubernetes-Training wollen wir dieses Versprechen einlösen.</p>
+                                                    <p style="font-size: 0.9rem;">Tausende Entwickler und Administratoren verpacken ihre Anwendungen gerade für den Container Orchestrator Kubernetes. Dieser Prozess umfasst die Verpackung hunderter verschiedener Kubernetes Ressourcen und Containern, inklusive deren sicherer Kommunikation und Infrastruktur. Die Benutzer der entstehenden Services möchten einen schnellen Wandel mit neuen Featuren und deshalb braucht es einen flexiblen Provisionierungsansatz, wie ihn das Werkzeug Helm bereitstellt.</p>
                                                 
-                                                    <p style="font-size: 0.9rem;">Wir beginnen mit einer Übersicht und führen die ersten Schritte der Grundlagen von Kubernetes ein. Du erlernst die wichtigsten Befehle, Anweisungen und Konzepte, um Pods und Services auszuführen. Mit konkreten Beispielen lernst Du schnell, wie eine Microservice-Anwendung bereitgestellt, mit Kubernetes gesteuert und mit anderen Diensten in verschiedenen Umgebungen integriert wird. Der Übergang von der Entwicklung in die Produktion wird deutlich vereinfacht. Wir diskutieren das aktuelle Ökosystem von Kubernetes und klären über Chancen und Risiken auf.</p>
+                                                    <p style="font-size: 0.9rem;">Helm ist der native Paketmanager für Kubernetes. Das Helm-Ökosystem bietet viele Funktionen zum Management komplexer Cloud-Native Container-Architekturen. Die üblichen Mechanismen zur Templateisierung, zur Verwaltung verschiedener Optionen und ein Lifecycle-Management der Kubernetes Ressourcen sind verfügbar.</p>
                                                 
-                                                    <p style="font-size: 0.9rem;">Dieser Workshop bietet Dir die Kubernetes-Grundlagen in verständlichen Schritten und bringt Dich in die Lage, später zu entscheiden, ob und wie Kubernetes in Deinem Geschäfts- und IT-Kontext nützlich ist.</p>
+                                                    <p style="font-size: 0.9rem;">In diesem Kubernetes-Helm-Workshop werden wir uns mit den Grundlagen von Helm, dem Tiller-Service und den Helm-Charts, einer Sammlung von Kubernetes Ressourcen, beschäftigen. Neben den Basics zeigen wir eine Strategie auf, wie man ein komplettes Microservice-System vollständig mit Hilfe von Gitlab/CI automatisiert. Anschließend arbeiten wir an einigen grundlegenden Beispielen und Tricks für den erweiterten Umgang mit Helm und starten dann mit den fortgeschrittenen Tipps und Tricks.</p>
+                                                
+                                                    <p style="font-size: 0.9rem;">Wir entwickeln eine vorhandene Microservice-Voting-App weiter und monitoren diese mit Prometheus, Grafana und dem EFK-Stack. Mit Hilfe von Helm werden wir eine vollständige Automatisierung des kompletten Entwicklungsprozesses mit GitLab/CI demonstrieren.</p>
                                                    
                                                 
                                                 <p style="font-size: 0.9rem;"><strong>Zielgruppe:</strong> DevOps-Entwickler, Administratoren, Software- und Systemarchitekten</p>
-                                                
-                                                <p style="font-size: 0.9rem;"><strong>Inklusive Buch</strong>: Alle Teilnehmer erhalten zusätzlich das Buch <strong>Kubernetes - Eine kompakte Einführung</strong> vom dpunkt Verlag.</p>
                                                 
                                                                                                                          
                                             
                                         </div>
 
                                         
-<div style="margin-top: 5%;">
-    <table class="hover scroll">
-        <tbody>
-            <tr style="font-size: .75rem; text-align: center;">
-                <td>
-                    Ticket
-                </td>
-                
-                    
-                        <td>
-                            Early Bird
-                        </td>
-                    
-                        <td>
-                            Early Bird mit Kollegenrabatt
-                        </td>
-                    
-                        <td>
-                            Standard
-                        </td>
-                    
-                        <td>
-                            Standard mit Kollegenrabatt
-                        </td>
-                    
-                
-            </tr>
-
-            <tr style="font-size: .75rem;text-align: center;">
-                <td>
-                    Preis zzgl. MwSt.
-                </td>
-                
-                    
-                        <td>
-                            1800
-                        </td>
-                    
-                        <td>
-                            1700
-                        </td>
-                    
-                        <td>
-                            2000
-                        </td>
-                    
-                        <td>
-                            1800
-                        </td>
-                    
-                
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-
 
                                     </section>
 
                                     <section class="small-12 medium-5 large-4 columns side-bar">
-                                        <h3 style="font-size: 0.99rem;">Kubernetes DevOps Lab</h3>
+                                        <h3 style="font-size: 0.99rem;">Kubernetes Helm Day</h3>
 
                                         <div id="dynamic-part-sidebar">
 
                                             
 
-<p class="date uppercase"><strong>19. - 21. November 2018, Essen</strong></p>
+<p class="date uppercase"><strong>3. August 2018, Essen</strong></p>
 
 <div>
     
         
         
-            <a href="https://bee42.com/de/trainings/kubernetes-devops-lab/">
-                <img src="/images/Kubernetes_Lab.png" style="width: 90%;">
+            <a href="https://bee42.com/de/trainings/kubernetes-helm-day/">
+                <img src="/images/Kubernetes-Helm-Day.png" style="width: 90%;">
             </a>
         
     
@@ -287,9 +230,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <p style="font-size: 0.9rem;">
     
-        Unperfekthaus<br/>
+        ruhr:HUB<br/>
     
-        Friedrich-Ebert-Straße 18 - 26<br/>
+        Lindenallee 10<br/>
     
         45127 Essen<br/>
     
@@ -299,14 +242,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
     <p style="font-size: smaller;">
-        <a target="_blank" style="color: #4a4a4a;text-decoration: underline;" href="https://maps.google.com/?q=Unperfekthaus%2c%20Friedrich-Ebert-Stra%c3%9fe%2018%20-%2026%2c%2045127%20Essen">Karte anzeigen</a>
+        <a target="_blank" style="color: #4a4a4a;text-decoration: underline;" href="https://maps.google.com/?q=ruhr%3aHUB%2c%20Lindenallee%2010%2c%2045127%20Essen">Karte anzeigen</a>
     </p>
 
 
 
 
     <p style="font-size: 1rem;">
-        <strong>1.700 € - 2.000 € zzgl. MwSt</strong>
+        <strong>299 € - 349 € zzgl. MwSt</strong>
     </p>
 
 
@@ -488,13 +431,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         
                                             <p>
                                                 <a href="#" class="open-form" data-form="docker-camp" style="height: 30px;line-height: 30px;">
-                                                    Bis zum 25. Oktober anmelden und mit den Frühbucherpreisen sparen!
+                                                    Bis zum 12. Juli anmelden und mit den Frühbucherpreisen sparen!
                                                 </a>
                                             </p>
                                         
 
-                                        
-                                            <p>Kollegenrabatt ab 3 Kollegen aus einem Unternehmen!</p>
                                         
 
                                         
@@ -541,22 +482,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 
                                                     <h3 style="margin: 0;">
                                                         <li class="tabs-title">
-                                                            <a href="#day2" >
-                                                                Tag 2
-                                                            </a>
-                                                        </li>
-                                                    </h3>
-                                                
-                                                    <h3 style="margin: 0;">
-                                                        <li class="tabs-title">
-                                                            <a href="#day3" >
-                                                                Tag 3
-                                                            </a>
-                                                        </li>
-                                                    </h3>
-                                                
-                                                    <h3 style="margin: 0;">
-                                                        <li class="tabs-title">
                                                             <a href="#leistungen" >
                                                                 Leistungen
                                                             </a>
@@ -597,11 +522,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             
                                             <div style="padding: 30px 0px 0px;">
                                                 
-                                                <h3 class="tab-name" name="day1" style="display: none; margin: 0;color: #ffffff;">Kubernetes Basics</h3>
-                                                
-                                                <h3 class="tab-name" name="day2" style="display: none; margin: 0;color: #ffffff;">Einfache Nutzung</h3>
-                                                
-                                                <h3 class="tab-name" name="day3" style="display: none; margin: 0;color: #ffffff;">Der Weg in die Produktion</h3>
+                                                <h3 class="tab-name" name="day1" style="display: none; margin: 0;color: #ffffff;">Kubernetes Helm Day</h3>
                                                 
                                                 <h3 class="tab-name" name="leistungen" style="display: none; margin: 0;color: #ffffff;"></h3>
                                                 
@@ -614,124 +535,61 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 
                                                 <div class="tabs-panel " id="day1" style="display: none;">
                                                     
-                                                    <h4 style="margin: 0; padding: 20px 0;">Installation</h4>
+                                                    <h4 style="margin: 0; padding: 20px 0;">Kubernetes Grundlagen</h4>
                                                     <ul>
                                                         
-                                                        <li>Kubernetes Installation</li>
+                                                        <li>Architketur und Design</li>
                                                         
-                                                        <li>Kubernetes Grundlagen</li>
+                                                        <li>Überblick der Kubernetes Manifeste</li>
                                                         
-                                                        <li>Container Technology Basics</li>
+                                                        <li>Pod, Service, Deployment, ReplicaSet und Ingress</li>
                                                         
-                                                        <li>Kernel vs. Classical Virtualization</li>
-                                                        
-                                                        <li>Architektur von Kubernetes</li>
-                                                        
-                                                        <li>Kubernetes Control Plane</li>
-                                                        
-                                                        <li>Erste Anwendungsfälle Deines Kubernetes Clusters</li>
-                                                        
-                                                        <li>Setup Deiner Kubernetes Cluster Umgebung mit kubeadm</li>
-                                                        
-                                                        <li>Images, Pods, Services und mehr</li>
-                                                        
-                                                        <li>Basics CLI Handling und UI&#39;s</li>
+                                                        <li>Nutzen von kubectl</li>
                                                         
                                                     </ul>
                                                     
-                                                </div>
-                                                
-                                                <div class="tabs-panel " id="day2" style="display: none;">
-                                                    
-                                                    <h4 style="margin: 0; padding: 20px 0;">Einfache Nutzung</h4>
+                                                    <h4 style="margin: 0; padding: 20px 0;">Helm Grundlagen</h4>
                                                     <ul>
                                                         
-                                                        <li>Let&#39;s play Pods and Services: run, stop, update, maintain</li>
+                                                        <li>Helm-Architektur</li>
                                                         
-                                                        <li>kubectl und kubeadm CLI Kommandos Übersicht</li>
+                                                        <li>Templating</li>
                                                         
-                                                        <li>Baue deine eigenen Images mit Dockerfiles</li>
+                                                        <li>Flow Control</li>
                                                         
-                                                        <li>Build, Ship and Run Zyklus</li>
+                                                        <li>Template Funktionen</li>
                                                         
-                                                        <li>Docker CE Werkzeuge</li>
-                                                        
-                                                        <li>Servie Discovery</li>
-                                                        
-                                                        <li>Scheduling (Node, Resources, Label und Constraints)</li>
-                                                        
-                                                        <li>Deployment</li>
-                                                        
-                                                        <li>Failure Detection</li>
-                                                        
-                                                        <li>Volume Management (Pet sets)</li>
-                                                        
-                                                        <li>Network Management</li>
-                                                        
-                                                        <li>Jobs</li>
+                                                        <li>Veröffentliche Deine Charts mit Chartmuseum</li>
                                                         
                                                     </ul>
                                                     
-                                                    <h4 style="margin: 0; padding: 20px 0;">Erzeuge Microservices mit Kubernetes</h4>
+                                                    <h4 style="margin: 0; padding: 20px 0;">Microservices - voting app</h4>
                                                     <ul>
                                                         
-                                                        <li>Denke Dir Deine Infrastruktur zuerst</li>
+                                                        <li>Bauen der Container-Images</li>
                                                         
-                                                        <li>Erzeuge eine einfache Spring Boot App</li>
+                                                        <li>Deployen der Voting Services</li>
                                                         
-                                                        <li>Erzeuge Deine Toolchain: Java und Maven</li>
+                                                        <li>Veröffentlichen des Services mit Traefik als Ingress Controller</li>
                                                         
-                                                        <li>Kubernetes für Java Entwickler</li>
+                                                        <li>Setup einer CI/CD Pipeline mit Gitlab/CI</li>
                                                         
-                                                        <li>Erzeuge eine Database Containers</li>
-                                                        
-                                                        <li>Vorteile für den Entwickler</li>
-                                                        
-                                                        <li>Ingress Loadbalancer</li>
-                                                        
-                                                        <li>Resource Template am Beispiel des Werkzeuges Helm</li>
+                                                        <li>Verständnis des DevOps-Helm-Working-Flows (VSCode, GitLab/CI)</li>
                                                         
                                                     </ul>
                                                     
-                                                </div>
-                                                
-                                                <div class="tabs-panel " id="day3" style="display: none;">
-                                                    
-                                                    <h4 style="margin: 0; padding: 20px 0;">Der Weg in die Produktion</h4>
+                                                    <h4 style="margin: 0; padding: 20px 0;">Helm für Fortgeschrittene</h4>
                                                     <ul>
                                                         
-                                                        <li>Vorbereitung der Produktion für Kubernetes</li>
+                                                        <li>Multi Tenant, Multi Stage und Multi Branch Setups</li>
                                                         
-                                                        <li>Review des Setup eines Cloud Clusters</li>
+                                                        <li>Setup des eigenen Monitoring-Systems mit Helm</li>
                                                         
-                                                        <li>Setup Deines Kubernetes Cluster Umgebung mit kubeadm</li>
+                                                        <li>Prometheus &amp; Grafana</li>
                                                         
-                                                        <li>Erzeuge Namespaces und Constraints</li>
+                                                        <li>Elasticsearch, Fluend undKibana</li>
                                                         
-                                                        <li>Security und Access Control (RBAC)</li>
-                                                        
-                                                        <li>Update, Failure Detection und Redeployment</li>
-                                                        
-                                                        <li>Autoscaling</li>
-                                                        
-                                                        <li>Logging und Metrics</li>
-                                                        
-                                                        <li>BackUp/Restore</li>
-                                                        
-                                                    </ul>
-                                                    
-                                                    <h4 style="margin: 0; padding: 20px 0;">Tipps und Tricks</h4>
-                                                    <ul>
-                                                        
-                                                        <li>Erzeuge Deine eigene Microservice Infrastruktur</li>
-                                                        
-                                                        <li>Erzeuge besserere Container Images</li>
-                                                        
-                                                        <li>Nutze Deine Service Discovery für die Bereitstellung Deiner Geheimnisse</li>
-                                                        
-                                                        <li>Networking</li>
-                                                        
-                                                        <li>Debug Deine Services und Pods</li>
+                                                        <li>Tipps &amp; Tricks</li>
                                                         
                                                     </ul>
                                                     
@@ -744,7 +602,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         
                                                         <li>Motivierte Trainer</li>
                                                         
-                                                        <li>Verpflegung: Kaffeepausen, Mittagessen und Getränke (nicht alkoholisch)</li>
+                                                        <li>Verpflegung: Mittagessen und Getränke (nicht alkoholisch)</li>
                                                         
                                                         <li>Schulungsmaterialien</li>
                                                         
@@ -763,21 +621,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     <h4 style="margin: 0; padding: 20px 0;"></h4>
                                                     <ul>
                                                         
-                                                        <li>Bringe Deinen eigenes Notebook mit</li>
+                                                        <li>Eigenes Notebook/Laptop wird benötigt</li>
                                                         
                                                         <li>Administrator Rechte sind erforderlich</li>
                                                         
-                                                        <li>Freier Zugang zum gesamten Netzwerk (Kein aktives Unternehmes-Proxy oder -VPN)</li>
+                                                        <li>Gute Docker, Kubernetes und Gitlab/CI Kenntnisse </li>
                                                         
-                                                        <li>Grundlegende Linux-Kenntnisse</li>
+                                                        <li>Gute Linux-Kenntnisse (bash, zsh, tmux, ssh, network)</li>
                                                         
-                                                        <li>Grundlegende Docker-Kenntnisse</li>
-                                                        
-                                                        <li>SSH oder Putty installiert</li>
-                                                        
-                                                        <li>aktuelle Google Chrome Version</li>
-                                                        
-                                                        <li>Git</li>
+                                                        <li>Folgende Installationen müssen vorhanden sein: Chrome, VS Code, Docker CE, openssh oder putty, kubectl, bach/zsh, tmux, helm, minikube oder Docker for Desktop</li>
                                                         
                                                     </ul>
                                                     
@@ -1131,10 +983,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <img class="logo" src="/images/logo.svg" alt="">
                         </div>
                         <div class="small-12 medium-12 large-12 columns">
-                            <h3>19. - 21. November 2018, Essen</h3>
+                            <h3>03. August 2018 in Essen</h3>
                         </div>
                         <div class="small-12 medium-12 large-12 columns">
-                            <div style="width:100%; text-align:left;"><iframe src="https://eventbrite.de/tickets-external?eid=47160787184&ref=etckt" frameborder="0" height="425" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="https://www.eventbrite.de/">Von Eventbrite</a></div></div>
+                            <<div style="width:100%; text-align:left;"><iframe src="https://eventbrite.de/tickets-external?eid=47426297332&ref=etckt" frameborder="0" height="340" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="https://www.eventbrite.de/">Von Eventbrite</a></div></div>
                         </div>
                     </form>
                 </section>
