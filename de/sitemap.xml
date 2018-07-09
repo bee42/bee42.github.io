@@ -78,15 +78,15 @@
   </url>
   
   <url>
-    <loc>https://bee42.com/de/jobs/cloud-native-engineer/</loc>
-  </url>
-  
-  <url>
     <loc>https://bee42.com/de/allgemeine-geschaeftsbedingungen/</loc>
   </url>
   
   <url>
     <loc>https://bee42.com/de/locations/Berlin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/de/jobs/cloud-native-engineer/</loc>
   </url>
   
   <url>
@@ -229,6 +229,10 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/crew/niclas/</loc>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/services/devops-consulting/</loc>
   </url>
   
@@ -258,6 +262,10 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/crew/dominik/</loc>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/services/blueprint/</loc>
   </url>
   
@@ -277,20 +285,12 @@
   </url>
   
   <url>
-    <loc>https://bee42.com/de/crew/niclas/</loc>
+    <loc>https://bee42.com/de/crew/elena/</loc>
   </url>
   
   <url>
     <loc>https://bee42.com/de/trainings/container-java-lab/</loc>
     <lastmod>2017-01-10T22:27:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bee42.com/de/crew/dominik/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bee42.com/de/crew/elena/</loc>
   </url>
   
   <url>
