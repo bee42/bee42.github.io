@@ -188,6 +188,11 @@
   </url>
   
   <url>
+    <loc>https://bee42.com/de/trainings/kubernetes-day-in-essen/</loc>
+    <lastmod>2017-11-15T20:28:31+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bee42.com/de/trainings/kubernetes-devops-lab-in-berlin/</loc>
     <lastmod>2017-11-15T20:28:31+01:00</lastmod>
   </url>
@@ -270,11 +275,6 @@
   
   <url>
     <loc>https://bee42.com/de/crew/elena/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bee42.com/de/trainings/kubernetes-day-in-essen/</loc>
-    <lastmod>2017-11-15T20:28:31+01:00</lastmod>
   </url>
   
   <url>
@@ -569,6 +569,11 @@
   <url>
     <loc>https://bee42.com/de/blog/bee42-kommende-schulungen-docker-kubernetes-gitlabci/</loc>
     <lastmod>2018-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bee42.com/de/blog/bee42-trainings-verlosung-gewinnspiel-kubernetes-devops-lab/</loc>
+    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
