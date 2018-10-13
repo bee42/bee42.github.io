@@ -1,0 +1,406 @@
+<!doctype html><html lang=de><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Nachdem wir in diversen Posts vor einiger Zeit Serverspec für Server und VMs vorgestellt haben, brauchen wir jetzt natürlich auch noch eine sinnvolle Verbindung zu Docker. Die Frage ist also, wie kann man innerhalb von Containern eine Spezifikation prüfen?"><title>Docker-Container mit Serverspec testen</title><link rel=icon href=/images/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/bootstrap.min.css><link href=/css/animate1.css rel=stylesheet><link href=/css/github-gist.css rel=stylesheet><link rel=stylesheet type=text/css href=/css/bicon.min.css><link rel=stylesheet type=text/css href=/css/owl.carousel.min.css><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous><link rel=stylesheet href=https://bee42.com/sass/style.min.807b9d7ce089a7d39ca870a8727d83ec5a3cbfcaf75ae380e102836b0c36c229.css><link rel=stylesheet type=text/css href=/css/responsive-menu.css><link rel=stylesheet type=text/css href=/css/responsive.css></head><body class=sub-page><nav class=off-canvas><button class=close-btn><i class="fas fa-times"></i></button><ul><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav><div id=page><header class=site-header><div class=inner-header><a class=branding href=/index.html><img src=/images/bee42-logo.svg alt="bee42 Logo"></a>
+<button class=open-btn><i class="fas fa-bars"></i></button><div class=off-canvas-btn><a id=mob-menu>☰</a>
+<a id=mob-menu-close>×</a></div><nav class=site-navigation><ul id=menu-header-menu class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav></div><h1>Rethink IT</h1><h2>Wir verbessern Deine Systeme mit Begeisterung.</h2><a href=https://bee42.com/de/about class="button hero-button">Über die bee⁴²</a></header><div id=content><div class=blog-detail-wrapper><div class="col-lg-9 col-sm-8 col-md-8"><article class=post><h2>Docker-Container mit Serverspec testen</h2><div class=blog-content><p><p>Nachdem wir in diversen Posts vor einiger Zeit <a href=serverspec.org>Serverspec</a>
+für Server und VMs vorgestellt haben, brauchen wir jetzt natürlich auch noch eine sinnvolle Verbindung
+zu Docker. Die Frage ist also, wie kann man innerhalb von Containern eine
+Spezifikation prüfen?</p><p>Dazu gibt es natürlich mehrere Möglichkeiten.</p><h2 id=ssh>SSH</h2><p>Die aus Serverspec-Sicht einfachste Art besteht darin, den Container als
+Zielhost anzugeben, mit dem sich Serverspec dann regulär per SSH verbinden kann.
+Für serverspec macht es keinen Unterschied, ob es sich um echte Hardware, eine
+VM oder einen Container handelt.</p><p>Das wiederum führt aber zu größeren Umbauarbeiten im Container, da man nun neben
+dem eigentlichen Service, den man laufen lassen möchte, noch einen SSH-Daemon
+benötigt. Beispielsweise lässt sich die Integration mehrere Services innerhalb eines Containers mit <a href=http://supervisord.org/>Supervisor.d</a> umsetzen.</p><p><img src=/images/blog/infrabricks/docker_serverspec_ssh.png alt="Serverspec über ssh ausführen"></p><p>Letzen Endes muss man an der Stelle aber eigentlich die Grundlagen-Entscheidung
+treffen, wie der eigene Container ausgestaltet sein soll: Als Microservice,
+ausschließlich mit dem Zielprozess, oder als VM-Ersatz mit mehreren Services inklusive sshd.</p><p><strong>Fazit</strong>: Falls die Antwort &ldquo;VM-Ersatz&rdquo; lautet, stellt der SSH-Zugang für Serverspec die
+einfachste Möglichkeit dar. Falls der Microservice-Ansatz geplant ist, müssen
+wir uns andere Zugangsmöglichkeiten anschauen.</p><h2 id=zur-build-zeit>Zur Build-Zeit</h2><p>Man kann den Serverspec-Aufruf natürlich auch zur Build-Zeit in das Dockerfile
+platzieren. Dabei lassen sich die Spezifikationsfiles per &ldquo;ADD&rdquo;-Befehl einsetzen,
+über &ldquo;RUN&rdquo; wird serverspec dann ausgeführt und schreibt das Ergebnis in eine
+Datei, zur späteren Einsicht. Die Spezifikationsdateien und die Ergebnisdatei
+dürfen auch auf einem Docker Volume liegen, um das ganze z.B. von außen steuern zu können.</p><p>Am Beispiel:</p><pre><code class=language-bash>$ mkdir serverspec-docker-test
+$ cd serverspec-docker-test
+$ mkdir spec.d
+$ cd spec.d
+$ serverspec --init
+
+$ serverspec-init
+Select OS type:
+
+  1) UN*X
+  2) Windows
+
+Select number: 1
+
+Select a backend type:
+
+  1) SSH
+  2) Exec (local)
+
+Select number: 2
+
+ + spec/
+ + spec/localhost/
+ + spec/localhost/httpd_spec.rb
+ + spec/spec_helper.rb
+ + Rakefile
+
+$ vim Dockerfile
+</code></pre><p>Hier setzen wir in den <code>Dockerfile</code> folgendes ein:</p><pre><code>FROM ubuntu:14.04
+
+RUN sudo apt-get -yqq update
+
+RUN sudo apt-get -yqq install ruby1.9.3
+
+RUN sudo gem install rake -v '10.3.2' --no-ri --no-rdoc
+RUN sudo gem install rspec -v '2.99.0' --no-ri --no-rdoc
+RUN sudo gem install specinfra -v '1.21.0' --no-ri --no-rdoc
+RUN sudo gem install serverspec -v '1.10.0' --no-ri --no-rdoc
+
+ADD ./spec.d /opt/spec.d
+
+RUN ( cd /opt/spec.d; rake spec )
+
+CMD /bin/bash
+</code></pre><p>Jetzt den Container bauen (gekürzter Auszug):</p><pre><code class=language-bash>$ docker build .
+Sending build context to Docker daemon 7.168 kB
+Sending build context to Docker daemon
+Step 0 : FROM ubuntu:14.04
+ ---&gt; c4ff7513909d
+Step 1 : RUN sudo apt-get -yqq update
+ ---&gt; Running in bc2eb91c00ff
+[...]
+Removing intermediate container bc2eb91c00ff
+Step 2 : RUN sudo apt-get -yqq install ruby1.9.3
+[...]
+Step 3 : RUN sudo gem install rake -v '10.3.2' --no-ri --no-rdoc
+[...]
+Step 4 : RUN sudo gem install rspec -v '2.99.0' --no-ri --no-rdoc
+[...]
+Step 5 : RUN sudo gem install specinfra -v '1.21.0' --no-ri --no-rdoc
+[...]
+Step 6 : RUN sudo gem install serverspec -v '1.10.0' --no-ri --no-rdoc
+[...]
+Step 7 : ADD ./spec.d /opt/spec.d
+[...]
+Step 8 : RUN ( cd /opt/spec.d; rake spec )
+ ---&gt; Running in 1f880efa0c71
+/usr/bin/ruby1.9.1 -S rspec spec/localhost/httpd_spec.rb
+dpkg-query: no packages found matching httpd
+FFhttpd: unrecognized service
+FFFF
+
+Failures:
+
+  1) Package &quot;httpd&quot; should be installed
+     On host ``
+     Failure/Error: it { should be_installed }
+       dpkg-query -f '${Status ..'
+
+[...]
+
+Finished in 0.32489 seconds
+6 examples, 6 failures
+
+[...]
+
+/usr/bin/ruby1.9.1 -S rspec spec/localhost/httpd_spec.rb failed
+2014/09/06 18:35:10 The command [/bin/sh -c ( cd /opt/spec.d; rake spec )] returned a non-zero code: 1
+</code></pre><p>Natürlich schlägt das Beispiel des Serverspec Generators fehl, da der Container kein httpd enthält. Es ist
+halt die Demo-Spezifikation des Befehls <code>serverspec-init</code>, aber man sieht den Aufruf.
+In der Übersicht sieht das ganze so aus:</p><p><img src=/images/blog/infrabricks/docker_serverspec_buildtime.png alt="Serverspec zur Build-Zeit ausführen"></p><p>Vorteile:</p><ul><li>Man muss nichts an <code>serverspec</code> ändern, außer es im Container zu installieren.</li><li>Es passt zum Ablauf in Build-Chains: Beim Bau des Containers wird eine Spezifikation
+geprüft. Das Ergebnis kann von außen nachgeschaut werden, bei Failures stoppt die
+Build-Chain.</li><li>Bei aufeinander aufbauenden Images (z.B. FROM rossbachp/tomcat8:latest) kann
+man den darunterliegenden Containerinhalt auf Korrektheit prüfen, wenn man sich nicht darauf
+verlassen möchte.</li></ul><p>Nachteile:</p><ul><li>Man muss serverspec (und Abhängigkeiten, inkl. ruby) im Container installieren, obwohl
+man es zur Laufzeit nicht mehr braucht. D.h. eigentlich sollten die Pakete nach
+erfolgreichem Spec-Lauf wieder deinstalliert werden, inkl. eine <a href=http://jasonwilder.com/blog/2014/08/19/squashing-docker-images/>squashen des Docker Images</a>.</li><li>Man kann nur statische Aspekte der Betriebssystem-Installation prüfen, z.B.
+Dateien, Verzeichnisstrukturen, Pakete, Kernel-Einstellungen.</li><li>Dynamische Aspekte des Service, z.B. läuft der Service, horcht der Port, usw.
+können nicht getestet werden, da der Zielprozess ja noch gar nicht läuft.</li></ul><p><strong>Fazit</strong>: Wem es reicht, innerhalb der Buildchain statische Aspekte seines
+Docker Containers zu prüfen, ist hiermit gut bedient.</p><h2 id=mit-serverspec-und-dem-docker-backend>Mit serverspec und dem Docker-Backend</h2><p>Serverspec (bzw. SpecInfra) besitzt in seiner Architektur einen <em>Backend</em>-Teil.
+In diesem Backend wird unterschieden, wie die Spec-Kommandos auf dem Ziel
+ausgeführt werden soll (Beispiel: SSH). Seit SpecInfra v0.4.0 gibt es ein
+Docker-Backend, das wiederum auf dem <code>docker-api</code> gem aufbaut.</p><p>Es nimmt ein existierendes Image und ändert darin den &ldquo;CMD&rdquo;-Aufruf so ab, dass
+nicht der im Image definierte Zielprozess gestartet wird, sondern der Prüfbefehl,
+den serverspec gerade ausführen möchte. Der Container wird gestartet, der
+Befehl ausgeführt, das Ergebnis zurückgeliefert und von Serverspec bearbeitet.</p><p>Wir probieren es aus. Als erstes installieren wir das docker-api gem, dabei
+wird <code>mkmf</code> aus ruby-dev vorausgesetzt:</p><pre><code class=language-bash>$ cd serverspec-docker-test
+
+$ sudo apt-get install ruby-dev
+[...]
+
+$ sudo gem install docker-api
+Building native extensions.  This could take a while...
+Fetching: archive-tar-minitar-0.5.2.gem (100%)
+Fetching: docker-api-1.13.2.gem (100%)
+Successfully installed json-1.8.1
+Successfully installed archive-tar-minitar-0.5.2
+Successfully installed docker-api-1.13.2
+3 gems installed
+Installing ri documentation for json-1.8.1...
+Installing ri documentation for archive-tar-minitar-0.5.2...
+Installing ri documentation for docker-api-1.13.2...
+Installing RDoc documentation for json-1.8.1...
+Installing RDoc documentation for archive-tar-minitar-0.5.2...
+Installing RDoc documentation for docker-api-1.13.2...
+</code></pre><p>Dann muss Serverspec mitgeteilt werden, dass statt SSH ein Docker-Container
+geprüft wird, und auch, welcher Container es sein soll. Das ganze spielt sich
+in der Datei <code>spec_helper.rb</code> ab:</p><pre><code class=language-ruby>require 'serverspec'
+
+# - - - - - Docker einbauen (statt Exec-Helper)- - - - -
+include SpecInfra::Helper::Docker
+# - - - - - Docker einbauen (statt Exec-Helper)- - - - -
+include SpecInfra::Helper::DetectOS
+
+RSpec.configure do |c|
+  # - - - - - Image setzen - - - - -
+  c.docker_image = '9590610349ba'
+  # - - - - - Image setzen - - - - -
+
+  if ENV['ASK_SUDO_PASSWORD']
+    require 'highline/import'
+    c.sudo_password = ask(&quot;Enter sudo password: &quot;) { |q| q.echo = false }
+  else
+    c.sudo_password = ENV['SUDO_PASSWORD']
+  end
+end
+</code></pre><p>Und ausführen:</p><pre><code class=language-bash>$ rake spec
+/usr/bin/ruby1.9.1 -S rspec spec/localhost/httpd_spec.rb
+FFFFFF
+
+Failures:
+
+  1) Package &quot;httpd&quot; should be installed
+[...]  
+
+Finished in 1 minute 13.09 seconds
+6 examples, 6 failures
+[...]  
+</code></pre><p>Den ersten Unterschied den man bemerkt, ist der deutlich höhere Zeitaufwand
+zum prüfen. Schließlich wird für jeden Prüfbefehl (das können mehrere je
+describe-Block der Spec sein) ein neuer Container instanziiert.</p><p>Ein Nachweis gelingt indirekt über <code>docker ps -a</code>:</p><pre><code class=language-bash>$ sudo docker ps -a
+CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS                        PORTS               NAMES
+16643fab8e17        9590610349ba        &quot;/bin/sh -c 'netstat   13 seconds ago      Exited (1) 12 seconds ago                         mad_goldstine
+[...]
+</code></pre><p>In der COMMAND-Spalte <em>sieht</em> man z.B. die Ausführen des netstat-Kommandos aus der
+Spec (<code>port(80), it { should be_listening }</code>). Es handelt sich um eine bereits
+abgelaufenen Container, da er nach Beendigung des Serverspec-Prüfkommandos natürlich gestoppt ist.</p><p>Vorteile:</p><ul><li>Man muss serverspec im Container nicht installieren, es reicht die Installation auf dem Host.</li></ul><p>Nachteile:</p><ul><li>Das Setzen der Container-ID im <code>spec_helper</code> ist in dieser Form unschön, d.h. man
+benötigt weiteren Code um z.B. Ziel-Images abzufragen oder als Parameter entgegen
+zu nehmen.</li><li>Es lassen sich wieder nur statische Aspekte prüfen, da der eigentliche Zielprozess
+nicht ausgeführt, sondern durch serverspec ersetzt wird.</li></ul><p><strong>Fazit</strong>: Schon besser, da der Container so ohne Serverspec-Overhead auskommt.
+Aber es lässt sich immer noch kein laufender Service prüfen.</p><h2 id=nsenter>nsenter</h2><p>Die nächste Stufe besteht darin, in einen laufenden Container hineinzuschauen und
+dabei die Spec auszuführen.</p><p>Hierbei hilft <a href=http://man7.org/linux/man-pages/man1/nsenter.1.html>nsenter</a>.
+Die Installation ist im <a href=https://blog.codecentric.de/2014/07/vier-wege-in-den-docker-container/>Blogeintrag von Alexander Berresch</a>
+sehr schön beschrieben. nsenter liegt auch als <a href=https://github.com/jpetazzo/nsenter>Docker-Container</a> von
+@jpetazzo vor. Wir wählen die manuelle Installationsvariante:</p><pre><code class=language-bash>$ curl --silent https://www.kernel.org/pub/linux/utils/util-linux/v2.24/util-linux-2.24.tar.gz | tar -zxf-
+$ cd util-linux-2.24
+$ ./configure --without-ncurses
+$ make nsenter
+$ sudo cp nsenter /usr/local/bin
+</code></pre><p>Eine genaue Beschreibung von nsenter führt an der Stelle zu weit, dafür sei
+auf die Blogeinträge verwiesen. <strong><em>In a nutshell</em></strong>: nsenter startet einen neuen Prozess
+und setzt ihn in die Namespaces eines existierenden Containers.</p><p>Wir starten einen Container und ermitteln seine Prozess-ID.</p><p><strong>Vorsicht</strong>: Die
+Spaces zwischen den geschwungenen Klammern bei <code>.State.Pid</code> gehören da nicht hin,
+aber ohne Space werden sie vom Markup verschluckt.:</p><pre><code class=language-bash>$ docker run -tdi ubuntu:14.04
+2c67dc16c6f0c1d90e53f5836b7c1de461578b63f903fd4454fafb32b02706f8
+
+$ PID=$(docker inspect --format '{ { .State.Pid }}'  2c67dc16c6f0c1d90e53f5836b7c1de461578b63f903fd4454fafb32b02706f8)
+$ echo $PID
+9452
+</code></pre><p>Dann wird nsenter ausgeführt. Die Parameter stehen für die Namespaces, die
+der neue Prozess <em>erben</em> soll:</p><pre><code class=language-bash>$ sudo nsenter --target $PID --mount --uts --ipc --net --pid '/bin/sh'
+# ps -ef
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 19:16 ?        00:00:00 /bin/bash
+root        29     0  0 19:23 ?        00:00:00 /bin/sh
+root        30    29  0 19:23 ?        00:00:00 ps -ef
+</code></pre><p>D.h. man erhält eine Shell, die in der Prozessliste auch sichtbar ist (PID 1=Containerprozess,
+PID 29=über nsenter gestartetes /bin/sh).</p><p>Nun könnte man serverspec ausführen, wenn es vorhanden wäre. Leider hat die neue Shell
+den Mount-Namespace des Containers geerbt, und damit nur Zugriff auf das Dateisystem
+innerhalb Containers und serverspec liegt außerhalb.</p><p>Um dennoch etwas testen zu können, verwenden wir das gebaute Image aus dem ersten Beispiel,
+in dem ruby und serverspec installiert wurde, also das Images mit der ID <code>9590610349ba</code>.</p><pre><code class=language-bash>$ docker run -tdi 9590610349ba
+c84aaa2adeadda9f1ea1fe080110e25b5d68b151aadbe4706ad0538208d82cc9
+$ PID=$(docker inspect --format ' { {.State.Pid }} ' c84aaa)
+$ echo $PID
+9680
+</code></pre><p>Dann kann man über nsenter einen neuen Prozess im Container starten und
+serverspec ausführen:</p><pre><code class=language-bash>$ sudo nsenter --target $PID --mount --uts --ipc --net --pid '/bin/bash'
+
+root@c84aaa2adead:/# cd /opt/spec.d/
+
+root@c84aaa2adead:/opt/spec.d# rake spec
+/usr/bin/ruby1.9.1 -S rspec spec/localhost/httpd_spec.rb
+dpkg-query: no packages found matching httpd
+FFhttpd: unrecognized service
+FFFF
+[...]
+
+Finished in 0.21691 seconds
+6 examples, 6 failures
+</code></pre><p>Das liefert ebenfalls Fehler, da der HTTP-Server nicht installiert ist. Da wir
+die Spezifikation aber in einem laufenden Container <em>hineingebeamt</em> und
+gestartet haben, können auch dynamische Aspekte des Zielservice mit abgeprüft werden.</p><p>Das ganze kann man natürlich auch abkürzen und in den nsenter Aufruf packen:</p><pre><code class=language-bash>$ sudo nsenter --target $PID --mount --uts --ipc --net --pid -- /bin/bash -c 'cd /opt/spec.d &amp;&amp; rake'
+</code></pre><p>Vorteile:</p><ul><li>Dynamische Aspekte sind in der Spec nun auch prüfbar, da man sich zur Laufzeit auf
+einen Container aufschalten kann.</li></ul><p>Nachteile:</p><ul><li>Die Installation von nsenter auf dem Docker Host ist notwendig.</li><li>Serverspec muss im Container installiert sein.</li></ul><p><strong>Fazit</strong>: Hier ergeben sich noch nicht soviele Vorteile gegenüber der Variante mit
+dem Docker-Backend in Serverspec.</p><h2 id=nsenter-serverspec>nsenter + serverspec</h2><p>Jetzt bleibt noch die Möglichkeit, nsenter in serverspec, genaugenommen im Projeckt specinfra,
+als Backend zu integrieren. Serverspec unterstützt das aktuell noch nicht, wir
+probieren es als Prototyp.</p><p><img src=/images/blog/infrabricks/docker_serverspec_nsenter.png alt="Serverspec-Kommandos über nsenter ausführen"></p><p>Dabei wird eine neue Backend-Klasse <code>Nsenter</code> implementiert
+und registriert. Sie erhält einen Parameter, die <code>nsenter_pid</code>, damit das Backend
+weiss, wo der Container liegt.</p><pre><code class=language-bash>$ cd
+$ mkdir nsenter-proto
+$ cd nsenter-proto
+$ git clone https://github.com/serverspec/specinfra
+Cloning into 'specinfra'...
+remote: Counting objects: 5305, done.
+Receiving objects: 100% (5305/5305), 628.18 KiB | 473.00 KiB/s, done.
+remote: Total 5305 (delta 0), reused 0 (delta 0)
+Resolving deltas: 100% (2810/2810), done.
+Checking connectivity... done.
+$ cd specinfra/lib/specinfra
+$ vi backend.rb
+
+.. anfügen ..
+require 'specinfra/backend/nsenter'
+
+$ vim helper/backend.rb
+
+... den Typ 'Nsenter' einfügen ...
+
+module SpecInfra
+  module Helper
+    ['Exec', 'Nsenter', 'Ssh', 'Cmd', 'Docker', 'WinRM', 'ShellScript', 'Dockerfile', 'Lxc'].each do |type|
+
+$ vim configuration.rb
+
+... den Konfigurationsparameter `nsenter_pid` ans `Array VALID_OPTIONS_KEYS` anfügen ...
+
+module SpecInfra
+  module Configuration
+    class &lt;&lt; self
+      VALID_OPTIONS_KEYS = [
+        :path,
+[...]
+        :request_pty,
+        :nsenter_pid,
+
+# Eine Prototyp-Version von nsenter für specinfra liegt als gist vor
+# https://gist.github.com/aschmidt75/bb38d971e4f47172e2de
+$ curl https://gist.githubusercontent.com/aschmidt75/bb38d971e4f47172e2de/raw/350f9419159ffba282496f90232110e06b77cf69/specinfra_nsenter_prototype &gt;backend/nsenter.rb
+
+# das neue gem muss gebaut werden, der falsche wercker.yml link stört.
+$ cd ../..
+$ rm wercker.yml
+$ touch wercker.yml
+
+# Das Gem-Build kommando verlässt sich auf git ls-files, also added wir es
+# im lokalen Repository
+
+$ git add .
+$ git commit -m &quot;added nsenter backend&quot;
+
+# das wird gebaut und installiert.
+$ gem build specinfra.gemspec --force
+  Successfully built RubyGem
+  Name: specinfra
+  Version: 1.27.0
+  File: specinfra-1.27.0.gem
+
+$ sudo gem install specinfra-1.27.0.gem
+Successfully installed specinfra-1.27.0
+1 gem installed
+Installing ri documentation for specinfra-1.27.0...
+Installing RDoc documentation for specinfra-1.27.0...
+</code></pre><p>Dazu erstellen wir eine kleine Spezifikation und starten ein Docker-Image:</p><pre><code class=language-bash>$ cd
+$ cd nsenter-proto
+$ serverspec-init
+Select OS type:
+
+  1) UN*X
+  2) Windows
+
+Select number: 1
+
+Select a backend type:
+
+  1) SSH
+  2) Exec (local)
+
+Select number: 2
+
+ + spec/
+ + spec/localhost/
+ + spec/localhost/httpd_spec.rb
+ + spec/spec_helper.rb
+ + Rakefile
+</code></pre><p>Zu Testzwecken wird die Spezifikation verkleinert:</p><pre><code class=language-bash>  $ vim spec/localhost/httpd_spec.rb
+
+require 'spec_helper'
+
+describe package('apache2') do
+  it { should be_installed }
+end
+</code></pre><p>Ein Image wird gestartet, wir brauchen die PID:</p><pre><code class=language-bash>$ docker run -tdi ubuntu:14.04
+9367d023570d4670ca1d12aa431bb826a131a1dcc0b02797a90372489d7927a6
+vagrant@docker-workshop:~/nsenter-proto$ docker inspect -f '{ { .State.Pid }}' 9367d0
+15344
+</code></pre><p>Der <code>spec_helper</code> wird auf nsenter umgestellt, und die PID <code>15344</code> wird mitgegeben:</p><pre><code class=language-bash>$ vim spec/spec_helper.rb
+
+require 'serverspec'
+
+# - - - - - NSENTER verwenden - - - - -
+include SpecInfra::Helper::Nsenter
+# - - - - - nach problemen mit DetecOs
+# wird hier Debian explizit gesetzt - - -
+include Serverspec::Helper::Debian
+
+RSpec.configure do |c|
+
+  # - - - - - PID für NSENTER aus Environment - - - - -
+  c.nsenter_pid = ENV['NSENTER_PID']
+
+  if ENV['ASK_SUDO_PASSWORD']
+
+</code></pre><p>Der spannende Moment beginnt:</p><pre><code class=language-bash>$ NSENTER_PID=15344 rake spec
+/usr/bin/ruby1.9.1 -S rspec spec/localhost/httpd_spec.rb
+nsenter_exec! sudo dpkg-query -f '${Status}' -W apache2 | grep -E '^(install|hold) ok installed$'
+F
+
+Failures:
+
+  1) Package &quot;apache2&quot; should be installed
+     On host ``
+     Failure/Error: it { should be_installed }
+       sudo dpkg-query -f '${Status}' -W apache2 | grep -E '^(install|hold) ok installed$'
+       expected Package &quot;apache2&quot; to be installed
+     # ./spec/localhost/httpd_spec.rb:4:in `block (2 levels) in &lt;top (required)&gt;'
+
+Finished in 0.02865 seconds
+1 example, 1 failure
+</code></pre><p>Die Debug-Ausgabe _nsenter<em>exec!</em> zeigt, dass das neue nsenter-Backend aufgerufen
+wird. Die spec liefert natürlich Fehler, weil der Apache nicht installiert ist.</p><p>Wir einem Docker <code>attach</code> kommen wir in den laufenden Container und installieren das <code>httpd</code> Package nach:</p><pre><code class=language-bash>$ docker attach 9367
+
+
+root@9367d023570d:/# apt-get update -yqq
+root@9367d023570d:/# apt-get -yqq install apache2
+Preconfiguring packages ...
+[...]
+
+[CRTL-P], [CTRL-Q] drücken, um zu detachen
+</code></pre><p>Und die Spec erneut ausführen:</p><pre><code class=language-bash>$ NSENTER_PID=15344 rake spec
+/usr/bin/ruby1.9.1 -S rspec spec/localhost/httpd_spec.rb
+nsenter_exec! sudo dpkg-query -f '${Status}' -W apache2 | grep -E '^(install|hold) ok installed$'
+.
+
+Finished in 0.05324 seconds
+1 example, 0 failures
+</code></pre><p>Das hat funktioniert.</p><p>Vorteile:</p><ul><li>Wenn nsenter als Backend in serverspec integriert wäre, könnte man so sehr einfach
+laufende Container testen, d.h. mit allen statischen und dynamischen Aspekten.</li><li><code>serverspec</code> muss nicht im Container installiert sein, es reicht wenn die Prüfkommandos
+im Container funktionieren.</li></ul><p>Nachteile:</p><ul><li>Der Aufruf von <code>serverspec</code> klappt nur noch als Root bzw. mit sudo-Rechte auf <code>nsenter</code>.</li><li>Es wird <code>nsenter</code> als zusätzliches Paket auf dem Host benötigt.</li><li>Die Integration der Prozess-PID in <code>spec_helper</code> erfordert noch geeignete Wrapper.</li></ul><p><strong>Fazit</strong>: <em>Whew, what a ride. In a nutshell: Don&rsquo;t try this at home!</em></p><p>Der Prototyp
+hat zwar in Bezug auf Ubuntu und den Apache2-Package-Test funktioniert, er besitzt
+aber noch keine Testabdeckung und deckt sicherlich nicht alle Eventualitäten ab.
+Wenn nsenter als regulär installierbares Paket in die Package-Repositories der
+Distributionen aufgenommen wird und Serverspec ggf. ab Version 2.X ein nsenter-backend
+mitbringt, kann das ein sinnvoller Weg sein, um Container zu testen.</p><h2 id=testbarkeit-gegeben>Testbarkeit: Gegeben!</h2><p>Insgesamt sieht die Testbarkeit von Container-Images über serverspec gar nicht schlecht aus.</p><ul><li>Zumindest die statischen Aspekte lassen sich über den Ansatz im <code>Dockerfile</code> und mit dem
+Docker-Backend von serverspec gut abtesten.</li><li>Wer Container als VM-Ersatz betreibt, hat in der Regel volle Testbarkeit über den SSH-Zugang.</li><li>Sobald die Entwicklung um nsenter fortgeschritten ist lässt sich die volle Testbarkeit
+sicherlich auch für den Microservice-Container-Ansatz erreichen.</li><li>Um auf einer Maschine unterschiedliche Projekte und Versionen der Testinfrastruktur ablaufen zu lassen empfehlen wir eine <a href=https://github.com/docker/docker/wiki/Docker-in-Docker>DockerInDocker</a> Installation zu überlegen.</li></ul><p>Viel Spaß beim Ausprobieren!</p><p>&ndash;</p><p>Andreas &amp; Peter</p></p></div><div class=clearfix></div></article></div><div class="col-lg-3 col-sm-4 col-md-4"><div id=blog-archive-sidebar class=sidebar><div class="widget panel wpforms-widget"><div class="wpforms-container wpforms-container-full" id=wpforms-31107><form class="wpforms-validate wpforms-form"><div class=wpforms-head-container><div class=wpforms-title>Werde Teil unserer bee42 community</div><div class=wpforms-description>Erhalte alle 14 Tage die neusten Blogposts, Trend, Events und Highlights rund um Docker, Kubernetes & Co.!</div></div><div class=wpforms-field-container><div class="wpforms-field wpforms-field-email"><input type=email class=wpforms-field-large placeholder="E-Mail-Adresse eingeben"></div></div><div class=wpforms-submit-container><button type=submit name=wpforms[submit] class=wpforms-submit value=wpforms-submit data-alt-text=Subscribing...>Abonieren</button></div></form></div></div><div class="widget panel popular-posts panel-secondary"><h2 class=section-title>Popular Posts</h2><ul><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-hosts-mit-puppet-provisionieren-und-testen/>Docker-Hosts mit Puppet provisionieren und testen</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-microservice-basis-mit-apache-tomcat-implementieren/>Docker Microservice Basis mit Apache Tomcat implementieren</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-entschluesselt-netzwerk-teil-2/>Docker entschlüsselt: Netzwerk Teil 2</a></li></ul></div></div></div></div></div><div class=overlay></div><footer><div class="container clear"><a class=branding href=index.html><img src=/images/bee42-logo.svg alt="bee42 logo"></a><ul class=footer-social-menu><li><a href=mailto:info@bee42.com><i class="fas fa-envelope"></i></a></li><li><a href=https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw><i class="fab fa-youtube"></i></a></li><li><a href="https://twitter.com/bee42solutions?lang=%2fde"><i class="fab fa-twitter"></i></a></li></ul><div class="row footer-info"><ul class=meta-navigation><li><a href=/de/impressum>Impressum</a></li><li><a href=/de/datenschutz>Datenschutz</a></li><li><a href=/de/allgemeine-geschaeftsbedingungen>AGB</a></li><li><a href=/de/kontakt>Kontakt</a></li></ul><form class=newsletter method=post><h3>Newsletter abonnieren</h3><input class=email type=email placeholder="Deine E-Mail Adresse">
+<button class=send>Senden</button></form><div class="row address"><a href=/de/locations/bochum><i class="fas fa-map-marker-alt"></i></a><ul class=location><li><strong>bee42 solutions gmbh</strong></li><li>Office: @Funkhaus Bochum</li><li>Kortumstraße 68</li><li>D-44787 Bochum</li></ul></div></div></div><div class=copyright><div class=container><p>© 2018 bee42 solutions gmbh. Alle Rechte vorbehalten</p></div></div></footer></div><div id=menu-sld class=mbmnu><div class=mobmenu-inner><ul id=menu-header-menu1 class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></div></div></div><div class=cookies-info id=cookies-container><p>"Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer <a href>Datenschutzerklärung</a>."</p><button id=cn-accept-cookie onclick="SetCookie('cookie_notice','0','7')">Ok</button></div><script>function SetCookie(c_name,value,expiredays){var exdate=new Date();exdate.setDate(exdate.getDate()+expiredays);document.cookie=c_name+"="+escape(value)+
+((expiredays==null)?"":";expires="+exdate.toGMTString());document.getElementById("cookies-container").style.display="none";}
+if(document.cookie){document.getElementById("cookies-container").style.display="none";}</script><script src=/js/jquery.js></script><script src=/js/bootstrap.min3.2.js></script><script src=/js/owl.carousel.min.js></script><script src=/js/highlight.pack.js></script><script src=/js/js-functions.js></script></body></html>

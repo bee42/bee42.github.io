@@ -1,0 +1,1137 @@
+/*------------------------------------------------------------------
+
+Project: Aviery - Responsive Template for SaaS
+Version:    1.1
+Last change:    04/06/18
+Responsive css
+
+------------------------------------------------------------------
+Media
+1. min-device-width 320px - max-device-width 479px
+2. min-device-width 480 - max-device-width 767
+3. min-device-width 768 - max-device-width 991
+4. min-device-width 992 - max-device-width 1199
+
+-------------------------------------------------------------------*/
+
+/* ------ Responsive ------*/
+
+/* ----- 1. Media 320 - 479 ----- */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 479px) {
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+    header .site-navigation {
+        display: none;
+    }
+    header.open {
+        background-color: #f9fafd !important;
+    }
+    header #mob-menu {
+        display: block;
+        position: absolute;
+    }
+    header #mob-menu-close {
+        display: block;
+    }
+    header .left #site-logo {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    #menu-sld, #mobmenu-logo {
+        display: block;
+    }
+    #menu-sld.mbmnu.open, #mobmenu-logo {
+        display: inline-table;
+    }
+    #menu-sld .mobmenu-inner {
+        padding: 50px 30px 10px 30px;
+    }
+    .hero .hero-content {
+        margin-top: 50px;
+    }
+    .hero .hero-content h1 {
+        padding-bottom: 28px;
+        line-height: 1.3;
+    }
+    .hero .hero-content h2 {
+        line-height: 1.52;
+        padding-bottom: 30px;
+        font-size: 16px;
+    }
+    .hero .hero-content a.hero-button {
+        padding: 16px 35px;
+    }
+    .benefits {
+        padding-top: 65px;
+    }
+    .benefits .benefits-single {
+        margin-bottom: 60px;
+        padding-bottom: 0px;
+    }
+    .benefits .benefits-img {
+        margin-top: 60px;
+    }
+    .benefits .benefits-img img {
+        width: 100%;
+    }
+    .benefits-inner:nth-of-type(2) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(3) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(4) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(5) .benefits-content-wrapper {
+        padding: 15px;
+    }
+    .benefits .benefits-content {
+        padding: 25px;
+        margin-top: 0;
+    }
+    .benefits .benefits-content a.benefits-btn {
+        padding: 12px 35px;
+    }
+    #testimonial.testimonials-wrapper h2 {
+        font-size: 30px;
+    }
+    #testimonial.testimonials-wrapper {
+        padding-bottom: 75px;
+        padding-top: 80px;
+    }
+    #testimonials .item-inner {
+        padding-top: 0px;
+    }
+    #testimonials .item-inner .testimonial p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    #testimonials .owl-item {
+        margin-bottom: 0px;
+    }
+    .pricing-overview {
+        padding-bottom: 20px;
+        padding-top: 60px;
+    }
+    .pricing-overview .pricing-overview-panel-wrap {
+        max-width: 100%;
+        width: 100%;
+        padding-top: 40px;
+    }
+    .pricing-overview .pricing-overview-panel {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .pricing-overview .col:after {
+        border-right: 0px solid #fff;
+        border-bottom: 2px solid #fff;
+        bottom: 30px;
+        top: inherit;
+        left: 0;
+    }
+    .pricing-overview .col:last-child:after {
+        border-bottom: 0px solid #fff;
+    }
+
+    footer .container {
+        padding: 30px 4%;
+    }
+    footer .container div.logo {
+        width: 145px;
+    }
+    footer .container div.divider {
+        display: none;
+    }
+    footer .container div.copyright {
+        width: 100%;
+        margin: 15px 0px;
+        padding: 15px 0px;
+        border-top: 1px solid #dee1f0;
+        border-bottom: 1px solid #dee1f0;
+    }
+    .newsreel {
+        padding: 5% 5%;
+    }
+    .newsreel .items .item {
+        width: 100%;
+    }
+    .newsreel .items .item .year {
+        padding-top: 5px;
+        display:none;
+    }
+    .newsreel .pagin .page-numbers {
+        min-width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+    .blog-detail-wrapper {
+        padding: 5% 0%;
+    }
+    .nc_socialPanel:not(.nc_socialPanelSide) .totes.totesalt .swp_count {
+        min-width: 35px;
+    }
+    .blog-content p img {
+        width: 100%;
+    }
+    .contact-us .part-a .form {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .contact-us h1 {
+        font-size: 40px;
+    }
+    .contact-us .part-a .form .wpforms-container {
+        padding: 25px;
+        margin-top: 25px;
+    }
+    .pricing .pricing-wrapper .plans {
+        padding: 30px 30px 30px 30px;
+    }
+    .pricing .pricing-wrapper .plans .box.box-promoted {
+        margin-top: 0px;
+    }
+    .pricing .pricing-wrapper .plans .box {
+        padding: 30px 15px;
+        font-size: 14px;
+    }
+    .careers .atf {
+        padding: 0px 15px;
+    }
+    .careers .atf-img img {
+        display: none;
+    }
+    .careers .values {
+        margin-top: 25px;
+        height: inherit;
+        min-height: 850px;
+    }
+    .careers .values .slider {
+        width: 85%;
+        float: left;
+        margin-top: 10%;
+        margin-left: 8%;
+    }
+    .careers .values .info {
+        width: 85%;
+        float: left;
+        margin-top: 10%;
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+    .careers .values .info span {
+        font-size: 14px;
+        letter-spacing: normal;
+    }
+    .careers .values .info h2 {
+        font-size: 40px;
+        color: #223464;
+    }
+    .careers .values .info div {
+        color: #5d648e;
+    }
+    .careers h2.sub {
+        font-size: 32px;
+        width: 95%;
+    }
+    .careers .perks .listing .perk {
+        width: 100%;
+        margin: 15px 0 15px;
+    }
+    h1.sub {
+        font-size: 30px;
+        width: 100%;
+        padding-bottom: 0px;
+        margin-top: 25px;
+    }
+    .about div.sub-desc {
+        font-size: 16px;
+        width: 80%;
+    }
+    .terms-wrapper {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    .terms-wrapper .content__body {
+        margin-top: 0px;
+    }
+    .terms-wrapper .col.content__body-wrap--noheading {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100%;
+    }
+    .about .team-pad {
+        padding-top: 60px;
+    }
+    .about .team-pad .row .info h2.sub {
+        font-size: 30px;
+    }
+    .about .team-pad .row .info .sub-desc {
+        font-size: 16px;
+        width: 75%;
+    }
+    .quote h2.sub {
+        font-size: 30px;
+        width: 80%;
+        margin: auto;
+    }
+    .top-head .sub-desc {
+        font-size: 16px;
+        width: 80%;
+    }
+    .top-head {
+        padding: 100px 25px;
+        max-height: 224px;
+    }
+    .top-head h1.sub,
+    #pricing-page.pricing-wrapper .hero-content h1 {
+        font-size: 30px;
+    }
+    #pricing-page.pricing-wrapper .pricing-panels-inner {
+        padding: 30px 30px;
+    }
+    #pricing-page.pricing-wrapper .wavey {
+        background-size: 80%;
+        margin-bottom: 40px;
+    }
+    #pricing-page.pricing-wrapper .pricing-panels-inner a.button {
+        padding: 15px 25px;
+    }
+    #pricing-page.pricing-wrapper .pricing-panels-single:nth-of-type(1),
+    #pricing-page.pricing-wrapper .pricing-panels-single:nth-of-type(2),
+    #pricing-page.pricing-wrapper .pricing-panels-single:nth-of-type(3) {
+        margin-bottom: 35px;
+        margin-top: 0px;
+    }
+    .link-banner--medium {
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    .link-banner a.button.button--white {
+        padding: 0px 25px;
+    }
+    .icon-list-wrap {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .icon-list-wrap h2,
+    .pixxett-tabs .hero-content h1,
+    .pixxett-tabs .tab-content h3 {
+        font-size: 30px;
+    }
+    .icon-list-wrap .cols .col--t6, .icon-list-wrap .cols .col--thalf {
+        width: 100%;
+    }
+    .icon-list-wrap .icon-list {
+        padding-top: 40px;
+    }
+    .icon-list-wrap .col--t6 .icon-list-item {
+        margin-bottom: 40px;
+    }
+    .pixxett-tabs .nav {
+        width: 91%;
+        border-radius: 60px;
+        margin-bottom: 0px;
+    }
+    .pixxett-tabs .nav-pills>li {
+        width: 49.5%;
+    }
+    .nav>li>a {
+        font-size: 16px;
+    }
+    .sticky-sidebar {
+        position: relative;
+        right: inherit;
+        left: inherit;
+        top: inherit;
+        width: 100%;
+        overflow: hidden;
+        display: block;
+    }
+    .mini-sign-up-wrap .mini-sign-up {
+        position: relative;
+        top: 0px;
+        width: 100%;
+    }
+    .mini-sign-up-wrap {
+        position: relative;
+    }
+    .hero-bg-wrapper {
+        margin: 20px 0px 20px;
+        min-height: 190px;
+    }
+    .hero-bg-wrapper .bi {
+        font-size: 190px;
+        width: 190px;
+        height: 190px;
+        margin: -40px 0 0 -95px;
+    }
+    .pixxett-tabs:before {
+        height: 680px;
+    }
+    .pixxett-tabs .tab-content {
+        padding-bottom: 20px;
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    .pixxett-tabs .tab-content .wavey {
+        background-size: 100%;
+        margin-bottom: 20px;
+    }
+    .pixxett-tabs .tab-content .features-list-type .features-list-item .features-list-item-image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .pixxett-tabs .tab-content .features-list-type .features-list-item .features-list-content {
+        padding: 0;
+        width: 100%;
+    }
+    .pixxett-tabs .tab-content .features-list-type .features-list-item .features-list-content h3 {
+        font-size: 24px;
+    }
+    .mini-sign-up-wrap .mini-sign-up h4 {
+        padding-left: 0;
+        text-align: center;
+        font-size: 20px;
+    }
+    .mini-sign-up-wrap .mini-sign-up .signup-form {
+        padding: 30px 20px;
+    }
+    .mini-sign-up .form-field--submit>div button.button:after,
+    .mini-sign-up .form-field--submit button span.google-logo:before {
+        display: none;
+    }
+    .mini-sign-up .form-field--submit>div button.button {
+        padding: 16px 35px;
+    }
+
+    .trainings-content .trainings-title-header .trainings-title {
+        font-size: 20px;
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+    .trainings-content .trainings-title-header .trainings-subtitle {
+        font-size: 15px;
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* ----- 2. Media 480 - 767 ----- */
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
+
+    #menu-sld.mbmnu.open, #mobmenu-logo {
+        display: inline-table;
+    }
+    #menu-sld .mobmenu-inner {
+        padding: 50px 30px 10px 30px;
+    }
+    header .site-navigation {
+        display: none;
+    }
+    header.open {
+        background-color: #f9fafd !important;
+    }
+    header #mob-menu {
+        display: block;
+        position: absolute;
+    }
+    header #mob-menu-close {
+        display: block;
+    }
+    header .left #site-logo {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    #menu-sld, #mobmenu-logo {
+        display: block;
+    }
+    .home .atf .title .cntna {
+        padding-top: 50px;
+    }
+    .home .features .row .feature:nth-child(2n+1),
+    .home .features .row .feature:nth-child(2n) {
+        width: 100%;
+    }
+    .quote h2.sub {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .hero-bg-wrapper {
+        margin: 50px 0px 50px;
+        position: relative;
+    }
+    .benefits .benefits-single {
+        margin-bottom: 60px;
+        padding-bottom: 0px;
+    }
+    .benefits .benefits-img {
+        margin-top: 60px;
+    }
+    .benefits .benefits-img img {
+        width: 100%;
+    }
+    .benefits-inner:nth-of-type(2) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(3) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(4) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(5) .benefits-content-wrapper  {
+        padding: 15px;
+    }
+    .benefits .benefits-content {
+        padding: 30px;
+        margin-top: 0rem;
+    }
+    .hero-bg-wrapper .bi {
+        top: 16%;
+    }
+    #testimonial.testimonials-wrapper {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    #testimonial.testimonials-wrapper h2 {
+        font-size: 40px;
+    }
+    #testimonials .item-inner {
+        padding-top: 20px;
+    }
+    #testimonials .item-inner .testimonial p {
+        font-size: 22px;
+        line-height: 1.8;
+    }
+    .pricing-overview {
+        padding-bottom: 20px;
+        padding-top: 60px;
+    }
+    .pricing-overview .pricing-overview-panel-wrap {
+        max-width: 100%;
+        width: 100%;
+        padding-top: 40px;
+    }
+    .pricing-overview .pricing-overview-panel {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .pricing-overview .col:after {
+        border-right: 0px solid #fff;
+        border-bottom: 2px solid #fff;
+        bottom: 30px;
+        top: inherit;
+        left: 0;
+    }
+    .pricing-overview .col:last-child:after {
+        border-bottom: 0px solid #fff;
+    }
+    footer .container {
+        padding: 30px 4%;
+    }
+    footer .container div.logo {
+        width: 145px;
+    }
+    footer .container div.divider {
+        display: none;
+    }
+    footer .container div.copyright {
+        width: 100%;
+        margin: 15px 0px;
+        padding: 15px 0px;
+        border-top: 1px solid #dee1f0;
+        border-bottom: 1px solid #dee1f0;
+    }
+    .about .atf-img img {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .about .team-pad .row .info {
+        width: 100%;
+        padding: 0 30px 0 30px;
+    }
+    .about .team-pad .row .info h2.sub {
+        font-size: 36px;
+    }
+    .top-head {
+        padding: 100px 30px;
+    }
+    .top-head h1.sub {
+        font-size: 40px;
+    }
+    .top-head .sub-desc {
+        padding: 0px;
+    }
+    .newsreel {
+        padding: 5% 5%;
+    }
+    .newsreel .items .item {
+        width: 100%;
+    }
+    newsreel .items .item .year {
+        padding-top: 5px;
+        display:none;
+    }
+    .newsreel .pagin .page-numbers {
+        min-width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+    .blog-detail-wrapper {
+        padding: 5% 2%;
+    }
+    .blog-content p img {
+        width: 100%;
+    }
+    .contact-us .part-a .form {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .contact-us h1 {
+        font-size: 50px;
+    }
+    .contact-us .part-a .form .wpforms-container {
+        padding: 25px;
+        margin-top: 25px;
+    }
+    .pricing .pricing-wrapper .plans .box.box-promoted {
+        margin-top: 0px;
+    }
+    .careers .atf {
+        padding: 0px 15px;
+    }
+    .careers .atf-img img {
+        display: none;
+    }
+    .careers .values {
+        margin-top: 25px;
+        height: inherit;
+        min-height: 850px;
+    }
+    .careers .values .slider {
+        width: 85%;
+        float: left;
+        margin-top: 10%;
+        margin-left: 8%;
+    }
+    .careers .values .info {
+        width: 85%;
+        float: left;
+        margin-top: 10%;
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+    .careers .values .info span {
+        font-size: 14px;
+        letter-spacing: normal;
+    }
+    .careers .values .info h2 {
+        font-size: 40px;
+        color: #223464;
+    }
+    .careers .values .info div {
+        color: #5d648e;
+    }
+    .careers h2.sub {
+        font-size: 32px;
+        width: 95%;
+    }
+    .careers .perks .listing .perk {
+        width: 100%;
+        margin: 15px 0 15px;
+    }
+    h1.sub {
+        font-size: 34px;
+        width: 100%;
+        padding-bottom: 0px;
+        margin-top: 25px;
+    }
+    .about div.sub-desc {
+        font-size: 16px;
+        width: 80%;
+    }
+    .terms-wrapper {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    .terms-wrapper .content__body {
+        margin-top: 0px;
+    }
+    .terms-wrapper .col.content__body-wrap--noheading {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100%;
+    }
+    .about .team-pad {
+        padding-top: 60px;
+    }
+    .about .team-pad .row .info h2.sub {
+        font-size: 30px;
+    }
+    .about .team-pad .row .info .sub-desc {
+        font-size: 16px;
+        width: 75%;
+    }
+    .quote h2.sub {
+        font-size: 30px;
+        width: 80%;
+        margin: auto;
+    }
+    .top-head .sub-desc {
+        width: 80%;
+    }
+    .top-head h1.sub,
+    #pricing-page.pricing-wrapper .hero-content h1 {
+        font-size: 40px;
+    }
+    #pricing-page.pricing-wrapper .pricing-panels-inner {
+        padding: 30px 30px;
+    }
+    #pricing-page.pricing-wrapper .wavey {
+        background-size: 66.9%;
+        margin-bottom: 40px;
+    }
+    #pricing-page.pricing-wrapper .pricing-panels-inner a.button {
+        padding: 15px 25px;
+    }
+    #pricing-page.pricing-wrapper .pricing-panels-single:nth-of-type(1),
+    #pricing-page.pricing-wrapper .pricing-panels-single:nth-of-type(2),
+    #pricing-page.pricing-wrapper .pricing-panels-single:nth-of-type(3) {
+        margin-bottom: 35px;
+        margin-top: 0px;
+    }
+    .link-banner--medium {
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    .link-banner a.button.button--white {
+        padding: 0px 25px;
+    }
+    .icon-list-wrap {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .icon-list-wrap h2 {
+        font-size: 30px;
+    }
+    .icon-list-wrap .cols .col--t6, .icon-list-wrap .cols .col--thalf {
+        width: 100%;
+    }
+    .icon-list-wrap .icon-list {
+        padding-top: 40px;
+    }
+    .icon-list-wrap .col--t6 .icon-list-item {
+        margin-bottom: 40px;
+    }
+    .sticky-sidebar {
+        position: relative;
+        right: inherit;
+        left: inherit;
+        top: inherit;
+        width: 100%;
+        overflow: hidden;
+        display: block;
+    }
+    .mini-sign-up-wrap .mini-sign-up {
+        position: relative;
+        top: 0px;
+        width: 100%;
+    }
+    .mini-sign-up-wrap {
+        position: relative;
+    }
+    .pixxett-tabs .tab-content {
+        padding-bottom: 20px;
+        padding-top: 80px;
+        text-align: left;
+        padding-left: 0;
+    }
+    .pixxett-tabs .tab-content h3 {
+        font-size: 40px;
+    }
+    .pixxett-tabs .tab-content .wavey {
+        background-size: 100%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .pixxett-tabs .tab-content .features-list-type .features-list-item .features-list-item-image {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .pixxett-tabs .tab-content .features-list-type .features-list-item .features-list-content {
+        padding: 0;
+        width: 100%;
+    }
+    .trainings-content .trainings-title-header .trainings-title {
+        font-size: 20px;
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+    .trainings-content .trainings-title-header .trainings-subtitle {
+        font-size: 15px;
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* ----- 3. Media 768 - 991 ----- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 991px) {
+
+    .hero .hero-content h1 {
+        font-size: 46px;
+    }
+    .hero .hero-content h2 {
+        font-size: 18px;
+    }
+    .benefits .benefits-single {
+        margin-bottom: 60px;
+        padding-bottom: 0px;
+    }
+    .benefits .benefits-img {
+        margin-top: 60px;
+    }
+    .benefits-inner:nth-of-type(2) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(3) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(4) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(5) .benefits-content-wrapper  {
+        padding: 15px;
+    }
+    .benefits .benefits-content {
+        padding: 30px;
+        margin-top: 0rem;
+    }
+    .pricing-overview {
+        padding-bottom: 20px;
+        padding-top: 60px;
+    }
+    .pricing-overview .pricing-overview-panel-wrap {
+        max-width: 100%;
+        width: 100%;
+        padding-top: 40px;
+    }
+    .pricing-overview .pricing-overview-panel {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .pricing-overview .col:after {
+        border-right: 0px solid #fff;
+        border-bottom: 2px solid #fff;
+        bottom: 30px;
+        top: inherit;
+        left: 0;
+    }
+    .pricing-overview .col:last-child:after {
+        border-bottom: 0px solid #fff;
+    }
+    footer .container {
+        width: 100%;
+        padding: 30px 0;
+    }
+    .home .atf .title .cntna {
+        padding-top: 80px;
+    }
+    .home .features .row .feature:nth-child(2n+1),
+    .home .features .row .feature:nth-child(2n) {
+        width: 100%;
+    }
+    .media h2.sub {
+        font-size: 50px;
+        width: 80%;
+    }
+    div.sub-desc {
+        width: inherit;
+    }
+    .home .media .center {
+        width: 75%;
+    }
+    .home .media .title .title-container .title-inner {
+        width: 80%;
+    }
+    .home .media .feat {
+        width: 66%;
+    }
+    .home .team-pad {
+        height: inherit;
+    }
+    .home .team .row .info {
+        width: 100%;
+        padding: 0 0 0 50px;
+    }
+    .home .team .row .info h2.sub {
+        font-size: 44px;
+    }
+    .home .team .row .map img {
+         width: 100%;
+     }
+    .home .team .row .map .dot-mn {
+        top: 34.1%;
+        left: 48.5%;
+    }
+    .about .atf-img img {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .newsreel {
+        padding: 5% 5%;
+    }
+    newsreel .items .item .year {
+        padding-top: 5px;
+        display:none;
+    }
+    .blog-detail-wrapper {
+        padding: 5% 2%;
+    }
+    .blog-content p img {
+        width: 100%;
+    }
+    div.widget_social .panel-content {
+        padding: 20px 25px;
+    }
+    div.widget_social .section-title, .widget.blog-topics h2 {
+        font-size: 20px;
+    }
+    .widget.blog-topics, div.widget_search, .widget.popular-posts, #blog-archive-sidebar .widget.panel.wpforms-widget {
+        padding: 25px;
+    }
+    .pricing .pricing-wrapper .plans {
+        padding: 50px 30px 60px 30px;
+    }
+    .pricing .pricing-wrapper .plans .box {
+        padding: 30px 15px;
+    }
+    .pricing .pricing-wrapper .plans .box .spec ul li i {
+        display: none;
+    }
+    h1.sub {
+        font-size: 40px;
+        width: inherit;
+    }
+    .careers div.sub-desc {
+        width: 90%;
+    }
+    .careers .values .slider {
+        width: 35%;
+        margin-top: 7%;
+        margin-left: 6%;
+    }
+    .careers .values .info {
+        width: 48%;
+        margin-top: 7%;
+        margin-right: 4%;
+    }
+    .careers .values .info h2 {
+        font-size: 44px;
+    }
+    .careers .values .slider .box {
+        height: 460px;
+    }
+    .careers .values {
+        margin-top: -15px;
+        height: inherit;
+    }
+    .careers h2.sub {
+        font-size: 50px;
+        width: inherit;
+    }
+    .careers .perks .listing .perk {
+        width: 32.5%;
+        padding: 2% 3%;
+    }
+    .about .atf {
+        padding-top: 150px;
+        padding-bottom: 40px;
+    }
+    .terms-wrapper {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .terms-wrapper .col.content__body-wrap--noheading {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #pricing-page.pricing-wrapper .wavey {
+        background-size: 75%;
+    }
+    .icon-list-wrap {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+    .icon-list-wrap .icon-list {
+        padding-top: 50px;
+    }
+    .icon-list-wrap .col--t6 .icon-list-item-icon {
+        left: 20%;
+        margin-left: calc(-3.8rem - 0%);
+    }
+    .icon-list-item h3 {
+        font-size: 24px;
+    }
+    .icon-list-wrap .col--t6 .icon-list-item {
+        margin-bottom: 50px;
+        padding-left: 17%;
+    }
+    .sticky-sidebar {
+        position: relative;
+        right: inherit;
+        left: inherit;
+        top: inherit;
+        width: 100%;
+        overflow: hidden;
+        display: block;
+    }
+    .mini-sign-up-wrap .mini-sign-up {
+        position: relative;
+        top: 0px;
+        width: 100%;
+    }
+    .mini-sign-up-wrap {
+        position: relative;
+    }
+    .pixxett-tabs .tab-content {
+        padding-bottom: 60px;
+        padding-top: 80px;
+        padding-left: 0;
+    }
+    .pixxett-tabs .tab-content .features-list-type .features-list-item .features-list-content {
+        padding: 0 2rem 0 calc(2.4rem + 15px);
+    }
+
+    .trainings-content .trainings-title-header .trainings-title {
+        font-size: 20px;
+        width: 100%;
+        float: left;
+        text-align: left;
+    }
+    .trainings-content .trainings-title-header .trainings-subtitle {
+        font-size: 15px;
+        width: 100%;
+        float: left;
+        text-align: left;
+    }
+}
+
+/* ----- 4. Media 992 - 1199 ----- */
+@media only screen and (min-device-width : 992px) and (max-device-width : 1199px) {
+
+    .container {
+        max-width: 850px;
+    }
+    .benefits-inner:nth-of-type(2) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(4) .benefits-content-wrapper {
+        padding-right: 25px;
+    }
+    .benefits-inner:nth-of-type(3) .benefits-content-wrapper,
+    .benefits-inner:nth-of-type(5) .benefits-content-wrapper {
+        padding-left: 25px;
+    }
+    .benefits .benefits-content {
+        padding: 50px 25px 50px;
+        margin-top: 25px;
+    }
+    .benefits .benefits-single {
+        margin-bottom: 60px;
+        padding-bottom: 25px;
+    }
+    .pricing-overview .col:last-child:after {
+        display: none;
+    }
+    .home .media .center {
+        width: 75%;
+    }
+    .home .media .title .title-container .title-inner {
+        width: 80%;
+    }
+    .home .media .feat {
+        width: 51%;
+    }
+    .home .team-pad {
+        height: 50px;
+    }
+    .home .team .row .info {
+        width: 100%;
+        padding: 0 0 0 50px;
+    }
+    .home .team .row .info .sub-desc {
+        width: 90%;
+    }
+    .home .team .row .info h2.sub {
+        font-size: 44px;
+    }
+    .home .team .row .map img {
+        width: 100%;
+    }
+    .home .team .row .map .dot-mn {
+        top: 34.1%;
+        left: 48.5%;
+    }
+    .about .atf-img img {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .newsreel {
+        padding: 5% 2%;
+    }
+    .blog-detail-wrapper {
+        padding: 5% 5%;
+    }
+    div.widget_social .panel-content {
+        padding: 20px 25px;
+    }
+    div.widget_social .section-title, .widget.blog-topics h2 {
+        font-size: 20px;
+    }
+    .widget.blog-topics, div.widget_search, .widget.popular-posts, #blog-archive-sidebar .widget.panel.wpforms-widget {
+        padding: 25px;
+    }
+    .pricing .pricing-wrapper .plans {
+        padding: 50px 30px 60px 30px;
+    }
+    .pricing .pricing-wrapper .plans .box {
+        padding: 30px 15px;
+    }
+    .pricing .pricing-wrapper .plans .box .spec ul li i {
+        display: none;
+    }
+    .careers .values .info h2 {
+        font-size: 42px;
+    }
+    .careers .values .slider .box {
+        height: 500px;
+    }
+    .careers .values {
+        height: inherit;
+    }
+    #pricing-page.pricing-wrapper .pricing-panels-inner {
+        padding: 35px 35px;
+    }
+    #pricing-page.pricing-wrapper .wavey {
+        background-size: 100%;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    #pricing-page.pricing-wrapper .pricing-panels-inner a.button {
+        padding: 16px 30px;
+    }
+    #pricing-page.pricing-wrapper .pricing-panels-features li {
+        font-size: 16px;
+    }
+    .icon-list-wrap .icon-list {
+        padding-top: 50px;
+    }
+    .icon-list-wrap {
+        padding-bottom: 20px;
+        padding-top: 90px;
+    }
+    .sticky-sidebar {
+        top: -30px;
+        width: 310px;
+        padding-right: 5px;
+        right: .6%;
+    }
+    .mini-sign-up .form-field--submit>div button.button {
+        padding: 16px 25px;
+    }
+
+}
+

@@ -1,0 +1,133 @@
+<!doctype html><html lang=de><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Das Projekt Docker schlägt seit den ersten Lebenszeichen Mitte letzten Jahres zunehmend höhere Begeisterungswellen. Docker verspricht einen schnellen Start in die Welt der DevOps, flexiblen Konfiguration und stabilen Images."><title>Docker mit boot2docker starten</title><link rel=icon href=/images/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/bootstrap.min.css><link href=/css/animate1.css rel=stylesheet><link href=/css/github-gist.css rel=stylesheet><link rel=stylesheet type=text/css href=/css/bicon.min.css><link rel=stylesheet type=text/css href=/css/owl.carousel.min.css><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous><link rel=stylesheet href=https://bee42.com/sass/style.min.807b9d7ce089a7d39ca870a8727d83ec5a3cbfcaf75ae380e102836b0c36c229.css><link rel=stylesheet type=text/css href=/css/responsive-menu.css><link rel=stylesheet type=text/css href=/css/responsive.css></head><body class=sub-page><nav class=off-canvas><button class=close-btn><i class="fas fa-times"></i></button><ul><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav><div id=page><header class=site-header><div class=inner-header><a class=branding href=/index.html><img src=/images/bee42-logo.svg alt="bee42 Logo"></a>
+<button class=open-btn><i class="fas fa-bars"></i></button><div class=off-canvas-btn><a id=mob-menu>☰</a>
+<a id=mob-menu-close>×</a></div><nav class=site-navigation><ul id=menu-header-menu class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav></div><h1>Rethink IT</h1><h2>Wir verbessern Deine Systeme mit Begeisterung.</h2><a href=https://bee42.com/de/about class="button hero-button">Über die bee⁴²</a></header><div id=content><div class=blog-detail-wrapper><div class="col-lg-9 col-sm-8 col-md-8"><article class=post><h2>Docker mit boot2docker starten</h2><div class=blog-content><p><p>Das Projekt Docker schlägt seit den ersten Lebenszeichen Mitte letzten Jahres zunehmend höhere Begeisterungswellen. Docker verspricht einen schnellen Start in die Welt der DevOps, flexiblen Konfiguration und stabilen Images. All dies sind für uns sehr wichtige Voraussetzungen, um Infrastruktur testbar zu machen. Grund genug für uns, das ganze unter die Lupe zu nehmen und Euch einfache Anleitungen zum Ausprobieren an die Hand zu geben. Wie kann man am einfachsten mit Docker auf dem eigene Rechner durchstarten?</p><h2 id=erste-schritte-mit-docker>Erste Schritte mit Docker</h2><p><a href=http://docker.io>Docker</a> ermöglicht es, die eigenen Prozesse in leichtgewichtige <a href=https://linuxcontainers.org/>Linux Container</a> einzupacken. Am besten kann man die Wirkung als eine fettreduzierte Virtualisierung beschreiben. Wer Docker direkt probieren möchte, kann das <a href=http://www.docker.com/tryit/>Online Tutorial</a> nutzen. Eine eigene Installation ist für einen echten Docker-Einsatz allerdings unerlässlich. Damit dies auf dem eigenen Rechner zuverlässig gelingt, empfiehlt sich die lokale Installation mit dem Projekt <a href=http://boot2docker.io>boot2docker</a>.</p><p><img src=/images/blog/infrabricks/boot2docker.png alt=boot2docker></p><p>Mit der Hilfe von Boot2Docker wird auf dem eigene Windows oder Mac eine virtuelle Maschine mit einer Basis-Docker <a href=http://tinycorelinux.net/>Tiny Linux Installation</a> installiert. Eine Voraussetzung ist die Installation einer aktuellen Version von VirtualBox. Weiterhin wird die Docker Client CLI und eine boot2docker Management CLI installiert. So läßt sich anschliessend sehr bequem sämtliche Administration ohne lästiges einloggen via ssh vom eigenen Rechner erledigen. Docker selbst benötigt Zugang zu dem <a href=https://registry.hub.docker.com/>Cloud Images Registry von Docker Inc</a>. Von dort werden die Betriebsysteme und Container geladen. Aktuell befinden sich dort schon mehr als 15.000 vorgefertigte Container für die unterschiedlichsten Einsatzzwecke. Die Qualität ist unterschiedlich und vor dem Einsatz lohnt sich ein Blick in die Sourcen des Containers. Die Konfiguration eines Container befindet sich in der Datei <code>Dockerfile</code>. Als Basis Images lohnt ein Blick auf die <a href=https://registry.hub.docker.com/u/phusion/baseimage/>Phusion Baseimage</a> zu werfen.</p><p>Die grössten Unterschiede zwischen Vagrant und Docker sind:</p><table><thead><tr><th></th><th>Vagrant</th><th> Docker</th></tr></thead><tbody><tr><td><em>Nutzung</em></td><td>Entwicklung</td><td> Entwicklung und Betrieb</td></tr><tr><td><em>Speicherung</em></td><td>Dauerhaft</td><td> Flüchtig und braucht externe Volumes</td></tr><tr><td><em>Anzahl der Services</em></td><td>viele</td><td> meist einer</td></tr><tr><td><em>Tools</em></td><td>cli</td><td> cli und REST Service</td></tr><tr><td><em>Programmierung</em></td><td> Ruby</td><td> Bash &amp; Go, Java, Ruby, JavaScript, Scala, &hellip;</td></tr><tr><td><em>Technik</em></td><td> Virtualisierung</td><td> LXC</td></tr></tbody></table><h2 id=installation-von-boot2docker>Installation von boot2docker</h2><p><a href=http://boot2docker.io/>Boot2docker</a> hilft dabei, ein für Docker passendes Linux mit Virtualbox auf Windows oder OS X zu installieren. Mit der Version 1.0 liegt die Installation nun als fertiges Package vor. Als Voraussetzung muss <a href=https://www.virtualbox.org/>VirtualBox</a> in der Version <code>&gt;4.3.12</code> installiert sein. Eine leistungsfähige Internet-Verbindung, die schnell den Transfer von mehr als 1GB Daten erlaubt, ist hier wirklich hilfreich. Eine Live-Demo mit unbekannten langsamen WiFi-Netzen oder Mobiles hat der Demo-Gott hier nicht vorgesehen. Denn zum Start müssen neben den Images für die Virtualisierung noch die Basis-Images für Docker geladen werden. Also ist genügend Zeit für ein bisschen Lesen im Netz oder eine Unterhaltung mit den Kollegen.</p><ul><li><a href=https://docs.docker.com/userguide/>Docker User Guide</a></li><li><a href=https://docs.docker.com/articles/basics/>Docker Basics</a></li></ul><p><img src=/images/blog/infrabricks/boot2docker-install.png alt=boot2docker></p><p>Neben der VM wird auf dem Host ein lokaler Docker-Client installiert, damit ohne Login auf dem Linux alle Docker-Befehle genutzt werden können. Nach der Installation von boot2Docker kann geprüft werden, ob der Docker-Client auf dem Host verfügbar ist.</p><pre><code class=language-bash>$ docker version
+Docker version 1.0.1, build 990021a
+</code></pre><p>Die eigene Docker-Testumgebung wird mit dem Befehl <code>boot2docker init</code> erzeugt. Dabei wird eine neue virtuelle Maschine in der VirtualBox erstellt. Der Start der Umgebung erfolgt mit <code>boot2docker up</code>. Wichtig ist, dass man nun den Docker-Client auf der eigenen Maschine auf der gestarteten VM mit einer Export-Anweisung konfiguriert. Die Anweisung befindet sich am Ende der Ausgabe des Kommandos. Nun kann die Fernsteuerung von Docker in der VM beginnen. Dies ist möglich, da Docker ein HTTP REST API besitzt und alle Steuerungen darüber erfolgen. Neben der Shell Client gibt es diverse Docker Integrationen für Ruby, Go, Php, Java, Scala oder Groovy.</p><pre><code class=language-bash>$ boot2docker up
+2014/06/22 19:12:29 Waiting for VM to be started...
+..^[[C.....
+2014/06/22 19:12:50 Started.
+2014/06/22 19:12:50 To connect the Docker client to the Docker daemon, please set:
+2014/06/22 19:12:50     export DOCKER_HOST=tcp://192.168.59.103:2375
+
+$ export DOCKER_HOST=tcp://192.168.59.103:2375
+</code></pre><p>Nun stehen alle Docker Kommandos auf dem eigenen Mac- oder Windows-Rechner zur Verfügung. Ohne Problem lässt sich nun über das Docker REST API die gesamte Docker-Installation fernsteuern.</p><pre><code class=language-bash>$ docker images
+REPOSITORY           TAG                   IMAGE ID            CREATED             VIRTUAL SIZE
+busybox              buildroot-2013.08.1   d200959a3e91        2 weeks ago         2.489 MB
+busybox              ubuntu-14.04          37fca75d01ff        2 weeks ago         5.609 MB
+busybox              ubuntu-12.04          fd5373b3d938        2 weeks ago         5.455 MB
+busybox              buildroot-2014.02     a9eb17255234        2 weeks ago         2.433 MB
+busybox              latest                a9eb17255234        2 weeks ago         2.433 MB
+</code></pre><p>Folgende <code>docker</code>-Kommandos können nun ausgeführen werden:</p><pre><code class=language-bash>$ docker
+Usage: docker [OPTIONS] COMMAND [arg...]
+ -H=[unix:///var/run/docker.sock]: tcp://host:port to bind/connect to or unix://path/to/socket to use
+
+A self-sufficient runtime for linux containers.
+
+Commands:
+    attach    Attach to a running container
+    build     Build an image from a Dockerfile
+    commit    Create a new image from a container's changes
+    cp        Copy files/folders from the containers filesystem to the host path
+    diff      Inspect changes on a container's filesystem
+    events    Get real time events from the server
+    export    Stream the contents of a container as a tar archive
+    history   Show the history of an image
+    images    List images
+    import    Create a new filesystem image from the contents of a tarball
+    info      Display system-wide information
+    inspect   Return low-level information on a container
+    kill      Kill a running container
+    load      Load an image from a tar archive
+    login     Register or Login to the docker registry server
+    logs      Fetch the logs of a container
+    port      Lookup the public-facing port which is NAT-ed to PRIVATE_PORT
+    pause     Pause all processes within a container
+    ps        List containers
+    pull      Pull an image or a repository from the docker registry server
+    push      Push an image or a repository to the docker registry server
+    restart   Restart a running container
+    rm        Remove one or more containers
+    rmi       Remove one or more images
+    run       Run a command in a new container
+    save      Save an image to a tar archive
+    search    Search for an image in the docker index
+    start     Start a stopped container
+    stop      Stop a running container
+    tag       Tag an image into a repository
+    top       Lookup the running processes of a container
+    unpause   Unpause a paused container
+    version   Show the docker version information
+    wait      Block until a container stops, then print its exit code
+</code></pre><p>Mit dem Befehl <code>boot2docker ssh</code> ist die Einwahl auf die VM möglich.</p><pre><code class=language-bash>$ boot2docker ssh
+Warning: Permanently added '[localhost]:2022' (RSA) to the list of known hosts.
+                        ##        .
+                  ## ## ##       ==
+               ## ## ## ##      ===
+           /&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;\___/ ===
+      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~
+           \______ o          __/
+             \    \        __/
+              \____\______/
+ _                 _   ____     _            _
+| |__   ___   ___ | |_|___ \ __| | ___   ___| | _____ _ __
+| '_ \ / _ \ / _ \| __| __) / _` |/ _ \ / __| |/ / _ \ '__|
+| |_) | (_) | (_) | |_ / __/ (_| | (_) | (__|   &lt;  __/ |
+|_.__/ \___/ \___/ \__|_____\__,_|\___/ \___|_|\_\___|_|
+boot2docker: 1.0.0
+             master : 16013ee - Mon Jun  9 16:33:25 UTC 2014
+docker@boot2docker:~$
+</code></pre><p>Nun ist eine direkte Interaktion mit allen Containern und Prozessen auf der Linux VM möglich. Weitere Linux Packages für Monitoring, Logging und andere Services können genutzt werden. Natürlich kann nun das Netzwerk für die Kooperation mit anderen Maschinen und Services erweitert werden. Eine Freigabe von Docker Container Ports auf dem Mac lässt sich mit dem Script <a href=https://gist.github.com/deinspanjer/9215467>boot2docker-fwd</a> erledigen.</p><p>In der Liste der boot2docker Befehle finden sich die üblichen Verdächtigen zum Management der VM:</p><pre><code class=language-bash>$ boot2docker --help
+Usage: boot2docker [&lt;options&gt;] &lt;command&gt; [&lt;args&gt;]
+
+boot2docker management utility.
+
+Commands:
+    init                    Create a new boot2docker VM.
+    up|start|boot           Start VM from any states.
+    ssh [ssh-command]       Login to VM via SSH.
+    save|suspend            Suspend VM and save state to disk.
+    down|stop|halt          Gracefully shutdown the VM.
+    restart                 Gracefully reboot the VM.
+    poweroff                Forcefully power off the VM (might corrupt disk image).
+    reset                   Forcefully power cycle the VM (might corrupt disk image).
+    delete                  Delete boot2docker VM and its disk image.
+    config|cfg              Show selected profile file settings.
+    info                    Display detailed information of VM.
+    ip                      Display the IP address of the VM's Host-only network.
+    status                  Display current state of VM.
+    download                Download boot2docker ISO image.
+    version                 Display version information.
+...
+</code></pre><p>Die Basis von <em>boot2docker</em> ist aktuell der Linux Kernel <em>3.14.1</em> mit AUFS und Docker <em>1.0.1</em>. Es besteht die Möglichkeit, ein eigenes Image für die VirtualBox zu erstellen.</p><h2 id=start-des-ersten-docker-containers>Start des ersten Docker-Containers</h2><p>In der VM oder auf der eigenen Maschine können nun Docker Container administriert, erzeugt, gestartet, gestoppt oder wieder gelöscht werden.</p><pre><code class=language-bash>$ docker run ubuntu uname -a
+Unable to find image 'ubuntu' locally
+Pulling repository ubuntu
+e54ca5efa2e9: Download complete
+511136ea3c5a: Download complete
+d7ac5e4f1812: Download complete
+2f4b4d6a4a06: Download complete
+83ff768040a0: Download complete
+6c37f792ddac: Download complete
+Linux 321d285612ef 3.14.1-tinycore64 #1 SMP Mon Jun 9 16:21:23 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+</code></pre><p>Das Erzeugen eines eigenen Images kann mit einem Dockerfile definiert werden.</p><pre><code class=language-bash>$ mkdir -p hello
+$ cd hello
+$ vi Dockerfile
+</code></pre><p><strong>Dockerfile</strong></p><pre><code class=language-text>FROM ubuntu
+
+CMD [&quot;echo&quot;, &quot;Hello&quot;, &quot; Docker&quot;]
+</code></pre><p>Mit dem Befehl <code>docker build</code> wird nun in der VM ein Image produziert und kann mit <code>docker run</code> gestartet werden.</p><pre><code class=language-bash>$ docker build -t boot/hello .
+Sending build context to Docker daemon  2.56 kB
+Sending build context to Docker daemon
+Step 0 : FROM ubuntu
+ ---&gt; e54ca5efa2e9
+Step 1 : CMD [&quot;echo&quot;, &quot;Hello&quot;, &quot;Docker&quot;]
+ ---&gt; Running in 8dedcb96f9c0
+ ---&gt; 891601c49719
+Removing intermediate container 8dedcb96f9c0
+Successfully built 891601c49719
+$ docker run boot/hello
+Hello Docker
+</code></pre><p>Nun ist die Basis für eigene Docker-Experimente gelegt. Die Integration in die eigenen Projekte, erweiterten Möglichkeiten für Tests oder ein vereinfachter Zugriff auf diverse Backends sind erste Kandidaten. Es gibt enorme Möglichkeiten und eine Suche im öffentlichen <a href=https://registry.hub.docker.com/>Image-Register</a> lohnt sich.</p><p>Wir starten nun eine kleine Serie, zur Entschlüsselung von Docker für DevOps. Damit wollen wir die Chancen und Risiken dieser wunderbaren neuen Technologie aufzeigen und diskutieren.</p><p>&ndash;
+Peter</p></p></div><div class=clearfix></div></article></div><div class="col-lg-3 col-sm-4 col-md-4"><div id=blog-archive-sidebar class=sidebar><div class="widget panel wpforms-widget"><div class="wpforms-container wpforms-container-full" id=wpforms-31107><form class="wpforms-validate wpforms-form"><div class=wpforms-head-container><div class=wpforms-title>Werde Teil unserer bee42 community</div><div class=wpforms-description>Erhalte alle 14 Tage die neusten Blogposts, Trend, Events und Highlights rund um Docker, Kubernetes & Co.!</div></div><div class=wpforms-field-container><div class="wpforms-field wpforms-field-email"><input type=email class=wpforms-field-large placeholder="E-Mail-Adresse eingeben"></div></div><div class=wpforms-submit-container><button type=submit name=wpforms[submit] class=wpforms-submit value=wpforms-submit data-alt-text=Subscribing...>Abonieren</button></div></form></div></div><div class="widget panel popular-posts panel-secondary"><h2 class=section-title>Popular Posts</h2><ul><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-hosts-mit-puppet-provisionieren-und-testen/>Docker-Hosts mit Puppet provisionieren und testen</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-microservice-basis-mit-apache-tomcat-implementieren/>Docker Microservice Basis mit Apache Tomcat implementieren</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-entschluesselt-netzwerk-teil-2/>Docker entschlüsselt: Netzwerk Teil 2</a></li></ul></div></div></div></div></div><div class=overlay></div><footer><div class="container clear"><a class=branding href=index.html><img src=/images/bee42-logo.svg alt="bee42 logo"></a><ul class=footer-social-menu><li><a href=mailto:info@bee42.com><i class="fas fa-envelope"></i></a></li><li><a href=https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw><i class="fab fa-youtube"></i></a></li><li><a href="https://twitter.com/bee42solutions?lang=%2fde"><i class="fab fa-twitter"></i></a></li></ul><div class="row footer-info"><ul class=meta-navigation><li><a href=/de/impressum>Impressum</a></li><li><a href=/de/datenschutz>Datenschutz</a></li><li><a href=/de/allgemeine-geschaeftsbedingungen>AGB</a></li><li><a href=/de/kontakt>Kontakt</a></li></ul><form class=newsletter method=post><h3>Newsletter abonnieren</h3><input class=email type=email placeholder="Deine E-Mail Adresse">
+<button class=send>Senden</button></form><div class="row address"><a href=/de/locations/bochum><i class="fas fa-map-marker-alt"></i></a><ul class=location><li><strong>bee42 solutions gmbh</strong></li><li>Office: @Funkhaus Bochum</li><li>Kortumstraße 68</li><li>D-44787 Bochum</li></ul></div></div></div><div class=copyright><div class=container><p>© 2018 bee42 solutions gmbh. Alle Rechte vorbehalten</p></div></div></footer></div><div id=menu-sld class=mbmnu><div class=mobmenu-inner><ul id=menu-header-menu1 class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></div></div></div><div class=cookies-info id=cookies-container><p>"Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer <a href>Datenschutzerklärung</a>."</p><button id=cn-accept-cookie onclick="SetCookie('cookie_notice','0','7')">Ok</button></div><script>function SetCookie(c_name,value,expiredays){var exdate=new Date();exdate.setDate(exdate.getDate()+expiredays);document.cookie=c_name+"="+escape(value)+
+((expiredays==null)?"":";expires="+exdate.toGMTString());document.getElementById("cookies-container").style.display="none";}
+if(document.cookie){document.getElementById("cookies-container").style.display="none";}</script><script src=/js/jquery.js></script><script src=/js/bootstrap.min3.2.js></script><script src=/js/owl.carousel.min.js></script><script src=/js/highlight.pack.js></script><script src=/js/js-functions.js></script></body></html>

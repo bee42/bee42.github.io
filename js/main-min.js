@@ -1,1 +1,0 @@
-$(document).ready(function(){}),$(window).scroll(function(){var o=$(this).scrollTop();o>$("header").outerHeight()-200?$(".navigation").addClass("covered"):$(".navigation").removeClass("covered")}),$(document).foundation(),new Foundation.OffCanvas($("#offCanvasRight"));

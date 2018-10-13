@@ -1,0 +1,138 @@
+<!doctype html><html lang=de><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Eine späte Integration der eigenen Software in die Produktionsumgebung rächt sich meistens. Der Kundennutzen muss immer früher sicher hergestellet werden. Jede Änderung soll geschwindt in die Produktion, um dort zu beweisen, ob diese Eigenschaft den gewünschten Nutzen wirklich bietet."><title>serverspec mit Vagrant verbinden</title><link rel=icon href=/images/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/bootstrap.min.css><link href=/css/animate1.css rel=stylesheet><link href=/css/github-gist.css rel=stylesheet><link rel=stylesheet type=text/css href=/css/bicon.min.css><link rel=stylesheet type=text/css href=/css/owl.carousel.min.css><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous><link rel=stylesheet href=https://bee42.com/sass/style.min.807b9d7ce089a7d39ca870a8727d83ec5a3cbfcaf75ae380e102836b0c36c229.css><link rel=stylesheet type=text/css href=/css/responsive-menu.css><link rel=stylesheet type=text/css href=/css/responsive.css></head><body class=sub-page><nav class=off-canvas><button class=close-btn><i class="fas fa-times"></i></button><ul><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav><div id=page><header class=site-header><div class=inner-header><a class=branding href=/index.html><img src=/images/bee42-logo.svg alt="bee42 Logo"></a>
+<button class=open-btn><i class="fas fa-bars"></i></button><div class=off-canvas-btn><a id=mob-menu>☰</a>
+<a id=mob-menu-close>×</a></div><nav class=site-navigation><ul id=menu-header-menu class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav></div><h1>Rethink IT</h1><h2>Wir verbessern Deine Systeme mit Begeisterung.</h2><a href=https://bee42.com/de/about class="button hero-button">Über die bee⁴²</a></header><div id=content><div class=blog-detail-wrapper><div class="col-lg-9 col-sm-8 col-md-8"><article class=post><h2>serverspec mit Vagrant verbinden</h2><div class=blog-content><p><p>Eine späte Integration der eigenen Software in die Produktionsumgebung rächt sich meistens. Der Kundennutzen muss immer früher sicher hergestellet werden. Jede Änderung soll geschwindt in die Produktion, um dort zu beweisen, ob diese Eigenschaft den gewünschten Nutzen wirklich bietet. Natürlich soll kein Fehler in die Produktion gelangen. Die Änderungen müssen überprüft werden und durch verschiedene aufeinander aufbauende Umgebungen die Qualität sicher gestellt werden. Um so eher dies gelingt, um so schneller kann eine gezielte Korrektur erfolgen.</p><p>Das Ziel sollte es sein eine Deployment Pipeline zu installieren [Jez Humble, David Farley: &ldquo;Continuous Delivery&rdquo;, 2011 Pearson Education]. Damit das Feedback schnellst möglich gelingt, ist es ratsam schon früh die Integration in die Produktionumgebung zu realisieren und die Teilinstallation am eigenen Arbeitsplatz zu überprüfen. Dieser Artikel beschreibt die Erstellung einer Apache Httpd -Installation mit <a href=http://vagrantup.com>Vagrant</a> und [Virtualbox](<a href=http://www.virtualbox.org>http://www.virtualbox.org</a>. Die Besonderheit ist der Einsatz von <a href=http://serverspec.org>serverspec</a> zur Valdierung der Provisionierung.</p><p>Der Plan ist, einen Apache httpd Service in einer CentOS 6.5 Box aufzusetzen und sicherzustellen, dass der Webserver wirklich läuft. Als ersten Schritt wird ein entsprechendes Basis CentOS 6.5 Image mithilfe von Vagrant auf die lokale Virtualbox installieren. Damit also die folgenden Schritte praktisch nachvollzogen werden können, bedarf es einer entsprechende Installation von Vagrant und Virtualbox auf dem System. Entsprechende Anleitungen dazu befinden sich auf den Websites der beiden OpenSource Projekte.</p><p>Ein gesichertes Betriebssystem für die eigene Vagrant Box zu bekommen ist nicht einfach. Zum guten Gelingen und notwendigen Beitrag der Sicherheit, sollten man diese Installation lieber selbst in die Hand nehmen. Mit den Projekten <a href=http://www.packer.io/>Packer</a> oder <a href=https://github.com/jedi4ever/veewee>Veewee</a> kann dies komfortabel für verschiedene Betriebssysteme, virtuelle Plattformen und Clouds umgesetzt werden. Eine gute Kenntnis der Installation von Betriebssystemen und viel Geduld, führt dann langsam zum Ziel. Natürlich gibt es auch fertige Boxen. Für Vagrant gibt es neben dem Cloud Angebot <a href=https://vagrantcloud.com/>Vagrant Cloud</a> natürlich auch eine freie Sammlung <a href=http://www.vagrantbox.es/>Vagrantbox</a>. Eine sehr einfache und leicht nachzuvollziehende CentOS 6.5 Installation wird von <a href=https://github.com/2creatives/vagrant-centos/>2Creatives</a> bereitgestellt. Die Box wird regelmässig aktualisiert und steuert sehr direkt die Management Schnittstelle von Virtualbox an. Die Box kann nun mit folgendem Vagrant-Befehl auf der eigenen Maschine bereitgestellt werden:</p><pre><code class=language-bash>$ mkdir apache-specbox
+$ cd apache-specbox
+$ vi Vagrantfile
+</code></pre><p>Mit dem folgenden Vagrant Konfiguration wird die CentOS-Box von 2creatives geladen, ein privates Netzwerk zusätzlich geschaffen, der Ressourcenbedarf festgelegt und der Name <code>apacheSpecbox</code> der neuen Virtualbox-Node vergeben.</p><pre><code class=language-ruby># -*- mode: ruby -*-
+# vi: set ft=ruby :
+## Vagrantfile
+
+VAGRANTFILE_API_VERSION = &quot;2&quot;
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = &quot;2creatives/centos65-x86_64-20140116&quot;
+  config.vm.box_url = &quot;https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box&quot;
+  config.vm.box_download_checksum_type=&quot;sha256&quot;
+  config.vm.box_download_checksum = &quot;84eda9c4f00c86b62509d1007d4f1cf16b86bccb3795659cb56d1ea0007c3adc&quot;
+
+  config.vm.define :apacheSpecbox do |c|
+    c.vm.network &quot;private_network&quot;, ip: &quot;192.168.33.10&quot;
+    c.vm.host_name = &quot;apacheSpecbox.example.com&quot;
+    c.vm.provider &quot;virtualbox&quot; do |vb|
+         vb.gui = false
+         vb.customize [ &quot;modifyvm&quot;, :id, &quot;--memory&quot;, &quot;512&quot;]
+         vb.customize [ &quot;modifyvm&quot;, :id, &quot;--cpus&quot;, &quot;1&quot;]
+         vb.name = &quot;apacheSpecbox&quot;
+  end
+
+end
+</code></pre><p>Dann ein:</p><pre><code class=language-bash>$ vagrant up
+</code></pre><p>Die Voraussetzungen für eine Apache httpd Installation sind also nun gegeben. Als nächsten Schritt könnte man mit dem Befehl <code>vagrant ssh</code> sich auf die neue <code>apacheSpecbox</code> anmelden und den Apache mit dem Package Manager manuell installieren. Allerdings wären das gleich mehrere Verstöße der guten Sitten. Alles und damit ist wirklich ALLES gemeint, muss durch entsprechende Programmierung automatisch nachvollzogen und prüfbar sein. Hmm, welche Anforderungen muss soll die Installation eines Apaches den wirklich erfüllen? Wie kann man durch ein Werkzeug die Überprüfung formulieren und ausführbar machen? Genau an dieser Stelle beginnt dann die Suche im Netz, nach Ideen und Lösungen. Seit nunmehr zwei Jahren gibt es das kleine Projekt <a href=http://www.serverspec.org>serverspec</a> von Gosuke Miyashita, das sich als Antwort auf diese Fragen entpuppt.</p><p><img src=/images/blog/infrabricks/vagrant-serverspec.png alt="Mit Serverspec eine Provisionierung von Vagrant valideren"></p><p>Damit die Installation wiederholbar ist und dokumentiert wird, wird ein Gemfile erzeugt und mit dem <code>ruby bundler</code>
+die Installation gestartet.</p><pre><code class=language-bash>$ vi Gemfile
+</code></pre><pre><code class=language-ruby>## Gemfile
+ruby '2.1.1'
+
+source 'https://rubygems.org'
+
+gem 'serverspec'
+</code></pre><pre><code class=language-bash>$ bundle install
+$ serverspec-init
+$ rake
+</code></pre><p>Mit dem Kommando <code>serverspec-init</code> wird die Testumgebung zur Prüfung der Installation erzeugt. Das Werkzeug serverspec kann für verschiedene Unix Plattformen und Windows genutzt werden. Es kann remote via ssh oder lokal mit der jeweiligen Shell ausgeführt werden. Schön ist, dass der Generator gleich eine Variante für den ssh-Zugang einer Vagrant Box generieren kann. Wie für die Aufgabe gemacht, wird gleich eine Apache httpd-Testspezifikation mitgeneriert.</p><pre><code class=language-bash>$ serverspec-init
+Select OS type:
+
+  1) UN*X
+  2) Windows
+
+Select number: 1
+
+Select a backend type:
+
+  1) SSH
+  2) Exec (local)
+
+Select number: 1
+
+Vagrant instance y/n: y
+Auto-configure Vagrant from Vagrantfile? y/n: y
+ + spec/
+ + spec/apacheSpecbox/
+ + spec/apacheSpecbox/httpd_spec.rb
+ + spec/spec_helper.rb
+ + Rakefile
+###
+</code></pre><p>Eine Überprüfung der Node zeigt, dass der Apache noch nicht installiert ist. Stimmt!</p><pre><code class=language-bash>$ rake spec
+/usr/bin/ruby -S rspec spec/apacheSpecbox/httpd_spec.rb
+FFFFFF
+...viele Fehlermeldungen...
+
+Finished in 0.99715 seconds
+6 examples, 6 failures
+</code></pre><p>Ein Blick auf die Spezifikation <code>spec/apacheSpecbox/httpd_spec.rb</code> zeigt die Anforderungen. Das httpd-Package soll installiert sein. Der httpd soll als OS-Service konfiguiert werden. Wie gewohnt soll der Apache unter dem Port 80 erreichbar sein.</p><pre><code class=language-ruby>## spec/apacheSpecbox/httpd-spec.rb
+require 'spec_helper'
+
+describe package('httpd') do
+  it { should be_installed }
+end
+
+describe service('httpd') do
+  it { should be_enabled   }
+  it { should be_running   }
+end
+
+describe port(80) do
+  it { should be_listening }
+end
+
+describe file('/etc/httpd/conf/httpd.conf') do
+  it { should be_file }
+end
+</code></pre><p>Zum Erreichen dieses Ziels, muss die Node nun provisioniert werden. Vagrant bringt eine Vielzahl von entsprechenden Plugins für Ansible, Chef, Puppet, Saltstack oder Shell gleich mit. Zur Umsetzung der Anforderungen reicht der Shell-Provisioner erstmal völlig aus. Durch folgende Änderungen in der Datei Vagrantfile kann dies schnell implementiert werden.</p><p>{% highlight ruby %}</p><h1 id=mode-ruby>-<em>- mode: ruby -</em>-</h1><h1 id=vi-set-ft-ruby>vi: set ft=ruby :</h1><h2 id=vagrantfile>Vagrantfile</h2><p>VAGRANTFILE_API_VERSION = &ldquo;2&rdquo;</p><p>Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+config.vm.box = &ldquo;2creatives/centos65-x86_64-20140116&rdquo;
+config.vm.box_url = &ldquo;<a href='https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box"'>https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box&quot;</a>
+config.vm.box_download_checksum_type=&ldquo;sha256&rdquo;
+config.vm.box_download_checksum = &ldquo;84eda9c4f00c86b62509d1007d4f1cf16b86bccb3795659cb56d1ea0007c3adc&rdquo;</p><p>config.vm.define :apacheSpecbox do |c|
+c.vm.network &ldquo;private_network&rdquo;, ip: &ldquo;192.168.33.10&rdquo;
+c.vm.host_name = &ldquo;apacheSpecbox.example.com&rdquo;
+c.vm.provider &ldquo;virtualbox&rdquo; do |vb|
+vb.gui = false
+vb.customize [ &ldquo;modifyvm&rdquo;, :id, &ldquo;&ndash;memory&rdquo;, &ldquo;512&rdquo;]
+vb.customize [ &ldquo;modifyvm&rdquo;, :id, &ldquo;&ndash;cpus&rdquo;, &ldquo;1&rdquo;]
+vb.name = &ldquo;apacheSpecbox&rdquo;
+end</p><pre><code>c.vm.provision &quot;shell&quot;,
+     inline: &lt;&lt;SCRIPT
+</code></pre><p>echo I am provisioning&hellip;
+yum -y install httpd
+date &gt; /etc/vagrant_provisioned_at
+SCRIPT</p><pre><code>end
+</code></pre><p>end
+{% endhighlight %}</p><p>Mit dem Befehl <code>vagrant provision</code> wird nun die Provisionierung ausgeführt. Ein erneuter Test zeigt, dass nun der Apache durch die Packages zwar installiert ist, aber er weder gestartet, noch als Service angemeldet ist. Weiterhin fehlt das Package <code>nc</code>, damit serverspec die Tests auf dem Port durchführen kann. Weiterhin wäre es auch schön, wenn der httpd Server auch den richtigen ServerName bekommt. Durch eine Modifikation unseres kleinen Inline Provisinierungsskripts lässt sich das schnell erledigen.</p><pre><code class=language-ruby>
+   c.vm.provision &quot;shell&quot;,
+         inline: &lt;&lt;SCRIPT
+echo I am provisioning...
+yum -y install httpd nc
+sed -i 's/#ServerName www.example.com:80/ServerName apacheSpecbox.example.com:80/g' /etc/httpd/conf/httpd.conf
+chkconfig httpd on --level 2345
+service httpd restart
+date &gt; /etc/vagrant_provisioned_at
+SCRIPT
+</code></pre><p>Mit der nächsten Provisionierung gelingt nun die Verifikation. Unser Ergebnis ist das erstmal <strong>Grün</strong>!</p><pre><code class=language-bash>$ vagrant provision
+$ rake spec
+/usr/bin/ruby -S rspec spec/apacheSpecbox/httpd_spec.rb
+.......
+
+Finished in 0.99715 seconds
+6 examples, 0 failures
+</code></pre><p>Die Validierung bringt zu Tage, dass die Basisanforderungen erfüllt und überprüft werden können. Weiterhin sind alle Schritte der Installation und der Testausführung beschrieben. Eine wiederholbare Testprozedur für die Apache httpd Installation ist implementiert. Als Verfahren sind die Test vor der Implementierung umgesetzt worden. Eine noch bessere Integration von Serverspec und Vagrant existiert im Projekt <a href=https://github.com/jvoorhis/vagrant-serverspec>vagrant-serverspec plugin</a>.</p><p>Die Installation des Plugin erfolgt mit folgendem Befehl:</p><pre><code class=language-bash>$ vagrant plugin install vagrant-serverspec
+</code></pre><p>Die Integration als Vagrant Provisioner erfolgt im Konfigurations-Block des Nodes <code>apacheSpecbox</code></p><p>{% highlight ruby %}</p><h2 id=vagrantfile-1>Vagrantfile</h2><pre><code>c.vm.provision :serverspec do |spec|
+   spec.pattern = 'specs/apacheSpecbox/*_spec.rb'
+end
+</code></pre><p>{% endhighlight %}</p><p>Für die Ausführung dieser Variante bietet sich an, die gesamte Provisionierung einfach zu wiederholen.
+Dazu zerstören man den aktuellen Node und setzen diesen komplette neu auf. Mithilfe des Plugins werden nun unsere Test sofort ausgeführt. Volia!</p><pre><code class=language-bash>$ vagrant destroy apacheSpecbox
+$ vagrant up apacheSpecbox
+# look at results
+</code></pre><p>Leider ist die Version von Serverspec im Plugin veraltet. Deshalb raten ist zur Zeit die direkten Installation der bessere Weg. Die Gestaltung von flexiblen Testspecs ist damit zukunfsträchtiger. Ein wichtiger erster Schritt für die Bereitstellung von testgetriebener Infrastruktur ist vollbracht. Ein Testfirst-Ansatz für die Infrastruktur ist also ohne wesentlichen Aufwand möglich. Eine inkrementellere Arbeitsweise für die Erstellung von Systemen leicht umsetzbar.</p><p>Nun geht es an die Verbesserung des Erreichten. In diesem Blog wird es dazu noch viel zu lesen geben.</p><p>&ndash;
+Peter</p></p></div><div class=clearfix></div></article></div><div class="col-lg-3 col-sm-4 col-md-4"><div id=blog-archive-sidebar class=sidebar><div class="widget panel wpforms-widget"><div class="wpforms-container wpforms-container-full" id=wpforms-31107><form class="wpforms-validate wpforms-form"><div class=wpforms-head-container><div class=wpforms-title>Werde Teil unserer bee42 community</div><div class=wpforms-description>Erhalte alle 14 Tage die neusten Blogposts, Trend, Events und Highlights rund um Docker, Kubernetes & Co.!</div></div><div class=wpforms-field-container><div class="wpforms-field wpforms-field-email"><input type=email class=wpforms-field-large placeholder="E-Mail-Adresse eingeben"></div></div><div class=wpforms-submit-container><button type=submit name=wpforms[submit] class=wpforms-submit value=wpforms-submit data-alt-text=Subscribing...>Abonieren</button></div></form></div></div><div class="widget panel popular-posts panel-secondary"><h2 class=section-title>Popular Posts</h2><ul><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-hosts-mit-puppet-provisionieren-und-testen/>Docker-Hosts mit Puppet provisionieren und testen</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-microservice-basis-mit-apache-tomcat-implementieren/>Docker Microservice Basis mit Apache Tomcat implementieren</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-entschluesselt-netzwerk-teil-2/>Docker entschlüsselt: Netzwerk Teil 2</a></li></ul></div></div></div></div></div><div class=overlay></div><footer><div class="container clear"><a class=branding href=index.html><img src=/images/bee42-logo.svg alt="bee42 logo"></a><ul class=footer-social-menu><li><a href=mailto:info@bee42.com><i class="fas fa-envelope"></i></a></li><li><a href=https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw><i class="fab fa-youtube"></i></a></li><li><a href="https://twitter.com/bee42solutions?lang=%2fde"><i class="fab fa-twitter"></i></a></li></ul><div class="row footer-info"><ul class=meta-navigation><li><a href=/de/impressum>Impressum</a></li><li><a href=/de/datenschutz>Datenschutz</a></li><li><a href=/de/allgemeine-geschaeftsbedingungen>AGB</a></li><li><a href=/de/kontakt>Kontakt</a></li></ul><form class=newsletter method=post><h3>Newsletter abonnieren</h3><input class=email type=email placeholder="Deine E-Mail Adresse">
+<button class=send>Senden</button></form><div class="row address"><a href=/de/locations/bochum><i class="fas fa-map-marker-alt"></i></a><ul class=location><li><strong>bee42 solutions gmbh</strong></li><li>Office: @Funkhaus Bochum</li><li>Kortumstraße 68</li><li>D-44787 Bochum</li></ul></div></div></div><div class=copyright><div class=container><p>© 2018 bee42 solutions gmbh. Alle Rechte vorbehalten</p></div></div></footer></div><div id=menu-sld class=mbmnu><div class=mobmenu-inner><ul id=menu-header-menu1 class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></div></div></div><div class=cookies-info id=cookies-container><p>"Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer <a href>Datenschutzerklärung</a>."</p><button id=cn-accept-cookie onclick="SetCookie('cookie_notice','0','7')">Ok</button></div><script>function SetCookie(c_name,value,expiredays){var exdate=new Date();exdate.setDate(exdate.getDate()+expiredays);document.cookie=c_name+"="+escape(value)+
+((expiredays==null)?"":";expires="+exdate.toGMTString());document.getElementById("cookies-container").style.display="none";}
+if(document.cookie){document.getElementById("cookies-container").style.display="none";}</script><script src=/js/jquery.js></script><script src=/js/bootstrap.min3.2.js></script><script src=/js/owl.carousel.min.js></script><script src=/js/highlight.pack.js></script><script src=/js/js-functions.js></script></body></html>

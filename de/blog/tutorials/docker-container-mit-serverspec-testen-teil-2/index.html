@@ -1,0 +1,194 @@
+<!doctype html><html lang=de><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Vor einiger Zeit hatten wir in einem Post gezeigt, welche Möglichkeiten existieren, um Container mit Serverspec zu testen. Zu diesem Zeitpunkt waren die Möglichkeiten im Großen und Ganzen in Ordnung, aber sicherlich nicht einfach zu handhaben."><title>Docker Container mit serverspec testen - Teil 2</title><link rel=icon href=/images/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/bootstrap.min.css><link href=/css/animate1.css rel=stylesheet><link href=/css/github-gist.css rel=stylesheet><link rel=stylesheet type=text/css href=/css/bicon.min.css><link rel=stylesheet type=text/css href=/css/owl.carousel.min.css><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous><link rel=stylesheet href=https://bee42.com/sass/style.min.807b9d7ce089a7d39ca870a8727d83ec5a3cbfcaf75ae380e102836b0c36c229.css><link rel=stylesheet type=text/css href=/css/responsive-menu.css><link rel=stylesheet type=text/css href=/css/responsive.css></head><body class=sub-page><nav class=off-canvas><button class=close-btn><i class="fas fa-times"></i></button><ul><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav><div id=page><header class=site-header><div class=inner-header><a class=branding href=/index.html><img src=/images/bee42-logo.svg alt="bee42 Logo"></a>
+<button class=open-btn><i class="fas fa-bars"></i></button><div class=off-canvas-btn><a id=mob-menu>☰</a>
+<a id=mob-menu-close>×</a></div><nav class=site-navigation><ul id=menu-header-menu class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav></div><h1>Rethink IT</h1><h2>Wir verbessern Deine Systeme mit Begeisterung.</h2><a href=https://bee42.com/de/about class="button hero-button">Über die bee⁴²</a></header><div id=content><div class=blog-detail-wrapper><div class="col-lg-9 col-sm-8 col-md-8"><article class=post><h2>Docker Container mit serverspec testen - Teil 2</h2><div class=blog-content><p><p>Vor einiger Zeit hatten wir in einem Post gezeigt, welche Möglichkeiten existieren, um Container mit Serverspec zu testen. Zu diesem Zeitpunkt waren die Möglichkeiten im Großen und Ganzen in Ordnung, aber sicherlich nicht einfach zu handhaben.</p><p>Vor einiger Zeit hatten wir in einem Post gezeigt, welche Möglichkeiten existieren, um <a href=https://bee42.com/de/blog/tutorials/docker-container-mit-serverspec-testen/>Container mit Serverspec zu testen</a>.
+Zu diesem Zeitpunkt waren die Möglichkeiten im Großen und Ganzen in Ordnung, aber sicherlich nicht
+einfach zu handhaben. Nur durch eigene Erweiterungen von serverspec mit einem experimentellem nsenter-Backend war das Testen von Docker-Container sinnvoll möglich.</p><p>Seitdem hat sich im Projekt Serverspec einiges getan. Zum einen gibt es nun <em>Resource Types</em> für Docker-Container und -Images. Damit lassen sich auf einem Docker-Host die Eigenschaften von lokal liegenden Images und laufenden Containern prüfen. Zum anderen wurde das Docker-Backend so erweitert, dass auch über den API-Call von <code>docker exec</code>
+Prüfkommandos in einem laufenden Container mit ausgeführt werden können. Zeit, sich das Ganze im Detail anzuschauen.</p><p><img src=/images/blog/infrabricks/docker_serverspec_docker-exec.png alt="Serverspec-Kommandos über docker-exec ausführen"></p><h1 id=resource-types>Resource Types</h1><p>Bei <em>Resource Types</em> handelt es sich um die Zielobjekte, die man in einem <code>describe</code>-Block beschreibt. So sind z.B. die
+bekannten <code>file</code>, <code>process</code>, <code>port</code> usw. Resource Types. Es gibt zwei Typen, die Docker-Objekte beschreiben, beide
+beziehen ihre Daten aus dem API-Call zu <code>docker inspect</code>. D.h. alles was ein <code>inspect</code>-Aufruf an Metadaten liefert, kann
+auch mit serverspec abgefragt werden.</p><h2 id=docker-image>docker_image</h2><p>Bei Images ist natürlich erstmal interessant, dass es lokal vorliegt, um gestartet werden zu können. Meistens kommt
+ein Image aus einer Registry, ggf. hat man aber auch andere Lieferwege - z.B. aus der eigenen Buildchain per Tarball auf
+die Zielmaschine - implementiert. Das kann man testen:</p><p><strong>Gemfile</strong></p><pre><code class=language-ruby>source 'https://rubygems.org'
+ruby '2.1.5'
+
+gem 'serverspec', '~&gt; 2'
+gem 'docker-api'
+</code></pre><p><strong>.rspec</strong></p><pre><code>--color
+--format documentation
+</code></pre><p><strong>spec/localhost/fedora_21_spec.rb</strong></p><pre><code class=language-ruby>require 'serverspec'
+
+set :backend, :exec
+
+describe docker_image 'fedora:21' do
+  it { should exist }
+end
+</code></pre><pre><code class=language-bash>$ bundle install --path vendor
+$ bundle exec rspec --pattern spec/localhost/\*_spec.rb
+
+Docker image &quot;fedora:21&quot;
+ should exist
+
+Finished in 0.13116 seconds (files took 0.34526 seconds to load)
+1 example, 0 failures
+
+</code></pre><p>Wenn gerade kein Ruby auf dem eigenen Rechner installiert ist, kann dies
+natürlich auch im Container erledigt werden. Damit die Docker <em>Resource Types</em> funktionieren, muss eine Docker-CLI und funktionierender Docker Host installiere sein.</p><pre><code class=language-bash>$ docker run -v $(pwd):$(pwd) \
+ -v /var/run/docker.sock:/var/run/docker.sock \
+ -v /usr/local/bin/docker:/usr/local/bin/docker \
+ --workdir=$(pwd) -ti --rm ruby:2.1.5 \
+  /bin/bash -c &quot;bundle install --path vendor ; bundle exec rspec --pattern spec/localhost/fedora_21_spec.rb&quot;
+</code></pre><p>Um an die <code>inspect</code>-Daten heranzukommen, gibt es zwei Alternativen, hier am Beispiel der Systemarchitektur. Entweder
+verwendet man den <code>inspection</code>-Matcher, der eine komplette Map zurückliefert, aus der Teile testet. Oder man gibt
+den zu testenden Schlüssel als Parameter mit und prüft das Ergebnis. Beide Alternativen sind sinnvoll, so kann man
+z.B. bei der zweiten Variante auch mit regulären Ausdrücken testen.</p><pre><code class=language-ruby>describe docker_image 'fedora:21' do
+  its(:inspection) { should_not include 'Architecture' =&gt; 'i386' }
+  its(['Architecture']) { should eq 'amd64' }
+end
+</code></pre><pre><code class=language-bash>$ bundle exec rspec
+(...)
+Docker image &quot;fedora:21&quot;
+  inspection
+    should not include {&quot;Architecture&quot; =&gt; &quot;i386&quot;}
+  [&quot;Architecture&quot;]
+    should eq &quot;amd64&quot;
+(...)
+</code></pre><p>Welche Eigenschaften sind an einem Docker-Image interessant, was kann sinnvoll getestet werden?</p><ul><li>Ein Maintainer sollte gesetzt sein, z.B. kann man dort einen Schlüssel einbauen, der anzeigt, dass dieses Image aus der eigenen Build-Chain stammt, und nicht von extern kommt.</li><li>Good Practise für ist es, einen ENTRYPOINT zu verwenden, um Nutzung und einzuschränken und Falsch-Nutzung zu vermeiden.</li><li>Für Service-Container sollten bestimmte Ports exposed werden.</li><li>Bestimmte Environment-Parameter müssen vorhanden sein, sonst funktionieren Skripte oder Konfigurationen nicht.</li></ul><p>Zum Beispiel hier ein Demo-Dockerfile:</p><pre><code class=language-bash>FROM fedora:21
+MAINTAINER My Private Build Chain
+
+ENV MYAPP_VERSION 47.11
+
+EXPOSE 80
+
+ENTRYPOINT [&quot;/bin/entrypoint&quot;]
+</code></pre><p>Gebaut:</p><pre><code class=language-bash>$ docker build -t testimage .
+(...)
+Successfully built aeb232471f6f
+
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED              VIRTUAL SIZE
+testimage           latest              aeb232471f6f        54 seconds ago       241.3 MB
+</code></pre><p>Mit einer passenden Spec ist die Überprüfung schnell implementiert:</p><pre><code class=language-ruby>describe docker_image 'testimage' do
+  it { should exist }
+  its(['Author']) { should eq 'My Private Build Chain' }
+  its(['Entrypoint']) { should_not eq '' }
+  its(['Entrypoint']) { should_not eq '/bin/entrypoint' }
+  its(['Config.Env']) { should include /MYAPP_VERSION=47\.11/ }
+  its(['Config.ExposedPorts']) { should include /80\/tcp/ }
+  its(['Config.ExposedPorts']) { should_not include /22\/tcp/ }
+end
+</code></pre><p>Ergibt:</p><pre><code class=language-bash>$ bundle exec rspec --pattern spec/localhost/\*_spec.rb
+
+Docker image &quot;testimage&quot;
+  should exist
+  [&quot;Author&quot;]
+    should eq &quot;My Private Build Chain&quot;
+  [&quot;Entrypoint&quot;]
+    should not eq &quot;&quot;
+  [&quot;Entrypoint&quot;]
+    should not eq &quot;/bin/entrypoint&quot;
+  [&quot;Config.Env&quot;]
+    should include /MYAPP_VERSION=47\.11/
+  [&quot;Config.ExposedPorts&quot;]
+    should include /80\/tcp/
+  [&quot;Config.ExposedPorts&quot;]
+    should not include /22\/tcp/
+
+Finished in 0.12227 seconds (files took 0.35186 seconds to load)
+7 examples, 0 failures
+</code></pre><p>Es ist also sehr einfach bestimmte Qualitätsnormen der Docker-Images zu überprüfen. Manche Dinge sollen unbedingt enthalten sein, und andere Einstellungen, z.B. einen offenen SSH-Port, sind ehr unerwünscht.</p><h2 id=docker-container>docker_container</h2><p>Dasselbe gibt es natürlich auch für Container. Hier wird es interessanter, weil wir in der Lage sind, Laufzeitaspekte
+zu berücksichtigen. Das fängt mit einem laufenden Container an:</p><pre><code class=language-ruby>describe docker_container 'testcontainer' do
+  it { should exist }
+  it { should be_running }
+end
+
+</code></pre><p>Ohne einen Container mit dem Namen gestartet zu haben, läuft die Spec in zwei Fehler. Also kann die Spec mit dem folgenden Befehl erfüllt werden:</p><pre><code class=language-bash>$ docker run -tdi --name testcontainer fedora:21 /bin/bash
+$ bundle exec rspec --pattern spec/localhost/\*_spec.rb
+
+Docker container &quot;testcontainer&quot;
+ should exist
+ should be running
+
+Finished in 0.13791 seconds (files took 0.39023 seconds to load)
+2 examples, 0 failures
+</code></pre><p>Mit den gleichen Inspection-Ausdrücken können nun Container Checks implementiert werden. Serverspec unterstützt noch einen weiteren Ausdruck <code>have_volume</code> für die Prüfung von Volumes:</p><pre><code class=language-ruby>describe docker_container 'testcontainer' do
+  it { should have_volume('/mnt', '/tmp') }
+end
+</code></pre><p>Ausgeführt:</p><pre><code class=language-bash>$ docker run -tdi --name testcontainer -v /tmp:/mnt fedora:21 /bin/bash
+$ bundle exec rspec --pattern spec/localhost/\*_spec.rb
+
+Docker container &quot;testcontainer&quot;
+  should have volume &quot;/mnt&quot;, &quot;/tmp&quot;
+
+Finished in 0.10888 seconds (files took 0.35251 seconds to load)
+1 example, 0 failures
+
+</code></pre><h2 id=einer-nach-dem-anderen>Einer nach dem anderen&hellip;</h2><p>Ein Nachteil dieser Resource Types liegt darin, das nur ein Image oder Container auf einmal geprüft werden kann. In einer Teststufe der <em>Build chain</em> ist das in Ordnung, weil in der Regel nur ein Image oder Container gebaut wird. In Produktions- oder Staging-Systemen besteht ggf. der Wunsch, alle Container eines bestimmten Typs auf einmal
+zu prüfen: z.B. &ldquo;Alle Container, die <code>web*</code> heissen, sollen nur Port 443 exposen und nicht privilegiert ablaufen.&rdquo;</p><p>Das ist in der Form nicht mit den aktuellen <em>Resource Types</em> von Serverspec möglich. Eine alternative Variante ist in
+<a href=https://github.com/de-wiring/containerspec>Containerspec</a> implementiert. Dort wird cucumber an Stelle von
+rspec verwendet, um in der Gherkin-Syntax Prüffälle zu formulieren.</p><p>Damit lassen sich mehrere Images bzw. Container auf einmal prüfen:</p><pre><code>Scenario: NGINX Container
+  When there is a running container named like 'nginx.*'
+  Then it should run on image 'nginx:1.7.8'
+  And containers should not expose port '80'
+  And containers should expose port '443' on host port '8443'
+  And container volume '/etc/nginx/sites-enabled' should be mounted
+  And container volume '/var/log/nginx' should not be mounted
+</code></pre><p>Der Ausdruck &ldquo;When there is a running container&hellip;&rdquo; selektiert alle laufenden Container mit bestimmten Eigenschaften, hier z.B. einen Container-Namen der auf &ldquo;nginx.*&rdquo; matcht.
+Ein <a href=https://github.com/de-wiring/containerspec/wiki/Specifying-and-testing-a-docker-setup>ausführlicheres Beispiel</a> ist im Github-Wiki hinterlegt.</p><h1 id=docker-backend>Docker-Backend</h1><p>Mit den obigen Resource Types ist das Docker-Setup auf dem Host spezifizierbar. Im nächsten Schritte möchten wir
+aber auch gerne innerhalb von laufenden Containern Specs ausführen. Dabei hilft eine Erweiterung des Docker-Backends.
+Es kennt zwei Modi:</p><ul><li>Wenn <code>docker_image</code> gesetzt ist, wird ein Image geprüft. Das hatten wir im <a href=http://www.infrabricks.de/blog/2014/09/10/docker-container-mit-serverspec-testen/>Blog-Post</a> schon beschrieben.</li><li>Wenn <code>docker_container</code> gesetzt ist, wird ein laufender Container geprüft. Dazu werden die Befehle mit <code>docker exec</code> in den Container gebeamt und ausgeführt.</li></ul><p>Hier ein Beispiel, um Container zu testen. Wir möchten den Namen des Containers als Environmentvariable mitgeben, also
+brauchen wir einen angepassten <code>spec_helper.rb</code>. Damit das Docker-Backend läuft, müssen vorher noch abhängige Pakete installiert werden (s. Gemfile).</p><pre><code class=language-bash>$ bundle exec serverspec-init
+Select number: 1
+Select number: 2
+
+ + spec/
+ + spec/localhost/
+ + spec/localhost/sample_spec.rb
+ + spec/spec_helper.rb
+ + Rakefile
+ + .rspec
+</code></pre><p>Der Spec-Helper sieht dann so aus:</p><pre><code class=language-ruby>[root@localhost ~]# cat spec/spec_helper.rb
+require 'serverspec'
+
+set :backend, :docker
+
+set :docker_container, ENV['TARGET']
+</code></pre><p>Damit können wir beim <code>rake spec</code>-Aufruf ein <code>TARGET=xyz</code> vorstellen und so den Containernamen (oder ID) mitgeben, der wir testen möchten.</p><p>Als Beispiel nehmen wir den laufenden Fedora21-Testcontainer von oben, mit einer Demo-Spec:</p><pre><code class=language-ruby># cat spec/localhost/sample_spec.rb
+require 'spec_helper'
+
+describe package('httpd') do
+  it { should be_installed }
+end
+</code></pre><pre><code class=language-bash>$ TARGET=testcontainer rake spec
+(...)
+Package &quot;httpd&quot;
+  should be installed (FAILED - 1)
+
+Failures:
+
+  1) Package &quot;httpd&quot; should be installed
+     On host `localhost'
+     Failure/Error: it { should be_installed }
+       expected Package &quot;httpd&quot; to be installed
+
+     # ./spec/localhost/sample_spec.rb:4:in block (2 levels) in &lt;top (required)&gt;'`
+
+Finished in 0.34612 seconds (files took 0.29735 seconds to load)
+1 example, 1 failure
+</code></pre><p>Klar, das Paket httpd ist noch nicht installiert. Wir holen es nach:</p><pre><code class=language-bash>$ docker attach testcontainer
+bash-4.3# yum install -y httpd
+(...)
+Complete!
+bash-4.3# &lt;CTRL-P&gt; + &lt;CTRL-Q&gt;
+</code></pre><p>Damit läuft die Spec durch:</p><pre><code class=language-bash>$ TARGET=testcontainer bundle exec rspec --pattern spec/localhost/\*_spec.rb
+
+Package &quot;httpd&quot;
+  should be installed
+
+Finished in 0.50143 seconds (files took 0.5923 seconds to load)
+1 example, 0 failures
+</code></pre><p>Nachteilig ist und bleibt, dass die für die Tests notwendigen Binaries im Container vorhanden sein müssen. Das trifft
+mittlerweile selbst bei Distributionen nur noch teilweise zu. Ein <em>fedora:21</em> hat erstmal kein <code>netstat</code>, so kann <code>port</code> nicht geprüft werden. Ein <em>debian:wheezy</em> kennt kein <code>ps</code>, usw. Für die White-Box-Testbarkeit sollten also diese Tools nachinstalliert werden.</p><p>Schwierig wird es, wenn das Image statisch gelinkte Binaries als Applikationen beinhaltet (z.B. aus der Go-Welt), und
+auf ein &ldquo;klassisches&rdquo; Linux-Userland verzichtet. Dann müssen die Tools ggf. als Volume mit eingemountet werden, um den Container testbar zu machen.</p><h1 id=fazit>Fazit</h1><p>Das Thema Testing und Docker wird langsam rund :) Wir haben ausreichend Möglichkeiten, einen Docker-Host durchzutesten, und mit dem erweiterten Docker-Backend von Serverspec nun auch die laufenden Container. D.h. einer Test-Driven Infrastructure mit Docker steht nun nichts mehr im Weg.</p><p>Buildchains führen seit einger Zeit automatisierte Tests mit dem Applikationcode aus. Viele Unternehmen, die Konfigurationsmanagement-Tools einsetzen lassen in Buildchains diesen Code ebenfalls Unit-testen.</p><p>Beim Einsatz von Docker kommt Buildchains eine neue Aufgabe zu: Sie <em>produzieren</em> nicht mehr nur Anwendungscode, sie produzieren Infrastrukturen. Und diese Infrastruktur-Artefakte lassen sich genau so gut testen, wie die Anwendung selbst.</p><p>Viel Spaß beim Ausprobieren wünschen:</p><p>Andreas und Peter</p></p></div><div class=clearfix></div></article></div><div class="col-lg-3 col-sm-4 col-md-4"><div id=blog-archive-sidebar class=sidebar><div class="widget panel wpforms-widget"><div class="wpforms-container wpforms-container-full" id=wpforms-31107><form class="wpforms-validate wpforms-form"><div class=wpforms-head-container><div class=wpforms-title>Werde Teil unserer bee42 community</div><div class=wpforms-description>Erhalte alle 14 Tage die neusten Blogposts, Trend, Events und Highlights rund um Docker, Kubernetes & Co.!</div></div><div class=wpforms-field-container><div class="wpforms-field wpforms-field-email"><input type=email class=wpforms-field-large placeholder="E-Mail-Adresse eingeben"></div></div><div class=wpforms-submit-container><button type=submit name=wpforms[submit] class=wpforms-submit value=wpforms-submit data-alt-text=Subscribing...>Abonieren</button></div></form></div></div><div class="widget panel popular-posts panel-secondary"><h2 class=section-title>Popular Posts</h2><ul><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-hosts-mit-puppet-provisionieren-und-testen/>Docker-Hosts mit Puppet provisionieren und testen</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-microservice-basis-mit-apache-tomcat-implementieren/>Docker Microservice Basis mit Apache Tomcat implementieren</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-entschluesselt-netzwerk-teil-2/>Docker entschlüsselt: Netzwerk Teil 2</a></li></ul></div></div></div></div></div><div class=overlay></div><footer><div class="container clear"><a class=branding href=index.html><img src=/images/bee42-logo.svg alt="bee42 logo"></a><ul class=footer-social-menu><li><a href=mailto:info@bee42.com><i class="fas fa-envelope"></i></a></li><li><a href=https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw><i class="fab fa-youtube"></i></a></li><li><a href="https://twitter.com/bee42solutions?lang=%2fde"><i class="fab fa-twitter"></i></a></li></ul><div class="row footer-info"><ul class=meta-navigation><li><a href=/de/impressum>Impressum</a></li><li><a href=/de/datenschutz>Datenschutz</a></li><li><a href=/de/allgemeine-geschaeftsbedingungen>AGB</a></li><li><a href=/de/kontakt>Kontakt</a></li></ul><form class=newsletter method=post><h3>Newsletter abonnieren</h3><input class=email type=email placeholder="Deine E-Mail Adresse">
+<button class=send>Senden</button></form><div class="row address"><a href=/de/locations/bochum><i class="fas fa-map-marker-alt"></i></a><ul class=location><li><strong>bee42 solutions gmbh</strong></li><li>Office: @Funkhaus Bochum</li><li>Kortumstraße 68</li><li>D-44787 Bochum</li></ul></div></div></div><div class=copyright><div class=container><p>© 2018 bee42 solutions gmbh. Alle Rechte vorbehalten</p></div></div></footer></div><div id=menu-sld class=mbmnu><div class=mobmenu-inner><ul id=menu-header-menu1 class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></div></div></div><div class=cookies-info id=cookies-container><p>"Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer <a href>Datenschutzerklärung</a>."</p><button id=cn-accept-cookie onclick="SetCookie('cookie_notice','0','7')">Ok</button></div><script>function SetCookie(c_name,value,expiredays){var exdate=new Date();exdate.setDate(exdate.getDate()+expiredays);document.cookie=c_name+"="+escape(value)+
+((expiredays==null)?"":";expires="+exdate.toGMTString());document.getElementById("cookies-container").style.display="none";}
+if(document.cookie){document.getElementById("cookies-container").style.display="none";}</script><script src=/js/jquery.js></script><script src=/js/bootstrap.min3.2.js></script><script src=/js/owl.carousel.min.js></script><script src=/js/highlight.pack.js></script><script src=/js/js-functions.js></script></body></html>

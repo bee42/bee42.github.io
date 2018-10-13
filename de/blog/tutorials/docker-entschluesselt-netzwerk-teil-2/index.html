@@ -1,0 +1,135 @@
+<!doctype html><html lang=de><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content='Im ersten Teil von "Docker entschlüsselt: Netzwerk" haben wir gesehen, wie der Docker-Daemon Netzwerkinterfaces, die `docker0`-Bridge und die Kommunikation der Container nach außen und untereinander managed.'><title>Docker entschlüsselt: Netzwerk Teil 2</title><link rel=icon href=/images/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/bootstrap.min.css><link href=/css/animate1.css rel=stylesheet><link href=/css/github-gist.css rel=stylesheet><link rel=stylesheet type=text/css href=/css/bicon.min.css><link rel=stylesheet type=text/css href=/css/owl.carousel.min.css><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous><link rel=stylesheet href=https://bee42.com/sass/style.min.807b9d7ce089a7d39ca870a8727d83ec5a3cbfcaf75ae380e102836b0c36c229.css><link rel=stylesheet type=text/css href=/css/responsive-menu.css><link rel=stylesheet type=text/css href=/css/responsive.css></head><body class=sub-page><nav class=off-canvas><button class=close-btn><i class="fas fa-times"></i></button><ul><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav><div id=page><header class=site-header><div class=inner-header><a class=branding href=/index.html><img src=/images/bee42-logo.svg alt="bee42 Logo"></a>
+<button class=open-btn><i class="fas fa-bars"></i></button><div class=off-canvas-btn><a id=mob-menu>☰</a>
+<a id=mob-menu-close>×</a></div><nav class=site-navigation><ul id=menu-header-menu class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav></div><h1>Rethink IT</h1><h2>Wir verbessern Deine Systeme mit Begeisterung.</h2><a href=https://bee42.com/de/about class="button hero-button">Über die bee⁴²</a></header><div id=content><div class=blog-detail-wrapper><div class="col-lg-9 col-sm-8 col-md-8"><article class=post><h2>Docker entschlüsselt: Netzwerk Teil 2</h2><div class=blog-content><p><p>Im <a href=https://bee42.com/de/blog/tutorials/docker-entschluesselt-netzwerk/>ersten Teil</a>
+von &ldquo;Docker entschlüsselt: Netzwerk&rdquo; haben wir gesehen,
+wie der Docker-Daemon Netzwerkinterfaces, die <code>docker0</code>-Bridge und die
+Kommunikation der Container nach außen und untereinander managed.</p><p>Im zweiten Teil sollen nun die Grundlagen geschaffen werden, damit Docker-Container
+auch über Host-Grenzen hinweg kommunizieren können. Dafür gibt es mehrere
+Möglichkeiten (z.B. die Default-Bridge <code>docker0</code> an ein externes Interface anzuschließen oder
+das iptables-Regelwerk zu erweitern), wir wählen diejenige, welche mit der Standardkonfiguration
+des Docker-Daemon funktioniert.</p><h2 id=der-plan-eine-neue-bridge-anlegen>Der Plan: Eine neue Bridge anlegen</h2><p>Ziel ist es, auf zwei virtuellen Maschinen je einen Docker Container zu instanziieren.
+Dieser Container wird mit einem neuen <code>eth1</code> Netzwerkinterface versorgt, das über
+eine eigene <code>br1</code> Netzwerk-Bridge mit einem <code>eth1</code> Netzwerkinterface des Hosts verbunden ist:</p><p><img src=/images/blog/infrabricks/docker_network_2vms.png alt=docker_network_2vms.png></p><h2 id=voraussetzungen>Voraussetzungen</h2><p>Um ein solches Setup schnell aufzusetzen, empfiehlt sich die Kombination aus
+Vagrant und Virtualbox. Als Basis kann dafür unser <a href=https://github.com/rossbachp/dockerbox>DockerBox</a> - Projekt auf github dienen. Dazu das passende Vagrantfile für zwei VMs auf Basis Ubuntu:</p><pre><code class=language-ruby>Vagrant.configure(&quot;2&quot;) do |config|
+  # https://vagrantcloud.com/stamm/trusty64-dockeattr_reader :attr_names
+  config.vm.box = &quot;trusty64&quot;
+  config.vm.box_url = &quot;http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box&quot;
+
+  config.vm.define &quot;docker-test1&quot;, primary: true do |s|
+    s.vm.network &quot;private_network&quot;, ip: &quot;192.168.77.5&quot;
+    s.vm.provider &quot;virtualbox&quot; do |vb|
+      vb.customize [ 'modifyvm', :id, '--nicpromisc2', 'allow-all']
+      vb.gui = false
+      vb.customize [ &quot;modifyvm&quot;, :id, &quot;--memory&quot;, &quot;512&quot;]
+      vb.customize [ &quot;modifyvm&quot;, :id, &quot;--cpus&quot;, &quot;1&quot;]
+    end
+  end
+
+  config.vm.define &quot;docker-test2&quot;, primary: true do |s|
+    s.vm.network &quot;private_network&quot;, ip: &quot;192.168.77.6&quot;
+    s.vm.provider &quot;virtualbox&quot; do |vb|
+      vb.customize [ 'modifyvm', :id, '--nicpromisc2', 'allow-all']
+        vb.gui = false
+        vb.customize [ &quot;modifyvm&quot;, :id, &quot;--memory&quot;, &quot;512&quot;]
+        vb.customize [ &quot;modifyvm&quot;, :id, &quot;--cpus&quot;, &quot;1&quot;]
+     	end
+  end
+end
+</code></pre><p>Das besondere liegt in der Definition eines zusätzlichen Netzwerkinterfaces
+<code>eth1</code>, dass im weiteren in den <a href=http://de.wikipedia.org/wiki/Promiscuous_Mode>Promisc-Mode</a> geschaltet wird:</p><pre><code class=language-ruby> s.vm.network &quot;private_network&quot;, ip: &quot;192.168.77.5&quot;
+ s.vm.provider &quot;virtualbox&quot; do |vb|
+       vb.customize [ 'modifyvm', :id, '--nicpromisc2', 'allow-all']
+</code></pre><p>Auf der Seite des Hosts wird dazu eine Host-Only Bridge erzeugt (z.B. <code>vnet1</code>),
+an dem diese virtuellen Netzwerkinterfaces angeklemmt sind.</p><p>Nach Starten der VMs kann man sich das Ergebnis anschauen:</p><pre><code class=language-bash>$ vagrant up
+....
+$ vagrant ssh docker-test1
+....
+$ ip addr show
+...
+3: eth1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast master ovs-system state UP group default qlen 1000
+    link/ether 08:00:27:a5:83:64 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.77.5/24 brd 192.168.77.255 scope global eth1
+       valid_lft forever preferred_lft forever
+</code></pre><p>In den beiden VMs werden nun noch Pakete, u.a. docker, nach installiert:</p><pre><code class=language-bash>$ sudo apt-get -y update
+$ sudo apt-get -y install curl git openssl ca-certificates make bridge-utils arping
+$ sudo apt-get install -y docker.io
+$ sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
+</code></pre><p>Alternativ kann die <a href=https://github.com/rossbachp/dockerbox>DockerBox</a> eingesetzt werden,
+dort muss nur das Paket bridge-utils nachinstalliert werden.</p><p>Um mit dem Docker-Containern zu experimentieren, ziehen wir das Ubuntu-Image:</p><pre><code class=language-bash>$ sudo -i
+~# docker pull ubuntu:latest
+</code></pre><p>Und instanziieren einen neuen Docker-Container, lassen ihn im Vordergrund geöffnet.</p><pre><code class=language-bash>~# docker run -t -i ubuntu:latest /bin/bash
+</code></pre><p>Um das Ziel zu erreichen, benötigt jeder Container ein neues Netzwerkinterface.
+Außerdem soll auf den VMs eine neue Bridge existieren, die an das VM-Interface
+mit dem privaten Netzwerk angeschlossen ist.</p><p>Den größten Teil dieser Arbeit kann dabei <a href=https://github.com/jpetazzo/pipework>Pipework</a> übernehmen.</p><h2 id=pipework>Pipework</h2><p>Bei pipework handelt es sich um ein Shell-Skript, das sich um genau diese Aufgaben kümmert:</p><ul><li>Anlegen einer Bridge auf dem Host</li><li>Anlegen eines Netzwerkinterfaces im Container, zugeordnet zu dessen Namenspace</li><li>Anlegen eines (Peer-)Netzwerkinterfaces auf dem Host, verknüpft zum Interface im Container</li><li>Anklemmen des Host-Interfaces an die Bridge</li></ul><p>Dabei versteht es sich mit der Linux Bridge und <a href=http://openvswitch.org/>Open vSwitch</a> und bietet weitreichende Möglichkeiten.</p><p>Auf den VMs kann pipework folgendermassen installiert werden:</p><pre><code class=language-bash>$ sudo -i
+~# git clone https://github.com/jpetazzo/pipework
+~# cd pipework
+</code></pre><p>Um einen Container mit einem neuen Netzwerkinterface zu versorgen, brauchen wir jeweils seine Container ID.</p><pre><code class=language-bash>~# docker ps
+....
+~# CID=&lt;Container-ID einsetzen&gt;
+</code></pre><p>Jetzt geben wir dem Container ein neues Interface, mit einer IP-Adresse</p><pre><code>~# ./pipework br0 $CID 192.168.77.10/24
+# bzw. auf der zweiten VM:
+~# ./pipework br0 $CID 192.168.77.20/24
+</code></pre><p>In der (noch offenen, s.o.) Container-Shell lässt sich das nachprüfen:</p><pre><code class=language-bash>$ ip addr show eth1
+20: eth1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether be:fc:f1:47:02:2a brd ff:ff:ff:ff:ff:ff
+    inet 192.168.77.10/24 scope global eth1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::bcfc:f1ff:fe47:22a/64 scope link
+       valid_lft forever preferred_lft forever
+</code></pre><p>D.h. pipework hat uns ein passendes Interfaces erzeugt und mit einer IP versorgt.
+Auf dem Host lässt sich der Zustand der Bridge anzeigen:</p><pre><code class=language-bash>~# brctl show
+bridge name	bridge id		STP enabled	interfaces
+br0		8000.0800273bcbbb	no	  pl5330eth1
+</code></pre><p>Es ist zu sehen, dass auf der <code>docker0</code>-Bridge ein veth-Interface angebunden ist
+(im Container: eth0), und auf der neuen <code>br0</code>-Bridge ein anderes virtuellees-Interface,
+das im Container dem neuen eth1 entspricht. Pipework vergibt dabei Interface-Namen, die
+mit &ldquo;pl&rdquo; prefixed sind.</p><h2 id=anzeige-der-bridge-interface-struktur>Anzeige der Bridge-/Interface-Struktur</h2><p>Mit einem Ruby-Skript lässt sich der Zusammenhang zwischen Bridges, Interfaces
+auf dem Host und in den Container anzeigen:</p><pre><code class=language-bash>~# git clone https://github.com/aschmidt75/docker-network-inspect
+~# cd docker-network-inspect/lib/
+~# ./docker-network-inspect.rb $CID
+CONTAINER 6437709a4ea2
++ PID 5330
++ INTERFACES
+ + lo (1)
+ + eth0 (5)
+  + HOST PEER veth6166 (6)
+   + BRIDGE
+ + eth1 (8)
+  + HOST PEER pl5330eth1 (9)
+   + BRIDGE br0
+</code></pre><h2 id=container-über-vm-grenzen-verbinden>Container über VM-Grenzen verbinden</h2><p>Um die Container auf den beiden VMs miteinander sprechen zu lassen, wird eine
+Verbindung der beiden neuen Bridges notwendig. Dazu liegen auf den VMs die
+Host-Interfaces (<code>eth1</code>) bereit. Wichtig ist, dass diese Interfaces und die
+Interfaces der Container im selben Subnetz liegen (hier: 192.168.77.0/24)</p><p>In den VMs verbinden wir das jeweilige <code>eth1</code> mit der Bridge <code>br0</code></p><pre><code class=language-bash>~# brctl addif br0 eth1
+~# brctl show br0
+bridge name	bridge id		STP enabled	interfaces
+br0		8000.0800273bcbbb	no		eth1
+							pl5330eth1
+</code></pre><p>Im Container selber lässt sich nun die IP des jeweils anderen Docker-Containers auf der anderen VM anpingen:</p><ul><li><strong>Tipp</strong>: Auf die richtige IP in der jeweiligen VM achten!</li></ul><p>Im Docker-Container auf der <code>docker-test1</code>-VM hilft folgender Test:</p><pre><code class=language-bash>~# ping 192.168.77.20
+PING 192.168.77.20 (192.168.77.20) 56(84) bytes of data.
+64 bytes from 192.168.77.20: icmp_seq=1 ttl=64 time=0.364 ms
+64 bytes from 192.168.77.20: icmp_seq=2 ttl=64 time=0.524 ms
+^C
+--- 192.168.77.20 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+rtt min/avg/max/mdev = 0.364/0.444/0.524/0.080 ms
+</code></pre><p>Im Docker-Container auf der <code>docker-test2</code>-VM hilft folgender Test:</p><pre><code class=language-bash>~# ping 192.168.77.10
+PING 192.168.77.10 (192.168.77.10) 56(84) bytes of data.
+64 bytes from 192.168.77.10: icmp_seq=1 ttl=64 time=0.401 ms
+64 bytes from 192.168.77.10: icmp_seq=2 ttl=64 time=0.675 ms
+^C
+--- 192.168.77.10 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 999ms
+rtt min/avg/max/mdev = 0.401/0.538/0.675/0.137 ms
+</code></pre><h2 id=fazit>Fazit</h2><p>Das automatische Verlinken von Docker-Containern ist im Docker-Daemon
+aktuell nur auf demselben Host möglich. Das Verbinden von Containern über Hostgrenzen
+hinweg ist zur Zeit noch etwas manueller Aufwand. Wir dürfen gespannt sein, wann das Docker-Team bzw.
+die Community auch hier eine Lösung anbieten werden.</p><p>Wer das obige Setup automatisiert aufsetzen möchte, findet in meinem
+<a href=http://github.com/aschmidt75/docker-network-playground/wiki>Network Playground</a> mit dem
+<strong>Simple-Setup</strong> eine vorbereitete Lösung zum Ausprobieren.</p><p>Im Prinzip ist man mit Pipework in der Lage, komplexere Netzwerkarchitekturen
+aufzubauen. Einen weiteren Schritt in Richtung Netzwerkvirtualisierung und
+<a href=http://www.sflow.org/>Software-Defined Network</a> stellt Open vSwitch dar. Das werden wir im nächsten Post weiter beleuchten.</p><p>&ndash;
+Andreas</p></p></div><div class=clearfix></div></article></div><div class="col-lg-3 col-sm-4 col-md-4"><div id=blog-archive-sidebar class=sidebar><div class="widget panel wpforms-widget"><div class="wpforms-container wpforms-container-full" id=wpforms-31107><form class="wpforms-validate wpforms-form"><div class=wpforms-head-container><div class=wpforms-title>Werde Teil unserer bee42 community</div><div class=wpforms-description>Erhalte alle 14 Tage die neusten Blogposts, Trend, Events und Highlights rund um Docker, Kubernetes & Co.!</div></div><div class=wpforms-field-container><div class="wpforms-field wpforms-field-email"><input type=email class=wpforms-field-large placeholder="E-Mail-Adresse eingeben"></div></div><div class=wpforms-submit-container><button type=submit name=wpforms[submit] class=wpforms-submit value=wpforms-submit data-alt-text=Subscribing...>Abonieren</button></div></form></div></div><div class="widget panel popular-posts panel-secondary"><h2 class=section-title>Popular Posts</h2><ul><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-hosts-mit-puppet-provisionieren-und-testen/>Docker-Hosts mit Puppet provisionieren und testen</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-microservice-basis-mit-apache-tomcat-implementieren/>Docker Microservice Basis mit Apache Tomcat implementieren</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-entschluesselt-netzwerk-teil-2/>Docker entschlüsselt: Netzwerk Teil 2</a></li></ul></div></div></div></div></div><div class=overlay></div><footer><div class="container clear"><a class=branding href=index.html><img src=/images/bee42-logo.svg alt="bee42 logo"></a><ul class=footer-social-menu><li><a href=mailto:info@bee42.com><i class="fas fa-envelope"></i></a></li><li><a href=https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw><i class="fab fa-youtube"></i></a></li><li><a href="https://twitter.com/bee42solutions?lang=%2fde"><i class="fab fa-twitter"></i></a></li></ul><div class="row footer-info"><ul class=meta-navigation><li><a href=/de/impressum>Impressum</a></li><li><a href=/de/datenschutz>Datenschutz</a></li><li><a href=/de/allgemeine-geschaeftsbedingungen>AGB</a></li><li><a href=/de/kontakt>Kontakt</a></li></ul><form class=newsletter method=post><h3>Newsletter abonnieren</h3><input class=email type=email placeholder="Deine E-Mail Adresse">
+<button class=send>Senden</button></form><div class="row address"><a href=/de/locations/bochum><i class="fas fa-map-marker-alt"></i></a><ul class=location><li><strong>bee42 solutions gmbh</strong></li><li>Office: @Funkhaus Bochum</li><li>Kortumstraße 68</li><li>D-44787 Bochum</li></ul></div></div></div><div class=copyright><div class=container><p>© 2018 bee42 solutions gmbh. Alle Rechte vorbehalten</p></div></div></footer></div><div id=menu-sld class=mbmnu><div class=mobmenu-inner><ul id=menu-header-menu1 class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></div></div></div><div class=cookies-info id=cookies-container><p>"Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer <a href>Datenschutzerklärung</a>."</p><button id=cn-accept-cookie onclick="SetCookie('cookie_notice','0','7')">Ok</button></div><script>function SetCookie(c_name,value,expiredays){var exdate=new Date();exdate.setDate(exdate.getDate()+expiredays);document.cookie=c_name+"="+escape(value)+
+((expiredays==null)?"":";expires="+exdate.toGMTString());document.getElementById("cookies-container").style.display="none";}
+if(document.cookie){document.getElementById("cookies-container").style.display="none";}</script><script src=/js/jquery.js></script><script src=/js/bootstrap.min3.2.js></script><script src=/js/owl.carousel.min.js></script><script src=/js/highlight.pack.js></script><script src=/js/js-functions.js></script></body></html>

@@ -1,0 +1,187 @@
+<!doctype html><html lang=de><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Nachdem wir im letzten Post allgemein vorgestellt haben, was man mit serverspec machen kann, wollen wir die ersten Beispiele in eine ausführbare Form bringen, sodass man damit weiter experimentieren kann."><title>serverspec standalone betreiben</title><link rel=icon href=/images/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/bootstrap.min.css><link href=/css/animate1.css rel=stylesheet><link href=/css/github-gist.css rel=stylesheet><link rel=stylesheet type=text/css href=/css/bicon.min.css><link rel=stylesheet type=text/css href=/css/owl.carousel.min.css><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous><link rel=stylesheet href=https://bee42.com/sass/style.min.807b9d7ce089a7d39ca870a8727d83ec5a3cbfcaf75ae380e102836b0c36c229.css><link rel=stylesheet type=text/css href=/css/responsive-menu.css><link rel=stylesheet type=text/css href=/css/responsive.css></head><body class=sub-page><nav class=off-canvas><button class=close-btn><i class="fas fa-times"></i></button><ul><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav><div id=page><header class=site-header><div class=inner-header><a class=branding href=/index.html><img src=/images/bee42-logo.svg alt="bee42 Logo"></a>
+<button class=open-btn><i class="fas fa-bars"></i></button><div class=off-canvas-btn><a id=mob-menu>☰</a>
+<a id=mob-menu-close>×</a></div><nav class=site-navigation><ul id=menu-header-menu class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav></div><h1>Rethink IT</h1><h2>Wir verbessern Deine Systeme mit Begeisterung.</h2><a href=https://bee42.com/de/about class="button hero-button">Über die bee⁴²</a></header><div id=content><div class=blog-detail-wrapper><div class="col-lg-9 col-sm-8 col-md-8"><article class=post><h2>serverspec standalone betreiben</h2><div class=blog-content><p><p>Nachdem wir im letzten Post allgemein vorgestellt haben, was man mit <a href=http://serverspec.org/>serverspec</a>
+machen kann, wollen wir die ersten Beispiele in eine ausführbare Form bringen,
+sodass man damit weiter experimentieren kann.</p><h2 id=voraussetzungen>Voraussetzungen</h2><p>Um den Post nicht zu groß aufzubauen und nicht zu viele Abhängigkeiten einzuführen,
+benötigen wir nur eine Serverinstanz, auf der wir lokal testen. Das kann eine
+VM oder auch das eigene Notebook sein. Auch wenn serverspec mit vielen Betriebssystemen
+umgehen kann, sind Debian- oder Redhat-Distros zum Spielen am einfachsten.
+Die Beispiele gehen von CentOS-6.5 mit englischem Locale aus.</p><p>Es läuft einfacher, wenn die Instanz auf Repos im Internet zugreifen kann, es
+geht aber auch offline bzw. mit lokalen Mirrors. Das ist durchaus hilfreich in
+Umgebungen, in denen nicht jeder Server Zugriff nach außen hat und auch (noch)
+keine lokalen Mirros aufgesetzt sind.</p><p>Eine weitere Voraussetzung ist eine lauffähige Ruby- und rubygems-Installation ab Version 1.8.7.
+Diese wird in der Regel von den Linux-Distributionen in den eigenen Paketrepositories
+mitgeliefert. Also:</p><pre><code class=language-bash>$ sudo yum install -y ruby rubygems
+</code></pre><p>oder bei Debian</p><pre><code class=language-bash>$ sudo apt-get install ruby1.9.3 rubygems
+</code></pre><h2 id=installation-von-serverspec>Installation von serverspec</h2><h3 id=online>Online</h3><p>Natürlich ist die online-Installation am einfachsten. serverspec liegt als gem-Paket
+bei rubygems.org vor, und darüber werden abhängige Pakete erkannt und mit installiert.</p><pre><code class=language-bash>$ sudo gem install serverspec rake --no-ri --no-rdoc
+Successfully installed net-ssh-2.9.0
+Successfully installed rspec-core-2.14.8
+Successfully installed diff-lcs-1.2.5
+Successfully installed rspec-expectations-2.14.5
+Successfully installed rspec-mocks-2.14.6
+Successfully installed rspec-2.14.1
+Successfully installed highline-1.6.21
+Successfully installed specinfra-1.11.0
+Successfully installed serverspec-1.6.0
+Successfully installed rake-10.3.1
+10 gems installed
+</code></pre><p>Was machen die Pakete:</p><ul><li><code>diff-lcs</code> findet Unterschiede bspw. in Arrays</li><li><code>net-ssh</code> ist eine Ruby-Library zum SSH-Connect zu anderen Hosts</li><li><code>rspec-*</code> sind alle Pakete für RSpec (www.rspec.info)</li><li><code>highline</code> für etwas Farbe im Kommandozeilenleben</li><li><code>specinfra</code> ist das Serverspec-Backend mit einer Abstraktion für verschiedene Betriebssysteme mit deren Kommandos.</li><li><code>serverspec</code> das eigentliche Serverspec-Frontend, das wir benutzen wollen.</li></ul><h3 id=offline>Offline</h3><p>Die Offlineinstallation ist auch kein Problem, dazu ziehen wir uns die notwendigen
+Pakete von rubygems und kopieren sie auf die Serverinstanz. Wer mag, setzt sich
+eine eigenen rubygems-Mirrorserver auf.</p><pre><code class=language-bash>$ for i in diff-lcs-1.2.5 net-ssh-2.9.0 highline-1.6.21 bundler-1.6.2 rake-10.3.1 rspec-core-2.14.8 rspec-expectations-2.14.5 rspec-mocks-2.14.6 rspec-2.14.1 specinfra-1.11.0 serverspec-1.6.0; do
+  wget http://rubygems.org/downloads/${i}.gem
+done;
+</code></pre><p>Dann lokal installieren:</p><pre><code class=language-bash>$ sudo gem install --local --no-ri --no-rdoc rake-10.3.1.gem bundler-1.6.2.gem diff-lcs-1.2.5.gem rspec-core-2.14.8.gem rspec-expectations-2.14.5.gem rspec-mocks-2.14.6.gem rspec-2.14.1.gem net-ssh-2.9.0.gem highline-1.6.21.gem specinfra-1.11.0.gem serverspec-1.6.0.gem
+Successfully installed rake-10.3.1
+Successfully installed bundler-1.6.2
+Successfully installed diff-lcs-1.2.5
+Successfully installed rspec-core-2.14.8
+Successfully installed rspec-expectations-2.14.5
+Successfully installed rspec-mocks-2.14.6
+Successfully installed rspec-2.14.1
+Successfully installed net-ssh-2.9.0
+Successfully installed highline-1.6.21
+Successfully installed specinfra-1.11.0
+Successfully installed serverspec-1.6.0
+11 gems installed
+</code></pre><h2 id=init>Init!</h2><p>Um mit den eigenen Specs loszulegen, bringt serverspec ein Skript <code>serverspec-init</code>
+mit, um eine Art Vorlage zu generieren, die erstmal lauffähig ist. Das rufen wir
+in einem leeren Verzeichnis auf, und beantworten einige Fragen:</p><pre><code class=language-bash>$ mkdir myspecs
+$ cd myspecs
+$ serverspec-init
+</code></pre><p>Hier müssen wir entscheiden, wo die zu testende Instanz liegt. Entweder greift
+serverspec per <code>ssh</code> darauf zu, oder man testet die eigene Instanz (<code>local</code>).
+Das wollen wir in unserem Fall auch tun, für Unix:</p><pre><code class=language-bash>$ serverspec-init
+Select OS type:
+
+  1) UN*X
+  2) Windows
+
+Select number: 1
+
+Select a backend type:
+
+  1) SSH
+  2) Exec (local)
+
+Select number: 2
+</code></pre><h2 id=die-leere-vorlage>Die leere Vorlage</h2><p>Serverspec hat das folgende für uns erzeugt:</p><pre><code> + spec/
+ + spec/localhost/
+ + spec/localhost/httpd_spec.rb
+ + spec/spec_helper.rb
+ + Rakefile
+</code></pre><p>Wofür braucht man was?</p><h3 id=spec-rb>*_spec.rb</h3><p>Das sind die eigentlichen Spezifikationsfiles, wo die Tests lagern. Bei der
+Zusammenstellung ist man frei: Ein _spec.rb für hunderte Tests (nicht sinnvoll)
+oder für jeden Tests ein eigenes _spec.rb (auch nicht sinnvoll). In den nächsten
+Posts werden wir hierfür eine sinnvolle Struktur aufzubauen.</p><h3 id=rakefile>Rakefile</h3><p>Rake ist quasi das &ldquo;make&rdquo; für ruby. Es automatisiert Vorgänge und dient uns
+hier als &ldquo;Glue&rdquo;, um die rspec-basierten Tests anzustarten. Man könnte auch
+rspec direkt ausführen, allerdings biegt das für uns generierte Rakefile
+einige Dinge für die Ausführung richtig.
+In der Standardversion werden einfach alle Dateien im spec/ Unterverzeichnis
+(und den darunter liegenden Verzeichnissen) aufgegriffen, die auf _spec.rb
+enden.</p><h3 id=spec-helper-rb>spec_helper.rb</h3><p>Der Spec-Helper wird von den Testcases verwendet (&ldquo;require&rdquo;) und schafft einige
+Voraussetzungen. Interessant sind z.B. das Erkennen von Betriebssystemen
+(<code>include .... DetectOS</code>) sowie (falls noch notwendig) das abfragen eines
+Passworts für sudo.</p><h3 id=http-spec-rb>http_spec.rb</h3><p>Die leere Vorlage ist gar nicht so leer, sie enthält nämlich ein Beispiel
+für einen funktionierenden Webserver, die wir einfach verwenden werden.
+Geprüft wird:</p><ul><li>dass ein OS-Paket installiert wurde (hier: httpd, passt auf RHEL),</li><li>dass der Service automatisch gestartet wird und aktuell läuft,</li><li>dass ein Port geöffnet ist und</li><li>dass eine Konfigurationsdatei mit bestimmten Inhalte vorliegt.</li></ul><p>Das sieht dann so aus:</p><pre><code class=language-ruby>require 'spec_helper'
+
+describe package('httpd') do
+  it { should be_installed }
+end
+
+describe service('httpd') do
+  it { should be_enabled  }
+  it { should be_running  }
+end
+
+describe port(80) do
+  it { should be_listening }
+end
+
+describe file('/etc/httpd/conf/httpd.conf') do
+  it { should be_file }
+  it { should contain &quot;ServerName localhost&quot; }
+end
+</code></pre><p>Die Syntax ist sehr einfach und fast natürlichsprachlich. Es besteht aus mehreren
+Blöcken, die bestimmte Aspekte (package, service, port, file) beschreiben. In
+den Blöcken liegen dann Match-Ausdrücke, die bestimmte Konditionen abprüfen</p><h2 id=erster-testrun>Erster Testrun</h2><p>Wir lassen &ldquo;die spec&rdquo; einfach mal laufen und schauen, was passiert:</p><pre><code class=language-bash>$ sudo rake spec
+Failures:
+
+  1) Package &quot;httpd&quot; should be installed
+     Failure/Error: it { should be_installed }
+       rpm -q httpd
+       package httpd is not installed
+       expected Package &quot;httpd&quot; to be installed
+     # ./spec/localhost/httpd_spec.rb:4
+
+  2) Service &quot;httpd&quot; should be enabled
+  ....
+
+  ....
+
+Finished in 0.05863 seconds
+6 examples, 6 failures
+
+Failed examples:
+
+rspec ./spec/localhost/httpd_spec.rb:4 # Package &quot;httpd&quot; should be installed
+rspec ./spec/localhost/httpd_spec.rb:8 # Service &quot;httpd&quot; should be enabled
+rspec ./spec/localhost/httpd_spec.rb:9 # Service &quot;httpd&quot; should be running
+rspec ./spec/localhost/httpd_spec.rb:13 # Port &quot;80&quot; should be listening
+rspec ./spec/localhost/httpd_spec.rb:17 # File &quot;/etc/httpd/conf/httpd.conf&quot; should be file
+rspec ./spec/localhost/httpd_spec.rb:18 # File &quot;/etc/httpd/conf/httpd.conf&quot; content should match /ServerName localhost/
+/usr/bin/ruby -S rspec spec/localhost/httpd_spec.rb failed
+</code></pre><p>Wir sehen, dass eigentlich alles fehlschlägt. Klar, denn noch haben wir nichts
+installiert bzw. provisioniert.</p><h2 id=red-green-refactor>Red, Green, Refactor</h2><p>Gemäß dem Testdriven-Zyklus sind wir jetzt im &ldquo;Red&rdquo; angelangt. Wir haben einen
+Testcase, der einen Zielzustand beschreibt. Unsere Infrastruktur-
+Tests schlagen fehl, also machen wir uns daran, diese grün zu bekommen.</p><p><strong>Disclaimer</strong>: Natürlich wählt man hierzu am besten ein Provisionierungswerkzeug,
+also Salt, Chef, Puppet, &hellip; Um den Post einfach zu halten werden wir hier manuell
+installieren, das Umformen (z.B. ein Provisioner für Vagrant) bleibt
+dann für den &ldquo;Refactor&rdquo;-Schritt :-)</p><p>Das erste ist die Installation des Pakets.</p><pre><code class=language-bash>$ sudo yum install -y httpd
+</code></pre><p>Wir lassen die spec noch einmal laufen und sehen:</p><pre><code class=language-bash>$ sudo rake spec
+...
+...
+Finished in 0.0678 seconds
+6 examples, 4 failures
+
+Failed examples:
+
+rspec ./spec/localhost/httpd_spec.rb:8 # Service &quot;httpd&quot; should be enabled
+rspec ./spec/localhost/httpd_spec.rb:9 # Service &quot;httpd&quot; should be running
+rspec ./spec/localhost/httpd_spec.rb:13 # Port &quot;80&quot; should be listening
+rspec ./spec/localhost/httpd_spec.rb:18 # File &quot;/etc/httpd/conf/httpd.conf&quot; content should match /ServerName localhost/
+/usr/bin/ruby -S rspec spec/localhost/httpd_spec.rb failed
+</code></pre><p>Oben hatten wir noch 6 Failures, jetzt nur noch 4. Es wird. Als nächstes sollte
+httpd.conf konfiguriert werden. Wir fügen dort <code>localhost</code> ein:</p><pre><code>$ sudo vi /etc/httpd/conf/httpd.conf
+....
+ServerName localhost:80
+...
+</code></pre><p>Ein erneuter Test:</p><pre><code>$ sudo rake spec
+6 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/localhost/httpd_spec.rb:8 # Service &quot;httpd&quot; should be enabled
+rspec ./spec/localhost/httpd_spec.rb:9 # Service &quot;httpd&quot; should be running
+rspec ./spec/localhost/httpd_spec.rb:13 # Port &quot;80&quot; should be listening
+</code></pre><p>Nur noch 3 Failures. Als nächstes sollte der Service laufen und automatisch gestartet sein:</p><pre><code>$ sudo chkconfig --add httpd
+$ sudo chkconfig --level 345 httpd on
+$ sudo service httpd start
+</code></pre><p>Und so ist das Endresultat:</p><pre><code class=language-bash>$ sudo rake spec
+/usr/bin/ruby -S rspec spec/localhost/httpd_spec.rb
+......
+
+Finished in 0.05298 seconds
+6 examples, 0 failures
+</code></pre><p>Damit sind wir &ldquo;green&rdquo;.</p><h2 id=what-s-next>What&rsquo;s next?</h2><p>Jetzt können wir unsere Tests spezifizieren und auf einem konkreten Server ausführen.
+Mit dieser Basis können wir spielen und neue Tests einbauen. Eine gute Übersicht dessen
+was möglich ist, gibt die Seite <a href=http://serverspec.org/resource_types.html>Resource Types</a></p><p>In einer etwas realistischeren Arbeitsumgebung
+wird es aber viele Server geben, die sich in Gruppen einteilen lassen (Webserver,
+Applikationsserver, &hellip;).
+Und vermutlich haben wir mehrere Umgebungen (Test, Live, &hellip;), die sich in
+Teilen unterscheiden.</p><p>All das lässt sich auch mit serverspec abdecken, die nächsten Posts zeigen, wie :-)</p><p>&ndash;
+Andreas</p></p></div><div class=clearfix></div></article></div><div class="col-lg-3 col-sm-4 col-md-4"><div id=blog-archive-sidebar class=sidebar><div class="widget panel wpforms-widget"><div class="wpforms-container wpforms-container-full" id=wpforms-31107><form class="wpforms-validate wpforms-form"><div class=wpforms-head-container><div class=wpforms-title>Werde Teil unserer bee42 community</div><div class=wpforms-description>Erhalte alle 14 Tage die neusten Blogposts, Trend, Events und Highlights rund um Docker, Kubernetes & Co.!</div></div><div class=wpforms-field-container><div class="wpforms-field wpforms-field-email"><input type=email class=wpforms-field-large placeholder="E-Mail-Adresse eingeben"></div></div><div class=wpforms-submit-container><button type=submit name=wpforms[submit] class=wpforms-submit value=wpforms-submit data-alt-text=Subscribing...>Abonieren</button></div></form></div></div><div class="widget panel popular-posts panel-secondary"><h2 class=section-title>Popular Posts</h2><ul><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-hosts-mit-puppet-provisionieren-und-testen/>Docker-Hosts mit Puppet provisionieren und testen</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-microservice-basis-mit-apache-tomcat-implementieren/>Docker Microservice Basis mit Apache Tomcat implementieren</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-entschluesselt-netzwerk-teil-2/>Docker entschlüsselt: Netzwerk Teil 2</a></li></ul></div></div></div></div></div><div class=overlay></div><footer><div class="container clear"><a class=branding href=index.html><img src=/images/bee42-logo.svg alt="bee42 logo"></a><ul class=footer-social-menu><li><a href=mailto:info@bee42.com><i class="fas fa-envelope"></i></a></li><li><a href=https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw><i class="fab fa-youtube"></i></a></li><li><a href="https://twitter.com/bee42solutions?lang=%2fde"><i class="fab fa-twitter"></i></a></li></ul><div class="row footer-info"><ul class=meta-navigation><li><a href=/de/impressum>Impressum</a></li><li><a href=/de/datenschutz>Datenschutz</a></li><li><a href=/de/allgemeine-geschaeftsbedingungen>AGB</a></li><li><a href=/de/kontakt>Kontakt</a></li></ul><form class=newsletter method=post><h3>Newsletter abonnieren</h3><input class=email type=email placeholder="Deine E-Mail Adresse">
+<button class=send>Senden</button></form><div class="row address"><a href=/de/locations/bochum><i class="fas fa-map-marker-alt"></i></a><ul class=location><li><strong>bee42 solutions gmbh</strong></li><li>Office: @Funkhaus Bochum</li><li>Kortumstraße 68</li><li>D-44787 Bochum</li></ul></div></div></div><div class=copyright><div class=container><p>© 2018 bee42 solutions gmbh. Alle Rechte vorbehalten</p></div></div></footer></div><div id=menu-sld class=mbmnu><div class=mobmenu-inner><ul id=menu-header-menu1 class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></div></div></div><div class=cookies-info id=cookies-container><p>"Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer <a href>Datenschutzerklärung</a>."</p><button id=cn-accept-cookie onclick="SetCookie('cookie_notice','0','7')">Ok</button></div><script>function SetCookie(c_name,value,expiredays){var exdate=new Date();exdate.setDate(exdate.getDate()+expiredays);document.cookie=c_name+"="+escape(value)+
+((expiredays==null)?"":";expires="+exdate.toGMTString());document.getElementById("cookies-container").style.display="none";}
+if(document.cookie){document.getElementById("cookies-container").style.display="none";}</script><script src=/js/jquery.js></script><script src=/js/bootstrap.min3.2.js></script><script src=/js/owl.carousel.min.js></script><script src=/js/highlight.pack.js></script><script src=/js/js-functions.js></script></body></html>

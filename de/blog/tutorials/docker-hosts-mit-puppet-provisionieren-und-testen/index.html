@@ -1,0 +1,317 @@
+<!doctype html><html lang=de><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Die ersten Schritte mit Docker gestalten sich durch boot2docker recht einfach, so hat man schnell eine Spielwiese erstellt, um die Funktionalität ausprobieren zu können."><title>Docker-Hosts mit Puppet provisionieren und testen</title><link rel=icon href=/images/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/bootstrap.min.css><link href=/css/animate1.css rel=stylesheet><link href=/css/github-gist.css rel=stylesheet><link rel=stylesheet type=text/css href=/css/bicon.min.css><link rel=stylesheet type=text/css href=/css/owl.carousel.min.css><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous><link rel=stylesheet href=https://bee42.com/sass/style.min.807b9d7ce089a7d39ca870a8727d83ec5a3cbfcaf75ae380e102836b0c36c229.css><link rel=stylesheet type=text/css href=/css/responsive-menu.css><link rel=stylesheet type=text/css href=/css/responsive.css></head><body class=sub-page><nav class=off-canvas><button class=close-btn><i class="fas fa-times"></i></button><ul><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav><div id=page><header class=site-header><div class=inner-header><a class=branding href=/index.html><img src=/images/bee42-logo.svg alt="bee42 Logo"></a>
+<button class=open-btn><i class="fas fa-bars"></i></button><div class=off-canvas-btn><a id=mob-menu>☰</a>
+<a id=mob-menu-close>×</a></div><nav class=site-navigation><ul id=menu-header-menu class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav></div><h1>Rethink IT</h1><h2>Wir verbessern Deine Systeme mit Begeisterung.</h2><a href=https://bee42.com/de/about class="button hero-button">Über die bee⁴²</a></header><div id=content><div class=blog-detail-wrapper><div class="col-lg-9 col-sm-8 col-md-8"><article class=post><h2>Docker-Hosts mit Puppet provisionieren und testen</h2><div class=blog-content><p><p>Die ersten Schritte mit Docker gestalten sich durch boot2dockerrecht einfach, so hat man schnell eine Spielwiese erstellt, um die Funktionalität
+ausprobieren zu können. Aber spätestens wenn Docker-Container im Test- oder Produktionssystem live gestellt werden sollen,
+stellt sich die Frage nach dem reproduzierbaren Aufsetzen eines Docker-Hosts.</p><p>Da wir für dieses Beispiel gar nicht so viele Dinge zu installieren, bzw. konfigurieren haben, ist ein leichtgewichtiges Tool wie z.B. <a href=http://www.ansible.com>Ansible</a> oder <a href=http://www.saltstack.com/>SaltStack</a> naheliegend. Viele Unternehmen
+setzen allerdings seit geraumer Zeit auf <a href=https://www.puppetlabs.com/>Puppet</a>, das allgemein bekannt sein dürfte.</p><p>Um die Hürde nicht zu hoch zu legen und zuviel Veränderung auf einmal anzubringen, bauen wir dieses Beispiel
+mit Puppet auf. Um die Installation testbar zu bekommen, empfiehlt
+sich der Einsatz von <a href=http://www.serverspec.org>serverspec</a>. Wer noch nicht so vertraut mit ServerSpec ist, sollte unseren <a href=https://bee42.com/de/blog/tutorials/serverspec-server-spezifizieren-und-testen/>Einführungs- Post</a> dazu kurz lesen.</p><h2 id=vagrant-docker-provisioner>Vagrant/Docker-Provisioner</h2><p>Vagrant bietet selber einen <a href=http://docs.vagrantup.com/v2/provisioning/docker.html>Docker-Provisioner</a> an.
+Dieser ist nicht zu verwechseln mit dem Docker-Provider, der Docker als Backend verwendet, damit Vagrant
+Container anstelle von VMs startet. Der Provisioner hingegen ist in der Lage, Docker
+auf der gestartetem VM zu installieren, mit Images zu bestücken und
+daraus Container zu starten. Die Konfiguration des Docker-Servers ist davon noch ausgenommen.</p><p>Das ist schon eine gute Abkürzung auf dem Weg in Richtung Reproduzierbarkeit, sie hängt
+allerdings auch davon ab, wie weit Vagrant in der Continuous Delivery Kette zum Einsatz kommt. Wenn z.B.
+das Livesystem auf einer Virtualisierung beruht, die nicht durch ein Vagrant-Backend
+unterstützt wird, kommt man mit dem Docker-Provisioner an der Stelle nicht weiter.
+Dann werden Entwicklungs- und vielleicht auch Testsystem nachvollziehbar bestückt, beim Sprung
+auf das Livesystem ergibt sich ein Bruch.</p><h2 id=puppet-modul-für-docker>Puppet-Modul für Docker</h2><p>Eine mögliche Lösung ist, Puppet für die Installation und Konfiguration des Docker-Servers
+zu verwenden. Ein Puppet-Modul kann getestet werden, lässt sich in Vagrant über den
+Puppet-Provisioner integrieren und auf allen Stages der Delivery-Chain nutzen.</p><p>Wenn man in der PuppetForge nach Docker sucht, wird man schnell bei dem <a href=https://forge.puppetlabs.com/garethr/docker>Modul von Gareth Rushgrove</a> fündig.
+Damit lässt sich Docker installieren, in Teilen konfigurieren,
+Images lassen sich herunterladen und Container können gestartet werden.</p><p>Und wir möchten die Installation natürlich mit Serverspec&rsquo;s testen, um nachhaltig zu beweisen das wir korrekt provisioniert haben.</p><p>Alle Schritte können mit dem Github-Repository <a href=https://github.com/aschmidt75/docker-testing-playground>aschmidt75/docker-testing-playground</a>
+nachvollzogen werden. Im Text finden sich in den Abschnitten (Git-Tag)-Einträge, die
+auf Tags im Repository verweisen. So lassen sich einzelne Stände nachvollziehen.</p><p>Los geht&rsquo;s!</p><h3 id=mit-der-leere-vm-beginnen>Mit der leere VM beginnen &hellip;</h3><p>Wir starten mit einem einfach Vagrant-Konfiguration, das eine einzelne VM auf Basis
+Ubuntu 14.04 aufbaut. Da wir auf einen fest benannten Paketstand aufsetzen
+möchten, führen wir kein Update durch. Sinnvoll ist es, hier genau das Image
+mit Werkzeugen wir z.B. <a href=http://www.packer.io/>Packer</a> selber zu bauen und vorzuhalten, das man für den Betrieb
+der eigenen Plattform haben möchte.</p><pre><code class=language-ruby># -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(&quot;2&quot;) do |config|
+  config.vm.box = &quot;trusty64&quot;
+  config.vm.box_url = &quot;http://cloud-images.ubuntu.com/vagrant/trusty/20140723/trusty-server-cloudimg-amd64-vagrant-disk1.box&quot;
+
+  config.vm.define &quot;docker-test1&quot;, primary: true do |s|
+  end
+
+end
+</code></pre><p>(Git-Tag v1)</p><p>Wer das ganze schnell ausprobieren möchte, kann sich den Code von github auschecken:</p><pre><code>$ git clone https://github.com/aschmidt75/docker-testing-playground
+</code></pre><p>Die einzelnen Stationen sind getagged, d.h. den obigen Stand v1 erhält man mit:</p><pre><code>$ git checkout tags/v1
+Note: checking out 'tags/v1'.
+....
+HEAD is now at 456090f... moved to test cmd
+</code></pre><h3 id=serverspec-basis-dazugeben>&hellip; Serverspec-Basis dazugeben &hellip;</h3><p>Die VM können wir mit <code>vagrant up</code> starten, wir sind aber noch nicht so richtig weit gekommen. Um unsere
+Installation testbar zu machen, benötigen wir serverspec. Es gibt ein Vagrant-Plugin für
+Serverspec, allerdings ist das Zusammenspiel mit verschiedenen Versionen von serverspec,
+Vagrant und dem Plugin noch nicht ideal. Außerdem möchten wir Serverspec-Spezifikation
+auch später ohne Vagrant weiterverwenden können. Von daher installieren wir mit einem
+Shell Provisioner Serverspec plus Abhängigkeiten und gehen davon aus, dass wir unsere Specs
+über eine Synced-Folder in die VM reinreichen. Bei den gems geben wir zumindest
+für serverspec, specinfra, rspec und rake feste Versionen an. Die beiden Projekte serverspec und specinfra sind aktuell sehr in der Entwicklung, also aufgepasst mit der Repoduzierbarkeit!</p><pre><code class=language-bash>$ mkdir spec.d
+$ vi Vagrantfile
+</code></pre><pre><code class=language-ruby>    s.vm.synced_folder &quot;spec.d/&quot;, &quot;/mnt/spec.d&quot;
+(...)
+    # install &amp; run serverspec
+    s.vm.provision 'shell', inline: &lt;&lt;EOS
+( sudo gem list --local | grep -q serverspec ) || {
+	sudo gem install rake -v '10.3.2'
+	sudo gem install rspec -v '2.99.0'
+	sudo gem install specinfra -v '1.21.0'
+	sudo gem install serverspec -v '1.10.0'
+}
+cd /mnt/spec.d
+rake spec
+
+EOS
+</code></pre><p>(Git-Tag v2)</p><p>Die Vagrant VM muss wg. des Mounts neu gestartet und provisioniert werden:</p><pre><code>$ vagrant reload
+$ vagrant provision
+(...)
+==&gt; docker-test1: Running provisioner: shell...
+    docker-test1: Running: inline script
+==&gt; docker-test1: stdin: is not a tty
+==&gt; docker-test1: Successfully installed specinfra-1.21.0
+==&gt; docker-test1: Successfully installed net-ssh-2.9.1
+(...)
+==&gt; docker-test1: rake aborted!
+==&gt; docker-test1: No Rakefile found (looking for: rakefile, Rakefile, rakefile.rb, Rakefile.rb)
+==&gt; docker-test1: (See full trace by running task with --trace)
+</code></pre><h3 id=spezifikation-formulieren>&hellip; Spezifikation formulieren &hellip;</h3><p>D.h. serverspec wurde installiert, aber da keine Specs vorhanden sind, kann der <code>rake spec</code>-Aufruf
+natürlich noch nichts tun. Wir legen uns auf dem Host über <code>serverspec-init</code> eine leere Spezifikations-Hülle hin,
+das HTTP-Beispiel wird durch das ersetzt, was wir testen wollen:</p><pre><code>$ cd spec.d
+$ serverspec-init
+Select OS type:
+
+  1) UN*X
+  2) Windows
+
+Select number: 1
+
+Select a backend type:
+
+  1) SSH
+  2) Exec (local)
+
+Select number: 2
+
+ + spec/
+ + spec/localhost/
+ + spec/localhost/httpd_spec.rb
+ + spec/spec_helper.rb
+ + Rakefile
+$ rm spec/localhost/httpd_spec.rb
+$ vim spec/localhost/docker_spec.rb
+
+require 'spec_helper'
+
+describe 'It should have docker installed' do
+end
+</code></pre><p>(Git-Tag v3)</p><p>Ein <code>vagrant provision</code> zeigt nun:</p><pre><code class=language-bash> vagrant provision
+==&gt; docker-test1: Running provisioner: shell...
+    docker-test1: Running: inline script
+==&gt; docker-test1: stdin: is not a tty
+==&gt; docker-test1: Running provisioner: shell...
+    docker-test1: Running: inline script
+==&gt; docker-test1: stdin: is not a tty
+==&gt; docker-test1: /usr/bin/ruby1.9.1 -S rspec spec/localhost/docker_spec.rb
+==&gt; docker-test1: No examples found.
+==&gt; docker-test1:
+==&gt; docker-test1: Finished in 0.00006 seconds
+==&gt; docker-test1: 0 examples, 0 failures
+</code></pre><p>Im Spec-File können wir jetzt ausdrücken, wie Docker installiert sein sollte, z.B. so:</p><pre><code class=language-bash>$ vim spec.d/spec/localhost/docker_spec.rb
+</code></pre><p>und den leeren describe-Block ersetzen durch:</p><pre><code class=language-ruby>describe 'It should have docker installed' do
+	describe package 'lxc-docker-1.1.1' do
+		it { should be_installed }
+	end
+
+	describe group 'docker' do
+		it { should exist }
+	end
+
+	describe file '/var/run/docker.sock' do
+		it { should be_socket }
+		it { should be_owned_by 'root' }
+		it { should be_grouped_into 'docker' }
+	end
+
+	describe command 'docker -v' do
+		its(:stdout) { should match '^Docker version 1\.1\.1.*' }
+ 	end
+end
+</code></pre><p>Das entspricht der Standardinstallation über das Repository von Docker, zumindest für die
+Version 1.1.1, die wir haben möchten. Ein <code>vagrant provision</code> zeigt nun
+eine Menge Fehler, da ja noch nichts installiert ist.</p><pre><code class=language-bash>$ vagrant provision
+(...)
+Finished in 0.10243 seconds
+5 examples, 5 failures
+
+Failed examples:
+
+rspec ./spec/localhost/docker_spec.rb:5 # It should have docker installed Package &quot;lxc-docker-1.1.1&quot; should be installed
+rspec ./spec/localhost/docker_spec.rb:9 # It should have docker installed Group &quot;docker&quot; should exist []
+rspec ./spec/localhost/docker_spec.rb:13 # It should have docker installed File &quot;/var/run/docker.sock&quot; should be socket
+rspec ./spec/localhost/docker_spec.rb:14 # It should have docker installed File &quot;/var/run/docker.sock&quot; should be owned by &quot;root&quot;
+rspec ./spec/localhost/docker_spec.rb:15 # It should have docker installed File &quot;/var/run/docker.sock&quot; should be grouped into &quot;docker&quot;
+(...)
+
+</code></pre><p>(Git-Tag v4)</p><h3 id=das-puppet-modul-hinzufügen>&hellip; Das Puppet-Modul hinzufügen &hellip;</h3><p>Wir möchte Docker über Puppet und das Puppetmodul aus der Forge installieren, d.h. es lohnt sich
+auch, das als Serverspec auszudrücken, um es dann umzusetzen. Die aktuelle Version ist 1.1.3:</p><pre><code>$ vim spec.d/spec/localhost/puppet_spec.rb
+(..einfügen..)
+require 'spec_helper'
+
+describe package 'puppet' do
+	it { should be_installed }
+end
+
+describe 'It should have the garethr-docker module' do
+	describe file '/etc/puppet/modules/docker' do
+		it { should be_directory }
+		it { should be_mode '755' }
+	end
+
+	describe command 'puppet module list' do
+		its(:stdout) { should match 'garethr-docker.*1\.1\.3' }
+	end
+end
+</code></pre><p>Ein <code>vagrant provision</code> zeigt nun natürlich noch mehr Fehler an. Wir beheben das ganze,
+indem das Vagrantfile um einen Shell-Provisioner-Abschnitt ergänzt wird, der über puppet
+das Modul nachinstalliert, solange es noch nicht vorhanden ist. Wir wählen auch
+hier gezielt eine feste Version aus:</p><pre><code class=language-ruby>$ vi Vagrantfile
+    # install puppet module for docker
+    s.vm.provision &quot;shell&quot;, inline:
+	    'sudo su - -c &quot;( puppet module list | grep -q garethr-docker ) || puppet module install -v 1.1.3 garethr-docker&quot;'
+
+    # install &amp; run serverspec
+(...)
+</code></pre><pre><code class=language-bash>$ vagrant provision
+(...)
+==&gt; docker-test1: Running provisioner: shell...
+    docker-test1: Running: inline script
+==&gt; docker-test1: stdin: is not a tty
+==&gt; docker-test1: stdin: is not a tty
+==&gt; docker-test1: Notice: Preparing to install into /etc/puppet/modules ...
+==&gt; docker-test1: Notice: Downloading from https://forge.puppetlabs.com ...
+==&gt; docker-test1: Notice: Installing -- do not interrupt ...
+==&gt; docker-test1: /etc/puppet/modules
+==&gt; docker-test1: └─┬ garethr-docker (v1.1.3)
+==&gt; docker-test1:   ├── puppetlabs-apt (v1.5.1)
+==&gt; docker-test1:   ├── puppetlabs-stdlib (v4.3.0)
+==&gt; docker-test1:   └── stahnma-epel (v0.1.0)
+(...)
+Finished in 1.11 seconds
+9 examples, 5 failures
+
+Failed examples:
+(...)
+</code></pre><p>(Git-Tag v5)</p><h3 id=und-docker-über-puppet-installieren-lassen>&hellip; und Docker über Puppet installieren lassen</h3><p>Im Serverspec-Teil sind allerdings die vier <code>Examples</code> für Puppet grün, nur die Docker-Examples
+sind rot. Also müssen wir jetzt Docker installieren. Dazu bauen wir ein Puppet-Modul,
+welches über den Puppet-Provisioner in Vagrant ausgerollt wird. Erst einmal eine leere Hülle:</p><pre><code class=language-bash>$ mkdir puppet.d
+$ mkdir puppet.d/manifests
+$ mkdir puppet.d/modules
+$ vim puppet.d/manifests/default.pp
+(..einfügen..)
+
+notify { &quot;Running puppet apply on $hostname&quot;: }
+
+$ vi Vagrantfile
+(..einfügen..)
+
+    # provision the node
+    s.vm.provision :puppet, :options =&gt; &quot;--verbose&quot; do |puppet|
+        puppet.manifests_path = &quot;puppet.d/manifests&quot;
+        puppet.module_path = &quot;puppet.d/modules&quot;
+        puppet.manifest_file = &quot;default.pp&quot;
+    end
+
+    # install &amp; run serverspec
+(...)
+</code></pre><p>Da der Puppet-Provisioner intern über Vagrant einen Synced-Folder erzeugt, müssen wir die
+VM reloaden, danach kann provisioniert werden:</p><pre><code class=language-bash>$ vagrant reload
+(...)
+$ vagrant provision
+(...)
+==&gt; docker-test1: Running provisioner: puppet...
+==&gt; docker-test1: Running Puppet with default.pp...
+==&gt; docker-test1: stdin: is not a tty
+(...)
+==&gt; docker-test1: Notice: Compiled catalog for vagrant-ubuntu-trusty-64 in environment production in 0.03 seconds
+(...)
+==&gt; docker-test1: Info: Applying configuration version '1405518114'
+==&gt; docker-test1: Notice: Running puppet apply on vagrant-ubuntu-trusty-64
+==&gt; docker-test1: Notice: /Stage[main]/Main/Notify[Running puppet apply on vagrant-ubuntu-trusty-64]/message: defined 'message' as 'Running puppet apply on vagrant-ubuntu-trusty-64'
+==&gt; docker-test1: Info: Creating state file /var/lib/puppet/state/state.yaml
+==&gt; docker-test1: Notice: Finished catalog run in 0.03 seconds
+
+(...)
+
+(...Fehler von serverspec, weil Docker noch nicht installiert ist...)
+
+</code></pre><p>(Git-Tag v6)</p><p>Damit fehlt jetzt &ldquo;nur&rdquo; noch das was eigentlich wollten, nämlich Docker auch zu installieren :-)
+Das geht mit dem Modul aus der Puppetforge sehr einfach. Wir implementieren ein Modul,
+bestehend aus Subklassen install, run in eigenen .pp-Dateien
+und der Abhängigkeit. Im install-Bereich kommt die Docker-Klasse ins Spiel, wo
+die Konfiguration des Servers gesetzt werden kann.</p><pre><code class=language-bash>$ mkdir -p puppet.d/modules/docker_host/{manifests,templates}
+$ vi puppet.d/modules/docker_host/manifests/init.pp
+class docker_host {
+  notify { 'in docker_host': }
+
+  class { 'docker_host::install': }
+
+  class { 'docker_host::run': }
+
+  Class['docker_host::install'] -&gt; Class['docker_host::run']
+}
+$ vi puppet.d/modules/docker_host/manifests/install.pp
+include 'docker'
+
+class docker_host::install {
+  class { 'docker':
+    version       =&gt; '1.1.1',
+    manage_kernel =&gt; false,
+    tcp_bind      =&gt; 'tcp://127.0.0.1:2375',
+    socket_bind   =&gt; 'unix:///var/run/docker.sock',
+  }
+}
+$ vi puppet.d/modules/docker_host/manifests/run.pp
+class docker_host::run {
+}
+$ vi puppet.d/manifests/default.pp
+(...einfügen..)
+class { 'docker_host': }
+</code></pre><p>(Git-Tag v7)</p><p>Ein <code>vagrant provision</code> dauert nun schon etwas länger, da Docker nun auch
+installiert wird:</p><pre><code class=language-bash>==&gt; docker-test1: Notice: Running puppet apply on vagrant-ubuntu-trusty-64
+==&gt; docker-test1: Notice: /Stage[main]/Main/Notify[Running puppet apply on vagrant-ubuntu-trusty-64]/message: defined 'message' as 'Running puppet apply on vagrant-ubuntu-trusty-64'
+==&gt; docker-test1: Notice: /Stage[main]/Docker::Install/Package[cgroup-lite]/ensure: ensure changed 'purged' to 'present'
+==&gt; docker-test1: Notice: /Stage[main]/Docker::Install/Apt::Source[docker]/Apt::Key[Add key: A88D21E9 from Apt::Source docker]/Apt_key[Add key: A88D21E9 from Apt::Source docker]/ensure: created
+==&gt; docker-test1: Notice: in docker_host
+==&gt; docker-test1: Notice: /Stage[main]/Docker_host/Notify[in docker_host]/message: defined 'message' as 'in docker_host'
+==&gt; docker-test1: Notice: /Stage[main]/Docker::Install/Apt::Source[docker]/Apt::Pin[docker]/File[docker.pref]/ensure: created
+==&gt; docker-test1: Notice: /Stage[main]/Docker::Install/Apt::Source[docker]/File[docker.list]/ensure: created
+==&gt; docker-test1: Info: /Stage[main]/Docker::Install/Apt::Source[docker]/File[docker.list]: Scheduling refresh of Exec[apt_update]
+==&gt; docker-test1: Info: /Stage[main]/Docker::Install/Apt::Source[docker]/File[docker.list]: Scheduling refresh of Exec[Required packages: 'debian-keyring debian-archive-keyring' for docker]
+==&gt; docker-test1: Notice: /Stage[main]/Docker::Install/Apt::Source[docker]/Exec[Required packages: 'debian-keyring debian-archive-keyring' for docker]: Triggered 'refresh' from 1 events
+==&gt; docker-test1: Notice: /Stage[main]/Apt::Update/Exec[apt_update]: Triggered 'refresh' from 1 events
+==&gt; docker-test1: Notice: /Stage[main]/Docker::Install/Package[docker]/ensure: ensure changed 'purged' to 'present'
+==&gt; docker-test1: Info: /Stage[main]/Docker::Service/File[/etc/default/docker]: Filebucketed /etc/default/docker to puppet with sum ce88dab1dcba6f92903120b9beba2521
+==&gt; docker-test1: Notice: /Stage[main]/Docker::Service/File[/etc/default/docker]/content: content changed '{md5}ce88dab1dcba6f92903120b9beba2521' to '{md5}c44278611ed762b2de4b5b78cda333e6'
+==&gt; docker-test1: Info: /Stage[main]/Docker::Service/File[/etc/default/docker]: Scheduling refresh of Service[docker]
+==&gt; docker-test1: Info: /Stage[main]/Docker::Service/File[/etc/init.d/docker]: Filebucketed /etc/init.d/docker to puppet with sum d9d2305259b22bfbc1086939a23df23a
+==&gt; docker-test1: Notice: /Stage[main]/Docker::Service/File[/etc/init.d/docker]/ensure: removed
+==&gt; docker-test1: Info: /Stage[main]/Docker::Service/File[/etc/init.d/docker]: Scheduling refresh of Service[docker]
+==&gt; docker-test1: Notice: /Stage[main]/Docker::Service/Service[docker]: Triggered 'refresh' from 2 events
+==&gt; docker-test1: Notice: Finished catalog run in 148.66 seconds
+</code></pre><p>&hellip; und die Specs &hellip;</p><pre><code>==&gt; docker-test1: /usr/bin/ruby1.9.1 -S rspec spec/localhost/docker_spec.rb spec/localhost/puppet_spec.rb
+(...)
+==&gt; docker-test1: Finished in 0.9264 seconds
+==&gt; docker-test1: 9 examples, 0 failures
+</code></pre><h3 id=fertig>Fertig!</h3><p><code>9 Examples, 0 Failures</code>: geschafft. Wir haben jetzt eine virtuelle Maschine, die</p><ul><li>Puppet und das Docker-Modul beinhaltet,</li><li>ein lauffähigen Docker-Server über Puppet installiert hat und</li><li>das ganze mit Hilfe von Serverspec testbar macht.</li></ul><p>Wenn man die Serverspec-Ausgabe detailliert mitverfolgen möchte, hilft ein <code>--format</code>-Eintrag im
+<code>Rakefile</code>:</p><pre><code class=language-bash>$ vi spec.d/Rakefile
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.pattern = 'spec/*/*_spec.rb'
+  t.rspec_opts = '--format documentation'
+end
+</code></pre><p>Damit kann man serverspec bei der Arbeit zusehen, allerdings kann die Ausgabe mit steigendem Umfang
+der Spec auch recht lang werden. Zu Debugging-Zwecken lohnt es sich allerdings sehr.</p><p>Wir können jetzt damit fortfahren, die Spezifikation wasserdicht zu machen, und alle
+Einstellungen, die wir über das Puppet-Modul in die Docker-Konfiguration einbringen können, auch abzutesten. Das werden wir nicht im Detail erläutern, wer mag, checkt sich den Master-Branch aus und schaut sich die Specs an.</p><p>Am Ende haben wir die Basis für eine vollautomatische und nachvollziehbare Installation eines Docker-Hosts.</p><p>&ndash;</p><p>Andreas &amp; Peter</p></p></div><div class=clearfix></div></article></div><div class="col-lg-3 col-sm-4 col-md-4"><div id=blog-archive-sidebar class=sidebar><div class="widget panel wpforms-widget"><div class="wpforms-container wpforms-container-full" id=wpforms-31107><form class="wpforms-validate wpforms-form"><div class=wpforms-head-container><div class=wpforms-title>Werde Teil unserer bee42 community</div><div class=wpforms-description>Erhalte alle 14 Tage die neusten Blogposts, Trend, Events und Highlights rund um Docker, Kubernetes & Co.!</div></div><div class=wpforms-field-container><div class="wpforms-field wpforms-field-email"><input type=email class=wpforms-field-large placeholder="E-Mail-Adresse eingeben"></div></div><div class=wpforms-submit-container><button type=submit name=wpforms[submit] class=wpforms-submit value=wpforms-submit data-alt-text=Subscribing...>Abonieren</button></div></form></div></div><div class="widget panel popular-posts panel-secondary"><h2 class=section-title>Popular Posts</h2><ul><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-hosts-mit-puppet-provisionieren-und-testen/>Docker-Hosts mit Puppet provisionieren und testen</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-microservice-basis-mit-apache-tomcat-implementieren/>Docker Microservice Basis mit Apache Tomcat implementieren</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-entschluesselt-netzwerk-teil-2/>Docker entschlüsselt: Netzwerk Teil 2</a></li></ul></div></div></div></div></div><div class=overlay></div><footer><div class="container clear"><a class=branding href=index.html><img src=/images/bee42-logo.svg alt="bee42 logo"></a><ul class=footer-social-menu><li><a href=mailto:info@bee42.com><i class="fas fa-envelope"></i></a></li><li><a href=https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw><i class="fab fa-youtube"></i></a></li><li><a href="https://twitter.com/bee42solutions?lang=%2fde"><i class="fab fa-twitter"></i></a></li></ul><div class="row footer-info"><ul class=meta-navigation><li><a href=/de/impressum>Impressum</a></li><li><a href=/de/datenschutz>Datenschutz</a></li><li><a href=/de/allgemeine-geschaeftsbedingungen>AGB</a></li><li><a href=/de/kontakt>Kontakt</a></li></ul><form class=newsletter method=post><h3>Newsletter abonnieren</h3><input class=email type=email placeholder="Deine E-Mail Adresse">
+<button class=send>Senden</button></form><div class="row address"><a href=/de/locations/bochum><i class="fas fa-map-marker-alt"></i></a><ul class=location><li><strong>bee42 solutions gmbh</strong></li><li>Office: @Funkhaus Bochum</li><li>Kortumstraße 68</li><li>D-44787 Bochum</li></ul></div></div></div><div class=copyright><div class=container><p>© 2018 bee42 solutions gmbh. Alle Rechte vorbehalten</p></div></div></footer></div><div id=menu-sld class=mbmnu><div class=mobmenu-inner><ul id=menu-header-menu1 class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></div></div></div><div class=cookies-info id=cookies-container><p>"Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer <a href>Datenschutzerklärung</a>."</p><button id=cn-accept-cookie onclick="SetCookie('cookie_notice','0','7')">Ok</button></div><script>function SetCookie(c_name,value,expiredays){var exdate=new Date();exdate.setDate(exdate.getDate()+expiredays);document.cookie=c_name+"="+escape(value)+
+((expiredays==null)?"":";expires="+exdate.toGMTString());document.getElementById("cookies-container").style.display="none";}
+if(document.cookie){document.getElementById("cookies-container").style.display="none";}</script><script src=/js/jquery.js></script><script src=/js/bootstrap.min3.2.js></script><script src=/js/owl.carousel.min.js></script><script src=/js/highlight.pack.js></script><script src=/js/js-functions.js></script></body></html>

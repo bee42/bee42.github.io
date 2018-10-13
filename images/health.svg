@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/74px/Health</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9,29 L65,29 C66.6568542,29 68,30.3431458 68,32 L68,64 C68,65.6568542 66.6568542,67 65,67 L9,67 C7.34314575,67 6,65.6568542 6,64 L6,32 C6,30.3431458 7.34314575,29 9,29 Z" id="path-1"></path>
+        <path d="M8.913062,12 L65.086938,12 C66.7094481,12 68.037941,13.2899941 68.0856413,14.9118028 L68.9091707,42.9118028 C68.9578806,44.5679409 67.6548026,45.9499933 65.9986646,45.9987033 C65.9692735,45.9995677 65.9398712,46 65.9104674,46 L8.08953259,46 C6.43267834,46 5.08953259,44.6568542 5.08953259,43 C5.08953259,42.9705962 5.08996488,42.941194 5.09082933,42.9118028 L5.91435874,14.9118028 C5.962059,13.2899941 7.2905519,12 8.913062,12 Z" id="path-2"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/74px/Health">
+            <g id="Group-14">
+                <rect id="Rectangle-131" opacity="0.155287591" x="0" y="0" width="74" height="74"></rect>
+                <circle id="Oval" fill="#E9EBF8" cx="37" cy="37" r="34"></circle>
+                <g id="Rectangle-132">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#3870DF" stroke-width="2" d="M9,30 C7.8954305,30 7,30.8954305 7,32 L7,64 C7,65.1045695 7.8954305,66 9,66 L65,66 C66.1045695,66 67,65.1045695 67,64 L67,32 C67,30.8954305 66.1045695,30 65,30 L9,30 Z"></path>
+                </g>
+                <rect id="Rectangle-136" fill="#D3D8EE" x="13" y="46" width="6" height="19"></rect>
+                <rect id="Rectangle-136" fill="#D3D8EE" x="55" y="46" width="6" height="19"></rect>
+                <path d="M27,15 L47,15 L47,8 L27,8 L27,15 Z M27,5 L47,5 C48.6568542,5 50,6.34314575 50,8 L50,18 L24,18 L24,8 C24,6.34314575 25.3431458,5 27,5 Z" id="Rectangle-134" fill="#3870DF" fill-rule="nonzero"></path>
+                <path d="M24,10 L27,10 L27,12 L24,12 L24,10 Z M47,10 L50,10 L50,12 L47,12 L47,10 Z" id="Combined-Shape" fill="#0C2B9E" opacity="0.2"></path>
+                <path d="M9,15 L65,15 C66.6568542,15 68,16.3431458 68,18 L68,46 C68,47.6568542 66.6568542,49 65,49 L9,49 C7.34314575,49 6,47.6568542 6,46 L6,18 C6,16.3431458 7.34314575,15 9,15 Z" id="Rectangle-132" fill="#0C2B9E" opacity="0.2"></path>
+                <g id="Rectangle-132">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <path stroke="#3870DF" stroke-width="2" d="M8.913062,13 C7.8313886,13 6.94572667,13.859996 6.91392649,14.9412019 L6.09039708,42.9412019 C6.08967669,42.9705967 6.08967669,42.9705967 6.08953259,43 C6.08953259,44.1045695 6.98496309,45 8.08953259,45 L65.9104674,45 C65.9398707,44.9998559 65.9398707,44.9998559 65.9692655,44.9991355 C67.0733576,44.9666622 67.9420762,44.045294 67.9096029,42.9412019 L67.0860735,14.9412019 C67.0542733,13.859996 66.1686114,13 65.086938,13 L8.913062,13 Z"></path>
+                </g>
+                <polygon id="Rectangle-135" fill="#D3D8EE" points="55 14 61 14 62 44 56 44"></polygon>
+                <polygon id="Rectangle-135" fill="#D3D8EE" transform="translate(15.500000, 29.000000) scale(-1, 1) translate(-15.500000, -29.000000) " points="12 14 18 14 19 44 13 44"></polygon>
+                <path d="M39,27 L39,23 L35,23 L35,27 L31,27 L31,31 L35,31 L35,35 L39,35 L39,31 L43,31 L43,27 L39,27 Z M37,40 C30.9248678,40 26,35.0751322 26,29 C26,22.9248678 30.9248678,18 37,18 C43.0751322,18 48,22.9248678 48,29 C48,35.0751322 43.0751322,40 37,40 Z" id="Combined-Shape" fill="#D3D8EE"></path>
+            </g>
+        </g>
+    </g>
+</svg>

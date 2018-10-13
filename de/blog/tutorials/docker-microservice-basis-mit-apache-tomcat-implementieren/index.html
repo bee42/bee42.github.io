@@ -1,0 +1,230 @@
+<!doctype html><html lang=de><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Das Docker-Ökosystem ist die ideale Umgebung, um Microservices zu implementieren. Die Ideen ist, verschiedene Services auf einem Rechner isoliert von einander bereitzustellen."><title>Docker Microservice Basis mit Apache Tomcat implementieren</title><link rel=icon href=/images/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/bootstrap.min.css><link href=/css/animate1.css rel=stylesheet><link href=/css/github-gist.css rel=stylesheet><link rel=stylesheet type=text/css href=/css/bicon.min.css><link rel=stylesheet type=text/css href=/css/owl.carousel.min.css><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous><link rel=stylesheet href=https://bee42.com/sass/style.min.807b9d7ce089a7d39ca870a8727d83ec5a3cbfcaf75ae380e102836b0c36c229.css><link rel=stylesheet type=text/css href=/css/responsive-menu.css><link rel=stylesheet type=text/css href=/css/responsive.css></head><body class=sub-page><nav class=off-canvas><button class=close-btn><i class="fas fa-times"></i></button><ul><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav><div id=page><header class=site-header><div class=inner-header><a class=branding href=/index.html><img src=/images/bee42-logo.svg alt="bee42 Logo"></a>
+<button class=open-btn><i class="fas fa-bars"></i></button><div class=off-canvas-btn><a id=mob-menu>☰</a>
+<a id=mob-menu-close>×</a></div><nav class=site-navigation><ul id=menu-header-menu class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></nav></div><h1>Rethink IT</h1><h2>Wir verbessern Deine Systeme mit Begeisterung.</h2><a href=https://bee42.com/de/about class="button hero-button">Über die bee⁴²</a></header><div id=content><div class=blog-detail-wrapper><div class="col-lg-9 col-sm-8 col-md-8"><article class=post><h2>Docker Microservice Basis mit Apache Tomcat implementieren</h2><div class=blog-content><p><p>Das Docker-Ökosystem ist die ideale Umgebung, um Microservices zu implementieren. Die Ideen ist, verschiedene Services auf einem Rechner isoliert von einander bereitzustellen. Ähnlichkeiten zu der heute verbreiteten Virtualisierung existieren, aber ohne die Abhängigkeiten zu einem bestimmten Hersteller oder dem Overhead der Ablaufplattform. In diesem Post werden verschiedene Weg zur Verwendung eines eigenen Java- und Tomcat-Image beschrieben.</p><div class=default-slider><img src=/images/blog/infrabricks/docker-java-tomcat-base-image.png alt="Docker Java Tomcat Base Image"></div><p>Die Docker-Container nutzen einfach den Linux-Kernel und können in verschiedenen Umgebungen anpassbar betrieben werden. Die Leichtigkeit beruht auf den schon lange vorhandenen Linux API&rsquo;s, wie Namespaces, CGroups, Capabilities oder SELinux. Docker fügt neben einem Rest-Service noch die Definition eines austauschbaren Image-Formats hinzu. Das Teilen von vorgefertigter Software ist nun also mit Docker wirklich Realität. Damit das Teilen auch platzsparend ist, kommt ein Layered Filesystem zum Einsatz. Docker liefert Schnittstellen und besitzt Plugins, die Raum für eigene Erweiterungen bieten. Alles ist OpenSource und wird von einer aktiven Community entwickelt. Das bringt jeden Entwickler und Administrator schnell zum Schwärmen. Es befeuert die Idee, eine kontrollierte Umgebung von der Entwicklung bis in die Produktion zu nutzen. Microservices lassen sich so einfacher realisieren und orchestrieren. Der Begriff <em>Microservice</em> ist schwer zu fassen, die <a href=http://12factor.net/>12 Factor Rules</a> bieten eine erste Orientierung für die Entwicklung. Wichtiger Punkt ist, dass die Software in möglichst unabhängigen und autarken Einheiten bereitgestellt wird.</p><p>Die Begriffe <a href=http://martinfowler.com/articles/microservices.html>Microservice</a>, Continuous Delivery-Pipeline und Docker berauscht also gerade die IT. Alles in kleine Funktionseinheiten spalten, wird als Heilmittel für die Ablösung der kostenträchtigen aktuellen IT gepriesen. Wir wollen schneller, zuverlässiger und preiswerter liefern und damit den Wunsch nach unkomplizierten Änderungen endlich befriedigen. Schöne neue Welt, aber Hand auf Herz. Die IT-Welt ist komplex und die bestehenden Systeme beherrschen unsere tägliches Handeln mehr als uns lieb ist. Wer das Glück hat, in seinem Projekt schon jetzt einen Blick in die IT-Zukunft wagen zu können, der kann allerdings nun aus dem Vollen schöpfen. Das Docker-Ökosystem bietet jede Menge neuer exotischer Verführungen.</p><p>Eine Übersicht über den aktuellen Stand könnt Ihr im <a href=https://entwickler.de/special-issue/entwickler-magazin-spezial-vol-2-docker-117484.html>Entwickler Magazin Spezial Vol.2: Docker</a> nachlesen. Hier haben viele unserer Kollegen und wir verschiedene Aspekte von Docker erklärt und berichten vom wirklichen Einsatz.</p><p><strong>Also ran ans Werk!</strong></p><h2 id=bereitstellen-von-java-und-apache-tomcat-docker-images>Bereitstellen von Java- und Apache Tomcat Docker-Images</h2><p>Eine Entwicklungsumgebung für Java mit Apache Tomcat aufzusetzen, kann von vielen Tücken begleitet sein. Schnell kommt das Setup einer DB und weitere Backends hinzu. Das Aufsetzen einer einheitlichen Umgebung im Team und die Integration neuer Mitglieder ist leider oft eine zeitaufwendige Geschichte. Schnelle Auslieferung bedeutet auch schnelles handeln im Team, im Code, in der Entwicklungsumgebung und in der Produktion. Hier hilft nur die Automatisierung und Standardisierung voranzutreiben. Docker kann hier helfen, die Infrastruktur mehr als Code zu begreifen. Viele vorgefertigte Images stehen auf dem Docker-Hub schon bereit. Ein Test-Setup einer fremden Komponente kann also schnell erfolgen. Eine Herausforderung bleibt es allerdings, den eigenen individuellen Code schnell mit den bereitgestellten Services zu verheiraten oder ein eigenes Services-Images zu realisieren.</p><h3 id=das-experiment-ein-java-image-für-dev-und-ops-bereitstellen>Das Experiment: Ein Java-Image für Dev und Ops bereitstellen</h3><p>Auf dem Docker-Hub existieren natürlich viele Java-Images. Allerdings basieren sie oft auf dem <em>falschem</em> Betriebssystem, enthalten nicht die richtige Java Version oder sie sind schlicht zu groß.</p><p>Im folgenden entsteht eine Basis, die ein eigenes Java-Images erzeugt.</p><ul><li>Mit minimaler Größe, damit ein schneller Download möglich ist.</li><li>Für den Apache Tomcat 8 reicht ein Java-Runtime.</li><li>Java Anwendungen und Werkzeuge sollen nutzbar sein.</li></ul><p><img src=/images/blog/infrabricks/docker-java-tomcat-download.png alt="Docker Java Tomcat Download"></p><p>Als <em>minimales</em> Betriebssystem ohne alles reicht für Java die Distribution <a href=https://github.com/progrium/busybox>Busybox</a> völlig aus. Mit Hilfe von <code>curl</code> ist so schnell ein Oracle JRE-Tarball extrahiert und bereitgestellt.</p><p><strong>jre8/Dockerfile</strong></p><pre><code># Busybox with a Java installation
+FROM progrium/busybox
+MAINTAINER Peter Rossbach &lt;peter.rossbach@bee42.com&gt;
+
+# Install cURL
+RUN opkg-install curl
+
+# Java Version
+ENV JAVA_VERSION_MAJOR 8
+ENV JAVA_VERSION_MINOR 25
+ENV JAVA_VERSION_BUILD 17
+ENV JAVA_PACKAGE       server-jre
+ENV JAVA_CHECKSUM      c3ec171fac394c584a0a5cecb1731efd
+
+# Download, verify and extract Java
+RUN curl -kLOH &quot;Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie&quot; \
+http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz \
+  &amp;&amp; echo &quot;${JAVA_CHECKSUM}  ${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz&quot; &gt; ${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz.md5.txt \
+  &amp;&amp; md5sum -c ${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz.md5.txt \
+  &amp;&amp; gunzip ${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz \
+  &amp;&amp; tar -xf ${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar -C /opt \
+  &amp;&amp; rm ${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar* \
+  &amp;&amp; ln -s /opt/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} /opt/jdk
+
+# Set environment
+ENV JAVA_HOME /opt/jdk
+ENV PATH ${PATH}:${JAVA_HOME}/bin
+
+VOLUME [ &quot;/opt/jdk&quot;]
+
+ENTRYPOINT [&quot;java&quot;]
+CMD [&quot;-version&quot;]
+</code></pre><p>Nicht vergessen beim Download von fremden Quellen, die Prüfsumme zu überprüfen. Mit diesem <code>jre8/Dockerfile</code> lässt sich nun der Java-Container schnell erzeugen und testen:</p><pre><code class=language-bash>$ mkdir -p jre8
+$ vi jre8/Dockerfile
+...
+$ docker build -t infrabricks/ex-java:jre-8 jre8
+$ docker run --rm infrabricks/ex-java:jre-8
+java version &quot;1.8.0_25&quot;
+Java(TM) SE Runtime Environment (build 1.8.0_25-b17)
+Java HotSpot(TM) 64-Bit Server VM (build 25.25-b02, mixed mode)
+$ docker images |grep &quot;infrabricks/java&quot;
+infrabricks/java                                          jre-8                    96860db18ac9        8 seconds ago       160.3 MB
+</code></pre><p><strong>Voila!</strong></p><h4 id=jdk-gefällig>JDK gefällig</h4><p>Wenn ein Java Development-Kit gewünscht wird, kann dies analog erstellt werden.</p><p>Dazu müssen im Dockerfile folgenden Veränderung erfolgen:</p><p><strong>jdk8/Dockerfile</strong></p><pre><code>...
+ENV JAVA_PACKAGE       jdk
+ENV JAVA_CHECKSUM      e145c03a7edc845215092786bcfba77e
+...
+</code></pre><p>Das Erzeugen des Images und der Tests geschieht analog.</p><pre><code class=language-bash>$ mkdir -p jdk8
+$ vi jkd8/Dockerfile
+...
+$ docker build -t infrabricks/ex-java:jdk-8 jdk8
+$ docker run --rm infrabricks/ex-java:jdk-8
+java version &quot;1.8.0_25&quot;
+Java(TM) SE Runtime Environment (build 1.8.0_25-b17)
+Java HotSpot(TM) 64-Bit Server VM (build 25.25-b02, mixed mode)
+$ docker run --rm --entrypoint=/bin/sh -ti -v `pwd`:/data infrabricks/java:jdk-8
+$ ls /opt/jdk/bin
+ControlPanel    jarsigner       javafxpackager  jcmd            jhat            jmc.ini         jstat           orbd            rmiregistry     unpack200
+appletviewer    java            javah           jconsole        jinfo           jps             jstatd          pack200         schemagen       wsgen
+extcheck        java-rmi.cgi    javap           jcontrol        jjs             jrunscript      jvisualvm       policytool      serialver       wsimport
+idlj            javac           javapackager    jdb             jmap            jsadebugd       keytool         rmic            servertool      xjc
+jar             javadoc         javaws          jdeps           jmc             jstack          native2ascii    rmid            tnameserv
+$ du -s /opt/jdk1.8.0_25
+322308	/opt/jdk1.8.0_25
+$ exit
+$ docker images |grep &quot;infrabricks/java&quot;
+infrabricks/java                                          jre-8                    96860db18ac9        22 minutes ago      160.3 MB
+infrabricks/java                                           jdk-8                    fbf0c4b72d14        8 seconds ago      331.3 MB
+</code></pre><p>In der Auflistung wird deutlich, welch große Mengen Plattenplatz die visuellen Tools, libs, Quellen und Dokumentationen eines JDK&rsquo;s benötigen! In der Produktion sollte dieser Overhead nur selten notwendig sein, oder?</p><h4 id=apache-tomcat-image-ontop>Apache Tomcat Image - Ontop</h4><p>Auf der Basis des Java-Images kann nun die Bereitstellung des Tomcats erfolgen:</p><p><strong>tomcat8/Dockerfile</strong></p><pre><code>FROM infrabricks/ex-java:jre-8
+MAINTAINER Peter Rossbach &lt;peter.rossbach@bee42.com&gt;
+
+ENV TOMCAT_MINOR_VERSION 8.0.15
+ENV CATALINA_HOME /opt/tomcat
+
+RUN curl -O http://archive.apache.org/dist/tomcat/tomcat-8/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz &amp;&amp; \
+ curl http://archive.apache.org/dist/tomcat/tomcat-8/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz.md5 | md5sum -c - &amp;&amp; \
+ gunzip apache-tomcat-*.tar.gz &amp;&amp; \
+ tar xf apache-tomcat-*.tar &amp;&amp; \
+ rm apache-tomcat-*.tar &amp;&amp; mv apache-tomcat* ${CATALINA_HOME} &amp;&amp; \
+ rm -rf ${CATALINA_HOME}/webapps/examples \
+  ${CATALINA_HOME}/webapps/docs ${CATALINA_HOME}/webapps/ROOT \
+  ${CATALINA_HOME}/webapps/host-manager \
+  ${CATALINA_HOME}/RELEASE-NOTES ${CATALINA_HOME}/RUNNING.txt \
+  ${CATALINA_HOME}/bin/*.bat ${CATALINA_HOME}/bin/*.tar.gz
+
+WORKDIR /opt/tomcat
+EXPOSE 8080
+EXPOSE 8009
+VOLUME [ &quot;/opt/tomcat&quot; ]
+
+ENTRYPOINT [ &quot;/opt/tomcat/bin/catalina.sh&quot; ]
+CMD [ &quot;run&quot;]
+</code></pre><p>Die Standard-Distribution des Tomcats wird gesäubert. Dann werden die entsprechenden Ports preisgegeben und der Startbefehl für den Tomcat gesetzt.</p><pre><code class=language-bash>$ mkdir -p tomcat8
+$ vi tomcat8/Dockerfile
+...
+$ docker build -t infrabricks/ex-tomcat:8 tomcat8
+$ docker run --rm --entrypoint=/opt/tomcat/bin/version.sh infrabricks/ex-tomcat:8
+</code></pre><h4 id=die-erste-anwendung-hello-status>Die erste Anwendung - Hello Status</h4><p>Die folgende Status-Anwendung kann nun implementiert und eingebunden werden.</p><p><strong>index.jsp</strong></p><pre><code class=language-jsp>&lt;%@ page session=&quot;false&quot; %&gt;
+&lt;%
+java.text.DateFormat dateFormat =
+new java.text.SimpleDateFormat(&quot;yyyy/MM/dd HH:mm:ss&quot;);
+%&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h1&gt;Docker Tomcat Status page&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hostname : &lt;%= java.net.InetAddress.getLocalHost().getHostName() %&gt;&lt;/li&gt;
+&lt;li&gt;Tomcat Version : &lt;%= application.getServerInfo() %&gt;&lt;/li&gt;
+&lt;li&gt;Servlet Specification Version : &lt;%= application.getMajorVersion() %&gt;.&lt;%= application.getMinorVersion() %&gt;&lt;/li&gt;
+&lt;li&gt;JSP version : &lt;%=JspFactory.getDefaultFactory().getEngineInfo().getSpecificationVersion() %&gt;&lt;/li&gt;
+&lt;li&gt;Now : &lt;%= dateFormat.format(new java.util.Date()) %&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>Die einfach Anwendung kann nun mittels <code>zip</code> zu einem WAR-File verpackt werden und gegebenenfalls als Volume eingebunden werden.</p><pre><code class=language-bash>$ mkdir -p status/webapp
+$ cd status/webapps
+$ vi index.jsp
+...
+$ zip -r ../status.war .
+$ cd ../..
+$ CID=$(docker run -d -v `pwd`/status/webapp:/opt/tomcat/webapps/status) infrabricks/ex-tomcat:8
+$ docker logs $CID
+18-Dec-2014 17:45:18.678 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.15
+18-Dec-2014 17:45:18.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 2 2014 19:25:20 UTC
+18-Dec-2014 17:45:18.682 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.15.0
+18-Dec-2014 17:45:18.683 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+18-Dec-2014 17:45:18.683 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.16.7-tinycore64
+18-Dec-2014 17:45:18.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+...
+</code></pre><p>Ausführen kann man die Anwendung mittels <code>curl</code>. Wenn ein Browser-Zugriff gewünscht ist, muss der Tomcat-Port mit der Option <code>-p 8080:8080</code> von außen erreichbar gemacht werden.</p><pre><code class=language-bash>$ IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' ${CID})
+$ curl -s http://$IP:8080/status/index.jsp
+
+
+&lt;html&gt;
+&lt;body&gt;
+&lt;h1&gt;Docker Tomcat Status page&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hostname : a222c4e3f231&lt;/li&gt;
+&lt;li&gt;Tomcat Version : Apache Tomcat/8.0.15&lt;/li&gt;
+&lt;li&gt;Servlet Specification Version : 3.1&lt;/li&gt;
+&lt;li&gt;JSP version : 2.3&lt;/li&gt;
+&lt;li&gt;Now : 2014/12/17 16:06:32&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h4 id=nutzung-der-tomcat-manager-webapp>Nutzung der Tomcat Manager Webapp</h4><p>Der Zugriff auf die Manager Anwendung des Tomcats kann nur mit entsprechender
+Autorisierung erfolgen. Die Konfiguration erfolgt hier durch die folgenden Dateien:</p><p><strong>tomcat8/conf/tomcat-users.xml</strong></p><pre><code class=language-xml>&lt;?xml version='1.0' encoding='utf-8'?&gt;
+&lt;tomcat-users xmlns=&quot;http://tomcat.apache.org/xml&quot;
+xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+xsi:schemaLocation=&quot;http://tomcat.apache.org/xml tomcat-users.xsd&quot;
+version=&quot;1.0&quot;&gt;
+
+  &lt;role rolename=&quot;manager-script&quot;/&gt;
+  &lt;user username=&quot;manager&quot; password=&quot;tomcat&quot; roles=&quot;manager-script&quot;/&gt;
+&lt;/tomcat-users&gt;
+</code></pre><p>Die Anbindung ist etwas aufwendiger, da nur Verzeichnisse in einen Container eingebunden werden können. Es wird also ein Startskript benötigt, das vor dem Start des Containers die Datei verlinkt oder kopiert.</p><p><strong>tomcat8/bin/tomcat.sh</strong></p><pre><code class=language-bash>#!/bin/sh
+ln -s /opt/bootstrap/conf/tomcat-users.xml /opt/tomcat8/conf/tomcat-users.xml
+${CATALINA_HOME}/bin/catalina.sh run
+</code></pre><p>Die Integration in den Tomcat geschieht durch die Anbindung eines Volumes.</p><pre><code class=language-bash>$ mkdir -p tomcat8/bin
+$ vi tomcat8/bin/tomcat.sh
+...
+$ chmod -x tomcat8/bin/tomcat.sh
+$ docker run -d \
+ -v `pwd`/status/webapp:/opt/tomcat/webapps/status \
+ -v `pwd`/tomcat8:/opt/bootstrap \
+ --entrypoint=/opt/bootstrap/tomcat.sh \
+ infrabricks/ex-tomcat:8
+$ CID=$(docker ps -lq)
+$ IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' ${CID})
+$ curl -u manager:tomcat http://$IP:8080/manager/text/list
+OK - Listed applications for virtual host localhost
+/status:running:0:status
+/manager:running:0:manager
+</code></pre><p>Natürlichen lassen sich ähnliche Tomcat-Erweiterungen ins Verzeichnis <code>/opt/bootstrap/lib</code> einbinden oder andere Konfigurationen austauschen. Im Git Projekt <a href=https://github.com/infrabricks/docker-simple-tomcat8>infrabricks docker-simple-tomcat8</a> ist ein erweitertes Skript zu finden. Ein weiteres Projekt einer echten Infrabricks Tomcat-Line ist in der Realisierung. Dort entsteht eine ganzen Tomcat-Familie, die auf verschiedenen Java- und Tomcat-Versionen besteht.</p><h3 id=tricks>Tricks</h3><h4 id=docker-container-overlay>Docker Container Overlay</h4><p>Wenn die JDK-Tools in einem Tomcat benötigt werden, lassen sich
+diese einfach von JDK-Image übernehmen. Das geht problemlos, auch ohne dass der Tomcat von diesem Images abgeleitet werden muss.</p><p><img src=/images/blog/infrabricks/docker-java-tomcat-jdk-overlay.png alt="Docker Java Tomcat JDK Overlay"></p><pre><code class=language-bash>$ docker run --name jdk8 infrabricks/ex-java:jdk-8
+$ docker run -d \
+ --volumes-from jdk8 \
+ -v `pwd`/status/webapp:/opt/tomcat/webapps/status \
+ infrabricks/ex-tomcat:8
+$ CID=$(docker ps -lq)
+$ docker exec $CID jstat -gc 1 5000  
+$ docker exec -ti $CID /bin/sh
+...
+</code></pre><p>Das JDK-Image exportiert mit der Angabe <code>VOLUME [ &quot;/opt/jdk&quot; ]</code> die Java-Installation. Mit der Angabe von <code>--volumes-from</code> lässt sich einfach die vorhandene JRE-Installation überblenden. Layered Filesysteme sind schon ein Segen für die Entwicklung von Infrastruktur.</p><p><strong>Happy debugging!!</strong></p><h4 id=docker-composition-tomcat-als-data-container-nutzen>Docker Composition: Tomcat als Data-Container nutzen</h4><p>Wenn man die vollständige Freiheit über die Wahl der Java-Distribution haben möchte, kann man als Alternative den Tomcat als Data-Container liefern. Auf der Basis von <code>progrium/busybox</code> lässt sich das schnell erzeugen und die Installation als Volume freigeben.</p><p><img src=/images/blog/infrabricks/docker-java-tomcat-composition.png alt="Docker Java Tomcat Composition"></p><p>Mit folgenden Änderungen auf dem bestehenden <code>tomcat8/Dockerfile</code> entsteht ein
+Tomcat Data-Container.</p><p><strong>tomcat8-volume/Dockerfile</strong></p><pre><code>FROM progrium/busybox
+MAINTAINER Peter Rossbach &lt;peter.rossbach@bee42.com&gt;
+
+# Install wget
+RUN opkg-install curl
+
+ENV TOMCAT_MINOR_VERSION 8.0.15
+ENV CATALINA_HOME /opt/tomcat
+
+RUN curl -O http://archive.apache.org/dist/tomcat/tomcat-8/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz &amp;&amp; \
+curl http://archive.apache.org/dist/tomcat/tomcat-8/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz.md5 | md5sum -c - &amp;&amp; \
+gunzip apache-tomcat-*.tar.gz &amp;&amp; \
+tar xf apache-tomcat-*.tar &amp;&amp; \
+rm apache-tomcat-*.tar &amp;&amp; mv apache-tomcat* ${CATALINA_HOME} &amp;&amp; \
+rm -rf ${CATALINA_HOME}/webapps/examples \
+${CATALINA_HOME}/webapps/docs ${CATALINA_HOME}/webapps/ROOT \
+${CATALINA_HOME}/webapps/host-manager \
+${CATALINA_HOME}/RELEASE-NOTES ${CATALINA_HOME}/RUNNING.txt \
+${CATALINA_HOME}/bin/*.bat ${CATALINA_HOME}/bin/*.tar.gz
+
+VOLUME [ &quot;/opt/tomcat&quot; ]
+
+CMD [ &quot;/bin/true&quot; ]
+</code></pre><p>Start des Data Containers Tomcats auf der Basis des JDK&rsquo;s:</p><pre><code class=language-bash>$ docker build -t infrabricks/ex-tomcat:8-volume tomcat8-volume
+$ docker run --name tomcat8 infrabricks/ex-tomcat:8-volume
+$ docker run -d -p 8080:8080 \
+ --volumes-from tomcat8 \
+ -v `pwd`/status/webapp:/opt/tomcat/webapps/status \
+ --entrypoint /opt/tomcat/bin/catalina.sh \
+ infrabricks/ex-java:jdk-8 run
+</code></pre><p>Mit diesem Muster lassen sich nun sehr effizient und schnell verschiedene Java-Versionen mit einer Anwendung testen. Natürlich spricht auch nichts dagegen, einfach einen Apache Tomcat lokal auszupacken und diesen direkt als Volume zu nutzen.</p><p><strong>Quick and Dirty</strong></p><pre><code class=language-bash>$ T_V=8.0.15
+$ T_URL=http://archive.apache.org/dist/tomcat/tomcat-8
+$ curl -O ${T_URL}/v${T_V}/bin/apache-tomcat-${T_V}.tar.gz
+$ tar xzf apache-tomcat-${T_V}.tar.gz
+$ docker run -d -p 8080 \
+ -v `pwd`/apache-tomcat-${T_V}:/opt/tomcat \
+ -v `pwd`/status/webapp:/opt/tomcat/webapps/status \
+  --entrypoint /opt/tomcat/bin/catalina.sh \
+ infrabricks/ex-java:jdk-8 run
+</code></pre><p>Ein flexibleres <code>tscratch.sh</code>-Script für diese Anwendung, findet ihr im <a href=https://github.com/infrabricks/docker-simple-tomcat8>Beispiel Projekt</a> zu diesem Post.</p><h2 id=fazit>Fazit</h2><p>Mit dieser Docker Tomcat Basis kann nun der Start für die eigenen Webapps oder REST-Microservices gewagt werden. In einer der nächsten Post wird ein entsprechendes REST-Beispiel vorgestellt und im folgenden schrittweise zu einer eigenen Microservice-Plattform weiterentwickelt.</p><ul><li>Java-Installationen für die Produktion sollten auf einem minimalen Base-Image beruhen.</li><li>Alle Downloads sollten mit Checksum validiert werden.</li><li>Das vorgestellte Tomcat Basis-Image lässt sich sehr einfach mit eigenen Konfigurationen, Anwendungen und Libs erweitern.</li><li>Die Komposition von verschiedenen Containern macht den Test und die Entwicklung einfacher.</li><li>Jede der gezeigten Varianten hat seinen Nutzen. Die reine Docker-Images-Lehre immer alles in ein auslieferbares Image zu packen ist richtig, aber während der Entwicklung und Test nicht immer die flexibelste und schnellste Lösung.</li><li><strong>WARNUNG</strong>: Um die visuellen Java-Tools zu nutzen, kann es sein, dass ein Ubuntu Host mit X11 und ein Debian Base Image mit entsprechenden X-Libs benötigt wird <a href=http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/>Running Docker gui apps</a>.</li></ul><p>In diesem Sinne, viel Spaß beim Probieren oder selber Gestalten.</p><hr><p>Peter</p></p></div><div class=clearfix></div></article></div><div class="col-lg-3 col-sm-4 col-md-4"><div id=blog-archive-sidebar class=sidebar><div class="widget panel wpforms-widget"><div class="wpforms-container wpforms-container-full" id=wpforms-31107><form class="wpforms-validate wpforms-form"><div class=wpforms-head-container><div class=wpforms-title>Werde Teil unserer bee42 community</div><div class=wpforms-description>Erhalte alle 14 Tage die neusten Blogposts, Trend, Events und Highlights rund um Docker, Kubernetes & Co.!</div></div><div class=wpforms-field-container><div class="wpforms-field wpforms-field-email"><input type=email class=wpforms-field-large placeholder="E-Mail-Adresse eingeben"></div></div><div class=wpforms-submit-container><button type=submit name=wpforms[submit] class=wpforms-submit value=wpforms-submit data-alt-text=Subscribing...>Abonieren</button></div></form></div></div><div class="widget panel popular-posts panel-secondary"><h2 class=section-title>Popular Posts</h2><ul><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-hosts-mit-puppet-provisionieren-und-testen/>Docker-Hosts mit Puppet provisionieren und testen</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-microservice-basis-mit-apache-tomcat-implementieren/>Docker Microservice Basis mit Apache Tomcat implementieren</a></li><li><i class="bi bi-blog"></i><a href=https://bee42.com/de/blog/tutorials/docker-entschluesselt-netzwerk-teil-2/>Docker entschlüsselt: Netzwerk Teil 2</a></li></ul></div></div></div></div></div><div class=overlay></div><footer><div class="container clear"><a class=branding href=index.html><img src=/images/bee42-logo.svg alt="bee42 logo"></a><ul class=footer-social-menu><li><a href=mailto:info@bee42.com><i class="fas fa-envelope"></i></a></li><li><a href=https://www.youtube.com/channel/UCQZcFFlmKBBAhvSupNTm2tw><i class="fab fa-youtube"></i></a></li><li><a href="https://twitter.com/bee42solutions?lang=%2fde"><i class="fab fa-twitter"></i></a></li></ul><div class="row footer-info"><ul class=meta-navigation><li><a href=/de/impressum>Impressum</a></li><li><a href=/de/datenschutz>Datenschutz</a></li><li><a href=/de/allgemeine-geschaeftsbedingungen>AGB</a></li><li><a href=/de/kontakt>Kontakt</a></li></ul><form class=newsletter method=post><h3>Newsletter abonnieren</h3><input class=email type=email placeholder="Deine E-Mail Adresse">
+<button class=send>Senden</button></form><div class="row address"><a href=/de/locations/bochum><i class="fas fa-map-marker-alt"></i></a><ul class=location><li><strong>bee42 solutions gmbh</strong></li><li>Office: @Funkhaus Bochum</li><li>Kortumstraße 68</li><li>D-44787 Bochum</li></ul></div></div></div><div class=copyright><div class=container><p>© 2018 bee42 solutions gmbh. Alle Rechte vorbehalten</p></div></div></footer></div><div id=menu-sld class=mbmnu><div class=mobmenu-inner><ul id=menu-header-menu1 class=menu><li class=menu-item><a href=/de/trainings>Trainings</a></li><li class=menu-item><a href=/de/consulting>Consulting</a></li><li class=menu-item><a href=/de/community>Community</a></li><li class=menu-item><a href=/de/about>Über Uns</a></li><li class=menu-item><a href=/de/jobs>Jobs</a></li><li class=menu-item><a href=/de/kontakt>Kontakt</a></li><li class=menu-item><a href=/de/blog>Blog</a></li><li class=menu-item><a href="https://twitter.com/bee42solutions?lang=%2fde" target=_blank><i class="fab fa-twitter"></i></a></li></ul></div></div></div><div class=cookies-info id=cookies-container><p>"Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer <a href>Datenschutzerklärung</a>."</p><button id=cn-accept-cookie onclick="SetCookie('cookie_notice','0','7')">Ok</button></div><script>function SetCookie(c_name,value,expiredays){var exdate=new Date();exdate.setDate(exdate.getDate()+expiredays);document.cookie=c_name+"="+escape(value)+
+((expiredays==null)?"":";expires="+exdate.toGMTString());document.getElementById("cookies-container").style.display="none";}
+if(document.cookie){document.getElementById("cookies-container").style.display="none";}</script><script src=/js/jquery.js></script><script src=/js/bootstrap.min3.2.js></script><script src=/js/owl.carousel.min.js></script><script src=/js/highlight.pack.js></script><script src=/js/js-functions.js></script></body></html>
